@@ -358,6 +358,9 @@ font-family:  JetBrains Mono, "Courier New", Courier, monospace;
     border-radius: var(--radius);
     background: var(--code-bg);
     border: 1px solid var(--border);
+    /* tags in lowercase */
+    text-transform: lowercase;
+    /* tags in lowercase */
 }
 
 .post-tags a {
@@ -367,9 +370,6 @@ font-family:  JetBrains Mono, "Courier New", Courier, monospace;
     font-size: 14px;
     line-height: 34px;
     background: var(--code-bg);
-    /* tags in lowercase */
-    text-transform: lowercase;
-    /* tags in lowercase */
 }
 
 .post-tags a:hover,
