@@ -1,0 +1,169 @@
+baseURL = 'https://24x7fpga.com/'
+languageCode = 'en-us'
+title = 'Home'  # 'Think, Design and Build' change this if you use hello-friend-ng
+theme = "hugo-PaperMod"
+#theme = "hello-friend-ng"
+
+
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+# For hello-friend-ng
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+ [params.logo]
+    logoMark     = "$"
+    logoText     = "/home/24x7fpga/"
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    logoCursorColor    = "#BD93F9" 
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+    # Append the current url pathname to logoText 
+    logoCursorPathname = true
+
+  [params.EnableThemeToggle]
+    enableThemeToggle = true
+ 
+  [params.footer]
+    trademark = 2024
+
+  [params.Singlefooter]
+    path      = "/img/gnu.png"
+    alt      = "footer"
+    maxWidth = "50px"
+
+  defaultTheme = "light"
+
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # Addon: Social icons
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  #
+    [[params.social]]
+      name = "linkedin"
+      url  = "https://www.linkedin.com/in/kiran760043/"
+
+    [[params.social]]
+      name = "github"
+      url  = "https://github.com/24x7fpga"
+    
+    [[params.social]]
+      name = "googlescholar"
+      url  = "https://googlescholar.com/"
+
+    [[params.social]]
+      name = "orcid"
+      url  = "https://orcid.org/0009-0003-7024-3868"
+    
+    [[params.social]]
+      name = "instagram"
+      url  = "https://www.instagram.com/negativeparking/"
+
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # Addon: Startpage portrait 
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  # Uncomment this if you want a portrait on your start page
+   [params.portrait]
+     path     = "/img/ai-zeus3.png"
+     alt      = "Portrait"
+     maxWidth = "175px"
+
+     
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+# For PaperMod 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #     
+[params.profileMode]
+    enabled     = true 
+    imageUrl    = "/img/ai-zeus3.png"
+    imageWidth  = 150 # custom size
+    imageHeight = 260 # custom size
+    title = "Think, Design and Build"
+    
+
+#[params]
+#    description = "24x7fpga"
+#    defaultTheme= "light"
+
+[params]
+  showWordCount = true 
+  author = "kiran"
+  title = "24x7fpga"
+  description = "24x7fpga"
+  defaultTheme = "light" 
+  #DateFormat = "2024-12-01" 
+  ShowReadingTime= true
+  #ShowShareButtons= true
+  ShowPostNavLinks= false
+  #ShowBreadCrumbs= true
+  ShowCodeCopyButtons= true
+  disableSpecial1stPost= false
+  disableScrollToTop= false
+  comments= false
+  hidemeta= false
+  hideSummary= false
+  showtoc= false
+  tocopen= false
+ 
+
+  [[params.socialIcons]]
+      name = "linkedin"
+      url  = "https://www.linkedin.com/in/kiran760043/" 
+
+  [[params.socialIcons]]
+      name = "github"
+      url  = "https://github.com/24x7fpga"
+    
+    [[params.socialIcons]]
+      name = "googlescholar"
+      url  = "https://googlescholar.com/"
+
+    [[params.socialIcons]]
+      name = "orcid"
+      url  = "https://orcid.org/0009-0003-7024-3868"
+    
+    [[params.socialIcons]]
+      name = "instagram"
+      url  = "https://www.instagram.com/negativeparking/"
+
+
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+# General
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+
+  [submenu]
+
+  [[submenu.main]]
+    identifier = "try"
+    name = "try"
+    utl ="try/"
+
+  [menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "about"
+    url        = "about/about"
+    weight     = 10
+
+  [[menu.main]]
+    identifier = "research"
+    name       = "research"
+    url        = "research/2024_07_08_10_15_40_research"
+    weight     = 20
+
+  [[menu.main]]
+    identifier = "rtl_directory"
+    name       = "rtl directory"
+    url        = "rtl_directory/2024_06_05_00_21_53_rtl_design_directory" 
+    weight     = 30
+
+    [[menu.main]]
+    identifier = "sv_directory"
+    name       = "sv directory"
+    url        = "sv_directory/2024_06_27_16_53_00_sv_verification_directory" 
+    weight     = 40
+
+
+
+

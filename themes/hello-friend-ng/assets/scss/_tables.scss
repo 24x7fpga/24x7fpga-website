@@ -1,0 +1,99 @@
+.post-content {
+  table {
+    border-collapse: collapse;
+    // To make the table with horizontal scroll bar
+    display: inline-block;
+    // Positon the table center
+    position: relative;
+    /* Move the element to the right by 50% of the container's width */
+    left: 50%; 
+    /* Calculates 50% of the element's width, and moves it by that */ 
+    /* amount across the X-axis to the left */
+    transform: translateX(-50%);
+  
+
+    
+    font-size: 0.9em;
+    //min-width: 400px;
+    max-width: 100%; //fit-content !important; 
+    overflow-x: auto !important;
+    white-space: nowrap;
+
+    th,
+    td {
+      padding: 12px 15px;
+      // Default
+      border: 1px solid $light-table-color;
+      
+      @media (prefers-color-scheme: dark) {
+        border: 1px solid $dark-table-color;
+      }
+    
+      @media (prefers-color-scheme: light) {
+        border: 1px solid $light-table-color;
+      }
+    
+      [data-theme=dark] & {
+        border: 1px solid $dark-table-color;
+      }
+    
+      [data-theme=light] & {
+        border: 1px solid $light-table-color;
+      }
+    }
+
+    thead {
+      tr {
+        text-align: left;
+        // Default
+        background-color: $light-table-color;
+        color: $light-color;
+
+        @media (prefers-color-scheme: dark) {
+          background-color: $dark-table-color;
+          color: $dark-color;
+        }
+      
+        @media (prefers-color-scheme: light) {
+          background-color: $light-table-color;
+          color: $light-color;
+        }
+      
+        [data-theme=dark] & {
+          background-color: $dark-table-color;
+          color: $dark-color;
+        }
+      
+        [data-theme=light] & {
+          background-color: $light-table-color;
+          color: $light-color;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        // Center the contents of the table
+        text-align: center;
+        // Default
+        border: 1px solid $light-table-color;
+        
+        @media (prefers-color-scheme: dark) {
+          border: 1px solid $dark-table-color;
+        }
+      
+        @media (prefers-color-scheme: light) {
+          border: 1px solid $light-table-color;
+        }
+      
+        [data-theme=dark] & {
+          border: 1px solid $dark-table-color;
+        }
+      
+        [data-theme=light] & {
+          border: 1px solid $light-table-color;
+        }
+      }
+    }
+  }
+}

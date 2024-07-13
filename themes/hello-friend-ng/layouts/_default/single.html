@@ -1,0 +1,78 @@
+{{ define "main" }}
+    <main class="post">
+
+        <div class="post-info">
+            {{ if .IsTranslated }}
+                {{ i18n "postAvailable" }}
+                {{ range .Translations }}
+                    <a href="{{ .Permalink }}"><span class="flag fi fi-{{ index $.Site.Data.langFlags (.Lang) }}"></span></a>
+                {{ end}}
+            {{ end }}
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+
+            {{ if .Params.Cover }}
+                <figure class="post-cover">
+                    <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title }}" />
+                
+                    {{ if .Params.CoverCaption }}
+                        <figcaption class="center">{{ .Params.CoverCaption | markdownify }}</figcaption>
+                    {{ end }}
+                </figure>
+            {{ end }}
+            
+            {{ if .Params.toc }}
+                <hr />
+                <aside id="toc">
+                <div class="toc-title">{{ i18n "tableOfContents" }}</div>
+                    {{ .TableOfContents }}
+                </aside>
+                <hr />
+            {{ end }}
+
+            <div class="post-content">
+                {{ .Content }}
+            </div>
+        </article>
+
+        <hr style = "margin-top: 2em; margin-bottom: 1.5em;" />
+
+        <div class="post-info">
+            {{ partial "tags.html" .Params.tags }}
+            {{ partial "categories.html" . }}
+
+           <!--{{ .ReadingTime }} minutes-->
+            
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M 7 2 L 7 48 L 43 48 L 43 14.59375 L 42.71875 14.28125 L 30.71875 2.28125 L 30.40625 2 Z M 9 4 L 29 4 L 29 16 L 41 16 L 41 46 L 9 46 Z M 31 5.4375 L 39.5625 14 L 31 14 Z M 15 22 L 15 24 L 35 24 L 35 22 Z M 15 28 L 15 30 L 31 30 L 31 28 Z M 15 34 L 15 36 L 35 36 L 35 34 Z"></path> </svg>
+                {{ .WordCount }} words
+            </p>
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="14" height="14" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M 1 3 L 1 15 L 3 15 L 3 48 L 47 48 L 47 15 L 49 15 L 49 3 Z M 3 5 L 47 5 L 47 13 L 3 13 Z M 5 15 L 45 15 L 45 46 L 5 46 Z M 17.5 19 C 15.578125 19 14 20.578125 14 22.5 C 14 24.421875 15.578125 26 17.5 26 L 32.5 26 C 34.421875 26 36 24.421875 36 22.5 C 36 20.578125 34.421875 19 32.5 19 Z M 17.5 21 L 32.5 21 C 33.339844 21 34 21.660156 34 22.5 C 34 23.339844 33.339844 24 32.5 24 L 17.5 24 C 16.660156 24 16 23.339844 16 22.5 C 16 21.660156 16.660156 21 17.5 21 Z"></path> </svg>  
+                {{ .Date | time.Format ":date_medium" }}
+            </p>
+
+            {{- if .GitInfo }}
+			    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a> @ {{ if .Site.Params.dateformNum }}{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}{{ else }}{{ dateFormat "2006-01-02" .GitInfo.AuthorDate.Local }}{{ end }}</p>
+			{{- end }}
+  		</div>
+
+        
+        <hr style = "margin-top: 2em; margin-bottom: 0em;"/>
+    
+</main>
+
+{{ end }}
+
+{{ define "footer" }}
+    <footer class="Singlefooter">
+        {{ if .Site.Params.Singlefooter.Path }}
+                <img src="{{ .Site.Params.Singlefooter.Path }}" class="center" alt="{{ .Site.Params.Singlefooter.Alt }}" style="max-width:{{ .Site.Params.Singlefooter.MaxWidth }}" />
+        {{ end }}
+    </footer>
+{{ end }}
+
+
