@@ -78,7 +78,7 @@ Like a linked list, elements can be added and removed anywhere in the queue, wit
       <link>https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</link>
       <pubDate>Mon, 01 Jul 2024 15:56:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</guid>
-      <description>[Design] &amp;ndash; [Testbench] &amp;ndash; SV Verification Directory
+      <description>SV Verification Directory
 Dymanic Arrays Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declare with empty word subscripts &amp;ldquo;[ ]&amp;rdquo;. The array is initially empty and must be called with the &amp;ldquo;new[ ]&amp;rdquo; constuctor to allocate space, passing in the number of entries in the square brackets.</description>
     </item>
     <item>
@@ -86,7 +86,7 @@ Dymanic Arrays Dynamic arrays are arrays that do not have their size set during 
       <link>https://24x7fpga.com/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</link>
       <pubDate>Sat, 29 Jun 2024 23:39:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</guid>
-      <description>[Design] &amp;ndash; [Testbench] &amp;ndash; SV Verification Directory
+      <description>SV Verification Directory
 Packed and Unpacked Array Packed and unpacked arrays are differentiated based on the way the arrays are stored in the memory. Generally, simulators store each element on a 32-bit word boundary. In a packed array, the elements are stored in contiguous memory locations whereas in an unpacked array, the elements are not stored in contiguous memory locations.
 Packed Array A packed array can be declared by declaring the dimension before the identifier name shown below:</description>
     </item>
@@ -95,7 +95,7 @@ Packed Array A packed array can be declared by declaring the dimension before th
       <link>https://24x7fpga.com/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/</link>
       <pubDate>Sat, 29 Jun 2024 23:25:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/</guid>
-      <description>[Design] &amp;ndash; [Testbench] &amp;ndash; SV Verification Directory
+      <description>SV Verification Directory
 Fixed-Size Arrays An array is a collection of elements stored sequentially. An array in Verilog should be declared with upper and lower bounds. The lower bound in most of the arrays is zero. Fixed-size arrays have constant size and do not change during run time. The array size is set at compile time.
 Single Dimension Array There are two ways in SystemVerilog to declare single-dimension arrays which are shown below:</description>
     </item>

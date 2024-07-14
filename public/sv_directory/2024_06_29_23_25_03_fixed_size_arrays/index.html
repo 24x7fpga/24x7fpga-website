@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Fixed-Size Arrays | Home</title>
 <meta name="keywords" content="sv">
-<meta name="description" content="[Design] &ndash; [Testbench] &ndash; SV Verification Directory
+<meta name="description" content="SV Verification Directory
 Fixed-Size Arrays An array is a collection of elements stored sequentially. An array in Verilog should be declared with upper and lower bounds. The lower bound in most of the arrays is zero. Fixed-size arrays have constant size and do not change during run time. The array size is set at compile time.
 Single Dimension Array There are two ways in SystemVerilog to declare single-dimension arrays which are shown below:">
 <meta name="author" content="Kiran">
@@ -33,7 +33,7 @@ Single Dimension Array There are two ways in SystemVerilog to declare single-dim
 <link rel="stylesheet" href="../../zcustom.css">
 
 <meta property="og:title" content="Fixed-Size Arrays" />
-<meta property="og:description" content="[Design] &ndash; [Testbench] &ndash; SV Verification Directory
+<meta property="og:description" content="SV Verification Directory
 Fixed-Size Arrays An array is a collection of elements stored sequentially. An array in Verilog should be declared with upper and lower bounds. The lower bound in most of the arrays is zero. Fixed-size arrays have constant size and do not change during run time. The array size is set at compile time.
 Single Dimension Array There are two ways in SystemVerilog to declare single-dimension arrays which are shown below:" />
 <meta property="og:type" content="article" />
@@ -43,7 +43,7 @@ Single Dimension Array There are two ways in SystemVerilog to declare single-dim
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Fixed-Size Arrays"/>
-<meta name="twitter:description" content="[Design] &ndash; [Testbench] &ndash; SV Verification Directory
+<meta name="twitter:description" content="SV Verification Directory
 Fixed-Size Arrays An array is a collection of elements stored sequentially. An array in Verilog should be declared with upper and lower bounds. The lower bound in most of the arrays is zero. Fixed-size arrays have constant size and do not change during run time. The array size is set at compile time.
 Single Dimension Array There are two ways in SystemVerilog to declare single-dimension arrays which are shown below:"/>
 
@@ -74,12 +74,12 @@ Single Dimension Array There are two ways in SystemVerilog to declare single-dim
   "@type": "BlogPosting",
   "headline": "Fixed-Size Arrays",
   "name": "Fixed-Size Arrays",
-  "description": "[Design] \u0026ndash; [Testbench] \u0026ndash; SV Verification Directory\nFixed-Size Arrays An array is a collection of elements stored sequentially. An array in Verilog should be declared with upper and lower bounds. The lower bound in most of the arrays is zero. Fixed-size arrays have constant size and do not change during run time. The array size is set at compile time.\nSingle Dimension Array There are two ways in SystemVerilog to declare single-dimension arrays which are shown below:",
+  "description": "SV Verification Directory\nFixed-Size Arrays An array is a collection of elements stored sequentially. An array in Verilog should be declared with upper and lower bounds. The lower bound in most of the arrays is zero. Fixed-size arrays have constant size and do not change during run time. The array size is set at compile time.\nSingle Dimension Array There are two ways in SystemVerilog to declare single-dimension arrays which are shown below:",
   "keywords": [
     "sv"
   ],
-  "articleBody": "[Design] – [Testbench] – SV Verification Directory\nFixed-Size Arrays An array is a collection of elements stored sequentially. An array in Verilog should be declared with upper and lower bounds. The lower bound in most of the arrays is zero. Fixed-size arrays have constant size and do not change during run time. The array size is set at compile time.\nSingle Dimension Array There are two ways in SystemVerilog to declare single-dimension arrays which are shown below:\nint arr1 [15:0]; // 16 elements with index from 0,1,...,15 verbose declaration int arr2 [16]; // 16 elements with index from 0,1,...,15 compact declaration Multidimensional Arrays Multidimensional arrays can be created by specifying the dimensions after the variable name.\nint array1 [7:0] [0:3]; // verbose declaration int array2 [8] [4]; // compact declaration The above instruction creates four arrays, each of 8 bits.\nSystemVerilog will return a default value for the array element that is read outside of the array bounds. If the array type is of 4-state type, the default value is “X” and if the array is 2-state type the default value is “0”. If a net is not driven, then the net value is “Z”.\nArray Initialization An array can be initialized using an apostrophe followed by curly braces.\narray1 = '{4,3,2,1,0}; // assign the array array2 = '{default:2}; // all the elements in the array are set to 2 Fixed-Size Array example is shown below:\nmodule tb_arrays(); int arr1 [3:0]; int arr2 [2][4]; int arr3 [2][4][8]; initial begin arr1 = '{4,3,2,1}; arr2 = '{'{1,2,3,4},'{5,6,7,8}}; for(int i = 0; i \u003c 2; i = i+1)begin for(int j = 0; j \u003c 4; j = j+1)begin for(int k = 0; k \u003c 8; k = k+1)begin arr3[i][j][k] = (32 * i) + (8 * j) + k; end end end $display(\"-------------- Array 1 --------------\"); foreach(arr1[i]) $display(\"\\t arr1[%0d] = %0d \", i, arr1[i]); $display(\"-------------- Array 2 --------------\"); foreach(arr2[i,j]) $display(\"\\t arr2[%0d][%0d] = %0d \", i, j, arr2[i][j]); $display(\"-------------- Array 3 --------------\"); foreach(arr3[i,j,k]) $display(\"\\t arr3[%0d][%0d][%0d] = %0d \", i, j, k, arr3[i][j][k]); end // initial begin endmodule Execute the example in EDA Playground\n",
-  "wordCount" : "349",
+  "articleBody": "SV Verification Directory\nFixed-Size Arrays An array is a collection of elements stored sequentially. An array in Verilog should be declared with upper and lower bounds. The lower bound in most of the arrays is zero. Fixed-size arrays have constant size and do not change during run time. The array size is set at compile time.\nSingle Dimension Array There are two ways in SystemVerilog to declare single-dimension arrays which are shown below:\nint arr1 [15:0]; // 16 elements with index from 0,1,...,15 verbose declaration int arr2 [16]; // 16 elements with index from 0,1,...,15 compact declaration Multidimensional Arrays Multidimensional arrays can be created by specifying the dimensions after the variable name.\nint array1 [7:0] [0:3]; // verbose declaration int array2 [8] [4]; // compact declaration The above instruction creates four arrays, each of 8 bits.\nSystemVerilog will return a default value for the array element that is read outside of the array bounds. If the array type is of 4-state type, the default value is “X” and if the array is 2-state type the default value is “0”. If a net is not driven, then the net value is “Z”.\nArray Initialization An array can be initialized using an apostrophe followed by curly braces.\narray1 = '{4,3,2,1,0}; // assign the array array2 = '{default:2}; // all the elements in the array are set to 2 Fixed-Size Array example is shown below:\nmodule tb_arrays(); int arr1 [3:0]; int arr2 [2][4]; int arr3 [2][4][8]; initial begin arr1 = '{4,3,2,1}; arr2 = '{'{1,2,3,4},'{5,6,7,8}}; for(int i = 0; i \u003c 2; i = i+1)begin for(int j = 0; j \u003c 4; j = j+1)begin for(int k = 0; k \u003c 8; k = k+1)begin arr3[i][j][k] = (32 * i) + (8 * j) + k; end end end $display(\"-------------- Array 1 --------------\"); foreach(arr1[i]) $display(\"\\t arr1[%0d] = %0d \", i, arr1[i]); $display(\"-------------- Array 2 --------------\"); foreach(arr2[i,j]) $display(\"\\t arr2[%0d][%0d] = %0d \", i, j, arr2[i][j]); $display(\"-------------- Array 3 --------------\"); foreach(arr3[i,j,k]) $display(\"\\t arr3[%0d][%0d][%0d] = %0d \", i, j, k, arr3[i][j][k]); end // initial begin endmodule Execute the example in EDA Playground\n",
+  "wordCount" : "345",
   "inLanguage": "en",
   "datePublished": "2024-06-29T23:25:00-04:00",
   "dateModified": "2024-06-29T23:25:00-04:00",
@@ -177,11 +177,11 @@ Single Dimension Array There are two ways in SystemVerilog to declare single-dim
     <h1 class="post-title entry-hint-parent">
       Fixed-Size Arrays
     </h1>
-    <div class="post-meta"><span title='2024-06-29 23:25:00 -0400 EDT'>June 29, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;349 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-06-29 23:25:00 -0400 EDT'>June 29, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;345 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
-  <div class="post-content"><p>[Design] &ndash; [Testbench] &ndash; <a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
+  <div class="post-content"><p><a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
 <h2 id="fixed-size-arrays">Fixed-Size Arrays<a hidden class="anchor" aria-hidden="true" href="#fixed-size-arrays">#</a></h2>
 <p>An array is a collection of elements stored sequentially. An array in Verilog should be declared with upper and lower bounds. The lower bound in most of the arrays is zero. Fixed-size arrays have constant size and do not change during run time. The array size is set at compile time.</p>
 <h3 id="single-dimension-array">Single Dimension Array<a hidden class="anchor" aria-hidden="true" href="#single-dimension-array">#</a></h3>

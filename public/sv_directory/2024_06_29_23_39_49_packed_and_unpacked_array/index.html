@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Packed and Unpacked Array | Home</title>
 <meta name="keywords" content="sv">
-<meta name="description" content="[Design] &ndash; [Testbench] &ndash; SV Verification Directory
+<meta name="description" content="SV Verification Directory
 Packed and Unpacked Array Packed and unpacked arrays are differentiated based on the way the arrays are stored in the memory. Generally, simulators store each element on a 32-bit word boundary. In a packed array, the elements are stored in contiguous memory locations whereas in an unpacked array, the elements are not stored in contiguous memory locations.
 Packed Array A packed array can be declared by declaring the dimension before the identifier name shown below:">
 <meta name="author" content="Kiran">
@@ -33,7 +33,7 @@ Packed Array A packed array can be declared by declaring the dimension before th
 <link rel="stylesheet" href="../../zcustom.css">
 
 <meta property="og:title" content="Packed and Unpacked Array" />
-<meta property="og:description" content="[Design] &ndash; [Testbench] &ndash; SV Verification Directory
+<meta property="og:description" content="SV Verification Directory
 Packed and Unpacked Array Packed and unpacked arrays are differentiated based on the way the arrays are stored in the memory. Generally, simulators store each element on a 32-bit word boundary. In a packed array, the elements are stored in contiguous memory locations whereas in an unpacked array, the elements are not stored in contiguous memory locations.
 Packed Array A packed array can be declared by declaring the dimension before the identifier name shown below:" />
 <meta property="og:type" content="article" />
@@ -43,7 +43,7 @@ Packed Array A packed array can be declared by declaring the dimension before th
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Packed and Unpacked Array"/>
-<meta name="twitter:description" content="[Design] &ndash; [Testbench] &ndash; SV Verification Directory
+<meta name="twitter:description" content="SV Verification Directory
 Packed and Unpacked Array Packed and unpacked arrays are differentiated based on the way the arrays are stored in the memory. Generally, simulators store each element on a 32-bit word boundary. In a packed array, the elements are stored in contiguous memory locations whereas in an unpacked array, the elements are not stored in contiguous memory locations.
 Packed Array A packed array can be declared by declaring the dimension before the identifier name shown below:"/>
 
@@ -74,12 +74,12 @@ Packed Array A packed array can be declared by declaring the dimension before th
   "@type": "BlogPosting",
   "headline": "Packed and Unpacked Array",
   "name": "Packed and Unpacked Array",
-  "description": "[Design] \u0026ndash; [Testbench] \u0026ndash; SV Verification Directory\nPacked and Unpacked Array Packed and unpacked arrays are differentiated based on the way the arrays are stored in the memory. Generally, simulators store each element on a 32-bit word boundary. In a packed array, the elements are stored in contiguous memory locations whereas in an unpacked array, the elements are not stored in contiguous memory locations.\nPacked Array A packed array can be declared by declaring the dimension before the identifier name shown below:",
+  "description": "SV Verification Directory\nPacked and Unpacked Array Packed and unpacked arrays are differentiated based on the way the arrays are stored in the memory. Generally, simulators store each element on a 32-bit word boundary. In a packed array, the elements are stored in contiguous memory locations whereas in an unpacked array, the elements are not stored in contiguous memory locations.\nPacked Array A packed array can be declared by declaring the dimension before the identifier name shown below:",
   "keywords": [
     "sv"
   ],
-  "articleBody": "[Design] – [Testbench] – SV Verification Directory\nPacked and Unpacked Array Packed and unpacked arrays are differentiated based on the way the arrays are stored in the memory. Generally, simulators store each element on a 32-bit word boundary. In a packed array, the elements are stored in contiguous memory locations whereas in an unpacked array, the elements are not stored in contiguous memory locations.\nPacked Array A packed array can be declared by declaring the dimension before the identifier name shown below:\nlogic [3:0][7:0] arr_packed; Figure 1: Packed Array\nUnpacked Array An unpacked array is declared when the identifier name is in between the dimensions of the array as shown below:\nlogic [3:0] arr_unpacked [3]; Figure 2: Unpacked Array\nMixed arrays, consisting of packed/unpacked arrays can be declared. When reading a value from an array always read from left to right, eg. array [1st position] [2nd position] [3rd position].\n1st position: indicates the complete 32-bit array location in memory. 2nd position: indicates the byte/8-bits from the 32-bit array. 3rd position: indicates the bit location in the array. To access a bit all the positions must be declared, to access a byte of memory from the array 1st and 2nd positions must be declared, and to access the complete 32-bit of the memory location only the 1st position can be declared.\nChoosing Between Packed and Unpacked Arrays Packed Array When modeling data types that directly map to hardware, such as vectors, signals, and registers. When accessing memory as a byte, a word, or a bit. When a change in an array occurs at “@”. This is only legal with scalar values and packed arrays. Unpacked Array When you need to model multi-dimensional arrays or complex types like structs and classes, etc. Accessing elements is straightforward. Flexibility to access words, bytes, or bits is not required. Packed and Unpacked array initialization and manipulation are shown below:\nmodule packed_and_unpacked (); logic [3:0][7:0] arr_packed; logic [3:0] arr_unpacked [4]; initial begin arr_packed = '{8'h87, 8'h65, 8'h43,8'h21}; arr_unpacked = '{4'h1, 4'h2, 4'h3, 4'h4}; $display(\"-------------- packed Array --------------\"); foreach(arr_packed[i]) $display(\"arr_packed[%0d] = %0h\", i, arr_packed[i]); $display(\"-------------- Unpacked Array --------------\"); foreach(arr_unpacked[i]) $display(\"arr_unpacked[%0d] = %0d\", i, arr_unpacked[i]); end endmodule Execute the example in EDA Playground\n",
-  "wordCount" : "365",
+  "articleBody": "SV Verification Directory\nPacked and Unpacked Array Packed and unpacked arrays are differentiated based on the way the arrays are stored in the memory. Generally, simulators store each element on a 32-bit word boundary. In a packed array, the elements are stored in contiguous memory locations whereas in an unpacked array, the elements are not stored in contiguous memory locations.\nPacked Array A packed array can be declared by declaring the dimension before the identifier name shown below:\nlogic [3:0][7:0] arr_packed; Figure 1: Packed Array\nUnpacked Array An unpacked array is declared when the identifier name is in between the dimensions of the array as shown below:\nlogic [3:0] arr_unpacked [3]; Figure 2: Unpacked Array\nMixed arrays, consisting of packed/unpacked arrays can be declared. When reading a value from an array always read from left to right, eg. array [1st position] [2nd position] [3rd position].\n1st position: indicates the complete 32-bit array location in memory. 2nd position: indicates the byte/8-bits from the 32-bit array. 3rd position: indicates the bit location in the array. To access a bit all the positions must be declared, to access a byte of memory from the array 1st and 2nd positions must be declared, and to access the complete 32-bit of the memory location only the 1st position can be declared.\nChoosing Between Packed and Unpacked Arrays Packed Array When modeling data types that directly map to hardware, such as vectors, signals, and registers. When accessing memory as a byte, a word, or a bit. When a change in an array occurs at “@”. This is only legal with scalar values and packed arrays. Unpacked Array When you need to model multi-dimensional arrays or complex types like structs and classes, etc. Accessing elements is straightforward. Flexibility to access words, bytes, or bits is not required. Packed and Unpacked array initialization and manipulation are shown below:\nmodule packed_and_unpacked (); logic [3:0][7:0] arr_packed; logic [3:0] arr_unpacked [4]; initial begin arr_packed = '{8'h87, 8'h65, 8'h43,8'h21}; arr_unpacked = '{4'h1, 4'h2, 4'h3, 4'h4}; $display(\"-------------- packed Array --------------\"); foreach(arr_packed[i]) $display(\"arr_packed[%0d] = %0h\", i, arr_packed[i]); $display(\"-------------- Unpacked Array --------------\"); foreach(arr_unpacked[i]) $display(\"arr_unpacked[%0d] = %0d\", i, arr_unpacked[i]); end endmodule Execute the example in EDA Playground\n",
+  "wordCount" : "361",
   "inLanguage": "en",
   "datePublished": "2024-06-29T23:39:00-04:00",
   "dateModified": "2024-06-29T23:39:00-04:00",
@@ -177,11 +177,11 @@ Packed Array A packed array can be declared by declaring the dimension before th
     <h1 class="post-title entry-hint-parent">
       Packed and Unpacked Array
     </h1>
-    <div class="post-meta"><span title='2024-06-29 23:39:00 -0400 EDT'>June 29, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;365 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-06-29 23:39:00 -0400 EDT'>June 29, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;361 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
-  <div class="post-content"><p>[Design] &ndash; [Testbench] &ndash; <a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
+  <div class="post-content"><p><a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
 <h2 id="packed-and-unpacked-array">Packed and Unpacked Array<a hidden class="anchor" aria-hidden="true" href="#packed-and-unpacked-array">#</a></h2>
 <p>Packed and unpacked arrays are differentiated based on the way the arrays are stored in the memory. Generally, simulators store each element on a 32-bit word boundary. In a packed array, the elements are stored in contiguous memory locations whereas in an unpacked array, the elements are not stored in contiguous memory locations.</p>
 <h3 id="packed-array">Packed Array<a hidden class="anchor" aria-hidden="true" href="#packed-array">#</a></h3>
