@@ -56,7 +56,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 8.  [Adder-Subtractor]({{< relref "2024_07_06_16_50_01_adder_subtractor.md" >}})
 9.  [Register]({{< relref "2024_07_06_19_23_36_register.md" >}})
 10. [Shift Register]({{< relref "2024_07_06_19_54_50_shift_register.md" >}})
-11. Universal Shift Register
+11. [Universal Shift Register]({{< relref "2024_07_10_20_30_35_universal_shift_register.md" >}})
 12. Up/Down Counter
 13. Sequence Detector
 

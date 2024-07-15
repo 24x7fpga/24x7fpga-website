@@ -6,8 +6,17 @@
     <description>Recent content in Rtl_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jul 2024 19:54:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jul 2024 20:30:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/rtl_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Universal Shift Register</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_07_10_20_30_35_universal_shift_register/</link>
+      <pubDate>Wed, 10 Jul 2024 20:30:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_07_10_20_30_35_universal_shift_register/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Universal Shift Register: An Overview A universal shift register is a digital component that performs more than one data operation. It combines the functionalities of several types of shift registers into one, allowing for greater flexibility in data handling.
+Design: 4-bit Universal Shift Register The figure below shows a design of a 4-bit universal shift register. It is an extension of a Shift Register which includes a series of Multiplexer which acts as switch to change the functionality of the register.</description>
+    </item>
     <item>
       <title>Shift Register</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_06_19_54_50_shift_register/</link>
