@@ -34,6 +34,7 @@ theme = "hugo-PaperMod"
   hideSummary= true
   showtoc= false
   tocopen= false
+  enableEmoji = true
   
  
  [params.Singlefooter]
@@ -99,6 +100,13 @@ theme = "hugo-PaperMod"
     url        = "sv_directory/2024_06_27_16_53_00_sv_verification_directory" 
     weight     = 40
 
+    [[menu.main]]
+    identifier = "tags"
+    #name       = "tags"
+    pre        = "tags"
+    #post       = "<i class='fas fa-tag' aria-hidden='true'></i>" #<i class='fas fa-tags fa-fw'></i>
+    url        = "tags/" 
+    weight     = 50
 
 
 

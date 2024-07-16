@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Articles on Home</title>
+    <link>https://24x7fpga.com/article/</link>
+    <description>Recent content in Articles on Home</description>
+    <generator>Hugo -- 0.121.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Jun 2024 16:45:00 -0400</lastBuildDate>
+    <atom:link href="https://24x7fpga.com/article/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Case Study on Effective Pipeline Design in Digital Systems</title>
+      <link>https://24x7fpga.com/article/2024_06_18_16_45_29_a_case_study_on_effective_pipeline_design_in_digital_systems/</link>
+      <pubDate>Tue, 18 Jun 2024 16:45:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/article/2024_06_18_16_45_29_a_case_study_on_effective_pipeline_design_in_digital_systems/</guid>
+      <description>Throughput and latency are fundamental concepts in moderm digital system. Throughput refers to the time the system takes to process the data per clock cycle where latency refers to the time it takes for the data to travese from one location to another to complete an operation. High throughput and low latency are essentail for today&amp;rsquo;s fast-paced digital world. For example, higher throughput ensure smooth and uninterrupted audio and video streaming and low latency provides seamless and responsive gaming experience reducing lag.</description>
+    </item>
+  </channel>
+</rss>

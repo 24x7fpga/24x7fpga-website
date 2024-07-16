@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sv_directories on Home</title>
+    <link>https://24x7fpga.com/sv_directory/</link>
+    <description>Recent content in Sv_directories on Home</description>
+    <generator>Hugo -- 0.121.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Jul 2024 18:41:00 -0400</lastBuildDate>
+    <atom:link href="https://24x7fpga.com/sv_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dynamic Cast</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/</link>
+      <pubDate>Tue, 02 Jul 2024 18:41:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/</guid>
+      <description>SV Verification Directory
+Dynamic Cast The dynamic cast, $cast, allows you to check for out-of-bounds values. Use dynamic cast when converting from a type with a large number of values than the destination, such as int to en enumerated variables.</description>
+    </item>
+    <item>
+      <title>Static Cast</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/</link>
+      <pubDate>Tue, 02 Jul 2024 18:32:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/</guid>
+      <description>SV Verification Directory
+Static Cast The static cast operation converts between two types with no checking of values. Specify the destination type, an apostrophe, and the expression to be converted as shown below:
+int i; real r; i = int &amp;#39;(75.0); r = real &amp;#39;(75); </description>
+    </item>
+    <item>
+      <title>Structures</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_02_16_54_49_structures/</link>
+      <pubDate>Tue, 02 Jul 2024 16:54:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_02_16_54_49_structures/</guid>
+      <description>SV Verification Directory
+Structure One of the biggest limitations of Verilog is the lack of data structures. In SystemVerilog, you can create a structure using the struct statement. A structure is a collection of data that can be synthesized.
+Example of struct:
+struct {logic [7:0] data_a, data_b, data_c;} data_s; data_s in_data; NOTE: By default a structure is unpacked.
+Typedef for Struct To create multiple structure variables it is necessary to use typedef data type.</description>
+    </item>
+    <item>
+      <title>Enumeration</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_02_15_05_30_enumeration/</link>
+      <pubDate>Tue, 02 Jul 2024 15:05:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_02_15_05_30_enumeration/</guid>
+      <description>SV Verification Directory
+Enumeration In Verilog, it is possible to declare user-defined types using a define macro, shown below:
+`define TYPE1 8 `define TYPE2 32 This does not create a new type but just performance text substitution. In SystemVerilog, a new type can be created with the following code:
+typedef logic [Size-1:0] VAR_T; VAR_T var1, var2; The typedef and parameter statements can be put in a package so they can be shared across the design and testbench.</description>
+    </item>
+    <item>
+      <title>Array Methods</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_02_09_48_08_array_methods/</link>
+      <pubDate>Tue, 02 Jul 2024 09:48:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_02_09_48_08_array_methods/</guid>
+      <description>SV Verification Directory
+Array Methods Array methods are generic manipulation methods that apply to the entire array rather than iterating to every element in the array.
+Basic Array Operations Copy: an array can be copied completely to another array without using a loop statement. Compare: two arrays can be compared for equality and inequality. Keep in mind that two arrays that are being compared or copied must be of the same base type and size.</description>
+    </item>
+    <item>
+      <title>Associative Arrays</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_02_00_18_56_associative_arrays/</link>
+      <pubDate>Tue, 02 Jul 2024 00:18:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_02_00_18_56_associative_arrays/</guid>
+      <description>SV Verification Directory
+Associative Arrays Associative arrays in SystemVerilog allow you to index arrays with arbitrary data types. An associative array can be stored by the simulator as a tree or a hash table. An associative array is declared with a data type in square brackets. Only the elements that are explicitly assigned are stored, making it memory-efficient for sparse arrays.
+Example of associative arrays in SV is shown below:</description>
+    </item>
+    <item>
+      <title>Queues</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_01_23_35_47_queues/</link>
+      <pubDate>Mon, 01 Jul 2024 23:35:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_01_23_35_47_queues/</guid>
+      <description>SV Verification Directory
+Queues Queue is a new data type introduced in SystemVerilog that combines the best of a linked list and an array.
+Like a linked list, elements can be added and removed anywhere in the queue, without performance degradation when using a dynamic array that has to allocate a new array and copy the entire contents. Like an array, any element in the queue can be directly accessed with the help of the index, without the linked list&amp;rsquo;s overhead of stepping through the preceding element.</description>
+    </item>
+    <item>
+      <title>Dynamic Arrays</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</link>
+      <pubDate>Mon, 01 Jul 2024 15:56:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</guid>
+      <description>SV Verification Directory
+Dymanic Arrays Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declare with empty word subscripts &amp;ldquo;[ ]&amp;rdquo;. The array is initially empty and must be called with the &amp;ldquo;new[ ]&amp;rdquo; constuctor to allocate space, passing in the number of entries in the square brackets.</description>
+    </item>
+    <item>
+      <title>Packed and Unpacked Array</title>
+      <link>https://24x7fpga.com/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</link>
+      <pubDate>Sat, 29 Jun 2024 23:39:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</guid>
+      <description>SV Verification Directory
+Packed and Unpacked Array Packed and unpacked arrays are differentiated based on the way the arrays are stored in the memory. Generally, simulators store each element on a 32-bit word boundary. In a packed array, the elements are stored in contiguous memory locations whereas in an unpacked array, the elements are not stored in contiguous memory locations.
+Packed Array A packed array can be declared by declaring the dimension before the identifier name shown below:</description>
+    </item>
+    <item>
+      <title>Fixed-Size Arrays</title>
+      <link>https://24x7fpga.com/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/</link>
+      <pubDate>Sat, 29 Jun 2024 23:25:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/</guid>
+      <description>SV Verification Directory
+Fixed-Size Arrays An array is a collection of elements stored sequentially. An array in Verilog should be declared with upper and lower bounds. The lower bound in most of the arrays is zero. Fixed-size arrays have constant size and do not change during run time. The array size is set at compile time.
+Single Dimension Array There are two ways in SystemVerilog to declare single-dimension arrays which are shown below:</description>
+    </item>
+    <item>
+      <title>Logic Type</title>
+      <link>https://24x7fpga.com/sv_directory/2024_06_28_14_48_33_logic_type/</link>
+      <pubDate>Fri, 28 Jun 2024 14:48:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_06_28_14_48_33_logic_type/</guid>
+      <description>SV Verification Directory
+Logic Type Data Types SystemVerilog includes all the data types that are available with Verilog and add many new data types to help both hardware design engineers and verification engineers. Below is a table showing an extensive list of data types availabe in SystemVerilog.
+Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVerilog/Verilog Wire 4 &amp;gt;=1 Unsigned - SystemVerilog/Verilog Reg 4 &amp;gt;=1 Unsigned - SystemVerilog/Verilog Interger 4 32 Signed - SystemVerilog/Verilog Real 2 Double Precision Floating point Double SystemVerilog/Verilog Time 4 64 Unsigned - SystemVerilog Logic 4 &amp;gt;=1 unsigned - SystemVerilog Bit 2 &amp;gt;=1 unsigned - SystemVerilog Byte 2 8 Signed Char SystemVerilog Int 2 32 Signed Int SystemVerilog Shortint 2 16 Signed Short Int SystemVerilog Longint 2 64 Signed Long Int Note: signed variables can cause unexpected results with randomization.</description>
+    </item>
+    <item>
+      <title>SV Verification Directory</title>
+      <link>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</link>
+      <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
+      <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
+Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For Loop and Foreach Do While Loop Repeat and Forever Break and Continue Event </description>
+    </item>
+  </channel>
+</rss>
