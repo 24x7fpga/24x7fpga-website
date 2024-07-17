@@ -6,8 +6,17 @@
     <description>Recent content in Rtl_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jul 2024 20:30:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jul 2024 22:30:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/rtl_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Up/Down Counter</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_07_16_22_30_28_up_down_counter/</link>
+      <pubDate>Tue, 16 Jul 2024 22:30:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_07_16_22_30_28_up_down_counter/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Up/Down Counter: An Overview An up/down counter, also known as a bidirectional counter, is a sequential digital circuit that can count in ascending or descending order of the number system in binary. The control signal dictates the direction of the counter.
+Design: 4-bit Up/Down Counter A 4-bit up/down counter counts from 0000 -&amp;gt; 1111, once the counter reaches its highest values it starts again from 0000.</description>
+    </item>
     <item>
       <title>Universal Shift Register</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_10_20_30_35_universal_shift_register/</link>
