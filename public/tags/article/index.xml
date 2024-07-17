@@ -13,7 +13,7 @@
       <link>https://24x7fpga.com/article/2024_07_17_09_17_26_credit_based_flow_control/</link>
       <pubDate>Wed, 17 Jul 2024 09:17:00 -0400</pubDate>
       <guid>https://24x7fpga.com/article/2024_07_17_09_17_26_credit_based_flow_control/</guid>
-      <description>Flow control is a crucial synchronization technique for data transmission. It ensures the efficient flow of data between the transmitter and receiver by maintaining a balance between the data production rate of the sender and the data consumption rate of the receiver. The data that is being transmitted is buffered to maintain the balance between the transmitter and receiver. The control mechanism holds the intermediate data in the buffers until the receiver is ready to process the data.</description>
+      <description>Flow control is a crucial synchronization technique for data transmission. It ensures the efficient flow of data between the transmitter and the receiver by maintaining a balance between the data production rate of the sender and the data consumption rate of the receiver. The data that is being transmitted is buffered to maintain the balance between the transmitter and the receiver. The control mechanism holds the intermediate data in the buffer until the receiver is ready to process the data.</description>
     </item>
     <item>
       <title>A Case Study on Effective Pipeline Design in Digital Systems</title>
