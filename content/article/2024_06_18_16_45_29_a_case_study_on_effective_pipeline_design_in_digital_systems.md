@@ -1,11 +1,13 @@
 +++
 title = "A Case Study on Effective Pipeline Design in Digital Systems"
-author = ["kiran"]
+author = ["Kiran"]
 date = 2024-06-18T16:45:00-04:00
 tags = ["article"]
 draft = false
 css = "../../zcustom.css"
 +++
+
+[Published Article](https://verilog-meetup.com/2024/06/20/a-case-study-on-effective-pipeline-design-in-digital-system/)
 
 Throughput and latency are fundamental concepts in moderm digital system. Throughput refers to the time the system takes to process the data per clock cycle where latency refers to the time it takes for the data to travese from one location to another to complete an operation. High throughput and low latency are essentail for today's fast-paced digital world. For example, higher throughput ensure smooth and uninterrupted audio and video streaming and low latency provides seamless and responsive gaming experience reducing lag. It is necessary to strike a balance between high throughput and low latency. By processing more data simultaneously, you can boost throughput, but only if the system can handle the additional load. Therefore, digital designers need to find the right balance depending on the specific requirement for the system. The two most commonly implemented statergies to improve throughput is pipeling and parallel processing.
 
@@ -26,16 +28,18 @@ Two fundamental control signals, "valid/ready", play a critical role in managing
 
 <a id="figure--Figure 1: Pipeline Stage with Valid-Ready Signals"></a>
 
-{{< figure src="/ox-hugo/Pipeline2.svg" caption="<span class=\"figure-number\">Figure 1: </span>Pipeline Stage with Valid/Ready Signals" >}}
+{{< figure src="/ox-hugo/Pipeline2.svg" caption="<span class=\"figure-number\">Figure 1: </span>Pipeline Stage with Valid/Ready Signals" class="center !important" width="500px" >}}
 
 <a id="figure--Figure 2: Waveform depecting Valid-Ready Assertions"></a>
 
-{{< figure src="/ox-hugo/vld_rdy.svg" caption="<span class=\"figure-number\">Figure 2: </span>Valid/Ready Assertions" >}}
+{{< figure src="/ox-hugo/vld_rdy.svg" caption="<span class=\"figure-number\">Figure 2: </span>Valid/Ready Assertions" class="center !important" >}}
 
 
 ## Pipeline with Upstream and Downstream Signals {#pipeline-with-upstream-and-downstream-signals}
 
-{{< figure src="/ox-hugo/Pipeline.svg" >}}
+<a id="figure--Figure 3: Pipeline stage"></a>
+
+{{< figure src="/ox-hugo/Pipeline.svg" caption="<span class=\"figure-number\">Figure 3: </span>Pipeline stage with Valid and Read signals" class="center !important" width="800px" >}}
 
 When designing a pipeline stage is necessary to define an understanding nomenclature to aviod any confusion. Generally, inputs to the pipeline stage are referred to as upstream signals and the outputs from the pipeline stage are called downstream signals. For the purposes of simplicity, since the data flows is from input to output (left to right), all the signals to the left of the pipeline stage is labled with a suffix "up_" and the all the signals to the right of the pipeline stage is labeled with a suffix "dwn_". The two control signals valid and ready are labeled as "vld" and "rdy" respectively.
 
@@ -72,7 +76,7 @@ The entire pipeline is halted or stalled when a global stall occurs. The data do
 
 <a id="figure--Figure 4: Global Stall"></a>
 
-{{< figure src="/ox-hugo/Global_Stall.svg" caption="<span class=\"figure-number\">Figure 3: </span>GLobal Stall Logic" >}}
+{{< figure src="/ox-hugo/Global_Stall.svg" caption="<span class=\"figure-number\">Figure 4: </span>GLobal Stall Logic" class="center !important" width="350px" >}}
 
 
 ### Half-Performance Buffer {#half-performance-buffer}
@@ -81,7 +85,7 @@ Half performance buffer or more generally know as the Half rate buffer, where ea
 
 <a id="figure--Figure 5: Half-performance buffer"></a>
 
-{{< figure src="/ox-hugo/Half_Performance_Buffer.svg" caption="<span class=\"figure-number\">Figure 4: </span>Half-Performance Buffer" >}}
+{{< figure src="/ox-hugo/Half_Performance_Buffer.svg" caption="<span class=\"figure-number\">Figure 5: </span>Half-Performance Buffer" class="center !important" width="400px" >}}
 
 
 ### Skid Buffer {#skid-buffer}
@@ -90,12 +94,16 @@ Skid buffer also know as double buffer is a technique used in pipeline design wh
 
 <a id="figure--Figure 6: Skid Buffer"></a>
 
-{{< figure src="/ox-hugo/Skid_Buffer.svg" caption="<span class=\"figure-number\">Figure 5: </span>Skid Buffer" >}}
+{{< figure src="/ox-hugo/Skid_Buffer.svg" caption="<span class=\"figure-number\">Figure 6: </span>Skid Buffer" class="center !important" width="500px" >}}
 
 
 ### Two-depth FIFO {#two-depth-fifo}
 
 Two-depth FIFO is a simple FIFO with only two depths. If there is a stall then the second storage location in FIFO is used to store data.
+
+<a id="figure--Figure 7: 2-Depth FIFO"></a>
+
+{{< figure src="/ox-hugo/2_depth_FIFO.svg" caption="<span class=\"figure-number\">Figure 7: </span>2-Depth FIFO" class="center !important" width="375px" >}}
 
 
 ## Design Example {#design-example}
@@ -104,13 +112,13 @@ Let's consider the design example sqrt(A + sqrt(b + sqrt(c))) from [paper](). Th
 
 <a id="figure--Figure 7: Waveform of the Square Root Design"></a>
 
-{{< figure src="/ox-hugo/waveform1.svg" caption="<span class=\"figure-number\">Figure 6: </span>N stage pipelined squre root design" >}}
+{{< figure src="/ox-hugo/waveform1.svg" caption="<span class=\"figure-number\">Figure 8: </span>N stage pipelined squre root design" >}}
 
 The source code for the squre root module can be found [here](). Using this square root module to implement the pipelined sqrt(A + sqrt(B + sqrt(C))) requires the designer to carefully align the data so that there is no data loss. It is necessary to ensure the data is aligned by adding buffers to correctly perform the operation. The figure 8, shows the design with pipeline stages and the appropriate valid/ready signals at each block.
 
 <a id="figure--Figure 8: Example Design"></a>
 
-{{< figure src="/ox-hugo/pipeline_example.svg" caption="<span class=\"figure-number\">Figure 7: </span>Example Design" >}}
+{{< figure src="/ox-hugo/pipeline_example.svg" caption="<span class=\"figure-number\">Figure 9: </span>Example Design" >}}
 
 Assuming the square root block takes N clock cycles to produce the result, the buffers to align the data on the B line should have depth of N stages. Similary, on the A line the buffer stage should of depth 2\*n+1, 2\*n corresponds to two square root block and 1 corresponds to the pipeline stage between the two square root block. These buffer stages can de design using one of the four buffers described before. One of the simplest way to align the data coming from the square root block and the buffer block is to use shift register with N depth stage and 2\*N+1 deep stages. As long as N is minimum the you can get away with simple shift registers. What if the design is large and N is large? In such cases it is not advisble to use shift registers. A N-depth FIFO is more suitable is such senarios. The above example with N=4 stages is implemented with a FIFO to align the data and the perfomance of the system is tabulated below:
 

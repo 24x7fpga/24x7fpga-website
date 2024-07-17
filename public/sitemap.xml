@@ -2,16 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://24x7fpga.com/tags/article/</loc>
+    <lastmod>2024-07-17T09:17:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/article/</loc>
+    <lastmod>2024-07-17T09:17:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/article/2024_07_17_09_17_26_credit_based_flow_control/</loc>
+    <lastmod>2024-07-17T09:17:00-04:00</lastmod>
+  </url><url>
     <loc>https://24x7fpga.com/</loc>
-    <lastmod>2024-07-16T22:30:00-04:00</lastmod>
+    <lastmod>2024-07-17T09:17:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/</loc>
+    <lastmod>2024-07-17T09:17:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/tags/rtl/</loc>
     <lastmod>2024-07-16T22:30:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/rtl_directory/</loc>
-    <lastmod>2024-07-16T22:30:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/tags/</loc>
     <lastmod>2024-07-16T22:30:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/rtl_directory/2024_07_16_22_30_28_up_down_counter/</loc>
@@ -90,12 +99,6 @@
     <lastmod>2024-06-23T20:40:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/article/2024_06_18_16_45_29_a_case_study_on_effective_pipeline_design_in_digital_systems/</loc>
-    <lastmod>2024-06-18T16:45:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/tags/article/</loc>
-    <lastmod>2024-06-18T16:45:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/article/</loc>
     <lastmod>2024-06-18T16:45:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/rtl_directory/2024_06_14_22_07_44_de_multiplexer/</loc>

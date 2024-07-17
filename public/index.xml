@@ -6,8 +6,15 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Jul 2024 22:30:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jul 2024 09:17:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Credit-Based Flow Control</title>
+      <link>https://24x7fpga.com/article/2024_07_17_09_17_26_credit_based_flow_control/</link>
+      <pubDate>Wed, 17 Jul 2024 09:17:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/article/2024_07_17_09_17_26_credit_based_flow_control/</guid>
+      <description>Flow control is a crucial synchronization technique for data transmission. It ensures the efficient flow of data between the transmitter and receiver by maintaining a balance between the data production rate of the sender and the data consumption rate of the receiver. The data that is being transmitted is buffered to maintain the balance between the transmitter and receiver. The control mechanism holds the intermediate data in the buffers until the receiver is ready to process the data.</description>
+    </item>
     <item>
       <title>Up/Down Counter</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_16_22_30_28_up_down_counter/</link>
@@ -203,7 +210,8 @@ Design: 4-to-2 Encoder A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 
       <link>https://24x7fpga.com/article/2024_06_18_16_45_29_a_case_study_on_effective_pipeline_design_in_digital_systems/</link>
       <pubDate>Tue, 18 Jun 2024 16:45:00 -0400</pubDate>
       <guid>https://24x7fpga.com/article/2024_06_18_16_45_29_a_case_study_on_effective_pipeline_design_in_digital_systems/</guid>
-      <description>Throughput and latency are fundamental concepts in moderm digital system. Throughput refers to the time the system takes to process the data per clock cycle where latency refers to the time it takes for the data to travese from one location to another to complete an operation. High throughput and low latency are essentail for today&amp;rsquo;s fast-paced digital world. For example, higher throughput ensure smooth and uninterrupted audio and video streaming and low latency provides seamless and responsive gaming experience reducing lag.</description>
+      <description>Published Article
+Throughput and latency are fundamental concepts in moderm digital system. Throughput refers to the time the system takes to process the data per clock cycle where latency refers to the time it takes for the data to travese from one location to another to complete an operation. High throughput and low latency are essentail for today&amp;rsquo;s fast-paced digital world. For example, higher throughput ensure smooth and uninterrupted audio and video streaming and low latency provides seamless and responsive gaming experience reducing lag.</description>
     </item>
     <item>
       <title>De-Multiplexer</title>

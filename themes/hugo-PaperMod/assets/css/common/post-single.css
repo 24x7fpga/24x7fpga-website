@@ -492,7 +492,8 @@ img {
     border-radius: 25px;
     margin-left: 15px;
     float: left; 
-    border: 1.492px inset; /* This is default border style for <hr> tag */
+    background-color: rgb(196, 26, 26);
+    border: 1.492px solid; /* This is default border style for <hr> tag */
     
 }
 
