@@ -6,8 +6,17 @@
     <description>Recent content in Rtl_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Jul 2024 21:58:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jul 2024 23:30:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/rtl_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mod-N Counter</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_07_18_23_30_22_mod_n_counter/</link>
+      <pubDate>Thu, 18 Jul 2024 23:30:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_07_18_23_30_22_mod_n_counter/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Mod-N Counter: An Overview A modulo-N counter (Mod-N) is counter that counts from 0 to N-1 and then wraps back to 0. This type of counter is useful in [Frequency Divider], timers and state machines. The number of flop-flop required to calculate a mod-N counter is ceil(log2(N)). Forexample: for a mod 10 counter the number of flip-flop required is 4 (ceil(log2(10))).
+Verilog Code: Mod-N Counter module mod_cntr #(parameter N = 4)(/*AUTOARG*/ // Outputs mod_cntr, // Inputs clk, rst ); // Outputs output [N-1:0] mod_cntr; // Inputs input	clk; input	rst; logic [$clog2(N)-1:0] cntr_reg, cntr_nxt; /*AUTOREG*/ /*AUTOWIRE*/ always_ff@(posedge clk) if(rst) cntr_reg &amp;lt;= 0; else cntr_reg &amp;lt;= cntr_nxt; always_comb cntr_nxt = (cntr_reg == N-1) ?</description>
+    </item>
     <item>
       <title>Code Converter</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_18_21_58_46_code_converter/</link>

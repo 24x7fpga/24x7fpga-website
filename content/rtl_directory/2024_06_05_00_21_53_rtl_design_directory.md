@@ -59,7 +59,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 11. [Universal Shift Register]({{< relref "2024_07_10_20_30_35_universal_shift_register.md" >}})
 12. [Up/Down Counter]({{< relref "2024_07_16_22_30_28_up_down_counter.md" >}})
 13. [Code Converter]({{< relref "2024_07_18_21_58_46_code_converter.md" >}})
-14. Mod-N Counter
+14. [Mod-N Counter]({{< relref "2024_07_18_23_30_22_mod_n_counter.md" >}})
 15. Ring Counter
 16. Edge Detector
 17. Clock Divider
