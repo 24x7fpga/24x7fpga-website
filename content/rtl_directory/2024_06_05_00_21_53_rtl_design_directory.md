@@ -59,22 +59,13 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 11. [Universal Shift Register]({{< relref "2024_07_10_20_30_35_universal_shift_register.md" >}})
 12. [Up/Down Counter]({{< relref "2024_07_16_22_30_28_up_down_counter.md" >}})
 13. Sequence Detector
-
-
-## Design Examples {#design-examples}
-
-1.  Binary to Gray and Gray to Binary Converter
-2.  Mod-N Counter
-3.  Ring Counter
-4.  Edge Detector
-5.  Serial-In Parallel-Out(SIPO)
-6.  Parallel-In Serial-Out(PISO)
-7.  Linear Feedback Shift Register(LFSR)
-8.  Debounce Circuit
-9.  Signed Magnitude Adder
-10. Clock Divider
-11. RAM and ROM
-12. Timed FSM
+14. Code Converter
+15. Mod-N Counter
+16. Ring Counter
+17. Edge Detector
+18. Clock Divider
+19. Debounce Circuit
+20. Signed Magnitude Adder
 
 
 ## FIFO Design {#fifo-design}
