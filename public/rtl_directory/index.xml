@@ -6,8 +6,17 @@
     <description>Recent content in Rtl_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Jul 2024 22:30:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jul 2024 21:58:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/rtl_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Converter</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_07_18_21_58_46_code_converter/</link>
+      <pubDate>Thu, 18 Jul 2024 21:58:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_07_18_21_58_46_code_converter/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Code Converter: Binary to/from Gray Code Code converters are digital circuits that convert data from one form of binary representation to another. The two most important code converts are binary to gray and gray to binary. This converters are crucial digital components in designing [Aysnchronous FIFO].
+Binary Code Binary code is a data representation system using only two states, zero (0) and one (1).</description>
+    </item>
     <item>
       <title>Up/Down Counter</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_16_22_30_28_up_down_counter/</link>
