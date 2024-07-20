@@ -45,7 +45,7 @@ In the rapidly evolving world of digital design, verification is paramount to en
 
 ## Tasks and Functions {#tasks-and-functions}
 
-1.  Tasks
+1.  [Tasks]({{< relref "2024_07_19_15_48_23_tasks.md" >}})
 2.  Functions
 
 

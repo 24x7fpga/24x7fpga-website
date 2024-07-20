@@ -6,8 +6,17 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jul 2024 15:18:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2024 15:48:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tasks</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/</link>
+      <pubDate>Fri, 19 Jul 2024 15:48:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/</guid>
+      <description>SV Verification Directory
+Tasks Task in SystemVerilog is a procedural block that contains a block of code that can be reused. Unlike [Functions], tasks can contain simulation time. The default port direction is &amp;ldquo;input&amp;rdquo; unless declared as other types. The default data type of the ports is of &amp;ldquo;logic&amp;rdquo; type unless specified. A task does not need to have a &amp;ldquo;begin &amp;hellip; end&amp;rdquo; statement.
+Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the code endtask Example Code: Task module task_ex; logic [3:0] data; logic [3:0] arry[16]; task incr([3:0] in, output logic [3:0] out); out = in + 1; endtask initial begin data = 0; $display(&amp;#34;--------- Task: Increment ---------&amp;#34;); //$display(&amp;#34;data = %0d&amp;#34;, data); arry[0]= data; for(int i=0; i&amp;lt;15; i++)begin incr(arry[i], arry[i+1]); $display(&amp;#34;data = %0d&amp;#34;, arry[i+1]); #1; end end endmodule Execute the code in EDA Playground</description>
+    </item>
     <item>
       <title>Break and Continue</title>
       <link>https://24x7fpga.com/sv_directory/2024_07_19_15_18_41_break_and_continue/</link>
