@@ -60,8 +60,7 @@ In the rapidly evolving world of digital design, verification is paramount to en
 
 ## Classes {#classes}
 
-1.  OOP Terminology
-2.
+1.  Terminology
 
 
 ## Interprocess Communication {#interprocess-communication}
