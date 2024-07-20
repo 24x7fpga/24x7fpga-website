@@ -6,8 +6,44 @@
     <description>Recent content in Sv_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jul 2024 18:41:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2024 15:18:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/sv_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Break and Continue</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_19_15_18_41_break_and_continue/</link>
+      <pubDate>Fri, 19 Jul 2024 15:18:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_19_15_18_41_break_and_continue/</guid>
+      <description>SV Verification Directory
+Break and Continue Break and continue in SytemVerilog is used to control the loops. When a &amp;ldquo;break&amp;rdquo; statement is encounted, the loop is terminated and control moves to outside of the loop. Whereas, when a &amp;ldquo;continue&amp;rdquo; statement is encounted, the consecutive blocks of code is skipped and the control is moved to the next loop iteration value.
+Example Code: Break and Continue module break_and_continue; initial begin int i = 0; $display(&amp;#34;---------- Even Number ----------&amp;#34;); forever begin if(i % 2 == 0) begin $display(&amp;#34;%0d is an Even Number&amp;#34;, i); i = i + 1; continue; end else begin if(i &amp;gt; 20) break; end i = i + 1; #1; end end endmodule Execute the code in EDA Playground</description>
+    </item>
+    <item>
+      <title>Repeat and Forever</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_19_14_46_31_repeat_and_forever/</link>
+      <pubDate>Fri, 19 Jul 2024 14:46:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_19_14_46_31_repeat_and_forever/</guid>
+      <description>SV Verification Directory
+Repeat and Forever Loops The &amp;ldquo;repeat&amp;rdquo; and &amp;ldquo;forever&amp;rdquo; loops are another looping constructs available constructs in SystemVerilog, to execute a loop of code for a specific number of times or indefinitely. These loops are especially useful in testbenches and design verification when you need controlled or infinite iterations.
+Repeat The repeat loop executes a block of code a specified number of times. This loop is handy when you know the exact number of iterations required.</description>
+    </item>
+    <item>
+      <title>While and Do While Loops</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</link>
+      <pubDate>Fri, 19 Jul 2024 14:21:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</guid>
+      <description>SV Verification Directory
+While and Do While While and do while loops are used for iterative control structures that execute a block of code multiple times based on a condition. These loops are particularly useful when the number of iterations is not known beforehand and depends on the evaluation of the loop condition.
+While Loop The &amp;ldquo;while&amp;rdquo; loop executes a block code until the specified condition is true. The condition is evaluated before each iteration.</description>
+    </item>
+    <item>
+      <title>For and Foreach Loops</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</link>
+      <pubDate>Fri, 19 Jul 2024 12:40:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</guid>
+      <description>SV Verification Directory
+For and Foreach Loops Loops are essential constructs to repeat a block of code for a specified amount of time. SystemVerilog provides two constructs to itreate over a range of elements and they are &amp;ldquo;for&amp;rdquo; loop and &amp;ldquo;foreach&amp;rdquo; loop.
+For Loop Similar to other programming languages, the &amp;ldquo;for&amp;rdquo; loop in SystemVerilog repeats a block of code for a specified number of times. Ideal for controlled, indexed iterations where the number of iterations is known beforehand.</description>
+    </item>
     <item>
       <title>Dynamic Cast</title>
       <link>https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/</link>
@@ -114,7 +150,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For Loop and Foreach Do While Loop Repeat and Forever Break and Continue Event </description>
+Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork_Join Fork_Join_Any Fork_Join_None Wait_Fork Disable_Fork Classes OOP Terminology Interprocess Communication Mailbox Semaphore Events Randomization </description>
     </item>
   </channel>
 </rss>

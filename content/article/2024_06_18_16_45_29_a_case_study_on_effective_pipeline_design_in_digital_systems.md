@@ -122,11 +122,11 @@ The source code for the squre root module can be found [here](). Using this squa
 
 Assuming the square root block takes N clock cycles to produce the result, the buffers to align the data on the B line should have depth of N stages. Similary, on the A line the buffer stage should of depth 2\*n+1, 2\*n corresponds to two square root block and 1 corresponds to the pipeline stage between the two square root block. These buffer stages can de design using one of the four buffers described before. One of the simplest way to align the data coming from the square root block and the buffer block is to use shift register with N depth stage and 2\*N+1 deep stages. As long as N is minimum the you can get away with simple shift registers. What if the design is large and N is large? In such cases it is not advisble to use shift registers. A N-depth FIFO is more suitable is such senarios. The above example with N=4 stages is implemented with a FIFO to align the data and the perfomance of the system is tabulated below:
 
-| Buffer Type             | N | No. of tranactions | No. of cycles |
-|-------------------------|---|--------------------|---------------|
-| Global Stall            | 4 | 61                 | 726           |
-| Half-performance Buffer | 4 | 96                 | 726           |
-| Skid Buffer             | 4 | 127                | 726           |
-| 2-depth FIFO            | 4 | 168                | 726           |
+| Buffer Type             | N | No. of transactions | No. of cycles |
+|-------------------------|---|---------------------|---------------|
+| Global Stall            | 4 | 61                  | 726           |
+| Half-performance Buffer | 4 | 96                  | 726           |
+| Skid Buffer             | 4 | 127                 | 726           |
+| 2-depth FIFO            | 4 | 168                 | 726           |
 
 Note: when implementing a 2-depth FIFO design to achieve maximum perfomance the fifo buffer length must be double.

@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_19_15_18_41_break_and_continue/</loc>
+    <lastmod>2024-07-19T15:18:00-04:00</lastmod>
+  </url><url>
     <loc>https://24x7fpga.com/</loc>
-    <lastmod>2024-07-18T23:30:00-04:00</lastmod>
+    <lastmod>2024-07-19T15:18:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/sv/</loc>
+    <lastmod>2024-07-19T15:18:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/sv_directory/</loc>
+    <lastmod>2024-07-19T15:18:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/</loc>
+    <lastmod>2024-07-19T15:18:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_19_14_46_31_repeat_and_forever/</loc>
+    <lastmod>2024-07-19T14:46:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</loc>
+    <lastmod>2024-07-19T14:21:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</loc>
+    <lastmod>2024-07-19T12:40:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/rtl_directory/2024_07_18_23_30_22_mod_n_counter/</loc>
     <lastmod>2024-07-18T23:30:00-04:00</lastmod>
@@ -12,9 +33,6 @@
     <lastmod>2024-07-18T23:30:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/rtl_directory/</loc>
-    <lastmod>2024-07-18T23:30:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/tags/</loc>
     <lastmod>2024-07-18T23:30:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/rtl_directory/2024_07_18_21_58_46_code_converter/</loc>
@@ -54,12 +72,6 @@
     <lastmod>2024-07-06T15:54:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/</loc>
-    <lastmod>2024-07-02T18:41:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/tags/sv/</loc>
-    <lastmod>2024-07-02T18:41:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/sv_directory/</loc>
     <lastmod>2024-07-02T18:41:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/</loc>
