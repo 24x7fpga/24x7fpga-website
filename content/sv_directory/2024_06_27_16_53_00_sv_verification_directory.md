@@ -46,16 +46,16 @@ In the rapidly evolving world of digital design, verification is paramount to en
 ## Tasks and Functions {#tasks-and-functions}
 
 1.  [Tasks]({{< relref "2024_07_19_15_48_23_tasks.md" >}})
-2.  Functions
+2.  [Functions]({{< relref "2024_07_20_15_36_43_functions.md" >}})
 
 
 ## Process {#process}
 
-1.  Fork_Join
-2.  Fork_Join_Any
-3.  Fork_Join_None
-4.  Wait_Fork
-5.  Disable_Fork
+1.  [Fork Join]({{< relref "2024_07_20_21_47_05_fork_join.md" >}})
+2.  [Fork Join Any]({{< relref "2024_07_20_21_58_50_fork_join_any.md" >}})
+3.  [Fork Join None]({{< relref "2024_07_20_22_11_00_fork_join_none.md" >}})
+4.  Wait Fork
+5.  Disable Fork
 
 
 ## Classes {#classes}

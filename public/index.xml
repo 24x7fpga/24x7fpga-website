@@ -6,8 +6,42 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jul 2024 15:48:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jul 2024 22:11:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fork Join None</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/</link>
+      <pubDate>Sat, 20 Jul 2024 22:11:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/</guid>
+      <description>SV Verification Directory
+Fork Join None As the name suggests, the process in the fork will start and does not wait till it completes any of the threads. The figure below depicts the fork join none constructs.</description>
+    </item>
+    <item>
+      <title>Fork Join Any</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_20_21_58_50_fork_join_any/</link>
+      <pubDate>Sat, 20 Jul 2024 21:58:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_20_21_58_50_fork_join_any/</guid>
+      <description>SV Verification Directory
+Fork Join Any Fork join any construct is similar to Fork Join but the simulation process does not wait till all the threads are completed. It proceeds to the next execution statement as soon as any one of the threads completes the process.
+Fork join any is depicted in the figure below.</description>
+    </item>
+    <item>
+      <title>Fork Join</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_20_21_47_05_fork_join/</link>
+      <pubDate>Sat, 20 Jul 2024 21:47:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_20_21_47_05_fork_join/</guid>
+      <description>SV Verification Directory
+Fork Join sequential procedural statements that execute sequentially, they are created using constructs like initial blocks, always blocks, and tasks. Multiple threads can run concurrently, allowing for parallel execution of different parts of a simulation. The fork-join construct is created to run multiple procedural threads to run in parallel. Once the fork starts to execute the threads, it will wait until all the threads are completed to proceed with the execution.</description>
+    </item>
+    <item>
+      <title>Functions</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_20_15_36_43_functions/</link>
+      <pubDate>Sat, 20 Jul 2024 15:36:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_20_15_36_43_functions/</guid>
+      <description>SV Verification Directory
+Functions A function must return a value. A function should not include delays, event controls, or wait statements. A function can only contain inputs as arguments as it returns only one output value. Similar to tasks:
+A function can be declared as automatic or static. It can contain static variables in automatic function and vice-versa. Syntax: Function function [return type] function_name (input_arguments); // execute the code return [value]; endfunction Example Code: Function module function_ex; function int mul_3(int x); return x*3; endfunction initial begin int x; $display(&amp;#34;---------- Multiply by 3 ----------&amp;#34;); repeat(20)begin x = $urandom_range(1,9); $display(&amp;#34;x = %0d, mul_by_3 = %0d&amp;#34;, x, mul_3(x)); end end endmodule Execute the code in EDA Playground</description>
+    </item>
     <item>
       <title>Tasks</title>
       <link>https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/</link>
@@ -248,7 +282,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork_Join Fork_Join_Any Fork_Join_None Wait_Fork Disable_Fork Classes Terminology Interprocess Communication Mailbox Semaphore Events Randomization </description>
+Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork Classes Terminology Interprocess Communication Mailbox Semaphore Events Randomization </description>
     </item>
     <item>
       <title>Decoder</title>
