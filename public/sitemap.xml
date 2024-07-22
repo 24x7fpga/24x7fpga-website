@@ -2,19 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/</loc>
-    <lastmod>2024-07-20T22:11:00-04:00</lastmod>
-  </url><url>
     <loc>https://24x7fpga.com/</loc>
+    <lastmod>2024-07-22T11:17:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_22_11_17_17_ring_counter/</loc>
+    <lastmod>2024-07-22T11:17:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/rtl/</loc>
+    <lastmod>2024-07-22T11:17:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/rtl_directory/</loc>
+    <lastmod>2024-07-22T11:17:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/</loc>
+    <lastmod>2024-07-22T11:17:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/</loc>
     <lastmod>2024-07-20T22:11:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/tags/sv/</loc>
     <lastmod>2024-07-20T22:11:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/</loc>
-    <lastmod>2024-07-20T22:11:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/tags/</loc>
     <lastmod>2024-07-20T22:11:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/2024_07_20_21_58_50_fork_join_any/</loc>
@@ -42,12 +51,6 @@
     <lastmod>2024-07-19T12:40:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/rtl_directory/2024_07_18_23_30_22_mod_n_counter/</loc>
-    <lastmod>2024-07-18T23:30:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/tags/rtl/</loc>
-    <lastmod>2024-07-18T23:30:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/rtl_directory/</loc>
     <lastmod>2024-07-18T23:30:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/rtl_directory/2024_07_18_21_58_46_code_converter/</loc>

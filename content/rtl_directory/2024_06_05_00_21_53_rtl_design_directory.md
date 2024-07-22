@@ -60,11 +60,10 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 12. [Up/Down Counter]({{< relref "2024_07_16_22_30_28_up_down_counter.md" >}})
 13. [Code Converter]({{< relref "2024_07_18_21_58_46_code_converter.md" >}})
 14. [Mod-N Counter]({{< relref "2024_07_18_23_30_22_mod_n_counter.md" >}})
-15. Ring Counter
+15. [Ring Counter]({{< relref "2024_07_22_11_17_17_ring_counter.md" >}})
 16. Edge Detector
 17. Clock Divider
-18. Debounce Circuit
-19. Signed Magnitude Adder
+18. Read Only Memory
 
 
 ## FIFO Design {#fifo-design}
