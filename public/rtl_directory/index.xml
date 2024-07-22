@@ -6,8 +6,18 @@
     <description>Recent content in Rtl_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jul 2024 11:17:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jul 2024 14:10:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/rtl_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Edge Detector</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_07_22_14_10_16_edge_detector/</link>
+      <pubDate>Mon, 22 Jul 2024 14:10:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_07_22_14_10_16_edge_detector/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Edge Detector: An Overview Edge detectors play a crucial role in synchronous systems to generate a short pulse when a transition of a signal occurs from low to high or high to low. These short pulses are used to trigger an event or generate an interrupt.
+There are three types of edge detectors, and they are as follows:
+Rising edge detector: detects a signal transition from low to high.</description>
+    </item>
     <item>
       <title>Ring Counter</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_22_11_17_17_ring_counter/</link>

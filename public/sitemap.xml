@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://24x7fpga.com/</loc>
-    <lastmod>2024-07-22T11:17:00-04:00</lastmod>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_22_14_10_16_edge_detector/</loc>
+    <lastmod>2024-07-22T14:10:00-04:00</lastmod>
   </url><url>
-    <loc>https://24x7fpga.com/rtl_directory/2024_07_22_11_17_17_ring_counter/</loc>
-    <lastmod>2024-07-22T11:17:00-04:00</lastmod>
+    <loc>https://24x7fpga.com/</loc>
+    <lastmod>2024-07-22T14:10:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/tags/rtl/</loc>
-    <lastmod>2024-07-22T11:17:00-04:00</lastmod>
+    <lastmod>2024-07-22T14:10:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/rtl_directory/</loc>
-    <lastmod>2024-07-22T11:17:00-04:00</lastmod>
+    <lastmod>2024-07-22T14:10:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/tags/</loc>
+    <lastmod>2024-07-22T14:10:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_22_11_17_17_ring_counter/</loc>
     <lastmod>2024-07-22T11:17:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/</loc>
