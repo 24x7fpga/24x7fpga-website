@@ -31,7 +31,7 @@ Fork join any is depicted in the figure below.</description>
       <pubDate>Sat, 20 Jul 2024 21:47:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_20_21_47_05_fork_join/</guid>
       <description>SV Verification Directory
-Fork Join sequential procedural statements that execute sequentially, they are created using constructs like initial blocks, always blocks, and tasks. Multiple threads can run concurrently, allowing for parallel execution of different parts of a simulation. The fork-join construct is created to run multiple procedural threads to run in parallel. Once the fork starts to execute the threads, it will wait until all the threads are completed to proceed with the execution.</description>
+Fork Join A thread or a process is a block of code that execute sequentially. They are created using constructs like initial blocks, always blocks, and tasks. Multiple threads can run concurrently, allowing for parallel execution of different parts of a simulation. The fork-join construct is created to run multiple procedural threads to run in parallel. Once the fork starts to execute the threads, it will wait until all the threads are completed to proceed with the execution.</description>
     </item>
     <item>
       <title>Functions</title>
