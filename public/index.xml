@@ -6,8 +6,25 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jul 2024 14:10:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2024 13:11:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Read Only Memory</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_07_23_13_11_22_read_only_memory/</link>
+      <pubDate>Tue, 23 Jul 2024 13:11:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_07_23_13_11_22_read_only_memory/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Read Only Memory(ROM): An Overview Read-only memory widely known as ROM is a non-volatile memory that is used to store data or programs that do not change over time. As the name suggests, data can only be read from the memory. In digital design, ROM can be used to store image data or signal data for processing.
+Memory File A memory file is a simple file with an extension of *.</description>
+    </item>
+    <item>
+      <title>Frequency Divider</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_07_22_15_24_11_frequency_divider/</link>
+      <pubDate>Mon, 22 Jul 2024 15:24:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_07_22_15_24_11_frequency_divider/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Frequency Divider: An Overview A frequency divider is a digital circuit that reduces the frequency of the main clock by a certain factor. They are typically used in clock generation circuits, timers, counters, etc. Frequency dividers can be categorized into two even and odd frequency dividers based on the factor N. If N is an even number the frequency divider is categorized under an even frequency divider and when N is an odd number it is categorized as an odd frequency divider.</description>
+    </item>
     <item>
       <title>Edge Detector</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_22_14_10_16_edge_detector/</link>

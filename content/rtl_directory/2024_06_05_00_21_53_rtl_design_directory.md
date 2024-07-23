@@ -62,8 +62,8 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 14. [Mod-N Counter]({{< relref "2024_07_18_23_30_22_mod_n_counter.md" >}})
 15. [Ring Counter]({{< relref "2024_07_22_11_17_17_ring_counter.md" >}})
 16. [Edge Detector]({{< relref "2024_07_22_14_10_16_edge_detector.md" >}})
-17. Clock Divider
-18. Read Only Memory
+17. [Frequency Divider]({{< relref "2024_07_22_15_24_11_frequency_divider.md" >}})
+18. [Read Only Memory]({{< relref "2024_07_23_13_11_22_read_only_memory.md" >}})
 
 
 ## FIFO Design {#fifo-design}
