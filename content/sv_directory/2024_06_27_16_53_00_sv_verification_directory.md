@@ -58,9 +58,11 @@ In the rapidly evolving world of digital design, verification is paramount to en
 5.  [Disable Fork]({{< relref "2024_07_23_17_27_50_disable_fork.md" >}})
 
 
-## Classes {#classes}
+## OOP in SV {#oop-in-sv}
 
-1.  Terminology
+1.  [Object-Oriented Programming]({{< relref "2024_07_24_15_11_27_object_oriented_programming.md" >}})
+2.  [Class]({{< relref "2024_07_24_16_47_44_class.md" >}})
+3.  [Object]({{< relref "2024_07_24_17_42_06_object.md" >}})
 
 
 ## Interprocess Communication {#interprocess-communication}

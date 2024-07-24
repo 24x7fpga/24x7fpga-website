@@ -6,8 +6,35 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jul 2024 21:33:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jul 2024 17:42:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Object</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_24_17_42_06_object/</link>
+      <pubDate>Wed, 24 Jul 2024 17:42:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_24_17_42_06_object/</guid>
+      <description>SV Verification Directory
+Object An object is an instance od a class. It is similar to instantiation of a module in Verilog, but there are some differences which as listed in the table below:
+Verilog Module Instance SystemVerilog Class Instance A module is instantiated during compile time A class is instantiated during simulation, when needed by the testbench Verilog instances are static, as hardware does not change during simulation Class objects are created when required and freed from memory when no longer needed </description>
+    </item>
+    <item>
+      <title>Class</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_24_16_47_44_class/</link>
+      <pubDate>Wed, 24 Jul 2024 16:47:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_24_16_47_44_class/</guid>
+      <description>SV Verification Directory
+Class A class is useer defined data type that serves as a blue-print for creating objects. A class includes properties(variables) and methods(funcations and tasks) that manipulate data.
+Example: Class class Ex_class; // class properties or variables int a, b, s; // function method function void display(); $display(&amp;#34;a = %0d + b = %0d, sum s = %0d&amp;#34;, a, b ,s); endfunction // function method function int sum(); s = a + b; endfunction endclass A class can be defined and used in a program, module, package, or outside of any of these.</description>
+    </item>
+    <item>
+      <title>Object-Oriented Programming</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_24_15_11_27_object_oriented_programming/</link>
+      <pubDate>Wed, 24 Jul 2024 15:11:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_24_15_11_27_object_oriented_programming/</guid>
+      <description>SV Verification Directory
+Object-Oriented Programming Object-oriented Programming(OOP) language model for software design that revolves around objects or data instead of logic and functions. It focuses on what the developers want to manipulate rather than how they manipulate them. This approach is well suited for large, complex, and actively updated and maintained.
+OOP for Verification Typically, a testbench creates a transaction i.e., generates the necessary input for the DUT based on the defined rules, transmits it to the DUT, receives the response from the DUT, verifies the response against the golden reference, and generates a report.</description>
+    </item>
     <item>
       <title>Throughput and Latency</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_23_21_33_58_throughput_and_latency/</link>
@@ -346,7 +373,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork Classes Terminology Interprocess Communication Mailbox Semaphore Events Randomization </description>
+Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Object Interprocess Communication Mailbox Semaphore Events Randomization </description>
     </item>
     <item>
       <title>Decoder</title>

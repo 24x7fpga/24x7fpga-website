@@ -173,6 +173,16 @@ font-family:  JetBrains Mono, "Courier New", Courier, monospace;
     /* font size */
     font-size: 16px;
     /* font size */
+
+    /* table wrap */
+    /* css-3 */
+    white-space: -o-pre-wrap; 
+    word-wrap: break-word;
+    white-space: pre-wrap; 
+    white-space: -moz-pre-wrap; 
+    white-space: -pre-wrap; 
+    /* table wrap */
+    
     border-bottom: 2px solid var(--border);
 }
 
@@ -338,7 +348,7 @@ font-family:  JetBrains Mono, "Courier New", Courier, monospace;
     margin-top: 56px;
 }
 
-.post-footer>* {
+.post-footer {
     margin-bottom: 10px;
 }
 
