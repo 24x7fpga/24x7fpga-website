@@ -38,9 +38,9 @@ theme = "hugo-PaperMod"
   
  
  [params.Singlefooter]
-    path      = "/img/gnu.png"
+    path      = "/img/org_mode.png"
     alt      = "footer"
-    maxWidth = "50px"
+    maxWidth = "120px"                # 50px for gnu.png and 120 for org_mode.png
 
   [[params.socialIcons]]
       name = "linkedin"
