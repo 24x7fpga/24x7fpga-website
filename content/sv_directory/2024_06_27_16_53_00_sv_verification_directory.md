@@ -54,8 +54,8 @@ In the rapidly evolving world of digital design, verification is paramount to en
 1.  [Fork Join]({{< relref "2024_07_20_21_47_05_fork_join.md" >}})
 2.  [Fork Join Any]({{< relref "2024_07_20_21_58_50_fork_join_any.md" >}})
 3.  [Fork Join None]({{< relref "2024_07_20_22_11_00_fork_join_none.md" >}})
-4.  Wait Fork
-5.  Disable Fork
+4.  [Wait Fork]({{< relref "2024_07_23_17_27_07_wait_fork.md" >}})
+5.  [Disable Fork]({{< relref "2024_07_23_17_27_50_disable_fork.md" >}})
 
 
 ## Classes {#classes}

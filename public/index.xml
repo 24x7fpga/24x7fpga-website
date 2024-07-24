@@ -6,8 +6,26 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jul 2024 13:11:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2024 17:27:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Disable Fork</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_23_17_27_50_disable_fork/</link>
+      <pubDate>Tue, 23 Jul 2024 17:27:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_23_17_27_50_disable_fork/</guid>
+      <description>SV Verification Directory
+Disable Fork The disable fork contruct will terminate all outstanding or active processes when it is executed.
+Syntax: Disable Fork fork // process 1 // process 2 // process 3 join disable fork; Example Code: Disable Fork module fork_join_any; initial begin fork #2 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 1&amp;#34;, $time); #10 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 2&amp;#34;, $time); #5 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 3&amp;#34;, $time); join_any $display(&amp;#34;--------------- Exited Fork 1 ---------------&amp;#34;); end initial begin fork #3 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 1&amp;#34;, $time); #6 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 2&amp;#34;, $time); #1 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 3&amp;#34;, $time); join_none disable fork; $display(&amp;#34;--------------- Exited Fork 2 ---------------&amp;#34;); end endmodule Execute the code in EDA Playground</description>
+    </item>
+    <item>
+      <title>Wait Fork</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_23_17_27_07_wait_fork/</link>
+      <pubDate>Tue, 23 Jul 2024 17:27:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_23_17_27_07_wait_fork/</guid>
+      <description>SV Verification Directory
+Wait Fork The wait fork statement is used to wait until all the forked processes is completed.
+Syntax: Wait Fork fork // process 1 // process 2 // process 3 join_none // (join, join_any) wait fork; Example Code: Wait Fork module fork_join_any; initial begin fork #2 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 1&amp;#34;, $time); #10 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 2&amp;#34;, $time); #5 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 3&amp;#34;, $time); join_any $display(&amp;#34;--------------- Exited Fork 1 ---------------&amp;#34;); end initial begin fork #3 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 1&amp;#34;, $time); #6 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 2&amp;#34;, $time); #1 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 3&amp;#34;, $time); join_none wait fork; $display(&amp;#34;--------------- Exited Fork 2 ---------------&amp;#34;); end endmodule Execute the code in EDA Playground</description>
+    </item>
     <item>
       <title>Read Only Memory</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_23_13_11_22_read_only_memory/</link>
@@ -50,7 +68,8 @@ Simple Ring Counter Twisted Ring Counter Simple Ring Counter A simple ring count
       <pubDate>Sat, 20 Jul 2024 22:11:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/</guid>
       <description>SV Verification Directory
-Fork Join None As the name suggests, the process in the fork will start and does not wait till it completes any of the threads. The figure below depicts the fork join none constructs.</description>
+Fork Join None As the name suggests, the process in the fork will start and does not wait till it completes any of the threads. The figure below depicts the fork join none constructs.
+Syntax: Fork Join None fork // process 1 // process 2 // process 3 join_none Example Code: Fork Join None module fork_join_any; initial begin fork #2 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 1&amp;#34;, $time); #10 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 2&amp;#34;, $time); #5 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 3&amp;#34;, $time); join_none $display(&amp;#34;--------------- Exited Fork 1 ---------------&amp;#34;); end initial begin fork #3 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 1&amp;#34;, $time); #6 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 2&amp;#34;, $time); #1 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 3&amp;#34;, $time); join_none $display(&amp;#34;--------------- Exited Fork 2 ---------------&amp;#34;); end endmodule </description>
     </item>
     <item>
       <title>Fork Join Any</title>
@@ -59,7 +78,8 @@ Fork Join None As the name suggests, the process in the fork will start and does
       <guid>https://24x7fpga.com/sv_directory/2024_07_20_21_58_50_fork_join_any/</guid>
       <description>SV Verification Directory
 Fork Join Any Fork join any construct is similar to Fork Join but the simulation process does not wait till all the threads are completed. It proceeds to the next execution statement as soon as any one of the threads completes the process.
-Fork join any is depicted in the figure below.</description>
+Fork join any is depicted in the figure below.
+Syntax: Fork Join Any fork // process 1 // process 2 // process 3 join_any Example Code: Fork Join Any module fork_join_any; initial begin fork #2 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 1&amp;#34;, $time); #10 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 2&amp;#34;, $time); #5 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 3&amp;#34;, $time); join_any $display(&amp;#34;--------------- Exited Fork 1 ---------------&amp;#34;); end initial begin fork #3 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 1&amp;#34;, $time); #6 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 2&amp;#34;, $time); #1 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 3&amp;#34;, $time); join_any $display(&amp;#34;--------------- Exited Fork 2 ---------------&amp;#34;); end endmodule Execute the code in EDA Playground</description>
     </item>
     <item>
       <title>Fork Join</title>
@@ -67,7 +87,7 @@ Fork join any is depicted in the figure below.</description>
       <pubDate>Sat, 20 Jul 2024 21:47:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_20_21_47_05_fork_join/</guid>
       <description>SV Verification Directory
-Fork Join A thread or a process is a block of code that execute sequentially. They are created using constructs like initial blocks, always blocks, and tasks. Multiple threads can run concurrently, allowing for parallel execution of different parts of a simulation. The fork-join construct is created to run multiple procedural threads to run in parallel. Once the fork starts to execute the threads, it will wait until all the threads are completed to proceed with the execution.</description>
+Fork Join A thread or a process is a block of code that execute sequentially. They are created using constructs like initial blocks, always blocks, and tasks. In verification there are multiple components, such as generator, driver, monitor, etc, these components have multiple threads that need to run concurrently, allowing for parallel execution of different parts of the simulation. The fork-join construct is created to run multiple procedural threads to run in parallel.</description>
     </item>
     <item>
       <title>Functions</title>
