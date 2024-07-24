@@ -20,12 +20,11 @@ Here, the impacts of timing based on architecture designs and optimizations will
 -   Building architecture designs that can process many bits per second increases the throughput rate.
 -   Minimizing the delay from the input to the output builds low-latency architecture.
 -   Timing optimizations reduce the combinational delay of the critical path.
-
-  + Adding registers to divide the combinational logic structure.
-  + Parallel structures for separating sequentially executed operations into parallel operations.
-  + Flattening the logic structures specific to priority encoded signals.
-  + Register balancing to redistribute combinational logic around pipelined registers.
-  + Reordering paths to divert operations from a critical path to a noncritical path.
+    -   Adding registers to divide the combinational logic structure.
+    -   Parallel structures for separating sequentially executed operations into parallel operations.
+    -   Flattening the logic structures specific to priority encoded signals.
+    -   Register balancing to redistribute combinational logic around pipelined registers.
+    -   Reordering paths to divert operations from a critical path to a noncritical path.
 
 
 ## High Throughput {#high-throughput}
