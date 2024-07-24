@@ -6,8 +6,16 @@
     <description>Recent content in Rtl_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jul 2024 13:11:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2024 21:33:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/rtl_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Throughput and Latency</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_07_23_21_33_58_throughput_and_latency/</link>
+      <pubDate>Tue, 23 Jul 2024 21:33:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_07_23_21_33_58_throughput_and_latency/</guid>
+      <description>Introduction Speed in digital design can have three primary meanings/definitions based on the context of the problem. There are as follows:
+Throughput: refers to the amount of time a system takes to process the data per clock cycle, measured in bits per second. Latency: refers to the time between the input and the processed output, measured as clock cycles. Timing: refers to the logic delays between the sequential elements, the standard metric is clock period or frequency.</description>
+    </item>
     <item>
       <title>Read Only Memory</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_23_13_11_22_read_only_memory/</link>

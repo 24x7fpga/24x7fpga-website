@@ -34,7 +34,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 
 ## Important Concepts {#important-concepts}
 
-1.  Latency and Throughput
+1.  [Throughput and Latency]({{< relref "2024_07_23_21_33_58_throughput_and_latency.md" >}})
 2.  Synchronous and Asynchronous Reset
 3.  Casex and Casez
 4.  Full case and Parallel Case
