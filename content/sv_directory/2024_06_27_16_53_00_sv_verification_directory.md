@@ -62,7 +62,8 @@ In the rapidly evolving world of digital design, verification is paramount to en
 
 1.  [Object-Oriented Programming]({{< relref "2024_07_24_15_11_27_object_oriented_programming.md" >}})
 2.  [Class]({{< relref "2024_07_24_16_47_44_class.md" >}})
-3.  [Object]({{< relref "2024_07_24_17_42_06_object.md" >}})
+3.  [Handle]({{< relref "2024_07_24_22_09_00_handle.md" >}})
+4.  [Object]({{< relref "2024_07_24_17_42_06_object.md" >}})
 
 
 ## Interprocess Communication {#interprocess-communication}

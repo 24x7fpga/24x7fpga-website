@@ -6,8 +6,17 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jul 2024 17:42:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jul 2024 22:09:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Handle</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_24_22_09_00_handle/</link>
+      <pubDate>Wed, 24 Jul 2024 22:09:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_24_22_09_00_handle/</guid>
+      <description>SV Verification Directory
+Handle A handle is a pointer to an object created from a Class. Handles are crucial in dynamically creating and managing Objects during simulation.
+Syntax: Handle Ex_class cl_obj; // declare a handle cl_obj = new(); // allocate a Ex_class object When the handle &amp;lsquo;cl_obj&amp;rsquo; is declared, it is initialized to a null value. Call the new() function to construct the Ex_class object. The new function allocates space for Ex_class, initializes the variables to their default values (0 for 2-state and x for 4-state variable), and returns the address where the object is stored.</description>
+    </item>
     <item>
       <title>Object</title>
       <link>https://24x7fpga.com/sv_directory/2024_07_24_17_42_06_object/</link>
@@ -373,7 +382,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Object Interprocess Communication Mailbox Semaphore Events Randomization </description>
+Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Interprocess Communication Mailbox Semaphore Events Randomization </description>
     </item>
     <item>
       <title>Decoder</title>

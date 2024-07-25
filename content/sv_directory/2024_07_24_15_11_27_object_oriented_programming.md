@@ -33,8 +33,8 @@ The testbench is divided into blocks and with the help of OOP they communicate w
 ### Nomenclature {#nomenclature}
 
 1.  [Class]({{< relref "2024_07_24_16_47_44_class.md" >}}): is a basic building block containing routines and variables. This is analogous to a **module** in Verilog.
-2.  [Object]({{< relref "2024_07_24_17_42_06_object.md" >}}): is an instance of a class. Similar to **instantiating** a module in Verilog.
-3.  Handle: is a **pointer** to the object. It acts as a pointer or link to the actual object stored in memory.
+2.  [Handle]({{< relref "2024_07_24_22_09_00_handle.md" >}}): is a **pointer** to the object. It acts as a pointer or link to the actual object stored in memory.
+3.  [Object]({{< relref "2024_07_24_17_42_06_object.md" >}}): is an instance of a class. Similar to **instantiating** a module in Verilog.
 4.  Property: is a variable that holds data. In Verilog, this is a signal such as a **register** or **wire**.
 5.  Method: is the procedural code that manipulates variables, contained in tasks and functions. Similar to **initial** and **always** blocks, in Verilog.
 6.  Prototype: the header of a routine that shows the name, type, and argument list plus return type.
