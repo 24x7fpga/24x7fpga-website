@@ -14,8 +14,8 @@
       <pubDate>Wed, 24 Jul 2024 17:42:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_24_17_42_06_object/</guid>
       <description>SV Verification Directory
-Object An object is an instance od a class. It is similar to instantiation of a module in Verilog, but there are some differences which as listed in the table below:
-Verilog Module Instance SystemVerilog Class Instance A module is instantiated during compile time A class is instantiated during simulation, when needed by the testbench Verilog instances are static, as hardware does not change during simulation Class objects are created when required and freed from memory when no longer needed The &amp;rsquo;new&amp;rsquo; keyword is used to instantiate the object.</description>
+Object An object is an instance od a class. It is similar to the instantiation of a module in Verilog, but there are some differences which as listed in the table below:
+Verilog Module Instance SystemVerilog Class Instance A module is instantiated during compile time A class is instantiated during simulation when needed by the testbench Verilog instances are static, as hardware does not change during simulation Class objects are created when required and freed from memory when no longer needed The &amp;rsquo;new&amp;rsquo; keyword is used to instantiate the object.</description>
     </item>
     <item>
       <title>Class</title>
@@ -23,7 +23,7 @@ Verilog Module Instance SystemVerilog Class Instance A module is instantiated du
       <pubDate>Wed, 24 Jul 2024 16:47:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_24_16_47_44_class/</guid>
       <description>SV Verification Directory
-Class A class is useer defined data type that serves as a blue-print for creating objects. A class includes properties(variables) and methods(funcations and tasks) that manipulate data.
+Class A class is a user-defined data type that serves as a blue-print for creating objects. A class includes properties(variables) and methods(functions and tasks) that manipulate data.
 Example: Class class Ex_class; // class properties or variables int a, b, s; // task method task sum (int a,b); s = a + b; $display(&amp;#34;a = %0d , b = %0d, sum s = %0d&amp;#34;, a, b ,s); endtask endclass A class can be defined and used in a program, module, package, or outside of any of these.</description>
     </item>
     <item>
