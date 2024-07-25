@@ -6,8 +6,33 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jul 2024 22:09:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jul 2024 14:51:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Static Class Properties and Methods</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/</link>
+      <pubDate>Thu, 25 Jul 2024 14:51:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/</guid>
+      <description>SV Verification Directory
+Static Class Properties and Methods Every object has its own local variables that are not shared with any other object. When two objects of Ex_class Class is created, each object with have its own class properties(variables). In certain instances, a specific variable is required to be shared by all objects of a certain type. Declaring a global variable will make the variable visible to the entire testbench. With the OOP, a static variable can be created inside a class.</description>
+    </item>
+    <item>
+      <title>This Keyword</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_25_14_49_57_this_keyword/</link>
+      <pubDate>Thu, 25 Jul 2024 14:49:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_25_14_49_57_this_keyword/</guid>
+      <description>SV Verification Directory
+This Keyword In SystemVerilog, this keyword is used within a class to refer to the current instance of that class. It is a way to access the members (attributes and methods) of the current object from within the object&amp;rsquo;s methods. This is particularly useful to distinguish between class attributes and parameters or local variables with the same name. When a variable is declared, SystemVerilog looks in the current scope for it and then in the parent scope until the variable is found.</description>
+    </item>
+    <item>
+      <title>Method</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_25_12_36_42_method/</link>
+      <pubDate>Thu, 25 Jul 2024 12:36:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_25_12_36_42_method/</guid>
+      <description>SV Verification Directory
+Class Methods A class method is a task or a function defined inside the scope of the class. A method in a class uses automatic storage by default.
+Example: Methods in a Class class Ex_class; // class properties or variables int a, b, s; // task method task sum (int a,b); s = a + b; $display(&amp;#34;a = %0d , b = %0d, sum s = %0d&amp;#34;, a, b ,s); endtask endclass Defining Methods Outside of Class To keep the code short, and easy to read and understand, it is advisable to keep the class to one &amp;ldquo;page&amp;rdquo; or to the screen of the editor.</description>
+    </item>
     <item>
       <title>Handle</title>
       <link>https://24x7fpga.com/sv_directory/2024_07_24_22_09_00_handle/</link>

@@ -78,8 +78,8 @@ Verilog Module Instance SystemVerilog Class Instance A module is instantiated du
   "keywords": [
     "sv"
   ],
-  "articleBody": "SV Verification Directory\nObject An object is an instance od a class. It is similar to the instantiation of a module in Verilog, but there are some differences which as listed in the table below:\nVerilog Module Instance SystemVerilog Class Instance A module is instantiated during compile time A class is instantiated during simulation when needed by the testbench Verilog instances are static, as hardware does not change during simulation Class objects are created when required and freed from memory when no longer needed The ’new’ keyword is used to instantiate the object.\nclass Ex_class; // class properties or variables int a, b, s; // task method task sum (int a,b); s = a + b; $display(\"a = %0d , b = %0d, sum s = %0d\", a, b ,s); endtask endclass module test; Ex_class cl_obj; // declare a class handle of type cl_obj initial begin cl_obj = new( ); // create an object cl_obj.sum(30,10); // access a method repeat(10) cl_obj.sum($urandom_range(1,50),$urandom_range(1,50)); end endmodule Execute the code in EDA Playground\nPoints to Remember Objects are created dynamically using ’new’ keyword. Properties (variables) of an object can be accessed using a handle. Objects are allocated on the heap, and their lifetime is managed by the simulation runtime. Objects from one class can communicate with objects in another class, efficient in managing different verification environments. ",
-  "wordCount" : "222",
+  "articleBody": "SV Verification Directory\nObject An object is an instance od a class. It is similar to the instantiation of a module in Verilog, but there are some differences which as listed in the table below:\nVerilog Module Instance SystemVerilog Class Instance A module is instantiated during compile time A class is instantiated during simulation when needed by the testbench Verilog instances are static, as hardware does not change during simulation Class objects are created when required and freed from memory when no longer needed The ’new’ keyword is used to instantiate the object.\nclass Ex_class; // class properties or variables int a, b, s; // task method task sum (int a,b); s = a + b; $display(\"a = %0d , b = %0d, sum s = %0d\", a, b ,s); endtask endclass module test; Ex_class cl_obj; // declare a class handle of type cl_obj initial begin cl_obj = new( ); // construct an object cl_obj.sum(30,10); // access a method repeat(10) cl_obj.sum($urandom_range(1,50),$urandom_range(1,50)); end endmodule Execute the code in EDA Playground\nPoints to Remember Objects are created dynamically using ’new’ keyword. Properties (variables) of an object can be accessed using a handle. Objects are allocated on the heap, and their lifetime is managed by the simulation runtime. Objects from one class can communicate with objects in another class, efficient in managing different verification environments. If an object is not created, then the default value for the class handle is null. A handle can only point to objects of one type, hence, they are called “type-safe”. ",
+  "wordCount" : "253",
   "inLanguage": "en",
   "datePublished": "2024-07-24T17:42:00-04:00",
   "dateModified": "2024-07-24T17:42:00-04:00",
@@ -253,7 +253,7 @@ Verilog Module Instance SystemVerilog Class Instance A module is instantiated du
     <h1 class="post-title entry-hint-parent">
       Object
     </h1>
-    <div class="post-meta"><span title='2024-07-24 17:42:00 -0400 EDT'>July 24, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;222 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-07-24 17:42:00 -0400 EDT'>July 24, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;253 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
@@ -297,7 +297,7 @@ Verilog Module Instance SystemVerilog Class Instance A module is instantiated du
 </span></span><span style="display:flex;"><span>  Ex_class cl_obj;      <span style="color:#75715e">// declare a class handle of type cl_obj
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">initial</span> <span style="color:#66d9ef">begin</span>
-</span></span><span style="display:flex;"><span>     cl_obj <span style="color:#f92672">=</span> new( );   <span style="color:#75715e">// create an object
+</span></span><span style="display:flex;"><span>     cl_obj <span style="color:#f92672">=</span> new( );   <span style="color:#75715e">// construct an object
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     cl_obj.sum(<span style="color:#ae81ff">30</span>,<span style="color:#ae81ff">10</span>); <span style="color:#75715e">// access a method
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     <span style="color:#66d9ef">repeat</span>(<span style="color:#ae81ff">10</span>)
 </span></span><span style="display:flex;"><span>        cl_obj.sum($urandom_range(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">50</span>),$urandom_range(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">50</span>));
@@ -311,6 +311,8 @@ Verilog Module Instance SystemVerilog Class Instance A module is instantiated du
 <li>Properties (variables) of an object can be accessed using a handle.</li>
 <li>Objects are allocated on the heap, and their lifetime is managed by the simulation runtime.</li>
 <li>Objects from one class can communicate with objects in another class, efficient in managing different verification environments.</li>
+<li>If an object is not created, then the default value for the class handle is null.</li>
+<li>A handle can only point to objects of one type, hence, they are called &ldquo;type-safe&rdquo;.</li>
 </ol>
 
 

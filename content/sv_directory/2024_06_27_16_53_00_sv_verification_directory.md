@@ -64,6 +64,10 @@ In the rapidly evolving world of digital design, verification is paramount to en
 2.  [Class]({{< relref "2024_07_24_16_47_44_class.md" >}})
 3.  [Handle]({{< relref "2024_07_24_22_09_00_handle.md" >}})
 4.  [Object]({{< relref "2024_07_24_17_42_06_object.md" >}})
+5.  [Method]({{< relref "2024_07_25_12_36_42_method.md" >}})
+6.  [This Keyword]({{< relref "2024_07_25_14_49_57_this_keyword.md" >}})
+7.  [Static Class Properties and Methods]({{< relref "2024_07_25_14_51_44_static_class_properties_and_methods.md" >}})
+8.  Shallow and Deep Copy
 
 
 ## Interprocess Communication {#interprocess-communication}
