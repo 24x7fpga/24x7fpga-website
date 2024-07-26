@@ -316,7 +316,8 @@ Equality Comparator: it compares the two binary numbers to up a true bit or high
       <pubDate>Tue, 02 Jul 2024 18:41:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/</guid>
       <description>SV Verification Directory
-Dynamic Cast The dynamic cast, $cast, allows you to check for out-of-bounds values. Use dynamic cast when converting from a type with a large number of values than the destination, such as int to en enumerated variables.</description>
+Dynamic Cast Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,
+Static Casting Dynamic Casting Dynamic Casting Dynamic casting in SystemVerilog allows you to safely convert a handle of one class type to another class type at runtime, ensuring the cast is valid and the object is of the target type. The dynamic cast, $cast, allows you to check for out-of-bounds values.</description>
     </item>
     <item>
       <title>Static Cast</title>
@@ -324,8 +325,9 @@ Dynamic Cast The dynamic cast, $cast, allows you to check for out-of-bounds valu
       <pubDate>Tue, 02 Jul 2024 18:32:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/</guid>
       <description>SV Verification Directory
-Static Cast The static cast operation converts between two types with no checking of values. Specify the destination type, an apostrophe, and the expression to be converted as shown below:
-int i; real r; i = int &amp;#39;(75.0); r = real &amp;#39;(75); </description>
+Static Cast Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,
+Static Casting Dynamic Casting Static Casting Static casting converts one data type to another compartible datatypes, as the name suggest, the conversion data type is fixed. The cast (&amp;rsquo;) operator should be placed before the data along with the intended data type.
+Example module static_conv; int i = 75; real r = 13.</description>
     </item>
     <item>
       <title>Structures</title>
