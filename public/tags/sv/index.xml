@@ -6,8 +6,17 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jul 2024 14:51:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2024 09:41:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shallow Copy and Deep Copy</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</link>
+      <pubDate>Fri, 26 Jul 2024 09:41:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</guid>
+      <description>SV Verification Directory
+Shallow Copy and Deep Copy SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.
+Shallow Copy Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle&amp;rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects.</description>
+    </item>
     <item>
       <title>Static Class Properties and Methods</title>
       <link>https://24x7fpga.com/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/</link>

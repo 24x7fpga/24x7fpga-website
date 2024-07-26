@@ -6,8 +6,17 @@
     <description>Recent content in Sv_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jul 2024 14:51:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2024 09:41:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/sv_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shallow Copy and Deep Copy</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</link>
+      <pubDate>Fri, 26 Jul 2024 09:41:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</guid>
+      <description>SV Verification Directory
+Shallow Copy and Deep Copy SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.
+Shallow Copy Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle&amp;rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects.</description>
+    </item>
     <item>
       <title>Static Class Properties and Methods</title>
       <link>https://24x7fpga.com/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/</link>
@@ -274,7 +283,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow and Deep Copy Interprocess Communication Mailbox Semaphore Events Randomization </description>
+Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Interprocess Communication Mailbox Semaphore Events Randomization </description>
     </item>
   </channel>
 </rss>
