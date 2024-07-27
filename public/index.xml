@@ -43,6 +43,16 @@ Class Methods A class method is a task or a function defined inside the scope of
 Example: Methods in a Class class Ex_class; // class properties or variables int a, b, s; // task method task sum (int a,b); s = a + b; $display(&amp;#34;a = %0d , b = %0d, sum s = %0d&amp;#34;, a, b ,s); endtask endclass Defining Methods Outside of Class To keep the code short, and easy to read and understand, it is advisable to keep the class to one &amp;ldquo;page&amp;rdquo; or to the screen of the editor.</description>
     </item>
     <item>
+      <title>Synchronous and Asynchronous Reset</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/</link>
+      <pubDate>Thu, 25 Jul 2024 11:34:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Synchronous and Asynchronous Reset Resets are crucial in digital circuits for ensuring the system starts from a known state.
+Resets allow the system to recover from errors by reinitializing the state. Resets ensure that all flip-flops start from a known state. There are two types of resets based on the reset activation and they are:
+Synchronous Reset Asynchronous Reset Synchronous Reset In synchronous reset circuits, the reset signal is synchronized with the clock.</description>
+    </item>
+    <item>
       <title>Handle</title>
       <link>https://24x7fpga.com/sv_directory/2024_07_24_22_09_00_handle/</link>
       <pubDate>Wed, 24 Jul 2024 22:09:00 -0400</pubDate>

@@ -35,7 +35,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 ## Important Concepts {#important-concepts}
 
 1.  [Throughput and Latency]({{< relref "2024_07_23_21_33_58_throughput_and_latency.md" >}})
-2.  Synchronous and Asynchronous Reset
+2.  [Synchronous and Asynchronous Reset]({{< relref "2024_07_25_11_34_45_synchronous_and_asynchronous_reset.md" >}})
 3.  Casex and Casez
 4.  Full case and Parallel Case
 5.  Assign and If Statement

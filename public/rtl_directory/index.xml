@@ -6,8 +6,18 @@
     <description>Recent content in Rtl_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jul 2024 21:33:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jul 2024 11:34:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/rtl_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Synchronous and Asynchronous Reset</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/</link>
+      <pubDate>Thu, 25 Jul 2024 11:34:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Synchronous and Asynchronous Reset Resets are crucial in digital circuits for ensuring the system starts from a known state.
+Resets allow the system to recover from errors by reinitializing the state. Resets ensure that all flip-flops start from a known state. There are two types of resets based on the reset activation and they are:
+Synchronous Reset Asynchronous Reset Synchronous Reset In synchronous reset circuits, the reset signal is synchronized with the clock.</description>
+    </item>
     <item>
       <title>Throughput and Latency</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_23_21_33_58_throughput_and_latency/</link>
