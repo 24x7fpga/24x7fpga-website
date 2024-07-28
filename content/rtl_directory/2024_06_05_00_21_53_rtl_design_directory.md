@@ -21,7 +21,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 
 1.  [Icarus verilog](<https://steveicarus.github.io/iverilog/index.html>)
 2.  [GTKWave](<https://gtkwave.sourceforge.net/>)
-3.  [Vivado](<https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools.html>)
+3.  [Vivado Installation]({{< relref "2024_07_28_10_50_56_vivado_installation.md" >}})
 
 
 ## Hardware {#hardware}
@@ -124,7 +124,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 
 ## Computer Architecture {#computer-architecture}
 
-1.  Single Cycle MIPS Design
+1.  [Single Cycle MIPS Design](https://github.com/24x7fpga/MIPsSingleCycle)
 2.  Multi Cycle MIPS design
 3.  RISC-V Core
 

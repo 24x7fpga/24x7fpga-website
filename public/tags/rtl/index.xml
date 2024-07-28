@@ -6,8 +6,16 @@
     <description>Recent content in rtl on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jul 2024 11:34:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2024 10:50:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/rtl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vivado Installation</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/</link>
+      <pubDate>Sun, 28 Jul 2024 10:50:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/</guid>
+      <description>Digilent&amp;rsquo;s Zybo-Z7 is a ready-to-use embedded software and digital circuit development board built around the Xilinx Zynq™-7000 family. Xilinx provides free licensing to certain development boards and Zybo-Z7 is one among them. This article provided detailed steps to install Vivado 2022.2 in Ubuntu 22.04 LTS. The same procedure can be followed to install the desired version of the software.
+Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred) and 100GB of free storage space for full installation.</description>
+    </item>
     <item>
       <title>Synchronous and Asynchronous Reset</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/</link>
