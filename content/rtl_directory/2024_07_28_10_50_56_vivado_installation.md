@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-Digilent's [Zybo-Z7](https://digilent.com/shop/zybo-z7-zynq-7000-arm-fpga-soc-development-board/) is a ready-to-use embedded software and digital circuit development board built around the Xilinx Zynq™-7000 family. Xilinx provides free licensing to certain development boards and Zybo-Z7 is one among them. This article provided detailed steps to install Vivado 2022.2 in Ubuntu 22.04 LTS. The same procedure can be followed to install the desired version of the software.
+Digilent's [Zybo-Z7](https://digilent.com/shop/zybo-z7-zynq-7000-arm-fpga-soc-development-board/) is a ready-to-use embedded software and digital circuit development board built around the Xilinx Zynq™-7000 family. Xilinx provides free licensing to certain development boards and Zybo-Z7 is one among them. This article provides detailed steps to install Vivado 2022.2 on Ubuntu 22.04 LTS. The same procedure can be followed to install the desired version of the software.
 
 
 ## Initial Requirements {#initial-requirements}
