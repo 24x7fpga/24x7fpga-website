@@ -6,8 +6,38 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jul 2024 10:50:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jul 2024 12:16:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Super Keyword</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_29_12_16_52_super_keyword/</link>
+      <pubDate>Mon, 29 Jul 2024 12:16:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_29_12_16_52_super_keyword/</guid>
+      <description>SV Verification Directory
+Super Keyword The super keyword is useful for accessing the properties and methods of a parent class without needing to declare a parent class handle. It consistently refers to the immediate parent class.
+By default, SystemVerilog complier calls super.new() function calls automatically from extende class.
+When the class method require input arguments, the the user has to call super.new{arguments} explicitly.
+Note: super.super.{class_member} is not allowed to access multilevel inheritance.</description>
+    </item>
+    <item>
+      <title>Inheritance</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_29_11_09_50_inheritance/</link>
+      <pubDate>Mon, 29 Jul 2024 11:09:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_29_11_09_50_inheritance/</guid>
+      <description>SV Verification Directory
+Inheritance Inheritance allows a new class to inherit properties and methods from an existing class.
+Creates an extended class from an existing class. The existing class is called as base class or parent class and the extended class is called as the derived class or the child class. The extends keyword is used to inherit the properties of the parent class to the child class. Multilevel inheritance is possible in SystemVerilog i.</description>
+    </item>
+    <item>
+      <title>Four Pillars of OOP</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/</link>
+      <pubDate>Mon, 29 Jul 2024 10:30:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/</guid>
+      <description>SV Verification Directory
+Four Pillars of OOP The are four pillars of Object-Oriented Programming (OOP) are:
+Abstraction Encapsulation Inheritance Polymorphism Abstraction Abstraction is the concept of hiding the complex implementation details and showing only the essential features of the object. It allows users to interact with objects through a simplified interface, without needing to understand the underlying complexity.
+Encapsulation This principle involves bundling the data (attributes) and the methods (functions) that operate on the data into a single unit called an object.</description>
+    </item>
     <item>
       <title>Vivado Installation</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/</link>
@@ -436,7 +466,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Interprocess Communication Mailbox Semaphore Events Randomization </description>
+Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Interprocess Communication Mailbox Semaphore Events Randomization </description>
     </item>
     <item>
       <title>Decoder</title>

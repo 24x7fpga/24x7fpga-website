@@ -68,6 +68,9 @@ In the rapidly evolving world of digital design, verification is paramount to en
 6.  [This Keyword]({{< relref "2024_07_25_14_49_57_this_keyword.md" >}})
 7.  [Static Class Properties and Methods]({{< relref "2024_07_25_14_51_44_static_class_properties_and_methods.md" >}})
 8.  [Shallow Copy and Deep Copy]({{< relref "2024_07_26_09_41_22_shallow_copy_and_deep_copy.md" >}})
+9.  [Four Pillars of OOP]({{< relref "2024_07_29_10_30_53_four_pillars_of_oop.md" >}})
+10. [Inheritance]({{< relref "2024_07_29_11_09_50_inheritance.md" >}})
+11. [Super Keyword]({{< relref "2024_07_29_12_16_52_super_keyword.md" >}})
 
 
 ## Interprocess Communication {#interprocess-communication}
