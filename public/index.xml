@@ -6,8 +6,29 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jul 2024 17:12:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jul 2024 10:18:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Checkout</title>
+      <link>https://24x7fpga.com/git_directory/2024_07_30_10_18_06_git_checkout/</link>
+      <pubDate>Tue, 30 Jul 2024 10:18:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/git_directory/2024_07_30_10_18_06_git_checkout/</guid>
+      <description>Git Checkout Documentation
+Git Checkout Git checkout is used to switch or restore branches.
+Switch Branch From Git Branch, you can identify the branch name to which you want to switch to.
+git checkout &amp;lt;branch&amp;gt; </description>
+    </item>
+    <item>
+      <title>Git Branch</title>
+      <link>https://24x7fpga.com/git_directory/2024_07_30_09_58_52_git_branch/</link>
+      <pubDate>Tue, 30 Jul 2024 09:58:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/git_directory/2024_07_30_09_58_52_git_branch/</guid>
+      <description>Git Branch Documentation
+Git Branch Display Local Branches Displays local branches. The (*) asterisk symbol next to branch indicates the current branch.
+git branch Display Remote Branches Displays remote branches, i.e., branches hosted on the remote repositories.
+git branch --remote // displays only remote repo git branch -a // displays remote and local repo Checking Remote Repository Information Provides remote repository information such as repository structure, configuration and branches.
+git remote show origin </description>
+    </item>
     <item>
       <title>Virtual Methods</title>
       <link>https://24x7fpga.com/sv_directory/2024_07_29_17_12_50_virtual_methods/</link>

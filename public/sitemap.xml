@@ -2,16 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://24x7fpga.com/tags/git/</loc>
+    <lastmod>2024-07-30T10:18:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/git_directory/2024_07_30_10_18_06_git_checkout/</loc>
+    <lastmod>2024-07-30T10:18:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/git_directory/</loc>
+    <lastmod>2024-07-30T10:18:00-04:00</lastmod>
+  </url><url>
     <loc>https://24x7fpga.com/</loc>
-    <lastmod>2024-07-29T17:12:00-04:00</lastmod>
+    <lastmod>2024-07-30T10:18:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/</loc>
+    <lastmod>2024-07-30T10:18:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/git_directory/2024_07_30_09_58_52_git_branch/</loc>
+    <lastmod>2024-07-30T09:58:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/tags/sv/</loc>
     <lastmod>2024-07-29T17:12:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/</loc>
-    <lastmod>2024-07-29T17:12:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/tags/</loc>
     <lastmod>2024-07-29T17:12:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/2024_07_29_17_12_50_virtual_methods/</loc>
