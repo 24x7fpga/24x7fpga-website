@@ -6,8 +6,17 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jul 2024 12:16:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jul 2024 17:12:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Virtual Methods</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_29_17_12_50_virtual_methods/</link>
+      <pubDate>Mon, 29 Jul 2024 17:12:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_29_17_12_50_virtual_methods/</guid>
+      <description>SV Verification Directory
+Virtual Methods Virtual methods enable a child class to override a method defined in its parent class. When a virtual keyword is prefixed before a method in the parent class and if the base class handle is pointed to the extended class, then the extended class method handle will get assigned to the base class handle.
+Once the virtual keyword is used for the parent class method, all the extended child classes become virtual.</description>
+    </item>
     <item>
       <title>Super Keyword</title>
       <link>https://24x7fpga.com/sv_directory/2024_07_29_12_16_52_super_keyword/</link>

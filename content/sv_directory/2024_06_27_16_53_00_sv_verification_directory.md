@@ -71,6 +71,7 @@ In the rapidly evolving world of digital design, verification is paramount to en
 9.  [Four Pillars of OOP]({{< relref "2024_07_29_10_30_53_four_pillars_of_oop.md" >}})
 10. [Inheritance]({{< relref "2024_07_29_11_09_50_inheritance.md" >}})
 11. [Super Keyword]({{< relref "2024_07_29_12_16_52_super_keyword.md" >}})
+12. [Virtual Methods]({{< relref "2024_07_29_17_12_50_virtual_methods.md" >}})
 
 
 ## Interprocess Communication {#interprocess-communication}
