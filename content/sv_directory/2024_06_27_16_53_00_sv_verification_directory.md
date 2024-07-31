@@ -81,9 +81,15 @@ In the rapidly evolving world of digital design, verification is paramount to en
 1.  Events
 2.  Mailbox
 3.  Semaphore
-4.  Modports
-5.  Interface
-6.  Virtual Interface
+
+
+## Interface {#interface}
+
+1.  Modports
+2.  Interface
+3.  Virtual Interface
+4.  Clock Blocks
+5.  Program Blocks
 
 
 ## Randomization {#randomization}
