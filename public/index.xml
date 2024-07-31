@@ -482,6 +482,40 @@ Fixed-Size Arrays An array is a collection of elements stored sequentially. An a
 Single Dimension Array There are two ways in SystemVerilog to declare single-dimension arrays which are shown below:</description>
     </item>
     <item>
+      <title>Redo In Vim</title>
+      <link>https://24x7fpga.com/vim_directory/2024_06_28_15_38_01_redo_in_vim/</link>
+      <pubDate>Fri, 28 Jun 2024 15:38:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/vim_directory/2024_06_28_15_38_01_redo_in_vim/</guid>
+      <description>Reference
+Redo in Vim Come out of the insert mode by pressing &amp;ldquo;Esc&amp;rdquo; and press &amp;ldquo;ctrl+shift+r&amp;rdquo; to redo.</description>
+    </item>
+    <item>
+      <title>Undo In Vim</title>
+      <link>https://24x7fpga.com/vim_directory/2024_06_28_15_35_07_undo_in_vim/</link>
+      <pubDate>Fri, 28 Jun 2024 15:35:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/vim_directory/2024_06_28_15_35_07_undo_in_vim/</guid>
+      <description>Reference
+Undo Come out from the insert mode by pressing &amp;ldquo;Esc&amp;rdquo; and press &amp;lsquo;u&amp;rsquo; to undo.</description>
+    </item>
+    <item>
+      <title>Copy A Word In A Line</title>
+      <link>https://24x7fpga.com/vim_directory/2024_06_28_15_15_48_copy_a_word_in_a_line/</link>
+      <pubDate>Fri, 28 Jun 2024 15:15:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/vim_directory/2024_06_28_15_15_48_copy_a_word_in_a_line/</guid>
+      <description>Reference
+Copying a Word To copy a word in a line you must go into visual mode in vim. You press &amp;lsquo;v&amp;rsquo; to go into visual mode.
+First go to a the word that you want to copy using &amp;lsquo;w&amp;rsquo;. More instructin can be found @ Move The Cursor by One Word. Press &amp;lsquo;v&amp;rsquo; to get into visual mode. Use &amp;lsquo;h, j, k, l&amp;rsquo; to selected the word or a sentence.</description>
+    </item>
+    <item>
+      <title>Move The Cursor by One Word</title>
+      <link>https://24x7fpga.com/vim_directory/2024_06_28_15_10_34_move_the_cursor_by_one_word/</link>
+      <pubDate>Fri, 28 Jun 2024 15:10:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/vim_directory/2024_06_28_15_10_34_move_the_cursor_by_one_word/</guid>
+      <description>Reference
+Jump the cursor by One Word To move the cursor location to the next word in vim use lowercase &amp;lsquo;w&amp;rsquo;.
+To the begining of the line using the line number eg. :57. Press &amp;lsquo;w&amp;rsquo; the cursor will move to the next word. </description>
+    </item>
+    <item>
       <title>Logic Type</title>
       <link>https://24x7fpga.com/sv_directory/2024_06_28_14_48_33_logic_type/</link>
       <pubDate>Fri, 28 Jun 2024 14:48:00 -0400</pubDate>
@@ -567,6 +601,25 @@ A B Sum (S) Carry (Co) 0 0 0 0 0 1 1 0 1 0 1 0 1 1 0 1 Boolean equation for sum 
       <pubDate>Wed, 05 Jun 2024 00:21:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/</guid>
       <description>Welcome to my comprehensive collection of RTL(Register Transfer Level) designs. It is an evolving collection highlighting my projects, skills, and achievements in digital circuit design and verification. I specialize in developing efficient, high-performance hardware architectures using industry-standard languages like SystemVerilog and Verilog. Explore my blog for insightful articles on the latest trends and best practices in RTL design, and visit the tutorials section for step-by-step guides to mastering this critical aspect of hardware engineering.</description>
+    </item>
+    <item>
+      <title>Emacs Display Image</title>
+      <link>https://24x7fpga.com/emacs_directory/2024_05_31_12_47_08_emacs_display_image/</link>
+      <pubDate>Fri, 31 May 2024 12:47:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/emacs_directory/2024_05_31_12_47_08_emacs_display_image/</guid>
+      <description>Reference1, Reference2
+How to include an image in emacs? Simple way to include images in an org document is by using the following command:
+[[ ./path/to/image.png ]] How to display the image in emacs? To display an inline image in emacs org file simply type &amp;quot; C-c C-x C-v&amp;quot;. The same command is used to toggle the display.
+How to add caption and label to the image? To include the caption and label to the name it is necessary to have the image link in the separate line and add &amp;quot; #+caption and #+name: &amp;quot; before the link.</description>
+    </item>
+    <item>
+      <title>Vim Find and Replace</title>
+      <link>https://24x7fpga.com/vim_directory/2024_05_30_20_45_11-vim_find_and_replace/</link>
+      <pubDate>Thu, 30 May 2024 20:45:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/vim_directory/2024_05_30_20_45_11-vim_find_and_replace/</guid>
+      <description>Reference
+Find and Replace Command The command to find and replace a word in a document is by the use of :subtitute (:S) command. The basic command is as follows:
+:[range]s/{pattern}/{string}/[flags] [count] [range] = the word to be replaced will be searched within this specified lines. {pattern} = the word that has to be replaced {string} = the new replaced word [flags] = is constraint for the command [count] = is a postive number that mutliplies the command Note: To replace a special charater use &amp;ldquo;\&amp;rdquo; before the character, for example, to replace $apple =&amp;gt; ^orange use &amp;quot;</description>
     </item>
     <item>
       <title></title>
