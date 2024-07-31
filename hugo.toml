@@ -89,13 +89,13 @@ theme = "hugo-PaperMod"
     weight     = 20
 
   [[menu.main]]
-    identifier = "rtl_directory"
+    #identifier = "rtl directory"
     name       = "rtl directory"
     url        = "rtl_directory/2024_06_05_00_21_53_rtl_design_directory" 
     weight     = 30
 
   [[menu.main]]
-    identifier = "sv_directory"
+    #identifier = "sv directory"
     name       = "sv directory"
     url        = "sv_directory/2024_06_27_16_53_00_sv_verification_directory" 
     weight     = 40
