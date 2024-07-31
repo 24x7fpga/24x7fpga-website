@@ -29,9 +29,7 @@ To display an inline image in emacs org file simply type " C-c C-x C-v". The sam
 To include the caption and label to the name it is necessary to have the image link in the separate line and add " #+caption and #+name: " before the link. See the example for reference:
 
 ```quote
-
 #+caption: This is the caption for the image
 #+name: Fig: image label
 [[./imag.png]]
-
 ```
