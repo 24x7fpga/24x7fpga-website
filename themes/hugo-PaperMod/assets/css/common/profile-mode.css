@@ -18,7 +18,9 @@
 }
 
 .profile img {
-    /*border-radius: 50%;*/ /* adds a circular border on profile image*/
+    /* adds a circular border on profile image*/
+    /*border-radius: 50%;*/ 
+    /* adds a circular border on profile image*/
 }
 
 .buttons {

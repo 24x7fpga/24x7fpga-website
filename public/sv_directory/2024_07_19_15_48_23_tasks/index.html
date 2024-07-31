@@ -12,7 +12,7 @@ Tasks Task in SystemVerilog is a procedural block that contains a block of code 
 Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the code endtask Example Code: Task module task_ex; logic [3:0] data; logic [3:0] arry[16]; task incr([3:0] in, output logic [3:0] out); out = in &#43; 1; endtask initial begin data = 0; $display(&#34;--------- Task: Increment ---------&#34;); //$display(&#34;data = %0d&#34;, data); arry[0]= data; for(int i=0; i&lt;15; i&#43;&#43;)begin incr(arry[i], arry[i&#43;1]); $display(&#34;data = %0d&#34;, arry[i&#43;1]); #1; end end endmodule Execute the code in EDA Playground">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.131f2d5a1cac350eef0148ab1bd5f30bc3f0242c75685d0bc0a2f8b52f618df9.css" integrity="sha256-Ex8tWhysNQ7vAUirG9XzC8PwJCx1aF0LwKL4tS9hjfk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.526ee71d2bda4e817faf8e1337ba879150fa995e4bf978a970ab1988033bc2c6.css" integrity="sha256-Um7nHSvaToF/r44TN7qHkVD6mV5L&#43;XipcKsZiAM7wsY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://24x7fpga.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/favicon-32x32.png">
@@ -170,25 +170,25 @@ Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the c
                 </a>
             </li>
             <li>
-                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl_directory">
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl directory">
                     <span> 
 
 
                            
                         
                          
-                        rtl_directory</span>  
+                        rtl directory</span>  
                 </a>
             </li>
             <li>
-                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv_directory">
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv directory">
                     <span> 
 
 
                            
                         
                          
-                        sv_directory</span>  
+                        sv directory</span>  
                 </a>
             </li>
             <li>

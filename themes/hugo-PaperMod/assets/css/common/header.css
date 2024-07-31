@@ -55,6 +55,7 @@ body:not(.dark) #sun {
     word-break: keep-all;
     overflow-x: auto;
     white-space: nowrap;
+    
 }
 
 #menu li + li {
@@ -66,8 +67,14 @@ body:not(.dark) #sun {
 }
 
 #menu .active {
+    /* Will  increase the font weight and 
+       nder line the menu when active */
+    /*
     font-weight: 500;
-    border-bottom: 2px solid currentColor;
+    border-bottom: 2px solid currentColor; 
+    */ 
+    /* Will  increase the font weight and 
+       nder line the menu when active */
 }
 
 .lang-switch li,
