@@ -78,8 +78,8 @@ Static Casting Dynamic Casting Dynamic Casting Dynamic casting in SystemVerilog 
   "keywords": [
     "sv"
   ],
-  "articleBody": "SV Verification Directory\nDynamic Cast Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,\nStatic Casting Dynamic Casting Dynamic Casting Dynamic casting in SystemVerilog allows you to safely convert a handle of one class type to another class type at runtime, ensuring the cast is valid and the object is of the target type. The dynamic cast, $cast, allows you to check for out-of-bounds values. Use dynamic cast when converting from a type with a large number of values than the destination, such as int to an enumerated variables.\nSyntax $cast (target_handle, source_handle); target_handle: is the handle to which to convert. source_handle: the handle from which to convert from. Example Code Dynamic cast is helpful during polymorhism when a parent class handle is assigned to the child class handle.\n// Parent class class parent_class; // class properties or variables int a, b, s; // task method task func ( ); s = a + b; disp(); endtask function void disp( ); $display(\"Parent Class =\u003e a = %0d , b = %0d, sum s = %0d\", a, b, s); endfunction endclass // Child Class class child_class extends parent_class; // class properties or variables int m; // task method task func ( ); m = a * b; disp(); endtask function void disp( ); $display(\"Child Class =\u003e a = %0d , b = %0d, mul m = %0d\", a, b, m); endfunction endclass module test; parent_class pr_obj; // declare a handle for parent class child_class cl_obj; // declare a handle for child class child_class cl_obj_2; // declare another handle for child class initial begin cl_obj = new( ); // construct an object pr_obj = cl_obj; $cast(cl_obj_2, pr_obj); // DYNAMIC CASTING // parent class assigned to child class pr_obj.a = 20; cl_obj.b = 15; $display(\"------------ Dynamic Casting ------------\"); cl_obj_2.func(); end endmodule Execute the code in EDA Playground\n",
-  "wordCount" : "316",
+  "articleBody": "SV Verification Directory\nDynamic Cast Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,\nStatic Casting Dynamic Casting Dynamic Casting Dynamic casting in SystemVerilog allows you to safely convert a handle of one class type to another class type at runtime, ensuring the cast is valid and the object is of the target type. The dynamic cast, $cast, allows you to check for out-of-bounds values. Use dynamic cast when converting from a type with a large number of values than the destination, such as int to an enumerated variables.\nSyntax $cast (target_handle, source_handle); target_handle: is the handle to which to convert. source_handle: the handle from which to convert from. Example Code Dynamic casting is particularly useful in the context of polymorphism when a parent class handle needs to be assigned to a child class handle.\n// Parent class class parent_class; // class properties or variables int a, b, s; // task method task func ( ); s = a + b; disp(); endtask function void disp( ); $display(\"Parent Class =\u003e a = %0d , b = %0d, sum s = %0d\", a, b, s); endfunction endclass // Child Class class child_class extends parent_class; // class properties or variables int m; // task method task func ( ); m = a * b; disp(); endtask function void disp( ); $display(\"Child Class =\u003e a = %0d , b = %0d, mul m = %0d\", a, b, m); endfunction endclass module test; parent_class pr_obj; // declare a handle for parent class child_class cl_obj; // declare a handle for child class child_class cl_obj_2; // declare another handle for child class initial begin cl_obj = new( ); // construct an object pr_obj = cl_obj; $cast(cl_obj_2, pr_obj); // DYNAMIC CASTING // parent class assigned to child class pr_obj.a = 20; cl_obj.b = 15; $display(\"------------ Dynamic Casting ------------\"); cl_obj_2.func(); end endmodule Execute the code in EDA Playground\n",
+  "wordCount" : "322",
   "inLanguage": "en",
   "datePublished": "2024-07-02T18:41:00-04:00",
   "dateModified": "2024-07-02T18:41:00-04:00",
@@ -253,7 +253,7 @@ Static Casting Dynamic Casting Dynamic Casting Dynamic casting in SystemVerilog 
     <h1 class="post-title entry-hint-parent">
       Dynamic Cast
     </h1>
-    <div class="post-meta"><span title='2024-07-02 18:41:00 -0400 EDT'>July 2, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;316 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-07-02 18:41:00 -0400 EDT'>July 2, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;322 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
@@ -273,7 +273,7 @@ Static Casting Dynamic Casting Dynamic Casting Dynamic casting in SystemVerilog 
 <li>source_handle: the handle from which to convert from.</li>
 </ul>
 <h4 id="example-code">Example Code<a hidden class="anchor" aria-hidden="true" href="#example-code">#</a></h4>
-<p>Dynamic cast is helpful during polymorhism when a parent class handle is assigned to the child class handle.</p>
+<p>Dynamic casting is particularly useful in the context of polymorphism when a parent class handle needs to be assigned to a child class handle.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#75715e">// Parent class
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>class parent_class;
 </span></span><span style="display:flex;"><span>   <span style="color:#75715e">// class properties or variables
