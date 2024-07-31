@@ -10,7 +10,7 @@ theme = "hugo-PaperMod"
 [params.profileMode]
     enabled     = true 
     imageUrl    = "/img/ai-zeus3.png"
-    imageWidth  = 126 # custom size
+    imageWidth  = 120 # custom size
     imageHeight = 240 # custom size
     title = "Think, Design and Build"
     

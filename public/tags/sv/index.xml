@@ -6,8 +6,20 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 Jul 2024 10:26:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jul 2024 16:19:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Encapsulation</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_31_16_19_14_encapsulation/</link>
+      <pubDate>Wed, 31 Jul 2024 16:19:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_31_16_19_14_encapsulation/</guid>
+      <description>SV Verification Directory
+Encapsulation Encapsulation is a technique used to restrict access to the data and methods within a class, ensuring that internal class details are not accessible from outside the class.
+Access Specifiers These define the visibility of class members and they are as follows:
+Local Members declared as local are accessible only within the class itself.
+Syntax
+class ex; local int a; function new(); // execute code endfunction endclass Protected Members declared as protected are accessible within the class and its derived classes.</description>
+    </item>
     <item>
       <title>Polymorphism</title>
       <link>https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/</link>

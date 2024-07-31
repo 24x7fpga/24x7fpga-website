@@ -73,13 +73,17 @@ In the rapidly evolving world of digital design, verification is paramount to en
 11. [Super Keyword]({{< relref "2024_07_29_12_16_52_super_keyword.md" >}})
 12. [Virtual Keyword]({{< relref "2024_07_31_10_21_04_virtual_keyword.md" >}})
 13. [Polymorphism]({{< relref "2024_07_31_10_26_49_polymorphism.md" >}})
+14. [Encapsulation]({{< relref "2024_07_31_16_19_14_encapsulation.md" >}})
 
 
 ## Interprocess Communication {#interprocess-communication}
 
-1.  Mailbox
-2.  Semaphore
-3.  Events
+1.  Events
+2.  Mailbox
+3.  Semaphore
+4.  Modports
+5.  Interface
+6.  Virtual Interface
 
 
 ## Randomization {#randomization}

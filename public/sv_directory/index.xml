@@ -6,8 +6,20 @@
     <description>Recent content in Sv_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 Jul 2024 10:26:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jul 2024 16:19:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/sv_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Encapsulation</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_31_16_19_14_encapsulation/</link>
+      <pubDate>Wed, 31 Jul 2024 16:19:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_31_16_19_14_encapsulation/</guid>
+      <description>SV Verification Directory
+Encapsulation Encapsulation is a technique used to restrict access to the data and methods within a class, ensuring that internal class details are not accessible from outside the class.
+Access Specifiers These define the visibility of class members and they are as follows:
+Local Members declared as local are accessible only within the class itself.
+Syntax
+class ex; local int a; function new(); // execute code endfunction endclass Protected Members declared as protected are accessible within the class and its derived classes.</description>
+    </item>
     <item>
       <title>Polymorphism</title>
       <link>https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/</link>
@@ -333,7 +345,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Interprocess Communication Mailbox Semaphore Events Randomization </description>
+Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Modports Interface Virtual Interface Randomization </description>
     </item>
   </channel>
 </rss>
