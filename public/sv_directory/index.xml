@@ -6,15 +6,24 @@
     <description>Recent content in Sv_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jul 2024 17:12:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jul 2024 10:26:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/sv_directory/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Virtual Methods</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_29_17_12_50_virtual_methods/</link>
-      <pubDate>Mon, 29 Jul 2024 17:12:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_29_17_12_50_virtual_methods/</guid>
+      <title>Polymorphism</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/</link>
+      <pubDate>Wed, 31 Jul 2024 10:26:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/</guid>
       <description>SV Verification Directory
-Virtual Methods Virtual methods enable a child class to override a method defined in its parent class. When a virtual keyword is prefixed before a method in the parent class and if the base class handle is pointed to the extended class, then the extended class method handle will get assigned to the base class handle.
+Polymorphism As the term &amp;lsquo;polymorphism&amp;rsquo; implies, &amp;lsquo;poly&amp;rsquo; means &amp;lsquo;many&amp;rsquo; and &amp;lsquo;morph&amp;rsquo; means &amp;lsquo;form&amp;rsquo; or &amp;lsquo;shape&amp;rsquo;. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.
+An extended class object can be assigned to the base class but not the other way round. Virtual Keyword should be used in parent class to override the method by the child class.</description>
+    </item>
+    <item>
+      <title>Virtual Keyword</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_31_10_21_04_virtual_keyword/</link>
+      <pubDate>Wed, 31 Jul 2024 10:21:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_31_10_21_04_virtual_keyword/</guid>
+      <description>SV Verification Directory
+Virtual Keyword Virtual keyword enables a child class to override a method defined in its parent class. When a virtual keyword is prefixed before a method in the parent class and if the base class handle is pointed to the extended class, then the extended class method handle will get assigned to the base class handle.
 Once the virtual keyword is used for the parent class method, all the extended child classes become virtual.</description>
     </item>
     <item>
@@ -324,7 +333,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Methods Interprocess Communication Mailbox Semaphore Events Randomization </description>
+Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Interprocess Communication Mailbox Semaphore Events Randomization </description>
     </item>
   </channel>
 </rss>
