@@ -1,6 +1,6 @@
 baseURL = 'https://24x7fpga.com/'
 languageCode = 'en-us'
-title = 'Home'  # 'Think, Design and Build' change this if you use hello-friend-ng
+title = 'Home'  
 theme = "hugo-PaperMod"
 
 
@@ -12,33 +12,44 @@ theme = "hugo-PaperMod"
     imageUrl    = "/img/ai-zeus3.png"
     imageWidth  = 126 # custom size
     imageHeight = 240 # custom size
-    title = "Think, Design and Build"
+    title       = "Think, Design and Build"
     
 
 [params]
-  showWordCount = true 
-  author = "kiran"
-  #title = "24x7fpga"
-  description = "24x7fpga"
-  defaultTheme = "light" 
-  #DateFormat = "2006-01-02"
-  ShowReadingTime= true
-  #ShowShareButtons= true
-  ShowPostNavLinks= false
-  ShowBreadCrumbs= false
-  ShowCodeCopyButtons= true
-  disableSpecial1stPost= false
-  disableScrollToTop= false
-  comments= false
-  hidemeta= false
-  hideSummary= true
-  showtoc= false
-  tocopen= false
-  enableEmoji = true
-  
+  showWordCount         = true 
+  author                = "Kiran"
+  #title                = "24x7fpga"
+  description           = "24x7fpga"
+  defaultTheme          = "light" 
+  #DateFormat           = "2006-01-02"
+  ShowReadingTime       = true
+  #ShowShareButtons     = true
+  ShowPostNavLinks      = false
+  ShowBreadCrumbs       = false
+  ShowCodeCopyButtons   = true
+  disableSpecial1stPost = false
+  disableScrollToTo     = false
+  comments              = false
+  hidemeta              = false
+  hideSummary           = true
+  showtoc               = false
+  tocopen               = false
+  enableEmoji           = true
+
+
+
+  [assets]
+    favicon16x16     = "/assets/favicon-16x16.png"
+    favicon32x32     = "/assets/favicon-32x32.png"
+    apple_touch_icon = "/assets/apple-touch-icon.png"
+    favicon          = "favicon.ico"
+ 
+  [params.label]
+    icon = ""
+
  
  [params.Singlefooter]
-    path      = "/img/org_mode.png"
+    path     = "/img/org_mode.png"
     alt      = "footer"
     maxWidth = "50px"                
 

@@ -90,6 +90,3 @@ In the rapidly evolving world of digital design, verification is paramount to en
 3.  Virtual Interface
 4.  Clock Blocks
 5.  Program Blocks
-
-
-## Randomization {#randomization}
