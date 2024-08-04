@@ -6,8 +6,17 @@
     <description>Recent content in Git_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jul 2024 10:18:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 04 Aug 2024 12:24:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/git_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Pull</title>
+      <link>https://24x7fpga.com/git_directory/2024_08_04_12_24_44_git_pull/</link>
+      <pubDate>Sun, 04 Aug 2024 12:24:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/git_directory/2024_08_04_12_24_44_git_pull/</guid>
+      <description>Git Pull Documentation
+Git Pull Git pull is used to sync up the local repository with the remote repository. This command performs two operation:
+[Git Fetch]: will download the contents from the remote repository. [Git Rebase] or [Git Merge]: will update the local repository with the remote repository. </description>
+    </item>
     <item>
       <title>Git Checkout</title>
       <link>https://24x7fpga.com/git_directory/2024_07_30_10_18_06_git_checkout/</link>
