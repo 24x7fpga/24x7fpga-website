@@ -12,7 +12,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 
 ## My Work Flow {#my-work-flow}
 
-1.  Operating Sytem and Text Editor
+1.  Operating System and Text Editor
 2.  Folder Structure
 3.  Design Scripts
 
