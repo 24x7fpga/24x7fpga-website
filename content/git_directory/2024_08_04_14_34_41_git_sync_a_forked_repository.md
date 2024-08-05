@@ -22,9 +22,9 @@ To sync a forked repository with the upstream repository (the original repositor
 git remote add {upstream/parent} {ssh original git repo}
 ```
 
-{upstream/parent} is user defined the name given to the original repo.
+-   {upstream/parent} is user defined the name given to the original repo.
 
-1.  Once the original repository is added, [Git Pull]({{< relref "2024_08_04_12_24_44_git_pull.md" >}})  the original repository to the local repository:
+-   Once the original repository is added, [Git Pull]({{< relref "2024_08_04_12_24_44_git_pull.md" >}})  the original repository to the local repository:
 
 <!--listend-->
 
@@ -32,7 +32,7 @@ git remote add {upstream/parent} {ssh original git repo}
 git pull {upstram/parent} {branch}
 ```
 
-{branch} you ca sync the local repository with the main branch or if you are working with any branch type the branch name.
+-   {branch} is the name of the branch, it could be main or the branch name you want to sync the local repository.
 
 This is will sync the original forked repository with the local repository.
 
@@ -44,12 +44,14 @@ This is will sync the original forked repository with the local repository.
 git push {origin} {branch}
 ```
 
-{origin} is the name of your forked remote repository. You can find the forked remote repository name using the command:
+-   {origin} is the name of your forked remote repository. You can find the forked remote repository name using the command:
+
+<!--listend-->
 
 ```linux
 git remote -v
 ```
 
-{branch} you can push it you the branch if you are working with any branches or you can push the changes to **main** branch.
+-   {branch}, again is the name of the branch you want push the changes. If you no branches you can push the changes to **main** branch.
 
 Note: it is a good practice to regularly sync your fork with the upstream repository, you ensure that your fork stays up-to-date with the latest changes from the original project.
