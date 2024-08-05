@@ -6,8 +6,18 @@
     <description>Recent content in Git_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Aug 2024 12:24:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 04 Aug 2024 14:34:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/git_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Sync a Forked Repository</title>
+      <link>https://24x7fpga.com/git_directory/2024_08_04_14_34_41_git_sync_a_forked_repository/</link>
+      <pubDate>Sun, 04 Aug 2024 14:34:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/git_directory/2024_08_04_14_34_41_git_sync_a_forked_repository/</guid>
+      <description>Reference Video
+Git Sync a Forked Repository To sync a forked repository with the upstream repository (the original repository from which you forked), you can follow these steps:
+Add the parent repository/upstream repository if not already added: git remote add {upstream/parent} {ssh original git repo} {upstream/parent} is user defined the name given to the original repo.
+Once the original repository is added, Git Pull the original repository to the local repository: git pull {upstram/parent} {branch} {branch} you ca sync the local repository with the main branch or if you are working with any branch type the branch name.</description>
+    </item>
     <item>
       <title>Git Pull</title>
       <link>https://24x7fpga.com/git_directory/2024_08_04_12_24_44_git_pull/</link>
