@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>toc on Home</title>
-    <link>https://24x7fpga.com/tags/toc/</link>
-    <description>Recent content in toc on Home</description>
-    <generator>Hugo -- 0.121.1</generator>
+    <title>Toc on Home</title>
+    <link>http://localhost:1313/tags/toc/</link>
+    <description>Recent content in Toc on Home</description>
+    <generator>Hugo -- 0.126.1</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Jun 2024 16:53:00 -0400</lastBuildDate>
-    <atom:link href="https://24x7fpga.com/tags/toc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/toc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SV Verification Directory</title>
-      <link>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</link>
+      <link>http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</link>
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
+      <guid>http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
 Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Modports Interface Virtual Interface Clock Blocks Program Blocks </description>
     </item>
     <item>
       <title>RTL Design Directory</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/</link>
+      <link>http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/</link>
       <pubDate>Wed, 05 Jun 2024 00:21:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/</guid>
       <description>Welcome to my comprehensive collection of RTL(Register Transfer Level) designs. It is an evolving collection highlighting my projects, skills, and achievements in digital circuit design and verification. I specialize in developing efficient, high-performance hardware architectures using industry-standard languages like SystemVerilog and Verilog. Explore my blog for insightful articles on the latest trends and best practices in RTL design, and visit the tutorials section for step-by-step guides to mastering this critical aspect of hardware engineering.</description>
     </item>
   </channel>

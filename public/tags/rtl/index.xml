@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>rtl on Home</title>
-    <link>https://24x7fpga.com/tags/rtl/</link>
-    <description>Recent content in rtl on Home</description>
-    <generator>Hugo -- 0.121.1</generator>
+    <title>Rtl on Home</title>
+    <link>http://localhost:1313/tags/rtl/</link>
+    <description>Recent content in Rtl on Home</description>
+    <generator>Hugo -- 0.126.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jul 2024 10:50:00 -0400</lastBuildDate>
-    <atom:link href="https://24x7fpga.com/tags/rtl/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/rtl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vivado Installation</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_28_10_50_56_vivado_installation/</link>
       <pubDate>Sun, 28 Jul 2024 10:50:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_28_10_50_56_vivado_installation/</guid>
       <description>Digilent&amp;rsquo;s Zybo-Z7 is a ready-to-use embedded software and digital circuit development board built around the Xilinx Zynq™-7000 family. Xilinx provides free licensing to certain development boards and Zybo-Z7 is one among them. This article provides detailed steps to install Vivado 2022.2 on Ubuntu 22.04 LTS. The same procedure can be followed to install the desired version of the software.
 Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred) and 100GB of free storage space for full installation.</description>
     </item>
     <item>
       <title>Synchronous and Asynchronous Reset</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/</link>
       <pubDate>Thu, 25 Jul 2024 11:34:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Synchronous and Asynchronous Reset Resets are crucial in digital circuits for ensuring the system starts from a known state.
 Resets allow the system to recover from errors by reinitializing the state. Resets ensure that all flip-flops start from a known state. There are two types of resets based on the reset activation and they are:
@@ -28,34 +28,34 @@ Synchronous Reset Asynchronous Reset Synchronous Reset In synchronous reset circ
     </item>
     <item>
       <title>Throughput and Latency</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_23_21_33_58_throughput_and_latency/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_23_21_33_58_throughput_and_latency/</link>
       <pubDate>Tue, 23 Jul 2024 21:33:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_23_21_33_58_throughput_and_latency/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_23_21_33_58_throughput_and_latency/</guid>
       <description>Introduction Speed in digital design can have three primary meanings/definitions based on the context of the problem. There are as follows:
 Throughput: refers to the amount of time a system takes to process the data per clock cycle, measured in bits per second. Latency: refers to the time between the input and the processed output, measured as clock cycles. Timing: refers to the logic delays between the sequential elements, the standard metric is clock period or frequency.</description>
     </item>
     <item>
       <title>Read Only Memory</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_23_13_11_22_read_only_memory/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_23_13_11_22_read_only_memory/</link>
       <pubDate>Tue, 23 Jul 2024 13:11:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_23_13_11_22_read_only_memory/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_23_13_11_22_read_only_memory/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Read Only Memory(ROM): An Overview Read-only memory widely known as ROM is a non-volatile memory that is used to store data or programs that do not change over time. As the name suggests, data can only be read from the memory. In digital design, ROM can be used to store image data or signal data for processing.
 Memory File A memory file is a simple file with an extension of *.</description>
     </item>
     <item>
       <title>Frequency Divider</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_22_15_24_11_frequency_divider/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_22_15_24_11_frequency_divider/</link>
       <pubDate>Mon, 22 Jul 2024 15:24:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_22_15_24_11_frequency_divider/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_22_15_24_11_frequency_divider/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Frequency Divider: An Overview A frequency divider is a digital circuit that reduces the frequency of the main clock by a certain factor. They are typically used in clock generation circuits, timers, counters, etc. Frequency dividers can be categorized into two even and odd frequency dividers based on the factor N. If N is an even number the frequency divider is categorized under an even frequency divider and when N is an odd number it is categorized as an odd frequency divider.</description>
     </item>
     <item>
       <title>Edge Detector</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_22_14_10_16_edge_detector/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_22_14_10_16_edge_detector/</link>
       <pubDate>Mon, 22 Jul 2024 14:10:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_22_14_10_16_edge_detector/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_22_14_10_16_edge_detector/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Edge Detector: An Overview Edge detectors play a crucial role in synchronous systems to generate a short pulse when a transition of a signal occurs from low to high or high to low. These short pulses are used to trigger an event or generate an interrupt.
 There are three types of edge detectors, and they are as follows:
@@ -63,54 +63,54 @@ Rising edge detector: detects a signal transition from low to high.</description
     </item>
     <item>
       <title>Ring Counter</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_22_11_17_17_ring_counter/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_22_11_17_17_ring_counter/</link>
       <pubDate>Mon, 22 Jul 2024 11:17:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_22_11_17_17_ring_counter/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_22_11_17_17_ring_counter/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Ring Counter: An Overview A ring counter is a type of shift register that where the output of the last register is fed to the input of the first register forming a type of circular shift register. There are two types of ring counters based on how the last bit is fed to the input and they are:
 Simple Ring Counter Twisted Ring Counter Simple Ring Counter A simple ring counter is where the output of the last register is fed to the input of the first register.</description>
     </item>
     <item>
       <title>Mod-N Counter</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_18_23_30_22_mod_n_counter/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_18_23_30_22_mod_n_counter/</link>
       <pubDate>Thu, 18 Jul 2024 23:30:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_18_23_30_22_mod_n_counter/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_18_23_30_22_mod_n_counter/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Mod-N Counter: An Overview A modulo-N counter (Mod-N) is counter that counts from 0 to N-1 and then wraps back to 0. This type of counter is useful in [Frequency Divider], timers and state machines. The number of flop-flop required to calculate a mod-N counter is ceil(log2(N)). Forexample: for a mod 10 counter the number of flip-flop required is 4 (ceil(log2(10))).
 Verilog Code: Mod-N Counter module mod_cntr #(parameter N = 4)(/*AUTOARG*/ // Outputs mod_cntr, // Inputs clk, rst ); // Outputs output [N-1:0] mod_cntr; // Inputs input	clk; input	rst; logic [$clog2(N)-1:0] cntr_reg, cntr_nxt; /*AUTOREG*/ /*AUTOWIRE*/ always_ff@(posedge clk) if(rst) cntr_reg &amp;lt;= 0; else cntr_reg &amp;lt;= cntr_nxt; always_comb cntr_nxt = (cntr_reg == N-1) ?</description>
     </item>
     <item>
       <title>Code Converter</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_18_21_58_46_code_converter/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_18_21_58_46_code_converter/</link>
       <pubDate>Thu, 18 Jul 2024 21:58:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_18_21_58_46_code_converter/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_18_21_58_46_code_converter/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Code Converter: Binary to/from Gray Code Code converters are digital circuits that convert data from one form of binary representation to another. The two most important code converts are binary to gray and gray to binary. This converters are crucial digital components in designing [Aysnchronous FIFO].
 Binary Code Binary code is a data representation system using only two states, zero (0) and one (1).</description>
     </item>
     <item>
       <title>Up/Down Counter</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_16_22_30_28_up_down_counter/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_16_22_30_28_up_down_counter/</link>
       <pubDate>Tue, 16 Jul 2024 22:30:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_16_22_30_28_up_down_counter/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_16_22_30_28_up_down_counter/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Up/Down Counter: An Overview An up/down counter, also known as a bidirectional counter, is a sequential digital circuit that can increment(count up) of decrement(count down) its values. The control signal dictates the direction of the counter. These counters are widely used in digital design for counting purposes such as in frequency division, event counting, etc.
 Applications Digital Clocks: To count seconds, minutes, and hours.</description>
     </item>
     <item>
       <title>Universal Shift Register</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_10_20_30_35_universal_shift_register/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_10_20_30_35_universal_shift_register/</link>
       <pubDate>Wed, 10 Jul 2024 20:30:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_10_20_30_35_universal_shift_register/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_10_20_30_35_universal_shift_register/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Universal Shift Register: An Overview A universal shift register is a digital component that performs more than one data operation. It combines the functionalities of several types of shift registers into one, allowing for greater flexibility in data handling.
 Design: 4-bit Universal Shift Register The figure below shows a design of a 4-bit universal shift register. It is an extension of a Shift Register which includes a series of Multiplexer which acts as switch to change the functionality of the register.</description>
     </item>
     <item>
       <title>Shift Register</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_06_19_54_50_shift_register/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_06_19_54_50_shift_register/</link>
       <pubDate>Sat, 06 Jul 2024 19:54:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_06_19_54_50_shift_register/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_06_19_54_50_shift_register/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Shift Register: An Overview A shift register is a set of sequential registers placed in series to transfer and store data. The figure below shows a 4-bit serial shift register.
 The waveform below shows the data being shifted from flip-flop 1 to 4 on the rising edge of the clock.
@@ -118,71 +118,71 @@ Applications Shift registers are typically used to collect and transfer data for
     </item>
     <item>
       <title>Register</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_06_19_23_36_register/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_06_19_23_36_register/</link>
       <pubDate>Sat, 06 Jul 2024 19:23:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_06_19_23_36_register/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_06_19_23_36_register/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Register: An Overview A register in digital design is fast storage sequenctial circuit that can hold data temporarily. A widely used register is D Flip-FLop. A D Flip-Flop is an edge-triggered circuit that combines a pair of latches to store on bit.
 Advantages of Registers Registers provide fast access to data compared to main memory. Ideal for temporary storage during data processing. Desgin: D Flip-Flop A D Flip-Flop is a edge-trigger register, either postive edge-triggered, negative edge-triggered or dual edge-triggered.</description>
     </item>
     <item>
       <title>Adder-Subtractor</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_06_16_50_01_adder_subtractor/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_06_16_50_01_adder_subtractor/</link>
       <pubDate>Sat, 06 Jul 2024 16:50:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_06_16_50_01_adder_subtractor/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_06_16_50_01_adder_subtractor/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Adder-Subtractor: An Overview An adder-subtractor is a combinational digital circuit that can perform the operation of an adder and subtractor based on the control signal. It is an essential component in arithmetic logic units (ALUs) in microprocessors and digital signal processors.
 Applications of Adder-Subtractor CPUs, microcontrollers, and digital signal processors implement adder subtractors for arithmetic operations. Computer graphics make use of adder-subtractors blocks for calculating coordinates and pixel values.</description>
     </item>
     <item>
       <title>Comparator</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_07_06_15_54_47_comparator/</link>
+      <link>http://localhost:1313/rtl_directory/2024_07_06_15_54_47_comparator/</link>
       <pubDate>Sat, 06 Jul 2024 15:54:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_07_06_15_54_47_comparator/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_07_06_15_54_47_comparator/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Comparator: An Overview A comparator is a fundamental building block in digital design that compares two binary numbers. Comparators can be categorized based on their use and functionality.
 Equality Comparator: it compares the two binary numbers to up a true bit or high when all the binary bits are identical and false or low when the bits are not identical. Magnitude Comparator: has three functionality, to determine the relationship between the two binary numbers that are being compared.</description>
     </item>
     <item>
       <title>Decoder</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_06_23_21_30_22_decoder/</link>
+      <link>http://localhost:1313/rtl_directory/2024_06_23_21_30_22_decoder/</link>
       <pubDate>Sun, 23 Jun 2024 21:30:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_06_23_21_30_22_decoder/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_06_23_21_30_22_decoder/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Decoder: An Overview The functionality of a decoder is the opposite of an Encoder. A decoder is a combinational circuit that converts a binary coder to a set of output signals with only one bit of the being high at any given time. It consists of N input lines and 2^N output lines.
 Design: 2-to-4 Decoder A 2-to-4 decoder consists of two input lines and four output lines.</description>
     </item>
     <item>
       <title>Encoder</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_06_23_20_40_25_encoder/</link>
+      <link>http://localhost:1313/rtl_directory/2024_06_23_20_40_25_encoder/</link>
       <pubDate>Sun, 23 Jun 2024 20:40:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_06_23_20_40_25_encoder/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_06_23_20_40_25_encoder/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Encoder: An Overview An encoder is a digital combinational circuit that converts 2^n inputs to n outputs. It converts a set of binary inputs to binary-coded output, where only one input line is active at a given time.
 Design: 4-to-2 Encoder A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 2^2 = 4 input lines named as in[3], in[2], in[1], in[0] and two output lines named as out[1] and out[0].</description>
     </item>
     <item>
       <title>De-Multiplexer</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_06_14_22_07_44_de_multiplexer/</link>
+      <link>http://localhost:1313/rtl_directory/2024_06_14_22_07_44_de_multiplexer/</link>
       <pubDate>Fri, 14 Jun 2024 22:07:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_06_14_22_07_44_de_multiplexer/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_06_14_22_07_44_de_multiplexer/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 De-Multiplexer (DEMUX): An Overview A DEMUX or data distributor is a one-to-many combinational circuit that receives inputs from a single input line and transmits the same information over one of &amp;rsquo;n&amp;rsquo; possible output lines. DEMUX transmits the same data that is received on the input to different destinations. A de-multiplexer is a 1-to-N device, where N/n is the number of outputs and with &amp;rsquo;m&amp;rsquo; select line, therefore, 2^m = n.</description>
     </item>
     <item>
       <title>Multiplexer</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_06_13_12_22_45_multiplexer/</link>
+      <link>http://localhost:1313/rtl_directory/2024_06_13_12_22_45_multiplexer/</link>
       <pubDate>Thu, 13 Jun 2024 12:22:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_06_13_12_22_45_multiplexer/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_06_13_12_22_45_multiplexer/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Multiplexer (MUX): An Overview A multiplexer is a digital circuit that selects one input out of many inputs, hence, it is also called a data selector. It consists of 2^n inputs with n selector lines, which are used to select which input to send to the output.
 Need For Multiplexers The need for MUXs arises wherever there is a need to transmit multiple data over a shared communication channel.</description>
     </item>
     <item>
       <title>Full Adder</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_06_08_11_32_42_full_adder/</link>
+      <link>http://localhost:1313/rtl_directory/2024_06_08_11_32_42_full_adder/</link>
       <pubDate>Sat, 08 Jun 2024 11:32:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_06_08_11_32_42_full_adder/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_06_08_11_32_42_full_adder/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Full Adder A full adder is a basic building block of a digital circuit. Full adder requires three inputs a, b, and c(carry-in) to result in two outputs s(sum) and co(carry-out).
 Full adder truth table:
@@ -190,9 +190,9 @@ A B C SUM (S) Carry (Co) 0 0 0 0 0 0 0 1 1 0 0 1 0 1 0 0 1 1 0 1 1 0 0 1 0 1 0 1
     </item>
     <item>
       <title>Half Adder</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_06_05_22_56_41_half_adder/</link>
+      <link>http://localhost:1313/rtl_directory/2024_06_05_22_56_41_half_adder/</link>
       <pubDate>Wed, 05 Jun 2024 22:56:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_06_05_22_56_41_half_adder/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_06_05_22_56_41_half_adder/</guid>
       <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Half Adder Half adder is a combinational arithmetic circuit. Its functionality is to add two 1-bit binary digits to produce a sum bit and carry as the output.
 Half adder truth table:

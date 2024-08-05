@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Tasks | Home</title>
 <meta name="keywords" content="sv">
 <meta name="description" content="SV Verification Directory
 Tasks Task in SystemVerilog is a procedural block that contains a block of code that can be reused. Unlike [Functions], tasks can contain simulation time. The default port direction is &ldquo;input&rdquo; unless declared as other types. The default data type of the ports is of &ldquo;logic&rdquo; type unless specified. A task does not need to have a &ldquo;begin &hellip; end&rdquo; statement.
 Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the code endtask Example Code: Task module task_ex; logic [3:0] data; logic [3:0] arry[16]; task incr([3:0] in, output logic [3:0] out); out = in &#43; 1; endtask initial begin data = 0; $display(&#34;--------- Task: Increment ---------&#34;); //$display(&#34;data = %0d&#34;, data); arry[0]= data; for(int i=0; i&lt;15; i&#43;&#43;)begin incr(arry[i], arry[i&#43;1]); $display(&#34;data = %0d&#34;, arry[i&#43;1]); #1; end end endmodule Execute the code in EDA Playground">
 <meta name="author" content="Kiran">
-<link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/">
+<link rel="canonical" href="http://localhost:1313/sv_directory/2024_07_19_15_48_23_tasks/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.526ee71d2bda4e817faf8e1337ba879150fa995e4bf978a970ab1988033bc2c6.css" integrity="sha256-Um7nHSvaToF/r44TN7qHkVD6mV5L&#43;XipcKsZiAM7wsY=" rel="preload stylesheet" as="style">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-<link rel="icon" href="https://24x7fpga.com/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
-<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/sv_directory/2024_07_19_15_48_23_tasks/">
 <noscript>
     <style>
         #theme-toggle,
@@ -36,75 +37,7 @@ Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the c
 
 <link rel="stylesheet" href="../../zcustom.css">
 
-<meta property="og:title" content="Tasks" />
-<meta property="og:description" content="SV Verification Directory
-Tasks Task in SystemVerilog is a procedural block that contains a block of code that can be reused. Unlike [Functions], tasks can contain simulation time. The default port direction is &ldquo;input&rdquo; unless declared as other types. The default data type of the ports is of &ldquo;logic&rdquo; type unless specified. A task does not need to have a &ldquo;begin &hellip; end&rdquo; statement.
-Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the code endtask Example Code: Task module task_ex; logic [3:0] data; logic [3:0] arry[16]; task incr([3:0] in, output logic [3:0] out); out = in &#43; 1; endtask initial begin data = 0; $display(&#34;--------- Task: Increment ---------&#34;); //$display(&#34;data = %0d&#34;, data); arry[0]= data; for(int i=0; i&lt;15; i&#43;&#43;)begin incr(arry[i], arry[i&#43;1]); $display(&#34;data = %0d&#34;, arry[i&#43;1]); #1; end end endmodule Execute the code in EDA Playground" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/" /><meta property="article:section" content="sv_directory" />
-<meta property="article:published_time" content="2024-07-19T15:48:00-04:00" />
-<meta property="article:modified_time" content="2024-07-19T15:48:00-04:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tasks"/>
-<meta name="twitter:description" content="SV Verification Directory
-Tasks Task in SystemVerilog is a procedural block that contains a block of code that can be reused. Unlike [Functions], tasks can contain simulation time. The default port direction is &ldquo;input&rdquo; unless declared as other types. The default data type of the ports is of &ldquo;logic&rdquo; type unless specified. A task does not need to have a &ldquo;begin &hellip; end&rdquo; statement.
-Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the code endtask Example Code: Task module task_ex; logic [3:0] data; logic [3:0] arry[16]; task incr([3:0] in, output logic [3:0] out); out = in &#43; 1; endtask initial begin data = 0; $display(&#34;--------- Task: Increment ---------&#34;); //$display(&#34;data = %0d&#34;, data); arry[0]= data; for(int i=0; i&lt;15; i&#43;&#43;)begin incr(arry[i], arry[i&#43;1]); $display(&#34;data = %0d&#34;, arry[i&#43;1]); #1; end end endmodule Execute the code in EDA Playground"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Sv_directories",
-      "item": "https://24x7fpga.com/sv_directory/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Tasks",
-      "item": "https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Tasks",
-  "name": "Tasks",
-  "description": "SV Verification Directory\nTasks Task in SystemVerilog is a procedural block that contains a block of code that can be reused. Unlike [Functions], tasks can contain simulation time. The default port direction is \u0026ldquo;input\u0026rdquo; unless declared as other types. The default data type of the ports is of \u0026ldquo;logic\u0026rdquo; type unless specified. A task does not need to have a \u0026ldquo;begin \u0026hellip; end\u0026rdquo; statement.\nSyntax: Task task task_name (in1, in2, in3, output logic out1); // execute the code endtask Example Code: Task module task_ex; logic [3:0] data; logic [3:0] arry[16]; task incr([3:0] in, output logic [3:0] out); out = in + 1; endtask initial begin data = 0; $display(\u0026#34;--------- Task: Increment ---------\u0026#34;); //$display(\u0026#34;data = %0d\u0026#34;, data); arry[0]= data; for(int i=0; i\u0026lt;15; i++)begin incr(arry[i], arry[i+1]); $display(\u0026#34;data = %0d\u0026#34;, arry[i+1]); #1; end end endmodule Execute the code in EDA Playground",
-  "keywords": [
-    "sv"
-  ],
-  "articleBody": "SV Verification Directory\nTasks Task in SystemVerilog is a procedural block that contains a block of code that can be reused. Unlike [Functions], tasks can contain simulation time. The default port direction is “input” unless declared as other types. The default data type of the ports is of “logic” type unless specified. A task does not need to have a “begin … end” statement.\nSyntax: Task task task_name (in1, in2, in3, output logic out1); // execute the code endtask Example Code: Task module task_ex; logic [3:0] data; logic [3:0] arry[16]; task incr([3:0] in, output logic [3:0] out); out = in + 1; endtask initial begin data = 0; $display(\"--------- Task: Increment ---------\"); //$display(\"data = %0d\", data); arry[0]= data; for(int i=0; i\u003c15; i++)begin incr(arry[i], arry[i+1]); $display(\"data = %0d\", arry[i+1]); #1; end end endmodule Execute the code in EDA Playground\nStatic Task When the task is declared as static, all its variables are stored in the same storage space for all the task calls. This means that if a static task is called multiple times, the same variables are used, which can lead to unintended interactions if not managed carefully. Static tasks are useful when the state needs to be maintained across multiple invocations.\nExample Code: Static Task module static_task; logic [3:0] data = 0; logic [3:0] arry[16]; task incr; data++; endtask initial begin $display(\"--------- Task: Increment ---------\"); for(int i=0; i\u003c15; i++)begin incr(); $display(\"data = %0d\", data); #1; end end endmodule Execute the code in EDA Playground\nAutomatic Task Automatic task allocates separate memory for each call in the stack. This is useful for tasks that may be called recursively, as it prevents variable conflicts and unintended interactions between different calls. An automatic task can be declared with an “automatic” prefix to the task name.\nExample Code: Automatic Task module auto_task; logic [3:0] a,b; logic [4:0] res; task automatic_sum([3:0] a, b, output logic [4:0] sum); sum = a + b; endtask initial begin $display(\"----------- Automatic Task: Addition -----------\"); repeat(30)begin a = $urandom(); b = $urandom(); automatic_sum(a,b,res); $display(\"a = %0d, b = %0d, sum = %0d\", a, b, res); end end endmodule Execute the code in EDA Playground\nPoints to Remember Automatic variables can be declared in a static task. Static variables can be declared in an automatic task. Default argument type is logic if no type is specified. The default direction of the argument is input if no direction is specified. ",
-  "wordCount" : "399",
-  "inLanguage": "en",
-  "datePublished": "2024-07-19T15:48:00-04:00",
-  "dateModified": "2024-07-19T15:48:00-04:00",
-  "author":[{
-    "@type": "Person",
-    "name": "Kiran"
-  }],
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Home",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://24x7fpga.com/favicon.ico"
-    }
-  }
-}
-</script><link rel="stylesheet" href="/css/syntax.css" !important>
+<link rel="stylesheet" href="/css/syntax.css" !important>
 
 </head>
 
@@ -120,7 +53,7 @@ Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the c
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
             
             
             <div class="vertical-line" style="height: 20px;"></div>
@@ -152,7 +85,7 @@ Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the c
         </div>
         <ul id="menu">
             <li>
-                <a href="https://24x7fpga.com/about/about" title="about">
+                <a href="http://localhost:1313/about/about" title="about">
                     <span> 
 
 
@@ -163,7 +96,7 @@ Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the c
                 </a>
             </li>
             <li>
-                <a href="https://24x7fpga.com/research/2024_07_08_10_15_40_research" title="research">
+                <a href="http://localhost:1313/research/2024_07_08_10_15_40_research" title="research">
                     <span> 
 
 
@@ -174,7 +107,7 @@ Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the c
                 </a>
             </li>
             <li>
-                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl directory">
+                <a href="http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl directory">
                     <span> 
 
 
@@ -185,7 +118,7 @@ Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the c
                 </a>
             </li>
             <li>
-                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv directory">
+                <a href="http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv directory">
                     <span> 
 
 
@@ -196,7 +129,7 @@ Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the c
                 </a>
             </li>
             <li>
-                <a href="https://24x7fpga.com/tags/" title="">
+                <a href="http://localhost:1313/tags/" title="">
                     <span> 
 
 
@@ -354,7 +287,7 @@ Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the c
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
+      <li><a href="http://localhost:1313/tags/sv/">Sv</a></li>
     </ul>
 
 
@@ -371,7 +304,7 @@ Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the c
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
+        <span>&copy; 2024 <a href="http://localhost:1313/"></a></span>
         
         
 
