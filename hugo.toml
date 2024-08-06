@@ -1,7 +1,7 @@
 baseURL = 'https://24x7fpga.com/'
 languageCode = 'en-us'
 title = 'Home'  
-theme = "hugo-PaperMod"
+theme = "PaperMod"
 
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
