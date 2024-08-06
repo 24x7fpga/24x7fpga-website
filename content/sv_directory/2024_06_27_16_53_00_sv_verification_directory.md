@@ -80,7 +80,7 @@ In the rapidly evolving world of digital design, verification is paramount to en
 
 1.  [Events]({{< relref "2024_07_31_17_20_12_events.md" >}})
 2.  [Mailbox]({{< relref "2024_08_06_10_48_02_mailbox.md" >}})
-3.  Semaphore
+3.  [Semaphore]({{< relref "2024_08_06_12_53_53_semaphore.md" >}})
 
 
 ## Interface {#interface}

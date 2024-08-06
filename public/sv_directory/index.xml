@@ -6,15 +6,25 @@
     <description>Recent content in Sv_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Aug 2024 10:48:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 06 Aug 2024 12:53:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/sv_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Semaphore</title>
+      <link>https://24x7fpga.com/sv_directory/2024_08_06_12_53_53_semaphore/</link>
+      <pubDate>Tue, 06 Aug 2024 12:53:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_08_06_12_53_53_semaphore/</guid>
+      <description>SV Verification Directory
+Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:
+Events Mailbox Semaphore Semaphore A semaphore in SystemVerilog is a built-in class used for synchronization. It acts as a container holding a fixed number of keys, which regulate access to shared memory resources. Semaphores are specifically designed to manage and control concurrent access, ensuring that multiple processes can safely interact with shared resources without conflicts.</description>
+    </item>
     <item>
       <title>Mailbox</title>
       <link>https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/</link>
       <pubDate>Tue, 06 Aug 2024 10:48:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/</guid>
       <description>SV Verification Directory
-Mailbox A mailbox serves as a synchronization primitive utilized for exchanging data between processes within a testbench. This data, referred to as a message, is managed through the mailbox primitive. A process intending to send data places (puts) the message into the mailbox, where it is temporarily stored in system-defined memory. The receiving process then retrieves (gets) the message from the mailbox. This mechanism facilitates efficient and orderly communication between concurrent processes in a verification environment.</description>
+Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:
+Events Mailbox Semaphore Mailbox A mailbox serves as a synchronization primitive utilized for exchanging data between processes within a testbench. This data, referred to as a message, is managed through the mailbox primitive. A process intending to send data places (puts) the message into the mailbox, where it is temporarily stored in system-defined memory.</description>
     </item>
     <item>
       <title>Events</title>
@@ -23,7 +33,7 @@ Mailbox A mailbox serves as a synchronization primitive utilized for exchanging 
       <guid>https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/</guid>
       <description>SV Verification Directory
 Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:
-Events Mailbox Semaphores Events Events are static objects in SystemVerilog, used to synchronize different testbench components. The events are triggered using -&amp;gt; or -&amp;gt;&amp;gt; and the process can wait for the event to be triggered using @ operator or wait() construct.
+Events Mailbox Semaphore Events Events are static objects in SystemVerilog, used to synchronize different testbench components. The events are triggered using -&amp;gt; or -&amp;gt;&amp;gt; and the process can wait for the event to be triggered using @ operator or wait() construct.
 Event Description - &amp;gt; Blocking events, also know as instanteous event, block the process untill the event is triggered.</description>
     </item>
     <item>
