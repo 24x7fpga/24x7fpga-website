@@ -79,7 +79,7 @@ In the rapidly evolving world of digital design, verification is paramount to en
 ## Interprocess Communication {#interprocess-communication}
 
 1.  [Events]({{< relref "2024_07_31_17_20_12_events.md" >}})
-2.  Mailbox
+2.  [Mailbox]({{< relref "2024_08_06_10_48_02_mailbox.md" >}})
 3.  Semaphore
 
 

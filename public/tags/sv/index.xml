@@ -6,8 +6,16 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 Jul 2024 17:20:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 06 Aug 2024 10:48:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mailbox</title>
+      <link>https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/</link>
+      <pubDate>Tue, 06 Aug 2024 10:48:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/</guid>
+      <description>SV Verification Directory
+Mailbox A mailbox serves as a synchronization primitive utilized for exchanging data between processes within a testbench. This data, referred to as a message, is managed through the mailbox primitive. A process intending to send data places (puts) the message into the mailbox, where it is temporarily stored in system-defined memory. The receiving process then retrieves (gets) the message from the mailbox. This mechanism facilitates efficient and orderly communication between concurrent processes in a verification environment.</description>
+    </item>
     <item>
       <title>Events</title>
       <link>https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/</link>
