@@ -2,276 +2,279 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/git/</loc>
+    <loc>https://24x7fpga.com/tags/git/</loc>
     <lastmod>2024-08-04T14:34:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/git_directory/2024_08_04_14_34_41_git_sync_a_forked_repository/</loc>
+    <loc>https://24x7fpga.com/git_directory/2024_08_04_14_34_41_git_sync_a_forked_repository/</loc>
     <lastmod>2024-08-04T14:34:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/git_directory/</loc>
+    <loc>https://24x7fpga.com/git_directory/</loc>
     <lastmod>2024-08-04T14:34:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://24x7fpga.com/</loc>
     <lastmod>2024-08-04T14:34:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://24x7fpga.com/tags/</loc>
     <lastmod>2024-08-04T14:34:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/git_directory/2024_08_04_12_24_44_git_pull/</loc>
+    <loc>https://24x7fpga.com/git_directory/2024_08_04_12_24_44_git_pull/</loc>
     <lastmod>2024-08-04T12:24:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_31_16_19_14_encapsulation/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/</loc>
+    <lastmod>2024-07-31T17:20:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/sv/</loc>
+    <lastmod>2024-07-31T17:20:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/sv_directory/</loc>
+    <lastmod>2024-07-31T17:20:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_31_16_19_14_encapsulation/</loc>
     <lastmod>2024-07-31T16:19:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sv/</loc>
-    <lastmod>2024-07-31T16:19:00-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/sv_directory/</loc>
-    <lastmod>2024-07-31T16:19:00-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_31_10_26_49_polymorphism/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/</loc>
     <lastmod>2024-07-31T10:26:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_31_10_21_04_virtual_keyword/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_31_10_21_04_virtual_keyword/</loc>
     <lastmod>2024-07-31T10:21:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/git_directory/2024_07_30_10_18_06_git_checkout/</loc>
+    <loc>https://24x7fpga.com/git_directory/2024_07_30_10_18_06_git_checkout/</loc>
     <lastmod>2024-07-30T10:18:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/git_directory/2024_07_30_09_58_52_git_branch/</loc>
+    <loc>https://24x7fpga.com/git_directory/2024_07_30_09_58_52_git_branch/</loc>
     <lastmod>2024-07-30T09:58:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_29_12_16_52_super_keyword/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_29_12_16_52_super_keyword/</loc>
     <lastmod>2024-07-29T12:16:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_29_11_09_50_inheritance/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_29_11_09_50_inheritance/</loc>
     <lastmod>2024-07-29T11:09:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/</loc>
     <lastmod>2024-07-29T10:30:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rtl/</loc>
+    <loc>https://24x7fpga.com/tags/rtl/</loc>
     <lastmod>2024-07-28T10:50:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/</loc>
     <lastmod>2024-07-28T10:50:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_28_10_50_56_vivado_installation/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/</loc>
     <lastmod>2024-07-28T10:50:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</loc>
     <lastmod>2024-07-26T09:41:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/</loc>
     <lastmod>2024-07-25T14:51:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_25_14_49_57_this_keyword/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_25_14_49_57_this_keyword/</loc>
     <lastmod>2024-07-25T14:49:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_25_12_36_42_method/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_25_12_36_42_method/</loc>
     <lastmod>2024-07-25T12:36:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/</loc>
     <lastmod>2024-07-25T11:34:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_24_22_09_00_handle/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_24_22_09_00_handle/</loc>
     <lastmod>2024-07-24T22:09:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_24_17_42_06_object/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_24_17_42_06_object/</loc>
     <lastmod>2024-07-24T17:42:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_24_16_47_44_class/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_24_16_47_44_class/</loc>
     <lastmod>2024-07-24T16:47:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_24_15_11_27_object_oriented_programming/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_24_15_11_27_object_oriented_programming/</loc>
     <lastmod>2024-07-24T15:11:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_23_21_33_58_throughput_and_latency/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_23_21_33_58_throughput_and_latency/</loc>
     <lastmod>2024-07-23T21:33:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_23_17_27_50_disable_fork/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_23_17_27_50_disable_fork/</loc>
     <lastmod>2024-07-23T17:27:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_23_17_27_07_wait_fork/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_23_17_27_07_wait_fork/</loc>
     <lastmod>2024-07-23T17:27:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_23_13_11_22_read_only_memory/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_23_13_11_22_read_only_memory/</loc>
     <lastmod>2024-07-23T13:11:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_22_15_24_11_frequency_divider/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_22_15_24_11_frequency_divider/</loc>
     <lastmod>2024-07-22T15:24:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_22_14_10_16_edge_detector/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_22_14_10_16_edge_detector/</loc>
     <lastmod>2024-07-22T14:10:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_22_11_17_17_ring_counter/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_22_11_17_17_ring_counter/</loc>
     <lastmod>2024-07-22T11:17:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_20_22_11_00_fork_join_none/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/</loc>
     <lastmod>2024-07-20T22:11:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_20_21_58_50_fork_join_any/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_20_21_58_50_fork_join_any/</loc>
     <lastmod>2024-07-20T21:58:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_20_21_47_05_fork_join/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_20_21_47_05_fork_join/</loc>
     <lastmod>2024-07-20T21:47:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_20_15_36_43_functions/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_20_15_36_43_functions/</loc>
     <lastmod>2024-07-20T15:36:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_19_15_48_23_tasks/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/</loc>
     <lastmod>2024-07-19T15:48:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_19_15_18_41_break_and_continue/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_19_15_18_41_break_and_continue/</loc>
     <lastmod>2024-07-19T15:18:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_19_14_46_31_repeat_and_forever/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_19_14_46_31_repeat_and_forever/</loc>
     <lastmod>2024-07-19T14:46:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</loc>
     <lastmod>2024-07-19T14:21:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</loc>
     <lastmod>2024-07-19T12:40:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_18_23_30_22_mod_n_counter/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_18_23_30_22_mod_n_counter/</loc>
     <lastmod>2024-07-18T23:30:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_18_21_58_46_code_converter/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_18_21_58_46_code_converter/</loc>
     <lastmod>2024-07-18T21:58:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/article/</loc>
+    <loc>https://24x7fpga.com/tags/article/</loc>
     <lastmod>2024-07-17T09:17:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/article/</loc>
+    <loc>https://24x7fpga.com/article/</loc>
     <lastmod>2024-07-17T09:17:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/article/2024_07_17_09_17_26_credit_based_flow_control/</loc>
+    <loc>https://24x7fpga.com/article/2024_07_17_09_17_26_credit_based_flow_control/</loc>
     <lastmod>2024-07-17T09:17:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_16_22_30_28_up_down_counter/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_16_22_30_28_up_down_counter/</loc>
     <lastmod>2024-07-16T22:30:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_10_20_30_35_universal_shift_register/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_10_20_30_35_universal_shift_register/</loc>
     <lastmod>2024-07-10T20:30:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/2024_07_08_10_15_40_research/</loc>
+    <loc>https://24x7fpga.com/research/2024_07_08_10_15_40_research/</loc>
     <lastmod>2024-07-08T10:15:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/</loc>
+    <loc>https://24x7fpga.com/research/</loc>
     <lastmod>2024-07-08T10:15:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_06_19_54_50_shift_register/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_06_19_54_50_shift_register/</loc>
     <lastmod>2024-07-06T19:54:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_06_19_23_36_register/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_06_19_23_36_register/</loc>
     <lastmod>2024-07-06T19:23:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_06_16_50_01_adder_subtractor/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_06_16_50_01_adder_subtractor/</loc>
     <lastmod>2024-07-06T16:50:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_07_06_15_54_47_comparator/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_07_06_15_54_47_comparator/</loc>
     <lastmod>2024-07-06T15:54:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_02_18_41_56_dynamic_cast/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/</loc>
     <lastmod>2024-07-02T18:41:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_02_18_32_19_static_cast/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/</loc>
     <lastmod>2024-07-02T18:32:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_02_16_54_49_structures/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_02_16_54_49_structures/</loc>
     <lastmod>2024-07-02T16:54:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_02_15_05_30_enumeration/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_02_15_05_30_enumeration/</loc>
     <lastmod>2024-07-02T15:05:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_02_09_48_08_array_methods/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_02_09_48_08_array_methods/</loc>
     <lastmod>2024-07-02T09:48:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_02_00_18_56_associative_arrays/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_02_00_18_56_associative_arrays/</loc>
     <lastmod>2024-07-02T00:18:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_01_23_35_47_queues/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_01_23_35_47_queues/</loc>
     <lastmod>2024-07-01T23:35:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</loc>
     <lastmod>2024-07-01T15:56:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</loc>
     <lastmod>2024-06-29T23:39:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/</loc>
     <lastmod>2024-06-29T23:25:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/vim_directory/2024_06_28_15_38_01_redo_in_vim/</loc>
+    <loc>https://24x7fpga.com/vim_directory/2024_06_28_15_38_01_redo_in_vim/</loc>
     <lastmod>2024-06-28T15:38:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vim/</loc>
+    <loc>https://24x7fpga.com/tags/vim/</loc>
     <lastmod>2024-06-28T15:38:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/vim_directory/</loc>
+    <loc>https://24x7fpga.com/vim_directory/</loc>
     <lastmod>2024-06-28T15:38:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/vim_directory/2024_06_28_15_35_07_undo_in_vim/</loc>
+    <loc>https://24x7fpga.com/vim_directory/2024_06_28_15_35_07_undo_in_vim/</loc>
     <lastmod>2024-06-28T15:35:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/vim_directory/2024_06_28_15_15_48_copy_a_word_in_a_line/</loc>
+    <loc>https://24x7fpga.com/vim_directory/2024_06_28_15_15_48_copy_a_word_in_a_line/</loc>
     <lastmod>2024-06-28T15:15:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/vim_directory/2024_06_28_15_10_34_move_the_cursor_by_one_word/</loc>
+    <loc>https://24x7fpga.com/vim_directory/2024_06_28_15_10_34_move_the_cursor_by_one_word/</loc>
     <lastmod>2024-06-28T15:10:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_06_28_14_48_33_logic_type/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_06_28_14_48_33_logic_type/</loc>
     <lastmod>2024-06-28T14:48:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</loc>
+    <loc>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</loc>
     <lastmod>2024-06-27T16:53:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/toc/</loc>
+    <loc>https://24x7fpga.com/tags/toc/</loc>
     <lastmod>2024-06-27T16:53:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_06_23_21_30_22_decoder/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_06_23_21_30_22_decoder/</loc>
     <lastmod>2024-06-23T21:30:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_06_23_20_40_25_encoder/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_06_23_20_40_25_encoder/</loc>
     <lastmod>2024-06-23T20:40:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/article/2024_06_18_16_45_29_a_case_study_on_effective_pipeline_design_in_digital_systems/</loc>
+    <loc>https://24x7fpga.com/article/2024_06_18_16_45_29_a_case_study_on_effective_pipeline_design_in_digital_systems/</loc>
     <lastmod>2024-06-18T16:45:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_06_14_22_07_44_de_multiplexer/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_06_14_22_07_44_de_multiplexer/</loc>
     <lastmod>2024-06-14T22:07:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_06_13_12_22_45_multiplexer/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_06_13_12_22_45_multiplexer/</loc>
     <lastmod>2024-06-13T12:22:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_06_08_11_32_42_full_adder/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_06_08_11_32_42_full_adder/</loc>
     <lastmod>2024-06-08T11:32:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_06_05_22_56_41_half_adder/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_06_05_22_56_41_half_adder/</loc>
     <lastmod>2024-06-05T22:56:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/</loc>
+    <loc>https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/</loc>
     <lastmod>2024-06-05T00:21:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/emacs/</loc>
+    <loc>https://24x7fpga.com/tags/emacs/</loc>
     <lastmod>2024-05-31T12:47:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/emacs_directory/2024_05_31_12_47_08_emacs_display_image/</loc>
+    <loc>https://24x7fpga.com/emacs_directory/2024_05_31_12_47_08_emacs_display_image/</loc>
     <lastmod>2024-05-31T12:47:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/emacs_directory/</loc>
+    <loc>https://24x7fpga.com/emacs_directory/</loc>
     <lastmod>2024-05-31T12:47:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/vim_directory/2024_05_30_20_45_11-vim_find_and_replace/</loc>
+    <loc>https://24x7fpga.com/vim_directory/2024_05_30_20_45_11-vim_find_and_replace/</loc>
     <lastmod>2024-05-30T20:45:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/about/</loc>
+    <loc>https://24x7fpga.com/about/about/</loc>
     <lastmod>2024-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://24x7fpga.com/about/</loc>
     <lastmod>2024-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://24x7fpga.com/categories/</loc>
   </url>
 </urlset>

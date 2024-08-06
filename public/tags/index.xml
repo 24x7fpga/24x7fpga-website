@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Home</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://24x7fpga.com/tags/</link>
     <description>Recent content in Tags on Home</description>
-    <generator>Hugo -- 0.126.1</generator>
+    <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Aug 2024 14:34:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://24x7fpga.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Git</title>
-      <link>http://localhost:1313/tags/git/</link>
+      <title>git</title>
+      <link>https://24x7fpga.com/tags/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/git/</guid>
+      <guid>https://24x7fpga.com/tags/git/</guid>
       <description></description>
     </item>
     <item>
-      <title>Sv</title>
-      <link>http://localhost:1313/tags/sv/</link>
+      <title>sv</title>
+      <link>https://24x7fpga.com/tags/sv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sv/</guid>
+      <guid>https://24x7fpga.com/tags/sv/</guid>
       <description></description>
     </item>
     <item>
-      <title>Rtl</title>
-      <link>http://localhost:1313/tags/rtl/</link>
+      <title>rtl</title>
+      <link>https://24x7fpga.com/tags/rtl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/rtl/</guid>
+      <guid>https://24x7fpga.com/tags/rtl/</guid>
       <description></description>
     </item>
     <item>
-      <title>Article</title>
-      <link>http://localhost:1313/tags/article/</link>
+      <title>article</title>
+      <link>https://24x7fpga.com/tags/article/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/article/</guid>
+      <guid>https://24x7fpga.com/tags/article/</guid>
       <description></description>
     </item>
     <item>
-      <title>Vim</title>
-      <link>http://localhost:1313/tags/vim/</link>
+      <title>vim</title>
+      <link>https://24x7fpga.com/tags/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/vim/</guid>
+      <guid>https://24x7fpga.com/tags/vim/</guid>
       <description></description>
     </item>
     <item>
-      <title>Toc</title>
-      <link>http://localhost:1313/tags/toc/</link>
+      <title>toc</title>
+      <link>https://24x7fpga.com/tags/toc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/toc/</guid>
+      <guid>https://24x7fpga.com/tags/toc/</guid>
       <description></description>
     </item>
     <item>
-      <title>Emacs</title>
-      <link>http://localhost:1313/tags/emacs/</link>
+      <title>emacs</title>
+      <link>https://24x7fpga.com/tags/emacs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/emacs/</guid>
+      <guid>https://24x7fpga.com/tags/emacs/</guid>
       <description></description>
     </item>
   </channel>

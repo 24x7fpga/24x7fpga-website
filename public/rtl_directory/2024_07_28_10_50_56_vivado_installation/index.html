@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Vivado Installation | Home</title>
 <meta name="keywords" content="rtl">
 <meta name="description" content="Digilent&rsquo;s Zybo-Z7 is a ready-to-use embedded software and digital circuit development board built around the Xilinx Zynq™-7000 family. Xilinx provides free licensing to certain development boards and Zybo-Z7 is one among them. This article provides detailed steps to install Vivado 2022.2 on Ubuntu 22.04 LTS. The same procedure can be followed to install the desired version of the software.
 Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred) and 100GB of free storage space for full installation.">
 <meta name="author" content="Kiran">
-<link rel="canonical" href="http://localhost:1313/rtl_directory/2024_07_28_10_50_56_vivado_installation/">
+<link rel="canonical" href="https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.526ee71d2bda4e817faf8e1337ba879150fa995e4bf978a970ab1988033bc2c6.css" integrity="sha256-Um7nHSvaToF/r44TN7qHkVD6mV5L&#43;XipcKsZiAM7wsY=" rel="preload stylesheet" as="style">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/assets/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/rtl_directory/2024_07_28_10_50_56_vivado_installation/">
 <noscript>
     <style>
         #theme-toggle,
@@ -36,7 +35,73 @@ Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred)
 
 <link rel="stylesheet" href="../../zcustom.css">
 
-<link rel="stylesheet" href="/css/syntax.css" !important>
+<meta property="og:title" content="Vivado Installation" />
+<meta property="og:description" content="Digilent&rsquo;s Zybo-Z7 is a ready-to-use embedded software and digital circuit development board built around the Xilinx Zynq™-7000 family. Xilinx provides free licensing to certain development boards and Zybo-Z7 is one among them. This article provides detailed steps to install Vivado 2022.2 on Ubuntu 22.04 LTS. The same procedure can be followed to install the desired version of the software.
+Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred) and 100GB of free storage space for full installation." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/" /><meta property="article:section" content="rtl_directory" />
+<meta property="article:published_time" content="2024-07-28T10:50:00-04:00" />
+<meta property="article:modified_time" content="2024-07-28T10:50:00-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vivado Installation"/>
+<meta name="twitter:description" content="Digilent&rsquo;s Zybo-Z7 is a ready-to-use embedded software and digital circuit development board built around the Xilinx Zynq™-7000 family. Xilinx provides free licensing to certain development boards and Zybo-Z7 is one among them. This article provides detailed steps to install Vivado 2022.2 on Ubuntu 22.04 LTS. The same procedure can be followed to install the desired version of the software.
+Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred) and 100GB of free storage space for full installation."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Rtl_directories",
+      "item": "https://24x7fpga.com/rtl_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Vivado Installation",
+      "item": "https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Vivado Installation",
+  "name": "Vivado Installation",
+  "description": "Digilent\u0026rsquo;s Zybo-Z7 is a ready-to-use embedded software and digital circuit development board built around the Xilinx Zynq™-7000 family. Xilinx provides free licensing to certain development boards and Zybo-Z7 is one among them. This article provides detailed steps to install Vivado 2022.2 on Ubuntu 22.04 LTS. The same procedure can be followed to install the desired version of the software.\nInitial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred) and 100GB of free storage space for full installation.",
+  "keywords": [
+    "rtl"
+  ],
+  "articleBody": "Digilent’s Zybo-Z7 is a ready-to-use embedded software and digital circuit development board built around the Xilinx Zynq™-7000 family. Xilinx provides free licensing to certain development boards and Zybo-Z7 is one among them. This article provides detailed steps to install Vivado 2022.2 on Ubuntu 22.04 LTS. The same procedure can be followed to install the desired version of the software.\nInitial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred) and 100GB of free storage space for full installation. Create an AMD Xilinx Account to download the software. More information regarding the system requirements is detailed in the Vivado Design Suite User Guide UG973.\nDownload Vivado Navigate to the Xilinx Download page and click on the Xilinx Unified Installer 2022.2: Linux Self Extracting Web installer, this should be redirected to the login page. Log in with the Xilinx Account and download the file.\nRunning The Installer To run the unified installer, it must first be converted to an executable file.\nchmod -x Xilinx_Unified_2022.2_1014_8888_Lin64.bin After making the file executable run the the installer with root permissions.\nsudo ./Xilinx_Unified_2022.2_1014_8888_Lin64.bin This will open the installer GUI in a new window.\nVivado Installer GUI The welcome screen of the installer GUI provides a reminder of the supported OS version.\nClick Next, to proceed. The next window requires the user to provide the account credentials. The same account credentials were used at the beginning to log in to Xilinx and to download the Vivado software.\nIn the select product window, select Vivado and proceed.\nSelect Vivado ML Standard edition as it does not require a license to generate the necessary file to program the Zybo-Z7 development.\nThe two versions of Zybo-Z7, Z7-10, and Z7-20 include Zynq-7000 SoC XC7Z010 and XC7Z020 devices respectively. From UG973 table 1, Vivado ML Standard Edition includes the license for the required FPGA.\nEarlier it was mentioned at least 100GB of free storage is required to install Vivado, installing only the necessary tools and components will reduce the storage space. Installing only the Zynq-7000 SoC will require less storage space as it can be seen in the figure below.\nAgree to all the terms and conditions and process further.\nThe installing directory should be /tools/Xilinx, there are errors in the image shown below because Vivado is already installed in the specified location. If it is a fresh installation then these errors will not be displayed.\nThe final step is to click on the install button on the summary window. Here the installation location should specify the selected installation location by the user.\nInstall Cable Drivers Once the installation is completed, check if the cable drivers are installed correctly using the following command:\nls -la /etc/udev/rules.d This should output the following two files:\n52-digilent-usb.rules 52-xilinx-pcusb.rules If the above files are not present, run the installer from the following directory:\n/data/xicom/cable_drivers//install_scripts/install_drivers\nExample:\n/tools/Xilinx/Vivado/2022.2/data/xicom/cable_drivers/lin64/install_script/install_drivers Xilinx Support\nLaunch Vivado Vivado can be launched from the terminal by executing the Vivado command. To enable this, the following should be added to the ~/.profile file.\nsource /tools/Xilinx/Vivado/2022.2/setting64.sh Note: Add the appropriate Vivado version folder in the source path.\n",
+  "wordCount" : "514",
+  "inLanguage": "en",
+  "datePublished": "2024-07-28T10:50:00-04:00",
+  "dateModified": "2024-07-28T10:50:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
 
 </head>
 
@@ -52,7 +117,7 @@ Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred)
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
             
             
             <div class="vertical-line" style="height: 20px;"></div>
@@ -84,7 +149,7 @@ Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred)
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/about/about" title="about">
+                <a href="https://24x7fpga.com/about/about" title="about">
                     <span> 
 
 
@@ -95,7 +160,7 @@ Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred)
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/research/2024_07_08_10_15_40_research" title="research">
+                <a href="https://24x7fpga.com/research/2024_07_08_10_15_40_research" title="research">
                     <span> 
 
 
@@ -106,7 +171,7 @@ Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred)
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl directory">
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl directory">
                     <span> 
 
 
@@ -117,7 +182,7 @@ Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred)
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv directory">
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv directory">
                     <span> 
 
 
@@ -128,7 +193,7 @@ Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred)
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="">
+                <a href="https://24x7fpga.com/tags/" title="">
                     <span> 
 
 
@@ -291,7 +356,7 @@ Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred)
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/rtl/">Rtl</a></li>
+      <li><a href="https://24x7fpga.com/tags/rtl/">rtl</a></li>
     </ul>
 
 
@@ -308,7 +373,7 @@ Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred)
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/"></a></span>
+        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
         
         
 

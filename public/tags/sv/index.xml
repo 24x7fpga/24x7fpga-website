@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Sv on Home</title>
-    <link>http://localhost:1313/tags/sv/</link>
-    <description>Recent content in Sv on Home</description>
-    <generator>Hugo -- 0.126.1</generator>
+    <title>sv on Home</title>
+    <link>https://24x7fpga.com/tags/sv/</link>
+    <description>Recent content in sv on Home</description>
+    <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 Jul 2024 16:19:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Jul 2024 17:20:00 -0400</lastBuildDate>
+    <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Events</title>
+      <link>https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/</link>
+      <pubDate>Wed, 31 Jul 2024 17:20:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/</guid>
+      <description>SV Verification Directory
+Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:
+Events Mailbox Semaphores Events Events are static objects in SystemVerilog, used to synchronize different testbench components. The events are triggered using -&amp;gt; or -&amp;gt;&amp;gt; and the process can wait for the event to be triggered using @ operator or wait() construct.
+Event Description - &amp;gt; Blocking events, also know as instanteous event, block the process untill the event is triggered.</description>
+    </item>
     <item>
       <title>Encapsulation</title>
-      <link>http://localhost:1313/sv_directory/2024_07_31_16_19_14_encapsulation/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_31_16_19_14_encapsulation/</link>
       <pubDate>Wed, 31 Jul 2024 16:19:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_31_16_19_14_encapsulation/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_31_16_19_14_encapsulation/</guid>
       <description>SV Verification Directory
 Encapsulation Encapsulation is a technique used to restrict access to the data and methods within a class, ensuring that internal class details are not accessible from outside the class.
 Access Specifiers These define the visibility of class members and they are as follows:
@@ -22,27 +32,27 @@ class ex; local int a; function new(); // execute code endfunction endclass Prot
     </item>
     <item>
       <title>Polymorphism</title>
-      <link>http://localhost:1313/sv_directory/2024_07_31_10_26_49_polymorphism/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/</link>
       <pubDate>Wed, 31 Jul 2024 10:26:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_31_10_26_49_polymorphism/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/</guid>
       <description>SV Verification Directory
 Polymorphism As the term &amp;lsquo;polymorphism&amp;rsquo; implies, &amp;lsquo;poly&amp;rsquo; means &amp;lsquo;many&amp;rsquo; and &amp;lsquo;morph&amp;rsquo; means &amp;lsquo;form&amp;rsquo; or &amp;lsquo;shape&amp;rsquo;. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.
 An extended class object can be assigned to the base class but not the other way round. Virtual Keyword should be used in parent class to override the method by the child class.</description>
     </item>
     <item>
       <title>Virtual Keyword</title>
-      <link>http://localhost:1313/sv_directory/2024_07_31_10_21_04_virtual_keyword/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_31_10_21_04_virtual_keyword/</link>
       <pubDate>Wed, 31 Jul 2024 10:21:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_31_10_21_04_virtual_keyword/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_31_10_21_04_virtual_keyword/</guid>
       <description>SV Verification Directory
 Virtual Keyword Virtual keyword enables a child class to override a method defined in its parent class. When a virtual keyword is prefixed before a method in the parent class and if the base class handle is pointed to the extended class, then the extended class method handle will get assigned to the base class handle.
 Once the virtual keyword is used for the parent class method, all the extended child classes become virtual.</description>
     </item>
     <item>
       <title>Super Keyword</title>
-      <link>http://localhost:1313/sv_directory/2024_07_29_12_16_52_super_keyword/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_29_12_16_52_super_keyword/</link>
       <pubDate>Mon, 29 Jul 2024 12:16:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_29_12_16_52_super_keyword/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_29_12_16_52_super_keyword/</guid>
       <description>SV Verification Directory
 Super Keyword The super keyword is useful for accessing the properties and methods of a parent class without needing to declare a parent class handle. It consistently refers to the immediate parent class.
 By default, SystemVerilog complier calls super.new() function calls automatically from extende class.
@@ -51,18 +61,18 @@ Note: super.super.{class_member} is not allowed to access multilevel inheritance
     </item>
     <item>
       <title>Inheritance</title>
-      <link>http://localhost:1313/sv_directory/2024_07_29_11_09_50_inheritance/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_29_11_09_50_inheritance/</link>
       <pubDate>Mon, 29 Jul 2024 11:09:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_29_11_09_50_inheritance/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_29_11_09_50_inheritance/</guid>
       <description>SV Verification Directory
 Inheritance Inheritance allows a new class to inherit properties and methods from an existing class.
 Creates an extended class from an existing class. The existing class is called as base class or parent class and the extended class is called as the derived class or the child class. The extends keyword is used to inherit the properties of the parent class to the child class. Multilevel inheritance is possible in SystemVerilog i.</description>
     </item>
     <item>
       <title>Four Pillars of OOP</title>
-      <link>http://localhost:1313/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/</link>
       <pubDate>Mon, 29 Jul 2024 10:30:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/</guid>
       <description>SV Verification Directory
 Four Pillars of OOP The are four pillars of Object-Oriented Programming (OOP) are:
 Abstraction Encapsulation Inheritance Polymorphism Abstraction Abstraction is the concept of hiding the complex implementation details and showing only the essential features of the object. It allows users to interact with objects through a simplified interface, without needing to understand the underlying complexity.
@@ -70,106 +80,106 @@ Encapsulation This principle involves bundling the data (attributes) and the met
     </item>
     <item>
       <title>Shallow Copy and Deep Copy</title>
-      <link>http://localhost:1313/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</link>
       <pubDate>Fri, 26 Jul 2024 09:41:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</guid>
       <description>SV Verification Directory
 Shallow Copy and Deep Copy SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.
 Shallow Copy Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle&amp;rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects.</description>
     </item>
     <item>
       <title>Static Class Properties and Methods</title>
-      <link>http://localhost:1313/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/</link>
       <pubDate>Thu, 25 Jul 2024 14:51:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/</guid>
       <description>SV Verification Directory
 Static Class Properties and Methods Every object has its own local variables that are not shared with any other object. When two objects of Ex_class Class is created, each object with have its own class properties(variables). In certain instances, a specific variable is required to be shared by all objects of a certain type. Declaring a global variable will make the variable visible to the entire testbench. With the OOP, a static variable can be created inside a class.</description>
     </item>
     <item>
       <title>This Keyword</title>
-      <link>http://localhost:1313/sv_directory/2024_07_25_14_49_57_this_keyword/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_25_14_49_57_this_keyword/</link>
       <pubDate>Thu, 25 Jul 2024 14:49:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_25_14_49_57_this_keyword/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_25_14_49_57_this_keyword/</guid>
       <description>SV Verification Directory
 This Keyword In SystemVerilog, this keyword is used within a class to refer to the current instance of that class. It is a way to access the members (attributes and methods) of the current object from within the object&amp;rsquo;s methods. This is particularly useful to distinguish between class attributes and parameters or local variables with the same name. When a variable is declared, SystemVerilog looks in the current scope for it and then in the parent scope until the variable is found.</description>
     </item>
     <item>
       <title>Method</title>
-      <link>http://localhost:1313/sv_directory/2024_07_25_12_36_42_method/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_25_12_36_42_method/</link>
       <pubDate>Thu, 25 Jul 2024 12:36:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_25_12_36_42_method/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_25_12_36_42_method/</guid>
       <description>SV Verification Directory
 Class Methods A class method is a task or a function defined inside the scope of the class. A method in a class uses automatic storage by default.
 Example: Methods in a Class class Ex_class; // class properties or variables int a, b, s; // task method task sum (int a,b); s = a + b; $display(&amp;#34;a = %0d , b = %0d, sum s = %0d&amp;#34;, a, b ,s); endtask endclass Defining Methods Outside of Class To keep the code short, and easy to read and understand, it is advisable to keep the class to one &amp;ldquo;page&amp;rdquo; or to the screen of the editor.</description>
     </item>
     <item>
       <title>Handle</title>
-      <link>http://localhost:1313/sv_directory/2024_07_24_22_09_00_handle/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_24_22_09_00_handle/</link>
       <pubDate>Wed, 24 Jul 2024 22:09:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_24_22_09_00_handle/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_24_22_09_00_handle/</guid>
       <description>SV Verification Directory
 Handle A handle is a pointer to an object created from a Class. Handles are crucial in dynamically creating and managing Objects during simulation.
 Syntax: Handle Ex_class cl_obj; // declare a handle cl_obj = new(); // allocate a Ex_class object When the handle &amp;lsquo;cl_obj&amp;rsquo; is declared, it is initialized to a null value. Call the new() function to construct the Ex_class object. The new function allocates space for Ex_class, initializes the variables to their default values (0 for 2-state and x for 4-state variable), and returns the address where the object is stored.</description>
     </item>
     <item>
       <title>Object</title>
-      <link>http://localhost:1313/sv_directory/2024_07_24_17_42_06_object/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_24_17_42_06_object/</link>
       <pubDate>Wed, 24 Jul 2024 17:42:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_24_17_42_06_object/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_24_17_42_06_object/</guid>
       <description>SV Verification Directory
 Object An object is an instance od a class. It is similar to the instantiation of a module in Verilog, but there are some differences which as listed in the table below:
 Verilog Module Instance SystemVerilog Class Instance A module is instantiated during compile time A class is instantiated during simulation when needed by the testbench Verilog instances are static, as hardware does not change during simulation Class objects are created when required and freed from memory when no longer needed The &amp;rsquo;new&amp;rsquo; keyword is used to instantiate the object.</description>
     </item>
     <item>
       <title>Class</title>
-      <link>http://localhost:1313/sv_directory/2024_07_24_16_47_44_class/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_24_16_47_44_class/</link>
       <pubDate>Wed, 24 Jul 2024 16:47:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_24_16_47_44_class/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_24_16_47_44_class/</guid>
       <description>SV Verification Directory
 Class A class is a user-defined data type that serves as a blue-print for creating objects. A class includes properties(variables) and methods(functions and tasks) that manipulate data.
 Example: Class class Ex_class; // class properties or variables int a, b, s; // task method task sum (int a,b); s = a + b; $display(&amp;#34;a = %0d , b = %0d, sum s = %0d&amp;#34;, a, b ,s); endtask endclass A class can be defined and used in a program, module, package, or outside of any of these.</description>
     </item>
     <item>
       <title>Object-Oriented Programming</title>
-      <link>http://localhost:1313/sv_directory/2024_07_24_15_11_27_object_oriented_programming/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_24_15_11_27_object_oriented_programming/</link>
       <pubDate>Wed, 24 Jul 2024 15:11:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_24_15_11_27_object_oriented_programming/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_24_15_11_27_object_oriented_programming/</guid>
       <description>SV Verification Directory
 Object-Oriented Programming Object-oriented Programming(OOP) language model for software design that revolves around objects or data instead of logic and functions. It focuses on what the developers want to manipulate rather than how they manipulate them. This approach is well suited for large, complex, and actively updated and maintained.
 OOP for Verification Typically, a testbench creates a transaction i.e., generates the necessary input for the DUT based on the defined rules, transmits it to the DUT, receives the response from the DUT, verifies the response against the golden reference, and generates a report.</description>
     </item>
     <item>
       <title>Disable Fork</title>
-      <link>http://localhost:1313/sv_directory/2024_07_23_17_27_50_disable_fork/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_23_17_27_50_disable_fork/</link>
       <pubDate>Tue, 23 Jul 2024 17:27:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_23_17_27_50_disable_fork/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_23_17_27_50_disable_fork/</guid>
       <description>SV Verification Directory
 Disable Fork The disable fork contruct will terminate all outstanding or active processes when it is executed.
 Syntax: Disable Fork fork // process 1 // process 2 // process 3 join disable fork; Example Code: Disable Fork module fork_join_any; initial begin fork #2 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 1&amp;#34;, $time); #10 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 2&amp;#34;, $time); #5 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 3&amp;#34;, $time); join_any $display(&amp;#34;--------------- Exited Fork 1 ---------------&amp;#34;); end initial begin fork #3 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 1&amp;#34;, $time); #6 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 2&amp;#34;, $time); #1 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 3&amp;#34;, $time); join_none disable fork; $display(&amp;#34;--------------- Exited Fork 2 ---------------&amp;#34;); end endmodule Execute the code in EDA Playground</description>
     </item>
     <item>
       <title>Wait Fork</title>
-      <link>http://localhost:1313/sv_directory/2024_07_23_17_27_07_wait_fork/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_23_17_27_07_wait_fork/</link>
       <pubDate>Tue, 23 Jul 2024 17:27:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_23_17_27_07_wait_fork/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_23_17_27_07_wait_fork/</guid>
       <description>SV Verification Directory
 Wait Fork The wait fork statement is used to wait until all the forked processes is completed.
 Syntax: Wait Fork fork // process 1 // process 2 // process 3 join_none // (join, join_any) wait fork; Example Code: Wait Fork module fork_join_any; initial begin fork #2 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 1&amp;#34;, $time); #10 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 2&amp;#34;, $time); #5 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 3&amp;#34;, $time); join_any $display(&amp;#34;--------------- Exited Fork 1 ---------------&amp;#34;); end initial begin fork #3 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 1&amp;#34;, $time); #6 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 2&amp;#34;, $time); #1 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 3&amp;#34;, $time); join_none wait fork; $display(&amp;#34;--------------- Exited Fork 2 ---------------&amp;#34;); end endmodule Execute the code in EDA Playground</description>
     </item>
     <item>
       <title>Fork Join None</title>
-      <link>http://localhost:1313/sv_directory/2024_07_20_22_11_00_fork_join_none/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/</link>
       <pubDate>Sat, 20 Jul 2024 22:11:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_20_22_11_00_fork_join_none/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/</guid>
       <description>SV Verification Directory
 Fork Join None As the name suggests, the process in the fork will start and does not wait till it completes any of the threads. The figure below depicts the fork join none constructs.
 Syntax: Fork Join None fork // process 1 // process 2 // process 3 join_none Example Code: Fork Join None module fork_join_any; initial begin fork #2 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 1&amp;#34;, $time); #10 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 2&amp;#34;, $time); #5 $display(&amp;#34;t = %0t, fork 1 =&amp;gt; process 3&amp;#34;, $time); join_none $display(&amp;#34;--------------- Exited Fork 1 ---------------&amp;#34;); end initial begin fork #3 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 1&amp;#34;, $time); #6 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 2&amp;#34;, $time); #1 $display(&amp;#34;t = %0t, fork 2 =&amp;gt; process 3&amp;#34;, $time); join_none $display(&amp;#34;--------------- Exited Fork 2 ---------------&amp;#34;); end endmodule </description>
     </item>
     <item>
       <title>Fork Join Any</title>
-      <link>http://localhost:1313/sv_directory/2024_07_20_21_58_50_fork_join_any/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_20_21_58_50_fork_join_any/</link>
       <pubDate>Sat, 20 Jul 2024 21:58:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_20_21_58_50_fork_join_any/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_20_21_58_50_fork_join_any/</guid>
       <description>SV Verification Directory
 Fork Join Any Fork join any construct is similar to Fork Join but the simulation process does not wait till all the threads are completed. It proceeds to the next execution statement as soon as any one of the threads completes the process.
 Fork join any is depicted in the figure below.
@@ -177,80 +187,80 @@ Syntax: Fork Join Any fork // process 1 // process 2 // process 3 join_any Examp
     </item>
     <item>
       <title>Fork Join</title>
-      <link>http://localhost:1313/sv_directory/2024_07_20_21_47_05_fork_join/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_20_21_47_05_fork_join/</link>
       <pubDate>Sat, 20 Jul 2024 21:47:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_20_21_47_05_fork_join/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_20_21_47_05_fork_join/</guid>
       <description>SV Verification Directory
 Fork Join A thread or a process is a block of code that execute sequentially. They are created using constructs like initial blocks, always blocks, and tasks. In verification there are multiple components, such as generator, driver, monitor, etc, these components have multiple threads that need to run concurrently, allowing for parallel execution of different parts of the simulation. The fork-join construct is created to run multiple procedural threads to run in parallel.</description>
     </item>
     <item>
       <title>Functions</title>
-      <link>http://localhost:1313/sv_directory/2024_07_20_15_36_43_functions/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_20_15_36_43_functions/</link>
       <pubDate>Sat, 20 Jul 2024 15:36:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_20_15_36_43_functions/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_20_15_36_43_functions/</guid>
       <description>SV Verification Directory
 Functions A function must return a value. A function should not include delays, event controls, or wait statements. A function can only contain inputs as arguments as it returns only one output value. Similar to tasks:
 A function can be declared as automatic or static. It can contain static variables in automatic function and vice-versa. Syntax: Function function [return type] function_name (input_arguments); // execute the code return [value]; endfunction Example Code: Function module function_ex; function int mul_3(int x); return x*3; endfunction initial begin int x; $display(&amp;#34;---------- Multiply by 3 ----------&amp;#34;); repeat(20)begin x = $urandom_range(1,9); $display(&amp;#34;x = %0d, mul_by_3 = %0d&amp;#34;, x, mul_3(x)); end end endmodule Execute the code in EDA Playground</description>
     </item>
     <item>
       <title>Tasks</title>
-      <link>http://localhost:1313/sv_directory/2024_07_19_15_48_23_tasks/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/</link>
       <pubDate>Fri, 19 Jul 2024 15:48:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_19_15_48_23_tasks/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/</guid>
       <description>SV Verification Directory
 Tasks Task in SystemVerilog is a procedural block that contains a block of code that can be reused. Unlike [Functions], tasks can contain simulation time. The default port direction is &amp;ldquo;input&amp;rdquo; unless declared as other types. The default data type of the ports is of &amp;ldquo;logic&amp;rdquo; type unless specified. A task does not need to have a &amp;ldquo;begin &amp;hellip; end&amp;rdquo; statement.
 Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the code endtask Example Code: Task module task_ex; logic [3:0] data; logic [3:0] arry[16]; task incr([3:0] in, output logic [3:0] out); out = in + 1; endtask initial begin data = 0; $display(&amp;#34;--------- Task: Increment ---------&amp;#34;); //$display(&amp;#34;data = %0d&amp;#34;, data); arry[0]= data; for(int i=0; i&amp;lt;15; i++)begin incr(arry[i], arry[i+1]); $display(&amp;#34;data = %0d&amp;#34;, arry[i+1]); #1; end end endmodule Execute the code in EDA Playground</description>
     </item>
     <item>
       <title>Break and Continue</title>
-      <link>http://localhost:1313/sv_directory/2024_07_19_15_18_41_break_and_continue/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_19_15_18_41_break_and_continue/</link>
       <pubDate>Fri, 19 Jul 2024 15:18:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_19_15_18_41_break_and_continue/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_19_15_18_41_break_and_continue/</guid>
       <description>SV Verification Directory
 Break and Continue Break and continue in SytemVerilog is used to control the loops. When a &amp;ldquo;break&amp;rdquo; statement is encounted, the loop is terminated and control moves to outside of the loop. Whereas, when a &amp;ldquo;continue&amp;rdquo; statement is encounted, the consecutive blocks of code is skipped and the control is moved to the next loop iteration value.
 Example Code: Break and Continue module break_and_continue; initial begin int i = 0; $display(&amp;#34;---------- Even Number ----------&amp;#34;); forever begin if(i % 2 == 0) begin $display(&amp;#34;%0d is an Even Number&amp;#34;, i); i = i + 1; continue; end else begin if(i &amp;gt; 20) break; end i = i + 1; #1; end end endmodule Execute the code in EDA Playground</description>
     </item>
     <item>
       <title>Repeat and Forever</title>
-      <link>http://localhost:1313/sv_directory/2024_07_19_14_46_31_repeat_and_forever/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_19_14_46_31_repeat_and_forever/</link>
       <pubDate>Fri, 19 Jul 2024 14:46:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_19_14_46_31_repeat_and_forever/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_19_14_46_31_repeat_and_forever/</guid>
       <description>SV Verification Directory
 Repeat and Forever Loops The &amp;ldquo;repeat&amp;rdquo; and &amp;ldquo;forever&amp;rdquo; loops are another looping constructs available constructs in SystemVerilog, to execute a loop of code for a specific number of times or indefinitely. These loops are especially useful in testbenches and design verification when you need controlled or infinite iterations.
 Repeat The repeat loop executes a block of code a specified number of times. This loop is handy when you know the exact number of iterations required.</description>
     </item>
     <item>
       <title>While and Do While Loops</title>
-      <link>http://localhost:1313/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</link>
       <pubDate>Fri, 19 Jul 2024 14:21:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</guid>
       <description>SV Verification Directory
 While and Do While While and do while loops are used for iterative control structures that execute a block of code multiple times based on a condition. These loops are particularly useful when the number of iterations is not known beforehand and depends on the evaluation of the loop condition.
 While Loop The &amp;ldquo;while&amp;rdquo; loop executes a block code until the specified condition is true. The condition is evaluated before each iteration.</description>
     </item>
     <item>
       <title>For and Foreach Loops</title>
-      <link>http://localhost:1313/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</link>
       <pubDate>Fri, 19 Jul 2024 12:40:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</guid>
       <description>SV Verification Directory
 For and Foreach Loops Loops are essential constructs to repeat a block of code for a specified amount of time. SystemVerilog provides two constructs to itreate over a range of elements and they are &amp;ldquo;for&amp;rdquo; loop and &amp;ldquo;foreach&amp;rdquo; loop.
 For Loop Similar to other programming languages, the &amp;ldquo;for&amp;rdquo; loop in SystemVerilog repeats a block of code for a specified number of times. Ideal for controlled, indexed iterations where the number of iterations is known beforehand.</description>
     </item>
     <item>
       <title>Dynamic Cast</title>
-      <link>http://localhost:1313/sv_directory/2024_07_02_18_41_56_dynamic_cast/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/</link>
       <pubDate>Tue, 02 Jul 2024 18:41:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_02_18_41_56_dynamic_cast/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/</guid>
       <description>SV Verification Directory
 Dynamic Cast Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,
 Static Casting Dynamic Casting Dynamic Casting Dynamic casting in SystemVerilog allows you to safely convert a handle of one class type to another class type at runtime, ensuring the cast is valid and the object is of the target type. The dynamic cast, $cast, allows you to check for out-of-bounds values.</description>
     </item>
     <item>
       <title>Static Cast</title>
-      <link>http://localhost:1313/sv_directory/2024_07_02_18_32_19_static_cast/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/</link>
       <pubDate>Tue, 02 Jul 2024 18:32:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_02_18_32_19_static_cast/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/</guid>
       <description>SV Verification Directory
 Static Cast Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,
 Static Casting Dynamic Casting Static Casting Static casting converts one data type to another compartible datatypes, as the name suggest, the conversion data type is fixed. The cast (&amp;rsquo;) operator should be placed before the data along with the intended data type.
@@ -258,9 +268,9 @@ Example module static_conv; int i = 75; real r = 13.</description>
     </item>
     <item>
       <title>Structures</title>
-      <link>http://localhost:1313/sv_directory/2024_07_02_16_54_49_structures/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_02_16_54_49_structures/</link>
       <pubDate>Tue, 02 Jul 2024 16:54:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_02_16_54_49_structures/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_02_16_54_49_structures/</guid>
       <description>SV Verification Directory
 Structure One of the biggest limitations of Verilog is the lack of data structures. In SystemVerilog, you can create a structure using the struct statement. A structure is a collection of data that can be synthesized.
 Example of struct:
@@ -269,9 +279,9 @@ Typedef for Struct To create multiple structure variables it is necessary to use
     </item>
     <item>
       <title>Enumeration</title>
-      <link>http://localhost:1313/sv_directory/2024_07_02_15_05_30_enumeration/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_02_15_05_30_enumeration/</link>
       <pubDate>Tue, 02 Jul 2024 15:05:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_02_15_05_30_enumeration/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_02_15_05_30_enumeration/</guid>
       <description>SV Verification Directory
 Enumeration In Verilog, it is possible to declare user-defined types using a define macro, shown below:
 `define TYPE1 8 `define TYPE2 32 This does not create a new type but just performance text substitution. In SystemVerilog, a new type can be created with the following code:
@@ -279,62 +289,62 @@ typedef logic [Size-1:0] VAR_T; VAR_T var1, var2; The typedef and parameter stat
     </item>
     <item>
       <title>Array Methods</title>
-      <link>http://localhost:1313/sv_directory/2024_07_02_09_48_08_array_methods/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_02_09_48_08_array_methods/</link>
       <pubDate>Tue, 02 Jul 2024 09:48:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_02_09_48_08_array_methods/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_02_09_48_08_array_methods/</guid>
       <description>SV Verification Directory
 Array Methods Array methods are generic manipulation methods that apply to the entire array rather than iterating to every element in the array.
 Basic Array Operations Copy: an array can be copied completely to another array without using a loop statement. Compare: two arrays can be compared for equality and inequality. Keep in mind that two arrays that are being compared or copied must be of the same base type and size.</description>
     </item>
     <item>
       <title>Associative Arrays</title>
-      <link>http://localhost:1313/sv_directory/2024_07_02_00_18_56_associative_arrays/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_02_00_18_56_associative_arrays/</link>
       <pubDate>Tue, 02 Jul 2024 00:18:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_02_00_18_56_associative_arrays/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_02_00_18_56_associative_arrays/</guid>
       <description>SV Verification Directory
 Associative Arrays Associative arrays in SystemVerilog allow you to index arrays with arbitrary data types. An associative array can be stored by the simulator as a tree or a hash table. An associative array is declared with a data type in square brackets. Only the elements that are explicitly assigned are stored, making it memory-efficient for sparse arrays.
 Example of associative arrays in SV is shown below:</description>
     </item>
     <item>
       <title>Queues</title>
-      <link>http://localhost:1313/sv_directory/2024_07_01_23_35_47_queues/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_01_23_35_47_queues/</link>
       <pubDate>Mon, 01 Jul 2024 23:35:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_01_23_35_47_queues/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_01_23_35_47_queues/</guid>
       <description>SV Verification Directory
 Queues Queue is a new data type introduced in SystemVerilog that combines the best of a linked list and an array.
 Like a linked list, elements can be added and removed anywhere in the queue, without performance degradation when using a dynamic array that has to allocate a new array and copy the entire contents. Like an array, any element in the queue can be directly accessed with the help of the index, without the linked list&amp;rsquo;s overhead of stepping through the preceding element.</description>
     </item>
     <item>
       <title>Dynamic Arrays</title>
-      <link>http://localhost:1313/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</link>
       <pubDate>Mon, 01 Jul 2024 15:56:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</guid>
       <description>SV Verification Directory
 Dymanic Arrays Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declare with empty word subscripts &amp;ldquo;[ ]&amp;rdquo;. The array is initially empty and must be called with the &amp;ldquo;new[ ]&amp;rdquo; constuctor to allocate space, passing in the number of entries in the square brackets.</description>
     </item>
     <item>
       <title>Packed and Unpacked Array</title>
-      <link>http://localhost:1313/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</link>
       <pubDate>Sat, 29 Jun 2024 23:39:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</guid>
       <description>SV Verification Directory
 Packed and Unpacked Array Packed and unpacked arrays are differentiated based on the way the arrays are stored in the memory. Generally, simulators store each element on a 32-bit word boundary. In a packed array, the elements are stored in contiguous memory locations whereas in an unpacked array, the elements are not stored in contiguous memory locations.
 Packed Array A packed array can be declared by declaring the dimension before the identifier name shown below:</description>
     </item>
     <item>
       <title>Fixed-Size Arrays</title>
-      <link>http://localhost:1313/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/</link>
       <pubDate>Sat, 29 Jun 2024 23:25:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/</guid>
       <description>SV Verification Directory
 Fixed-Size Arrays An array is a collection of elements stored sequentially. An array in Verilog should be declared with upper and lower bounds. The lower bound in most of the arrays is zero. Fixed-size arrays have constant size and do not change during run time. The array size is set at compile time.
 Single Dimension Array There are two ways in SystemVerilog to declare single-dimension arrays which are shown below:</description>
     </item>
     <item>
       <title>Logic Type</title>
-      <link>http://localhost:1313/sv_directory/2024_06_28_14_48_33_logic_type/</link>
+      <link>https://24x7fpga.com/sv_directory/2024_06_28_14_48_33_logic_type/</link>
       <pubDate>Fri, 28 Jun 2024 14:48:00 -0400</pubDate>
-      <guid>http://localhost:1313/sv_directory/2024_06_28_14_48_33_logic_type/</guid>
+      <guid>https://24x7fpga.com/sv_directory/2024_06_28_14_48_33_logic_type/</guid>
       <description>SV Verification Directory
 Logic Type Data Types SystemVerilog includes all the data types that are available with Verilog and add many new data types to help both hardware design engineers and verification engineers. Below is a table showing an extensive list of data types availabe in SystemVerilog.
 Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVerilog/Verilog Wire 4 &amp;gt;=1 Unsigned - SystemVerilog/Verilog Reg 4 &amp;gt;=1 Unsigned - SystemVerilog/Verilog Interger 4 32 Signed - SystemVerilog/Verilog Real 2 Double Precision Floating point Double SystemVerilog/Verilog Time 4 64 Unsigned - SystemVerilog Logic 4 &amp;gt;=1 unsigned - SystemVerilog Bit 2 &amp;gt;=1 unsigned - SystemVerilog Byte 2 8 Signed Char SystemVerilog Int 2 32 Signed Int SystemVerilog Shortint 2 16 Signed Short Int SystemVerilog Longint 2 64 Signed Long Int Note: signed variables can cause unexpected results with randomization.</description>
