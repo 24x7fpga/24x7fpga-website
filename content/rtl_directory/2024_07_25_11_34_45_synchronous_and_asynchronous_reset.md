@@ -107,17 +107,79 @@ endmodule
 
 #### Disadvantages {#disadvantages}
 
-1.  Reset assertion and deassertion is asynchronous. Reset assertion is not an issue as the flip-flop takes care of it, but during deassertion when the reset is released close to the active edge of the flip-flop, the flip-flop may go into the metastable stage.
+1.  Reset assertion is not an issue as the flip-flop takes care of it, but during deassertion when the reset is released close to the active edge of the flip-flop, the flip-flop may go into the metastable stage.
 2.  Spurious resets due to noise or glitches on the system reset.
 
 
 ### Reset Deassertion {#reset-deassertion}
 
+Reset deassertion is the process of bring the system out of reset state to operation state. During asynchronous reset deassertion there are two potential problems
 
-### Points to Remember {#points-to-remember}
+<!--list-separator-->
+
+-  Reset Recovery
+
+    -   Reset removal time is the minimum time required between the deassertion of the reset signal and the next active clock edge to ensure proper functionality. This concept is similar to setup time in its importance for guaranteeing stable and reliable operation of digital circuits.
+
+<!--list-separator-->
+
+-  Reset Removal
+
+    -   Reset removal time is the minimum duration for which the reset signal must be deasserted to ensure that flip-flops are correctly initialized.
+
+
+###  {#d41d8c}
+
+Verilog has three built-in commands to model and test recovery time and signal removal timing checks: $recovery, $removal and $recrem (the latter is a combination of recovery and removal timing checks)[1,2].
+
+
+### Reset Synchronizer {#reset-synchronizer}
+
+When an asyn reset is deasserted it should satisfy the timing constraints (reset recovery and reset removal) if not chances are that the system may enter into a metastable state. Therefore, it is necessary to pass the data through [Two-Flop Synchronizer] to avoid metastable conditions. Figure 3 illustrates an approach designed to leverage the advantages of both asynchronous and synchronous reset styles.
+
+{{< figure src="/ox-hugo/rst_syn.svg" caption="<span class=\"figure-number\">Figure 3: </span>Async Reset with Synchnronizers" class="center !important" width="700px" >}}
+
+The second flip-flop in the synchronizer ensures that the data Din​ is correctly clocked in by eliminating any metastability caused by asynchronous reset removal and reset deassertion occurring too close to the active edge of the clock.
+
+
+#### Example Code: {#example-code}
+
+```verilog
+module asyn_rst(/*AUTOARG*/
+   // Outputs
+   rst_main,
+   // Inputs
+   clk, rst_asyn
+   );
+  input   clk;
+  input   rst_asyn;
+  output  rst_main;
+
+  /*AUTOREG*/
+  // Beginning of automatic regs (for this module's undeclared outputs)
+  reg			rst_main;
+  // End of automatics
+  /*AUTOWIRE*/
+
+  reg temp_rst;
+
+  always@(posedge clk, negedge rst_asyn)
+    begin
+        if(!rst_asyn)
+                {rst_main, temp_rst} <= 2'b00;
+        else
+                {rst_main, temp_rst} <= {temp_rst, 1'b1};
+    end
+
+endmodule
+```
+
+Note: Reset-glitch filtering circuit must be implemented to ensure a clean reset is received in an asynchronous reset circuits.
 
 
 ### Reference {#reference}
 
 1.  [Cummings, Clifford E., and Don Mills. "Synchronous Resets? Asynchronous Resets? I am so confused! How will I ever know which to use?." SNUG 2002 (Synopsys Users Group Conference, San Jose, CA, 2002) User Papers. 2002.](http://www.sunburst-design.com/papers/CummingsSNUG2002SJ_Resets.pdf)
 2.  [Cummings, Clifford E., Don Mills, and Steve Golson. "Asynchronous &amp; synchronous reset design techniques-part deux." SNUG Boston 9 (2003).](http://www.sunburst-design.com/papers/CummingsSNUG2003Boston_Resets.pdf)
+3.  [Intel® Quartus® Prime Pro Edition User Guide: Design Recommendations](https://www.intel.com/content/www/us/en/docs/programmable/683082/21-3/using-asynchronous-resets.html)
+4.  [Alexander Gnusin. "Resets and Reset Domain Crossing in ASIC and FPGA Designs[White Paper]". ALDEC Design Verification Company.](https://research.ssl.berkeley.edu/~teq/research/Resets%20and%20Reset%20Domain%20Crossings%20in%20ASIC%20and%20FPGA%20designs.pdf)
