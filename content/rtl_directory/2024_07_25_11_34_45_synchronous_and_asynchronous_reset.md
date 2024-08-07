@@ -137,7 +137,7 @@ Verilog has three built-in commands to model and test recovery time and signal r
 
 When an asyn reset is deasserted it should satisfy the timing constraints (reset recovery and reset removal) if not chances are that the system may enter into a metastable state. Therefore, it is necessary to pass the data through [Two-Flop Synchronizer] to avoid metastable conditions. Figure 3 illustrates an approach designed to leverage the advantages of both asynchronous and synchronous reset styles.
 
-{{< figure src="/ox-hugo/rst_syn.svg" caption="<span class=\"figure-number\">Figure 3: </span>Async Reset with Synchnronizers" class="center !important" width="700px" >}}
+{{< figure src="/ox-hugo/arst_syn.svg" caption="<span class=\"figure-number\">Figure 3: </span>Async Reset with Two-Flop Synchnronizer" class="center !important" width="700px" >}}
 
 The second flip-flop in the synchronizer ensures that the data Din​ is correctly clocked in by eliminating any metastability caused by asynchronous reset removal and reset deassertion occurring too close to the active edge of the clock.
 
