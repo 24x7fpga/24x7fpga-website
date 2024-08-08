@@ -375,9 +375,9 @@ Synchronous Reset Asynchronous Reset Synchronous Reset In synchronous reset circ
 <p>Verilog has three built-in commands to model and test recovery time and signal removal timing checks: $recovery, $removal and $recrem (the latter is a combination of recovery and removal timing checks)[1,2].</p>
 <h3 id="reset-synchronizer">Reset Synchronizer<a hidden class="anchor" aria-hidden="true" href="#reset-synchronizer">#</a></h3>
 <p>When an asyn reset is deasserted it should satisfy the timing constraints (reset recovery and reset removal) if not chances are that the system may enter into a metastable state. Therefore, it is necessary to pass the data through [Two-Flop Synchronizer] to avoid metastable conditions. Figure 3 illustrates an approach designed to leverage the advantages of both asynchronous and synchronous reset styles.</p>
-<figure class="center !important">
+<figure>
     <img loading="lazy" src="/ox-hugo/arst_syn.svg"
-         alt="Figure 3: Async Reset with Two-Flop Synchnronizer" width="700px"/> <figcaption>
+         alt="Figure 3: Async Reset with Two-Flop Synchnronizer"/> <figcaption>
             <p><!-- raw HTML omitted -->Figure 3: <!-- raw HTML omitted -->Async Reset with Two-Flop Synchnronizer</p>
         </figcaption>
 </figure>
