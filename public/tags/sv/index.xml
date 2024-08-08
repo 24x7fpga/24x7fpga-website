@@ -6,8 +6,17 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Aug 2024 12:53:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 08 Aug 2024 10:27:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interface</title>
+      <link>https://24x7fpga.com/sv_directory/2024_08_08_10_27_00_interface/</link>
+      <pubDate>Thu, 08 Aug 2024 10:27:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_08_08_10_27_00_interface/</guid>
+      <description>SV Verification Directory
+Interface Interface in SystemVerilog is a construct that bundles all the signals together or group related signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.
+Syntax // create interface interface interface_name; signals; endinterface // intantiate interface in a module inteface_name inst_name; Example Code Design</description>
+    </item>
     <item>
       <title>Semaphore</title>
       <link>https://24x7fpga.com/sv_directory/2024_08_06_12_53_53_semaphore/</link>

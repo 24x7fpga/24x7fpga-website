@@ -85,8 +85,7 @@ In the rapidly evolving world of digital design, verification is paramount to en
 
 ## Interface {#interface}
 
-1.  Modports
-2.  Interface
-3.  Virtual Interface
-4.  Clock Blocks
-5.  Program Blocks
+1.  [Interface]({{< relref "2024_08_08_10_27_00_interface.md" >}})
+2.  Modport
+3.  Clocking Blocks
+4.  Program Blocks

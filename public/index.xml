@@ -6,8 +6,17 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Aug 2024 22:15:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 08 Aug 2024 10:27:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interface</title>
+      <link>https://24x7fpga.com/sv_directory/2024_08_08_10_27_00_interface/</link>
+      <pubDate>Thu, 08 Aug 2024 10:27:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_08_08_10_27_00_interface/</guid>
+      <description>SV Verification Directory
+Interface Interface in SystemVerilog is a construct that bundles all the signals together or group related signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.
+Syntax // create interface interface interface_name; signals; endinterface // intantiate interface in a module inteface_name inst_name; Example Code Design</description>
+    </item>
     <item>
       <title>RFSoC Loop Back Tutorial</title>
       <link>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/</link>
@@ -622,7 +631,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Modports Interface Virtual Interface Clock Blocks Program Blocks </description>
+Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Blocks Program Blocks </description>
     </item>
     <item>
       <title>Decoder</title>
