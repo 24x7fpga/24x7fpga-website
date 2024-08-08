@@ -3,7 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://24x7fpga.com/</loc>
-    <lastmod>2024-08-06T12:53:00-04:00</lastmod>
+    <lastmod>2024-08-07T22:15:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/rfsoc/</loc>
+    <lastmod>2024-08-07T22:15:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/</loc>
+    <lastmod>2024-08-07T22:15:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/rfsoc_directory/</loc>
+    <lastmod>2024-08-07T22:15:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/</loc>
+    <lastmod>2024-08-07T22:15:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_09_59_rfsoc/</loc>
+    <lastmod>2024-08-07T22:09:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/2024_08_06_12_53_53_semaphore/</loc>
     <lastmod>2024-08-06T12:53:00-04:00</lastmod>
@@ -12,9 +27,6 @@
     <lastmod>2024-08-06T12:53:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/</loc>
-    <lastmod>2024-08-06T12:53:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/tags/</loc>
     <lastmod>2024-08-06T12:53:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/</loc>

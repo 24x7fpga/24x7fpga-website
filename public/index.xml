@@ -6,8 +6,24 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Aug 2024 12:53:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 07 Aug 2024 22:15:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RFSoC Loop Back Tutorial</title>
+      <link>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/</link>
+      <pubDate>Wed, 07 Aug 2024 22:15:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/</guid>
+      <description>RFSoC
+RFSoC Loop Back Tutorial Figure 1: Zynq UltraScale+ RFSoC 1275 Characterization Kit
+RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are high precision, high speed, and power efficient. Xilinx Vivado is equipped with RF Data Converter IP core which provides a configurable wrapper that allows these RF-ADCs and RF-DACs blocks to be used in the IP integrator designs. The RF-ADCs and RF-DACs are organized into tiles where each tiles contains one, two or four RF-ADCs and RF-DACs.</description>
+    </item>
+    <item>
+      <title>RFSoC</title>
+      <link>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_09_59_rfsoc/</link>
+      <pubDate>Wed, 07 Aug 2024 22:09:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_09_59_rfsoc/</guid>
+      <description>RFSoC RFSoC Loop Back Tutorial RFSoC External Clock and Data RFSoC MTS Tutorial </description>
+    </item>
     <item>
       <title>Semaphore</title>
       <link>https://24x7fpga.com/sv_directory/2024_08_06_12_53_53_semaphore/</link>
@@ -423,9 +439,9 @@ Design: 4-bit Universal Shift Register The figure below shows a design of a 4-bi
       <link>https://24x7fpga.com/research/2024_07_08_10_15_40_research/</link>
       <pubDate>Mon, 08 Jul 2024 10:15:00 -0400</pubDate>
       <guid>https://24x7fpga.com/research/2024_07_08_10_15_40_research/</guid>
-      <description>[Dissertation] &amp;ndash; [RFSoC ZCU1275]
+      <description>[Dissertation] &amp;ndash; RFSoC
 My doctroal research concentrates on designing a wideband digital receiver system to receive and process the data for accurate multiple signal detection. Fast Fourier transform (FFT) is a widely used digital signal processing technique to detect signals in a bandwidth. However, there are some limitations when using the FFT algorithm for signal detection
-The number of fixed-length samples used by the FFT algorithm determines the frequency resolution.</description>
+The number of fixed-length samples used by the FFT algorithm determines the frequency resolution. The number of samples from the input signal must be increased to increase the frequency resolution.</description>
     </item>
     <item>
       <title>Shift Register</title>

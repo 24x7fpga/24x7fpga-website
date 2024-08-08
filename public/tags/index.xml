@@ -6,8 +6,15 @@
     <description>Recent content in Tags on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Aug 2024 12:53:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 07 Aug 2024 22:15:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rfsoc</title>
+      <link>https://24x7fpga.com/tags/rfsoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://24x7fpga.com/tags/rfsoc/</guid>
+      <description></description>
+    </item>
     <item>
       <title>sv</title>
       <link>https://24x7fpga.com/tags/sv/</link>

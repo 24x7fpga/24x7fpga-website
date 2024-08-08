@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>rfsoc on Home</title>
+    <link>https://24x7fpga.com/tags/rfsoc/</link>
+    <description>Recent content in rfsoc on Home</description>
+    <generator>Hugo -- 0.121.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Aug 2024 22:15:00 -0400</lastBuildDate>
+    <atom:link href="https://24x7fpga.com/tags/rfsoc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RFSoC Loop Back Tutorial</title>
+      <link>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/</link>
+      <pubDate>Wed, 07 Aug 2024 22:15:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/</guid>
+      <description>RFSoC
+RFSoC Loop Back Tutorial Figure 1: Zynq UltraScale+ RFSoC 1275 Characterization Kit
+RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are high precision, high speed, and power efficient. Xilinx Vivado is equipped with RF Data Converter IP core which provides a configurable wrapper that allows these RF-ADCs and RF-DACs blocks to be used in the IP integrator designs. The RF-ADCs and RF-DACs are organized into tiles where each tiles contains one, two or four RF-ADCs and RF-DACs.</description>
+    </item>
+    <item>
+      <title>RFSoC</title>
+      <link>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_09_59_rfsoc/</link>
+      <pubDate>Wed, 07 Aug 2024 22:09:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_09_59_rfsoc/</guid>
+      <description>RFSoC RFSoC Loop Back Tutorial RFSoC External Clock and Data RFSoC MTS Tutorial </description>
+    </item>
+  </channel>
+</rss>

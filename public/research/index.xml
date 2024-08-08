@@ -13,9 +13,9 @@
       <link>https://24x7fpga.com/research/2024_07_08_10_15_40_research/</link>
       <pubDate>Mon, 08 Jul 2024 10:15:00 -0400</pubDate>
       <guid>https://24x7fpga.com/research/2024_07_08_10_15_40_research/</guid>
-      <description>[Dissertation] &amp;ndash; [RFSoC ZCU1275]
+      <description>[Dissertation] &amp;ndash; RFSoC
 My doctroal research concentrates on designing a wideband digital receiver system to receive and process the data for accurate multiple signal detection. Fast Fourier transform (FFT) is a widely used digital signal processing technique to detect signals in a bandwidth. However, there are some limitations when using the FFT algorithm for signal detection
-The number of fixed-length samples used by the FFT algorithm determines the frequency resolution.</description>
+The number of fixed-length samples used by the FFT algorithm determines the frequency resolution. The number of samples from the input signal must be increased to increase the frequency resolution.</description>
     </item>
   </channel>
 </rss>
