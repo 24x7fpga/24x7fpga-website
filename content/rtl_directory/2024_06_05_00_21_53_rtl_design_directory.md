@@ -36,7 +36,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 
 1.  [Throughput and Latency]({{< relref "2024_07_23_21_33_58_throughput_and_latency.md" >}})
 2.  [Synchronous and Asynchronous Reset]({{< relref "2024_07_25_11_34_45_synchronous_and_asynchronous_reset.md" >}})
-3.  Casex and Casez
+3.  [Casex and Casez]({{< relref "2024_07_25_11_36_52_casex_and_casez.md" >}})
 4.  Full case and Parallel Case
 5.  Assign and If Statement
 6.  Blocking and Non-Blocking Assignment
