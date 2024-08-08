@@ -14,7 +14,8 @@
       <pubDate>Thu, 08 Aug 2024 13:51:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_08_08_13_51_50_clocking_block/</guid>
       <description>SV Verification Directory
-Clocking Block </description>
+Clocking Block Clocking block in a testbench is implemented to manage timing relationship and synchronization for a group signals. t provides a clear and organized way to define the clocking events, control the sampling and driving of signals, and synchronize operation.
+Groups signals under a common clock, specifying how and when signals are sampeld and driven with respect the clock. Provide specification to model clock skew for input and output.</description>
     </item>
     <item>
       <title>Interface</title>
