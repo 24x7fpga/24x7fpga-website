@@ -139,7 +139,7 @@ When an asyn reset is deasserted it should satisfy the timing constraints (reset
 
 {{< figure src="/ox-hugo/arst_syn.svg" caption="<span class=\"figure-number\">Figure 3: </span>Async Reset with Two-Flop Synchnronizer" >}}
 
-The second flip-flop in the synchronizer ensures that the data Din​ is correctly clocked in by eliminating any metastability caused by asynchronous reset removal and reset deassertion occurring too close to the active edge of the clock.
+The second flip-flop in the synchronizer ensures the data is sampled correctly by eliminating any metastability caused by asynchronous reset removal and reset deassertion occurring too close to the active edge of the clock.
 
 
 #### Example Code: {#example-code}
