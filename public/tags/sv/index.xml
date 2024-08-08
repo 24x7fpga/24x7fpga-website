@@ -6,8 +6,16 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Aug 2024 10:27:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 08 Aug 2024 13:51:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clocking Block</title>
+      <link>https://24x7fpga.com/sv_directory/2024_08_08_13_51_50_clocking_block/</link>
+      <pubDate>Thu, 08 Aug 2024 13:51:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_08_08_13_51_50_clocking_block/</guid>
+      <description>SV Verification Directory
+Clocking Block </description>
+    </item>
     <item>
       <title>Interface</title>
       <link>https://24x7fpga.com/sv_directory/2024_08_08_10_27_00_interface/</link>
@@ -16,6 +24,16 @@
       <description>SV Verification Directory
 Interface Interface in SystemVerilog is a construct that bundles all the signals together or group related signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.
 Syntax // create interface interface interface_name; signals; endinterface // intantiate interface in a module inteface_name inst_name; Example Code Design</description>
+    </item>
+    <item>
+      <title>Modport</title>
+      <link>https://24x7fpga.com/sv_directory/2024_08_08_10_17_52_modport/</link>
+      <pubDate>Thu, 08 Aug 2024 10:17:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_08_08_10_17_52_modport/</guid>
+      <description>SV Verification Directory
+Modport The modport construct within an interface module is used to group signals and specify their directionality. By assigning port directions, modport enforces access control, restricting signals to specific roles and clearly defining their intended function within the interface.
+The modport keyword is employed to establish these signal definitions within an interface.
+Modport provides input, output, inout and ref as port declarations. Signals that are driven should be declared as outputs in the modport module.</description>
     </item>
     <item>
       <title>Semaphore</title>
