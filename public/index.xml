@@ -255,7 +255,7 @@ Syntax: Handle Ex_class cl_obj; // declare a handle cl_obj = new(); // allocate 
       <pubDate>Wed, 24 Jul 2024 17:42:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_24_17_42_06_object/</guid>
       <description>SV Verification Directory
-Object An object is an instance od a class. It is similar to the instantiation of a module in Verilog, but there are some differences which as listed in the table below:
+Object An object is an instance of a class. It is similar to the instantiation of a module in Verilog, but there are some differences which as listed in the table below:
 Verilog Module Instance SystemVerilog Class Instance A module is instantiated during compile time A class is instantiated during simulation when needed by the testbench Verilog instances are static, as hardware does not change during simulation Class objects are created when required and freed from memory when no longer needed The &amp;rsquo;new&amp;rsquo; keyword is used to instantiate the object.</description>
     </item>
     <item>
