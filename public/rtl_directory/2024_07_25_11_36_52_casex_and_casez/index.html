@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Casex and Casez | Home</title>
 <meta name="keywords" content="rtl">
-<meta name="description" content="[Design] &ndash; [Testbench] &ndash; RTL Design Directory
+<meta name="description" content="Design &ndash; Testbench &ndash; RTL Design Directory
 Case Statement: An Overview The case statement is a fundamental construct in any programming language. The case statement selects one of many outputs based on the value of the case expression. It is equicalent to an if-else-if statement.
 Syntax case(case expression) case item1 : case statement_1; case item2 : case statement_2; case item3 : case statement_3; ... default : case statement_default; endcase Case Expression: The case statement chooses the case item based on the case expression.">
 <meta name="author" content="Kiran">
@@ -37,7 +37,7 @@ Syntax case(case expression) case item1 : case statement_1; case item2 : case st
 <link rel="stylesheet" href="../../zcustom.css">
 
 <meta property="og:title" content="Casex and Casez" />
-<meta property="og:description" content="[Design] &ndash; [Testbench] &ndash; RTL Design Directory
+<meta property="og:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
 Case Statement: An Overview The case statement is a fundamental construct in any programming language. The case statement selects one of many outputs based on the value of the case expression. It is equicalent to an if-else-if statement.
 Syntax case(case expression) case item1 : case statement_1; case item2 : case statement_2; case item3 : case statement_3; ... default : case statement_default; endcase Case Expression: The case statement chooses the case item based on the case expression." />
 <meta property="og:type" content="article" />
@@ -47,7 +47,7 @@ Syntax case(case expression) case item1 : case statement_1; case item2 : case st
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Casex and Casez"/>
-<meta name="twitter:description" content="[Design] &ndash; [Testbench] &ndash; RTL Design Directory
+<meta name="twitter:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
 Case Statement: An Overview The case statement is a fundamental construct in any programming language. The case statement selects one of many outputs based on the value of the case expression. It is equicalent to an if-else-if statement.
 Syntax case(case expression) case item1 : case statement_1; case item2 : case statement_2; case item3 : case statement_3; ... default : case statement_default; endcase Case Expression: The case statement chooses the case item based on the case expression."/>
 
@@ -78,11 +78,11 @@ Syntax case(case expression) case item1 : case statement_1; case item2 : case st
   "@type": "BlogPosting",
   "headline": "Casex and Casez",
   "name": "Casex and Casez",
-  "description": "[Design] \u0026ndash; [Testbench] \u0026ndash; RTL Design Directory\nCase Statement: An Overview The case statement is a fundamental construct in any programming language. The case statement selects one of many outputs based on the value of the case expression. It is equicalent to an if-else-if statement.\nSyntax case(case expression) case item1 : case statement_1; case item2 : case statement_2; case item3 : case statement_3; ... default : case statement_default; endcase Case Expression: The case statement chooses the case item based on the case expression.",
+  "description": "Design \u0026ndash; Testbench \u0026ndash; RTL Design Directory\nCase Statement: An Overview The case statement is a fundamental construct in any programming language. The case statement selects one of many outputs based on the value of the case expression. It is equicalent to an if-else-if statement.\nSyntax case(case expression) case item1 : case statement_1; case item2 : case statement_2; case item3 : case statement_3; ... default : case statement_default; endcase Case Expression: The case statement chooses the case item based on the case expression.",
   "keywords": [
     "rtl"
   ],
-  "articleBody": "[Design] – [Testbench] – RTL Design Directory\nCase Statement: An Overview The case statement is a fundamental construct in any programming language. The case statement selects one of many outputs based on the value of the case expression. It is equicalent to an if-else-if statement.\nSyntax case(case expression) case item1 : case statement_1; case item2 : case statement_2; case item3 : case statement_3; ... default : case statement_default; endcase Case Expression: The case statement chooses the case item based on the case expression. Case Item: Case item is an expression, bit or a vector. When the case expression matches the case item, case statement will be executed. Case Statement: Case item is single or a block of code that will be execute when the case item matched the case expression. Default Case: The default case is optional but recommend to hancdle any values that do not match the specified case item. Case Variants There are two case variants for called casex and casez more flexible case item matching.\nCasex The casex statement allows for “don’t care” conditions by treating all ‘z’, ‘?’, and ‘x’ values as wildcards. This means that any bit in the case expression or case item that is ‘z’, ‘?’ or ‘x’ will match any corresponding bit in the case expression.\nCasez The casez statement is similar to casex, but it only treats ‘z’ and ‘?’ values as don’t cares. Unknown (x) values are treated as specific values and must match exactly. Casez particularly beneficial when the case expression or case statement is derived from an external source, where ‘x’ values are considered as “don’t care” conditions. However, it is important to recognize that these ‘x’ values may actually represent undesirable states. Such a misinterpretation can lead to unintended case statement evaluations, and erroneous circuit designs.\nPoints to Remember Always use casez when don’t cares are involved. Avoid using casex for synthesible code. Reference “full_case parallel_case”, the Evil Twins of Verilog Synthesis ",
+  "articleBody": "Design – Testbench – RTL Design Directory\nCase Statement: An Overview The case statement is a fundamental construct in any programming language. The case statement selects one of many outputs based on the value of the case expression. It is equicalent to an if-else-if statement.\nSyntax case(case expression) case item1 : case statement_1; case item2 : case statement_2; case item3 : case statement_3; ... default : case statement_default; endcase Case Expression: The case statement chooses the case item based on the case expression. Case Item: Case item is an expression, bit or a vector. When the case expression matches the case item, case statement will be executed. Case Statement: Case item is single or a block of code that will be execute when the case item matched the case expression. Default Case: The default case is optional but recommend to hancdle any values that do not match the specified case item. Case Variants There are two case variants for called casex and casez more flexible case item matching.\nCasex The casex statement allows for “don’t care” conditions by treating all ‘z’, ‘?’, and ‘x’ values as wildcards. This means that any bit in the case expression or case item that is ‘z’, ‘?’ or ‘x’ will match any corresponding bit in the case expression.\nCasez The casez statement is similar to casex, but it only treats ‘z’ and ‘?’ values as don’t cares. Unknown (x) values are treated as specific values and must match exactly. Casez particularly beneficial when the case expression or case statement is derived from an external source, where ‘x’ values are considered as “don’t care” conditions. However, it is important to recognize that these ‘x’ values may actually represent undesirable states. Such a misinterpretation can lead to unintended case statement evaluations, and erroneous circuit designs.\nPoints to Remember Always use casez when don’t cares are involved. Avoid using casex for synthesible code. Reference “full_case parallel_case”, the Evil Twins of Verilog Synthesis ",
   "wordCount" : "325",
   "inLanguage": "en",
   "datePublished": "2024-07-25T11:36:00-04:00",
@@ -261,7 +261,7 @@ Syntax case(case expression) case item1 : case statement_1; case item2 : case st
 
 </div>
   </header> 
-  <div class="post-content"><p>[Design] &ndash; [Testbench] &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/iVerilog/blob/master/design/casex_nd_casez/casex_nd_casez.sv">Design</a> &ndash; <a href="https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_casex_nd_casez/tb_casex_nd_casez.sv">Testbench</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
 <h2 id="case-statement-an-overview">Case Statement: An Overview<a hidden class="anchor" aria-hidden="true" href="#case-statement-an-overview">#</a></h2>
 <p>The <strong>case</strong> statement is a fundamental construct in any programming language. The case statement selects one of many outputs based on the value of the case expression. It is equicalent to an if-else-if statement.</p>
 <h4 id="syntax">Syntax<a hidden class="anchor" aria-hidden="true" href="#syntax">#</a></h4>

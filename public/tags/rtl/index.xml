@@ -21,7 +21,7 @@ Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred)
       <link>https://24x7fpga.com/rtl_directory/2024_07_25_11_36_52_casex_and_casez/</link>
       <pubDate>Thu, 25 Jul 2024 11:36:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_25_11_36_52_casex_and_casez/</guid>
-      <description>[Design] &amp;ndash; [Testbench] &amp;ndash; RTL Design Directory
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Case Statement: An Overview The case statement is a fundamental construct in any programming language. The case statement selects one of many outputs based on the value of the case expression. It is equicalent to an if-else-if statement.
 Syntax case(case expression) case item1 : case statement_1; case item2 : case statement_2; case item3 : case statement_3; ... default : case statement_default; endcase Case Expression: The case statement chooses the case item based on the case expression.</description>
     </item>
