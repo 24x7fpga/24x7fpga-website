@@ -188,6 +188,15 @@ Encapsulation This principle involves bundling the data (attributes) and the met
 Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred) and 100GB of free storage space for full installation.</description>
     </item>
     <item>
+      <title>Full Case and Parallel Case</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_07_26_17_05_01_full_case_and_parallel_case/</link>
+      <pubDate>Fri, 26 Jul 2024 17:05:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_07_26_17_05_01_full_case_and_parallel_case/</guid>
+      <description>[Design] &amp;ndash; [Testbench] &amp;ndash; RTL Design Directory
+Full Case and Parallel Case The case statement is a fundamental construct used for conditional branching across various programming languages. In SystemVerilog, it is implemented as a simple if-else-if statement. SystemVerilog introduces two specialized variations of the case statement, casex and casez, that allow for handling &amp;ldquo;don&amp;rsquo;t care&amp;rdquo; conditions in the case items, discussed in Casex and Casez.
+The case statement can be caterogired as full and parallel based on the how the case items are being matched to case expression.</description>
+    </item>
+    <item>
       <title>Shallow Copy and Deep Copy</title>
       <link>https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</link>
       <pubDate>Fri, 26 Jul 2024 09:41:00 -0400</pubDate>
