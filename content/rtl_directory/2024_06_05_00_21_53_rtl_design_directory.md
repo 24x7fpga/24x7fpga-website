@@ -37,7 +37,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 -   [Throughput and Latency]({{< relref "2024_07_23_21_33_58_throughput_and_latency.md" >}})
 -   [Synchronous and Asynchronous Reset]({{< relref "2024_07_25_11_34_45_synchronous_and_asynchronous_reset.md" >}})
 -   [Casex and Casez]({{< relref "2024_07_25_11_36_52_casex_and_casez.md" >}})
--   Full case and Parallel Case
+-   [Full Case and Parallel Case]({{< relref "2024_07_26_17_05_01_full_case_and_parallel_case.md" >}})
 -   Assign and If Statement
 -   Blocking and Non-Blocking Assignment
 -   Always@(\*) and Always_Comb
