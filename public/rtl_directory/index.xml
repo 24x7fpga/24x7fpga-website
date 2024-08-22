@@ -6,8 +6,19 @@
     <description>Recent content in Rtl_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jul 2024 10:50:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 22 Aug 2024 14:57:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/rtl_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Synchronous FIFO</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_08_22_14_57_15_synchronous_fifo/</link>
+      <pubDate>Thu, 22 Aug 2024 14:57:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_08_22_14_57_15_synchronous_fifo/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Synchronous FIFO A FIFO (First-In-First-Out) is a storage buffer that is widely used in digital systems where the data that is stored in the memory is retrieved first, hence the name FIFO.
+A synchronous FIFO is a type of FIFO where the write and read operations are synchronized with the same clock signal.
+Figure 1: FIFO Buffer
+The data retrieval is based on the order of the data written to the FIFO buffer.</description>
+    </item>
     <item>
       <title>Vivado Installation</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/</link>
