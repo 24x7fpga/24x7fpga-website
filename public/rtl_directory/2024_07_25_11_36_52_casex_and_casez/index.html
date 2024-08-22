@@ -82,8 +82,8 @@ Syntax case(case expression) case item1 : case statement_1; case item2 : case st
   "keywords": [
     "rtl"
   ],
-  "articleBody": "Design – Testbench – RTL Design Directory\nCase Statement: An Overview The case statement is a fundamental construct in any programming language. The case statement selects one of many outputs based on the value of the case expression. It is equicalent to an if-else-if statement.\nSyntax case(case expression) case item1 : case statement_1; case item2 : case statement_2; case item3 : case statement_3; ... default : case statement_default; endcase Case Expression: The case statement chooses the case item based on the case expression. Case Item: Case item is an expression, bit or a vector. When the case expression matches the case item, case statement will be executed. Case Statement: Case item is single or a block of code that will be execute when the case item matched the case expression. Default Case: The default case is optional but recommend to hancdle any values that do not match the specified case item. Case Variants There are two case variants for called casex and casez more flexible case item matching.\nCasex The casex statement allows for “don’t care” conditions by treating all ‘z’, ‘?’, and ‘x’ values as wildcards. This means that any bit in the case expression or case item that is ‘z’, ‘?’ or ‘x’ will match any corresponding bit in the case expression.\nCasez The casez statement is similar to casex, but it only treats ‘z’ and ‘?’ values as don’t cares. Unknown (x) values are treated as specific values and must match exactly. Casez particularly beneficial when the case expression or case statement is derived from an external source, where ‘x’ values are considered as “don’t care” conditions. However, it is important to recognize that these ‘x’ values may actually represent undesirable states. Such a misinterpretation can lead to unintended case statement evaluations, and erroneous circuit designs.\nPoints to Remember Always use casez when don’t cares are involved. Avoid using casex for synthesible code. Reference “full_case parallel_case”, the Evil Twins of Verilog Synthesis ",
-  "wordCount" : "325",
+  "articleBody": "Design – Testbench – RTL Design Directory\nCase Statement: An Overview The case statement is a fundamental construct in any programming language. The case statement selects one of many outputs based on the value of the case expression. It is equicalent to an if-else-if statement.\nSyntax case(case expression) case item1 : case statement_1; case item2 : case statement_2; case item3 : case statement_3; ... default : case statement_default; endcase Case Expression: The case statement chooses the case item based on the case expression. Case Item: Case item is an expression, bit or a vector. When the case expression matches the case item, case statement will be executed. Case Statement: Case item is single or a block of code that will be execute when the case item matched the case expression. Default Case: The default case is optional but recommend to hancdle any values that do not match the specified case item. Case Variants There are two case variants for called casex and casez more flexible case item matching.\nCasex The casex statement allows for “don’t care” conditions by treating all ‘z’, ‘?’, and ‘x’ values as wildcards. This means that any bit in the case expression or case item that is ‘z’, ‘?’ or ‘x’ will match any corresponding bit in the case expression.\nCasez The casez statement is similar to casex, but it only treats ‘z’ and ‘?’ values as don’t cares. Unknown (x) values are treated as specific values and must match exactly. Casez particularly beneficial when the case expression or case statement is derived from an external source, where ‘x’ values are considered as “don’t care” conditions. However, it is important to recognize that these ‘x’ values may actually represent undesirable states. Such a misinterpretation can lead to unintended case statement evaluations, and erroneous circuit designs.\nPoints to Remember Always use casez when don’t cares are involved. Avoid using casex for synthesible code. Casex treats ‘x’ and ‘z’ as dc. Casez treats ‘z’ as dc. In verilog, ‘?’ is an alias for ‘z’ in numerical literals. Reference “full_case parallel_case”, the Evil Twins of Verilog Synthesis ",
+  "wordCount" : "348",
   "inLanguage": "en",
   "datePublished": "2024-07-25T11:36:00-04:00",
   "dateModified": "2024-07-25T11:36:00-04:00",
@@ -257,7 +257,7 @@ Syntax case(case expression) case item1 : case statement_1; case item2 : case st
     <h1 class="post-title entry-hint-parent">
       Casex and Casez
     </h1>
-    <div class="post-meta"><span title='2024-07-25 11:36:00 -0400 EDT'>July 25, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;325 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-07-25 11:36:00 -0400 EDT'>July 25, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;348 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
@@ -288,6 +288,9 @@ Syntax case(case expression) case item1 : case statement_1; case item2 : case st
 <ol>
 <li>Always use <strong>casez</strong> when <strong>don&rsquo;t cares</strong> are involved.</li>
 <li>Avoid using <strong>casex</strong> for synthesible code.</li>
+<li>Casex treats &lsquo;x&rsquo; and &lsquo;z&rsquo; as dc.</li>
+<li>Casez treats &lsquo;z&rsquo; as dc.</li>
+<li>In verilog, &lsquo;?&rsquo; is an alias for &lsquo;z&rsquo; in numerical literals.</li>
 </ol>
 <h3 id="reference">Reference<a hidden class="anchor" aria-hidden="true" href="#reference">#</a></h3>
 <ol>
