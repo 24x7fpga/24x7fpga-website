@@ -28,14 +28,24 @@ item in the case statement [1].
 From a synthesis tool perspective, a "full" case statement is a case statement in which every
 possible binary pattern is included as a case item in the case statement [1].
 
--   _Full Case_ removes latches from the design.
--   No. of case item is directly proportional to the no. of case expression.
--   The _full_case_ directive can be used to explicitly indicate that the case statement is full.
+-   Full Case removes latches from the design.
+-   Number of case item is directly proportional to the number of case expression.
+-   The **full_case** directive can be used to explicitly indicate that the case statement is full.
 
 
 ### Parallel Case {#parallel-case}
 
--   _Parallel Case_ removes large, slow priority encoders.
+A case statement checks the case expression against multiple cases and executes the corresponding branch that matches the case expression. By default, the synthesis tools generate a priority encoder, which checks cases sequentially. The **parallel** case tells the synthesis tool that each case item has only one matching case expression allowing the synthesis tool to optimize the hardware by removing priority checks, leading to simpler and faster hardware implementation.
+
+-   Parallel Case removes large, slow-priority encoders.
+-   The **parallel_case** directive is used to explicitly indicate that the case statement is parallel.
+
+
+### Points to Remember {#points-to-remember}
+
+1.  Non-Parallel Case: The order of the case branches is significant, as the conditions are evaluated sequentially, and the first matching condition is selected for execution.
+
+2.  Parallel Case: The order of the case branches is irrelevant, as the synthesis tool assumes that the conditions are mutually exclusive, allowing for simultaneous evaluation without prioritization.
 
 
 ### Reference {#reference}

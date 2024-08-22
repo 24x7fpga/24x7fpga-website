@@ -82,8 +82,8 @@ The case statement can be caterogired as full and parallel based on the how the 
   "keywords": [
     "rtl"
   ],
-  "articleBody": "[Design] – [Testbench] – RTL Design Directory\nFull Case and Parallel Case The case statement is a fundamental construct used for conditional branching across various programming languages. In SystemVerilog, it is implemented as a simple if-else-if statement. SystemVerilog introduces two specialized variations of the case statement, casex and casez, that allow for handling “don’t care” conditions in the case items, discussed in Casex and Casez.\nThe case statement can be caterogired as full and parallel based on the how the case items are being matched to case expression.\nFull Case A full case statement is where every possible value of the case expression is matched to a case item or to a default case statement. Not having a default statement will not result in a full case statement. When the case item does not have a matching case expression the output will hold the last assigned value and the synthesis will infer a latch.\nFrom an HDL simulation perspective, a “full” case statement is a case statement in which every possible binary, non-binary and mixture of binary and non-binary patterns is included as a case item in the case statement [1].\nFrom a synthesis tool perspective, a “full” case statement is a case statement in which every possible binary pattern is included as a case item in the case statement [1].\nFull Case removes latches from the design. No. of case item is directly proportional to the no. of case expression. The full_case directive can be used to explicitly indicate that the case statement is full. Parallel Case Parallel Case removes large, slow priority encoders. Reference “full_case parallel_case”, the Evil Twins of Verilog Synthesis Cummings, Clifford. “SystemVerilog’s priority \u0026 Unique–A Solution to Verilog’s full_case \u0026 parallel_case Evil Twins.” SNUG. Israel 282282 (2005). ",
-  "wordCount" : "292",
+  "articleBody": "[Design] – [Testbench] – RTL Design Directory\nFull Case and Parallel Case The case statement is a fundamental construct used for conditional branching across various programming languages. In SystemVerilog, it is implemented as a simple if-else-if statement. SystemVerilog introduces two specialized variations of the case statement, casex and casez, that allow for handling “don’t care” conditions in the case items, discussed in Casex and Casez.\nThe case statement can be caterogired as full and parallel based on the how the case items are being matched to case expression.\nFull Case A full case statement is where every possible value of the case expression is matched to a case item or to a default case statement. Not having a default statement will not result in a full case statement. When the case item does not have a matching case expression the output will hold the last assigned value and the synthesis will infer a latch.\nFrom an HDL simulation perspective, a “full” case statement is a case statement in which every possible binary, non-binary and mixture of binary and non-binary patterns is included as a case item in the case statement [1].\nFrom a synthesis tool perspective, a “full” case statement is a case statement in which every possible binary pattern is included as a case item in the case statement [1].\nFull Case removes latches from the design. Number of case item is directly proportional to the number of case expression. The full_case directive can be used to explicitly indicate that the case statement is full. Parallel Case A case statement checks the case expression against multiple cases and executes the corresponding branch that matches the case expression. By default, the synthesis tools generate a priority encoder, which checks cases sequentially. The parallel case tells the synthesis tool that each case item has only one matching case expression allowing the synthesis tool to optimize the hardware by removing priority checks, leading to simpler and faster hardware implementation.\nParallel Case removes large, slow-priority encoders. The parallel_case directive is used to explicitly indicate that the case statement is parallel. Points to Remember Non-Parallel Case: The order of the case branches is significant, as the conditions are evaluated sequentially, and the first matching condition is selected for execution.\nParallel Case: The order of the case branches is irrelevant, as the synthesis tool assumes that the conditions are mutually exclusive, allowing for simultaneous evaluation without prioritization.\nReference “full_case parallel_case”, the Evil Twins of Verilog Synthesis Cummings, Clifford. “SystemVerilog’s priority \u0026 Unique–A Solution to Verilog’s full_case \u0026 parallel_case Evil Twins.” SNUG. Israel 282282 (2005). ",
+  "wordCount" : "429",
   "inLanguage": "en",
   "datePublished": "2024-07-26T17:05:00-04:00",
   "dateModified": "2024-07-26T17:05:00-04:00",
@@ -257,7 +257,7 @@ The case statement can be caterogired as full and parallel based on the how the 
     <h1 class="post-title entry-hint-parent">
       Full Case and Parallel Case
     </h1>
-    <div class="post-meta"><span title='2024-07-26 17:05:00 -0400 EDT'>July 26, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;292 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-07-26 17:05:00 -0400 EDT'>July 26, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;429 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
@@ -273,14 +273,25 @@ item in the case statement [1].</p>
 <p>From a synthesis tool perspective, a &ldquo;full&rdquo; case statement is a case statement in which every
 possible binary pattern is included as a case item in the case statement [1].</p>
 <ul>
-<li><em>Full Case</em> removes latches from the design.</li>
-<li>No. of case item is directly proportional to the no. of case expression.</li>
-<li>The <em>full_case</em> directive can be used to explicitly indicate that the case statement is full.</li>
+<li>Full Case removes latches from the design.</li>
+<li>Number of case item is directly proportional to the number of case expression.</li>
+<li>The <strong>full_case</strong> directive can be used to explicitly indicate that the case statement is full.</li>
 </ul>
 <h3 id="parallel-case">Parallel Case<a hidden class="anchor" aria-hidden="true" href="#parallel-case">#</a></h3>
+<p>A case statement checks the case expression against multiple cases and executes the corresponding branch that matches the case expression. By default, the synthesis tools generate a priority encoder, which checks cases sequentially. The <strong>parallel</strong> case tells the synthesis tool that each case item has only one matching case expression allowing the synthesis tool to optimize the hardware by removing priority checks, leading to simpler and faster hardware implementation.</p>
 <ul>
-<li><em>Parallel Case</em> removes large, slow priority encoders.</li>
+<li>Parallel Case removes large, slow-priority encoders.</li>
+<li>The <strong>parallel_case</strong> directive is used to explicitly indicate that the case statement is parallel.</li>
 </ul>
+<h3 id="points-to-remember">Points to Remember<a hidden class="anchor" aria-hidden="true" href="#points-to-remember">#</a></h3>
+<ol>
+<li>
+<p>Non-Parallel Case: The order of the case branches is significant, as the conditions are evaluated sequentially, and the first matching condition is selected for execution.</p>
+</li>
+<li>
+<p>Parallel Case: The order of the case branches is irrelevant, as the synthesis tool assumes that the conditions are mutually exclusive, allowing for simultaneous evaluation without prioritization.</p>
+</li>
+</ol>
 <h3 id="reference">Reference<a hidden class="anchor" aria-hidden="true" href="#reference">#</a></h3>
 <ol>
 <li><a href="http://www.sunburst-design.com/papers/CummingsSNUG1999Boston_FullParallelCase_rev1_1.pdf">&ldquo;full_case parallel_case&rdquo;, the Evil Twins of Verilog Synthesis</a></li>
