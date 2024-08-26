@@ -199,6 +199,24 @@ Encapsulation This principle involves bundling the data (attributes) and the met
 Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred) and 100GB of free storage space for full installation.</description>
     </item>
     <item>
+      <title>Blocking and Non-Blocking Assignment</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_07_26_17_10_23_blocking_and_non_blocking_assignment/</link>
+      <pubDate>Fri, 26 Jul 2024 17:10:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_07_26_17_10_23_blocking_and_non_blocking_assignment/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Blocking and Non-Blocking Assignment Let us model a simple design that is given in Figure 1 in Verilog. There are many ways to optimally model the design but here we will learn the difference between blocking and non-blocking assignments in Verilog.
+Boolean Equation We will model our design based on the equations given below.
+x = a and b y = x xor c z = y Figure 1: Digital Logic</description>
+    </item>
+    <item>
+      <title>Assign and If-Else Statement</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_07_26_17_07_08_assign_and_if_else_statement/</link>
+      <pubDate>Fri, 26 Jul 2024 17:07:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_07_26_17_07_08_assign_and_if_else_statement/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Assign Statement The &amp;lsquo;assign&amp;rsquo; statement is used to model combinational logic by creating continuous assignments. It is typically implemented where the output continuously reflects the changes in the input without any delay. The assign statement is used with signals declared as wire, tri, or other net types, but not with reg types. However, in SystemVerilog, logic type can be used in continuous assignments, similar to wire.</description>
+    </item>
+    <item>
       <title>Full Case and Parallel Case</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_26_17_05_01_full_case_and_parallel_case/</link>
       <pubDate>Fri, 26 Jul 2024 17:05:00 -0400</pubDate>
