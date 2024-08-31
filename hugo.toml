@@ -12,7 +12,7 @@ theme = "PaperMod"
     imageWidth  = 126 # custom size
     imageHeight = 240 # custom size
     title       = "Think, Design and Build"
-    
+
 
 [params]
   showWordCount         = true 
@@ -52,6 +52,14 @@ theme = "PaperMod"
     alt      = "footer"
     maxWidth = "50px"                
 
+  [[params.profileMode.buttons]]
+    name  = "about"
+    url   = "about/about"
+  [[params.profileMode.buttons]]
+    name  = "research"
+    url   = "research/2024_07_08_10_15_40_research"
+
+
   [[params.socialIcons]]
       name = "linkedin"
       url  = "https://www.linkedin.com/in/kiran760043/" 
@@ -86,48 +94,54 @@ theme = "PaperMod"
     utl ="try/"
 
   [menu]
-  [[menu.main]]
-    identifier = "about"
-    name       = "about"
-    url        = "about/about"
-    weight     = 10
+#  [[menu.main]]
+#    identifier = "about"
+#    name       = "about"
+#    url        = "about/about"
+#    weight     = 10
+
+#  [[menu.main]]
+#    identifier = "research"
+#    name       = "research"
+#    url        = "research/2024_07_08_10_15_40_research"
+#    weight     = 20
 
   [[menu.main]]
-    identifier = "research"
-    name       = "research"
-    url        = "research/2024_07_08_10_15_40_research"
-    weight     = 20
+    #identifier = "rtl"
+    name        = "rtl"
+    url         = "rtl_directory/2024_06_05_00_21_53_rtl_design_directory" 
+    weight      = 30
 
   [[menu.main]]
-    #identifier = "rtl directory"
-    name       = "rtl directory"
-    url        = "rtl_directory/2024_06_05_00_21_53_rtl_design_directory" 
-    weight     = 30
+    #identifier = "sv"
+    name        = "sv"
+    url         = "sv_directory/2024_06_27_16_53_00_sv_verification_directory" 
+    weight      = 40
 
   [[menu.main]]
-    #identifier = "sv directory"
-    name       = "sv directory"
-    url        = "sv_directory/2024_06_27_16_53_00_sv_verification_directory" 
-    weight     = 40
+    #identifier = "uvm"
+    name        = "uvm"
+    url         = "uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" 
+    weight      = 50
 
 ########################################################
 #  [[menu.main]]
 #    identifier = "soc_directory"
 #    name       = "soc"
 #    url        = "soc_directory/" 
-#    weight     = 50
+#    weight     = 60
 #
 #  [[menu.main]]
 #    identifier = "zynq_soc_directory"
 #    name       = "zynq soc"
 #    url        = "zyn_soc_directory/" 
-#    weight     = 60
+#    weight     = 70
 #
 #  [[menu.main]]
 #    identifier = "openlane_directory"
 #    name       = "open lane"
 #    url        = "zyn_soc_directory/" 
-#    weight     = 70
+#    weight     = 80
 ########################################################
 
   [[menu.main]]
@@ -136,7 +150,7 @@ theme = "PaperMod"
     pre        = "tags"
     #post = "<i class='fas fa-tag' aria-hidden='true'></i>" #<i class='fas fa-tags fa-fw'></i>
     url        = "tags/" 
-    weight     = 80
+    weight     = 90
 
     
 

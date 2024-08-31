@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Uvm_directories on Home</title>
+    <link>https://24x7fpga.com/uvm_directory/</link>
+    <description>Recent content in Uvm_directories on Home</description>
+    <generator>Hugo -- 0.121.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Aug 2024 12:39:00 -0400</lastBuildDate>
+    <atom:link href="https://24x7fpga.com/uvm_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UVM Framework Directory</title>
+      <link>https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/</link>
+      <pubDate>Wed, 28 Aug 2024 12:39:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/</guid>
+      <description>UVM stands for Universal Verification Method developed by UVM Working Group that provides a standardized methodology for verifying digital integrated circuits. UVM is built on top of SystemVerilog and provides a useful framework for creating reusable and scalable testbenchs. The framework provides a set of building blocks or pre-built design kits that help to create a complex system in a more organized and efficient way instead of building everything from scratch.</description>
+    </item>
+  </channel>
+</rss>
