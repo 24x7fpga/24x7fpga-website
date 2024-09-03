@@ -11,7 +11,7 @@ theme = "PaperMod"
     imageUrl    = "/img/ai-zeus3.png"
     imageWidth  = 126 # custom size
     imageHeight = 240 # custom size
-    title       = "FPGA Emulation | Digital Design | ASIC Design"
+    title       = "Think, Build and Design"
 
 
 [params]
