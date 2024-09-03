@@ -1,42 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Inheritance | Home</title>
-<meta name="keywords" content="sv">
-<meta name="description" content="SV Verification Directory
-Inheritance Inheritance allows a new class to inherit properties and methods from an existing class.
-Creates an extended class from an existing class. The existing class is called as base class or parent class and the extended class is called as the derived class or the child class. The extends keyword is used to inherit the properties of the parent class to the child class. Multilevel inheritance is possible in SystemVerilog i.">
-<meta name="author" content="Kiran">
-<link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_29_11_09_50_inheritance/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.526ee71d2bda4e817faf8e1337ba879150fa995e4bf978a970ab1988033bc2c6.css" integrity="sha256-Um7nHSvaToF/r44TN7qHkVD6mV5L&#43;XipcKsZiAM7wsY=" rel="preload stylesheet" as="style">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-<link rel="icon" href="https://24x7fpga.com/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
-<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-</noscript>
-
-<link rel="stylesheet" href="../../zcustom.css">
-
-<meta property="og:title" content="Inheritance" />
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liste - https://24x7fpga.com/">
+    <title>Inheritance | &gt; home</title>
+    <meta name="description" content="A minimal hugo theme focus on content">
+    <meta property="og:title" content="Inheritance" />
 <meta property="og:description" content="SV Verification Directory
 Inheritance Inheritance allows a new class to inherit properties and methods from an existing class.
 Creates an extended class from an existing class. The existing class is called as base class or parent class and the extended class is called as the derived class or the child class. The extends keyword is used to inherit the properties of the parent class to the child class. Multilevel inheritance is possible in SystemVerilog i." />
@@ -45,213 +16,117 @@ Creates an extended class from an existing class. The existing class is called a
 <meta property="article:published_time" content="2024-07-29T11:09:00-04:00" />
 <meta property="article:modified_time" content="2024-07-29T11:09:00-04:00" />
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Inheritance"/>
-<meta name="twitter:description" content="SV Verification Directory
+
+    <meta itemprop="name" content="Inheritance">
+<meta itemprop="description" content="SV Verification Directory
 Inheritance Inheritance allows a new class to inherit properties and methods from an existing class.
-Creates an extended class from an existing class. The existing class is called as base class or parent class and the extended class is called as the derived class or the child class. The extends keyword is used to inherit the properties of the parent class to the child class. Multilevel inheritance is possible in SystemVerilog i."/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Sv_directories",
-      "item": "https://24x7fpga.com/sv_directory/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Inheritance",
-      "item": "https://24x7fpga.com/sv_directory/2024_07_29_11_09_50_inheritance/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Inheritance",
-  "name": "Inheritance",
-  "description": "SV Verification Directory\nInheritance Inheritance allows a new class to inherit properties and methods from an existing class.\nCreates an extended class from an existing class. The existing class is called as base class or parent class and the extended class is called as the derived class or the child class. The extends keyword is used to inherit the properties of the parent class to the child class. Multilevel inheritance is possible in SystemVerilog i.",
-  "keywords": [
-    "sv"
-  ],
-  "articleBody": "SV Verification Directory\nInheritance Inheritance allows a new class to inherit properties and methods from an existing class.\nCreates an extended class from an existing class. The existing class is called as base class or parent class and the extended class is called as the derived class or the child class. The extends keyword is used to inherit the properties of the parent class to the child class. Multilevel inheritance is possible in SystemVerilog i.e., a child class can be extended again which inturn can be extended. Advantages Code reusablity. Provides over riding of parent class from the child class. Improves modularity of the code. Note: to overide the parent class properties and methods, the child class should have the same name for class properties and methods. To access the parent class method or properties use Super Keyword or create a handle for parent class.\nExample Code // Parent class class parent_class; // class properties or variables int a, b, s; // task method task sum (int a,b); s = a + b; $display(\"a = %0d , b = %0d, sum s = %0d\", a, b ,s); endtask endclass // Child Class class child_class extends parent_class; // class properties or variables int m; // task method task mul (int a,b); m = a * b; $display(\"a = %0d , b = %0d, mul m = %0d\", a, b ,m); endtask endclass // Multilevel Inheritance class gran_child_class extends child_class; // class properties or variables int d; // task method task div (int a,b); d = a / b; $display(\"a = %0d , b = %0d, div d = %0d\", a, b ,d); endtask endclass module test; gran_child_class cl_obj; // declare a class handle of type cl_obj initial begin cl_obj = new( ); // construct an object cl_obj.sum(30,10); // access a method cl_obj.mul(30,10); // access a method cl_obj.div(30,10); // access a method end endmodule Execute the code in EDA Playground\n",
-  "wordCount" : "318",
-  "inLanguage": "en",
-  "datePublished": "2024-07-29T11:09:00-04:00",
-  "dateModified": "2024-07-29T11:09:00-04:00",
-  "author":[{
-    "@type": "Person",
-    "name": "Kiran"
-  }],
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://24x7fpga.com/sv_directory/2024_07_29_11_09_50_inheritance/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Home",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://24x7fpga.com/favicon.ico"
-    }
-  }
-}
-</script><link rel="stylesheet" href="/css/syntax.css" !important>
-
-</head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
-            
-            
-            <div class="vertical-line" style="height: 20px;"></div>
-            
-            
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
-                    <span> 
-
-
-                           
-                        
-                         
-                        rtl</span>  
-                </a>
-            </li>
-            <li>
-                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
-                    <span> 
-
-
-                           
-                        
-                         
-                        sv</span>  
-                </a>
-            </li>
-            <li>
-                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
-                    <span> 
-
-
-                           
-                        
-                         
-                        uvm</span>  
-                </a>
-            </li>
-            <li>
-                <a href="https://24x7fpga.com/tags/" title="">
-                    <span> 
-
-
-                           
-                        
-                            
-                    
-                    
-                    
-
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    
-
-
-                    
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                
-                         
-                        
-                        <div style="text-decoration: none">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" style="text-decoration: none">
-                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <line x1="7" y1="7" x2="7" y2="7"></line>
-                        </svg> 
-                        </div>
-                        </span>  
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
+Creates an extended class from an existing class. The existing class is called as base class or parent class and the extended class is called as the derived class or the child class. The extends keyword is used to inherit the properties of the parent class to the child class. Multilevel inheritance is possible in SystemVerilog i."><meta itemprop="datePublished" content="2024-07-29T11:09:00-04:00" />
+<meta itemprop="dateModified" content="2024-07-29T11:09:00-04:00" />
+<meta itemprop="wordCount" content="318">
+<meta itemprop="keywords" content="sv," />
     
-    <h1 class="post-title entry-hint-parent">
-      Inheritance
-    </h1>
-    <div class="post-meta"><span title='2024-07-29 11:09:00 -0400 EDT'>July 29, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;318 words&nbsp;·&nbsp;Kiran
+    <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_29_11_09_50_inheritance/">
+    <link rel="icon" href="https://24x7fpga.com//assets/favicon.ico">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+    <link rel="alternate" type="application/atom+xml" title="&gt; home" href="https://24x7fpga.com//atom.xml" />
+    <link rel="alternate" type="application/json" title="&gt; home" href="https://24x7fpga.com//feed.json" />
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    
+    
+    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#f5f5f5;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto;display:block;margin-left:auto;margin-right:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1.4s infinite;opacity:1;color:#96e9ae}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:250px;width:250px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background-color:#e9e9e9;border-radius:3px}code{border:none}.highlight pre{background-color:#e9e9e9!important;border-radius:5px} </style>
+  
+    
+  
+  
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "articleSection": "sv_directory",
+      "name": "Inheritance",
+      "headline": "Inheritance",
+      "alternativeHeadline": "",
+      "description": "SV Verification Directory\nInheritance Inheritance allows a new class to inherit properties and methods from an existing class.\nCreates an extended class from an existing class. The existing class is called as base class or parent class and the extended class is called as the derived class or the child class. The extends keyword is used to inherit the properties of the parent class to the child class. Multilevel inheritance is possible in SystemVerilog i.",
+      "inLanguage": "en-us",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https:\/\/24x7fpga.com\/sv_directory\/2024_07_29_11_09_50_inheritance\/"
+      },
+      "author" : {
+          "@type": "Person",
+          "name": "[Kiran]"
+      },
+      "creator" : {
+          "@type": "Person",
+          "name": "[Kiran]"
+      },
+      "accountablePerson" : {
+          "@type": "Person",
+          "name": "[Kiran]"
+      },
+      "copyrightHolder" : "\u003e home",
+      "copyrightYear" : "2024",
+      "dateCreated": "2024-07-29T11:09:00.00Z",
+      "datePublished": "2024-07-29T11:09:00.00Z",
+      "dateModified": "2024-07-29T11:09:00.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "\u003e home",
+          "url": "https://24x7fpga.com/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https:\/\/24x7fpga.com\/assets\/favicon.ico",
+              "width":"32",
+              "height":"32"
+          }
+      },
+      "image": "https://24x7fpga.com/assets/favicon.ico",
+      "url" : "https:\/\/24x7fpga.com\/sv_directory\/2024_07_29_11_09_50_inheritance\/",
+      "wordCount" : "318",
+      "genre" : [ "sv" ],
+      "keywords" : [ "sv" ]
+  }
+  </script>
+  
+  
+  </head>
 
-</div>
-  </header> 
-  <div class="post-content"><p><a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
-<h2 id="inheritance">Inheritance<a hidden class="anchor" aria-hidden="true" href="#inheritance">#</a></h2>
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  <main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;">
+  <a href="/">
+    <b>&gt; home</b>
+    <span class="text-stone-500 animate-blink">▮</span>
+  </a>
+</p>
+<ul style="padding: 0;margin: 0;">
+  
+  
+  <li class="">
+    <a href="rtl_directory/2024_06_05_00_21_53_rtl_design_directory"><span>rtl</span></a>    
+    
+  <li class="">
+    <a href="sv_directory/2024_06_27_16_53_00_sv_verification_directory"><span>sv</span></a>    
+    
+  <li class="">
+    <a href="uvm_directory/2024_08_28_12_39_50_uvm_framework_directory"><span>uvm</span></a>    
+    
+  </li>
+</ul>
+
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+
+
+    <section>
+      <h2 class="post">Inheritance</h2>
+      <p><a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
+<h2 id="inheritance">Inheritance</h2>
 <p>Inheritance allows a new class to inherit properties and methods from an existing class.</p>
 <ul>
 <li>Creates an extended class from an existing class.</li>
@@ -259,209 +134,78 @@ Creates an extended class from an existing class. The existing class is called a
 <li>The <strong>extends</strong> keyword is used to inherit the properties of the parent class to the child class.</li>
 <li>Multilevel inheritance is possible in SystemVerilog i.e., a child class can be extended again which inturn can be extended.</li>
 </ul>
-<h3 id="advantages">Advantages<a hidden class="anchor" aria-hidden="true" href="#advantages">#</a></h3>
+<h3 id="advantages">Advantages</h3>
 <ul>
 <li>Code reusablity.</li>
 <li>Provides over riding of parent class from the child class.</li>
 <li>Improves modularity of the code.</li>
 </ul>
 <p>Note: to overide the parent class properties and methods, the child class should have the same name for class properties and methods. To access the parent class method or properties use <a href="/sv_directory/2024_07_29_12_16_52_super_keyword/">Super Keyword</a> or create a handle for parent class.</p>
-<h4 id="example-code">Example Code<a hidden class="anchor" aria-hidden="true" href="#example-code">#</a></h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#75715e">// Parent class
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>class parent_class;
+<h4 id="example-code">Example Code</h4>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#75715e">// Parent class
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">class</span> <span style="color:#111">parent_class</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>   <span style="color:#75715e">// class properties or variables
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">int</span> a, b, s;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#00a8c8">int</span> <span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">b</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>   <span style="color:#75715e">// task method
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">task</span> sum (<span style="color:#66d9ef">int</span> a,b);
-</span></span><span style="display:flex;"><span>    s <span style="color:#f92672">=</span> a <span style="color:#f92672">+</span> b;
-</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;a = %0d , b = %0d, sum s = %0d&#34;</span>, a, b ,s);
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endtask</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#00a8c8">task</span> <span style="color:#111">sum</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">a</span><span style="color:#111">,</span><span style="color:#111">b</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">s</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span> <span style="color:#f92672">+</span> <span style="color:#111">b</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;a = %0d , b = %0d, sum s = %0d&#34;</span><span style="color:#111">,</span> <span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">b</span> <span style="color:#111">,</span><span style="color:#111">s</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">endtask</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>endclass
+</span></span><span style="display:flex;"><span><span style="color:#111">endclass</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Child Class
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>class child_class extends parent_class;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">class</span> <span style="color:#111">child_class</span> <span style="color:#111">extends</span> <span style="color:#111">parent_class</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// class properties or variables
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">int</span> m;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#00a8c8">int</span> <span style="color:#111">m</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// task method
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">task</span> mul (<span style="color:#66d9ef">int</span> a,b);
-</span></span><span style="display:flex;"><span>    m <span style="color:#f92672">=</span> a <span style="color:#f92672">*</span> b;
-</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;a = %0d , b = %0d, mul m = %0d&#34;</span>, a, b ,m);
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endtask</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#00a8c8">task</span> <span style="color:#111">mul</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">a</span><span style="color:#111">,</span><span style="color:#111">b</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">m</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span> <span style="color:#f92672">*</span> <span style="color:#111">b</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;a = %0d , b = %0d, mul m = %0d&#34;</span><span style="color:#111">,</span> <span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">b</span> <span style="color:#111">,</span><span style="color:#111">m</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">endtask</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>endclass
+</span></span><span style="display:flex;"><span><span style="color:#111">endclass</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Multilevel Inheritance
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>class gran_child_class extends child_class;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">class</span> <span style="color:#111">gran_child_class</span> <span style="color:#111">extends</span> <span style="color:#111">child_class</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// class properties or variables
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">int</span> d;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#00a8c8">int</span> <span style="color:#111">d</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// task method
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">task</span> div (<span style="color:#66d9ef">int</span> a,b);
-</span></span><span style="display:flex;"><span>    d <span style="color:#f92672">=</span> a <span style="color:#f92672">/</span> b;
-</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;a = %0d , b = %0d, div d = %0d&#34;</span>, a, b ,d);
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endtask</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#00a8c8">task</span> <span style="color:#111">div</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">a</span><span style="color:#111">,</span><span style="color:#111">b</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">d</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span> <span style="color:#f92672">/</span> <span style="color:#111">b</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;a = %0d , b = %0d, div d = %0d&#34;</span><span style="color:#111">,</span> <span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">b</span> <span style="color:#111">,</span><span style="color:#111">d</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">endtask</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>endclass
+</span></span><span style="display:flex;"><span><span style="color:#111">endclass</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> test;
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">module</span> <span style="color:#111">test</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  gran_child_class cl_obj;      <span style="color:#75715e">// declare a class handle of type cl_obj
+</span></span><span style="display:flex;"><span>  <span style="color:#111">gran_child_class</span> <span style="color:#111">cl_obj</span><span style="color:#111">;</span>      <span style="color:#75715e">// declare a class handle of type cl_obj
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">initial</span> <span style="color:#66d9ef">begin</span>
-</span></span><span style="display:flex;"><span>     cl_obj <span style="color:#f92672">=</span> new( );      <span style="color:#75715e">// construct an object
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     cl_obj.sum(<span style="color:#ae81ff">30</span>,<span style="color:#ae81ff">10</span>);    <span style="color:#75715e">// access a method
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     cl_obj.mul(<span style="color:#ae81ff">30</span>,<span style="color:#ae81ff">10</span>);    <span style="color:#75715e">// access a method
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     cl_obj.div(<span style="color:#ae81ff">30</span>,<span style="color:#ae81ff">10</span>);    <span style="color:#75715e">// access a method
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#00a8c8">initial</span> <span style="color:#00a8c8">begin</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#111">cl_obj</span> <span style="color:#f92672">=</span> <span style="color:#111">new</span><span style="color:#111">(</span> <span style="color:#111">);</span>      <span style="color:#75715e">// construct an object
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     <span style="color:#111">cl_obj</span><span style="color:#111">.</span><span style="color:#111">sum</span><span style="color:#111">(</span><span style="color:#ae81ff">30</span><span style="color:#111">,</span><span style="color:#ae81ff">10</span><span style="color:#111">);</span>    <span style="color:#75715e">// access a method
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     <span style="color:#111">cl_obj</span><span style="color:#111">.</span><span style="color:#111">mul</span><span style="color:#111">(</span><span style="color:#ae81ff">30</span><span style="color:#111">,</span><span style="color:#ae81ff">10</span><span style="color:#111">);</span>    <span style="color:#75715e">// access a method
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     <span style="color:#111">cl_obj</span><span style="color:#111">.</span><span style="color:#111">div</span><span style="color:#111">(</span><span style="color:#ae81ff">30</span><span style="color:#111">,</span><span style="color:#ae81ff">10</span><span style="color:#111">);</span>    <span style="color:#75715e">// access a method
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#00a8c8">end</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">endmodule</span>
 </span></span></code></pre></div><p><a href="https://www.edaplayground.com/x/fZCc">Execute the code in EDA Playground</a></p>
 
-
+      
+      <div class="post-date">
+        <span class="g time">July 29, 2024 </span> &#8729;
+         
+         <a href="https://24x7fpga.com/tags/sv/">sv</a>
+      </div>
+      
+    </section>
+    
   </div>
-
-
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
-    </ul>
-
-
-
-    <div class="bottom-line" ></div>
-    
-    
-    
-      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
-    
-
-  </footer>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
-        
-        
-
-
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a><footer class="footer">
-
-</footer>
-
-
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-<script>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-        const container = codeblock.parentNode.parentNode;
-
-        const copybutton = document.createElement('button');
-        copybutton.classList.add('copy-code');
-        copybutton.innerHTML = 'copy';
-
-        function copyingDone() {
-            copybutton.innerHTML = 'copied!';
-            setTimeout(() => {
-                copybutton.innerHTML = 'copy';
-            }, 2000);
-        }
-
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) { };
-            selection.removeRange(range);
-        });
-
-        if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
-        } else if (container.parentNode.firstChild == container) {
-            
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-            
-            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
-        } else {
-            
-            codeblock.parentNode.appendChild(copybutton);
-        }
-    });
-</script>
+</main>
 </body>
-
 </html>

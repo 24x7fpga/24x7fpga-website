@@ -2,6 +2,7 @@ baseURL = 'https://24x7fpga.com/'
 languageCode = 'en-us'
 title = 'Think, Design and Build'
 theme = "hello-friend-ng"
+theme = "maverick"
 
 
 
@@ -64,13 +65,8 @@ theme = "hello-friend-ng"
    [params.portrait]
      path     = "/img/ai-zeus3.png"
      alt      = "Portrait"
-     maxWidth = "170px"
-
-
-     
-
-
-
+     maxWidth  = "160px" 
+     maxHeight = "300px" 
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
 # For PaperMod 

@@ -1,8 +1,7 @@
 baseURL = 'https://24x7fpga.com/'
 languageCode = 'en-us'
-title = 'Home'  # 'Think, Design and Build' change this if you use hello-friend-ng
-theme = "hugo-PaperMod"
-
+title = 'Home'  
+theme = "PaperMod"
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
 # For PaperMod 
@@ -10,37 +9,56 @@ theme = "hugo-PaperMod"
 [params.profileMode]
     enabled     = true 
     imageUrl    = "/img/ai-zeus3.png"
-    imageWidth  = 120 # custom size
+    imageWidth  = 126 # custom size
     imageHeight = 240 # custom size
-    title = "Think, Design and Build"
-    
+    title       = "FPGA Emulation | Digital Design | ASIC Design"
+
 
 [params]
-  showWordCount = true 
-  author = "kiran"
-  #title = "24x7fpga"
-  description = "24x7fpga"
-  defaultTheme = "light" 
-  #DateFormat = "2006-01-02"
-  ShowReadingTime= true
-  #ShowShareButtons= true
-  ShowPostNavLinks= false
-  ShowBreadCrumbs= false
-  ShowCodeCopyButtons= true
-  disableSpecial1stPost= false
-  disableScrollToTop= false
-  comments= false
-  hidemeta= false
-  hideSummary= true
-  showtoc= false
-  tocopen= false
-  enableEmoji = true
-  
+  showWordCount         = true 
+  author                = "Kiran"
+  #title                = "24x7fpga"
+  description           = "24x7fpga"
+  defaultTheme          = "light" 
+  #DateFormat           = "2006-01-02"
+  ShowReadingTime       = true
+  #ShowShareButtons     = true
+  ShowPostNavLinks      = false
+  ShowBreadCrumbs       = false
+  ShowCodeCopyButtons   = true
+  disableSpecial1stPost = false
+  disableScrollToTo     = false
+  comments              = false
+  hidemeta              = false
+  hideSummary           = true
+  showtoc               = false
+  tocopen               = false
+  enableEmoji           = true
+
+
+
+  [params.assets]
+    favicon16x16     = "/assets/favicon-16x16.png"
+    favicon32x32     = "/assets/favicon-32x32.png"
+    apple_touch_icon = "/assets/apple-touch-icon.png"
+    favicon          = "favicon.ico"
+ 
+  [params.label]
+    icon = ""
+
  
  [params.Singlefooter]
-    path      = "/img/org_mode.png"
+    path     = "/img/org_mode.png"
     alt      = "footer"
     maxWidth = "50px"                
+
+  [[params.profileMode.buttons]]
+    name  = "about"
+    url   = "about/about"
+  [[params.profileMode.buttons]]
+    name  = "research"
+    url   = "research/2024_07_08_10_15_40_research"
+
 
   [[params.socialIcons]]
       name = "linkedin"
@@ -89,35 +107,41 @@ theme = "hugo-PaperMod"
     weight     = 20
 
   [[menu.main]]
-    #identifier = "rtl directory"
-    name       = "rtl directory"
-    url        = "rtl_directory/2024_06_05_00_21_53_rtl_design_directory" 
-    weight     = 30
+    #identifier = "rtl"
+    name        = "rtl"
+    url         = "rtl_directory/2024_06_05_00_21_53_rtl_design_directory" 
+    weight      = 30
 
   [[menu.main]]
-    #identifier = "sv directory"
-    name       = "sv directory"
-    url        = "sv_directory/2024_06_27_16_53_00_sv_verification_directory" 
-    weight     = 40
+    #identifier = "sv"
+    name        = "sv"
+    url         = "sv_directory/2024_06_27_16_53_00_sv_verification_directory" 
+    weight      = 40
+
+  [[menu.main]]
+    #identifier = "uvm"
+    name        = "uvm"
+    url         = "uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" 
+    weight      = 50
 
 ########################################################
 #  [[menu.main]]
 #    identifier = "soc_directory"
 #    name       = "soc"
 #    url        = "soc_directory/" 
-#    weight     = 50
+#    weight     = 60
 #
 #  [[menu.main]]
 #    identifier = "zynq_soc_directory"
 #    name       = "zynq soc"
 #    url        = "zyn_soc_directory/" 
-#    weight     = 60
+#    weight     = 70
 #
 #  [[menu.main]]
 #    identifier = "openlane_directory"
 #    name       = "open lane"
 #    url        = "zyn_soc_directory/" 
-#    weight     = 70
+#    weight     = 80
 ########################################################
 
   [[menu.main]]
@@ -126,7 +150,7 @@ theme = "hugo-PaperMod"
     pre        = "tags"
     #post = "<i class='fas fa-tag' aria-hidden='true'></i>" #<i class='fas fa-tags fa-fw'></i>
     url        = "tags/" 
-    weight     = 80
+    weight     = 90
 
     
 

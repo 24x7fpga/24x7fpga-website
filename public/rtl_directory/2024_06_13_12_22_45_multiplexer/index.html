@@ -1,42 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Multiplexer | Home</title>
-<meta name="keywords" content="rtl">
-<meta name="description" content="Design &ndash; Testbench &ndash; RTL Design Directory
-Multiplexer (MUX): An Overview A multiplexer is a digital circuit that selects one input out of many inputs, hence, it is also called a data selector. It consists of 2^n inputs with n selector lines, which are used to select which input to send to the output.
-Need For Multiplexers The need for MUXs arises wherever there is a need to transmit multiple data over a shared communication channel.">
-<meta name="author" content="Kiran">
-<link rel="canonical" href="https://24x7fpga.com/rtl_directory/2024_06_13_12_22_45_multiplexer/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.526ee71d2bda4e817faf8e1337ba879150fa995e4bf978a970ab1988033bc2c6.css" integrity="sha256-Um7nHSvaToF/r44TN7qHkVD6mV5L&#43;XipcKsZiAM7wsY=" rel="preload stylesheet" as="style">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-<link rel="icon" href="https://24x7fpga.com/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
-<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-</noscript>
-
-<link rel="stylesheet" href="../../zcustom.css">
-
-<meta property="og:title" content="Multiplexer" />
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liste - https://24x7fpga.com/">
+    <title>Multiplexer | &gt; home</title>
+    <meta name="description" content="A minimal hugo theme focus on content">
+    <meta property="og:title" content="Multiplexer" />
 <meta property="og:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
 Multiplexer (MUX): An Overview A multiplexer is a digital circuit that selects one input out of many inputs, hence, it is also called a data selector. It consists of 2^n inputs with n selector lines, which are used to select which input to send to the output.
 Need For Multiplexers The need for MUXs arises wherever there is a need to transmit multiple data over a shared communication channel." />
@@ -45,225 +16,129 @@ Need For Multiplexers The need for MUXs arises wherever there is a need to trans
 <meta property="article:published_time" content="2024-06-13T12:22:00-04:00" />
 <meta property="article:modified_time" content="2024-06-13T12:22:00-04:00" />
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Multiplexer"/>
-<meta name="twitter:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+
+    <meta itemprop="name" content="Multiplexer">
+<meta itemprop="description" content="Design &ndash; Testbench &ndash; RTL Design Directory
 Multiplexer (MUX): An Overview A multiplexer is a digital circuit that selects one input out of many inputs, hence, it is also called a data selector. It consists of 2^n inputs with n selector lines, which are used to select which input to send to the output.
-Need For Multiplexers The need for MUXs arises wherever there is a need to transmit multiple data over a shared communication channel."/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Rtl_directories",
-      "item": "https://24x7fpga.com/rtl_directory/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Multiplexer",
-      "item": "https://24x7fpga.com/rtl_directory/2024_06_13_12_22_45_multiplexer/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Multiplexer",
-  "name": "Multiplexer",
-  "description": "Design \u0026ndash; Testbench \u0026ndash; RTL Design Directory\nMultiplexer (MUX): An Overview A multiplexer is a digital circuit that selects one input out of many inputs, hence, it is also called a data selector. It consists of 2^n inputs with n selector lines, which are used to select which input to send to the output.\nNeed For Multiplexers The need for MUXs arises wherever there is a need to transmit multiple data over a shared communication channel.",
-  "keywords": [
-    "rtl"
-  ],
-  "articleBody": "Design – Testbench – RTL Design Directory\nMultiplexer (MUX): An Overview A multiplexer is a digital circuit that selects one input out of many inputs, hence, it is also called a data selector. It consists of 2^n inputs with n selector lines, which are used to select which input to send to the output.\nNeed For Multiplexers The need for MUXs arises wherever there is a need to transmit multiple data over a shared communication channel.\nResource Optimization: Communication medium is shared between multiple sources with the aid of a MUX thereby reducing the need for a dedicated channel for each source. Data routing is reduced as it uses the same communication channel. The number of pins required for input and output is also reduced contributing to compact and cost-effective designs. Bandwidth Efficiency: Multiple signals can be transmitted over a single channel by using a MUX to maximize the available bandwidth. Time Division Multiplexing (TDM): Data from different sources are allocated to the communication channel at different times with the help of multiplexers. Applications Multiplexers are used widely in a diverse range of fields, some of the use cases are given below:\nTelecommunication: Combining multiple voice or data channels onto a single transmission line (CDMA, FDM, WDM, etc.). Digital Electronics: In digital systems and microprocessors, multiplexers are employed to select between different input sources or to route data within the system (parallel to serial converter, 7 Segment display). Data Acquisition: Multiplexers are used extensively for data collection from different sensors or measurement devices such as ADC/DAC. Networking: In a networking system where multiple data streams are combined to transmit over the network. Memory Addressing: Multiplexers are used in address decoding and encoding. Design: 2-to-1 MUX A 2-to-1 multiplexer consists of two inputs ‘d0’ and ‘d1’ and a single select line ‘s0’ and an output ‘z’.\nTruth Table: 2-to-1 MUX\ns0 d1 d0 z 0 x 0 0 0 x 1 1 1 0 x 0 1 1 x 1 Boolean Equation: z = s0 * d1 + s0’ * d0\nVerilog Code: 2-to-1 MUX module mux2_to_1(d0,d1,s0,z) input d0,d1,s0; output z; assign z = s0 ? d0 : d1; endmodule Design: 4-to-1 MUX A multiplexer which composed of two select lines and one output is called a 2-to-1 multiplexer. Since, the number if inputs are four the select signals are sel = 2^4 =\u003e 2.\nSuppose the four inputs are din[0], din[1], din[2], din[3] and select lines are sel[0], sel[1] and the output is z, the truth table for a 2-to-1 mux:\nsel[1] sel[0] z(out) 0 0 din[0] 0 1 din[1] 1 0 din[2] 1 1 din[3] Boolean equation can be in POS written as:\nz = sel[1]’ * sel[0]’ * din[0] + sel[1]’ * sel[0] * din[1] + sel[1] * sel[0]’ * din[2] + sel[1] * sel[0] * din[3]\nVerilog Code: 4-to-1 MUX always_comb begin case(sel) 2'h0: z = din[0]; 2'h1: z = din[1]; 2'h2: z = din[2]; 2'h3: z = din[3]; default: z = din[0]; endcase end The design for 4-to-1 mux can be found here and the its testbench can be found here.\nMultiplexer Tree Multiplexers with a large number of inputs can be built by cascading smaller multiplexers. For example, an 8-to-1 multiplexer can be built using two 4-to-1 multiplexer. Similarly, a 4-to-1 multiplexer can be built using two 2-to-1 multiplexer. In other words, any N-to-1 multiplexer can be built using smaller n-to-1 multiplexers.\nDesign: 8-to-1 MUX An 8-to-1 MUX can be designed conventionally by using the truth table. As the number of inputs increases the design becomes tedious when using the conventional method. Therefore, smaller MUX designs are built first and they are reused multiple times to build bigger mux.\nTruth Table: 8-to-1 MUX\ns2 s1 s0 z 0 0 0 d0 0 0 1 d1 0 1 0 d2 0 1 1 d3 1 0 0 d4 1 0 1 d5 1 1 0 d6 1 1 1 d7 Here, an 8-to-1 mux is built using two 4-to-1 mux. It consists of eight inputs, three select lines, and a single output line.\nVerilog Code: 8-to-1 MUX using two 4-to-1 MUX mux4_to_1 m1 (// outputs .z (temp1), // inputs .din (din[3:0]), .sel (sel[1:0])); mux4_to_1 m2 (// outputs .z (temp2), // inputs .din (din[7:4]), .sel (sel[1:0])); z = sel[2] ? temp2 : temp1; Advantages/Disadvantages of Multiplexer Advantages Reduces the number of wires used thereby reducing the overall design cost and complexity. Simplifies logic design. Does not require k-maps to build the design. Disadvantages Increases complexity in many-to-1 designs. The serialization nature of multiplexers is a limitation in simultaneous data transfer. The process of selecting and transmitting data serially adds to propagation delay in time-sensitive applications. Implementation of a high number of inputs on FPGA may require a signification portion of available resources, limiting the overall design flexibility. In a shared channel, there is a risk of crosstalk or interference between multiplexed signals. In high-frequency applications, the use of multiplexers can impact signal integrity due to issues like signal attenuation and distortion. ",
-  "wordCount" : "834",
-  "inLanguage": "en",
-  "datePublished": "2024-06-13T12:22:00-04:00",
-  "dateModified": "2024-06-13T12:22:00-04:00",
-  "author":[{
-    "@type": "Person",
-    "name": "Kiran"
-  }],
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://24x7fpga.com/rtl_directory/2024_06_13_12_22_45_multiplexer/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Home",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://24x7fpga.com/favicon.ico"
-    }
-  }
-}
-</script><link rel="stylesheet" href="/css/syntax.css" !important>
-
-</head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
-            
-            
-            <div class="vertical-line" style="height: 20px;"></div>
-            
-            
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
-                    <span> 
-
-
-                           
-                        
-                         
-                        rtl</span>  
-                </a>
-            </li>
-            <li>
-                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
-                    <span> 
-
-
-                           
-                        
-                         
-                        sv</span>  
-                </a>
-            </li>
-            <li>
-                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
-                    <span> 
-
-
-                           
-                        
-                         
-                        uvm</span>  
-                </a>
-            </li>
-            <li>
-                <a href="https://24x7fpga.com/tags/" title="">
-                    <span> 
-
-
-                           
-                        
-                            
-                    
-                    
-                    
-
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    
-
-
-                    
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                
-                         
-                        
-                        <div style="text-decoration: none">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" style="text-decoration: none">
-                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <line x1="7" y1="7" x2="7" y2="7"></line>
-                        </svg> 
-                        </div>
-                        </span>  
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
+Need For Multiplexers The need for MUXs arises wherever there is a need to transmit multiple data over a shared communication channel."><meta itemprop="datePublished" content="2024-06-13T12:22:00-04:00" />
+<meta itemprop="dateModified" content="2024-06-13T12:22:00-04:00" />
+<meta itemprop="wordCount" content="834">
+<meta itemprop="keywords" content="rtl," />
     
-    <h1 class="post-title entry-hint-parent">
-      Multiplexer
-    </h1>
-    <div class="post-meta"><span title='2024-06-13 12:22:00 -0400 EDT'>June 13, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;834 words&nbsp;·&nbsp;Kiran
+    <link rel="canonical" href="https://24x7fpga.com/rtl_directory/2024_06_13_12_22_45_multiplexer/">
+    <link rel="icon" href="https://24x7fpga.com//assets/favicon.ico">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+    <link rel="alternate" type="application/atom+xml" title="&gt; home" href="https://24x7fpga.com//atom.xml" />
+    <link rel="alternate" type="application/json" title="&gt; home" href="https://24x7fpga.com//feed.json" />
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    
+    
+    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#f5f5f5;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto;display:block;margin-left:auto;margin-right:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1.4s infinite;opacity:1;color:#96e9ae}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:250px;width:250px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background-color:#e9e9e9;border-radius:3px}code{border:none}.highlight pre{background-color:#e9e9e9!important;border-radius:5px} </style>
+  
+    
+  
+  
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "articleSection": "rtl_directory",
+      "name": "Multiplexer",
+      "headline": "Multiplexer",
+      "alternativeHeadline": "",
+      "description": "Design \u0026ndash; Testbench \u0026ndash; RTL Design Directory\nMultiplexer (MUX): An Overview A multiplexer is a digital circuit that selects one input out of many inputs, hence, it is also called a data selector. It consists of 2^n inputs with n selector lines, which are used to select which input to send to the output.\nNeed For Multiplexers The need for MUXs arises wherever there is a need to transmit multiple data over a shared communication channel.",
+      "inLanguage": "en-us",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https:\/\/24x7fpga.com\/rtl_directory\/2024_06_13_12_22_45_multiplexer\/"
+      },
+      "author" : {
+          "@type": "Person",
+          "name": "[Kiran]"
+      },
+      "creator" : {
+          "@type": "Person",
+          "name": "[Kiran]"
+      },
+      "accountablePerson" : {
+          "@type": "Person",
+          "name": "[Kiran]"
+      },
+      "copyrightHolder" : "\u003e home",
+      "copyrightYear" : "2024",
+      "dateCreated": "2024-06-13T12:22:00.00Z",
+      "datePublished": "2024-06-13T12:22:00.00Z",
+      "dateModified": "2024-06-13T12:22:00.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "\u003e home",
+          "url": "https://24x7fpga.com/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https:\/\/24x7fpga.com\/assets\/favicon.ico",
+              "width":"32",
+              "height":"32"
+          }
+      },
+      "image": "https://24x7fpga.com/assets/favicon.ico",
+      "url" : "https:\/\/24x7fpga.com\/rtl_directory\/2024_06_13_12_22_45_multiplexer\/",
+      "wordCount" : "834",
+      "genre" : [ "rtl" ],
+      "keywords" : [ "rtl" ]
+  }
+  </script>
+  
+  
+  </head>
 
-</div>
-  </header> 
-  <div class="post-content"><p><a href="https://github.com/24x7fpga/iVerilog/blob/master/design/mux8_to_1/mux8_to_1.v">Design</a> &ndash; <a href="(%3Chttps://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_mux8_to_1/tb_mux8_to_1.v%3E)">Testbench</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
-<h2 id="multiplexer--mux--an-overview">Multiplexer (MUX): An Overview<a hidden class="anchor" aria-hidden="true" href="#multiplexer--mux--an-overview">#</a></h2>
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  <main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;">
+  <a href="/">
+    <b>&gt; home</b>
+    <span class="text-stone-500 animate-blink">▮</span>
+  </a>
+</p>
+<ul style="padding: 0;margin: 0;">
+  
+  
+  <li class="">
+    <a href="rtl_directory/2024_06_05_00_21_53_rtl_design_directory"><span>rtl</span></a>    
+    
+  <li class="">
+    <a href="sv_directory/2024_06_27_16_53_00_sv_verification_directory"><span>sv</span></a>    
+    
+  <li class="">
+    <a href="uvm_directory/2024_08_28_12_39_50_uvm_framework_directory"><span>uvm</span></a>    
+    
+  </li>
+</ul>
+
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+
+
+    <section>
+      <h2 class="post">Multiplexer</h2>
+      <p><a href="https://github.com/24x7fpga/iVerilog/blob/master/design/mux8_to_1/mux8_to_1.v">Design</a> &ndash; <a href="(%3Chttps://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_mux8_to_1/tb_mux8_to_1.v%3E)">Testbench</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
+<h2 id="multiplexer--mux--an-overview">Multiplexer (MUX): An Overview</h2>
 <p>A multiplexer is a digital circuit that selects one input out of many inputs, hence, it is also called a data selector. It consists of 2^n inputs with n selector lines, which are used to select which input to send to the output.</p>
-<h3 id="need-for-multiplexers">Need For Multiplexers<a hidden class="anchor" aria-hidden="true" href="#need-for-multiplexers">#</a></h3>
+<h3 id="need-for-multiplexers">Need For Multiplexers</h3>
 <p>The need for MUXs arises wherever there is a need to transmit multiple data over a shared communication channel.</p>
 <ol>
 <li>Resource Optimization: Communication medium is shared between multiple sources with the aid of a MUX thereby reducing the need for a dedicated channel for each source. Data routing is reduced as it uses the same communication channel. The number of pins required for input and output is also reduced contributing to compact and cost-effective designs.</li>
 </ol>
-<!-- raw HTML omitted -->
+<!--listend-->
 <ol>
 <li>Bandwidth Efficiency: Multiple signals can be transmitted over a single channel by using a MUX to maximize the available bandwidth.</li>
 <li>Time Division Multiplexing (TDM): Data from different sources are allocated to the communication channel at different times with the help of multiplexers.</li>
 </ol>
-<h3 id="applications">Applications<a hidden class="anchor" aria-hidden="true" href="#applications">#</a></h3>
+<h3 id="applications">Applications</h3>
 <p>Multiplexers are used widely in a diverse range of fields, some of the use cases are given below:</p>
 <ol>
 <li>Telecommunication: Combining multiple voice or data channels onto a single transmission line (CDMA, FDM, WDM, etc.).</li>
@@ -272,7 +147,7 @@ Need For Multiplexers The need for MUXs arises wherever there is a need to trans
 <li>Networking: In a networking system where multiple data streams are combined to transmit over the network.</li>
 <li>Memory Addressing: Multiplexers are used in address decoding and encoding.</li>
 </ol>
-<h3 id="design-2-to-1-mux">Design: 2-to-1 MUX<a hidden class="anchor" aria-hidden="true" href="#design-2-to-1-mux">#</a></h3>
+<h3 id="design-2-to-1-mux">Design: 2-to-1 MUX</h3>
 <p>A 2-to-1 multiplexer consists of two inputs &lsquo;d0&rsquo; and &lsquo;d1&rsquo; and a single select line &lsquo;s0&rsquo; and an output &lsquo;z&rsquo;.</p>
 <p>Truth Table: 2-to-1 MUX</p>
 <table>
@@ -312,15 +187,15 @@ Need For Multiplexers The need for MUXs arises wherever there is a need to trans
 </tbody>
 </table>
 <p>Boolean Equation: z = s0 * d1 + s0&rsquo; * d0</p>
-<h4 id="verilog-code-2-to-1-mux">Verilog Code: 2-to-1 MUX<a hidden class="anchor" aria-hidden="true" href="#verilog-code-2-to-1-mux">#</a></h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> mux2_to_1(d0,d1,s0,z)
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">input</span> d0,d1,s0;
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">output</span> z;
+<h4 id="verilog-code-2-to-1-mux">Verilog Code: 2-to-1 MUX</h4>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#00a8c8">module</span> <span style="color:#111">mux2_to_1</span><span style="color:#111">(</span><span style="color:#111">d0</span><span style="color:#111">,</span><span style="color:#111">d1</span><span style="color:#111">,</span><span style="color:#111">s0</span><span style="color:#111">,</span><span style="color:#111">z</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">input</span> <span style="color:#111">d0</span><span style="color:#111">,</span><span style="color:#111">d1</span><span style="color:#111">,</span><span style="color:#111">s0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">output</span> <span style="color:#111">z</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">assign</span> z <span style="color:#f92672">=</span> s0 <span style="color:#f92672">?</span> d0 <span style="color:#f92672">:</span> d1;
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">assign</span> <span style="color:#111">z</span> <span style="color:#f92672">=</span> <span style="color:#111">s0</span> <span style="color:#f92672">?</span> <span style="color:#111">d0</span> <span style="color:#f92672">:</span> <span style="color:#111">d1</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span>
-</span></span></code></pre></div><h3 id="design-4-to-1-mux">Design: 4-to-1 MUX<a hidden class="anchor" aria-hidden="true" href="#design-4-to-1-mux">#</a></h3>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">endmodule</span>
+</span></span></code></pre></div><h3 id="design-4-to-1-mux">Design: 4-to-1 MUX</h3>
 <p>A multiplexer which composed of two select lines and one output is called a 2-to-1 multiplexer. Since, the number if inputs are four the select signals are sel = 2^4 =&gt; 2.</p>
 <p>Suppose the four inputs are din[0], din[1], din[2], din[3] and select lines are sel[0], sel[1] and the output is z, the truth table for a 2-to-1 mux:</p>
 <table>
@@ -356,20 +231,20 @@ Need For Multiplexers The need for MUXs arises wherever there is a need to trans
 </table>
 <p>Boolean equation can be in POS written as:</p>
 <p>z = sel[1]&rsquo; * sel[0]&rsquo; * din[0] + sel[1]&rsquo; * sel[0] * din[1] + sel[1] * sel[0]&rsquo; * din[2] + sel[1] * sel[0] * din[3]</p>
-<h4 id="verilog-code-4-to-1-mux">Verilog Code: 4-to-1 MUX<a hidden class="anchor" aria-hidden="true" href="#verilog-code-4-to-1-mux">#</a></h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">always_comb</span> <span style="color:#66d9ef">begin</span>
-</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">case</span>(sel)
-</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">2&#39;h0</span><span style="color:#f92672">:</span> z <span style="color:#f92672">=</span> din[<span style="color:#ae81ff">0</span>];
-</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">2&#39;h1</span><span style="color:#f92672">:</span> z <span style="color:#f92672">=</span> din[<span style="color:#ae81ff">1</span>];
-</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">2&#39;h2</span><span style="color:#f92672">:</span> z <span style="color:#f92672">=</span> din[<span style="color:#ae81ff">2</span>];
-</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">2&#39;h3</span><span style="color:#f92672">:</span> z <span style="color:#f92672">=</span> din[<span style="color:#ae81ff">3</span>];
-</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> z <span style="color:#f92672">=</span> din[<span style="color:#ae81ff">0</span>];
-</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">endcase</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+<h4 id="verilog-code-4-to-1-mux">Verilog Code: 4-to-1 MUX</h4>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#00a8c8">always_comb</span> <span style="color:#00a8c8">begin</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#00a8c8">case</span><span style="color:#111">(</span><span style="color:#111">sel</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">2&#39;h0</span><span style="color:#f92672">:</span> <span style="color:#111">z</span> <span style="color:#f92672">=</span> <span style="color:#111">din</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">2&#39;h1</span><span style="color:#f92672">:</span> <span style="color:#111">z</span> <span style="color:#f92672">=</span> <span style="color:#111">din</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">2&#39;h2</span><span style="color:#f92672">:</span> <span style="color:#111">z</span> <span style="color:#f92672">=</span> <span style="color:#111">din</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">2&#39;h3</span><span style="color:#f92672">:</span> <span style="color:#111">z</span> <span style="color:#f92672">=</span> <span style="color:#111">din</span><span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#00a8c8">default</span><span style="color:#f92672">:</span> <span style="color:#111">z</span> <span style="color:#f92672">=</span> <span style="color:#111">din</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#00a8c8">endcase</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">end</span>
 </span></span></code></pre></div><p>The design for 4-to-1 mux can be found <a href="https://github.com/24x7fpga/iVerilog/blob/master/design/mux4_to_1/mux4_to_1.v">here</a> and the its testbench can be found <a href="https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_mux4_to_1/tb_mux4_to_1.v">here</a>.</p>
-<h3 id="multiplexer-tree">Multiplexer Tree<a hidden class="anchor" aria-hidden="true" href="#multiplexer-tree">#</a></h3>
+<h3 id="multiplexer-tree">Multiplexer Tree</h3>
 <p>Multiplexers with a large number of inputs can be built by cascading smaller multiplexers. For example, an 8-to-1 multiplexer can be built using two 4-to-1 multiplexer. Similarly, a 4-to-1 multiplexer can be built using two 2-to-1 multiplexer. In other words, any N-to-1 multiplexer can be built using smaller n-to-1 multiplexers.</p>
-<h3 id="design-8-to-1-mux">Design: 8-to-1 MUX<a hidden class="anchor" aria-hidden="true" href="#design-8-to-1-mux">#</a></h3>
+<h3 id="design-8-to-1-mux">Design: 8-to-1 MUX</h3>
 <p>An 8-to-1 MUX can be designed conventionally by using the truth table. As the number of inputs increases the design becomes tedious when using the conventional method. Therefore, smaller MUX designs are built first and they are reused multiple times to build bigger mux.</p>
 <p>Truth Table: 8-to-1 MUX</p>
 <table>
@@ -433,29 +308,29 @@ Need For Multiplexers The need for MUXs arises wherever there is a need to trans
 </tbody>
 </table>
 <p>Here, an 8-to-1 mux is built using two 4-to-1 mux. It consists of eight inputs, three select lines, and a single output line.</p>
-<h4 id="verilog-code-8-to-1-mux-using-two-4-to-1-mux">Verilog Code: 8-to-1 MUX using two 4-to-1 MUX<a hidden class="anchor" aria-hidden="true" href="#verilog-code-8-to-1-mux-using-two-4-to-1-mux">#</a></h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span>mux4_to_1 m1 (<span style="color:#75715e">// outputs
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                  .z      (temp1),
+<h4 id="verilog-code-8-to-1-mux-using-two-4-to-1-mux">Verilog Code: 8-to-1 MUX using two 4-to-1 MUX</h4>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#111">mux4_to_1</span> <span style="color:#111">m1</span> <span style="color:#111">(</span><span style="color:#75715e">// outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                  <span style="color:#111">.</span><span style="color:#111">z</span>      <span style="color:#111">(</span><span style="color:#111">temp1</span><span style="color:#111">),</span>
 </span></span><span style="display:flex;"><span>                  <span style="color:#75715e">// inputs
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                  .din    (din[<span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]),
-</span></span><span style="display:flex;"><span>                  .sel    (sel[<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]));
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                  <span style="color:#111">.</span><span style="color:#111">din</span>    <span style="color:#111">(</span><span style="color:#111">din</span><span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span><span style="color:#111">]),</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#111">.</span><span style="color:#111">sel</span>    <span style="color:#111">(</span><span style="color:#111">sel</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span><span style="color:#111">]));</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>mux4_to_1 m2 (<span style="color:#75715e">// outputs
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                  .z      (temp2),
+</span></span><span style="display:flex;"><span><span style="color:#111">mux4_to_1</span> <span style="color:#111">m2</span> <span style="color:#111">(</span><span style="color:#75715e">// outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                  <span style="color:#111">.</span><span style="color:#111">z</span>      <span style="color:#111">(</span><span style="color:#111">temp2</span><span style="color:#111">),</span>
 </span></span><span style="display:flex;"><span>                  <span style="color:#75715e">// inputs
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                  .din    (din[<span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">4</span>]),
-</span></span><span style="display:flex;"><span>                  .sel    (sel[<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]));
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                  <span style="color:#111">.</span><span style="color:#111">din</span>    <span style="color:#111">(</span><span style="color:#111">din</span><span style="color:#111">[</span><span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">4</span><span style="color:#111">]),</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#111">.</span><span style="color:#111">sel</span>    <span style="color:#111">(</span><span style="color:#111">sel</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span><span style="color:#111">]));</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>z <span style="color:#f92672">=</span> sel[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">?</span> temp2 <span style="color:#f92672">:</span> temp1;
-</span></span></code></pre></div><h3 id="advantages-disadvantages-of-multiplexer">Advantages/Disadvantages of Multiplexer<a hidden class="anchor" aria-hidden="true" href="#advantages-disadvantages-of-multiplexer">#</a></h3>
-<h4 id="advantages">Advantages<a hidden class="anchor" aria-hidden="true" href="#advantages">#</a></h4>
+</span></span><span style="display:flex;"><span><span style="color:#111">z</span> <span style="color:#f92672">=</span> <span style="color:#111">sel</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span> <span style="color:#f92672">?</span> <span style="color:#111">temp2</span> <span style="color:#f92672">:</span> <span style="color:#111">temp1</span><span style="color:#111">;</span>
+</span></span></code></pre></div><h3 id="advantages-disadvantages-of-multiplexer">Advantages/Disadvantages of Multiplexer</h3>
+<h4 id="advantages">Advantages</h4>
 <ol>
 <li>Reduces the number of wires used thereby reducing the overall design cost and complexity.</li>
 <li>Simplifies logic design.</li>
 <li>Does not require k-maps to build the design.</li>
 </ol>
-<h4 id="disadvantages">Disadvantages<a hidden class="anchor" aria-hidden="true" href="#disadvantages">#</a></h4>
+<h4 id="disadvantages">Disadvantages</h4>
 <ol>
 <li>Increases complexity in many-to-1 designs.</li>
 <li>The serialization nature of multiplexers is a limitation in simultaneous data transfer.</li>
@@ -465,147 +340,16 @@ Need For Multiplexers The need for MUXs arises wherever there is a need to trans
 <li>In high-frequency applications, the use of multiplexers can impact signal integrity due to issues like signal attenuation and distortion.</li>
 </ol>
 
-
+      
+      <div class="post-date">
+        <span class="g time">June 13, 2024 </span> &#8729;
+         
+         <a href="https://24x7fpga.com/tags/rtl/">rtl</a>
+      </div>
+      
+    </section>
+    
   </div>
-
-
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/rtl/">rtl</a></li>
-    </ul>
-
-
-
-    <div class="bottom-line" ></div>
-    
-    
-    
-      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
-    
-
-  </footer>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
-        
-        
-
-
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a><footer class="footer">
-
-</footer>
-
-
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-<script>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-        const container = codeblock.parentNode.parentNode;
-
-        const copybutton = document.createElement('button');
-        copybutton.classList.add('copy-code');
-        copybutton.innerHTML = 'copy';
-
-        function copyingDone() {
-            copybutton.innerHTML = 'copied!';
-            setTimeout(() => {
-                copybutton.innerHTML = 'copy';
-            }, 2000);
-        }
-
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) { };
-            selection.removeRange(range);
-        });
-
-        if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
-        } else if (container.parentNode.firstChild == container) {
-            
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-            
-            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
-        } else {
-            
-            codeblock.parentNode.appendChild(copybutton);
-        }
-    });
-</script>
+</main>
 </body>
-
 </html>

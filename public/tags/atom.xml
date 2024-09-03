@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on &gt; home</title>
+    <link>https://24x7fpga.com/tags/</link>
+    <description>Recent content in Tags on &gt; home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Aug 2024 12:39:00 -0400</lastBuildDate>
+    <atom:link href="https://24x7fpga.com/tags/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>toc</title>
+      <link>https://24x7fpga.com/tags/toc/</link>
+      <pubDate>Wed, 28 Aug 2024 12:39:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/tags/toc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>rtl</title>
+      <link>https://24x7fpga.com/tags/rtl/</link>
+      <pubDate>Thu, 22 Aug 2024 14:57:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/tags/rtl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>sv</title>
+      <link>https://24x7fpga.com/tags/sv/</link>
+      <pubDate>Thu, 08 Aug 2024 13:51:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/tags/sv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>rfsoc</title>
+      <link>https://24x7fpga.com/tags/rfsoc/</link>
+      <pubDate>Wed, 07 Aug 2024 22:15:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/tags/rfsoc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>git</title>
+      <link>https://24x7fpga.com/tags/git/</link>
+      <pubDate>Sun, 04 Aug 2024 14:34:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>article</title>
+      <link>https://24x7fpga.com/tags/article/</link>
+      <pubDate>Wed, 17 Jul 2024 09:17:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/tags/article/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>vim</title>
+      <link>https://24x7fpga.com/tags/vim/</link>
+      <pubDate>Fri, 28 Jun 2024 15:38:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/tags/vim/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>emacs</title>
+      <link>https://24x7fpga.com/tags/emacs/</link>
+      <pubDate>Fri, 31 May 2024 12:47:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/tags/emacs/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

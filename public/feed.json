@@ -1,0 +1,19 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "> home",
+  "home_page_url": "https://24x7fpga.com/",
+  "feed_url": "https://24x7fpga.com/feed.json",
+  "description": "A minimal hugo theme focus on content",
+  "favicon": "https://24x7fpga.com//assets/favicon.ico",
+  "expired": false,
+  "author": {
+    "name": "Kiran",
+    "url": "https://24x7fpga.com/"
+  },
+  "items": [
+    
+    
+
+    
+  ]
+}
