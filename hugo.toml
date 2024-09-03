@@ -1,17 +1,105 @@
 baseURL = 'https://24x7fpga.com/'
 languageCode = 'en-us'
-title = '> home' #'Think, Design and Build'
-theme = 'maverick'
+title = 'Home'  
+theme = "PaperMod"
 
-[permalinks]
-  pages = "/:slug"
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+# For PaperMod 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #     
+[params.profileMode]
+    enabled     = true 
+    imageUrl    = "/img/ai-zeus3.png"
+    imageWidth  = 126 # custom size
+    imageHeight = 240 # custom size
+    title       = "FPGA Emulation | Digital Design | ASIC Design"
+
 
 [params]
-  #logo = '/assets/favicon.ico'
-  description = "A minimal hugo theme focus on content"
-  author = 'Kiran'
+  showWordCount         = true 
+  author                = "Kiran"
+  #title                = "24x7fpga"
+  description           = "24x7fpga"
+  defaultTheme          = "light" 
+  #DateFormat           = "2006-01-02"
+  ShowReadingTime       = true
+  #ShowShareButtons     = true
+  ShowPostNavLinks      = false
+  ShowBreadCrumbs       = false
+  ShowCodeCopyButtons   = true
+  disableSpecial1stPost = false
+  disableScrollToTo     = false
+  comments              = false
+  hidemeta              = false
+  hideSummary           = true
+  showtoc               = false
+  tocopen               = false
+  enableEmoji           = true
 
-[menu]
+
+
+  [params.assets]
+    favicon16x16     = "/assets/favicon-16x16.png"
+    favicon32x32     = "/assets/favicon-32x32.png"
+    apple_touch_icon = "/assets/apple-touch-icon.png"
+    favicon          = "favicon.ico"
+ 
+  [params.label]
+    icon = ""
+
+ 
+ [params.Singlefooter]
+    path     = "/img/org_mode.png"
+    alt      = "footer"
+    maxWidth = "50px"                
+
+  [[params.profileMode.buttons]]
+    name  = "about"
+    url   = "about/about"
+  [[params.profileMode.buttons]]
+    name  = "research"
+    url   = "research/2024_07_08_10_15_40_research"
+
+
+  [[params.socialIcons]]
+      name = "linkedin"
+      url  = "https://www.linkedin.com/in/kiran760043/" 
+
+  [[params.socialIcons]]
+      name = "github"
+      url  = "https://github.com/24x7fpga"
+    
+    [[params.socialIcons]]
+      name = "googlescholar"
+      url  = "https://googlescholar.com/"
+
+    [[params.socialIcons]]
+      name = "orcid"
+      url  = "https://orcid.org/0009-0003-7024-3868"
+    
+    [[params.socialIcons]]
+      name = "instagram"
+      url  = "https://www.instagram.com/negativeparking/"
+
+
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+# General
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+
+  [submenu]
+
+  [[submenu.main]]
+    identifier = "try"
+    name = "try"
+    utl ="try/"
+
+  [menu]
+#  [[menu.main]]
+#    identifier = "about"
+#    name       = "about"
+#    url        = "about/about"
+#    weight     = 10
+
 #  [[menu.main]]
 #    identifier = "research"
 #    name       = "research"
@@ -36,42 +124,35 @@ theme = 'maverick'
     url         = "uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" 
     weight      = 50
 
-[params.footer]
-    path     = "/img/org_mode.png"
-    alt      = "footer"
-    maxWidth = "50px"    
+########################################################
+#  [[menu.main]]
+#    identifier = "soc_directory"
+#    name       = "soc"
+#    url        = "soc_directory/" 
+#    weight     = 60
+#
+#  [[menu.main]]
+#    identifier = "zynq_soc_directory"
+#    name       = "zynq soc"
+#    url        = "zyn_soc_directory/" 
+#    weight     = 70
+#
+#  [[menu.main]]
+#    identifier = "openlane_directory"
+#    name       = "open lane"
+#    url        = "zyn_soc_directory/" 
+#    weight     = 80
+########################################################
 
-[markup]
-  [markup.goldmark.renderer]
-    unsafe = true
-  [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ''
-    hl_inline = false
-    lineAnchors = ''
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    noHl = false
-    style = 'monokailight'
-    tabWidth = 4
+  [[menu.main]]
+    identifier = "tags"
+    #name      = tags
+    pre        = "tags"
+    #post = "<i class='fas fa-tag' aria-hidden='true'></i>" #<i class='fas fa-tags fa-fw'></i>
+    url        = "tags/" 
+    weight     = 90
 
-[taxonomies]
-  tag = "tags"
+    
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-  section = ["HTML"]
 
-[outputFormats.RSS]
-  mediatype = "application/rss"
-  baseName = "atom"
 
-[outputFormats.JSON]
-  mediatype = "application/json"
-  baseName = "feed"
-
-ignoreErrors = ["error-remote-getjson"]

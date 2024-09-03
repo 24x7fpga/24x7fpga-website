@@ -1,13 +1,42 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Liste - https://24x7fpga.com/">
-    <title>RFSoC Loop Back Tutorial | &gt; home</title>
-    <meta name="description" content="A minimal hugo theme focus on content">
-    <meta property="og:title" content="RFSoC Loop Back Tutorial" />
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>RFSoC Loop Back Tutorial | Home</title>
+<meta name="keywords" content="rfsoc">
+<meta name="description" content="RFSoC
+RFSoC Loop Back Tutorial Figure 1: Zynq UltraScale&#43; RFSoC 1275 Characterization Kit
+RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are high precision, high speed, and power efficient. Xilinx Vivado is equipped with RF Data Converter IP core which provides a configurable wrapper that allows these RF-ADCs and RF-DACs blocks to be used in the IP integrator designs. The RF-ADCs and RF-DACs are organized into tiles where each tiles contains one, two or four RF-ADCs and RF-DACs.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="https://24x7fpga.com/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.526ee71d2bda4e817faf8e1337ba879150fa995e4bf978a970ab1988033bc2c6.css" integrity="sha256-Um7nHSvaToF/r44TN7qHkVD6mV5L&#43;XipcKsZiAM7wsY=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+<meta property="og:title" content="RFSoC Loop Back Tutorial" />
 <meta property="og:description" content="RFSoC
 RFSoC Loop Back Tutorial Figure 1: Zynq UltraScale&#43; RFSoC 1275 Characterization Kit
 RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are high precision, high speed, and power efficient. Xilinx Vivado is equipped with RF Data Converter IP core which provides a configurable wrapper that allows these RF-ADCs and RF-DACs blocks to be used in the IP integrator designs. The RF-ADCs and RF-DACs are organized into tiles where each tiles contains one, two or four RF-ADCs and RF-DACs." />
@@ -16,137 +45,235 @@ RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are hi
 <meta property="article:published_time" content="2024-08-07T22:15:00-04:00" />
 <meta property="article:modified_time" content="2024-08-07T22:15:00-04:00" />
 
-
-    <meta itemprop="name" content="RFSoC Loop Back Tutorial">
-<meta itemprop="description" content="RFSoC
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="RFSoC Loop Back Tutorial"/>
+<meta name="twitter:description" content="RFSoC
 RFSoC Loop Back Tutorial Figure 1: Zynq UltraScale&#43; RFSoC 1275 Characterization Kit
-RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are high precision, high speed, and power efficient. Xilinx Vivado is equipped with RF Data Converter IP core which provides a configurable wrapper that allows these RF-ADCs and RF-DACs blocks to be used in the IP integrator designs. The RF-ADCs and RF-DACs are organized into tiles where each tiles contains one, two or four RF-ADCs and RF-DACs."><meta itemprop="datePublished" content="2024-08-07T22:15:00-04:00" />
-<meta itemprop="dateModified" content="2024-08-07T22:15:00-04:00" />
-<meta itemprop="wordCount" content="1803">
-<meta itemprop="keywords" content="rfsoc," />
-    
-    <link rel="canonical" href="https://24x7fpga.com/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/">
-    <link rel="icon" href="https://24x7fpga.com//assets/favicon.ico">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com">
-    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
-    <link rel="alternate" type="application/atom+xml" title="&gt; home" href="https://24x7fpga.com//atom.xml" />
-    <link rel="alternate" type="application/json" title="&gt; home" href="https://24x7fpga.com//feed.json" />
-    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
-    
-    
-    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#f5f5f5;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto;display:block;margin-left:auto;margin-right:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1.4s infinite;opacity:1;color:#96e9ae}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:250px;width:250px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background-color:#e9e9e9;border-radius:3px}code{border:none}.highlight pre{background-color:#e9e9e9!important;border-radius:5px} </style>
-  
-    
-  
-  
-  <script type="application/ld+json">
-  {
-      "@context": "http://schema.org",
-      "@type": "BlogPosting",
-      "articleSection": "rfsoc_directory",
+RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are high precision, high speed, and power efficient. Xilinx Vivado is equipped with RF Data Converter IP core which provides a configurable wrapper that allows these RF-ADCs and RF-DACs blocks to be used in the IP integrator designs. The RF-ADCs and RF-DACs are organized into tiles where each tiles contains one, two or four RF-ADCs and RF-DACs."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Rfsoc_directories",
+      "item": "https://24x7fpga.com/rfsoc_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
       "name": "RFSoC Loop Back Tutorial",
-      "headline": "RFSoC Loop Back Tutorial",
-      "alternativeHeadline": "",
-      "description": "RFSoC\nRFSoC Loop Back Tutorial Figure 1: Zynq UltraScale\u002b RFSoC 1275 Characterization Kit\nRF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are high precision, high speed, and power efficient. Xilinx Vivado is equipped with RF Data Converter IP core which provides a configurable wrapper that allows these RF-ADCs and RF-DACs blocks to be used in the IP integrator designs. The RF-ADCs and RF-DACs are organized into tiles where each tiles contains one, two or four RF-ADCs and RF-DACs.",
-      "inLanguage": "en-us",
-      "isFamilyFriendly": "true",
-      "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https:\/\/24x7fpga.com\/rfsoc_directory\/2024_08_07_22_15_09_rfsoc_loop_back_tutorial\/"
-      },
-      "author" : {
-          "@type": "Person",
-          "name": "[Kiran]"
-      },
-      "creator" : {
-          "@type": "Person",
-          "name": "[Kiran]"
-      },
-      "accountablePerson" : {
-          "@type": "Person",
-          "name": "[Kiran]"
-      },
-      "copyrightHolder" : "\u003e home",
-      "copyrightYear" : "2024",
-      "dateCreated": "2024-08-07T22:15:00.00Z",
-      "datePublished": "2024-08-07T22:15:00.00Z",
-      "dateModified": "2024-08-07T22:15:00.00Z",
-      "publisher":{
-          "@type":"Organization",
-          "name": "\u003e home",
-          "url": "https://24x7fpga.com/",
-          "logo": {
-              "@type": "ImageObject",
-              "url": "https:\/\/24x7fpga.com\/assets\/favicon.ico",
-              "width":"32",
-              "height":"32"
-          }
-      },
-      "image": "https://24x7fpga.com/assets/favicon.ico",
-      "url" : "https:\/\/24x7fpga.com\/rfsoc_directory\/2024_08_07_22_15_09_rfsoc_loop_back_tutorial\/",
-      "wordCount" : "1803",
-      "genre" : [ "rfsoc" ],
-      "keywords" : [ "rfsoc" ]
+      "item": "https://24x7fpga.com/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "RFSoC Loop Back Tutorial",
+  "name": "RFSoC Loop Back Tutorial",
+  "description": "RFSoC\nRFSoC Loop Back Tutorial Figure 1: Zynq UltraScale+ RFSoC 1275 Characterization Kit\nRF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are high precision, high speed, and power efficient. Xilinx Vivado is equipped with RF Data Converter IP core which provides a configurable wrapper that allows these RF-ADCs and RF-DACs blocks to be used in the IP integrator designs. The RF-ADCs and RF-DACs are organized into tiles where each tiles contains one, two or four RF-ADCs and RF-DACs.",
+  "keywords": [
+    "rfsoc"
+  ],
+  "articleBody": "RFSoC\nRFSoC Loop Back Tutorial Figure 1: Zynq UltraScale+ RFSoC 1275 Characterization Kit\nRF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are high precision, high speed, and power efficient. Xilinx Vivado is equipped with RF Data Converter IP core which provides a configurable wrapper that allows these RF-ADCs and RF-DACs blocks to be used in the IP integrator designs. The RF-ADCs and RF-DACs are organized into tiles where each tiles contains one, two or four RF-ADCs and RF-DACs. For Zynq UltraScale+ RFSoC 1275 characterization board each tile contains two RF-ADCs and RF-DACs. User can manually alter the power efficient digital down converters (DDCs) and digital up converters (DUCs) that include programmable interpolation and decimation rates. Each tile includes a block with a PLL and all the necessary clock handling logic.\nADC to DAC Loop Back Design Using RF Analyzer In this section, we will configure the RF data converter IP with user defined specifications and create an example design to understand and familiarize with the board and RF analyzer.\nADC Tile Settings Figure 2 shows the RF Data Converter IP. Under Basic tab select RF-ADC. For our board we have four ADC and DAC tile each with two pairs of ADCs and DACs. For the example design we will be activating one RF-ADC and RF-DAC channel where we will enable all the pairs of ADCs and DACs in each tile. Even though we will use only ADC 0 and DAC 0 for our loop back design.\nFigure 2: RF Data Converter ADC Tile\nFrom Figure 2, select ADC Tile 224 and enable ADC 0 by checking the Enable ADC check box. This will enable the ADC for the design and similarly we can enable ADCs or DACs that are required.\nData Settings:\nDigital Output Data = Real Decimation Mode = 1x Samples per AXI4-Stream Cycle = 8 Required AXI4-Stream clock: 256MHz (will automatically be generated based on the system clock that is chosen for the ADC tile)\nMixer Settings:\nMixer Type = Bypassed Mixer Mode = Real -\u003e Real Analog Settings:\nNyquist Zone = Zone 1 Calibration Mode = Mode2 Apply the same settings for ADC Pair 0,1 and ADC Pair 2,3.\nDAC Tile Settings Figure 3 shows the DAC tile settings.\nFigure 3: RF Data Converter DAC Tile\nData Settings:\nAnalog Output Data = Real Interpolation Mode = 2x Samples per AXI4-Stream Cycle = 8 Required AXI4-Stream clock: 256MHz (will automatically be generated based on the system clock that is chosen for the DAC tile)\nMixer Settings:\nMixer Type = Bypassed Mixer Mode = Real -\u003e Real Analog Settings:\nNyquist Zone = Zone 1 Decoder Mode = SNR Optimized Apply the same settings for DAC Pair 0,1 and DAC Pair 2,3.\nSystem Clocking Figure 4 shows system clocking setting. ADC is sampled at 2.048GSPS, this will dictate AXI4-stream clock. Since samples per AXI4-Stream clock is 8 and decimation mode is 1, divide 2.048GSPS by 8x1 will result in 256MHz. Similarly, DACs analog output data is sampled is 4.096GSPS, samples per AXI4-Stream clock is 8 and interpolation mode is 2, the required AXI4-Stream clock is, 4.096GSPS divided by 8x2, 256MHz.\nFigure 4: System Clocking\nADVANCED Under advanced tab enable RF analyzer by selecting Enabled under drop-down menu.\nFigure 5: Enable RF Analyzer\nOnce we create a Vivado project with the above-mentioned IP configuration settings we can right click on the system design and open an example project. Vivado will create an example project for you to test the loop back configuration. Figure 6 shows the ADC to DAC loop back design. Vivado will create the necessary constraint file and simulations sources. Now we can generate the bitstream. Once bitstream is generated, we have everything we need to use RF analyzer.\nFigure 6: RFSoC ADC to DAC Loop Back Design\nBoard Connections From Figure 1, we can see that the RF-ADCs and RF-DACs are present to the right side of the board. The pins connections to the board are shown in Figure 7.\nFigure 7: A: Bulls Eye Connector Pad; B: RF-ADC Connector Pinout; C: RF-DAC Connector Pinout\nUse the given bulls eye cables to connect the RF-ADC and RF-DAC. Bulls eye cable is shown in Figure 8. Connect the flat end of the bullseye cable to the board.\nFigure 8: Bulls Eye Cable\nConnect the ADC’s vin_0 pins p and n to DAC’s vout_0 pins p and n.\nFigure 9: RF-ADC’s P and N pins connected to RF-DAC’s P and N pins\nThis will establish a loop back connection from RF-ADC to RF-DAC as intended from our design example. Clock pins for RF-ADC is connected to SuperClock-RF2 module callout pin 3 which can be seen in Figure 11, Figure 12 and Table 1. Similarly, RF-DAC’s clock pins are connected to the callout pin 1 which can be referred in Figure 11 and Table 1.\nFigure 10: Board Connection\nSuperClock-RF2 Module Connect a JTAG cable and UART cable to the board. JTAG connection will to load the bitstream and UART will load the clock files to SuperClock-RF2 module. In other words, RF analyzer communicates with the board using JTAG cable and System Controller connects the board using UART cable.\nFigure 11: SuperClock-RF2 Module\nFor the example design will be using on board clocks generated from the SuperClock-RF2 module shown in Figure 11. SuperClock-RF2 module connects to the clock module interface and provides a programmable, ultra-low noise and low-jitter wideband RF clock source required for the RF data converters.\nCallouts Feature Description 1 PLL A RF sampling clock SMA pairs 2 General-purpose clock SMA pairs 3 PLL B RF sampling clock SMA pairs 4 PLL C RF sampling clock SMA pairs 5 External reference clock input 6 Single-ended reference clock output 7 PLL lock indicator LEDs PLL A PLL A has four differential output SMA pairs which are used as RF sampling clocks for RF-ADCs. Maximum frequency to which it can be programmed is up to 4.0 GHz. For our design will program it to 2.048 GHz.\nPLL B and C PLL B and C have two differential output SMA pairs that is used to program the RF-DACs sampling clocks. Maximum programmable frequency is up to 6.4 GHz. For our example design will program it to 4.096 GHz.\nFigure 12: SuperClock-RF2 Module with connections\nSystem Controller Xilinx system controller is an application that runs on Zynq-7000 SoC at power up on the ZCU1275 board (Zynq UltraScale+ RFSoC 1275 Characterization board). This application is used to generate the required clocks to RF-ADCs and RF-DACs by configuring the SuperClock-RF2 module. Upon launching the application, you will be greeted with the board information window shown in the Figure 13.\nFigure 13: System Controller\nAfter entering the board information and pressing OK, the main window of the system controller opens which is shown in Figure 14. On the left-hand side is the system controller controls and on the right side is a log of the operation. The necessary clock files can be downloaded from the user guide UG1285.\nFigure 14: CLK-103 Set LMK***** Frequencies\nUnder clocks tab select CLK-103 tab because is the HW that is available on the board as it can be seen in the Figure 11 and Figure 12.\nFigure 15: CLK-103 Clock Files\nFrom the clock files directory select the correct clock files to load the correct clock files from the folders as shown below. It is important to include the complete name including the extension such as *.txt.\nCLK-103 LMK04208 Frequency: LMK04208_CLKin1_12M8_3072MHz.txt CLK-103 LMX2592 PLL A : LMX2592a_4096MHz.txt CLK-103 LMX2592 PLL B : LMX2592b_2048MHz.txt Clicking on the set frequency tab will program the SuperClock-RF2 module present on the board with the required RF-sampling clocks. Along with the finished log report the LED indicators present on the SuperClock-RF2 module will light up indicating the process has completed successfully along with the finished message in the log window as shown in Figure 16.\nFigure 16: CLK-103 Set LMK***** Frequencies Log Report\nRF Analyzer Now that we have turned on our board and configured the necessary RF-sampling clocks we can start the RF analyzer application shown in Figure 17. On the starting window select the local server (target is on local machine) under connection. Under hardware highlight the detected board, in our case it the ZCU1275. Now point to the bitstream path that we generated using the example the design and click on Download Bitstream. This will configure the board with the loaded bitstream and activated the RF-ADCs and RF-DACs as intended while configuring the RF Data Converter IP.\nFigure 17: RF Analyzer\nActive ADC and DAC tile will be highlighted in green as shown in Figure18.\nFigure 18: Active RF-ADC and RF-DAC Tiles\nSelect the RF-ADC/RF-DAC tile and set up the PLL reference clock. ADC Tile 0 – PLL and DAC Tile 0 – PLL clocking reference is set to 256MHz. This is AXI4-Stream clock that was generated automatically when configuring the RF Data converter IP.\nFigure 19: PLL Reference Clock for RF-ADC\nThe PLL clock reference for RF-ADC and RF-DAC is shown in Figure 19 and 20 respectively.\nFigure 20: PLL Reference Clock for RF-DAC\nSelect DAC tile 0 to generate the analog signal. Figure 21 shows DAC tile configuration which should match the RF Data converter IP. Click on the generation button to start transmitting the analog output signal.\nFigure 21: RF-DAC Tile Configuration\nRF analyzer GUI will show the analog and the FFT plot of the generated signal as shown in the Figure 22 and Figure 23 respectively. User can choose a desired frequency to generate by changing the frequency value under the CF (center frequency) dialog box.\nFigure 22: RF-DAC Tile: Time Domain Analysis\nFigure 23: RF-DAC Tile: Frequency Domain Analysis\nOnce the analog is generated using the RF analyzer move back to the ADC tile tab and select the ADC 0. With configuration shown in the Figure 24 click on the acquisition button to capture the signal that is being generated from the RF-DAC.\nFigure 24: RF-ADC Tile Configuration\nThese tiles (ADC and DAC) should match the setting used in the RF data converter IP. RF analyzer will open another tab with the acquired signal as seen in Figure 25. Users can view the signal in both time domain and in frequency domain of the captured signal with a click of a button. Figure 25 and Figure 26 shows the captured signal by the RF-ADC tile in time domain and frequency domain respectively.\nFigure 25: RF-ADC Tile: Time Domain Analysis\nFigure 26: RF-ADC Tile: Frequency Domain Analysis\nRF analyzer tool is an extremely useful tool in debugging the design. It also provides additional information such as harmonics, dynamic range, noise band, etc. The tool can also write the captured data to an excel sheet or to a text file for external use.\n",
+  "wordCount" : "1798",
+  "inLanguage": "en",
+  "datePublished": "2024-08-07T22:15:00-04:00",
+  "dateModified": "2024-08-07T22:15:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
   }
-  </script>
-  
-  
-  </head>
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
 
-<body>
-  <a class="skip-link" href="#main">Skip to main</a>
-  <main id="main">
-  <div class="content">
-    <header>
-<p style="padding: 0;margin: 0;">
-  <a href="/">
-    <b>&gt; home</b>
-    <span class="text-stone-500 animate-blink">▮</span>
-  </a>
-</p>
-<ul style="padding: 0;margin: 0;">
-  
-  
-  <li class="">
-    <a href="rtl_directory/2024_06_05_00_21_53_rtl_design_directory"><span>rtl</span></a>    
-    
-  <li class="">
-    <a href="sv_directory/2024_06_27_16_53_00_sv_verification_directory"><span>sv</span></a>    
-    
-  <li class="">
-    <a href="uvm_directory/2024_08_28_12_39_50_uvm_framework_directory"><span>uvm</span></a>    
-    
-  </li>
-</ul>
+</head>
 
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
-<hr class="hr-list" style="padding: 0;margin: 0;">
 
+<main class="main">
 
-    <section>
-      <h2 class="post">RFSoC Loop Back Tutorial</h2>
-      <p><a href="/rfsoc_directory/2024_08_07_22_09_59_rfsoc/">RFSoC</a></p>
-<h2 id="rfsoc-loop-back-tutorial">RFSoC Loop Back Tutorial</h2>
-<figure><img src="/ox-hugo/1275.jpg"
-         alt="Figure 1: Zynq UltraScale&#43; RFSoC 1275 Characterization Kit"/><figcaption>
-            <p><span class="figure-number">Figure 1: </span>Zynq UltraScale+ RFSoC 1275 Characterization Kit</p>
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      RFSoC Loop Back Tutorial
+    </h1>
+    <div class="post-meta"><span title='2024-08-07 22:15:00 -0400 EDT'>August 7, 2024</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;1798 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="/rfsoc_directory/2024_08_07_22_09_59_rfsoc/">RFSoC</a></p>
+<h2 id="rfsoc-loop-back-tutorial">RFSoC Loop Back Tutorial<a hidden class="anchor" aria-hidden="true" href="#rfsoc-loop-back-tutorial">#</a></h2>
+<figure>
+    <img loading="lazy" src="/ox-hugo/1275.jpg"
+         alt="Figure 1: Zynq UltraScale&#43; RFSoC 1275 Characterization Kit"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 1: <!-- raw HTML omitted -->Zynq UltraScale+ RFSoC 1275 Characterization Kit</p>
         </figcaption>
 </figure>
 
-<h3 id="rf-data-converter-ip">RF Data Converter IP</h3>
+<h3 id="rf-data-converter-ip">RF Data Converter IP<a hidden class="anchor" aria-hidden="true" href="#rf-data-converter-ip">#</a></h3>
 <p>Each RFSoC  offers multiple RF-ADCs and RF-DACs which are high precision, high speed, and power efficient. Xilinx Vivado is equipped with RF Data Converter IP core which provides a configurable wrapper that allows these RF-ADCs and RF-DACs blocks to be used in the IP integrator designs. The RF-ADCs and RF-DACs are organized into tiles where each tiles contains one, two or four RF-ADCs and RF-DACs. For Zynq UltraScale+ RFSoC 1275 characterization board each tile contains two RF-ADCs and RF-DACs. User can manually alter the power efficient digital down converters (DDCs) and digital up converters (DUCs) that include programmable interpolation and decimation rates. Each tile includes a block with a PLL and all the necessary clock handling logic.</p>
-<h3 id="adc-to-dac-loop-back-design-using-rf-analyzer">ADC to DAC Loop Back Design Using RF Analyzer</h3>
+<h3 id="adc-to-dac-loop-back-design-using-rf-analyzer">ADC to DAC Loop Back Design Using RF Analyzer<a hidden class="anchor" aria-hidden="true" href="#adc-to-dac-loop-back-design-using-rf-analyzer">#</a></h3>
 <p>In this section, we will configure the RF data converter IP with user defined specifications and create an example design to understand and familiarize with the board and RF analyzer.</p>
-<h4 id="adc-tile-settings">ADC Tile Settings</h4>
+<h4 id="adc-tile-settings">ADC Tile Settings<a hidden class="anchor" aria-hidden="true" href="#adc-tile-settings">#</a></h4>
 <p>Figure 2 shows the RF Data Converter IP. Under <strong>Basic</strong> tab select <strong>RF-ADC</strong>. For our board we have four ADC and DAC tile each with two pairs of ADCs and DACs. For the example design we will be activating one RF-ADC and RF-DAC channel where we will enable all the pairs of ADCs and DACs in each tile. Even though we will use only <strong>ADC 0</strong> and <strong>DAC 0</strong> for our loop back design.</p>
-<figure><img src="/ox-hugo/adc_tile.png"
-         alt="Figure 2: RF Data Converter ADC Tile"/><figcaption>
-            <p><span class="figure-number">Figure 2: </span>RF Data Converter ADC Tile</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/adc_tile.png"
+         alt="Figure 2: RF Data Converter ADC Tile"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 2: <!-- raw HTML omitted -->RF Data Converter ADC Tile</p>
         </figcaption>
 </figure>
 
 <p>From Figure 2, select <strong>ADC Tile 224</strong> and enable <strong>ADC 0</strong>  by checking the Enable ADC check box. This will enable the ADC for the design and similarly we can enable ADCs or DACs that are required.</p>
-<!--list-separator-->
+<!-- raw HTML omitted -->
 <ul>
 <li>
 <p>Data Settings:</p>
@@ -158,7 +285,7 @@ RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are hi
 <p>Required AXI4-Stream clock: 256MHz (will automatically be generated based on the system clock that is chosen for the ADC tile)</p>
 </li>
 </ul>
-<!--list-separator-->
+<!-- raw HTML omitted -->
 <ul>
 <li>
 <p>Mixer Settings:</p>
@@ -168,7 +295,7 @@ RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are hi
 </ul>
 </li>
 </ul>
-<!--list-separator-->
+<!-- raw HTML omitted -->
 <ul>
 <li>
 <p>Analog Settings:</p>
@@ -179,15 +306,16 @@ RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are hi
 <p>Apply the same settings for ADC Pair 0,1 and ADC Pair 2,3.</p>
 </li>
 </ul>
-<h4 id="dac-tile-settings">DAC Tile Settings</h4>
+<h4 id="dac-tile-settings">DAC Tile Settings<a hidden class="anchor" aria-hidden="true" href="#dac-tile-settings">#</a></h4>
 <p>Figure 3 shows the DAC tile settings.</p>
-<figure><img src="/ox-hugo/dac_tile.png"
-         alt="Figure 3: RF Data Converter DAC Tile"/><figcaption>
-            <p><span class="figure-number">Figure 3: </span>RF Data Converter DAC Tile</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/dac_tile.png"
+         alt="Figure 3: RF Data Converter DAC Tile"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 3: <!-- raw HTML omitted -->RF Data Converter DAC Tile</p>
         </figcaption>
 </figure>
 
-<!--list-separator-->
+<!-- raw HTML omitted -->
 <ul>
 <li>
 <p>Data Settings:</p>
@@ -199,7 +327,7 @@ RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are hi
 <p>Required AXI4-Stream clock: 256MHz (will automatically be generated based on the system clock that is chosen for the DAC tile)</p>
 </li>
 </ul>
-<!--list-separator-->
+<!-- raw HTML omitted -->
 <ul>
 <li>
 <p>Mixer Settings:</p>
@@ -209,7 +337,7 @@ RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are hi
 </ul>
 </li>
 </ul>
-<!--list-separator-->
+<!-- raw HTML omitted -->
 <ul>
 <li>
 <p>Analog Settings:</p>
@@ -220,71 +348,76 @@ RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are hi
 <p>Apply the same settings for DAC Pair 0,1 and DAC Pair 2,3.</p>
 </li>
 </ul>
-<h4 id="system-clocking">System Clocking</h4>
+<h4 id="system-clocking">System Clocking<a hidden class="anchor" aria-hidden="true" href="#system-clocking">#</a></h4>
 <p>Figure 4 shows system clocking setting. ADC is sampled at 2.048GSPS, this will dictate AXI4-stream clock. Since samples per AXI4-Stream clock is 8 and decimation mode is 1, divide 2.048GSPS by 8x1 will result in 256MHz. Similarly, DACs analog output data is sampled is 4.096GSPS, samples per AXI4-Stream clock is 8 and interpolation mode is 2, the required AXI4-Stream clock is, 4.096GSPS divided by 8x2, 256MHz.</p>
-<figure><img src="/ox-hugo/system_clocking.png"
-         alt="Figure 4: System Clocking"/><figcaption>
-            <p><span class="figure-number">Figure 4: </span>System Clocking</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/system_clocking.png"
+         alt="Figure 4: System Clocking"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 4: <!-- raw HTML omitted -->System Clocking</p>
         </figcaption>
 </figure>
 
-<h4 id="advanced">ADVANCED</h4>
+<h4 id="advanced">ADVANCED<a hidden class="anchor" aria-hidden="true" href="#advanced">#</a></h4>
 <p>Under advanced tab enable RF analyzer by selecting <strong>Enabled</strong> under drop-down menu.</p>
-<figure><img src="/ox-hugo/rf_analyzer_en.png"
-         alt="Figure 5: Enable RF Analyzer"/><figcaption>
-            <p><span class="figure-number">Figure 5: </span>Enable RF Analyzer</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/rf_analyzer_en.png"
+         alt="Figure 5: Enable RF Analyzer"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 5: <!-- raw HTML omitted -->Enable RF Analyzer</p>
         </figcaption>
 </figure>
 
 <p>Once we create a Vivado project with the above-mentioned IP configuration settings we can right click on the system design and open an example project. Vivado will create an example project for you to test the loop back configuration. Figure 6 shows the ADC to DAC loop back design. Vivado will create the necessary constraint file and simulations sources. Now we can generate the bitstream. Once bitstream is generated, we have everything we need to use RF analyzer.</p>
-<figure><img src="/ox-hugo/design.png"
-         alt="Figure 6: RFSoC ADC to DAC Loop Back Design"/><figcaption>
-            <p><span class="figure-number">Figure 6: </span>RFSoC ADC to DAC Loop Back Design</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/design.png"
+         alt="Figure 6: RFSoC ADC to DAC Loop Back Design"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 6: <!-- raw HTML omitted -->RFSoC ADC to DAC Loop Back Design</p>
         </figcaption>
 </figure>
 
-<h3 id="board-connections">Board Connections</h3>
+<h3 id="board-connections">Board Connections<a hidden class="anchor" aria-hidden="true" href="#board-connections">#</a></h3>
 <p>From Figure 1, we can see that the RF-ADCs and RF-DACs are present to the right side of the board. The pins connections to the board are shown in Figure 7.</p>
-<figure class="center !important"><img src="/ox-hugo/bulls_eye.png"
-         alt="Figure 7: A: Bulls Eye Connector Pad; B: RF-ADC Connector Pinout; C: RF-DAC Connector Pinout" width="500px"/><figcaption>
-            <p><span class="figure-number">Figure 7: </span>A: Bulls Eye Connector Pad;   B: RF-ADC Connector Pinout;    C: RF-DAC Connector Pinout</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/bulls_eye.png"
+         alt="Figure 7: A: Bulls Eye Connector Pad; B: RF-ADC Connector Pinout; C: RF-DAC Connector Pinout" width="500px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 7: <!-- raw HTML omitted -->A: Bulls Eye Connector Pad;   B: RF-ADC Connector Pinout;    C: RF-DAC Connector Pinout</p>
         </figcaption>
 </figure>
 
 <p>Use the given bulls eye cables to connect the RF-ADC and RF-DAC. Bulls eye cable is shown in Figure 8. Connect the flat end of the bullseye cable to the board.</p>
-<figure class="center !important"><img src="/ox-hugo/cable.png"
-         alt="Figure 8: Bulls Eye Cable" width="250px"/><figcaption>
-            <p><span class="figure-number">Figure 8: </span>Bulls Eye Cable</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/cable.png"
+         alt="Figure 8: Bulls Eye Cable" width="250px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 8: <!-- raw HTML omitted -->Bulls Eye Cable</p>
         </figcaption>
 </figure>
 
 <p>Connect the ADC’s <strong>vin_0</strong> pins <strong>p</strong> and <strong>n</strong> to DAC’s <strong>vout_0</strong> pins <strong>p</strong> and <strong>n</strong>.</p>
-<figure class="center !important"><img src="/ox-hugo/conn.png"
-         alt="Figure 9: RF-ADC’s P and N pins connected to RF-DAC’s P and N pins" width="350px"/><figcaption>
-            <p><span class="figure-number">Figure 9: </span>RF-ADC’s P and N pins connected to RF-DAC’s P and N  pins</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/conn.png"
+         alt="Figure 9: RF-ADC’s P and N pins connected to RF-DAC’s P and N pins" width="350px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 9: <!-- raw HTML omitted -->RF-ADC’s P and N pins connected to RF-DAC’s P and N  pins</p>
         </figcaption>
 </figure>
 
 <p>This will establish a loop back connection from RF-ADC to RF-DAC as intended from our design example. Clock pins for RF-ADC is connected to SuperClock-RF2 module callout pin 3 which can be seen in Figure 11, Figure 12 and Table 1. Similarly, RF-DAC’s clock pins are connected to the callout pin 1 which can be referred in Figure 11 and Table 1.</p>
-<figure><img src="/ox-hugo/board_conn.png"
-         alt="Figure 10: Board Connection"/><figcaption>
-            <p><span class="figure-number">Figure 10: </span>Board Connection</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/board_conn.png"
+         alt="Figure 10: Board Connection"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 10: <!-- raw HTML omitted -->Board Connection</p>
         </figcaption>
 </figure>
 
-<h3 id="superclock-rf2-module">SuperClock-RF2 Module</h3>
+<h3 id="superclock-rf2-module">SuperClock-RF2 Module<a hidden class="anchor" aria-hidden="true" href="#superclock-rf2-module">#</a></h3>
 <p>Connect a JTAG cable and UART cable to the board. JTAG connection will to load the bitstream and UART will load the clock files to SuperClock-RF2 module. In other words, RF analyzer communicates with the board using JTAG cable and System Controller connects the board using UART cable.</p>
-<figure class="center !important"><img src="/ox-hugo/clk_module.png"
-         alt="Figure 11: SuperClock-RF2 Module" width="450px"/><figcaption>
-            <p><span class="figure-number">Figure 11: </span>SuperClock-RF2 Module</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/clk_module.png"
+         alt="Figure 11: SuperClock-RF2 Module" width="450px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 11: <!-- raw HTML omitted -->SuperClock-RF2 Module</p>
         </figcaption>
 </figure>
 
 <p>For the example design will be using on board clocks generated from the SuperClock-RF2 module shown in Figure 11. SuperClock-RF2 module connects to the clock module interface and provides a programmable, ultra-low noise and low-jitter wideband RF clock source required for the RF data converters.</p>
-<div class="table-caption">
-  <span class="table-number">Table 1:</span>
-  SuperClock-RF2 Interface Confections
-</div>
+<!-- raw HTML omitted -->
 <table>
 <thead>
 <tr>
@@ -323,35 +456,39 @@ RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are hi
 </tr>
 </tbody>
 </table>
-<h4 id="pll-a">PLL A</h4>
+<h4 id="pll-a">PLL A<a hidden class="anchor" aria-hidden="true" href="#pll-a">#</a></h4>
 <p>PLL A has four differential output SMA pairs which are used as RF sampling clocks for RF-ADCs. Maximum frequency to which it can be programmed is up to 4.0 GHz. For our design will program it to 2.048 GHz.</p>
-<h4 id="pll-b-and-c">PLL B and C</h4>
+<h4 id="pll-b-and-c">PLL B and C<a hidden class="anchor" aria-hidden="true" href="#pll-b-and-c">#</a></h4>
 <p>PLL B and C have two differential output SMA pairs that is used to program the RF-DACs sampling clocks. Maximum programmable frequency is up to 6.4 GHz. For our example design will program it to 4.096 GHz.</p>
-<figure><img src="/ox-hugo/clk_module_conn.png"
-         alt="Figure 12: SuperClock-RF2 Module with connections"/><figcaption>
-            <p><span class="figure-number">Figure 12: </span>SuperClock-RF2 Module with connections</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/clk_module_conn.png"
+         alt="Figure 12: SuperClock-RF2 Module with connections"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 12: <!-- raw HTML omitted -->SuperClock-RF2 Module with connections</p>
         </figcaption>
 </figure>
 
-<h3 id="system-controller">System Controller</h3>
+<h3 id="system-controller">System Controller<a hidden class="anchor" aria-hidden="true" href="#system-controller">#</a></h3>
 <p>Xilinx system controller is an application that runs on Zynq-7000 SoC at power up on the ZCU1275 board (Zynq UltraScale+ RFSoC 1275 Characterization board). This application is used to generate the required clocks to RF-ADCs and RF-DACs by configuring the SuperClock-RF2 module. Upon launching the application, you will be greeted with the board information window shown in the Figure 13.</p>
-<figure class="center !important"><img src="/ox-hugo/sys_cntr.png"
-         alt="Figure 13: System Controller" width="300px"/><figcaption>
-            <p><span class="figure-number">Figure 13: </span>System Controller</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/sys_cntr.png"
+         alt="Figure 13: System Controller" width="300px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 13: <!-- raw HTML omitted -->System Controller</p>
         </figcaption>
 </figure>
 
 <p>After entering the board information and pressing OK, the main window of the system controller opens which is shown in Figure 14. On the left-hand side is the system controller controls and on the right side is a log of the operation. The necessary clock files can be downloaded from the user guide UG1285.</p>
-<figure><img src="/ox-hugo/set_clk.png"
-         alt="Figure 14: CLK-103 Set LMK***** Frequencies"/><figcaption>
-            <p><span class="figure-number">Figure 14: </span>CLK-103 Set LMK***** Frequencies</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/set_clk.png"
+         alt="Figure 14: CLK-103 Set LMK***** Frequencies"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 14: <!-- raw HTML omitted -->CLK-103 Set LMK***** Frequencies</p>
         </figcaption>
 </figure>
 
 <p>Under clocks tab select CLK-103 tab because is the HW that is available on the board as it can be seen in the Figure 11 and Figure 12.</p>
-<figure class="center !important"><img src="/ox-hugo/clk_files.png"
-         alt="Figure 15: CLK-103 Clock Files" width="300px"/><figcaption>
-            <p><span class="figure-number">Figure 15: </span>CLK-103 Clock Files</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/clk_files.png"
+         alt="Figure 15: CLK-103 Clock Files" width="300px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 15: <!-- raw HTML omitted -->CLK-103 Clock Files</p>
         </figcaption>
 </figure>
 
@@ -362,93 +499,235 @@ RF Data Converter IP Each RFSoC offers multiple RF-ADCs and RF-DACs which are hi
 <li>CLK-103 LMX2592 PLL B     : LMX2592b_2048MHz.txt</li>
 </ul>
 <p>Clicking on the set frequency tab will program the SuperClock-RF2 module present on the board with the required RF-sampling clocks. Along with the finished log report the LED indicators present on the SuperClock-RF2 module will light up indicating the process has completed successfully along with the finished message in the log window as shown in Figure 16.</p>
-<figure><img src="/ox-hugo/clk_set.png"
-         alt="Figure 16: CLK-103 Set LMK***** Frequencies Log Report"/><figcaption>
-            <p><span class="figure-number">Figure 16: </span>CLK-103 Set LMK***** Frequencies Log Report</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/clk_set.png"
+         alt="Figure 16: CLK-103 Set LMK***** Frequencies Log Report"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 16: <!-- raw HTML omitted -->CLK-103 Set LMK***** Frequencies Log Report</p>
         </figcaption>
 </figure>
 
-<h3 id="rf-analyzer">RF Analyzer</h3>
+<h3 id="rf-analyzer">RF Analyzer<a hidden class="anchor" aria-hidden="true" href="#rf-analyzer">#</a></h3>
 <p>Now that we have turned on our board and configured the necessary RF-sampling clocks we can start the RF analyzer application shown in Figure 17. On the starting window select the <strong>local server (target is on local machine)</strong> under connection. Under hardware highlight the detected board, in our case it the ZCU1275. Now point to the bitstream path that we generated using the example the design and click on <strong>Download Bitstream</strong>. This will configure the board with the loaded bitstream and activated the RF-ADCs and RF-DACs as intended while configuring the RF Data Converter IP.</p>
-<figure><img src="/ox-hugo/rf_analyzer.png"
-         alt="Figure 17: RF Analyzer"/><figcaption>
-            <p><span class="figure-number">Figure 17: </span>RF Analyzer</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/rf_analyzer.png"
+         alt="Figure 17: RF Analyzer"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 17: <!-- raw HTML omitted -->RF Analyzer</p>
         </figcaption>
 </figure>
 
 <p>Active ADC and DAC tile will be highlighted in green as shown in Figure18.</p>
-<figure><img src="/ox-hugo/act_tiles.png"
-         alt="Figure 18: Active RF-ADC and RF-DAC Tiles"/><figcaption>
-            <p><span class="figure-number">Figure 18: </span>Active RF-ADC and RF-DAC Tiles</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/act_tiles.png"
+         alt="Figure 18: Active RF-ADC and RF-DAC Tiles"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 18: <!-- raw HTML omitted -->Active RF-ADC and RF-DAC Tiles</p>
         </figcaption>
 </figure>
 
 <p>Select the RF-ADC/RF-DAC tile and set up the PLL reference clock. ADC Tile 0 – PLL and DAC Tile 0 – PLL clocking reference is set to 256MHz. This is AXI4-Stream clock that was generated automatically when configuring the RF Data converter IP.</p>
-<figure><img src="/ox-hugo/adc_clk.png"
-         alt="Figure 19: PLL Reference Clock for RF-ADC"/><figcaption>
-            <p><span class="figure-number">Figure 19: </span>PLL Reference Clock for RF-ADC</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/adc_clk.png"
+         alt="Figure 19: PLL Reference Clock for RF-ADC"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 19: <!-- raw HTML omitted -->PLL Reference Clock for RF-ADC</p>
         </figcaption>
 </figure>
 
 <p>The PLL clock reference for RF-ADC and RF-DAC is shown in Figure 19 and 20 respectively.</p>
-<figure><img src="/ox-hugo/dac_clk.png"
-         alt="Figure 20: PLL Reference Clock for RF-DAC"/><figcaption>
-            <p><span class="figure-number">Figure 20: </span>PLL Reference Clock for RF-DAC</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/dac_clk.png"
+         alt="Figure 20: PLL Reference Clock for RF-DAC"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 20: <!-- raw HTML omitted -->PLL Reference Clock for RF-DAC</p>
         </figcaption>
 </figure>
 
 <p>Select DAC tile 0 to generate the analog signal. Figure 21 shows DAC tile configuration which should match the RF Data converter IP. Click on the generation button to start transmitting the analog output signal.</p>
-<figure><img src="/ox-hugo/dac_tile_config.png"
-         alt="Figure 21: RF-DAC Tile Configuration"/><figcaption>
-            <p><span class="figure-number">Figure 21: </span>RF-DAC Tile Configuration</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/dac_tile_config.png"
+         alt="Figure 21: RF-DAC Tile Configuration"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 21: <!-- raw HTML omitted -->RF-DAC Tile Configuration</p>
         </figcaption>
 </figure>
 
 <p>RF analyzer GUI will show the analog and the FFT plot of the generated signal as shown in the Figure 22 and Figure 23 respectively. User can choose a desired frequency to generate by changing the frequency value under the CF (center frequency) dialog box.</p>
-<figure><img src="/ox-hugo/dac_time_dom.png"
-         alt="Figure 22: RF-DAC Tile: Time Domain Analysis"/><figcaption>
-            <p><span class="figure-number">Figure 22: </span>RF-DAC Tile: Time Domain Analysis</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/dac_time_dom.png"
+         alt="Figure 22: RF-DAC Tile: Time Domain Analysis"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 22: <!-- raw HTML omitted -->RF-DAC Tile: Time Domain Analysis</p>
         </figcaption>
 </figure>
 
-<figure><img src="/ox-hugo/dac_freq_dom.png"
-         alt="Figure 23: RF-DAC Tile: Frequency Domain Analysis"/><figcaption>
-            <p><span class="figure-number">Figure 23: </span>RF-DAC Tile: Frequency Domain Analysis</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/dac_freq_dom.png"
+         alt="Figure 23: RF-DAC Tile: Frequency Domain Analysis"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 23: <!-- raw HTML omitted -->RF-DAC Tile: Frequency Domain Analysis</p>
         </figcaption>
 </figure>
 
 <p>Once the analog is generated using the RF analyzer move back to the ADC tile tab and select the ADC 0. With configuration shown in the Figure 24 click on the acquisition button to capture the signal that is being generated from the RF-DAC.</p>
-<figure><img src="/ox-hugo/adc_tile_config.png"
-         alt="Figure 24: RF-ADC Tile Configuration"/><figcaption>
-            <p><span class="figure-number">Figure 24: </span>RF-ADC Tile Configuration</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/adc_tile_config.png"
+         alt="Figure 24: RF-ADC Tile Configuration"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 24: <!-- raw HTML omitted -->RF-ADC Tile Configuration</p>
         </figcaption>
 </figure>
 
 <p>These tiles (ADC and DAC) should match the setting used in the RF data converter IP. RF analyzer will open another tab with the acquired signal as seen in Figure 25. Users can view the signal in both time domain and in frequency domain of the captured signal with a click of a button. Figure 25 and Figure 26 shows the captured signal by the RF-ADC tile in time domain and frequency domain respectively.</p>
-<figure><img src="/ox-hugo/adc_time_dom.png"
-         alt="Figure 25: RF-ADC Tile: Time Domain Analysis"/><figcaption>
-            <p><span class="figure-number">Figure 25: </span>RF-ADC Tile: Time Domain Analysis</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/adc_time_dom.png"
+         alt="Figure 25: RF-ADC Tile: Time Domain Analysis"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 25: <!-- raw HTML omitted -->RF-ADC Tile: Time Domain Analysis</p>
         </figcaption>
 </figure>
 
-<figure><img src="/ox-hugo/adc_freq_dom.png"
-         alt="Figure 26: RF-ADC Tile: Frequency Domain Analysis"/><figcaption>
-            <p><span class="figure-number">Figure 26: </span>RF-ADC Tile: Frequency Domain Analysis</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/adc_freq_dom.png"
+         alt="Figure 26: RF-ADC Tile: Frequency Domain Analysis"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 26: <!-- raw HTML omitted -->RF-ADC Tile: Frequency Domain Analysis</p>
         </figcaption>
 </figure>
 
 <p>RF analyzer tool is an extremely useful tool in debugging the design. It also provides additional information such as harmonics, dynamic range, noise band, etc. The tool can also write the captured data to an excel sheet or to a text file for external use.</p>
 
-      
-      <div class="post-date">
-        <span class="g time">August 7, 2024 </span> &#8729;
-         
-         <a href="https://24x7fpga.com/tags/rfsoc/">rfsoc</a>
-      </div>
-      
-    </section>
-    
+
   </div>
-</main>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://24x7fpga.com/tags/rfsoc/">rfsoc</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
 </body>
+
 </html>

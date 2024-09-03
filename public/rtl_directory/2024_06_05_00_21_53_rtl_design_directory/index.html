@@ -1,147 +1,270 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Liste - https://24x7fpga.com/">
-    <title>RTL Design Directory | &gt; home</title>
-    <meta name="description" content="A minimal hugo theme focus on content">
-    <meta property="og:title" content="RTL Design Directory" />
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>RTL Design Directory | Home</title>
+<meta name="keywords" content="toc">
+<meta name="description" content="Welcome to my comprehensive collection of RTL(Register Transfer Level) designs. It is an evolving collection highlighting my projects, skills, and achievements in digital circuit design and verification. I specialize in developing efficient, high-performance hardware architectures using industry-standard languages like SystemVerilog and Verilog. Explore my blog for insightful articles on the latest trends and best practices in RTL design, and visit the tutorials section for step-by-step guides to mastering this critical aspect of hardware engineering.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.526ee71d2bda4e817faf8e1337ba879150fa995e4bf978a970ab1988033bc2c6.css" integrity="sha256-Um7nHSvaToF/r44TN7qHkVD6mV5L&#43;XipcKsZiAM7wsY=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+<meta property="og:title" content="RTL Design Directory" />
 <meta property="og:description" content="Welcome to my comprehensive collection of RTL(Register Transfer Level) designs. It is an evolving collection highlighting my projects, skills, and achievements in digital circuit design and verification. I specialize in developing efficient, high-performance hardware architectures using industry-standard languages like SystemVerilog and Verilog. Explore my blog for insightful articles on the latest trends and best practices in RTL design, and visit the tutorials section for step-by-step guides to mastering this critical aspect of hardware engineering." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/" /><meta property="article:section" content="rtl_directory" />
 <meta property="article:published_time" content="2024-06-05T00:21:00-04:00" />
 <meta property="article:modified_time" content="2024-06-05T00:21:00-04:00" />
 
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="RTL Design Directory"/>
+<meta name="twitter:description" content="Welcome to my comprehensive collection of RTL(Register Transfer Level) designs. It is an evolving collection highlighting my projects, skills, and achievements in digital circuit design and verification. I specialize in developing efficient, high-performance hardware architectures using industry-standard languages like SystemVerilog and Verilog. Explore my blog for insightful articles on the latest trends and best practices in RTL design, and visit the tutorials section for step-by-step guides to mastering this critical aspect of hardware engineering."/>
 
-    <meta itemprop="name" content="RTL Design Directory">
-<meta itemprop="description" content="Welcome to my comprehensive collection of RTL(Register Transfer Level) designs. It is an evolving collection highlighting my projects, skills, and achievements in digital circuit design and verification. I specialize in developing efficient, high-performance hardware architectures using industry-standard languages like SystemVerilog and Verilog. Explore my blog for insightful articles on the latest trends and best practices in RTL design, and visit the tutorials section for step-by-step guides to mastering this critical aspect of hardware engineering."><meta itemprop="datePublished" content="2024-06-05T00:21:00-04:00" />
-<meta itemprop="dateModified" content="2024-06-05T00:21:00-04:00" />
-<meta itemprop="wordCount" content="281">
-<meta itemprop="keywords" content="toc," />
-    
-    <link rel="canonical" href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">
-    <link rel="icon" href="https://24x7fpga.com//assets/favicon.ico">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com">
-    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
-    <link rel="alternate" type="application/atom+xml" title="&gt; home" href="https://24x7fpga.com//atom.xml" />
-    <link rel="alternate" type="application/json" title="&gt; home" href="https://24x7fpga.com//feed.json" />
-    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
-    
-    
-    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#f5f5f5;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto;display:block;margin-left:auto;margin-right:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1.4s infinite;opacity:1;color:#96e9ae}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:250px;width:250px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background-color:#e9e9e9;border-radius:3px}code{border:none}.highlight pre{background-color:#e9e9e9!important;border-radius:5px} </style>
-  
-    
-  
-  
-  <script type="application/ld+json">
-  {
-      "@context": "http://schema.org",
-      "@type": "BlogPosting",
-      "articleSection": "rtl_directory",
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Rtl_directories",
+      "item": "https://24x7fpga.com/rtl_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
       "name": "RTL Design Directory",
-      "headline": "RTL Design Directory",
-      "alternativeHeadline": "",
-      "description": "Welcome to my comprehensive collection of RTL(Register Transfer Level) designs. It is an evolving collection highlighting my projects, skills, and achievements in digital circuit design and verification. I specialize in developing efficient, high-performance hardware architectures using industry-standard languages like SystemVerilog and Verilog. Explore my blog for insightful articles on the latest trends and best practices in RTL design, and visit the tutorials section for step-by-step guides to mastering this critical aspect of hardware engineering.",
-      "inLanguage": "en-us",
-      "isFamilyFriendly": "true",
-      "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https:\/\/24x7fpga.com\/rtl_directory\/2024_06_05_00_21_53_rtl_design_directory\/"
-      },
-      "author" : {
-          "@type": "Person",
-          "name": "[Kiran]"
-      },
-      "creator" : {
-          "@type": "Person",
-          "name": "[Kiran]"
-      },
-      "accountablePerson" : {
-          "@type": "Person",
-          "name": "[Kiran]"
-      },
-      "copyrightHolder" : "\u003e home",
-      "copyrightYear" : "2024",
-      "dateCreated": "2024-06-05T00:21:00.00Z",
-      "datePublished": "2024-06-05T00:21:00.00Z",
-      "dateModified": "2024-06-05T00:21:00.00Z",
-      "publisher":{
-          "@type":"Organization",
-          "name": "\u003e home",
-          "url": "https://24x7fpga.com/",
-          "logo": {
-              "@type": "ImageObject",
-              "url": "https:\/\/24x7fpga.com\/assets\/favicon.ico",
-              "width":"32",
-              "height":"32"
-          }
-      },
-      "image": "https://24x7fpga.com/assets/favicon.ico",
-      "url" : "https:\/\/24x7fpga.com\/rtl_directory\/2024_06_05_00_21_53_rtl_design_directory\/",
-      "wordCount" : "281",
-      "genre" : [ "toc" ],
-      "keywords" : [ "toc" ]
+      "item": "https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "RTL Design Directory",
+  "name": "RTL Design Directory",
+  "description": "Welcome to my comprehensive collection of RTL(Register Transfer Level) designs. It is an evolving collection highlighting my projects, skills, and achievements in digital circuit design and verification. I specialize in developing efficient, high-performance hardware architectures using industry-standard languages like SystemVerilog and Verilog. Explore my blog for insightful articles on the latest trends and best practices in RTL design, and visit the tutorials section for step-by-step guides to mastering this critical aspect of hardware engineering.",
+  "keywords": [
+    "toc"
+  ],
+  "articleBody": "Welcome to my comprehensive collection of RTL(Register Transfer Level) designs. It is an evolving collection highlighting my projects, skills, and achievements in digital circuit design and verification. I specialize in developing efficient, high-performance hardware architectures using industry-standard languages like SystemVerilog and Verilog. Explore my blog for insightful articles on the latest trends and best practices in RTL design, and visit the tutorials section for step-by-step guides to mastering this critical aspect of hardware engineering. Connect with me to collaborate on innovative solutions and advance your knowledge in RTL design.\nMy Work Flow Operating System and Text Editor Folder Structure Design Scripts Design Tools Icarus verilog GTKWave Vivado Installation Hardware Digilent Zybo-Z7-20 Digilent Zedboard Zynq UltraScale+ RFSoC ZCU1275 Miscellaneous Important Concepts Throughput and Latency Synchronous and Asynchronous Reset Casex and Casez Full Case and Parallel Case Assign and If-Else Statement Blocking and Non-Blocking Assignment Always@(*) and Always_Comb Mealy Machine and Moore Machine Generic RTL Blocks Half Adder Full Adder Multiplexer De-Multiplexer Encoder Decoder Comparator Adder-Subtractor Register Shift Register Universal Shift Register Up/Down Counter Code Converter Mod-N Counter Ring Counter Edge Detector Frequency Divider Read Only Memory FIFO Design Synchronous FIFO Asynchronous FIFO Static Timing Analysis Clock Domain Crossing Theory Pulse Stretcher MUX Synchronization Two-Flop Synchronization Communication Protocols UART SPI I2C VGA I2S HDMI AXI-Stream AXI4-Lite AXI-Interconnect 8b/10b Encoding Pipeline Global stall Half-buffer Skid buffer 2-depth Fifo Pipeline Fifo Elastic Buffer FPGA Projects Floating point unit AXI BUS interface DMA controller Error Correction Code DSP core for audio processing Phase-Locked Loop H.264 Video Encoder Convolution Neural Network Hardware Random Number generator Network-on-chip DDR Memory Controller Computer Architecture Single Cycle MIPS Design Multi Cycle MIPS design RISC-V Core FPGA as Accelerator 8-pt FFT Accelerator ",
+  "wordCount" : "281",
+  "inLanguage": "en",
+  "datePublished": "2024-06-05T00:21:00-04:00",
+  "dateModified": "2024-06-05T00:21:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
   }
-  </script>
-  
-  
-  </head>
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
 
-<body>
-  <a class="skip-link" href="#main">Skip to main</a>
-  <main id="main">
-  <div class="content">
-    <header>
-<p style="padding: 0;margin: 0;">
-  <a href="/">
-    <b>&gt; home</b>
-    <span class="text-stone-500 animate-blink">▮</span>
-  </a>
-</p>
-<ul style="padding: 0;margin: 0;">
-  
-  
-  <li class="">
-    <a href="rtl_directory/2024_06_05_00_21_53_rtl_design_directory"><span>rtl</span></a>    
-    
-  <li class="">
-    <a href="sv_directory/2024_06_27_16_53_00_sv_verification_directory"><span>sv</span></a>    
-    
-  <li class="">
-    <a href="uvm_directory/2024_08_28_12_39_50_uvm_framework_directory"><span>uvm</span></a>    
-    
-  </li>
-</ul>
+</head>
 
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span class="active"> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
-<hr class="hr-list" style="padding: 0;margin: 0;">
 
+<main class="main">
 
-    <section>
-      <h2 class="post">RTL Design Directory</h2>
-      <p>Welcome to my comprehensive collection of <a href="https://en.wikipedia.org/wiki/Register-transfer_level">RTL(Register Transfer Level)</a> designs. It is an evolving collection highlighting my projects, skills, and achievements in digital circuit design and verification. I specialize in developing efficient, high-performance hardware architectures using industry-standard languages like <a href="https://ieeexplore.ieee.org/document/10458102">SystemVerilog</a> and <a href="https://accellera.org/images/downloads/standards/v-ams/VAMS-LRM-2023.pdf">Verilog</a>. Explore my blog for insightful articles on the latest trends and best practices in RTL design, and visit the tutorials section for step-by-step guides to mastering this critical aspect of hardware engineering. Connect with me to collaborate on innovative solutions and advance your knowledge in RTL design.</p>
-<h2 id="my-work-flow">My Work Flow</h2>
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      RTL Design Directory
+    </h1>
+    <div class="post-meta"><span title='2024-06-05 00:21:00 -0400 EDT'>June 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;281 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p>Welcome to my comprehensive collection of <a href="https://en.wikipedia.org/wiki/Register-transfer_level">RTL(Register Transfer Level)</a> designs. It is an evolving collection highlighting my projects, skills, and achievements in digital circuit design and verification. I specialize in developing efficient, high-performance hardware architectures using industry-standard languages like <a href="https://ieeexplore.ieee.org/document/10458102">SystemVerilog</a> and <a href="https://accellera.org/images/downloads/standards/v-ams/VAMS-LRM-2023.pdf">Verilog</a>. Explore my blog for insightful articles on the latest trends and best practices in RTL design, and visit the tutorials section for step-by-step guides to mastering this critical aspect of hardware engineering. Connect with me to collaborate on innovative solutions and advance your knowledge in RTL design.</p>
+<h2 id="my-work-flow">My Work Flow<a hidden class="anchor" aria-hidden="true" href="#my-work-flow">#</a></h2>
 <ul>
 <li>Operating System and Text Editor</li>
 <li>Folder Structure</li>
 <li>Design Scripts</li>
 </ul>
-<h2 id="design-tools">Design Tools</h2>
+<h2 id="design-tools">Design Tools<a hidden class="anchor" aria-hidden="true" href="#design-tools">#</a></h2>
 <ul>
 <li><a href="https://steveicarus.github.io/iverilog/index.html">Icarus verilog</a></li>
 <li><a href="https://gtkwave.sourceforge.net/">GTKWave</a></li>
 <li><a href="/rtl_directory/2024_07_28_10_50_56_vivado_installation/">Vivado Installation</a></li>
 </ul>
-<h2 id="hardware">Hardware</h2>
+<h2 id="hardware">Hardware<a hidden class="anchor" aria-hidden="true" href="#hardware">#</a></h2>
 <ul>
 <li><a href="https://digilent.com/reference/programmable-logic/zybo-z7/start">Digilent Zybo-Z7-20</a></li>
 <li><a href="https://digilent.com/reference/programmable-logic/zedboard/start">Digilent Zedboard</a></li>
 <li><a href="https://www.xilinx.com/products/boards-and-kits/zcu1275.html">Zynq UltraScale+ RFSoC ZCU1275</a></li>
 <li>Miscellaneous</li>
 </ul>
-<h2 id="important-concepts">Important Concepts</h2>
+<h2 id="important-concepts">Important Concepts<a hidden class="anchor" aria-hidden="true" href="#important-concepts">#</a></h2>
 <ul>
 <li><a href="/rtl_directory/2024_07_23_21_33_58_throughput_and_latency/">Throughput and Latency</a></li>
 <li><a href="/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/">Synchronous and Asynchronous Reset</a></li>
@@ -152,7 +275,7 @@
 <li>Always@(*) and Always_Comb</li>
 <li>Mealy Machine and Moore Machine</li>
 </ul>
-<h2 id="generic-rtl-blocks">Generic RTL Blocks</h2>
+<h2 id="generic-rtl-blocks">Generic RTL Blocks<a hidden class="anchor" aria-hidden="true" href="#generic-rtl-blocks">#</a></h2>
 <ul>
 <li><a href="/rtl_directory/2024_06_05_22_56_41_half_adder/">Half Adder</a></li>
 <li><a href="/rtl_directory/2024_06_08_11_32_42_full_adder/">Full Adder</a></li>
@@ -173,20 +296,20 @@
 <li><a href="/rtl_directory/2024_07_22_15_24_11_frequency_divider/">Frequency Divider</a></li>
 <li><a href="/rtl_directory/2024_07_23_13_11_22_read_only_memory/">Read Only Memory</a></li>
 </ul>
-<h2 id="fifo-design">FIFO Design</h2>
+<h2 id="fifo-design">FIFO Design<a hidden class="anchor" aria-hidden="true" href="#fifo-design">#</a></h2>
 <ul>
 <li><a href="/rtl_directory/2024_08_22_14_57_15_synchronous_fifo/">Synchronous FIFO</a></li>
 <li>Asynchronous FIFO</li>
 </ul>
-<h2 id="static-timing-analysis">Static Timing Analysis</h2>
-<h2 id="clock-domain-crossing">Clock Domain Crossing</h2>
+<h2 id="static-timing-analysis">Static Timing Analysis<a hidden class="anchor" aria-hidden="true" href="#static-timing-analysis">#</a></h2>
+<h2 id="clock-domain-crossing">Clock Domain Crossing<a hidden class="anchor" aria-hidden="true" href="#clock-domain-crossing">#</a></h2>
 <ul>
 <li>Theory</li>
 <li>Pulse Stretcher</li>
 <li>MUX Synchronization</li>
 <li>Two-Flop Synchronization</li>
 </ul>
-<h2 id="communication-protocols">Communication Protocols</h2>
+<h2 id="communication-protocols">Communication Protocols<a hidden class="anchor" aria-hidden="true" href="#communication-protocols">#</a></h2>
 <ul>
 <li>UART</li>
 <li>SPI</li>
@@ -199,7 +322,7 @@
 <li>AXI-Interconnect</li>
 <li>8b/10b Encoding</li>
 </ul>
-<h2 id="pipeline">Pipeline</h2>
+<h2 id="pipeline">Pipeline<a hidden class="anchor" aria-hidden="true" href="#pipeline">#</a></h2>
 <ul>
 <li>Global stall</li>
 <li>Half-buffer</li>
@@ -208,7 +331,7 @@
 <li>Pipeline Fifo</li>
 <li>Elastic Buffer</li>
 </ul>
-<h2 id="fpga-projects">FPGA Projects</h2>
+<h2 id="fpga-projects">FPGA Projects<a hidden class="anchor" aria-hidden="true" href="#fpga-projects">#</a></h2>
 <ul>
 <li>Floating point unit</li>
 <li>AXI BUS interface</li>
@@ -222,27 +345,158 @@
 <li>Network-on-chip</li>
 <li>DDR Memory Controller</li>
 </ul>
-<h2 id="computer-architecture">Computer Architecture</h2>
+<h2 id="computer-architecture">Computer Architecture<a hidden class="anchor" aria-hidden="true" href="#computer-architecture">#</a></h2>
 <ul>
 <li><a href="https://github.com/24x7fpga/MIPsSingleCycle">Single Cycle MIPS Design</a></li>
 <li>Multi Cycle MIPS design</li>
 <li>RISC-V Core</li>
 </ul>
-<h2 id="fpga-as-accelerator">FPGA as Accelerator</h2>
+<h2 id="fpga-as-accelerator">FPGA as Accelerator<a hidden class="anchor" aria-hidden="true" href="#fpga-as-accelerator">#</a></h2>
 <ul>
 <li>8-pt FFT Accelerator</li>
 </ul>
 
-      
-      <div class="post-date">
-        <span class="g time">June 5, 2024 </span> &#8729;
-         
-         <a href="https://24x7fpga.com/tags/toc/">toc</a>
-      </div>
-      
-    </section>
-    
+
   </div>
-</main>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://24x7fpga.com/tags/toc/">toc</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
 </body>
+
 </html>

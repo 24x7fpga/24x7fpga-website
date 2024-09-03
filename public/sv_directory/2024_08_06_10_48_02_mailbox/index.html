@@ -1,13 +1,42 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Liste - https://24x7fpga.com/">
-    <title>Mailbox | &gt; home</title>
-    <meta name="description" content="A minimal hugo theme focus on content">
-    <meta property="og:title" content="Mailbox" />
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Mailbox | Home</title>
+<meta name="keywords" content="sv">
+<meta name="description" content="SV Verification Directory
+Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:
+Events Mailbox Semaphore Mailbox A mailbox serves as a synchronization primitive utilized for exchanging data between processes within a testbench. This data, referred to as a message, is managed through the mailbox primitive. A process intending to send data places (puts) the message into the mailbox, where it is temporarily stored in system-defined memory.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.526ee71d2bda4e817faf8e1337ba879150fa995e4bf978a970ab1988033bc2c6.css" integrity="sha256-Um7nHSvaToF/r44TN7qHkVD6mV5L&#43;XipcKsZiAM7wsY=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+<meta property="og:title" content="Mailbox" />
 <meta property="og:description" content="SV Verification Directory
 Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:
 Events Mailbox Semaphore Mailbox A mailbox serves as a synchronization primitive utilized for exchanging data between processes within a testbench. This data, referred to as a message, is managed through the mailbox primitive. A process intending to send data places (puts) the message into the mailbox, where it is temporarily stored in system-defined memory." />
@@ -16,148 +45,244 @@ Events Mailbox Semaphore Mailbox A mailbox serves as a synchronization primitive
 <meta property="article:published_time" content="2024-08-06T10:48:00-04:00" />
 <meta property="article:modified_time" content="2024-08-06T10:48:00-04:00" />
 
-
-    <meta itemprop="name" content="Mailbox">
-<meta itemprop="description" content="SV Verification Directory
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mailbox"/>
+<meta name="twitter:description" content="SV Verification Directory
 Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:
-Events Mailbox Semaphore Mailbox A mailbox serves as a synchronization primitive utilized for exchanging data between processes within a testbench. This data, referred to as a message, is managed through the mailbox primitive. A process intending to send data places (puts) the message into the mailbox, where it is temporarily stored in system-defined memory."><meta itemprop="datePublished" content="2024-08-06T10:48:00-04:00" />
-<meta itemprop="dateModified" content="2024-08-06T10:48:00-04:00" />
-<meta itemprop="wordCount" content="578">
-<meta itemprop="keywords" content="sv," />
-    
-    <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/">
-    <link rel="icon" href="https://24x7fpga.com//assets/favicon.ico">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com">
-    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
-    <link rel="alternate" type="application/atom+xml" title="&gt; home" href="https://24x7fpga.com//atom.xml" />
-    <link rel="alternate" type="application/json" title="&gt; home" href="https://24x7fpga.com//feed.json" />
-    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
-    
-    
-    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#f5f5f5;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto;display:block;margin-left:auto;margin-right:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1.4s infinite;opacity:1;color:#96e9ae}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:250px;width:250px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background-color:#e9e9e9;border-radius:3px}code{border:none}.highlight pre{background-color:#e9e9e9!important;border-radius:5px} </style>
-  
-    
-  
-  
-  <script type="application/ld+json">
-  {
-      "@context": "http://schema.org",
-      "@type": "BlogPosting",
-      "articleSection": "sv_directory",
+Events Mailbox Semaphore Mailbox A mailbox serves as a synchronization primitive utilized for exchanging data between processes within a testbench. This data, referred to as a message, is managed through the mailbox primitive. A process intending to send data places (puts) the message into the mailbox, where it is temporarily stored in system-defined memory."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Sv_directories",
+      "item": "https://24x7fpga.com/sv_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
       "name": "Mailbox",
-      "headline": "Mailbox",
-      "alternativeHeadline": "",
-      "description": "SV Verification Directory\nInterprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:\nEvents Mailbox Semaphore Mailbox A mailbox serves as a synchronization primitive utilized for exchanging data between processes within a testbench. This data, referred to as a message, is managed through the mailbox primitive. A process intending to send data places (puts) the message into the mailbox, where it is temporarily stored in system-defined memory.",
-      "inLanguage": "en-us",
-      "isFamilyFriendly": "true",
-      "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https:\/\/24x7fpga.com\/sv_directory\/2024_08_06_10_48_02_mailbox\/"
-      },
-      "author" : {
-          "@type": "Person",
-          "name": "[Kiran]"
-      },
-      "creator" : {
-          "@type": "Person",
-          "name": "[Kiran]"
-      },
-      "accountablePerson" : {
-          "@type": "Person",
-          "name": "[Kiran]"
-      },
-      "copyrightHolder" : "\u003e home",
-      "copyrightYear" : "2024",
-      "dateCreated": "2024-08-06T10:48:00.00Z",
-      "datePublished": "2024-08-06T10:48:00.00Z",
-      "dateModified": "2024-08-06T10:48:00.00Z",
-      "publisher":{
-          "@type":"Organization",
-          "name": "\u003e home",
-          "url": "https://24x7fpga.com/",
-          "logo": {
-              "@type": "ImageObject",
-              "url": "https:\/\/24x7fpga.com\/assets\/favicon.ico",
-              "width":"32",
-              "height":"32"
-          }
-      },
-      "image": "https://24x7fpga.com/assets/favicon.ico",
-      "url" : "https:\/\/24x7fpga.com\/sv_directory\/2024_08_06_10_48_02_mailbox\/",
-      "wordCount" : "578",
-      "genre" : [ "sv" ],
-      "keywords" : [ "sv" ]
+      "item": "https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Mailbox",
+  "name": "Mailbox",
+  "description": "SV Verification Directory\nInterprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:\nEvents Mailbox Semaphore Mailbox A mailbox serves as a synchronization primitive utilized for exchanging data between processes within a testbench. This data, referred to as a message, is managed through the mailbox primitive. A process intending to send data places (puts) the message into the mailbox, where it is temporarily stored in system-defined memory.",
+  "keywords": [
+    "sv"
+  ],
+  "articleBody": "SV Verification Directory\nInterprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:\nEvents Mailbox Semaphore Mailbox A mailbox serves as a synchronization primitive utilized for exchanging data between processes within a testbench. This data, referred to as a message, is managed through the mailbox primitive. A process intending to send data places (puts) the message into the mailbox, where it is temporarily stored in system-defined memory. The receiving process then retrieves (gets) the message from the mailbox. This mechanism facilitates efficient and orderly communication between concurrent processes in a verification environment.\nA mailbox can be categorized based on its sizes as follows:\nBounded Mailbox: is where the size of the mailbox is defined. This means it can hold a limited number of messages at any given time. Bounded mailboxes are useful for controlling the flow of data between processes, ensuring that one process does not overwhelm another with too many messages. Unbounded Mailbox: a mailbox that does not have a fixed size limit, allowing an unlimited number of messages to be stored. Unbounded mailboxes are particularly useful when the exact number of messages to be exchanged is not known in advance or when you want to avoid potential blocking issues due to mailbox overflow. Generic Mailbox A generic mailbox is designed to hold any type of data. This is typically achieved using the class keyword in SystemVerilog, where the mailbox can store objects of any class type.\nSyntax\nmailbox \u003cmailbox name\u003e Parameterized Mailbox A parameterized mailbox is a more flexible and type-safe way to handle different types of data. It uses SystemVerilog’s parameterization features to specify the type of data the mailbox will handle at the time of its creation.\nSyntax\nmailbox #(\u003ctype\u003e) \u003cmailbox name\u003e Mailbox Methods Here is a list of some basic operations:\nMethod Description new(); creates a mailbox put(); send the message in the mailbox try_put(); attempts to send the message without blocking if the mailbox is full get(); retrieve the message from the mailbox try_get(); attempts to retrieve the message from the mailbox without blocking if the mailbox is empty peek(); this method allows you to look at the message at the front of the mailbox without removing it. Example Code class packet; rand bit [3:0] a; rand bit [3:0] b; bit [4:0] s; function void rand_cal(); $display(\"--------------------- Packet Generation ---------------------\"); $display(\"a = %0d, b = %0d, s = %0d\", a, b, s); endfunction endclass // transmitter class class trans; packet pkt; mailbox t2r; function new(mailbox mbx); // constructor t2r = mbx; endfunction task run(); pkt = new(); pkt.randomize(); // randomize packet pkt.rand_cal(); // display packet pkt.s = pkt.a + pkt.b; // perform some fucntion t2r.put(pkt); // put the packet in the mailbox $display(\"-------------- Transmitter: Packet in Mailbox ---------------\"); $display(\"a = %0d, b = %0d =\u003e s = %0d\", pkt.a, pkt.b, pkt.s); endtask endclass //receiver class class rcvr; packet pkt; mailbox r2t; function new(mailbox mbx); r2t = mbx; endfunction task run(); r2t.get(pkt); // get the packet from the mailbox $display(\"--------------- Receiver: Packet From Mailbox ---------------\"); $display(\"a = %0d, b = %0d =\u003e s = %0d\", pkt.a, pkt.b, pkt.s); endtask; endclass module test; trans trans_cl; // class handle rcvr rcvr_cl; mailbox mbx; initial begin mbx = new(); // object creation; UNBOUNDED mailbox trans_cl = new(mbx); // transmitter object creation ang passing mailbox handle rcvr_cl = new(mbx); // receiver object creation ang passing mailbox handle $display(\"-------------------------------------------------------------\"); $display(\"-------------------------- Mailbox --------------------------\"); $display(\"-------------------------------------------------------------\"); repeat(10) begin trans_cl.run(); rcvr_cl.run(); $display(\"\\n\"); end end endmodule ",
+  "wordCount" : "578",
+  "inLanguage": "en",
+  "datePublished": "2024-08-06T10:48:00-04:00",
+  "dateModified": "2024-08-06T10:48:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
   }
-  </script>
-  
-  
-  </head>
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
 
-<body>
-  <a class="skip-link" href="#main">Skip to main</a>
-  <main id="main">
-  <div class="content">
-    <header>
-<p style="padding: 0;margin: 0;">
-  <a href="/">
-    <b>&gt; home</b>
-    <span class="text-stone-500 animate-blink">▮</span>
-  </a>
-</p>
-<ul style="padding: 0;margin: 0;">
-  
-  
-  <li class="">
-    <a href="rtl_directory/2024_06_05_00_21_53_rtl_design_directory"><span>rtl</span></a>    
-    
-  <li class="">
-    <a href="sv_directory/2024_06_27_16_53_00_sv_verification_directory"><span>sv</span></a>    
-    
-  <li class="">
-    <a href="uvm_directory/2024_08_28_12_39_50_uvm_framework_directory"><span>uvm</span></a>    
-    
-  </li>
-</ul>
+</head>
 
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
-<hr class="hr-list" style="padding: 0;margin: 0;">
 
+<main class="main">
 
-    <section>
-      <h2 class="post">Mailbox</h2>
-      <p><a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Mailbox
+    </h1>
+    <div class="post-meta"><span title='2024-08-06 10:48:00 -0400 EDT'>August 6, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;578 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
 <p>Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:</p>
 <ol>
 <li><a href="/sv_directory/2024_07_31_17_20_12_events/">Events</a></li>
 <li><a href="/sv_directory/2024_08_06_10_48_02_mailbox/">Mailbox</a></li>
 <li><a href="/sv_directory/2024_08_06_12_53_53_semaphore/">Semaphore</a></li>
 </ol>
-<h2 id="mailbox">Mailbox</h2>
+<h2 id="mailbox">Mailbox<a hidden class="anchor" aria-hidden="true" href="#mailbox">#</a></h2>
 <p>A mailbox serves as a synchronization primitive utilized for exchanging data between processes within a testbench. This data, referred to as a message, is managed through the mailbox primitive. A process intending to send data places (<strong>puts</strong>) the message into the mailbox, where it is temporarily stored in system-defined memory. The receiving process then retrieves (<strong>gets</strong>) the message from the mailbox. This mechanism facilitates efficient and orderly communication between concurrent processes in a verification environment.</p>
 <p>A mailbox can be categorized based on its sizes as follows:</p>
 <ol>
 <li>Bounded Mailbox: is where the size of the mailbox is defined. This means it can hold a limited number of messages at any given time. Bounded mailboxes are useful for controlling the flow of data between processes, ensuring that one process does not overwhelm another with too many messages.</li>
 <li>Unbounded Mailbox: a mailbox that does not have a fixed size limit, allowing an unlimited number of messages to be stored. Unbounded mailboxes are particularly useful when the exact number of messages to be exchanged is not known in advance or when you want to avoid potential blocking issues due to mailbox overflow.</li>
 </ol>
-<h4 id="generic-mailbox">Generic Mailbox</h4>
+<h4 id="generic-mailbox">Generic Mailbox<a hidden class="anchor" aria-hidden="true" href="#generic-mailbox">#</a></h4>
 <p>A generic mailbox is designed to hold any type of data. This is typically achieved using the class keyword in SystemVerilog, where the mailbox can store objects of any class type.</p>
-<!--list-separator-->
+<!-- raw HTML omitted -->
 <ul>
 <li>
 <p>Syntax</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#111">mailbox</span> <span style="color:#f92672">&lt;</span><span style="color:#111">mailbox</span> <span style="color:#111">name</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span>mailbox <span style="color:#f92672">&lt;</span>mailbox name<span style="color:#f92672">&gt;</span>
 </span></span></code></pre></div></li>
 </ul>
-<h4 id="parameterized-mailbox">Parameterized Mailbox</h4>
+<h4 id="parameterized-mailbox">Parameterized Mailbox<a hidden class="anchor" aria-hidden="true" href="#parameterized-mailbox">#</a></h4>
 <p>A parameterized mailbox is a more flexible and type-safe way to handle different types of data. It uses SystemVerilog&rsquo;s parameterization features to specify the type of data the mailbox will handle at the time of its creation.</p>
-<!--list-separator-->
+<!-- raw HTML omitted -->
 <ul>
 <li>
 <p>Syntax</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#111">mailbox</span> <span style="color:#111">#(</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">type</span><span style="color:#f92672">&gt;</span><span style="color:#111">)</span> <span style="color:#f92672">&lt;</span><span style="color:#111">mailbox</span> <span style="color:#111">name</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span>mailbox #(<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">type</span><span style="color:#f92672">&gt;</span>) <span style="color:#f92672">&lt;</span>mailbox name<span style="color:#f92672">&gt;</span>
 </span></span></code></pre></div></li>
 </ul>
-<h3 id="mailbox-methods">Mailbox Methods</h3>
+<h3 id="mailbox-methods">Mailbox Methods<a hidden class="anchor" aria-hidden="true" href="#mailbox-methods">#</a></h3>
 <p>Here is a list of some basic operations:</p>
 <table>
 <thead>
@@ -193,94 +318,225 @@ Events Mailbox Semaphore Mailbox A mailbox serves as a synchronization primitive
 </tr>
 </tbody>
 </table>
-<h3 id="example-code">Example Code</h3>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#111">class</span> <span style="color:#111">packet</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#111">rand</span> <span style="color:#00a8c8">bit</span> <span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span> <span style="color:#111">a</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#111">rand</span> <span style="color:#00a8c8">bit</span> <span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span> <span style="color:#111">b</span><span style="color:#111">;</span>
+<h3 id="example-code">Example Code<a hidden class="anchor" aria-hidden="true" href="#example-code">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span>class packet;
+</span></span><span style="display:flex;"><span>  rand <span style="color:#66d9ef">bit</span> [<span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] a;
+</span></span><span style="display:flex;"><span>  rand <span style="color:#66d9ef">bit</span> [<span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] b;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">bit</span> <span style="color:#111">[</span><span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span> <span style="color:#111">s</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">bit</span> [<span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] s;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">function</span> <span style="color:#00a8c8">void</span> <span style="color:#111">rand_cal</span><span style="color:#111">();</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;--------------------- Packet Generation ---------------------&#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;a = %0d, b = %0d, s = %0d&#34;</span><span style="color:#111">,</span> <span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">b</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">endfunction</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> <span style="color:#66d9ef">void</span> rand_cal();
+</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;--------------------- Packet Generation ---------------------&#34;</span>);
+</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;a = %0d, b = %0d, s = %0d&#34;</span>, a, b, s);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endfunction</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#111">endclass</span>
+</span></span><span style="display:flex;"><span>endclass
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// transmitter class
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">class</span> <span style="color:#111">trans</span><span style="color:#111">;</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>class trans;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#111">packet</span> <span style="color:#111">pkt</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#111">mailbox</span> <span style="color:#111">t2r</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  packet pkt;
+</span></span><span style="display:flex;"><span>  mailbox t2r;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">function</span> <span style="color:#111">new</span><span style="color:#111">(</span><span style="color:#111">mailbox</span> <span style="color:#111">mbx</span><span style="color:#111">);</span>   <span style="color:#75715e">// constructor
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">t2r</span> <span style="color:#f92672">=</span> <span style="color:#111">mbx</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">endfunction</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> new(mailbox mbx);   <span style="color:#75715e">// constructor
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    t2r <span style="color:#f92672">=</span> mbx;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endfunction</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">task</span> <span style="color:#111">run</span><span style="color:#111">();</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">pkt</span> <span style="color:#f92672">=</span> <span style="color:#111">new</span><span style="color:#111">();</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">pkt</span><span style="color:#111">.</span><span style="color:#111">randomize</span><span style="color:#111">();</span>          <span style="color:#75715e">// randomize packet
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">pkt</span><span style="color:#111">.</span><span style="color:#111">rand_cal</span><span style="color:#111">();</span>           <span style="color:#75715e">// display packet
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">pkt</span><span style="color:#111">.</span><span style="color:#111">s</span> <span style="color:#f92672">=</span> <span style="color:#111">pkt</span><span style="color:#111">.</span><span style="color:#111">a</span> <span style="color:#f92672">+</span> <span style="color:#111">pkt</span><span style="color:#111">.</span><span style="color:#111">b</span><span style="color:#111">;</span>    <span style="color:#75715e">// perform some fucntion
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">t2r</span><span style="color:#111">.</span><span style="color:#111">put</span><span style="color:#111">(</span><span style="color:#111">pkt</span><span style="color:#111">);</span>             <span style="color:#75715e">// put the packet in the mailbox
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;-------------- Transmitter: Packet in Mailbox ---------------&#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;a = %0d, b = %0d =&gt; s = %0d&#34;</span><span style="color:#111">,</span> <span style="color:#111">pkt</span><span style="color:#111">.</span><span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">pkt</span><span style="color:#111">.</span><span style="color:#111">b</span><span style="color:#111">,</span> <span style="color:#111">pkt</span><span style="color:#111">.</span><span style="color:#111">s</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">endtask</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">endclass</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">task</span> run();
+</span></span><span style="display:flex;"><span>    pkt <span style="color:#f92672">=</span> new();
+</span></span><span style="display:flex;"><span>    pkt.randomize();          <span style="color:#75715e">// randomize packet
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    pkt.rand_cal();           <span style="color:#75715e">// display packet
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    pkt.s <span style="color:#f92672">=</span> pkt.a <span style="color:#f92672">+</span> pkt.b;    <span style="color:#75715e">// perform some fucntion
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    t2r.put(pkt);             <span style="color:#75715e">// put the packet in the mailbox
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    $display(<span style="color:#e6db74">&#34;-------------- Transmitter: Packet in Mailbox ---------------&#34;</span>);
+</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;a = %0d, b = %0d =&gt; s = %0d&#34;</span>, pkt.a, pkt.b, pkt.s);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endtask</span>
+</span></span><span style="display:flex;"><span>endclass
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//receiver class
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">class</span> <span style="color:#111">rcvr</span><span style="color:#111">;</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>class rcvr;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#111">packet</span> <span style="color:#111">pkt</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#111">mailbox</span> <span style="color:#111">r2t</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  packet pkt;
+</span></span><span style="display:flex;"><span>  mailbox r2t;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">function</span> <span style="color:#111">new</span><span style="color:#111">(</span><span style="color:#111">mailbox</span> <span style="color:#111">mbx</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">r2t</span> <span style="color:#f92672">=</span> <span style="color:#111">mbx</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">endfunction</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> new(mailbox mbx);
+</span></span><span style="display:flex;"><span>    r2t <span style="color:#f92672">=</span> mbx;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endfunction</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">task</span> <span style="color:#111">run</span><span style="color:#111">();</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">r2t</span><span style="color:#111">.</span><span style="color:#111">get</span><span style="color:#111">(</span><span style="color:#111">pkt</span><span style="color:#111">);</span>             <span style="color:#75715e">// get the packet from the mailbox
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;--------------- Receiver: Packet From Mailbox ---------------&#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;a = %0d, b = %0d =&gt; s = %0d&#34;</span><span style="color:#111">,</span> <span style="color:#111">pkt</span><span style="color:#111">.</span><span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">pkt</span><span style="color:#111">.</span><span style="color:#111">b</span><span style="color:#111">,</span> <span style="color:#111">pkt</span><span style="color:#111">.</span><span style="color:#111">s</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">endtask</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">task</span> run();
+</span></span><span style="display:flex;"><span>    r2t.get(pkt);             <span style="color:#75715e">// get the packet from the mailbox
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    $display(<span style="color:#e6db74">&#34;--------------- Receiver: Packet From Mailbox ---------------&#34;</span>);
+</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;a = %0d, b = %0d =&gt; s = %0d&#34;</span>, pkt.a, pkt.b, pkt.s);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endtask</span>;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#111">endclass</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#00a8c8">module</span> <span style="color:#111">test</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#111">trans</span> <span style="color:#111">trans_cl</span><span style="color:#111">;</span>            <span style="color:#75715e">// class handle
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#111">rcvr</span>  <span style="color:#111">rcvr_cl</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#111">mailbox</span> <span style="color:#111">mbx</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>endclass
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">initial</span> <span style="color:#00a8c8">begin</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">mbx</span> <span style="color:#f92672">=</span> <span style="color:#111">new</span><span style="color:#111">();</span>             <span style="color:#75715e">// object creation; UNBOUNDED mailbox
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">trans_cl</span> <span style="color:#f92672">=</span> <span style="color:#111">new</span><span style="color:#111">(</span><span style="color:#111">mbx</span><span style="color:#111">);</span>     <span style="color:#75715e">// transmitter object creation ang passing mailbox handle
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">rcvr_cl</span> <span style="color:#f92672">=</span> <span style="color:#111">new</span><span style="color:#111">(</span><span style="color:#111">mbx</span><span style="color:#111">);</span>      <span style="color:#75715e">// receiver object creation ang passing mailbox handle
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;-------------------------------------------------------------&#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;-------------------------- Mailbox --------------------------&#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;-------------------------------------------------------------&#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">repeat</span><span style="color:#111">(</span><span style="color:#ae81ff">10</span><span style="color:#111">)</span> <span style="color:#00a8c8">begin</span>
-</span></span><span style="display:flex;"><span>       <span style="color:#111">trans_cl</span><span style="color:#111">.</span><span style="color:#111">run</span><span style="color:#111">();</span>
-</span></span><span style="display:flex;"><span>       <span style="color:#111">rcvr_cl</span><span style="color:#111">.</span><span style="color:#111">run</span><span style="color:#111">();</span>
-</span></span><span style="display:flex;"><span>       <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">end</span>
-</span></span><span style="display:flex;"><span>   <span style="color:#00a8c8">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> test;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#00a8c8">endmodule</span>
+</span></span><span style="display:flex;"><span>  trans trans_cl;            <span style="color:#75715e">// class handle
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  rcvr  rcvr_cl;
+</span></span><span style="display:flex;"><span>  mailbox mbx;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">initial</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>    mbx <span style="color:#f92672">=</span> new();             <span style="color:#75715e">// object creation; UNBOUNDED mailbox
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    trans_cl <span style="color:#f92672">=</span> new(mbx);     <span style="color:#75715e">// transmitter object creation ang passing mailbox handle
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    rcvr_cl <span style="color:#f92672">=</span> new(mbx);      <span style="color:#75715e">// receiver object creation ang passing mailbox handle
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    $display(<span style="color:#e6db74">&#34;-------------------------------------------------------------&#34;</span>);
+</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;-------------------------- Mailbox --------------------------&#34;</span>);
+</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;-------------------------------------------------------------&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">repeat</span>(<span style="color:#ae81ff">10</span>) <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>       trans_cl.run();
+</span></span><span style="display:flex;"><span>       rcvr_cl.run();
+</span></span><span style="display:flex;"><span>       $display(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span>
 </span></span></code></pre></div>
-      
-      <div class="post-date">
-        <span class="g time">August 6, 2024 </span> &#8729;
-         
-         <a href="https://24x7fpga.com/tags/sv/">sv</a>
-      </div>
-      
-    </section>
-    
+
   </div>
-</main>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
 </body>
+
 </html>

@@ -1,13 +1,41 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Liste - https://24x7fpga.com/">
-    <title>Dynamic Arrays | &gt; home</title>
-    <meta name="description" content="A minimal hugo theme focus on content">
-    <meta property="og:title" content="Dynamic Arrays" />
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Dynamic Arrays | Home</title>
+<meta name="keywords" content="sv">
+<meta name="description" content="SV Verification Directory
+Dymanic Arrays Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declare with empty word subscripts &ldquo;[ ]&rdquo;. The array is initially empty and must be called with the &ldquo;new[ ]&rdquo; constuctor to allocate space, passing in the number of entries in the square brackets.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.526ee71d2bda4e817faf8e1337ba879150fa995e4bf978a970ab1988033bc2c6.css" integrity="sha256-Um7nHSvaToF/r44TN7qHkVD6mV5L&#43;XipcKsZiAM7wsY=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+<meta property="og:title" content="Dynamic Arrays" />
 <meta property="og:description" content="SV Verification Directory
 Dymanic Arrays Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declare with empty word subscripts &ldquo;[ ]&rdquo;. The array is initially empty and must be called with the &ldquo;new[ ]&rdquo; constuctor to allocate space, passing in the number of entries in the square brackets." />
 <meta property="og:type" content="article" />
@@ -15,156 +43,383 @@ Dymanic Arrays Dynamic arrays are arrays that do not have their size set during 
 <meta property="article:published_time" content="2024-07-01T15:56:00-04:00" />
 <meta property="article:modified_time" content="2024-07-01T15:56:00-04:00" />
 
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dynamic Arrays"/>
+<meta name="twitter:description" content="SV Verification Directory
+Dymanic Arrays Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declare with empty word subscripts &ldquo;[ ]&rdquo;. The array is initially empty and must be called with the &ldquo;new[ ]&rdquo; constuctor to allocate space, passing in the number of entries in the square brackets."/>
 
-    <meta itemprop="name" content="Dynamic Arrays">
-<meta itemprop="description" content="SV Verification Directory
-Dymanic Arrays Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declare with empty word subscripts &ldquo;[ ]&rdquo;. The array is initially empty and must be called with the &ldquo;new[ ]&rdquo; constuctor to allocate space, passing in the number of entries in the square brackets."><meta itemprop="datePublished" content="2024-07-01T15:56:00-04:00" />
-<meta itemprop="dateModified" content="2024-07-01T15:56:00-04:00" />
-<meta itemprop="wordCount" content="188">
-<meta itemprop="keywords" content="sv," />
-    
-    <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/">
-    <link rel="icon" href="https://24x7fpga.com//assets/favicon.ico">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com">
-    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
-    <link rel="alternate" type="application/atom+xml" title="&gt; home" href="https://24x7fpga.com//atom.xml" />
-    <link rel="alternate" type="application/json" title="&gt; home" href="https://24x7fpga.com//feed.json" />
-    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
-    
-    
-    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#f5f5f5;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto;display:block;margin-left:auto;margin-right:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1.4s infinite;opacity:1;color:#96e9ae}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:250px;width:250px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background-color:#e9e9e9;border-radius:3px}code{border:none}.highlight pre{background-color:#e9e9e9!important;border-radius:5px} </style>
-  
-    
-  
-  
-  <script type="application/ld+json">
-  {
-      "@context": "http://schema.org",
-      "@type": "BlogPosting",
-      "articleSection": "sv_directory",
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Sv_directories",
+      "item": "https://24x7fpga.com/sv_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
       "name": "Dynamic Arrays",
-      "headline": "Dynamic Arrays",
-      "alternativeHeadline": "",
-      "description": "SV Verification Directory\nDymanic Arrays Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declare with empty word subscripts \u0026ldquo;[ ]\u0026rdquo;. The array is initially empty and must be called with the \u0026ldquo;new[ ]\u0026rdquo; constuctor to allocate space, passing in the number of entries in the square brackets.",
-      "inLanguage": "en-us",
-      "isFamilyFriendly": "true",
-      "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https:\/\/24x7fpga.com\/sv_directory\/2024_07_01_15_56_35_dynamic_arrays\/"
-      },
-      "author" : {
-          "@type": "Person",
-          "name": "[Kiran]"
-      },
-      "creator" : {
-          "@type": "Person",
-          "name": "[Kiran]"
-      },
-      "accountablePerson" : {
-          "@type": "Person",
-          "name": "[Kiran]"
-      },
-      "copyrightHolder" : "\u003e home",
-      "copyrightYear" : "2024",
-      "dateCreated": "2024-07-01T15:56:00.00Z",
-      "datePublished": "2024-07-01T15:56:00.00Z",
-      "dateModified": "2024-07-01T15:56:00.00Z",
-      "publisher":{
-          "@type":"Organization",
-          "name": "\u003e home",
-          "url": "https://24x7fpga.com/",
-          "logo": {
-              "@type": "ImageObject",
-              "url": "https:\/\/24x7fpga.com\/assets\/favicon.ico",
-              "width":"32",
-              "height":"32"
-          }
-      },
-      "image": "https://24x7fpga.com/assets/favicon.ico",
-      "url" : "https:\/\/24x7fpga.com\/sv_directory\/2024_07_01_15_56_35_dynamic_arrays\/",
-      "wordCount" : "188",
-      "genre" : [ "sv" ],
-      "keywords" : [ "sv" ]
+      "item": "https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Dynamic Arrays",
+  "name": "Dynamic Arrays",
+  "description": "SV Verification Directory\nDymanic Arrays Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declare with empty word subscripts \u0026ldquo;[ ]\u0026rdquo;. The array is initially empty and must be called with the \u0026ldquo;new[ ]\u0026rdquo; constuctor to allocate space, passing in the number of entries in the square brackets.",
+  "keywords": [
+    "sv"
+  ],
+  "articleBody": "SV Verification Directory\nDymanic Arrays Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declare with empty word subscripts “[ ]”. The array is initially empty and must be called with the “new[ ]” constuctor to allocate space, passing in the number of entries in the square brackets.\nAssignments between fixed-size and dynamic arrays are possible as long as the base type is the same.\nDynamic Array example is shown below:\nmodule dynamic_arrays (); int dyn1[], dyn2[]; initial begin dyn1 = new[10]; foreach(dyn1[i]) dyn1[i] = i; $display(\"-------------- Dynamic Array 1 --------------\"); foreach(dyn1[i]) $display(\"\\t dyn1[%0d] = %0d\", i, dyn1[i]); dyn2 = dyn1; $display(\"-------------- Dynamic Array 2 --------------\"); foreach(dyn2[i]) $display(\"\\t dyn2[%0d] = %0d\", i, dyn2[i]); foreach(dyn2[i]) dyn2[i] = dyn2[i] + 5; $display(\"-------------- Dynamic Array 2 --------------\"); foreach(dyn2[i]) $display(\"\\t dyn2[%0d] = %0d\", i, dyn2[i]); dyn2 = new[15] (dyn1); $display(\"-------------- Dynamic Array 2 --------------\"); foreach(dyn2[i]) $display(\"\\t dyn2[%0d] = %0d\", i, dyn2[i]); end endmodule Execute the example in EDA Playground\n",
+  "wordCount" : "188",
+  "inLanguage": "en",
+  "datePublished": "2024-07-01T15:56:00-04:00",
+  "dateModified": "2024-07-01T15:56:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
   }
-  </script>
-  
-  
-  </head>
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
 
-<body>
-  <a class="skip-link" href="#main">Skip to main</a>
-  <main id="main">
-  <div class="content">
-    <header>
-<p style="padding: 0;margin: 0;">
-  <a href="/">
-    <b>&gt; home</b>
-    <span class="text-stone-500 animate-blink">▮</span>
-  </a>
-</p>
-<ul style="padding: 0;margin: 0;">
-  
-  
-  <li class="">
-    <a href="rtl_directory/2024_06_05_00_21_53_rtl_design_directory"><span>rtl</span></a>    
-    
-  <li class="">
-    <a href="sv_directory/2024_06_27_16_53_00_sv_verification_directory"><span>sv</span></a>    
-    
-  <li class="">
-    <a href="uvm_directory/2024_08_28_12_39_50_uvm_framework_directory"><span>uvm</span></a>    
-    
-  </li>
-</ul>
+</head>
 
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
-<hr class="hr-list" style="padding: 0;margin: 0;">
 
+<main class="main">
 
-    <section>
-      <h2 class="post">Dynamic Arrays</h2>
-      <p><a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
-<h2 id="dymanic-arrays">Dymanic Arrays</h2>
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Dynamic Arrays
+    </h1>
+    <div class="post-meta"><span title='2024-07-01 15:56:00 -0400 EDT'>July 1, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;188 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
+<h2 id="dymanic-arrays">Dymanic Arrays<a hidden class="anchor" aria-hidden="true" href="#dymanic-arrays">#</a></h2>
 <p>Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declare with empty word subscripts &ldquo;[ ]&rdquo;. The array is initially empty and must be called with the &ldquo;new[ ]&rdquo; constuctor to  allocate space, passing in the number of entries in the square brackets.</p>
 <p>Assignments between fixed-size and dynamic arrays are possible as long as the base type is the same.</p>
 <p>Dynamic Array example is shown below:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#00a8c8">module</span> <span style="color:#111">dynamic_arrays</span> <span style="color:#111">();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> dynamic_arrays ();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">int</span> <span style="color:#111">dyn1</span><span style="color:#111">[],</span> <span style="color:#111">dyn2</span><span style="color:#111">[];</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> dyn1[], dyn2[];
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">initial</span> <span style="color:#00a8c8">begin</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">dyn1</span> <span style="color:#f92672">=</span> <span style="color:#111">new</span><span style="color:#111">[</span><span style="color:#ae81ff">10</span><span style="color:#111">];</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">foreach</span><span style="color:#111">(</span><span style="color:#111">dyn1</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">])</span> <span style="color:#111">dyn1</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">i</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">initial</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>    dyn1 <span style="color:#f92672">=</span> new[<span style="color:#ae81ff">10</span>];
+</span></span><span style="display:flex;"><span>    foreach(dyn1[i]) dyn1[i] <span style="color:#f92672">=</span> i;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;--------------  Dynamic Array 1   --------------&#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">foreach</span><span style="color:#111">(</span><span style="color:#111">dyn1</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">])</span> <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\t</span><span style="color:#d88200"> dyn1[%0d] = %0d&#34;</span><span style="color:#111">,</span> <span style="color:#111">i</span><span style="color:#111">,</span> <span style="color:#111">dyn1</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;--------------  Dynamic Array 1   --------------&#34;</span>);
+</span></span><span style="display:flex;"><span>    foreach(dyn1[i]) $display(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74"> dyn1[%0d] = %0d&#34;</span>, i, dyn1[i]);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">dyn2</span> <span style="color:#f92672">=</span> <span style="color:#111">dyn1</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;--------------  Dynamic Array 2  --------------&#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">foreach</span><span style="color:#111">(</span><span style="color:#111">dyn2</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">])</span> <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\t</span><span style="color:#d88200"> dyn2[%0d] = %0d&#34;</span><span style="color:#111">,</span> <span style="color:#111">i</span><span style="color:#111">,</span> <span style="color:#111">dyn2</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>    dyn2 <span style="color:#f92672">=</span> dyn1;
+</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;--------------  Dynamic Array 2  --------------&#34;</span>);
+</span></span><span style="display:flex;"><span>    foreach(dyn2[i]) $display(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74"> dyn2[%0d] = %0d&#34;</span>, i, dyn2[i]);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">foreach</span><span style="color:#111">(</span><span style="color:#111">dyn2</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">])</span> <span style="color:#111">dyn2</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">dyn2</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;--------------  Dynamic Array 2  --------------&#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">foreach</span><span style="color:#111">(</span><span style="color:#111">dyn2</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">])</span> <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\t</span><span style="color:#d88200"> dyn2[%0d] = %0d&#34;</span><span style="color:#111">,</span> <span style="color:#111">i</span><span style="color:#111">,</span> <span style="color:#111">dyn2</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>    foreach(dyn2[i]) dyn2[i] <span style="color:#f92672">=</span> dyn2[i] <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;--------------  Dynamic Array 2  --------------&#34;</span>);
+</span></span><span style="display:flex;"><span>    foreach(dyn2[i]) $display(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74"> dyn2[%0d] = %0d&#34;</span>, i, dyn2[i]);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">dyn2</span> <span style="color:#f92672">=</span> <span style="color:#111">new</span><span style="color:#111">[</span><span style="color:#ae81ff">15</span><span style="color:#111">]</span> <span style="color:#111">(</span><span style="color:#111">dyn1</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;--------------  Dynamic Array 2  --------------&#34;</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">foreach</span><span style="color:#111">(</span><span style="color:#111">dyn2</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">])</span> <span style="color:#111">$display</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\t</span><span style="color:#d88200"> dyn2[%0d] = %0d&#34;</span><span style="color:#111">,</span> <span style="color:#111">i</span><span style="color:#111">,</span> <span style="color:#111">dyn2</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>    dyn2 <span style="color:#f92672">=</span> new[<span style="color:#ae81ff">15</span>] (dyn1);
+</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;--------------  Dynamic Array 2  --------------&#34;</span>);
+</span></span><span style="display:flex;"><span>    foreach(dyn2[i]) $display(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74"> dyn2[%0d] = %0d&#34;</span>, i, dyn2[i]);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">end</span>
-</span></span><span style="display:flex;"><span><span style="color:#00a8c8">endmodule</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span>
 </span></span></code></pre></div><p><a href="https://www.edaplayground.com/x/ByAT">Execute the example in EDA Playground</a></p>
 
-      
-      <div class="post-date">
-        <span class="g time">July 1, 2024 </span> &#8729;
-         
-         <a href="https://24x7fpga.com/tags/sv/">sv</a>
-      </div>
-      
-    </section>
-    
+
   </div>
-</main>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
 </body>
+
 </html>
