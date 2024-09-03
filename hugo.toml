@@ -8,7 +8,7 @@ theme = "iPaperMod"
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #     
 [params.profileMode]
     enabled     = true 
-    imageUrl    = "/img/profile3.png"
+    imageUrl    = "/img/profile.png"
     imageWidth  = 126 # custom size
     imageHeight = 240 # custom size
     title       = "Hi there! 👋" 
