@@ -1,8 +1,6 @@
-## Hi there! 👋
+# Hi there! 👋
 
-<img class="avatar" src="/img/profile.png" alt="avatar">
-
-[LinkedIn](https://www.linkedin.com/in/kiran760043/) --  [Github](https://github.com/24x7fpga) --  [Orcid](https://orcid.org/0009-0003-7024-3868) -- [Instagram](https://www.instagram.com/negativeparking/)
+[LinkedIn](https://www.linkedin.com/in/kiran760043/) --  [GitHub](https://github.com/24x7fpga) --  [Orcid](https://orcid.org/0009-0003-7024-3868) -- [Instagram](https://www.instagram.com/negativeparking/)
 
 I'm Kiran, I work as Graduate Research Assistant at Wright State University currently pursuing my Doctoral degree. You can find more about my research [here](research/2024_07_08_10_15_40_research).
 
@@ -18,9 +16,8 @@ My research focus is on wideband digital receivers for radar applications.
 - 💬 Ask me about FPGAs.
 - ⚡ Fun fact: I love photography 📸. 
 
+#
+FPGAs are often compared to _LEGO_ blocks where you can build a complex structure using small basic blocks. In my [GitHub](https://github.com/24x7fpga) repositories I present to you some of these basic building blocks (basic designs in verilog/system verilog) that can be used as a foundation for building large and complex systems.
 
-
-FPGAs are compared to _LEGO_ blocks where you can build a complex structure using small basic blocks. In my GitHub repositories I present to you some of these basic building blocks (basic designs in verilog/system verilog) that can be used as a foundation for building large and complex systems.
-
-`✨Share Knowledge, Spread Love.✨`
+<!-- `✨Share Knowledge, Spread Love.✨` -->
 

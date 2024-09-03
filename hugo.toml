@@ -1,17 +1,17 @@
 baseURL = 'https://24x7fpga.com/'
 languageCode = 'en-us'
 title = 'Home'  
-theme = "PaperMod"
+theme = "iPaperMod"
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
 # For PaperMod 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #     
 [params.profileMode]
     enabled     = true 
-    imageUrl    = "/img/ai-zeus3.png"
+    imageUrl    = "/img/profile3.png"
     imageWidth  = 126 # custom size
     imageHeight = 240 # custom size
-    title       = "Think, Build and Design"
+    title       = "Hi there! 👋" 
 
 
 [params]
@@ -100,11 +100,11 @@ theme = "PaperMod"
 #    url        = "about/about"
 #    weight     = 10
 
-#  [[menu.main]]
-#    identifier = "research"
-#    name       = "research"
-#    url        = "research/2024_07_08_10_15_40_research"
-#    weight     = 20
+  [[menu.main]]
+    identifier = "research"
+    name       = "research"
+    url        = "research/2024_07_08_10_15_40_research"
+    weight     = 20
 
   [[menu.main]]
     #identifier = "rtl"

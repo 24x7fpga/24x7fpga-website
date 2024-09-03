@@ -1,0 +1,157 @@
+/* Image for the index page */
+.avatar {
+    height: 280px;
+    width: 280px;
+    position: relative;
+    margin: 25px 0 0 15px;
+    float: right;
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* about me page : content  */
+.content {
+    max-width: 70ch;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 28px;   /* within paragraph */
+    margin: 24px auto var(--content-gap) auto;
+}
+
+.content a {
+    text-decoration: underline;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.content a:hover {
+    color: #5078c1; /* #6891de; #BD93F9; */
+  }
+  
+  .content-title {
+      margin-bottom: 2px;
+      font-size: 0px;
+  }
+  
+  .content-meta,
+  .breadcrumbs {
+      color: var(--secondary);
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .content-meta .i18n_list li {
+      display: inline-flex;
+      list-style: none;
+      margin: auto 3px;
+      box-shadow: 0 1px 0 var(--secondary);
+  }
+  
+  .breadcrumbs a {
+      font-size: 16px;
+  }
+  
+  .content {
+      color: var(--content);
+  }
+  
+  .content h3,
+  .content h4,
+  .content h5,
+  .content h6 {
+      margin: 24px 0 16px;
+  }
+  
+  .content h1 {
+      margin: 18px auto 28px;
+      font-size: 40px;
+  }
+  
+  .content h2 {
+      margin: 12px auto 14px;
+      font-size: 32px;
+  }
+  
+  .content h3 {
+      font-size: 24px;
+  }
+  
+  .content h4 {
+      font-size: 16px;
+  }
+  
+  .content h5 {
+      font-size: 14px;
+  }
+  
+  .content h6 {
+      font-size: 12px;
+  }
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .avatar {
+        height: 180px;
+        width: 180px;
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    .content {
+        padding: 0 20px;
+        text-align: left;
+        text-align: justify;
+    }
+
+    .content h1 {
+        font-size: 32px;
+    }
+
+    .content h2 {
+        font-size: 28px;
+    }
+
+    .content h3 {
+        font-size: 22px;
+    }
+
+    .content h4 {
+        font-size: 18px;
+    }
+
+    .content h5 {
+        font-size: 16px;
+    }
+
+    .content h6 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .avatar {
+        height: 150px;
+        width: 150px;
+    }
+
+    .content {
+        max-width: 90%;
+        text-align: justify;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content h2 {
+        font-size: 24px;
+    }
+}
