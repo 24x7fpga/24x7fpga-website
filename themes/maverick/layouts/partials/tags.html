@@ -1,0 +1,11 @@
+<!-- {{ range $i, $e := .Params.tags -}}
+    {{- if $i -}}, {{ end -}}
+    <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
+{{- end -}} -->
+
+<!-- {{ range $i, $e := .Params.tags -}}
+    {{- if $i -}}, {{ end -}} -->
+    <!-- <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ .Params.tags }}</a> -->
+<!-- {{- end -}} -->
+
+<a href="{{ "tags/" | absLangURL }}{{ . | urlize }}/">{{.}}</a>
