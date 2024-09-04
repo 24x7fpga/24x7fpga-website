@@ -10,11 +10,11 @@ As a teaching assistant I Instructed students in modeling digital systems using 
 
 My research focus is on wideband digital receivers for radar applications.
 
-- 🔭 I’m currently working on my Ph.D 😣😅😆.
-- 🌱 I’m currently learning new technology in the field of digital design.
-- 👯 I’m looking to collaborate with other FPGA enthusiasts 🤝.
-- 💬 Ask me about FPGAs.
-- ⚡ Fun fact: I love photography 📸. 
+-   🔭 I’m currently working on my Ph.D 😣😅😆.
+-   🌱 I’m currently learning new technology in the field of digital design.
+-   👯 I’m looking to collaborate with other FPGA enthusiasts 🤝.
+-   💬 Ask me about FPGAs.
+-   ⚡ Fun fact: I love photography 📸. 
 
 #
 FPGAs are often compared to _LEGO_ blocks where you can build a complex structure using small basic blocks. In my [GitHub](https://github.com/24x7fpga) repositories I present to you some of these basic building blocks (basic designs in verilog/system verilog) that can be used as a foundation for building large and complex systems.

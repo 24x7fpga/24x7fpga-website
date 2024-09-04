@@ -21,6 +21,11 @@
     margin: 24px auto var(--content-gap) auto;
 }
 
+ul {
+    padding-left: 30px;
+  }
+  
+
 .content a {
     text-decoration: underline;
 }
@@ -106,8 +111,6 @@
     }
 
     .content {
-        padding: 0 20px;
-        text-align: left;
         text-align: justify;
     }
 
@@ -143,7 +146,6 @@
     }
 
     .content {
-        max-width: 90%;
         text-align: justify;
     }
 
