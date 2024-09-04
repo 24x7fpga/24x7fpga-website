@@ -101,7 +101,7 @@ ul {
 
 
 /* Responsive adjustments */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .avatar {
         height: 180px;
         width: 180px;
@@ -139,7 +139,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 300px) {
     .avatar {
         height: 150px;
         width: 150px;
