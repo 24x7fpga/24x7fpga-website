@@ -12,7 +12,7 @@ Tasks Task in SystemVerilog is a procedural block that contains a block of code 
 Syntax: Task task task_name (in1, in2, in3, output logic out1); // execute the code endtask Example Code: Task module task_ex; logic [3:0] data; logic [3:0] arry[16]; task incr([3:0] in, output logic [3:0] out); out = in &#43; 1; endtask initial begin data = 0; $display(&#34;--------- Task: Increment ---------&#34;); //$display(&#34;data = %0d&#34;, data); arry[0]= data; for(int i=0; i&lt;15; i&#43;&#43;)begin incr(arry[i], arry[i&#43;1]); $display(&#34;data = %0d&#34;, arry[i&#43;1]); #1; end end endmodule Execute the code in EDA Playground">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.402b9318b7c7bf3f5b9d20fbe641067b77d2a54c4e82f8e39b4b12714a45c9fa.css" integrity="sha256-QCuTGLfHvz9bnSD75kEGe3fSpUxOgvjjm0sScUpFyfo=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e0bcebb49b34af685aad681aefedaa259f0a0e52792ad5bbaf7f972714e1bd4d.css" integrity="sha256-4LzrtJs0r2harWga7&#43;2qJZ8KDlJ5KtW7r3&#43;XJxThvU0=" rel="preload stylesheet" as="style">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">

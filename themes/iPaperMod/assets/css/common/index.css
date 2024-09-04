@@ -21,7 +21,7 @@
     margin: 24px auto var(--content-gap) auto;
 }
 
-ul {
+.content ul {
     padding-left: 30px;
   }
   
