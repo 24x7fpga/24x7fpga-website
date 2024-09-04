@@ -103,8 +103,8 @@
 /* Responsive adjustments */
 @media screen and (max-width: 900px) {
     .avatar {
-        height: 180px;
-        width: 180px;
+        height: 230px;
+        width: 230px;
         float: none;
         display: block;
         margin: 0 auto 20px auto;
@@ -141,8 +141,8 @@
 
 @media screen and (max-width: 300px) {
     .avatar {
-        height: 150px;
-        width: 150px;
+        height: 180px;
+        width: 180px;
     }
 
     .content {

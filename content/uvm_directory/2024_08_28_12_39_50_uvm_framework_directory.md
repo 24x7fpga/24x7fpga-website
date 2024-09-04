@@ -12,7 +12,4 @@ UVM stands for Universal Verification Method developed by [UVM Working Group](ht
 
 ## Automated Work Flow {#automated-work-flow}
 
--   UVM Simulation Method
-
-
-##  {#d41d8c}
+-   [UVM Workflow in Vivado]({{< relref "2024_09_04_14_44_52_uvm_workflow_in_vivado.md" >}})
