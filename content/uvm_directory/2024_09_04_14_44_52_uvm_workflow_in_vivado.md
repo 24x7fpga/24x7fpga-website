@@ -121,6 +121,6 @@ The design files are organized under the _test_ directory, ensuring that all sou
 
 {{< figure src="/ox-hugo/uvm_sim.png" >}}
 
-Below is the result of the simulation. The desing outputs the string "[RUN TEST] Vivado Script Simulation Test" as expected
+Below is the result of the simulation. The design outputs the string "[RUN TEST] Vivado Script Simulation Test" as intended.
 
 {{< figure src="/ox-hugo/uvm_sim_result.png" >}}
