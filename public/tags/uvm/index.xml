@@ -13,7 +13,8 @@
       <link>https://24x7fpga.com/uvm_directory/2024_09_04_14_44_52_uvm_workflow_in_vivado/</link>
       <pubDate>Wed, 04 Sep 2024 14:44:00 -0400</pubDate>
       <guid>https://24x7fpga.com/uvm_directory/2024_09_04_14_44_52_uvm_workflow_in_vivado/</guid>
-      <description>The UVM (Universal Verification Methodology) workflow is centered around creating a testbench that integrates key UVM components such as drivers, monitors, and scoreboards, alongside the essential UVM library setup. Numerous commercial tools are available for simulating and verifying digital designs, including ModelSim, Cadence Xcelium, Synopsys VCS, Aldec Riviera-PRO, and Vivado Simulator. Another excellent option for experimenting with small-to-medium-sized verification projects is EDA Playground. EDA Playground offers the advantage of requiring no installation and provides access to multiple simulators for the design.</description>
+      <description>UVM &amp;ndash; UVM Vivado Script &amp;ndash; UVM Python Script
+The UVM (Universal Verification Methodology) workflow is centered around creating a testbench that integrates key UVM components such as drivers, monitors, and scoreboards, alongside the essential UVM library setup. Numerous commercial tools are available for simulating and verifying digital designs, including ModelSim, Cadence Xcelium, Synopsys VCS, Aldec Riviera-PRO, and Vivado Simulator. Another excellent option for experimenting with small-to-medium-sized verification projects is EDA Playground.</description>
     </item>
   </channel>
 </rss>

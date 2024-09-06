@@ -7,6 +7,8 @@ draft = false
 css = "../../zcustom.css"
 +++
 
+[UVM](https://github.com/24x7fpga/UVM) -- [UVM Vivado Script](https://github.com/24x7fpga/UVM/blob/main/uvm_tcl_script/uvm_run.tcl) -- [UVM Python Script](https://github.com/24x7fpga/PythonScripts/blob/master/uvm_scripts/uvm_run.py)
+
 The UVM (Universal Verification Methodology) workflow is centered around creating a testbench that integrates key UVM components such as drivers, monitors, and scoreboards, alongside the essential UVM library setup. Numerous commercial tools are available for simulating and verifying digital designs, including ModelSim, Cadence Xcelium, Synopsys VCS, Aldec Riviera-PRO, and Vivado Simulator. Another excellent option for experimenting with small-to-medium-sized verification projects is [EDA Playground](https://www.edaplayground.com/). EDA Playground offers the advantage of requiring no installation and provides access to multiple simulators for the design. Personally, I opted to use Vivado Simulator for the UVM verification process, as it seamlessly integrates into my existing workflow.
 
 Vivado installation guide can be found [here](https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/).
