@@ -97,6 +97,14 @@ Interprocess communication is a way to communicate between different processes a
 Events Mailbox Semaphore Mailbox A mailbox serves as a synchronization primitive utilized for exchanging data between processes within a testbench. This data, referred to as a message, is managed through the mailbox primitive. A process intending to send data places (puts) the message into the mailbox, where it is temporarily stored in system-defined memory.</description>
     </item>
     <item>
+      <title>Always@(*) and Always_Comb</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_08_05_16_05_55_always_and_always_comb/</link>
+      <pubDate>Mon, 05 Aug 2024 16:05:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_08_05_16_05_55_always_and_always_comb/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Always@(*) and Always_Comb In digital design, both always @(*) in Verilog and always_comb in SystemVerilog are commonly used to model combinational logic. While they serve a similar purpose, there are important differences that make always_comb the preferred choice in modern design flows. In this article, we&amp;rsquo;ll explore these differences and explain why always_comb offers enhanced safety and robustness over always @(*) in SystemVerilog-based designs.</description>
+    </item>
+    <item>
       <title>Git Sync a Forked Repository</title>
       <link>https://24x7fpga.com/git_directory/2024_08_04_14_34_41_git_sync_a_forked_repository/</link>
       <pubDate>Sun, 04 Aug 2024 14:34:00 -0400</pubDate>

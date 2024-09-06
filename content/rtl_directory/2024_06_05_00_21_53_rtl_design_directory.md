@@ -40,7 +40,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 -   [Full Case and Parallel Case]({{< relref "2024_07_26_17_05_01_full_case_and_parallel_case.md" >}})
 -   [Assign and If-Else Statement]({{< relref "2024_07_26_17_07_08_assign_and_if_else_statement.md" >}})
 -   [Blocking and Non-Blocking Assignment]({{< relref "2024_07_26_17_10_23_blocking_and_non_blocking_assignment.md" >}})
--   Always@(\*) and Always_Comb
+-   [Always@(\*) and Always_Comb]({{< relref "2024_08_05_16_05_55_always_and_always_comb.md" >}})
 -   Mealy Machine and Moore Machine
 
 
