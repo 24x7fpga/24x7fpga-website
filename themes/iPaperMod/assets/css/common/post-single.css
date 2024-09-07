@@ -242,8 +242,9 @@ font-family:  JetBrains Mono, "Courier New", Courier, monospace;
     padding: 4px 6px;
     font-size: 0.78em;
     line-height: 1.5;
-    background: var(--code-bg);
-    border-radius: 2px;
+    background: var(--hg-bg);
+    border-radius: 10% 15% 10% 14%; /*2px; */
+    transform: rotate(2deg);
 }
 
 .post-content pre code {
