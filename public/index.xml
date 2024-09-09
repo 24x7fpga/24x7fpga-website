@@ -97,6 +97,15 @@ Interprocess communication is a way to communicate between different processes a
 Events Mailbox Semaphore Mailbox A mailbox serves as a synchronization primitive utilized for exchanging data between processes within a testbench. This data, referred to as a message, is managed through the mailbox primitive. A process intending to send data places (puts) the message into the mailbox, where it is temporarily stored in system-defined memory.</description>
     </item>
     <item>
+      <title>Mealy Machine and Moore Machine</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_08_05_16_07_25_mealy_machine_and_moore_machine/</link>
+      <pubDate>Mon, 05 Aug 2024 16:07:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_08_05_16_07_25_mealy_machine_and_moore_machine/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Finite State Machine A Finite State Machine (FSM) is a mathematical model used to represent a system with a finite number of states and a set of transitions between those states, driven by inputs. Each state can be considered as a decision node, where the decision is based on the input and or the input and the current decision tree node.
+Components of an FSM: States: Unique condition that define the state of the system.</description>
+    </item>
+    <item>
       <title>Always@(*) and Always_Comb</title>
       <link>https://24x7fpga.com/rtl_directory/2024_08_05_16_05_55_always_and_always_comb/</link>
       <pubDate>Mon, 05 Aug 2024 16:05:00 -0400</pubDate>
