@@ -70,7 +70,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 ## FIFO Design {#fifo-design}
 
 -   [Synchronous FIFO]({{< relref "2024_08_22_14_57_15_synchronous_fifo.md" >}})
--   Asynchronous FIFO
+-   [Asynchronous FIFO]({{< relref "2024_09_07_10_52_50_asynchronous_fifo.md" >}})
 
 
 ## Static Timing Analysis {#static-timing-analysis}

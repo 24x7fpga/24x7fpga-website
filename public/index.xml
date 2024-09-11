@@ -6,8 +6,16 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Sep 2024 14:44:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 07 Sep 2024 10:52:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Asynchronous FIFO</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/</link>
+      <pubDate>Sat, 07 Sep 2024 10:52:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+Asynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral.</description>
+    </item>
     <item>
       <title>UVM Workflow in Vivado</title>
       <link>https://24x7fpga.com/uvm_directory/2024_09_04_14_44_52_uvm_workflow_in_vivado/</link>
