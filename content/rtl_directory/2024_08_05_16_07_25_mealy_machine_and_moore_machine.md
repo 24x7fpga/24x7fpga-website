@@ -118,7 +118,7 @@ reg [1:0] st_reg, st_nxt;
 | One-Hot        | n             | Simple and fast         | Requries as many registers as bits |
 | Gray Code      | log2(n)       | Reduces switching noise | More Complex design                |
 
-When implementing a Finite State Machine (FSM) on an FPGA, the one-hot encoding scheme is often recommended. This approach is well-suited for FPGAs due to their abundance of flip-flops (FFs), which allow for straightforward and efficient state management. One-hot encoding simplifies the state transitions and can lead to faster operation because each state is represented by a single flip-flop, making the logic for state transitions and output straightforward.
+When implementing a Finite State Machine (FSM) on an FPGA, the one-hot encoding scheme is often recommended. This approach is well-suited for FPGAs as they pack a large number of flip-flops (FFs), which allow for straightforward and efficient state management. One-hot encoding simplifies the state transitions and can lead to faster operation because each state is represented by a single flip-flop, making the logic for state transitions and output straightforward.
 
 In contrast, when designing for Application-Specific Integrated Circuits (ASICs), flip-flops come at a premium in terms of both area and cost. Therefore, careful consideration must be given to the state encoding scheme used. In ASIC designs, binary or Gray code encoding might be preferred due to their reduced flip-flop requirements. This choice helps in minimizing the hardware footprint and managing costs, although it can result in more complex state transition logic.
 

@@ -19,16 +19,16 @@ The primary role of the asynchronous FIFO is to ensure smooth data flow between 
 
 ### Handling Pointer Synchronization {#handling-pointer-synchronization}
 
-In an asynchronous FIFO, the `write pointer` is updated in the write clock domain, while the `read pointer` is updated in the read clock domain. The `full flag` is generated based on the write clock, and the `empty flag` is generated based on the read clock. However, a challenge arises when comparing the write and read pointers to generate the full and empty flags, as the pointers are updated different clock domains from each other. This is different from a synchronous FIFO, where both pointers are updated in the same clock domain, making comparisons straightforward.
+In an asynchronous FIFO, the `write pointer` is updated in the write clock domain, while the `read pointer` is updated in the read clock domain. The `full flag` is generated based on the write clock, and the `empty flag` is generated based on the read clock. Challenge arises when comparing the write and read pointers to generate the full and empty flags, as the pointers are updated in different clock domains from each other. This is different from a synchronous FIFO, where both pointers are updated in the same clock domain, making comparisons straightforward.
 
-The key issue with asynchronous FIFOs is metastability—a situation where the design works fine in simulations but fails in real hardware due to timing violations when crossing clock domains. This can lead to unreliable data handling or system failures. One of many solutions for clock-domain crossing is to use `two-flop synchronizer`.
+The key issue with asynchronous FIFOs is metastability—a situation where the design works fine in simulations but fails in real hardware due to timing violations when crossing clock domains. This can lead to unreliable data handling or system failures. One of many solutions for clock-domain crossing is to use a `two-flop synchronizer`.
 
 When implementing a `two-flop synchronizer` in asynchronous FIFOs, one critical constraint is ensuring that only one bit of the data signal changes at a time while crossing from one clock domain to another. This minimizes the risk of metastability. To meet this constraint, gray code is used instead of a traditional binary counter for the read and write pointers. Unlike binary counters, where multiple bits can change simultaneously, gray code ensures that only a single bit changes with each transition. This makes Gray code ideal for safely synchronizing data between different clock domains, providing a robust solution for clock domain crossings in digital design.
 
 
 #### Gray Code Counter {#gray-code-counter}
 
-Detailed design for binary to Gray code and Gray to binary conversion [here](https://24x7fpga.com/rtl_directory/2024_07_18_21_58_46_code_converter/). From the table below, you’ll notice that Gray code exhibits a mirrored symmetry from decimal values 8 to 15. This makes Gray code a symmetric code, except for the most significant bits (MSBs).
+Detailed design for binary to Gray code and Gray to binary conversion [here](https://24x7fpga.com/rtl_directory/2024_07_18_21_58_46_code_converter/). From the table below, you’ll notice that Gray code exhibits a mirrored symmetry from decimal values 8 to 15. This makes Gray code a symmetric code, except for the most significant bit (MSB).
 
 | Decimal system | Binary System | Gray Code |
 |----------------|---------------|-----------|
@@ -56,7 +56,7 @@ For instance, if the FIFO depth is eight, the three least significant bits (LSBs
 
 A two-flop synchronizer consists of two flip-flops arranged in series without any combinational logic in between. By placing these flip-flops close together, the design minimizes propagation delay, improving the reliability of data transfer between asynchronous clock domains.
 
-The synchronizer circuit samples data using the clock from the clock domain receiving of the data, ensuring that the incoming signal is properly synchronized to the receiving clock domain. This helps prevent metastability and ensures the stable operation of the system. A two-flop synchronizer is shown in Figure 1.
+The synchronizer circuit ensures reliable data transfer between clock domains by sampling the incoming signal with the receiving clock, aligning it to the timing of the destination clock domain. This helps prevent metastability and ensures the stable operation of the system. A two-flop synchronizer is shown in Figure 1.
 
 {{< figure src="/ox-hugo/2ff_sync.svg" caption="<span class=\"figure-number\">Figure 1: </span>Two-Flop Synchronizer" >}}
 
