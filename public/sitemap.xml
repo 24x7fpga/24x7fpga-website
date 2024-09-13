@@ -26,12 +26,6 @@
     <loc>https://24x7fpga.com/uvm_directory/</loc>
     <lastmod>2024-09-04T14:44:00-04:00</lastmod>
   </url><url>
-    <loc>https://24x7fpga.com/tags/toc/</loc>
-    <lastmod>2024-08-28T12:39:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/</loc>
-    <lastmod>2024-08-28T12:39:00-04:00</lastmod>
-  </url><url>
     <loc>https://24x7fpga.com/rtl_directory/2024_08_22_14_57_15_synchronous_fifo/</loc>
     <lastmod>2024-08-22T14:57:00-04:00</lastmod>
   </url><url>
@@ -294,6 +288,9 @@
     <lastmod>2024-06-28T14:48:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</loc>
+    <lastmod>2024-06-27T16:53:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/toc/</loc>
     <lastmod>2024-06-27T16:53:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/rtl_directory/2024_06_23_21_30_22_decoder/</loc>

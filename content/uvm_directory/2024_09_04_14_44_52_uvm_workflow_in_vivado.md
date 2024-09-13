@@ -92,34 +92,33 @@ To test the UVM scripts, a simple test design is created which is shown below.
 
 ```verilog
 `include "uvm_macros.svh"
+ import uvm_pkg::*;
 
-import uvm_pkg::*;
+module tb_test;
 
-module test;
-
-initial begin
+   initial begin
         `uvm_info("RUN_TEST", "Vivado Script Simulation Test", UVM_NONE);
-end
+   end
 
 endmodule
 ```
 
-The primary objective of this design is to print a string using the uvm_info function. This design serves as a basic example to ensure that the UVM scripts are functioning correctly and that the information is being output as expected.
+The primary objective of this design is to print a string using the `uvm_info` function. This design serves as a basic example to ensure that the UVM scripts are functioning correctly and that the information is being output as expected.
 
 ```bash
 uvm_verification
 .
 └── test
-    ├── test.sv
+    ├── tb_test.sv
     └── verif
-        ├── test.cache
-        ├── test.hw
-        ├── test.ip_user_files
-        ├── test.sim
-        └── test.xpr
+        ├── tb_test.cache
+        ├── tb_test.hw
+        ├── tb_test.ip_user_files
+        ├── tb_test.sim
+        └── tb_test.xpr
 ```
 
-The design files are organized under the _test_ directory, ensuring that all source code is conveniently located in one place. When you execute the [uvm_run.py](https://github.com/24x7fpga/PythonScripts/tree/master/uvm_scripts) script, a new Vivado project is generated within the _verif_ directory. This structure helps maintain a clear separation between design sources and verification projects, streamlining the workflow and project management.
+The design files are organized under the _test_ directory, ensuring that all source code is conveniently located in one place. Testbench top module is labeled as the design name prefixed with 'tb'. For the design example, the design name is 'test', and 'tb_test' is the testbench top module. When you execute the [uvm_run.py](https://github.com/24x7fpga/PythonScripts/tree/master/uvm_scripts) script, a new Vivado project is generated within the _verif_ directory. This structure helps maintain a clear separation between design sources and verification projects, streamlining the workflow and project management.
 
 {{< figure src="/ox-hugo/uvm_sim.png" >}}
 

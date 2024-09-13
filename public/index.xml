@@ -25,13 +25,6 @@ Asynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and r
 The UVM (Universal Verification Methodology) workflow is centered around creating a testbench that integrates key UVM components such as drivers, monitors, and scoreboards, alongside the essential UVM library setup. Numerous commercial tools are available for simulating and verifying digital designs, including ModelSim, Cadence Xcelium, Synopsys VCS, Aldec Riviera-PRO, and Vivado Simulator. Another excellent option for experimenting with small-to-medium-sized verification projects is EDA Playground.</description>
     </item>
     <item>
-      <title>UVM Framework Directory</title>
-      <link>https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/</link>
-      <pubDate>Wed, 28 Aug 2024 12:39:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/</guid>
-      <description>UVM stands for Universal Verification Method developed by UVM Working Group that provides a standardized methodology for verifying digital integrated circuits. UVM is built on top of SystemVerilog and provides a useful framework for creating reusable and scalable testbenchs. The framework provides a set of building blocks or pre-built design kits that help to create a complex system in a more organized and efficient way instead of building everything from scratch.</description>
-    </item>
-    <item>
       <title>Synchronous FIFO</title>
       <link>https://24x7fpga.com/rtl_directory/2024_08_22_14_57_15_synchronous_fifo/</link>
       <pubDate>Thu, 22 Aug 2024 14:57:00 -0400</pubDate>
