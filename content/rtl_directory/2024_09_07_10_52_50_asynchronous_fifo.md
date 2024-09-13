@@ -93,7 +93,7 @@ All the variables discussed in this section are generated within the `write cloc
 
 -   Write Pointer: A binary-to-Gray code converter is implemented to translate the write address from binary to Gray code, allowing for synchronization with the read clock domain.
 
--   Full Flag: The write pointer (in Gray code) is compared with the read pointer (also in Gray code) from the two-flop synchronizer to generate the full flag. If the most significant bits (MSBs) of the write and read pointers are inverted, and the remaining bits (from the 2nd MSB to the LSB) are the same, the full flag is set, indicating the FIFO is full.
+-   Full Flag: The write pointer (in Gray code) is compared with the read pointer (also in Gray code) from the two-flop synchronizer to generate the full flag. If the first two most significant bits (MSBs) of the write and read pointers are inverted, and the remaining bits (from the 3rd MSB to the LSB) are the same, the full flag is set high, indicating the FIFO is full.
 
 N = FIFO Address Width
 
