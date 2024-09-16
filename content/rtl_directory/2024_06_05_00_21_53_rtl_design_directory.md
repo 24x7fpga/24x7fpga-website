@@ -42,7 +42,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 -   [Blocking and Non-Blocking Assignment]({{< relref "2024_07_26_17_10_23_blocking_and_non_blocking_assignment.md" >}})
 -   [Always@(\*) and Always_Comb]({{< relref "2024_08_05_16_05_55_always_and_always_comb.md" >}})
 -   [Mealy Machine and Moore Machine]({{< relref "2024_08_05_16_07_25_mealy_machine_and_moore_machine.md" >}})
--   Clock Gating
+-   [Clock Gating]({{< relref "2024_09_13_12_36_11_clock_gating.md" >}})
 
 
 ## Generic RTL Blocks {#generic-rtl-blocks}
