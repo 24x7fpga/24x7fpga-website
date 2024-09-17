@@ -13,7 +13,7 @@
       <link>https://24x7fpga.com/rtl_directory/2024_09_13_12_36_11_clock_gating/</link>
       <pubDate>Fri, 13 Sep 2024 12:36:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_09_13_12_36_11_clock_gating/</guid>
-      <description>[Design] &amp;ndash; [Testbench] &amp;ndash; RTL Design Directory
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
 Clock Gating Clock gating is a widely used technique to reduce dynamic power consumption in digital circuits, particularly in complex systems like processors and FPGAs. Before diving into the benefits of clock gating, let’s take a look at the following SystemVerilog code snippet:
 always_ff@(posedge clk) if(en) Dout &amp;lt;= Din; The gate-level diagram of this code is illustrated in Figure 1. In this design, a multiplexer (MUX) controls the data flow, ensuring that when the &amp;lsquo;En&amp;rsquo; signal is high, &amp;lsquo;Din&amp;rsquo; is passed to &amp;lsquo;Dout&amp;rsquo; on the next clock edge.</description>
     </item>
