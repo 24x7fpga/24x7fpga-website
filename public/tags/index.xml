@@ -6,8 +6,15 @@
     <description>Recent content in Tags on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Sep 2024 12:36:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 23 Sep 2024 11:00:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>uvm</title>
+      <link>https://24x7fpga.com/tags/uvm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://24x7fpga.com/tags/uvm/</guid>
+      <description></description>
+    </item>
     <item>
       <title>rtl</title>
       <link>https://24x7fpga.com/tags/rtl/</link>
@@ -16,10 +23,10 @@
       <description></description>
     </item>
     <item>
-      <title>uvm</title>
-      <link>https://24x7fpga.com/tags/uvm/</link>
+      <title>toc</title>
+      <link>https://24x7fpga.com/tags/toc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://24x7fpga.com/tags/uvm/</guid>
+      <guid>https://24x7fpga.com/tags/toc/</guid>
       <description></description>
     </item>
     <item>
@@ -55,13 +62,6 @@
       <link>https://24x7fpga.com/tags/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://24x7fpga.com/tags/vim/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>toc</title>
-      <link>https://24x7fpga.com/tags/toc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://24x7fpga.com/tags/toc/</guid>
       <description></description>
     </item>
     <item>

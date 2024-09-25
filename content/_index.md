@@ -1,6 +1,6 @@
 # Hi there! 👋
 
-[LinkedIn](https://www.linkedin.com/in/kiran760043/) --  [GitHub](https://github.com/24x7fpga) --  [Orcid](https://orcid.org/0009-0003-7024-3868) -- [Instagram](https://www.instagram.com/negativeparking/)
+[Research](research/2024_07_08_10_15_40_research) -- [LinkedIn](https://www.linkedin.com/in/kiran760043/) --  [GitHub](https://github.com/24x7fpga) --  [Orcid](https://orcid.org/0009-0003-7024-3868) -- [Instagram](https://www.instagram.com/negativeparking/)
 
 I'm Kiran, I work as Graduate Research Assistant at Wright State University currently pursuing my Doctoral degree. You can find more about my research [here](research/2024_07_08_10_15_40_research).
 

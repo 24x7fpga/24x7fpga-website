@@ -12,7 +12,7 @@ Disable Fork The disable fork contruct will terminate all outstanding or active 
 Syntax: Disable Fork fork // process 1 // process 2 // process 3 join disable fork; Example Code: Disable Fork module fork_join_any; initial begin fork #2 $display(&#34;t = %0t, fork 1 =&gt; process 1&#34;, $time); #10 $display(&#34;t = %0t, fork 1 =&gt; process 2&#34;, $time); #5 $display(&#34;t = %0t, fork 1 =&gt; process 3&#34;, $time); join_any $display(&#34;--------------- Exited Fork 1 ---------------&#34;); end initial begin fork #3 $display(&#34;t = %0t, fork 2 =&gt; process 1&#34;, $time); #6 $display(&#34;t = %0t, fork 2 =&gt; process 2&#34;, $time); #1 $display(&#34;t = %0t, fork 2 =&gt; process 3&#34;, $time); join_none disable fork; $display(&#34;--------------- Exited Fork 2 ---------------&#34;); end endmodule Execute the code in EDA Playground">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_23_17_27_50_disable_fork/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.3500235257aa6f7029ee3553518976925f78dd74702e74ee497e318b85e4b21c.css" integrity="sha256-NQAjUleqb3Ap7jVTUYl2kl943XRwLnTuSX4xi4Xkshw=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.19a7d7ba8a856bc3605fc7ca61a989cac3905b8b7707571254a3f97e6b40052a.css" integrity="sha256-GafXuoqFa8NgX8fKYamJysOQW4t3B1cSVKP5fmtABSo=" rel="preload stylesheet" as="style">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -151,17 +151,6 @@ Syntax: Disable Fork fork // process 1 // process 2 // process 3 join disable fo
             </div>
         </div>
         <ul id="menu">
-            <li>
-                <a href="https://24x7fpga.com/research/2024_07_08_10_15_40_research" title="research">
-                    <span> 
-
-
-                           
-                        
-                         
-                        research</span>  
-                </a>
-            </li>
             <li>
                 <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
                     <span> 

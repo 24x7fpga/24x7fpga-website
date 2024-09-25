@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>UVM Report Object | Home</title>
+<meta name="keywords" content="uvm">
+<meta name="description" content="Source &ndash; UVM Framework Directory
+The uvm_report_object provides an interface to the UVM reporting facility. UVM reporting plays a crucial role in tracking the progress of the testbench, identifying issues, and debugging. It provies a rich set fo message display commands and methods to track and report erros, warnings and information.
+Figure 1: UVM Reporting Classes
+The methods in uvm_report_object are delegated to the uvm_report_handler, which manages reporting configurations such as actions, verbosity, and other settings.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="https://24x7fpga.com/uvm_directory/2024_09_23_11_00_17_uvm_repor_object/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.19a7d7ba8a856bc3605fc7ca61a989cac3905b8b7707571254a3f97e6b40052a.css" integrity="sha256-GafXuoqFa8NgX8fKYamJysOQW4t3B1cSVKP5fmtABSo=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+<meta property="og:title" content="UVM Report Object" />
+<meta property="og:description" content="Source &ndash; UVM Framework Directory
+The uvm_report_object provides an interface to the UVM reporting facility. UVM reporting plays a crucial role in tracking the progress of the testbench, identifying issues, and debugging. It provies a rich set fo message display commands and methods to track and report erros, warnings and information.
+Figure 1: UVM Reporting Classes
+The methods in uvm_report_object are delegated to the uvm_report_handler, which manages reporting configurations such as actions, verbosity, and other settings." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/uvm_directory/2024_09_23_11_00_17_uvm_repor_object/" /><meta property="article:section" content="uvm_directory" />
+<meta property="article:published_time" content="2024-09-23T11:00:00-04:00" />
+<meta property="article:modified_time" content="2024-09-23T11:00:00-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="UVM Report Object"/>
+<meta name="twitter:description" content="Source &ndash; UVM Framework Directory
+The uvm_report_object provides an interface to the UVM reporting facility. UVM reporting plays a crucial role in tracking the progress of the testbench, identifying issues, and debugging. It provies a rich set fo message display commands and methods to track and report erros, warnings and information.
+Figure 1: UVM Reporting Classes
+The methods in uvm_report_object are delegated to the uvm_report_handler, which manages reporting configurations such as actions, verbosity, and other settings."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Uvm_directories",
+      "item": "https://24x7fpga.com/uvm_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "UVM Report Object",
+      "item": "https://24x7fpga.com/uvm_directory/2024_09_23_11_00_17_uvm_repor_object/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "UVM Report Object",
+  "name": "UVM Report Object",
+  "description": "Source \u0026ndash; UVM Framework Directory\nThe uvm_report_object provides an interface to the UVM reporting facility. UVM reporting plays a crucial role in tracking the progress of the testbench, identifying issues, and debugging. It provies a rich set fo message display commands and methods to track and report erros, warnings and information.\nFigure 1: UVM Reporting Classes\nThe methods in uvm_report_object are delegated to the uvm_report_handler, which manages reporting configurations such as actions, verbosity, and other settings.",
+  "keywords": [
+    "uvm"
+  ],
+  "articleBody": "Source – UVM Framework Directory\nThe uvm_report_object provides an interface to the UVM reporting facility. UVM reporting plays a crucial role in tracking the progress of the testbench, identifying issues, and debugging. It provies a rich set fo message display commands and methods to track and report erros, warnings and information.\nFigure 1: UVM Reporting Classes\nThe methods in uvm_report_object are delegated to the uvm_report_handler, which manages reporting configurations such as actions, verbosity, and other settings. The report handler decides whether a message should be displayed based on these configurations. If the message is to be displayed, the report handler passes it to a central uvm_report_server for formatting and output. The uvm_report_server is a global server that processes and displays all reports generated by the uvm_report_handler, ensuring consistent message handling across the UVM environment.\nReport Messages Reporting macros are essential for displaying messages during simulation, helping to identify potential issues and track the status of the testbench. The most commonly used reporting macros include:\nUVM_INFO: Used to display informative messages, providing details about the simulation’s progress or the status of specific events. UVM_WARNING: Indicates a potential problem that may not cause an immediate failure but could lead to issues if not addressed. UVM_ERROR: Signals a real problem that impacts the correctness of the simulation. Although an error is reported, the simulation continues based on the configured message action. UVM_FATAL: Reports a critical issue from which the simulation cannot recover. After reporting the fatal error, the simulation exits with a #0 delay using $finish. These macros make debugging and tracking issues more efficient, allowing engineers to identify errors quickly within their UVM environment.\nSyntax In UVM, the uvm_info macro is used to display informational messages during simulation.\n`uvm_info(\u003cString ID\u003e, \u003cString MSG\u003e, \u003cVerbosity\u003e); The syntax of this macro includes three key elements:\nString ID: This tag identifies the message and specifies which component or process it is related to. By using meaningful IDs, you can categorize and quickly search for specific messages in the simulation log. For example, “UART_TX” could tag messages related to the transmit path of a design.\nString MSG: This is the actual message content that gets displayed. It provides details or context about what is happening in the simulation at a given point. For instance, the message might describe the initialization of a block or the detection of a particular event.\nVerbosity: The verbosity level allows you to configure how the UVM report server handles the message. With this setting, you can filter out irrelevant messages and focus on those of particular interest. Verbosity levels include UVM_LOW, UVM_MEDIUM, UVM_HIGH, etc., providing flexibility in the amount of detail displayed.\nFor a message to appear on the simulator console, the configured verbosity of the simulation must be greater than or equal to the verbosity level set in the uvm_info macro.\nVerbosity Value Description UVM_NONE 0 Report is always printed. Verbosity level setting cannot disable it. UVM_LOW 100 Report is issued if configured verbosity is set to UVM_LOW or above. UVM_MEDIUM 200 Report is issued if configured verbosity is set to UVM_LOW or above. UVM_HIGH 300 Report is issued if configured verbosity is set to UVM_LOW or above. UVM_FULL 400 Report is issued if configured verbosity is set to UVM_LOW or above. UVM_HIGH 500 Report is issued if configured verbosity is set to UVM_LOW or above. Note: UVM_MEDIUM is set as the default value of verbosity.\nExample: `uvm_info(\"UART_TX\", \"UART Transmission started successfully\", UVM_MEDIUM); In this example:\n“UART_TX” is the String ID. “UART Transmission started successfully” is the String MSG. UVM_MEDIUM sets the Verbosity level. Note: Among the UVM reporting macros, only uvm_info includes the verbosity argument. The other three macros: uvm_warning, uvm_error, and uvm_fatal do not have this argument. These macros report messages of fixed severity, meaning they do not rely on verbosity settings to filter or display the message.\nReference Universal Verification Methodology (UVM) 1.1 Class Reference Cummings, Clifford E. “UVM Message Display Commands Capabilities, Proper Usage and Guidelines.” ",
+  "wordCount" : "659",
+  "inLanguage": "en",
+  "datePublished": "2024-09-23T11:00:00-04:00",
+  "dateModified": "2024-09-23T11:00:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/uvm_directory/2024_09_23_11_00_17_uvm_repor_object/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      UVM Report Object
+    </h1>
+    <div class="post-meta"><span title='2024-09-23 11:00:00 -0400 EDT'>September 23, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;659 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/UVM/blob/main/uvm_verification/report_object/tb_report_object.sv">Source</a> &ndash; <a href="/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/">UVM Framework Directory</a></p>
+<p>The <code>uvm_report_object</code> provides an interface to the UVM reporting facility. UVM reporting plays a crucial role in tracking the progress of the testbench, identifying issues, and debugging. It provies a rich set fo message display commands and methods to track and report erros, warnings and information.</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/reporting_classes.svg"
+         alt="Figure 1: UVM Reporting Classes"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 1: <!-- raw HTML omitted -->UVM Reporting Classes</p>
+        </figcaption>
+</figure>
+
+<p>The methods in uvm_report_object are delegated to the <code>uvm_report_handler</code>, which manages reporting configurations such as actions, verbosity, and other settings. The report handler decides whether a message should be displayed based on these configurations. If the message is to be displayed, the report handler passes it to a central <code>uvm_report_server</code> for formatting and output. The uvm_report_server is a global server that processes and displays all reports generated by the uvm_report_handler, ensuring consistent message handling across the UVM environment.</p>
+<h2 id="report-messages">Report Messages<a hidden class="anchor" aria-hidden="true" href="#report-messages">#</a></h2>
+<p>Reporting <code>macros</code> are essential for displaying messages during simulation, helping to identify potential issues and track the status of the testbench. The most commonly used reporting macros include:</p>
+<ul>
+<li>UVM_INFO: Used to display informative messages, providing details about the simulation&rsquo;s progress or the status of specific events.</li>
+<li>UVM_WARNING: Indicates a potential problem that may not cause an immediate failure but could lead to issues if not addressed.</li>
+<li>UVM_ERROR: Signals a real problem that impacts the correctness of the simulation. Although an error is reported, the simulation continues based on the configured message action.</li>
+<li>UVM_FATAL: Reports a critical issue from which the simulation cannot recover. After reporting the fatal error, the simulation exits with a #0 delay using $finish.</li>
+</ul>
+<p>These macros make debugging and tracking issues more efficient, allowing engineers to identify errors quickly within their UVM environment.</p>
+<h3 id="syntax">Syntax<a hidden class="anchor" aria-hidden="true" href="#syntax">#</a></h3>
+<p>In UVM, the uvm_info macro is used to display informational messages during simulation.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span><span style="color:#66d9ef">`uvm_info</span>(<span style="color:#f92672">&lt;</span>String ID<span style="color:#f92672">&gt;</span>, <span style="color:#f92672">&lt;</span>String MSG<span style="color:#f92672">&gt;</span>, <span style="color:#f92672">&lt;</span>Verbosity<span style="color:#f92672">&gt;</span>);
+</span></span></code></pre></div><p>The syntax of this macro includes three key elements:</p>
+<ul>
+<li>
+<p>String ID: This tag identifies the message and specifies which component or process it is related to. By using meaningful IDs, you can categorize and quickly search for specific messages in the simulation log. For example, &ldquo;UART_TX&rdquo; could tag messages related to the transmit path of a design.</p>
+</li>
+<li>
+<p>String MSG: This is the actual message content that gets displayed. It provides details or context about what is happening in the simulation at a given point. For instance, the message might describe the initialization of a block or the detection of a particular event.</p>
+</li>
+<li>
+<p>Verbosity: The verbosity level allows you to configure how the UVM report server handles the message. With this setting, you can filter out irrelevant messages and focus on those of particular interest. Verbosity levels include UVM_LOW, UVM_MEDIUM, UVM_HIGH, etc., providing flexibility in the amount of detail displayed.</p>
+</li>
+</ul>
+<p>For a message to appear on the simulator console, the configured verbosity of the simulation must be greater than or equal to the verbosity level set in the <code>uvm_info</code> macro.</p>
+<table>
+<thead>
+<tr>
+<th>Verbosity</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UVM_NONE</td>
+<td>0</td>
+<td>Report is always printed. Verbosity level setting cannot disable it.</td>
+</tr>
+<tr>
+<td>UVM_LOW</td>
+<td>100</td>
+<td>Report is issued if configured verbosity is set to UVM_LOW or above.</td>
+</tr>
+<tr>
+<td>UVM_MEDIUM</td>
+<td>200</td>
+<td>Report is issued if configured verbosity is set to UVM_LOW or above.</td>
+</tr>
+<tr>
+<td>UVM_HIGH</td>
+<td>300</td>
+<td>Report is issued if configured verbosity is set to UVM_LOW or above.</td>
+</tr>
+<tr>
+<td>UVM_FULL</td>
+<td>400</td>
+<td>Report is issued if configured verbosity is set to UVM_LOW or above.</td>
+</tr>
+<tr>
+<td>UVM_HIGH</td>
+<td>500</td>
+<td>Report is issued if configured verbosity is set to UVM_LOW or above.</td>
+</tr>
+</tbody>
+</table>
+<p>Note: UVM_MEDIUM is set as the default value of verbosity.</p>
+<h4 id="example">Example:<a hidden class="anchor" aria-hidden="true" href="#example">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span><span style="color:#66d9ef">`uvm_info</span>(<span style="color:#e6db74">&#34;UART_TX&#34;</span>, <span style="color:#e6db74">&#34;UART Transmission started successfully&#34;</span>, UVM_MEDIUM);
+</span></span></code></pre></div><p>In this example:</p>
+<ul>
+<li>&ldquo;UART_TX&rdquo; is the String ID.</li>
+<li>&ldquo;UART Transmission started successfully&rdquo; is the String MSG.</li>
+<li>UVM_MEDIUM sets the Verbosity level.</li>
+</ul>
+<p>Note: Among the UVM reporting macros, only <code>uvm_info</code> includes the verbosity argument. The other three macros: <code>uvm_warning</code>, <code>uvm_error</code>, and <code>uvm_fatal</code> do not have this argument. These macros report messages of fixed severity, meaning they do not rely on verbosity settings to filter or display the message.</p>
+<h2 id="reference">Reference<a hidden class="anchor" aria-hidden="true" href="#reference">#</a></h2>
+<ol>
+<li><a href="https://accellera.org/images/downloads/standards/uvm/UVM_1.1_Class_Reference_Final_06062011.pdf">Universal Verification Methodology (UVM) 1.1 Class Reference</a></li>
+<li><a href="http://www.sunburst-design.com/papers/CummingsSNUG2014AUS_UVM_Messages.pdf">Cummings, Clifford E. &ldquo;UVM Message Display Commands Capabilities, Proper Usage and Guidelines.&rdquo;</a></li>
+</ol>
+
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://24x7fpga.com/tags/uvm/">uvm</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

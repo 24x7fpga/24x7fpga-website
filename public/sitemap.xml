@@ -3,7 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://24x7fpga.com/</loc>
-    <lastmod>2024-09-13T12:36:00-04:00</lastmod>
+    <lastmod>2024-09-23T11:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/</loc>
+    <lastmod>2024-09-23T11:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/uvm/</loc>
+    <lastmod>2024-09-23T11:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/uvm_directory/2024_09_23_11_00_17_uvm_repor_object/</loc>
+    <lastmod>2024-09-23T11:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/uvm_directory/</loc>
+    <lastmod>2024-09-23T11:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/uvm_directory/2024_09_22_09_38_07_uvm_base_class_library/</loc>
+    <lastmod>2024-09-22T09:38:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/uvm_directory/2024_09_22_08_54_25_uvm_testbench_overview/</loc>
+    <lastmod>2024-09-22T08:54:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/rtl_directory/2024_09_13_12_36_11_clock_gating/</loc>
     <lastmod>2024-09-13T12:36:00-04:00</lastmod>
@@ -14,20 +32,17 @@
     <loc>https://24x7fpga.com/rtl_directory/</loc>
     <lastmod>2024-09-13T12:36:00-04:00</lastmod>
   </url><url>
-    <loc>https://24x7fpga.com/tags/</loc>
-    <lastmod>2024-09-13T12:36:00-04:00</lastmod>
-  </url><url>
     <loc>https://24x7fpga.com/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/</loc>
     <lastmod>2024-09-07T10:52:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/tags/uvm/</loc>
-    <lastmod>2024-09-04T14:44:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/uvm_directory/2024_09_04_14_44_52_uvm_workflow_in_vivado/</loc>
     <lastmod>2024-09-04T14:44:00-04:00</lastmod>
   </url><url>
-    <loc>https://24x7fpga.com/uvm_directory/</loc>
-    <lastmod>2024-09-04T14:44:00-04:00</lastmod>
+    <loc>https://24x7fpga.com/tags/toc/</loc>
+    <lastmod>2024-08-28T12:39:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/</loc>
+    <lastmod>2024-08-28T12:39:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/rtl_directory/2024_08_22_14_57_15_synchronous_fifo/</loc>
     <lastmod>2024-08-22T14:57:00-04:00</lastmod>
@@ -291,9 +306,6 @@
     <lastmod>2024-06-28T14:48:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</loc>
-    <lastmod>2024-06-27T16:53:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/tags/toc/</loc>
     <lastmod>2024-06-27T16:53:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/rtl_directory/2024_06_23_21_30_22_decoder/</loc>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>UVM Testbench Overview | Home</title>
+<meta name="keywords" content="uvm">
+<meta name="description" content="UVM Framework Directory
+The UVM testbench follows a layered architecture, where each component is dedicated to a specific task and interacts with the rest of the testbench through well-defined interfaces. This design promotes modularity and reusability, making it easier to manage and extend the testbench. Figure 1 illustrates a typical UVM testbench architecture.
+Figure 1: UVM Testbench Architecture
+UVM Testbench The UVM Testbench is the top-level module in the hierarchy, where both the UVM Test and the Design Under Test (DUT) are instantiated.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="https://24x7fpga.com/uvm_directory/2024_09_22_08_54_25_uvm_testbench_overview/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.19a7d7ba8a856bc3605fc7ca61a989cac3905b8b7707571254a3f97e6b40052a.css" integrity="sha256-GafXuoqFa8NgX8fKYamJysOQW4t3B1cSVKP5fmtABSo=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+<meta property="og:title" content="UVM Testbench Overview" />
+<meta property="og:description" content="UVM Framework Directory
+The UVM testbench follows a layered architecture, where each component is dedicated to a specific task and interacts with the rest of the testbench through well-defined interfaces. This design promotes modularity and reusability, making it easier to manage and extend the testbench. Figure 1 illustrates a typical UVM testbench architecture.
+Figure 1: UVM Testbench Architecture
+UVM Testbench The UVM Testbench is the top-level module in the hierarchy, where both the UVM Test and the Design Under Test (DUT) are instantiated." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/uvm_directory/2024_09_22_08_54_25_uvm_testbench_overview/" /><meta property="article:section" content="uvm_directory" />
+<meta property="article:published_time" content="2024-09-22T08:54:00-04:00" />
+<meta property="article:modified_time" content="2024-09-22T08:54:00-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="UVM Testbench Overview"/>
+<meta name="twitter:description" content="UVM Framework Directory
+The UVM testbench follows a layered architecture, where each component is dedicated to a specific task and interacts with the rest of the testbench through well-defined interfaces. This design promotes modularity and reusability, making it easier to manage and extend the testbench. Figure 1 illustrates a typical UVM testbench architecture.
+Figure 1: UVM Testbench Architecture
+UVM Testbench The UVM Testbench is the top-level module in the hierarchy, where both the UVM Test and the Design Under Test (DUT) are instantiated."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Uvm_directories",
+      "item": "https://24x7fpga.com/uvm_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "UVM Testbench Overview",
+      "item": "https://24x7fpga.com/uvm_directory/2024_09_22_08_54_25_uvm_testbench_overview/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "UVM Testbench Overview",
+  "name": "UVM Testbench Overview",
+  "description": "UVM Framework Directory\nThe UVM testbench follows a layered architecture, where each component is dedicated to a specific task and interacts with the rest of the testbench through well-defined interfaces. This design promotes modularity and reusability, making it easier to manage and extend the testbench. Figure 1 illustrates a typical UVM testbench architecture.\nFigure 1: UVM Testbench Architecture\nUVM Testbench The UVM Testbench is the top-level module in the hierarchy, where both the UVM Test and the Design Under Test (DUT) are instantiated.",
+  "keywords": [
+    "uvm"
+  ],
+  "articleBody": "UVM Framework Directory\nThe UVM testbench follows a layered architecture, where each component is dedicated to a specific task and interacts with the rest of the testbench through well-defined interfaces. This design promotes modularity and reusability, making it easier to manage and extend the testbench. Figure 1 illustrates a typical UVM testbench architecture.\nFigure 1: UVM Testbench Architecture\nUVM Testbench The UVM Testbench is the top-level module in the hierarchy, where both the UVM Test and the Design Under Test (DUT) are instantiated. It also handles the configuration of connections between these components. One of the key features of the UVM Test is that it is dynamically instantiated at run-time, enabling the testbench to be compiled just once while running various tests, making the verification process more flexible and efficient.\nUVM Test The UVM Test is the top-level component in the UVM testbench hierarchy, dynamically created at run-time. It plays a crucial role in the verification process by performing three key functions:\nInstantiating the top-level environment. Configuring the environment using factory overrides or the configuration database. Applying stimulus by invoking UVM sequences, which drive the stimulus through the environment to the DUT. UVM Sequence The UVM Sequence is an object that control the generation and flow of stimulus to the driver.\nConfig/Factory Overrides UVM Environment The UVM Environment is a hierarchical component that groups other verification components that are interrelated. The Top-level Environment encapsulates all the verification components targeting the DUT. Typically, the UVM Agents, UVM Scorboards or even other UVM Environments are instantiated in the top-level Environment.\nUVM Sequencer The UVM Sequencer manages the execution of sequences and is responsible for arbitration when multiple sequences are running. It communicates with drivers by sending sequence items.\nUVM Scoreboard The UVM Scoreboard collects the resposes from the DUT and checks for correctness by comparing to a reference model know as the predictor.\nUVM Agent The UVM Agent is a hierarchical component that groups three other components. Typically, the grouped components are sequencer, driver and monitor.\nSequencer The UVM Sequencer manages the stimulus flow.\nDriver The UVM Driver is responsible for applying stimulus to the DUT interface. It receives individual sequence item transactions from the UVM Sequencer and translates them into pin-level signals for the DUT. The UVM Driver utilizes a Transaction Level Modeling (TLM) port to convert these high-level transactions into the appropriate low-level stimulus for the DUT, ensuring accurate signal application at the interface.\nMonitor The UVM Monitor samples the DUT interface. Similary to the Driver, a TLM port is incorporated to converts pin-level reponses to a transactions item for the rest of the testbench components.\nDesign Under Test (DUT) As the name suggests, the Design Under Test (DUT) refers to the synthesizable Verilog/SystemVerilog component that is being tested for functional correctness.\n",
+  "wordCount" : "462",
+  "inLanguage": "en",
+  "datePublished": "2024-09-22T08:54:00-04:00",
+  "dateModified": "2024-09-22T08:54:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/uvm_directory/2024_09_22_08_54_25_uvm_testbench_overview/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      UVM Testbench Overview
+    </h1>
+    <div class="post-meta"><span title='2024-09-22 08:54:00 -0400 EDT'>September 22, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;462 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/">UVM Framework Directory</a></p>
+<p>The UVM testbench follows a layered architecture, where each component is dedicated to a specific task and interacts with the rest of the testbench through well-defined interfaces. This design promotes modularity and reusability, making it easier to manage and extend the testbench. Figure 1 illustrates a typical UVM testbench architecture.</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/uvm_tb_overview.svg"
+         alt="Figure 1: UVM Testbench Architecture"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 1: <!-- raw HTML omitted -->UVM Testbench Architecture</p>
+        </figcaption>
+</figure>
+
+<h2 id="uvm-testbench">UVM Testbench<a hidden class="anchor" aria-hidden="true" href="#uvm-testbench">#</a></h2>
+<p>The <code>UVM Testbench</code> is the top-level module in the hierarchy, where both the UVM Test and the Design Under Test (DUT) are instantiated. It also handles the configuration of connections between these components. One of the key features of the <code>UVM Test</code> is that it is <code>dynamically instantiated at run-time</code>, enabling the testbench to be compiled just once while running various tests, making the verification process more flexible and efficient.</p>
+<h2 id="uvm-test">UVM Test<a hidden class="anchor" aria-hidden="true" href="#uvm-test">#</a></h2>
+<p>The UVM Test is the top-level component in the UVM testbench hierarchy, dynamically created at run-time. It plays a crucial role in the verification process by performing three key functions:</p>
+<ol>
+<li>Instantiating the top-level environment.</li>
+<li>Configuring the environment using factory overrides or the configuration database.</li>
+<li>Applying stimulus by invoking UVM sequences, which drive the stimulus through the environment to the DUT.</li>
+</ol>
+<h3 id="uvm-sequence">UVM Sequence<a hidden class="anchor" aria-hidden="true" href="#uvm-sequence">#</a></h3>
+<p>The UVM Sequence is an <code>object</code> that control the generation and flow of stimulus to the driver.</p>
+<h3 id="config-factory-overrides">Config/Factory Overrides<a hidden class="anchor" aria-hidden="true" href="#config-factory-overrides">#</a></h3>
+<h2 id="uvm-environment">UVM Environment<a hidden class="anchor" aria-hidden="true" href="#uvm-environment">#</a></h2>
+<p>The UVM Environment is a hierarchical component that groups other verification components that are interrelated. The Top-level Environment encapsulates all the verification components targeting the DUT. Typically, the UVM Agents, UVM Scorboards or even other UVM Environments are instantiated in the top-level Environment.</p>
+<h3 id="uvm-sequencer">UVM Sequencer<a hidden class="anchor" aria-hidden="true" href="#uvm-sequencer">#</a></h3>
+<p>The UVM Sequencer manages the execution of sequences and is responsible for arbitration when multiple sequences are running. It communicates with drivers by sending sequence items.</p>
+<h3 id="uvm-scoreboard">UVM Scoreboard<a hidden class="anchor" aria-hidden="true" href="#uvm-scoreboard">#</a></h3>
+<p>The UVM Scoreboard collects the resposes from the DUT and checks for correctness by comparing to a reference model know as the <code>predictor</code>.</p>
+<h3 id="uvm-agent">UVM Agent<a hidden class="anchor" aria-hidden="true" href="#uvm-agent">#</a></h3>
+<p>The UVM Agent is a hierarchical component that groups three other components. Typically, the grouped components are sequencer, driver and monitor.</p>
+<h4 id="sequencer">Sequencer<a hidden class="anchor" aria-hidden="true" href="#sequencer">#</a></h4>
+<p>The UVM Sequencer manages the stimulus flow.</p>
+<h4 id="driver">Driver<a hidden class="anchor" aria-hidden="true" href="#driver">#</a></h4>
+<p>The UVM Driver is responsible for applying stimulus to the DUT interface. It receives individual sequence item transactions from the UVM Sequencer and translates them into pin-level signals for the DUT. The UVM Driver utilizes a Transaction Level Modeling (TLM) port to convert these high-level transactions into the appropriate low-level stimulus for the DUT, ensuring accurate signal application at the interface.</p>
+<h4 id="monitor">Monitor<a hidden class="anchor" aria-hidden="true" href="#monitor">#</a></h4>
+<p>The UVM Monitor samples the DUT interface. Similary to the Driver, a TLM port is incorporated to converts pin-level reponses to a transactions item for the rest of the testbench components.</p>
+<h2 id="design-under-test--dut">Design Under Test (DUT)<a hidden class="anchor" aria-hidden="true" href="#design-under-test--dut">#</a></h2>
+<p>As the name suggests, the Design Under Test (DUT) refers to the synthesizable Verilog/SystemVerilog component that is being tested for functional correctness.</p>
+
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://24x7fpga.com/tags/uvm/">uvm</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
