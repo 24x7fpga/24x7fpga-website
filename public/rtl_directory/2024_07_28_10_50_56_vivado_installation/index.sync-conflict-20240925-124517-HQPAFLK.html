@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Vivado Installation | Home</title>
+<meta name="keywords" content="rtl">
+<meta name="description" content="Digilent&rsquo;s Zybo-Z7 is a ready-to-use embedded software and digital circuit development board built around the Xilinx Zynq™-7000 family. Xilinx provides free licensing to certain development boards and Zybo-Z7 is one among them. This article provides detailed steps to install Vivado 2022.2 on Ubuntu 22.04 LTS. The same procedure can be followed to install the desired version of the software.
+Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred) and 100GB of free storage space for full installation.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="http://localhost:1313/rtl_directory/2024_07_28_10_50_56_vivado_installation/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.19a7d7ba8a856bc3605fc7ca61a989cac3905b8b7707571254a3f97e6b40052a.css" integrity="sha256-GafXuoqFa8NgX8fKYamJysOQW4t3B1cSVKP5fmtABSo=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rtl_directory/2024_07_28_10_50_56_vivado_installation/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+<link rel="stylesheet" href="/css/syntax.css" !important>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Vivado Installation
+    </h1>
+    <div class="post-meta"><span title='2024-07-28 10:50:00 -0400 EDT'>July 28, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;514 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p>Digilent&rsquo;s <a href="https://digilent.com/shop/zybo-z7-zynq-7000-arm-fpga-soc-development-board/">Zybo-Z7</a> is a ready-to-use embedded software and digital circuit development board built around the Xilinx Zynq™-7000 family. Xilinx provides free licensing to certain development boards and Zybo-Z7 is one among them. This article provides detailed steps to install Vivado 2022.2 on Ubuntu 22.04 LTS. The same procedure can be followed to install the desired version of the software.</p>
+<h2 id="initial-requirements">Initial Requirements<a hidden class="anchor" aria-hidden="true" href="#initial-requirements">#</a></h2>
+<ol>
+<li>A desktop/laptop with at least 16GB of RAM (DDR4 preferred) and 100GB of free storage space for full installation.</li>
+<li>Create an <a href="https://www.amd.com/en/registration/create-account.html">AMD Xilinx Account</a> to download the software.</li>
+</ol>
+<p>More information regarding the system requirements is detailed in the Vivado Design Suite User Guide <a href="https://www.xilinx.com/support/documents/sw_manuals/xilinx2022_2/ug973-vivado-release-notes-install-license.pdf">UG973</a>.</p>
+<h2 id="download-vivado">Download Vivado<a hidden class="anchor" aria-hidden="true" href="#download-vivado">#</a></h2>
+<p>Navigate to the Xilinx <a href="https://www.xilinx.com/support/download.html?_ga=2.260602445.115923376.1607278706-574785482.1605024210">Download page</a> and click on the <em>Xilinx Unified Installer 2022.2: Linux Self Extracting Web installer</em>, this should be redirected to the login page. Log in with the Xilinx Account and download the file.</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/vivado.png" width="600px"/> 
+</figure>
+
+<h2 id="running-the-installer">Running The Installer<a hidden class="anchor" aria-hidden="true" href="#running-the-installer">#</a></h2>
+<p>To run the unified installer, it must first be converted to an executable file.</p>
+<pre tabindex="0"><code class="language-linux" data-lang="linux">chmod -x Xilinx_Unified_2022.2_1014_8888_Lin64.bin
+</code></pre><p>After making the file executable run the the installer with root permissions.</p>
+<pre tabindex="0"><code class="language-linux" data-lang="linux">sudo ./Xilinx_Unified_2022.2_1014_8888_Lin64.bin
+</code></pre><p>This will open the installer GUI in a new window.</p>
+<h2 id="vivado-installer-gui">Vivado Installer GUI<a hidden class="anchor" aria-hidden="true" href="#vivado-installer-gui">#</a></h2>
+<p>The welcome screen of the installer GUI provides a reminder of the supported OS version.</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/installer_gui1.png" width="500px"/> 
+</figure>
+
+<p>Click Next, to proceed. The next window requires the user to provide the account credentials. The same account credentials were used at the beginning to log in to Xilinx and to download the Vivado software.</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/installer_gui2.png" width="500px"/> 
+</figure>
+
+<p>In the select product window, select <strong>Vivado</strong> and proceed.</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/installer_gui3.png" width="500px"/> 
+</figure>
+
+<p>Select Vivado ML Standard edition as it does not require a license to generate the necessary file to program the Zybo-Z7 development.</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/installer_gui4.png" width="500px"/> 
+</figure>
+
+<p>The two versions of Zybo-Z7, Z7-10, and Z7-20 include Zynq-7000 SoC XC7Z010 and XC7Z020 devices respectively. From <a href="https://www.xilinx.com/support/documents/sw_manuals/xilinx2022_2/ug973-vivado-release-notes-install-license.pdf">UG973</a> table 1, Vivado ML Standard Edition includes the license for the required FPGA.</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/license.png" width="600px"/> 
+</figure>
+
+<p>Earlier it was mentioned at least 100GB of free storage is required to install Vivado, installing only the necessary tools and components will reduce the storage space. Installing only the Zynq-7000 SoC will require less storage space as it can be seen in the figure below.</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/installer_gui5.png" width="500px"/> 
+</figure>
+
+<p>Agree to all the terms and conditions and process further.</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/installer_gui6.png" width="500px"/> 
+</figure>
+
+<p>The installing directory should be <strong>/tools/Xilinx</strong>, there are errors in the image shown below because Vivado is already installed in the specified location. If it is a fresh installation then these errors will not be displayed.</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/installer_gui7.png" width="500px"/> 
+</figure>
+
+<p>The final step is to click on the install button on the summary window. Here the installation location should specify the selected installation location by the user.</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/installer_gui8.png" width="500px"/> 
+</figure>
+
+<h2 id="install-cable-drivers">Install Cable Drivers<a hidden class="anchor" aria-hidden="true" href="#install-cable-drivers">#</a></h2>
+<p>Once the installation is completed, check if the cable drivers are installed correctly using the following command:</p>
+<pre tabindex="0"><code class="language-linux" data-lang="linux">ls -la /etc/udev/rules.d
+</code></pre><p>This should output the following two files:</p>
+<blockquote>
+<ul>
+<li>52-digilent-usb.rules</li>
+<li>52-xilinx-pcusb.rules</li>
+</ul>
+</blockquote>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/drivers.png" width="350px"/> 
+</figure>
+
+<p>If the above files are not present, run the installer from the following directory:</p>
+<blockquote>
+<p>&lt;YOUR_XILINX_INSTALL&gt;/data/xicom/cable_drivers/&lt;lin64 or lin32&gt;/install_scripts/install_drivers</p>
+</blockquote>
+<p>Example:</p>
+<pre tabindex="0"><code class="language-linux" data-lang="linux">/tools/Xilinx/Vivado/2022.2/data/xicom/cable_drivers/lin64/install_script/install_drivers
+</code></pre><p><a href="https://support.xilinx.com/s/article/66440?language=en_US">Xilinx Support</a></p>
+<h2 id="launch-vivado">Launch Vivado<a hidden class="anchor" aria-hidden="true" href="#launch-vivado">#</a></h2>
+<p>Vivado can be launched from the terminal by executing the <strong>Vivado</strong> command. To enable this, the following should be added to the <strong>~/.profile</strong> file.</p>
+<pre tabindex="0"><code class="language-linux" data-lang="linux">source /tools/Xilinx/Vivado/2022.2/setting64.sh
+</code></pre><p>Note: Add the appropriate Vivado version folder in the source path.</p>
+
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/rtl/">Rtl</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

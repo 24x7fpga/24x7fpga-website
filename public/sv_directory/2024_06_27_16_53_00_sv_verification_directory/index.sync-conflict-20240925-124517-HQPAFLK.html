@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>SV Verification Directory | Home</title>
+<meta name="keywords" content="toc">
+<meta name="description" content="In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
+Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block ">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.19a7d7ba8a856bc3605fc7ca61a989cac3905b8b7707571254a3f97e6b40052a.css" integrity="sha256-GafXuoqFa8NgX8fKYamJysOQW4t3B1cSVKP5fmtABSo=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+<link rel="stylesheet" href="/css/syntax.css" !important>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span class="active"> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      SV Verification Directory
+    </h1>
+    <div class="post-meta"><span title='2024-06-27 16:53:00 -0400 EDT'>June 27, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;168 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.</p>
+<h2 id="layered-testbench">Layered Testbench<a hidden class="anchor" aria-hidden="true" href="#layered-testbench">#</a></h2>
+<ul>
+<li>Testbench overview</li>
+</ul>
+<h2 id="data-types">Data Types<a hidden class="anchor" aria-hidden="true" href="#data-types">#</a></h2>
+<ul>
+<li><a href="/sv_directory/2024_06_28_14_48_33_logic_type/">Logic Type</a></li>
+<li><a href="/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/">Fixed-Size Arrays</a></li>
+<li><a href="/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/">Packed and Unpacked Array</a></li>
+<li><a href="/sv_directory/2024_07_01_15_56_35_dynamic_arrays/">Dynamic Arrays</a></li>
+<li><a href="/sv_directory/2024_07_01_23_35_47_queues/">Queues</a></li>
+<li><a href="/sv_directory/2024_07_02_00_18_56_associative_arrays/">Associative Arrays</a></li>
+<li><a href="/sv_directory/2024_07_02_09_48_08_array_methods/">Array Methods</a></li>
+<li><a href="/sv_directory/2024_07_02_15_05_30_enumeration/">Enumeration</a></li>
+<li><a href="/sv_directory/2024_07_02_16_54_49_structures/">Structures</a></li>
+<li>Streaming Operator</li>
+</ul>
+<h2 id="type-converstion">Type Converstion<a hidden class="anchor" aria-hidden="true" href="#type-converstion">#</a></h2>
+<ul>
+<li><a href="/sv_directory/2024_07_02_18_32_19_static_cast/">Static Cast</a></li>
+<li><a href="/sv_directory/2024_07_02_18_41_56_dynamic_cast/">Dynamic Cast</a></li>
+</ul>
+<h2 id="flow-control">Flow Control<a hidden class="anchor" aria-hidden="true" href="#flow-control">#</a></h2>
+<ul>
+<li><a href="/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/">For and Foreach Loops</a></li>
+<li><a href="/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/">While and Do While Loops</a></li>
+<li><a href="/sv_directory/2024_07_19_14_46_31_repeat_and_forever/">Repeat and Forever</a></li>
+<li><a href="/sv_directory/2024_07_19_15_18_41_break_and_continue/">Break and Continue</a></li>
+</ul>
+<h2 id="tasks-and-functions">Tasks and Functions<a hidden class="anchor" aria-hidden="true" href="#tasks-and-functions">#</a></h2>
+<ul>
+<li><a href="/sv_directory/2024_07_19_15_48_23_tasks/">Tasks</a></li>
+<li><a href="/sv_directory/2024_07_20_15_36_43_functions/">Functions</a></li>
+</ul>
+<h2 id="process">Process<a hidden class="anchor" aria-hidden="true" href="#process">#</a></h2>
+<ul>
+<li><a href="/sv_directory/2024_07_20_21_47_05_fork_join/">Fork Join</a></li>
+<li><a href="/sv_directory/2024_07_20_21_58_50_fork_join_any/">Fork Join Any</a></li>
+<li><a href="/sv_directory/2024_07_20_22_11_00_fork_join_none/">Fork Join None</a></li>
+<li><a href="/sv_directory/2024_07_23_17_27_07_wait_fork/">Wait Fork</a></li>
+<li><a href="/sv_directory/2024_07_23_17_27_50_disable_fork/">Disable Fork</a></li>
+</ul>
+<h2 id="oop-in-sv">OOP in SV<a hidden class="anchor" aria-hidden="true" href="#oop-in-sv">#</a></h2>
+<ul>
+<li><a href="/sv_directory/2024_07_24_15_11_27_object_oriented_programming/">Object-Oriented Programming</a></li>
+<li><a href="/sv_directory/2024_07_24_16_47_44_class/">Class</a></li>
+<li><a href="/sv_directory/2024_07_24_22_09_00_handle/">Handle</a></li>
+<li><a href="/sv_directory/2024_07_24_17_42_06_object/">Object</a></li>
+<li><a href="/sv_directory/2024_07_25_12_36_42_method/">Method</a></li>
+<li><a href="/sv_directory/2024_07_25_14_49_57_this_keyword/">This Keyword</a></li>
+<li><a href="/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/">Static Class Properties and Methods</a></li>
+<li><a href="/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/">Shallow Copy and Deep Copy</a></li>
+<li><a href="/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/">Four Pillars of OOP</a></li>
+<li><a href="/sv_directory/2024_07_29_11_09_50_inheritance/">Inheritance</a></li>
+<li><a href="/sv_directory/2024_07_29_12_16_52_super_keyword/">Super Keyword</a></li>
+<li><a href="/sv_directory/2024_07_31_10_21_04_virtual_keyword/">Virtual Keyword</a></li>
+<li><a href="/sv_directory/2024_07_31_10_26_49_polymorphism/">Polymorphism</a></li>
+<li><a href="/sv_directory/2024_07_31_16_19_14_encapsulation/">Encapsulation</a></li>
+</ul>
+<h2 id="interprocess-communication">Interprocess Communication<a hidden class="anchor" aria-hidden="true" href="#interprocess-communication">#</a></h2>
+<ul>
+<li><a href="/sv_directory/2024_07_31_17_20_12_events/">Events</a></li>
+<li><a href="/sv_directory/2024_08_06_10_48_02_mailbox/">Mailbox</a></li>
+<li><a href="/sv_directory/2024_08_06_12_53_53_semaphore/">Semaphore</a></li>
+</ul>
+<h2 id="interface">Interface<a hidden class="anchor" aria-hidden="true" href="#interface">#</a></h2>
+<ul>
+<li><a href="/sv_directory/2024_08_08_10_27_00_interface/">Interface</a></li>
+<li><a href="/sv_directory/2024_08_08_10_17_52_modport/">Modport</a></li>
+<li><a href="/sv_directory/2024_08_08_13_51_50_clocking_block/">Clocking Block</a></li>
+</ul>
+
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/toc/">Toc</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

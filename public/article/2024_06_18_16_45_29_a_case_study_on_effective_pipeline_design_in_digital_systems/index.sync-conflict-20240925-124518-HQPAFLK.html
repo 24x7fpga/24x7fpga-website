@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>A Case Study on Effective Pipeline Design in Digital Systems | Home</title>
+<meta name="keywords" content="article">
+<meta name="description" content="Published Article
+Throughput and latency are fundamental concepts in moderm digital system. Throughput refers to the time the system takes to process the data per clock cycle where latency refers to the time it takes for the data to travese from one location to another to complete an operation. High throughput and low latency are essentail for today&rsquo;s fast-paced digital world. For example, higher throughput ensure smooth and uninterrupted audio and video streaming and low latency provides seamless and responsive gaming experience reducing lag.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="http://localhost:1313/article/2024_06_18_16_45_29_a_case_study_on_effective_pipeline_design_in_digital_systems/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.19a7d7ba8a856bc3605fc7ca61a989cac3905b8b7707571254a3f97e6b40052a.css" integrity="sha256-GafXuoqFa8NgX8fKYamJysOQW4t3B1cSVKP5fmtABSo=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/article/2024_06_18_16_45_29_a_case_study_on_effective_pipeline_design_in_digital_systems/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+<link rel="stylesheet" href="/css/syntax.css" !important>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      A Case Study on Effective Pipeline Design in Digital Systems
+    </h1>
+    <div class="post-meta"><span title='2024-06-18 16:45:00 -0400 EDT'>June 18, 2024</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;1413 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="https://verilog-meetup.com/2024/06/20/a-case-study-on-effective-pipeline-design-in-digital-system/">Published Article</a></p>
+<p>Throughput and latency are fundamental concepts in moderm digital system. Throughput refers to the time the system takes to process the data per clock cycle where latency refers to the time it takes for the data to travese from one location to another to complete an operation. High throughput and low latency are essentail for today&rsquo;s fast-paced digital world. For example, higher throughput ensure smooth and uninterrupted audio and video streaming and low latency provides seamless and responsive gaming experience reducing lag. It is necessary to strike a balance between high throughput and low latency. By processing more data simultaneously, you can boost throughput, but only if the system can handle the additional load. Therefore, digital designers need to find the right balance depending on the specific requirement for the system. The two most commonly implemented statergies to improve throughput is pipeling and parallel processing.</p>
+<h3 id="pipelining">Pipelining<a hidden class="anchor" aria-hidden="true" href="#pipelining">#</a></h3>
+<p>Pipelining is a process of breaking down a complex task into multiple smaller tasks grouped into stages. A task in between stages is execute in a linear fashion allowing data to flow from one stage to the other contributing to the overall task.</p>
+<h3 id="parallel-processing">Parallel Processing<a hidden class="anchor" aria-hidden="true" href="#parallel-processing">#</a></h3>
+<p>Parallel processing involves dividing a task into smaller sub-tasks that can be process simultaneouly in parallel.</p>
+<h2 id="basic-pipelining">Basic Pipelining<a hidden class="anchor" aria-hidden="true" href="#basic-pipelining">#</a></h2>
+<p>Two fundamental control signals, &ldquo;valid/ready&rdquo;, play a critical role in managing data flow and ensuring smooth operation in pipelined systems. Valid signal indicates the current data on the pipeline is valid for processing in the concurrent stage, hence, the valid signal is asserted high when the data is ready for the next stage. Ready signal indicates that the next stage in the pipeline is ready to accept the data from the current stage, hence, the next stage asserts the ready signal high when its is ready to receive data from the previous pipeline stage. The ready/valid signal work in conjuction to ensure smooth flow of data in the pipeline when both valid and ready signals are asserted. This ensures that data is transfered only when the next stage is prepared to process it, preventing data loss or corruption.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/Pipeline2.svg"
+         alt="Figure 1: Pipeline Stage with Valid/Ready Signals" width="500px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 1: <!-- raw HTML omitted -->Pipeline Stage with Valid/Ready Signals</p>
+        </figcaption>
+</figure>
+
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/vld_rdy.svg"
+         alt="Figure 2: Valid/Ready Assertions"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 2: <!-- raw HTML omitted -->Valid/Ready Assertions</p>
+        </figcaption>
+</figure>
+
+<h2 id="pipeline-with-upstream-and-downstream-signals">Pipeline with Upstream and Downstream Signals<a hidden class="anchor" aria-hidden="true" href="#pipeline-with-upstream-and-downstream-signals">#</a></h2>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/Pipeline.svg"
+         alt="Figure 3: Pipeline stage with Valid and Read signals" width="800px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 3: <!-- raw HTML omitted -->Pipeline stage with Valid and Read signals</p>
+        </figcaption>
+</figure>
+
+<p>When designing a pipeline stage is necessary to define an understanding nomenclature to aviod any confusion. Generally, inputs to the pipeline stage are referred to as upstream signals and the outputs from the pipeline stage are called downstream signals. For the purposes of simplicity, since the data flows is from input to output (left to right), all the signals to the left of the pipeline stage is labled with a suffix &ldquo;up_&rdquo; and the all the signals to the right of the pipeline stage is labeled with a suffix &ldquo;dwn_&rdquo;. The two control signals valid and ready are labeled as &ldquo;vld&rdquo; and &ldquo;rdy&rdquo; respectively.</p>
+<p>Interface signals of the nth pipeline stage among N pipeline stages:</p>
+<ol>
+<li>
+<p>Upstream</p>
+</li>
+<li>
+<p>up_data: input data from the (n-1)th pipeline stage.</p>
+</li>
+<li>
+<p>up_vld: input signal indicating that the data on the up_data line is valid and ready for processing.</p>
+</li>
+<li>
+<p>up_rdy: output signal to the previous (n-1)th stage to indicate the pipeline stage is ready to receive new data.</p>
+</li>
+<li>
+<p>Downstream</p>
+</li>
+<li>
+<p>dwn_data: output to the (n+1)the pipeline stage from the nth pipelined stage after processing.</p>
+</li>
+<li>
+<p>dwn_vld: output signal indicating that the data on the dwn_data line is valid for the next (n+1)th pipeline stage.</p>
+</li>
+<li>
+<p>dwn_rdy: input signal from the (n+1)th stage indicating that it is ready to receive the new data.</p>
+</li>
+</ol>
+<p>When up_vld is high and up_rdy is asserted the up_data is latched into the pipeline stage. Similarly, when dwn_vld is high and dwn_data is asserted the data stored in the pipeline is transfered onto the dwn_data signal.</p>
+<h2 id="what-is-back-pressure">What is Back Pressure?<a hidden class="anchor" aria-hidden="true" href="#what-is-back-pressure">#</a></h2>
+<p>When the upstream stage (producer) generates data at a faster rate than the downstream stage (consumer) to accept the data, there will be data loss as the consumer is unable to accept the data at the rate at which it is being produced. To ensure no data loss, a control mechanism called backpressure is introduced so that the upstream stages does not generate a new data until the downstream is ready to accept new data. This mechanism is crucial for maintaining system stability and prevent data loss. Buffers are used to store data temporaily between stages to prevent data loss. Backpressure involves a feedback mechanism to continously monitor each stages, the downstream stages will signal upstream stages to stop data production until when backpressure occurs.</p>
+<h2 id="kinds-of-buffers">Kinds of Buffers<a hidden class="anchor" aria-hidden="true" href="#kinds-of-buffers">#</a></h2>
+<p>In pipeline design, buffers are essential components for managing data flow and implementing backpressure. They temporarily store data between stages to prevent data loss and ensure smooth operation. Different types of buffers are utilized for various purposes, each with unique characteristics and use cases. Here are the few types of buffers used for backpressure in pipeline design:</p>
+<h3 id="global-stall">Global Stall<a hidden class="anchor" aria-hidden="true" href="#global-stall">#</a></h3>
+<p>The entire pipeline is halted or stalled when a global stall occurs. The data does not flow through the pipeline until the consumer is ready to accept the new data. Figure 4, shows logic for global stall.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/Global_Stall.svg"
+         alt="Figure 4: GLobal Stall Logic" width="350px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 4: <!-- raw HTML omitted -->GLobal Stall Logic</p>
+        </figcaption>
+</figure>
+
+<h3 id="half-performance-buffer">Half-Performance Buffer<a hidden class="anchor" aria-hidden="true" href="#half-performance-buffer">#</a></h3>
+<p>Half performance buffer or more generally know as the Half rate buffer, where each stage of the pipeline takes two clock cycles to process the data instead of one. Since each pipeline takes two clock cycles to process the data, there is more time available to process the date in between the pipeline stages. Half rate buffer increases latency and reduces throughput.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/Half_Performance_Buffer.svg"
+         alt="Figure 5: Half-Performance Buffer" width="400px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 5: <!-- raw HTML omitted -->Half-Performance Buffer</p>
+        </figcaption>
+</figure>
+
+<h3 id="skid-buffer">Skid Buffer<a hidden class="anchor" aria-hidden="true" href="#skid-buffer">#</a></h3>
+<p>Skid buffer also know as double buffer is a technique used in pipeline design where two storage elements are used to store data to improve performance and throughput.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/Skid_Buffer.svg"
+         alt="Figure 6: Skid Buffer" width="500px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 6: <!-- raw HTML omitted -->Skid Buffer</p>
+        </figcaption>
+</figure>
+
+<h3 id="two-depth-fifo">Two-depth FIFO<a hidden class="anchor" aria-hidden="true" href="#two-depth-fifo">#</a></h3>
+<p>Two-depth FIFO is a simple FIFO with only two depths. If there is a stall then the second storage location in FIFO is used to store data.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/2_depth_FIFO.svg"
+         alt="Figure 7: 2-Depth FIFO" width="375px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 7: <!-- raw HTML omitted -->2-Depth FIFO</p>
+        </figcaption>
+</figure>
+
+<h2 id="design-example">Design Example<a hidden class="anchor" aria-hidden="true" href="#design-example">#</a></h2>
+<p>Let&rsquo;s consider the design example sqrt(A + sqrt(b + sqrt(c))) from <a href="">paper</a>. The square root block is designed based on the algorithm from Hacker&rsquo;s Delight by Henry Warren. The square root design is itself build with N stage pipeline which gives rise to a fixed latency of N clock cycles, meaning the when the input X is given to the square root design it take N clock cycles to process the data and produce an output Y. Two valid signals &ldquo;x_vld&rdquo; and &ldquo;y_vld&rdquo; indicate the presence of valid data on the input and output respectively. The figure 2, shows the waveform of the implemented square root design with N latency.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/waveform1.svg"
+         alt="Figure 8: N stage pipelined squre root design"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 8: <!-- raw HTML omitted -->N stage pipelined squre root design</p>
+        </figcaption>
+</figure>
+
+<p>The source code for the squre root module can be found <a href="">here</a>. Using this square root module to implement the pipelined sqrt(A + sqrt(B + sqrt(C))) requires the designer to carefully align the data so that there is no data loss. It is necessary to ensure the data is aligned by adding buffers to correctly perform the operation. The figure 8, shows the design with pipeline stages and the appropriate valid/ready signals at each block.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/pipeline_example.svg"
+         alt="Figure 9: Example Design"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 9: <!-- raw HTML omitted -->Example Design</p>
+        </figcaption>
+</figure>
+
+<p>Assuming the square root block takes N clock cycles to produce the result, the buffers to align the data on the B line should have depth of N stages. Similary, on the A line the buffer stage should of depth 2*n+1, 2*n corresponds to two square root block and 1 corresponds to the pipeline stage between the two square root block. These buffer stages can de design using one of the four buffers described before. One of the simplest way to align the data coming from the square root block and the buffer block is to use shift register with N depth stage and 2*N+1 deep stages. As long as N is minimum the you can get away with simple shift registers. What if the design is large and N is large? In such cases it is not advisble to use shift registers. A N-depth FIFO is more suitable is such senarios. The above example with N=4 stages is implemented with a FIFO to align the data and the perfomance of the system is tabulated below:</p>
+<table>
+<thead>
+<tr>
+<th>Buffer Type</th>
+<th>N</th>
+<th>No. of transactions</th>
+<th>No. of cycles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Global Stall</td>
+<td>4</td>
+<td>61</td>
+<td>726</td>
+</tr>
+<tr>
+<td>Half-performance Buffer</td>
+<td>4</td>
+<td>96</td>
+<td>726</td>
+</tr>
+<tr>
+<td>Skid Buffer</td>
+<td>4</td>
+<td>127</td>
+<td>726</td>
+</tr>
+<tr>
+<td>2-depth FIFO</td>
+<td>4</td>
+<td>168</td>
+<td>726</td>
+</tr>
+</tbody>
+</table>
+<p>Note: when implementing a 2-depth FIFO design to achieve maximum perfomance the fifo buffer length must be double.</p>
+
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/article/">Article</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

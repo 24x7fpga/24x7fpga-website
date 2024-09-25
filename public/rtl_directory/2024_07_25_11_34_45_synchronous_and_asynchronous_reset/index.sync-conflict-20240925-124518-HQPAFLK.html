@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Synchronous and Asynchronous Reset | Home</title>
+<meta name="keywords" content="rtl">
+<meta name="description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+Synchronous and Asynchronous Reset Resets are crucial in digital circuits for ensuring the system starts from a known state.
+Resets allow the system to recover from errors by reinitializing the state. Resets ensure that all flip-flops start from a known state. There are two types of resets based on the reset activation and they are:
+Synchronous Reset Asynchronous Reset Synchronous Reset In synchronous reset circuits, the reset signal is synchronized with the clock.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="http://localhost:1313/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.19a7d7ba8a856bc3605fc7ca61a989cac3905b8b7707571254a3f97e6b40052a.css" integrity="sha256-GafXuoqFa8NgX8fKYamJysOQW4t3B1cSVKP5fmtABSo=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+<link rel="stylesheet" href="/css/syntax.css" !important>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Synchronous and Asynchronous Reset
+    </h1>
+    <div class="post-meta"><span title='2024-07-25 11:34:00 -0400 EDT'>July 25, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;936 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/iVerilog/blob/master/design/asyn_rst/asyn_rst.v">Design</a> &ndash; <a href="https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_asyn_rst/tb_asyn_rst.v">Testbench</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
+<h2 id="synchronous-and-asynchronous-reset">Synchronous and Asynchronous Reset<a hidden class="anchor" aria-hidden="true" href="#synchronous-and-asynchronous-reset">#</a></h2>
+<p>Resets are crucial in digital circuits for ensuring the system starts from a known state.</p>
+<ul>
+<li>Resets allow the system to recover from errors by reinitializing the state.</li>
+<li>Resets ensure that all flip-flops start from a known state.</li>
+</ul>
+<p>There are two types of resets based on the reset activation and they are:</p>
+<ol>
+<li>Synchronous Reset</li>
+<li>Asynchronous Reset</li>
+</ol>
+<h3 id="synchronous-reset">Synchronous Reset<a hidden class="anchor" aria-hidden="true" href="#synchronous-reset">#</a></h3>
+<p>In synchronous reset circuits, the reset signal is synchronized with the clock. When the reset is applied, the action only occurs at clock edges (positive or negative edge), avoiding glitches and metastability. The coding style to model synchronous reset is an <strong>if/else</strong> priority style with reset in the <strong>if</strong> condition and all the other logic in the <strong>else</strong> section. This type of logic will be implemented as shown in the figure below:</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/syn_rst.svg"
+         alt="Figure 1: Synchronous Reset Implementation" width="400px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 1: <!-- raw HTML omitted -->Synchronous Reset Implementation</p>
+        </figcaption>
+</figure>
+
+<p>The input signal is <strong>ANDED</strong> with the reset signal before reaching the register. In some implementations, a <strong>MUX</strong> will be implemented in place of an AND where the reset is the select input, one of the inputs is tied to the ground, and the other to set to the input.</p>
+<h4 id="example">Example<a hidden class="anchor" aria-hidden="true" href="#example">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> syn_rst(clk, rst, d, q);
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">output</span> q;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span> d;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> clk;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> rst;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">always_ff</span>@(<span style="color:#66d9ef">posedge</span> clk)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>rst)
+</span></span><span style="display:flex;"><span>    q <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    q <span style="color:#f92672">&lt;=</span> d;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span>
+</span></span></code></pre></div><h4 id="advantages">Advantages<a hidden class="anchor" aria-hidden="true" href="#advantages">#</a></h4>
+<ol>
+<li>Synchronous reset ensures the entire circuit is synchronous all the time.</li>
+<li>Synchronous resert ensures the reset actions occur at the clock edges, preventing the flip-flop from going into metastability.</li>
+<li>When the reset is generated by an internal condition, synchronous resets are advisable to be implemented as they filter out any glitches.</li>
+<li>Working</li>
+</ol>
+<h4 id="disadvantages">Disadvantages<a hidden class="anchor" aria-hidden="true" href="#disadvantages">#</a></h4>
+<ol>
+<li>The reset signal should be applied long enough so that the clock edge samples the reset signal.</li>
+<li>A pulse stretcher should be implemented to stretch the reset signal to guarantee to sample the reset signal.</li>
+<li>Synchronous reset require a clock to reset the circuit.</li>
+</ol>
+<h3 id="asynchronous-reset">Asynchronous Reset<a hidden class="anchor" aria-hidden="true" href="#asynchronous-reset">#</a></h3>
+<p>Asynchronous reset does not depend on the clock and its effect is seen immediately as the reset is applied. Asynchronous reset flip-flop incorporates a reset pin. The reset pin is typically active low, the flip-flop goes into the reset state when the reset signal goes to a logic low (0). The figure below shows the implementation of an asynchronous reset flip-flop with a reset pin.</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/asyn_rst.svg"
+         alt="Figure 2: Asynchronous Reset Implementation" width="400px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 2: <!-- raw HTML omitted -->Asynchronous Reset Implementation</p>
+        </figcaption>
+</figure>
+
+<p>From the figure it can be seen that additional logic is not required with the input to the flip-flop. To code an asynchoronous reset in Verilog, the reset signal must be included in the sensitivity list. The reset is given the highest priority in this style of coding.</p>
+<h4 id="example">Example<a hidden class="anchor" aria-hidden="true" href="#example">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> syn_rst(clk, rst, d, q);
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">output</span> q;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span> d;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> clk;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> rst;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">always_ff</span>@(<span style="color:#66d9ef">posedge</span> clk <span style="color:#66d9ef">or</span> <span style="color:#66d9ef">negedge</span> rst)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>rst)
+</span></span><span style="display:flex;"><span>    q <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    q <span style="color:#f92672">&lt;=</span> d;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span>
+</span></span></code></pre></div><h4 id="advantages">Advantages<a hidden class="anchor" aria-hidden="true" href="#advantages">#</a></h4>
+<ol>
+<li>Does not require a clock to reset the circuit.</li>
+<li>The data path is guaranteed to be clean if asynchronous reset flip-flops are available.</li>
+</ol>
+<h4 id="disadvantages">Disadvantages<a hidden class="anchor" aria-hidden="true" href="#disadvantages">#</a></h4>
+<ol>
+<li>Reset assertion is not an issue as the flip-flop takes care of it, but during deassertion when the reset is released close to the active edge of the flip-flop, the flip-flop may go into the metastable stage.</li>
+<li>Spurious resets due to noise or glitches on the system reset.</li>
+</ol>
+<h3 id="reset-deassertion">Reset Deassertion<a hidden class="anchor" aria-hidden="true" href="#reset-deassertion">#</a></h3>
+<p>Reset deassertion is the process of bring the system out of reset state to operation state. During asynchronous reset deassertion there are two potential problems</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Reset Recovery</p>
+<ul>
+<li>Reset removal time is the minimum time required between the deassertion of the reset signal and the next active clock edge to ensure proper functionality. This concept is similar to setup time in its importance for guaranteeing stable and reliable operation of digital circuits.</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Reset Removal</p>
+<ul>
+<li>Reset removal time is the minimum duration for which the reset signal must be deasserted to ensure that flip-flops are correctly initialized.</li>
+</ul>
+</li>
+</ul>
+<h3 id="d41d8c"><a hidden class="anchor" aria-hidden="true" href="#d41d8c">#</a></h3>
+<p>Verilog has three built-in commands to model and test recovery time and signal removal timing checks: $recovery, $removal and $recrem (the latter is a combination of recovery and removal timing checks)[1,2].</p>
+<h3 id="reset-synchronizer">Reset Synchronizer<a hidden class="anchor" aria-hidden="true" href="#reset-synchronizer">#</a></h3>
+<p>When an asyn reset is deasserted it should satisfy the timing constraints (reset recovery and reset removal) if not chances are that the system may enter into a metastable state. Therefore, it is necessary to pass the data through [Two-Flop Synchronizer] to avoid metastable conditions. Figure 3 illustrates an approach designed to leverage the advantages of both asynchronous and synchronous reset styles.</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/arst_syn2.svg"
+         alt="Figure 3: Async Reset with Two-Flop Synchnronizer"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 3: <!-- raw HTML omitted -->Async Reset with Two-Flop Synchnronizer</p>
+        </figcaption>
+</figure>
+
+<p>The second flip-flop in the synchronizer ensures the data is sampled correctly by eliminating any metastability caused by asynchronous reset removal and reset deassertion occurring too close to the active edge of the clock.</p>
+<h4 id="example-code">Example Code:<a hidden class="anchor" aria-hidden="true" href="#example-code">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> asyn_rst(<span style="color:#75715e">/*AUTOARG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   rst_main,
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   clk, rst_asyn
+</span></span><span style="display:flex;"><span>   );
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">input</span>   clk;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">input</span>   rst_asyn;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">output</span>  rst_main;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/*AUTOREG*/</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Beginning of automatic regs (for this module&#39;s undeclared outputs)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">reg</span>			rst_main;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// End of automatics
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">/*AUTOWIRE*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">reg</span> temp_rst;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">always</span>@(<span style="color:#66d9ef">posedge</span> clk, <span style="color:#66d9ef">negedge</span> rst_asyn)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>rst_asyn)
+</span></span><span style="display:flex;"><span>                {rst_main, temp_rst} <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">2</span><span style="color:#ae81ff">&#39;b00</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>                {rst_main, temp_rst} <span style="color:#f92672">&lt;=</span> {temp_rst, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>};
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span>
+</span></span></code></pre></div><p>Note: Reset-glitch filtering circuit must be implemented to ensure a clean reset is received in an asynchronous reset circuits.</p>
+<h3 id="reference">Reference<a hidden class="anchor" aria-hidden="true" href="#reference">#</a></h3>
+<ol>
+<li><a href="http://www.sunburst-design.com/papers/CummingsSNUG2002SJ_Resets.pdf">Cummings, Clifford E., and Don Mills. &ldquo;Synchronous Resets? Asynchronous Resets? I am so confused! How will I ever know which to use?.&rdquo; SNUG 2002 (Synopsys Users Group Conference, San Jose, CA, 2002) User Papers. 2002.</a></li>
+<li><a href="http://www.sunburst-design.com/papers/CummingsSNUG2003Boston_Resets.pdf">Cummings, Clifford E., Don Mills, and Steve Golson. &ldquo;Asynchronous &amp; synchronous reset design techniques-part deux.&rdquo; SNUG Boston 9 (2003).</a></li>
+<li><a href="https://www.intel.com/content/www/us/en/docs/programmable/683082/21-3/using-asynchronous-resets.html">Intel® Quartus® Prime Pro Edition User Guide: Design Recommendations</a></li>
+<li><a href="https://research.ssl.berkeley.edu/~teq/research/Resets%20and%20Reset%20Domain%20Crossings%20in%20ASIC%20and%20FPGA%20designs.pdf">Alexander Gnusin. &ldquo;Resets and Reset Domain Crossing in ASIC and FPGA Designs[White Paper]&rdquo;. ALDEC Design Verification Company.</a></li>
+</ol>
+
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/rtl/">Rtl</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
