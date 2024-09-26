@@ -6,13 +6,23 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Sep 2024 11:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 26 Sep 2024 13:20:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>UVM Phases</title>
+      <link>https://24x7fpga.com/uvm_directory/2024_09_26_13_20_13_uvm_phases/</link>
+      <pubDate>Thu, 26 Sep 2024 13:20:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/uvm_directory/2024_09_26_13_20_13_uvm_phases/</guid>
+      <description>UVM Framework Directory
+In UVM, a structured mechanism called UVM phases is used to automate the execution of various components within a testbench. This ensures that the simulation follows a defined sequence, streamlining the process. UVM defines twelve key phases, each with a specific role in the testbench lifecycle. The order of execution for these phases is depicted in Figure 1 below.
+Figure 1: UVM Phases
+The phases can be caterogised as time consumed phases and non-time consumed phase.</description>
+    </item>
+    <item>
       <title>UVM Report Object</title>
-      <link>https://24x7fpga.com/uvm_directory/2024_09_23_11_00_17_uvm_repor_object/</link>
+      <link>https://24x7fpga.com/uvm_directory/2024_09_23_11_00_17_uvm_report_object/</link>
       <pubDate>Mon, 23 Sep 2024 11:00:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/uvm_directory/2024_09_23_11_00_17_uvm_repor_object/</guid>
+      <guid>https://24x7fpga.com/uvm_directory/2024_09_23_11_00_17_uvm_report_object/</guid>
       <description>Source &amp;ndash; UVM Framework Directory
 The uvm_report_object provides an interface to the UVM reporting facility. UVM reporting plays a crucial role in tracking the progress of the testbench, identifying issues, and debugging. It provies a rich set fo message display commands and methods to track and report erros, warnings and information.
 Figure 1: UVM Reporting Classes
