@@ -137,7 +137,7 @@ endclass
 
 
 
-module shallow_copy;
+module deep_copy;
 
   name std1, std2;	       // class handle
 
