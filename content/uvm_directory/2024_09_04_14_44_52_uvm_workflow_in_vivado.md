@@ -70,8 +70,9 @@ Additionally, the [uvm_run.py](https://github.com/24x7fpga/PythonScripts/tree/ma
 These scripts automate and simplify the process of initializing UVM projects and Vivado environment, enhancing efficiency in the verification tasks.
 
 ```bash
-uvm_design.py <design_name>    // create the design
-uvm_run.py <design_name>       // run the design
+uvm_design.py <design_name>     // create the design
+uvm_run.py    <design_name>     // execute the simulation
+uvm_clean.py                    // removes the project and log files created by Vivado
 ```
 
 The Python scripts that I use in my workflow are organized in a dedicated folder available at  [Python Scripts](https://github.com/24x7fpga/PythonScripts/tree/master) on GitHub. To ensure you can run these scripts from any directory in your terminal, you need to add the folder path to your .zshrc or .bashrc file. This step is essential for seamless execution of the scripts across your system.
