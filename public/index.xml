@@ -19,6 +19,15 @@ Figure 1: UVM Phases
 The phases can be caterogised as time consumed phases and non-time consumed phase.</description>
     </item>
     <item>
+      <title>UVM Common Operations</title>
+      <link>https://24x7fpga.com/uvm_directory/2024_09_25_14_36_39_uvm_common_operations/</link>
+      <pubDate>Wed, 25 Sep 2024 14:36:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/uvm_directory/2024_09_25_14_36_39_uvm_common_operations/</guid>
+      <description>Source &amp;ndash; UVM Framework Directory
+The uvm_object provides a set of predefined methods for common operations.
+UVM Method Virtual Method Description copy do_copy Performs a deep copy of an object clone do_copy creates a new object and performs a deep copy of the object compare do_compare Compares one object to another of the same dat type print do_print Prints the result of convert2string to the terminal sprint do_print Returns the result fo the convert2string convert2string - Returns a string representation of the object copy This makes deep copy of a specified object.</description>
+    </item>
+    <item>
       <title>UVM Report Object</title>
       <link>https://24x7fpga.com/uvm_directory/2024_09_23_11_00_17_uvm_report_object/</link>
       <pubDate>Mon, 23 Sep 2024 11:00:00 -0400</pubDate>
