@@ -63,7 +63,7 @@ UVM
 
 ## Python Script {#python-script}
 
-To streamline the setup of UVM verification environments, we use a Python script named [uvm_design.py]. When executed, this script creates a new folder within the _uvm_verification_ directory, named after the specified design. Inside this folder, it generates essential files such as the driver, sequencer, monitor, and scoreboard, based on predefined UVM templates.
+Python scripts are utilized to streamline the setup of UVM verification environments. When [uvm_design.py] executed, the script creates a new folder within the _uvm_verification_ directory, named after the specified design. Inside this folder, it generates essential files such as the driver, sequencer, monitor, and scoreboard, based on predefined UVM templates.
 
 Additionally, the [uvm_run.py](https://github.com/24x7fpga/PythonScripts/tree/master/uvm_scripts) script can be used to automatically create a Vivado project within the design folder. The project will be named _verif_, facilitating a smooth setup for your verification workflow.
 

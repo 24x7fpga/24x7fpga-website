@@ -3,10 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://24x7fpga.com/</loc>
-    <lastmod>2024-09-26T13:20:00-04:00</lastmod>
+    <lastmod>2024-10-05T18:24:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/sv/</loc>
+    <lastmod>2024-10-05T18:24:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/</loc>
+    <lastmod>2024-10-05T18:24:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/sv_directory/</loc>
+    <lastmod>2024-10-05T18:24:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/tags/</loc>
-    <lastmod>2024-09-26T13:20:00-04:00</lastmod>
+    <lastmod>2024-10-05T18:24:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/tags/uvm/</loc>
     <lastmod>2024-09-26T13:20:00-04:00</lastmod>
@@ -54,12 +63,6 @@
     <lastmod>2024-08-22T14:57:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/2024_08_08_13_51_50_clocking_block/</loc>
-    <lastmod>2024-08-08T13:51:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/tags/sv/</loc>
-    <lastmod>2024-08-08T13:51:00-04:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/sv_directory/</loc>
     <lastmod>2024-08-08T13:51:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/2024_08_08_10_27_00_interface/</loc>

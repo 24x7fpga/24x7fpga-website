@@ -10,6 +10,11 @@ css = "../../zcustom.css"
 In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
 
 
+## Automated Workflow in Vivado {#automated-workflow-in-vivado}
+
+-   [SV Verification Workflow in Vivado]({{< relref "2024_10_05_18_24_35_sv_verification_workflow_in_vivado.md" >}})
+
+
 ## Layered Testbench {#layered-testbench}
 
 -   Testbench overview

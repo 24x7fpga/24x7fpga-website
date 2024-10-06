@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>SV Verification Workflow in Vivado | Home</title>
+<meta name="keywords" content="sv">
+<meta name="description" content="SystemVerilog &ndash; SV Vivado Script &ndash; SV Python Script
+SystemVerilog was introduced to simplify the verification process by incorporating software features like Object-Oriented Programming (OOP). It significantly enhances testbench development, making the verification of complex designs more manageable. For those looking to experiment with different tools, EDA Playgorund offers a convenient platform to perform verification using a variety of commercial simulators, such as Cadence Xcelium, Synopsys VCS, and Aldec Riviera-PRO.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.19a7d7ba8a856bc3605fc7ca61a989cac3905b8b7707571254a3f97e6b40052a.css" integrity="sha256-GafXuoqFa8NgX8fKYamJysOQW4t3B1cSVKP5fmtABSo=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+<meta property="og:title" content="SV Verification Workflow in Vivado" />
+<meta property="og:description" content="SystemVerilog &ndash; SV Vivado Script &ndash; SV Python Script
+SystemVerilog was introduced to simplify the verification process by incorporating software features like Object-Oriented Programming (OOP). It significantly enhances testbench development, making the verification of complex designs more manageable. For those looking to experiment with different tools, EDA Playgorund offers a convenient platform to perform verification using a variety of commercial simulators, such as Cadence Xcelium, Synopsys VCS, and Aldec Riviera-PRO." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/" /><meta property="article:section" content="sv_directory" />
+<meta property="article:published_time" content="2024-10-05T18:24:00-04:00" />
+<meta property="article:modified_time" content="2024-10-05T18:24:00-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SV Verification Workflow in Vivado"/>
+<meta name="twitter:description" content="SystemVerilog &ndash; SV Vivado Script &ndash; SV Python Script
+SystemVerilog was introduced to simplify the verification process by incorporating software features like Object-Oriented Programming (OOP). It significantly enhances testbench development, making the verification of complex designs more manageable. For those looking to experiment with different tools, EDA Playgorund offers a convenient platform to perform verification using a variety of commercial simulators, such as Cadence Xcelium, Synopsys VCS, and Aldec Riviera-PRO."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Sv_directories",
+      "item": "https://24x7fpga.com/sv_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "SV Verification Workflow in Vivado",
+      "item": "https://24x7fpga.com/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "SV Verification Workflow in Vivado",
+  "name": "SV Verification Workflow in Vivado",
+  "description": "SystemVerilog \u0026ndash; SV Vivado Script \u0026ndash; SV Python Script\nSystemVerilog was introduced to simplify the verification process by incorporating software features like Object-Oriented Programming (OOP). It significantly enhances testbench development, making the verification of complex designs more manageable. For those looking to experiment with different tools, EDA Playgorund offers a convenient platform to perform verification using a variety of commercial simulators, such as Cadence Xcelium, Synopsys VCS, and Aldec Riviera-PRO.",
+  "keywords": [
+    "sv"
+  ],
+  "articleBody": "SystemVerilog – SV Vivado Script – SV Python Script\nSystemVerilog was introduced to simplify the verification process by incorporating software features like Object-Oriented Programming (OOP). It significantly enhances testbench development, making the verification of complex designs more manageable. For those looking to experiment with different tools, EDA Playgorund offers a convenient platform to perform verification using a variety of commercial simulators, such as Cadence Xcelium, Synopsys VCS, and Aldec Riviera-PRO.\nIn my own workflow, I prefer using Vivado Simulator, as it integrates seamlessly with my design flow. Vivado installation guide can be found here.\nProject Folder The main directory is named Projects and is located in the home directory. Within this, there are two key subfolders:\nFPGA_Projects: This folder contains all the FPGA-related projects. Python_Scripts: This folder holds Python scripts related to the FPGA projects. This structure keeps projects and supporting scripts well-organized for efficient workflow management. The folder structure I use is outlined below:\nProjects . ├── FPGA_Projects │ ├── SystemVerilog_Verification │ │ ├── Readme.org │ │ ├── sv_tcl_script │ │ └── sv_verification │ ├── UVM │ │ ├── uvm_tcl_script │ │ ├── uvm_templates │ │ └── uvm_verification │ ├── VanillaFPRO │ │ ├── Design_Tests │ │ ├── Drivers │ │ ├── HDL │ │ ├── Projects │ │ └── ZyboZ7_BoardFiles │ ├── ZyboZ7 │ │ ├── BoardFiles │ └── iVerilog │ ├── README.org │ ├── design │ ├── doc │ └── tb_design │ └── Python_Scripts ├── iVerilog ├── sv_scripts ├── uvm_scripts └── vivado Note: To run the Python scripts from any directory in your terminal, you’ll need to add the folder/file path to your .zshrc or .bashrc file. This ensures the scripts are accessible globally, regardless of your current working directory.\nVerification Folder Structure The SystemVerilog_Verification repository on GitHub is structured into two key sections:\nsv_tcl_script: This folder contains a Tcl script designed to automate the simulation process in Vivado, making it easier to run and manage simulations efficiently. sv_verification: This folder includes a collection of verification designs, providing a comprehensive set of examples for verifying SystemVerilog code. SystemVerilog_Verification . ├── sv_tcl_script | └── sv_run.tcl └── sv_verification ├── associative_arrays └── tb_associative_arrays.sv . . . Python Script A Python script, sv_design.py, is designed to automate the creation of a project folder within the sv_verification directory. When executed, it generates the necessary SystemVerilog (SV) verification files, with the top-level testbench file labeled as tb_.sv.\nTo simulate the design, the sv_run.py script is used, which calls the Vivado simulator. This script, in turn, invokes the sv_run.tcl file located in the sv_tcl_script folder. The project folder will be named verif within the design directory.\nAdditionally, the sv_clean.py script is available to remove the project folder and clean up Vivado log files, ensuring a tidy workspace.\nsv_design.py // create the design sv_run.py // execute the simulation sv_clean.py // removes the project and log files created by Vivado Steps to Create and Simulate a SV Verification Project Open your terminal and create the design environment by executing the sv_design.py script. For example, to create a verification project named “test”, run the following command: sv_design.py test A folder named test will be generated inside the sv_verification directory, and the top-level file will be named tb_test.sv.\nComplete the necessary design files, then execute the sv_run.py script to begin the simulation. For example:\nsv_run.py test This will create a project folder named verif inside sv_verification/test and display the simulation results in the terminal. ",
+  "wordCount" : "568",
+  "inLanguage": "en",
+  "datePublished": "2024-10-05T18:24:00-04:00",
+  "dateModified": "2024-10-05T18:24:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      SV Verification Workflow in Vivado
+    </h1>
+    <div class="post-meta"><span title='2024-10-05 18:24:00 -0400 EDT'>October 5, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;568 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/SystemVerilog_Verification">SystemVerilog</a> &ndash; <a href="https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_tcl_script/sv_run.tcl">SV Vivado Script</a> &ndash; <a href="https://github.com/24x7fpga/PythonScripts/tree/master/sv_scripts">SV Python Script</a></p>
+<p>SystemVerilog was introduced to simplify the verification process by incorporating software features like Object-Oriented Programming (OOP). It significantly enhances testbench development, making the verification of complex designs more manageable. For those looking to experiment with different tools, <a href="https://www.edaplayground.com/">EDA Playgorund</a>  offers a convenient platform to perform verification using a variety of commercial simulators, such as Cadence Xcelium, Synopsys VCS, and Aldec Riviera-PRO.</p>
+<p>In my own workflow, I prefer using Vivado Simulator, as it integrates seamlessly with my design flow. Vivado installation guide can be found <a href="https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/">here</a>.</p>
+<h2 id="project-folder">Project Folder<a hidden class="anchor" aria-hidden="true" href="#project-folder">#</a></h2>
+<p>The main directory is named <code>Projects</code> and is located in the home directory. Within this, there are two key subfolders:</p>
+<ol>
+<li><code>FPGA_Projects:</code> This folder contains all the FPGA-related projects.</li>
+<li><code>Python_Scripts:</code> This folder holds Python scripts related to the FPGA projects.</li>
+</ol>
+<p>This structure keeps projects and supporting scripts well-organized for efficient workflow management. The folder structure I use is outlined below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Projects
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── FPGA_Projects
+</span></span><span style="display:flex;"><span>│   ├── SystemVerilog_Verification
+</span></span><span style="display:flex;"><span>│   │   ├── Readme.org
+</span></span><span style="display:flex;"><span>│   │   ├── sv_tcl_script
+</span></span><span style="display:flex;"><span>│   │   └── sv_verification
+</span></span><span style="display:flex;"><span>│   ├── UVM
+</span></span><span style="display:flex;"><span>│   │   ├── uvm_tcl_script
+</span></span><span style="display:flex;"><span>│   │   ├── uvm_templates
+</span></span><span style="display:flex;"><span>│   │   └── uvm_verification
+</span></span><span style="display:flex;"><span>│   ├── VanillaFPRO
+</span></span><span style="display:flex;"><span>│   │   ├── Design_Tests
+</span></span><span style="display:flex;"><span>│   │   ├── Drivers
+</span></span><span style="display:flex;"><span>│   │   ├── HDL
+</span></span><span style="display:flex;"><span>│   │   ├── Projects
+</span></span><span style="display:flex;"><span>│   │   └── ZyboZ7_BoardFiles
+</span></span><span style="display:flex;"><span>│   ├── ZyboZ7
+</span></span><span style="display:flex;"><span>│   │   ├── BoardFiles
+</span></span><span style="display:flex;"><span>│   └── iVerilog
+</span></span><span style="display:flex;"><span>│       ├── README.org
+</span></span><span style="display:flex;"><span>│       ├── design
+</span></span><span style="display:flex;"><span>│       ├── doc
+</span></span><span style="display:flex;"><span>│       └── tb_design
+</span></span><span style="display:flex;"><span>│
+</span></span><span style="display:flex;"><span>└── Python_Scripts
+</span></span><span style="display:flex;"><span>    ├── iVerilog
+</span></span><span style="display:flex;"><span>    ├── sv_scripts
+</span></span><span style="display:flex;"><span>    ├── uvm_scripts
+</span></span><span style="display:flex;"><span>    └── vivado
+</span></span></code></pre></div><p><strong>Note:</strong> To run the Python scripts from any directory in your terminal, you’ll need to add the folder/file path to your .zshrc or .bashrc file. This ensures the scripts are accessible globally, regardless of your current working directory.</p>
+<h2 id="verification-folder-structure">Verification Folder Structure<a hidden class="anchor" aria-hidden="true" href="#verification-folder-structure">#</a></h2>
+<p>The <a href="https://github.com/24x7fpga/SystemVerilog_Verification/tree/main">SystemVerilog_Verification</a> repository on GitHub is structured into two key sections:</p>
+<ol>
+<li><a href="https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_tcl_script">sv_tcl_script</a>: This folder contains a Tcl script designed to automate the simulation process in Vivado, making it easier to run and manage simulations efficiently.</li>
+<li><a href="https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification">sv_verification</a>: This folder includes a collection of verification designs, providing a comprehensive set of examples for verifying SystemVerilog code.</li>
+</ol>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>SystemVerilog_Verification
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── sv_tcl_script
+</span></span><span style="display:flex;"><span>|   └── sv_run.tcl
+</span></span><span style="display:flex;"><span>└── sv_verification
+</span></span><span style="display:flex;"><span>    ├── associative_arrays
+</span></span><span style="display:flex;"><span>        └── tb_associative_arrays.sv
+</span></span><span style="display:flex;"><span>    .
+</span></span><span style="display:flex;"><span>    .
+</span></span><span style="display:flex;"><span>    .
+</span></span></code></pre></div><h2 id="python-script">Python Script<a hidden class="anchor" aria-hidden="true" href="#python-script">#</a></h2>
+<p>A Python script, <a href="https://github.com/24x7fpga/PythonScripts/blob/master/sv_scripts/sv_design.py">sv_design.py</a>, is designed to automate the creation of a project folder within the <code>sv_verification</code> directory. When executed, it generates the necessary SystemVerilog (SV) verification files, with the top-level testbench file labeled as <code>tb_&lt;design_name&gt;.sv</code>.</p>
+<p>To simulate the design, the <a href="https://github.com/24x7fpga/PythonScripts/blob/master/sv_scripts/sv_run.py">sv_run.py</a> script is used, which calls the Vivado simulator. This script, in turn, invokes the <a href="https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_tcl_script/sv_run.tcl">sv_run.tcl</a> file located in the <code>sv_tcl_script</code> folder. The project folder will be named <code>verif</code> within the design directory.</p>
+<p>Additionally, the sv_clean.py script is available to remove the project folder and clean up Vivado log files, ensuring a tidy workspace.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sv_design.py &lt;design_name&gt;    // create the design
+</span></span><span style="display:flex;"><span>sv_run.py    &lt;design_name&gt;    // execute the simulation
+</span></span><span style="display:flex;"><span>sv_clean.py                   // removes the project and log files created by Vivado
+</span></span></code></pre></div><h2 id="steps-to-create-and-simulate-a-sv-verification-project">Steps to Create and Simulate a SV Verification Project<a hidden class="anchor" aria-hidden="true" href="#steps-to-create-and-simulate-a-sv-verification-project">#</a></h2>
+<ul>
+<li>Open your terminal and create the design environment by executing the <code>sv_design.py</code> script. For example, to create a verification project named &ldquo;test&rdquo;, run the following command:</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sv_design.py test
+</span></span></code></pre></div><ul>
+<li>
+<p>A folder named <code>test</code> will be generated inside the <code>sv_verification</code> directory, and the top-level file will be named <code>tb_test.sv</code>.</p>
+</li>
+<li>
+<p>Complete the necessary design files, then execute the <code>sv_run.py</code> script to begin the simulation. For example:</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sv_run.py test
+</span></span></code></pre></div><ul>
+<li>This will create a project folder named <code>verif</code> inside <code>sv_verification/test</code> and display the simulation results in the terminal.</li>
+</ul>
+
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
