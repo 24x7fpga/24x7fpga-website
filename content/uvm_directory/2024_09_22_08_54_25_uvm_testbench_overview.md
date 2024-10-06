@@ -30,10 +30,12 @@ The UVM Test is the top-level component in the UVM testbench hierarchy, dynamica
 
 ### UVM Sequence {#uvm-sequence}
 
-The UVM Sequence is an `object` that control the generation and flow of stimulus to the driver.
+The UVM Sequence is an `object` that controls the generation and flow of stimulus to the driver.
 
 
 ### Config/Factory Overrides {#config-factory-overrides}
+
+Factory `registration` is the process of making all the created classes known to the factory, enhancing the flexibility and scalability of the testbench. This allows the base class objects to be overridden by any of their inherited child class objects at runtime. By registering classes with the factory, you enable seamless swapping of different object types without changing the underlying code.
 
 
 ## UVM Environment {#uvm-environment}
