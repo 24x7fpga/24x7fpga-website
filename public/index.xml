@@ -6,8 +6,16 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Oct 2024 18:24:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 06 Oct 2024 11:18:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UVM Resource and Configuration Database</title>
+      <link>https://24x7fpga.com/uvm_directory/2024_10_06_11_18_25_uvm_resource_and_configuration_database/</link>
+      <pubDate>Sun, 06 Oct 2024 11:18:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/uvm_directory/2024_10_06_11_18_25_uvm_resource_and_configuration_database/</guid>
+      <description>Source &amp;ndash; UVM Framework Directory
+Data can be shared across the an UVM testbench using two key mechanisms: the configuration database and the resources database. While both serve the purpose of sharing data between components, they are used in distinct contexts. The configuration database is typically used for setting up component-specific configurations, while the resources database is a more general-purpose tool for sharing any kind of data across the testbench.</description>
+    </item>
     <item>
       <title>SV Verification Workflow in Vivado</title>
       <link>https://24x7fpga.com/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/</link>

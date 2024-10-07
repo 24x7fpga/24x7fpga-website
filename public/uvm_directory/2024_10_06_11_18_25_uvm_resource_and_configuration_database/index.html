@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>UVM Resource and Configuration Database | Home</title>
+<meta name="keywords" content="uvm">
+<meta name="description" content="Source &ndash; UVM Framework Directory
+Data can be shared across the an UVM testbench using two key mechanisms: the configuration database and the resources database. While both serve the purpose of sharing data between components, they are used in distinct contexts. The configuration database is typically used for setting up component-specific configurations, while the resources database is a more general-purpose tool for sharing any kind of data across the testbench.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="https://24x7fpga.com/uvm_directory/2024_10_06_11_18_25_uvm_resource_and_configuration_database/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.19a7d7ba8a856bc3605fc7ca61a989cac3905b8b7707571254a3f97e6b40052a.css" integrity="sha256-GafXuoqFa8NgX8fKYamJysOQW4t3B1cSVKP5fmtABSo=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+<meta property="og:title" content="UVM Resource and Configuration Database" />
+<meta property="og:description" content="Source &ndash; UVM Framework Directory
+Data can be shared across the an UVM testbench using two key mechanisms: the configuration database and the resources database. While both serve the purpose of sharing data between components, they are used in distinct contexts. The configuration database is typically used for setting up component-specific configurations, while the resources database is a more general-purpose tool for sharing any kind of data across the testbench." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/uvm_directory/2024_10_06_11_18_25_uvm_resource_and_configuration_database/" /><meta property="article:section" content="uvm_directory" />
+<meta property="article:published_time" content="2024-10-06T11:18:00-04:00" />
+<meta property="article:modified_time" content="2024-10-06T11:18:00-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="UVM Resource and Configuration Database"/>
+<meta name="twitter:description" content="Source &ndash; UVM Framework Directory
+Data can be shared across the an UVM testbench using two key mechanisms: the configuration database and the resources database. While both serve the purpose of sharing data between components, they are used in distinct contexts. The configuration database is typically used for setting up component-specific configurations, while the resources database is a more general-purpose tool for sharing any kind of data across the testbench."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Uvm_directories",
+      "item": "https://24x7fpga.com/uvm_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "UVM Resource and Configuration Database",
+      "item": "https://24x7fpga.com/uvm_directory/2024_10_06_11_18_25_uvm_resource_and_configuration_database/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "UVM Resource and Configuration Database",
+  "name": "UVM Resource and Configuration Database",
+  "description": "Source \u0026ndash; UVM Framework Directory\nData can be shared across the an UVM testbench using two key mechanisms: the configuration database and the resources database. While both serve the purpose of sharing data between components, they are used in distinct contexts. The configuration database is typically used for setting up component-specific configurations, while the resources database is a more general-purpose tool for sharing any kind of data across the testbench.",
+  "keywords": [
+    "uvm"
+  ],
+  "articleBody": "Source – UVM Framework Directory\nData can be shared across the an UVM testbench using two key mechanisms: the configuration database and the resources database. While both serve the purpose of sharing data between components, they are used in distinct contexts. The configuration database is typically used for setting up component-specific configurations, while the resources database is a more general-purpose tool for sharing any kind of data across the testbench.\nResource Database The resources database in UVM is a parameterized container used to store arbitrary data in a global or hierarchical manner. It can hold any type of data, constrained only by the data types available in SystemVerilog. Each resource item can be retrieved either by its name or by its type. Additionally, multiple resources with the same name or type can exist in the database. The resources are stored in two associative arrays, one with the name as the key and the other with the type as the key, both organized in the form of a queue. Resources are added to the resource pool by the set method and retrieved by calling get_by_name or get_by_type. When multiple resources share the same name or type, the one that was added first in the queue takes precedence, following a First In, First Out (FIFO) approach. The uvm_resource_db class provides a convenience interface for the resource facility.\nConfiguration Database The uvm_config_db class provides a simple interface on top of the uvm_resource_db to simply the basic interface that is used for configuring uvm_component instances. All of the functions in uvm_config_db are static, they must be called using the scope(::) operator. There are two major use cases of uvm_config_db and they are:\nTo pass the virtual interfaces from the DUT to the test. To pass configuration objects down through the testbench hierarchy. Set Method The syntax for the set method is shown below:\nuvm_config_db #(type T = int)::set(uvm_component cntxt, string inst_name, string field_name, T value); // set method type T: is the type of resources being added to the database, usually a virtual interface or a configuration object. uvm_component cntxt: the cntxt parameter helps to define the component hierarchy level where the resource is stored or made available. Can have two values “null” and “this”. Null refers to via uvm_root the resource is accessible to every component, when using this the resource is accessible via the provided scope. string inst_name: instance name of the UVM component or hierarchy where the configuration setting is applied. cntxt and inst_name together form the scope to locate the resouce within the database.\nstring field_name: name given to the resource. T value: actual data or reference to be put in the database. Get Method The syntax for the get method is shown below:\nuvm_config_db#(type T = int)::get(uvm_component cntxt, string inst_name, string field_name, ref T value); // get method type T: is the type of resources being retrieved from the database, usually a virtual interface or a configuration object. uvm_component cntxt: the cntxt parameter helps to define the component hierarchy level where the resource is stored or made available. Can have two values “null” and “this”. Null refers to via uvm_root the resource is accessible to every component, when using this the resource is accessible via the provided scope. string inst_name: instance name of the UVM component or hierarchy where the configuration setting is applied. cntxt and inst_name together form the scope to locate the resouce within the database.\nstring field_name: name given to the resource. T value: holds the retrieved value from the database. The get() method returns 1 if successful, or 0 if no resource exists in the database with the specified name/type.\nNote: The UVM config database is the recommended way to access the resource database [1].\nComponent Hierarchy Understanding how resources are made available to testbench components through uvm_config_db is essential for effective configuration management in UVM. Below are three examples demonstrating how resources can be made accessible to various components in the testbench.\n// sharing source between all the components uvm_config_db#(int t)::set(null, \"*\", \"value\", value); // example 1 // sharing resources to a particular component uvm_config_db#(int t)::set(this, \"uvm_test_top.env.agent.drv\", \"value\", value); // example 2 // sharing resources to all the components under agent uvm_config_db#(int t)::set(this, \"uvm_test_top.env.agent*\", \"value\", value); // example 3 In the first example, the resource is made available to all components in the testbench. The wildcard \"*\" ensures that any component, regardless of its position in the hierarchy, can retrieve the resource.\nIn the second example, the resource is constrained based on the hierarchical scope. Here, only the driver component will be able to retrieve the data. For the get method to work correctly, the inst_name must match exactly to the set method to retrieve the resource.\nIn the third example, any component under the agent hierarchy will be able to retrieve the resource. The wildcard \"*\" is used again to ensure that all components under the agent hierarchy can access the resource.\nReference Universal Verification Methodology (UVM) 1.2 User’s Guide Universal Verification Methodology (UVM) 1.1 Class Reference Universal Verficiation Methodology Cookbook ",
+  "wordCount" : "838",
+  "inLanguage": "en",
+  "datePublished": "2024-10-06T11:18:00-04:00",
+  "dateModified": "2024-10-06T11:18:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/uvm_directory/2024_10_06_11_18_25_uvm_resource_and_configuration_database/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      UVM Resource and Configuration Database
+    </h1>
+    <div class="post-meta"><span title='2024-10-06 11:18:00 -0400 EDT'>October 6, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;838 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/UVM/blob/main/uvm_verification/config_db/tb_config_db.sv">Source</a> &ndash; <a href="/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/">UVM Framework Directory</a></p>
+<p>Data can be shared across the an UVM testbench using two key mechanisms: the configuration database and the resources database. While both serve the purpose of sharing data between components, they are used in distinct contexts. The configuration database is typically used for setting up component-specific configurations, while the resources database is a more general-purpose tool for sharing any kind of data across the testbench.</p>
+<h2 id="resource-database">Resource Database<a hidden class="anchor" aria-hidden="true" href="#resource-database">#</a></h2>
+<p>The resources database in UVM is a parameterized container used to store arbitrary data in a global or hierarchical manner. It can hold any type of data, constrained only by the data types available in SystemVerilog. Each resource item can be retrieved either by its name or by its type. Additionally, multiple resources with the same name or type can exist in the database. The resources are stored in two associative arrays, one with the name as the key and the other with the type as the key, both organized in the form of a queue. Resources are added to the resource pool by the <code>set</code> method and retrieved by calling <code>get_by_name</code> or <code>get_by_type</code>. When multiple resources share the same name or type, the one that was added first in the queue takes precedence, following a First In, First Out (FIFO) approach. The <code>uvm_resource_db</code> class provides a convenience interface for the resource facility.</p>
+<h2 id="configuration-database">Configuration Database<a hidden class="anchor" aria-hidden="true" href="#configuration-database">#</a></h2>
+<p>The <code>uvm_config_db</code> class provides a simple interface on top of the <code>uvm_resource_db</code> to simply the basic interface that is used for configuring uvm_component instances. All of the functions in <code>uvm_config_db</code> are <strong>static</strong>, they must be called using the <strong>scope(::)</strong> operator. There are two major use cases of uvm_config_db and they are:</p>
+<ol>
+<li>To pass the virtual interfaces from the DUT to the test.</li>
+<li>To pass configuration objects down through the testbench hierarchy.</li>
+</ol>
+<h3 id="set-method">Set Method<a hidden class="anchor" aria-hidden="true" href="#set-method">#</a></h3>
+<p>The syntax for the <code>set</code> method is shown below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span>uvm_config_db #(<span style="color:#66d9ef">type</span> T <span style="color:#f92672">=</span> <span style="color:#66d9ef">int</span>)<span style="color:#f92672">::</span>set(uvm_component cntxt, <span style="color:#66d9ef">string</span> inst_name, <span style="color:#66d9ef">string</span> field_name, T value); <span style="color:#75715e">// set method
+</span></span></span></code></pre></div><ul>
+<li>type T: is the type of resources being added to the database, usually a virtual interface or a configuration object.</li>
+<li>uvm_component cntxt: the cntxt parameter helps to define the component hierarchy level where the resource is stored or made available. Can have two values &ldquo;null&rdquo; and &ldquo;this&rdquo;. <code>Null</code> refers to  via <code>uvm_root</code> the resource is accessible to every component, when using <code>this</code> the resource is accessible via the provided scope.</li>
+<li>string inst_name: instance name of the UVM component or hierarchy where the configuration setting is applied.</li>
+</ul>
+<p><em>cntxt</em> and <em>inst_name</em> together form the scope to locate the resouce within the database.</p>
+<ul>
+<li>string field_name: name given to the resource.</li>
+<li>T value: actual data or reference to be put in the database.</li>
+</ul>
+<h3 id="get-method">Get Method<a hidden class="anchor" aria-hidden="true" href="#get-method">#</a></h3>
+<p>The syntax for the <code>get</code> method is shown below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span>uvm_config_db#(<span style="color:#66d9ef">type</span> T <span style="color:#f92672">=</span> <span style="color:#66d9ef">int</span>)<span style="color:#f92672">::</span>get(uvm_component cntxt, <span style="color:#66d9ef">string</span> inst_name, <span style="color:#66d9ef">string</span> field_name, <span style="color:#66d9ef">ref</span> T value); <span style="color:#75715e">// get method
+</span></span></span></code></pre></div><ul>
+<li>type T: is the type of resources being retrieved from the database, usually a virtual interface or a configuration object.</li>
+<li>uvm_component cntxt: the cntxt parameter helps to define the component hierarchy level where the resource is stored or made available. Can have two values &ldquo;null&rdquo; and &ldquo;this&rdquo;. <code>Null</code> refers to  via <code>uvm_root</code> the resource is accessible to every component, when using <code>this</code> the resource is accessible via the provided scope.</li>
+<li>string inst_name: instance name of the UVM component or hierarchy where the configuration setting is applied.</li>
+</ul>
+<p><em>cntxt</em> and <em>inst_name</em> together form the scope to locate the resouce within the database.</p>
+<ul>
+<li>string field_name: name given to the resource.</li>
+<li>T value: holds the retrieved value from the database.</li>
+</ul>
+<p>The <code>get()</code> method returns 1 if successful, or 0 if no resource exists in the database with the specified name/type.</p>
+<h2 id="d41d8c"><a hidden class="anchor" aria-hidden="true" href="#d41d8c">#</a></h2>
+<p><strong>Note:</strong> The UVM config database is the recommended way to access the resource database [1].</p>
+<h2 id="component-hierarchy">Component Hierarchy<a hidden class="anchor" aria-hidden="true" href="#component-hierarchy">#</a></h2>
+<p>Understanding how resources are made available to testbench components through <code>uvm_config_db</code> is essential for effective configuration management in UVM. Below are three examples demonstrating how resources can be made accessible to various components in the testbench.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#75715e">// sharing source between all the components
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>uvm_config_db#(<span style="color:#66d9ef">int</span> t)<span style="color:#f92672">::</span>set(null, <span style="color:#e6db74">&#34;*&#34;</span>, <span style="color:#e6db74">&#34;value&#34;</span>, value);                             <span style="color:#75715e">// example 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// sharing resources to a particular component
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>uvm_config_db#(<span style="color:#66d9ef">int</span> t)<span style="color:#f92672">::</span>set(this, <span style="color:#e6db74">&#34;uvm_test_top.env.agent.drv&#34;</span>, <span style="color:#e6db74">&#34;value&#34;</span>, value);    <span style="color:#75715e">// example 2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// sharing resources to all the components under agent
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>uvm_config_db#(<span style="color:#66d9ef">int</span> t)<span style="color:#f92672">::</span>set(this, <span style="color:#e6db74">&#34;uvm_test_top.env.agent*&#34;</span>, <span style="color:#e6db74">&#34;value&#34;</span>, value);       <span style="color:#75715e">// example 3
+</span></span></span></code></pre></div><p>In the first example, the resource is made available to all components in the testbench. The wildcard <code>&quot;*&quot;</code> ensures that any component, regardless of its position in the hierarchy, can retrieve the resource.</p>
+<p>In the second example, the resource is constrained based on the hierarchical scope. Here, only the driver component will be able to retrieve the data. For the <code>get</code> method to work correctly, the <code>inst_name</code> must match exactly to the <code>set</code> method to retrieve the resource.</p>
+<p>In the third example, any component under the agent hierarchy will be able to retrieve the resource. The wildcard <code>&quot;*&quot;</code> is used again to ensure that all components under the agent hierarchy can access the resource.</p>
+<h2 id="reference">Reference<a hidden class="anchor" aria-hidden="true" href="#reference">#</a></h2>
+<ol>
+<li><a href="https://accellera.org/images/downloads/standards/uvm/uvm_users_guide_1.2.pdf">Universal Verification Methodology (UVM) 1.2 User&rsquo;s Guide</a></li>
+<li><a href="https://accellera.org/images/downloads/standards/uvm/UVM_1.1_Class_Reference_Final_06062011.pdf">Universal Verification Methodology (UVM) 1.1 Class Reference</a></li>
+<li><a href="https://verificationacademy.com/resource/128026c9-49b3-3eb8-92a4-08373425cd36">Universal Verficiation Methodology Cookbook</a></li>
+</ol>
+
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://24x7fpga.com/tags/uvm/">uvm</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

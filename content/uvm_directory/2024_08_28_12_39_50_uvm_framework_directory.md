@@ -22,3 +22,4 @@ UVM stands for Universal Verification Method developed by [UVM Working Group](ht
 -   [UVM Report Object]({{< relref "2024_09_23_11_00_17_uvm_report_object.md" >}})
 -   [UVM Common Operations]({{< relref "2024_09_25_14_36_39_uvm_common_operations.md" >}})
 -   [UVM Phases]({{< relref "2024_09_26_13_20_13_uvm_phases.md" >}})
+-   [UVM Resource and Configuration Database]({{< relref "2024_10_06_11_18_25_uvm_resource_and_configuration_database.md" >}})
