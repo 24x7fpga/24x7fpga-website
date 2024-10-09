@@ -559,7 +559,7 @@ Repeat The repeat loop executes a block of code a specified number of times. Thi
       <link>https://24x7fpga.com/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</link>
       <pubDate>Fri, 19 Jul 2024 14:21:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</guid>
-      <description>SV Verification Directory
+      <description>Source &amp;ndash; SV Verification Directory
 While and Do While While and do while loops are used for iterative control structures that execute a block of code multiple times based on a condition. These loops are particularly useful when the number of iterations is not known beforehand and depends on the evaluation of the loop condition.
 While Loop The &amp;ldquo;while&amp;rdquo; loop executes a block code until the specified condition is true. The condition is evaluated before each iteration.</description>
     </item>
@@ -568,7 +568,7 @@ While Loop The &amp;ldquo;while&amp;rdquo; loop executes a block code until the 
       <link>https://24x7fpga.com/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</link>
       <pubDate>Fri, 19 Jul 2024 12:40:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</guid>
-      <description>SV Verification Directory
+      <description>Source &amp;ndash; SV Verification Directory
 For and Foreach Loops Loops are essential constructs to repeat a block of code for a specified amount of time. SystemVerilog provides two constructs to itreate over a range of elements and they are &amp;ldquo;for&amp;rdquo; loop and &amp;ldquo;foreach&amp;rdquo; loop.
 For Loop Similar to other programming languages, the &amp;ldquo;for&amp;rdquo; loop in SystemVerilog repeats a block of code for a specified number of times. Ideal for controlled, indexed iterations where the number of iterations is known beforehand.</description>
     </item>
@@ -666,7 +666,7 @@ Equality Comparator: it compares the two binary numbers to up a true bit or high
       <link>https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/</link>
       <pubDate>Tue, 02 Jul 2024 18:41:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/</guid>
-      <description>SV Verification Directory
+      <description>Source &amp;ndash; SV Verification Directory
 Dynamic Cast Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,
 Static Casting Dynamic Casting Dynamic Casting Dynamic casting in SystemVerilog allows you to safely convert a handle of one class type to another class type at runtime, ensuring the cast is valid and the object is of the target type. The dynamic cast, $cast, allows you to check for out-of-bounds values.</description>
     </item>
@@ -675,10 +675,9 @@ Static Casting Dynamic Casting Dynamic Casting Dynamic casting in SystemVerilog 
       <link>https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/</link>
       <pubDate>Tue, 02 Jul 2024 18:32:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/</guid>
-      <description>SV Verification Directory
+      <description>Source &amp;ndash; SV Verification Directory
 Static Cast Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,
-Static Casting Dynamic Casting Static Casting Static casting converts one data type to another compartible datatypes, as the name suggest, the conversion data type is fixed. The cast (&amp;rsquo;) operator should be placed before the data along with the intended data type.
-Example module static_conv; int i = 75; real r = 13.</description>
+Static Casting Dynamic Casting Static Casting Static casting converts one data type to another compartible datatypes, as the name suggest, the conversion data type is fixed. The cast (&amp;rsquo;) operator should be placed before the data along with the intended data type.</description>
     </item>
     <item>
       <title>Structures</title>
@@ -696,7 +695,7 @@ Typedef for Struct To create multiple structure variables it is necessary to use
       <link>https://24x7fpga.com/sv_directory/2024_07_02_15_05_30_enumeration/</link>
       <pubDate>Tue, 02 Jul 2024 15:05:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_02_15_05_30_enumeration/</guid>
-      <description>SV Verification Directory
+      <description>Source &amp;ndash; SV Verification Directory
 Enumeration In Verilog, it is possible to declare user-defined types using a define macro, shown below:
 `define TYPE1 8 `define TYPE2 32 This does not create a new type but just performance text substitution. In SystemVerilog, a new type can be created with the following code:
 typedef logic [Size-1:0] VAR_T; VAR_T var1, var2; The typedef and parameter statements can be put in a package so they can be shared across the design and testbench.</description>
@@ -715,7 +714,7 @@ Basic Array Operations Copy: an array can be copied completely to another array 
       <link>https://24x7fpga.com/sv_directory/2024_07_02_00_18_56_associative_arrays/</link>
       <pubDate>Tue, 02 Jul 2024 00:18:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_02_00_18_56_associative_arrays/</guid>
-      <description>SV Verification Directory
+      <description>Source &amp;ndash; SV Verification Directory
 Associative Arrays Associative arrays in SystemVerilog allow you to index arrays with arbitrary data types. An associative array can be stored by the simulator as a tree or a hash table. An associative array is declared with a data type in square brackets. Only the elements that are explicitly assigned are stored, making it memory-efficient for sparse arrays.
 Example of associative arrays in SV is shown below:</description>
     </item>
@@ -724,7 +723,7 @@ Example of associative arrays in SV is shown below:</description>
       <link>https://24x7fpga.com/sv_directory/2024_07_01_23_35_47_queues/</link>
       <pubDate>Mon, 01 Jul 2024 23:35:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_01_23_35_47_queues/</guid>
-      <description>SV Verification Directory
+      <description>Source &amp;ndash; SV Verification Directory
 Queues Queue is a new data type introduced in SystemVerilog that combines the best of a linked list and an array.
 Like a linked list, elements can be added and removed anywhere in the queue, without performance degradation when using a dynamic array that has to allocate a new array and copy the entire contents. Like an array, any element in the queue can be directly accessed with the help of the index, without the linked list&amp;rsquo;s overhead of stepping through the preceding element.</description>
     </item>
@@ -733,7 +732,7 @@ Like a linked list, elements can be added and removed anywhere in the queue, wit
       <link>https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</link>
       <pubDate>Mon, 01 Jul 2024 15:56:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</guid>
-      <description>SV Verification Directory
+      <description>Source &amp;ndash; SV Verification Directory
 Dymanic Arrays Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declare with empty word subscripts &amp;ldquo;[ ]&amp;rdquo;. The array is initially empty and must be called with the &amp;ldquo;new[ ]&amp;rdquo; constuctor to allocate space, passing in the number of entries in the square brackets.</description>
     </item>
     <item>
@@ -741,7 +740,7 @@ Dymanic Arrays Dynamic arrays are arrays that do not have their size set during 
       <link>https://24x7fpga.com/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</link>
       <pubDate>Sat, 29 Jun 2024 23:39:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</guid>
-      <description>SV Verification Directory
+      <description>Source &amp;ndash; SV Verification Directory
 Packed and Unpacked Array Packed and unpacked arrays are differentiated based on the way the arrays are stored in the memory. Generally, simulators store each element on a 32-bit word boundary. In a packed array, the elements are stored in contiguous memory locations whereas in an unpacked array, the elements are not stored in contiguous memory locations.
 Packed Array A packed array can be declared by declaring the dimension before the identifier name shown below:</description>
     </item>

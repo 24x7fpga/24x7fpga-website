@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-[SV Verification Directory]({{< relref "2024_06_27_16_53_00_sv_verification_directory.md" >}})
+[Source](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification) -- [SV Verification Directory]({{< relref "2024_06_27_16_53_00_sv_verification_directory.md" >}})
 
 
 ## While and Do While {#while-and-do-while}
@@ -30,6 +30,8 @@ end
 
 
 ### Example Code: While Loop {#example-code-while-loop}
+
+[Source]
 
 ```verilog
 module while_loop;
@@ -65,6 +67,8 @@ end
 
 
 #### Example Code: Do While Loop {#example-code-do-while-loop}
+
+[Source](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/do_while_loop/tb_do_while_loop.sv)
 
 ```verilog
 module do_while_loop;

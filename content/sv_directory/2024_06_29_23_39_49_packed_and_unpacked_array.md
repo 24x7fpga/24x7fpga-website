@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-[SV Verification Directory]({{< relref "2024_06_27_16_53_00_sv_verification_directory.md" >}})
+[Source](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/packed_and_unpacked/tb_packed_and_unpacked.sv) -- [SV Verification Directory]({{< relref "2024_06_27_16_53_00_sv_verification_directory.md" >}})
 
 
 ## Packed and Unpacked Array {#packed-and-unpacked-array}

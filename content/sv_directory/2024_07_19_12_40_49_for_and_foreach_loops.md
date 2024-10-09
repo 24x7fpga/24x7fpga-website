@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-[SV Verification Directory]({{< relref "2024_06_27_16_53_00_sv_verification_directory.md" >}})
+[Source](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification) -- [SV Verification Directory]({{< relref "2024_06_27_16_53_00_sv_verification_directory.md" >}})
 
 
 ## For and Foreach Loops {#for-and-foreach-loops}
@@ -30,6 +30,8 @@ end
 
 
 #### Example Code: For Loop {#example-code-for-loop}
+
+[Source](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/for_loop/tb_for_loop.sv)
 
 ```verilog
 module for_loop;
@@ -62,6 +64,8 @@ end
 
 
 #### Example Code: Foreach Loop {#example-code-foreach-loop}
+
+[Source](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/foreach_loop/tb_foreach_loop.sv)
 
 ```verilog
 module foreach_loop;

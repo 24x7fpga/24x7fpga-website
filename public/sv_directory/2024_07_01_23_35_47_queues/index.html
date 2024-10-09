@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Queues | Home</title>
 <meta name="keywords" content="sv">
-<meta name="description" content="SV Verification Directory
+<meta name="description" content="Source &ndash; SV Verification Directory
 Queues Queue is a new data type introduced in SystemVerilog that combines the best of a linked list and an array.
 Like a linked list, elements can be added and removed anywhere in the queue, without performance degradation when using a dynamic array that has to allocate a new array and copy the entire contents. Like an array, any element in the queue can be directly accessed with the help of the index, without the linked list&rsquo;s overhead of stepping through the preceding element.">
 <meta name="author" content="Kiran">
@@ -37,7 +37,7 @@ Like a linked list, elements can be added and removed anywhere in the queue, wit
 <link rel="stylesheet" href="../../zcustom.css">
 
 <meta property="og:title" content="Queues" />
-<meta property="og:description" content="SV Verification Directory
+<meta property="og:description" content="Source &ndash; SV Verification Directory
 Queues Queue is a new data type introduced in SystemVerilog that combines the best of a linked list and an array.
 Like a linked list, elements can be added and removed anywhere in the queue, without performance degradation when using a dynamic array that has to allocate a new array and copy the entire contents. Like an array, any element in the queue can be directly accessed with the help of the index, without the linked list&rsquo;s overhead of stepping through the preceding element." />
 <meta property="og:type" content="article" />
@@ -47,7 +47,7 @@ Like a linked list, elements can be added and removed anywhere in the queue, wit
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Queues"/>
-<meta name="twitter:description" content="SV Verification Directory
+<meta name="twitter:description" content="Source &ndash; SV Verification Directory
 Queues Queue is a new data type introduced in SystemVerilog that combines the best of a linked list and an array.
 Like a linked list, elements can be added and removed anywhere in the queue, without performance degradation when using a dynamic array that has to allocate a new array and copy the entire contents. Like an array, any element in the queue can be directly accessed with the help of the index, without the linked list&rsquo;s overhead of stepping through the preceding element."/>
 
@@ -78,12 +78,12 @@ Like a linked list, elements can be added and removed anywhere in the queue, wit
   "@type": "BlogPosting",
   "headline": "Queues",
   "name": "Queues",
-  "description": "SV Verification Directory\nQueues Queue is a new data type introduced in SystemVerilog that combines the best of a linked list and an array.\nLike a linked list, elements can be added and removed anywhere in the queue, without performance degradation when using a dynamic array that has to allocate a new array and copy the entire contents. Like an array, any element in the queue can be directly accessed with the help of the index, without the linked list\u0026rsquo;s overhead of stepping through the preceding element.",
+  "description": "Source \u0026ndash; SV Verification Directory\nQueues Queue is a new data type introduced in SystemVerilog that combines the best of a linked list and an array.\nLike a linked list, elements can be added and removed anywhere in the queue, without performance degradation when using a dynamic array that has to allocate a new array and copy the entire contents. Like an array, any element in the queue can be directly accessed with the help of the index, without the linked list\u0026rsquo;s overhead of stepping through the preceding element.",
   "keywords": [
     "sv"
   ],
-  "articleBody": "SV Verification Directory\nQueues Queue is a new data type introduced in SystemVerilog that combines the best of a linked list and an array.\nLike a linked list, elements can be added and removed anywhere in the queue, without performance degradation when using a dynamic array that has to allocate a new array and copy the entire contents. Like an array, any element in the queue can be directly accessed with the help of the index, without the linked list’s overhead of stepping through the preceding element. A queue is declared with the word subscript containing a dollar sign “[$]”. The elements in the queue are numbered from 0 to $. Initializing a queue is different for arrays as the initial apostrophe is not required and the elements must be declared inside the curly brackets. SystemVerilog allocates extra space for a queue so that you don’t run out of space when filling up a queue. This way a queue can grow and shrink without any performance penalty of a dynamic array.\nThe queue elements are stored in a contiguous location, so it is efficient to push and pop elements from the front and back. Adding and deleting elements in the middle of a queue requires shifting the existing data to make room and time to do this grows linearly with the size of the queue.\nQueue example in SystemVerilog is shown below:\nmodule queues (); int q[$] = {1,2,3,4,5}; int k; initial begin $display(\"------------------ Queue ------------------\"); foreach(q[i])$display(\"\\t q[%0d]=%0d\",i, q[i]); k = q.pop_front(); $display(\"----------------- Pop Front -----------------\"); $display(\"\\t k=%0d\", k); k = q.pop_back(); $display(\"----------------- Pop Back -----------------\"); $display(\"\\t k=%0d\", k); q.push_front(9); $display(\"-------------- Insert @ Front --------------\"); foreach(q[i])$display(\"\\t q[%0d]=%0d\",i, q[i]); q.push_back(0); $display(\"-------------- Insert @ Back -_-------------\"); foreach(q[i])$display(\"\\t q[%0d]=%0d\",i, q[i]); q.delete(1); $display(\"-------------- Delete Element --------------\"); foreach(q[i])$display(\"\\t q[%0d]=%0d\",i, q[i]); end endmodule Execute the example in EDA Playground\n",
-  "wordCount" : "303",
+  "articleBody": "Source – SV Verification Directory\nQueues Queue is a new data type introduced in SystemVerilog that combines the best of a linked list and an array.\nLike a linked list, elements can be added and removed anywhere in the queue, without performance degradation when using a dynamic array that has to allocate a new array and copy the entire contents. Like an array, any element in the queue can be directly accessed with the help of the index, without the linked list’s overhead of stepping through the preceding element. A queue is declared with the word subscript containing a dollar sign “[$]”. The elements in the queue are numbered from 0 to $. Initializing a queue is different for arrays as the initial apostrophe is not required and the elements must be declared inside the curly brackets. SystemVerilog allocates extra space for a queue so that you don’t run out of space when filling up a queue. This way a queue can grow and shrink without any performance penalty of a dynamic array.\nThe queue elements are stored in a contiguous location, so it is efficient to push and pop elements from the front and back. Adding and deleting elements in the middle of a queue requires shifting the existing data to make room and time to do this grows linearly with the size of the queue.\nQueue example in SystemVerilog is shown below:\nmodule queues (); int q[$] = {1,2,3,4,5}; int k; initial begin $display(\"------------------ Queue ------------------\"); foreach(q[i])$display(\"\\t q[%0d]=%0d\",i, q[i]); k = q.pop_front(); $display(\"----------------- Pop Front -----------------\"); $display(\"\\t k=%0d\", k); k = q.pop_back(); $display(\"----------------- Pop Back -----------------\"); $display(\"\\t k=%0d\", k); q.push_front(9); $display(\"-------------- Insert @ Front --------------\"); foreach(q[i])$display(\"\\t q[%0d]=%0d\",i, q[i]); q.push_back(0); $display(\"-------------- Insert @ Back -_-------------\"); foreach(q[i])$display(\"\\t q[%0d]=%0d\",i, q[i]); q.delete(1); $display(\"-------------- Delete Element --------------\"); foreach(q[i])$display(\"\\t q[%0d]=%0d\",i, q[i]); end endmodule Execute the example in EDA Playground\n",
+  "wordCount" : "305",
   "inLanguage": "en",
   "datePublished": "2024-07-01T23:35:00-04:00",
   "dateModified": "2024-07-01T23:35:00-04:00",
@@ -246,11 +246,11 @@ Like a linked list, elements can be added and removed anywhere in the queue, wit
     <h1 class="post-title entry-hint-parent">
       Queues
     </h1>
-    <div class="post-meta"><span title='2024-07-01 23:35:00 -0400 EDT'>July 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;303 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-07-01 23:35:00 -0400 EDT'>July 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;305 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
-  <div class="post-content"><p><a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/queues/tb_queues.sv">Source</a> &ndash; <a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
 <h2 id="queues">Queues<a hidden class="anchor" aria-hidden="true" href="#queues">#</a></h2>
 <p>Queue is a new data type introduced in SystemVerilog that combines the best of a linked list and an array.</p>
 <ul>
