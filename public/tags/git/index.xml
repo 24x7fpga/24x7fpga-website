@@ -15,7 +15,8 @@
       <guid>https://24x7fpga.com/git_directory/2024_08_04_14_34_41_git_sync_a_forked_repository/</guid>
       <description>Reference Video
 Git Sync a Forked Repository To sync a forked repository with the upstream repository (the original repository from which you forked), you can follow these steps:
-Add the parent repository/upstream repository if not already added: git remote add {upstream/parent} {ssh original git repo} {upstream/parent} is user defined the name given to the original repo. Once the original repository is added, Git Pull the original repository to the local repository: git pull {upstram/parent} {branch} {branch} is the name of the branch, it could be main or the branch name you want to sync the local repository.</description>
+Add the parent repository/upstream repository if not already added: git remote add {upstream/parent} {ssh original git repo} {upstream/parent} is user defined the name given to the original repo.
+Once the original repository is added, Git Pull the original repository to the local repository:</description>
     </item>
     <item>
       <title>Git Pull</title>

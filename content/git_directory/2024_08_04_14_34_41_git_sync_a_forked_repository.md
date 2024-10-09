@@ -24,19 +24,19 @@ git remote add {upstream/parent} {ssh original git repo}
 
 -   {upstream/parent} is user defined the name given to the original repo.
 
-2.   Once the original repository is added, [Git Pull]({{< relref "2024_08_04_12_24_44_git_pull.md" >}})  the original repository to the local repository:
+-   Once the original repository is added, [Git Pull]({{< relref "2024_08_04_12_24_44_git_pull.md" >}})  the original repository to the local repository:
 
 <!--listend-->
 
 ```linux
-git pull {upstram/parent} {branch}
+git pull {upstream/parent} {branch}
 ```
 
 -   {branch} is the name of the branch, it could be main or the branch name you want to sync the local repository.
 
 This is will sync the original forked repository with the local repository.
 
-3.  Push the changes to your forked remote repository.
+1.  Push the changes to your forked remote repository.
 
 <!--listend-->
 
