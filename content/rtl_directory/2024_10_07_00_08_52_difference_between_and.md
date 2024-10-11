@@ -27,9 +27,9 @@ The **==** operator checks if two values are logically equal. It used for compar
 ```
 
 
-## **===** Equality {#equality}
+## === Equality {#equality}
 
-The **===**  operator is a strict equality check. It treats X as don't-care values. When both RHS and LHS are X's the results will true (high).
+The **===** operator is a strict equality check. It treats X as don't-care values. When both RHS and LHS are X's the results will true (high).
 
 
 ### Example: {#example}
@@ -39,12 +39,12 @@ The **===**  operator is a strict equality check. It treats X as don't-care valu
 4'bxxxx === 4'bxxxx;  // Result: true
 ```
 
-Here, **===**  treats X as a distinct value, so the comparison returns false if the two values are not strictly equal, including the X bits.
+Here, **===** treats X as a distinct value, so the comparison returns false if the two values are not strictly equal, including the X bits.
 
 NOTE: In synthesizable RTL, it is not advisible to use **===** since it will hide "X" propogations issues.
 
 
 ## Points to Remember {#points-to-remember}
 
-1.  **==** : Ignores X and Z and checks for logical equality.
-2.  **===** : Considers X and Z in the comparison and checks for strict equality.
+1.  **==** : Ignores X and checks for logical equality.
+2.  **===** : Considers X in the comparison and checks for strict equality. It is not considered for synthesizable RTL.
