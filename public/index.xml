@@ -6,8 +6,19 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Oct 2024 11:18:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 07 Oct 2024 00:08:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>  Difference between &#34;=&#34; and &#34;==&#34;
+  </title>
+      <link>https://24x7fpga.com/rtl_directory/2024_10_07_00_08_52_difference_between_and/</link>
+      <pubDate>Mon, 07 Oct 2024 00:08:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_10_07_00_08_52_difference_between_and/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+In Verilog, == and === are both used for comparison, but they behave differently in how they handle X (unknown).
+== Equality The == operator checks if two values are logically equal. It used for comparisons on only 1&amp;rsquo;s and 0&amp;rsquo;s. If any operand contains an X, the comparison result will be a unknown value.
+Example: 4&amp;#39;b101X == 4&amp;#39;b1011; // Result: x (unknown) 4&amp;#39;b1X00 == 4&amp;#39;b1100; // Result: x (unknown) === Equality The === operator is a strict equality check.</description>
+    </item>
     <item>
       <title>UVM Resource and Configuration Database</title>
       <link>https://24x7fpga.com/uvm_directory/2024_10_06_11_18_25_uvm_resource_and_configuration_database/</link>
