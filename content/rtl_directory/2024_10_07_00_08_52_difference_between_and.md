@@ -41,7 +41,7 @@ The **===**  operator is a strict equality check. It treats X as don't-care valu
 
 Here, **===**  treats X as a distinct value, so the comparison returns false if the two values are not strictly equal, including the X bits.
 
-NOTE: In synthesizable RTL, it is not advisible to use **`=`** since it will hide "X" propogations issues.
+NOTE: In synthesizable RTL, it is not advisible to use **===** since it will hide "X" propogations issues.
 
 
 ## Points to Remember {#points-to-remember}
