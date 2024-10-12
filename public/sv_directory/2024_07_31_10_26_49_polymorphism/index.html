@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Polymorphism | Home</title>
 <meta name="keywords" content="sv">
-<meta name="description" content="SV Verification Directory
+<meta name="description" content="Source &ndash; SV Verification Directory
 Polymorphism As the term &lsquo;polymorphism&rsquo; implies, &lsquo;poly&rsquo; means &lsquo;many&rsquo; and &lsquo;morph&rsquo; means &lsquo;form&rsquo; or &lsquo;shape&rsquo;. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.
 An extended class object can be assigned to the base class but not the other way round. Virtual Keyword should be used in parent class to override the method by the child class.">
 <meta name="author" content="Kiran">
@@ -37,7 +37,7 @@ An extended class object can be assigned to the base class but not the other way
 <link rel="stylesheet" href="../../zcustom.css">
 
 <meta property="og:title" content="Polymorphism" />
-<meta property="og:description" content="SV Verification Directory
+<meta property="og:description" content="Source &ndash; SV Verification Directory
 Polymorphism As the term &lsquo;polymorphism&rsquo; implies, &lsquo;poly&rsquo; means &lsquo;many&rsquo; and &lsquo;morph&rsquo; means &lsquo;form&rsquo; or &lsquo;shape&rsquo;. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.
 An extended class object can be assigned to the base class but not the other way round. Virtual Keyword should be used in parent class to override the method by the child class." />
 <meta property="og:type" content="article" />
@@ -47,7 +47,7 @@ An extended class object can be assigned to the base class but not the other way
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Polymorphism"/>
-<meta name="twitter:description" content="SV Verification Directory
+<meta name="twitter:description" content="Source &ndash; SV Verification Directory
 Polymorphism As the term &lsquo;polymorphism&rsquo; implies, &lsquo;poly&rsquo; means &lsquo;many&rsquo; and &lsquo;morph&rsquo; means &lsquo;form&rsquo; or &lsquo;shape&rsquo;. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.
 An extended class object can be assigned to the base class but not the other way round. Virtual Keyword should be used in parent class to override the method by the child class."/>
 
@@ -78,12 +78,12 @@ An extended class object can be assigned to the base class but not the other way
   "@type": "BlogPosting",
   "headline": "Polymorphism",
   "name": "Polymorphism",
-  "description": "SV Verification Directory\nPolymorphism As the term \u0026lsquo;polymorphism\u0026rsquo; implies, \u0026lsquo;poly\u0026rsquo; means \u0026lsquo;many\u0026rsquo; and \u0026lsquo;morph\u0026rsquo; means \u0026lsquo;form\u0026rsquo; or \u0026lsquo;shape\u0026rsquo;. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.\nAn extended class object can be assigned to the base class but not the other way round. Virtual Keyword should be used in parent class to override the method by the child class.",
+  "description": "Source \u0026ndash; SV Verification Directory\nPolymorphism As the term \u0026lsquo;polymorphism\u0026rsquo; implies, \u0026lsquo;poly\u0026rsquo; means \u0026lsquo;many\u0026rsquo; and \u0026lsquo;morph\u0026rsquo; means \u0026lsquo;form\u0026rsquo; or \u0026lsquo;shape\u0026rsquo;. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.\nAn extended class object can be assigned to the base class but not the other way round. Virtual Keyword should be used in parent class to override the method by the child class.",
   "keywords": [
     "sv"
   ],
-  "articleBody": "SV Verification Directory\nPolymorphism As the term ‘polymorphism’ implies, ‘poly’ means ‘many’ and ‘morph’ means ‘form’ or ‘shape’. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.\nAn extended class object can be assigned to the base class but not the other way round. Virtual Keyword should be used in parent class to override the method by the child class. Example Code // Parent class class parent_class; // class properties or variables int a, b, s; // task method task func1 (int a, b); s = a + b; $display(\"Non-Virtual: Parent Class =\u003e a = %0d , b = %0d, sum s = %0d\", a, b, s); endtask virtual task func2 (int a, b); s = a + b; $display(\"Virtual: Parent Class =\u003e a = %0d , b = %0d, sum s = %0d\", a, b, s); endtask endclass // Child Class class child_class extends parent_class; // class properties or variables int a, b, m; // task method task func1 (int a, b); m = a * b; $display(\"Non-Virtual: Child Class =\u003e a = %0d , b = %0d, mul m = %0d\", a, b, m); endtask virtual task func2 (int a, b); // good practice to declare a class method as virtual m = a * b; $display(\"Virtual: Child Class =\u003e a = %0d , b = %0d, mul m = %0d\", a, b, m); endtask endclass module test; parent_class pr_obj; // declare a handle for parent class child_class cl_obj; // declare a handle for child class task run(parent_class arg, int a, b); arg.func1(a, b); // commented and uncomment to arg.func2(a, b); // see the effects endtask initial begin cl_obj = new( ); // construct an object pr_obj = new( ); // WHEN THE CHILD CLASS HANDLE POINTS TO THE PARENT CLASS HANDLE $display(\"---------------------- Polymorphism ----------------------\"); run(pr_obj, 30, 10); run(cl_obj, 30, 10); end endmodule Execute the code in EDA Playground\nNote: It is not permissible to assign a parent class handle to a child class handle directly. To address this issue, Dynamic Casting is employed.\n",
-  "wordCount" : "350",
+  "articleBody": "Source – SV Verification Directory\nPolymorphism As the term ‘polymorphism’ implies, ‘poly’ means ‘many’ and ‘morph’ means ‘form’ or ‘shape’. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.\nAn extended class object can be assigned to the base class but not the other way round. Virtual Keyword should be used in parent class to override the method by the child class. Example Code // Parent class class parent_class; // class properties or variables int a, b, s; // task method task func1 (int a, b); s = a + b; $display(\"Non-Virtual: Parent Class =\u003e a = %0d , b = %0d, sum s = %0d\", a, b, s); endtask virtual task func2 (int a, b); s = a + b; $display(\"Virtual: Parent Class =\u003e a = %0d , b = %0d, sum s = %0d\", a, b, s); endtask endclass // Child Class class child_class extends parent_class; // class properties or variables int a, b, m; // task method task func1 (int a, b); m = a * b; $display(\"Non-Virtual: Child Class =\u003e a = %0d , b = %0d, mul m = %0d\", a, b, m); endtask virtual task func2 (int a, b); // good practice to declare a class method as virtual m = a * b; $display(\"Virtual: Child Class =\u003e a = %0d , b = %0d, mul m = %0d\", a, b, m); endtask endclass module tb_polymorphism; parent_class pr_obj; // declare a handle for parent class child_class cl_obj; // declare a handle for child class task run(parent_class arg, int a, b); arg.func1(a, b); // commented and uncomment to arg.func2(a, b); // see the effects endtask initial begin cl_obj = new( ); // construct an object pr_obj = new( ); // WHEN THE CHILD CLASS HANDLE POINTS TO THE PARENT CLASS HANDLE $display(\"---------------------- Polymorphism ----------------------\"); run(pr_obj, 30, 10); run(cl_obj, 30, 10); end endmodule Execute the code in EDA Playground\nNote: It is not permissible to assign a parent class handle to a child class handle directly. To address this issue, Dynamic Casting is employed.\n",
+  "wordCount" : "352",
   "inLanguage": "en",
   "datePublished": "2024-07-31T10:26:00-04:00",
   "dateModified": "2024-07-31T10:26:00-04:00",
@@ -246,11 +246,11 @@ An extended class object can be assigned to the base class but not the other way
     <h1 class="post-title entry-hint-parent">
       Polymorphism
     </h1>
-    <div class="post-meta"><span title='2024-07-31 10:26:00 -0400 EDT'>July 31, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;350 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-07-31 10:26:00 -0400 EDT'>July 31, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;352 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
-  <div class="post-content"><p><a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/polymorphism/tb_polymorphism.sv">Source</a> &ndash; <a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
 <h2 id="polymorphism">Polymorphism<a hidden class="anchor" aria-hidden="true" href="#polymorphism">#</a></h2>
 <p>As the term &lsquo;polymorphism&rsquo; implies, &lsquo;poly&rsquo; means &lsquo;many&rsquo; and &lsquo;morph&rsquo; means &lsquo;form&rsquo; or &lsquo;shape&rsquo;. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.</p>
 <ul>
@@ -294,7 +294,7 @@ An extended class object can be assigned to the base class but not the other way
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>endclass
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> test;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> tb_polymorphism;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  parent_class pr_obj;          <span style="color:#75715e">// declare a handle for parent class
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  child_class cl_obj;           <span style="color:#75715e">// declare a handle for child class
