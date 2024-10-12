@@ -8,7 +8,7 @@
 <title>Interface | Home</title>
 <meta name="keywords" content="sv">
 <meta name="description" content="SV Verification Directory
-Interface Interface in SystemVerilog is a construct that bundles all the signals together or group related signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.
+Interface Interface in SystemVerilog is a construct that bundles all the signals together or group related to signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.
 Syntax // create interface interface interface_name; signals; endinterface // intantiate interface in a module inteface_name inst_name; Example Code Design">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_08_08_10_27_00_interface/">
@@ -38,7 +38,7 @@ Syntax // create interface interface interface_name; signals; endinterface // in
 
 <meta property="og:title" content="Interface" />
 <meta property="og:description" content="SV Verification Directory
-Interface Interface in SystemVerilog is a construct that bundles all the signals together or group related signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.
+Interface Interface in SystemVerilog is a construct that bundles all the signals together or group related to signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.
 Syntax // create interface interface interface_name; signals; endinterface // intantiate interface in a module inteface_name inst_name; Example Code Design" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_08_08_10_27_00_interface/" /><meta property="article:section" content="sv_directory" />
@@ -48,7 +48,7 @@ Syntax // create interface interface interface_name; signals; endinterface // in
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Interface"/>
 <meta name="twitter:description" content="SV Verification Directory
-Interface Interface in SystemVerilog is a construct that bundles all the signals together or group related signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.
+Interface Interface in SystemVerilog is a construct that bundles all the signals together or group related to signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.
 Syntax // create interface interface interface_name; signals; endinterface // intantiate interface in a module inteface_name inst_name; Example Code Design"/>
 
 
@@ -78,12 +78,12 @@ Syntax // create interface interface interface_name; signals; endinterface // in
   "@type": "BlogPosting",
   "headline": "Interface",
   "name": "Interface",
-  "description": "SV Verification Directory\nInterface Interface in SystemVerilog is a construct that bundles all the signals together or group related signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.\nSyntax // create interface interface interface_name; signals; endinterface // intantiate interface in a module inteface_name inst_name; Example Code Design",
+  "description": "SV Verification Directory\nInterface Interface in SystemVerilog is a construct that bundles all the signals together or group related to signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.\nSyntax // create interface interface interface_name; signals; endinterface // intantiate interface in a module inteface_name inst_name; Example Code Design",
   "keywords": [
     "sv"
   ],
-  "articleBody": "SV Verification Directory\nInterface Interface in SystemVerilog is a construct that bundles all the signals together or group related signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.\nSyntax // create interface interface interface_name; signals; endinterface // intantiate interface in a module inteface_name inst_name; Example Code Design\nmodule add ( // outputs s, // inputs a, b ); // outputs output [4:0] s; // inputs input [3:0] a, b; assign s = a + b; endmodule Testbench\ninterface intf; logic [3:0] a; logic [3:0] b; logic [4:0] s; endinterface module test; intf i_intf(); add DUT(.a(i_intf.a), .b(i_intf.b), .s(i_intf.s)); initial begin $display(\"---------- ADDER ----------\"); repeat(10) begin i_intf.a = $random(); i_intf.b = $random(); #1; $display(\"a = %d, b = %d =\u003e s = %d\", i_intf.a, i_intf.b, i_intf.s); end end endmodule Execute the code in EDA Playground\nAdvantages Addition and deletion od signals are easy since all the signals are at one place. The signals can be groups and passed a signal port rather tha multiple port declaration. Signals can be grouped based on direction (Modport) and timing information (Clocking Block). Virtual Interface Virtual interface can be dynamically assigned during runtime. Must be iintialized before accessing or driving the interface. ",
-  "wordCount" : "219",
+  "articleBody": "SV Verification Directory\nInterface Interface in SystemVerilog is a construct that bundles all the signals together or group related to signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.\nSyntax // create interface interface interface_name; signals; endinterface // intantiate interface in a module inteface_name inst_name; Example Code Design\nmodule add ( // outputs s, // inputs a, b ); // outputs output [4:0] s; // inputs input [3:0] a, b; assign s = a + b; endmodule Testbench\ninterface intf; logic [3:0] a; logic [3:0] b; logic [4:0] s; endinterface module test; intf i_intf(); add DUT(.a(i_intf.a), .b(i_intf.b), .s(i_intf.s)); initial begin $display(\"---------- ADDER ----------\"); repeat(10) begin i_intf.a = $random(); i_intf.b = $random(); #1; $display(\"a = %d, b = %d =\u003e s = %d\", i_intf.a, i_intf.b, i_intf.s); end end endmodule Execute the code in EDA Playground\nAdvantages Addition and deletion od signals are easy since all the signals are at one place. The signals can be grouped and passed as a signal port rather than multiple port declaration. Signals can be grouped based on direction (Modport) and timing information (Clocking Block). Virtual Interface Both the interface and module are static, meaning they exist throughout the simulation and are straightforward to connect. Since both are static, connecting them is as simple as wiring them together. Unlike interfaces, classes are dynamic—they are instantiated only when needed. Interfaces, being static, cannot be directly used inside a class since the two follow different lifecycles. To access an interface from within a class, the virtual keyword must be used during instantiation. A virtual interface provides a handle to the static interface, allowing it to be used within a class-based environment. One advantage of a virtual interface is that it can be assigned dynamically at runtime, providing flexibility. A virtual interface must be initialized (assigned to a valid interface instance) before it can be accessed or driven. Failure to do so will result in errors during simulation. ",
+  "wordCount" : "342",
   "inLanguage": "en",
   "datePublished": "2024-08-08T10:27:00-04:00",
   "dateModified": "2024-08-08T10:27:00-04:00",
@@ -246,13 +246,13 @@ Syntax // create interface interface interface_name; signals; endinterface // in
     <h1 class="post-title entry-hint-parent">
       Interface
     </h1>
-    <div class="post-meta"><span title='2024-08-08 10:27:00 -0400 EDT'>August 8, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;219 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-08-08 10:27:00 -0400 EDT'>August 8, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;342 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
   <div class="post-content"><p><a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
 <h2 id="interface">Interface<a hidden class="anchor" aria-hidden="true" href="#interface">#</a></h2>
-<p>Interface in SystemVerilog is a construct that bundles all the signals together or group related signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.</p>
+<p>Interface in SystemVerilog is a construct that bundles all the signals together or group related to signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.</p>
 <h4 id="syntax">Syntax<a hidden class="anchor" aria-hidden="true" href="#syntax">#</a></h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#75715e">// create interface
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>interface interface_name;
@@ -318,13 +318,19 @@ Syntax // create interface interface interface_name; signals; endinterface // in
 <h3 id="advantages">Advantages<a hidden class="anchor" aria-hidden="true" href="#advantages">#</a></h3>
 <ol>
 <li>Addition and deletion od signals are easy since all the signals are at one place.</li>
-<li>The signals can be groups and passed a signal port rather tha multiple port declaration.</li>
+<li>The signals can be grouped and passed as a signal port rather than multiple port declaration.</li>
 <li>Signals can be grouped based on direction (<a href="/sv_directory/2024_08_08_10_17_52_modport/">Modport</a>) and timing information (<a href="/sv_directory/2024_08_08_13_51_50_clocking_block/">Clocking Block</a>).</li>
 </ol>
 <h3 id="virtual-interface">Virtual Interface<a hidden class="anchor" aria-hidden="true" href="#virtual-interface">#</a></h3>
 <ul>
-<li>Virtual interface can be dynamically assigned during runtime.</li>
-<li>Must be iintialized before accessing or driving the interface.</li>
+<li>Both the interface and module are static, meaning they exist throughout the simulation and are straightforward to connect.</li>
+<li>Since both are static, connecting them is as simple as wiring them together.</li>
+<li>Unlike interfaces, classes are dynamic—they are instantiated only when needed.</li>
+<li>Interfaces, being static, cannot be directly used inside a class since the two follow different lifecycles.</li>
+<li>To access an interface from within a class, the <code>virtual</code> keyword must be used during instantiation.</li>
+<li>A virtual interface provides a handle to the static interface, allowing it to be used within a class-based environment.</li>
+<li>One advantage of a virtual interface is that it can be <strong>assigned dynamically at runtime</strong>, providing flexibility.</li>
+<li>A virtual interface must be initialized (assigned to a valid interface instance) before it can be accessed or driven. Failure to do so will result in errors during simulation.</li>
 </ul>
 
 

@@ -142,7 +142,7 @@ Groups signals under a common clock, specifying how and when signals are sampeld
       <pubDate>Thu, 08 Aug 2024 10:27:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_08_08_10_27_00_interface/</guid>
       <description>SV Verification Directory
-Interface Interface in SystemVerilog is a construct that bundles all the signals together or group related signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.
+Interface Interface in SystemVerilog is a construct that bundles all the signals together or group related to signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.
 Syntax // create interface interface interface_name; signals; endinterface // intantiate interface in a module inteface_name inst_name; Example Code Design</description>
     </item>
     <item>
