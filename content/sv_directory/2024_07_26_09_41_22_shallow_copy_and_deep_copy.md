@@ -125,7 +125,7 @@ class name;
 
   function new(string student, string mrk);
     this.student = student;
-    this.mrk = new(mrk);         // condstruct an object
+    this.mrk = new(mrk);         // construct the object
   endfunction
 
   // deep copy function
