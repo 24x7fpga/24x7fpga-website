@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>SV Testbench Overview | Home</title>
+<meta name="keywords" content="sv">
+<meta name="description" content="Source &ndash; SV Verification Directory
+A layered testbench is a modular verification environment where the components are divided into specific layers, with each layer responsible for a distinct task. This structured approach ensures better organization, reusability, and scalability, making it easier to manage complex verification environments. The typical components of a SystemVerilog testbench are illustrated in Figure 1.
+Figure 1: Testbench Environment
+Let’s explore the SystemVerilog verification components using a Half Adder as an example.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.19a7d7ba8a856bc3605fc7ca61a989cac3905b8b7707571254a3f97e6b40052a.css" integrity="sha256-GafXuoqFa8NgX8fKYamJysOQW4t3B1cSVKP5fmtABSo=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+<meta property="og:title" content="SV Testbench Overview" />
+<meta property="og:description" content="Source &ndash; SV Verification Directory
+A layered testbench is a modular verification environment where the components are divided into specific layers, with each layer responsible for a distinct task. This structured approach ensures better organization, reusability, and scalability, making it easier to manage complex verification environments. The typical components of a SystemVerilog testbench are illustrated in Figure 1.
+Figure 1: Testbench Environment
+Let’s explore the SystemVerilog verification components using a Half Adder as an example." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/" /><meta property="article:section" content="sv_directory" />
+<meta property="article:published_time" content="2024-10-05T21:56:00-04:00" />
+<meta property="article:modified_time" content="2024-10-05T21:56:00-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SV Testbench Overview"/>
+<meta name="twitter:description" content="Source &ndash; SV Verification Directory
+A layered testbench is a modular verification environment where the components are divided into specific layers, with each layer responsible for a distinct task. This structured approach ensures better organization, reusability, and scalability, making it easier to manage complex verification environments. The typical components of a SystemVerilog testbench are illustrated in Figure 1.
+Figure 1: Testbench Environment
+Let’s explore the SystemVerilog verification components using a Half Adder as an example."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Sv_directories",
+      "item": "https://24x7fpga.com/sv_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "SV Testbench Overview",
+      "item": "https://24x7fpga.com/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "SV Testbench Overview",
+  "name": "SV Testbench Overview",
+  "description": "Source \u0026ndash; SV Verification Directory\nA layered testbench is a modular verification environment where the components are divided into specific layers, with each layer responsible for a distinct task. This structured approach ensures better organization, reusability, and scalability, making it easier to manage complex verification environments. The typical components of a SystemVerilog testbench are illustrated in Figure 1.\nFigure 1: Testbench Environment\nLet’s explore the SystemVerilog verification components using a Half Adder as an example.",
+  "keywords": [
+    "sv"
+  ],
+  "articleBody": "Source – SV Verification Directory\nA layered testbench is a modular verification environment where the components are divided into specific layers, with each layer responsible for a distinct task. This structured approach ensures better organization, reusability, and scalability, making it easier to manage complex verification environments. The typical components of a SystemVerilog testbench are illustrated in Figure 1.\nFigure 1: Testbench Environment\nLet’s explore the SystemVerilog verification components using a Half Adder as an example.\nTop The top module acts as a wrapper that connects the Design Under Test (DUT) to the testbench environment, ensuring seamless communication between the two.\nExample\nmodule tb_half_adder; /*AUTOWIRE*/ // Beginning of automatic wires (for undeclared instantiated-module outputs) wire\tc;\t// From DUT of half_adder.v wire\ts;\t// From DUT of half_adder.v // End of automatics intf i_intf();\t//interface handle test t1(i_intf);\t//connect test class handle to interface half_adder DUT (/*AUTOINST*/ // Outputs .s\t(i_intf.s), .c\t(i_intf.c), // Inputs .a\t(i_intf.a), .b\t(i_intf.b)); initial begin $dumpfile(\"dump.vcd\"); $dumpvars; end endmodule Design Under Test (DUT) The Design Under Test (DUT) refers to the actual hardware design or module that is being verified within a simulation environment. The DUT is the focus of the verification process, and it can be any digital design component, such as a microprocessor, a memory block, or a custom logic circuit.\nExample\nmodule half_adder(a,b,s,c); input a,b; output s,c; xor X1 (s,a,b); and A1 (c,a,b); endmodule Test The test component creates an instance of the environment and configures it for the simulation. Multiple test components can be defined to handle different test cases, ensuring comprehensive verification of the DUT under various scenarios.\nExample\n`include \"environment.sv\" program test(intf i_intf); environment env;\t//class handle initial begin env = new(i_intf); //class object env.run();\t//class task end endprogram Interface All the signals are grouped under a single component, allowing them to be shared across different testbench components using a single reference. This approach simplifies the testbench by eliminating the need to reference each signal individually, promoting cleaner and more maintainable code.\nExample\ninterface intf(); logic a; logic b; logic s; logic c; endinterface Clocking Block A clocking block in a testbench is used to manage the timing relationships and synchronization of a group of signals. It provides a clear and organized way to define clocking events, control the sampling and driving of signals, and ensure synchronized operations within the testbench.\nEnvironment The environment component acts as the top-module for all the key components of a verification environment. It provides a modular structure by instantiating and connecting drivers, monitors, generators, scoreboards, and interfaces.\nExample\n`include \"transaction.sv\" `include \"generator.sv\" `include \"driver.sv\" `include \"monitor.sv\" `include \"scoreboard.sv\" class environment; generator\tgen;\t//create the handle driver\tdrv; monitor\tmon; scoreboard\tscb; mailbox m1;\t//mailbox : Generator to Driver mailbox m2;\t//mailbox : Monitor to Scoreboard event ev; virtual intf vif; function new (virtual intf vif); this.vif = vif; m1 = new();\t//create the mailbox for connection m2 = new(); gen = new(m1); drv = new(vif,m1); mon = new(vif,m2); scb = new(m2); gen.ev = ev; //connect event from generator class scb.ev = ev; //to scroboard class endfunction task test();\t//performs the task in the classes fork gen.main(); drv.main(); mon.main(); scb.main(); join_any endtask task run();\t//main which calls test() task test(); $finish; endtask endclass Generator The generator is key component responsible for creating stimulus or transactions that drive the DUT. It can generate both randomized and directed inputs. The generator is typically connected to the driver, which sends the generated stimulus to the DUT.\nExample\nclass generator; event ev; // Create event to wait until the scr is verified the transaction mailbox gen2drv; //Create a mailbox: sending info from Generator to Driver transaction trans; //Create an handle of the transaction class //Create a constructor of generator class //\"new\" will create a memory for variable for gen2drv and initialize //them with their default values and return the address to generator handle function new(mailbox gen2drv); trans = new(); //object for transaction class this.gen2drv = gen2drv; //info from the outside class is passed to the endfunction\t//gen2drv present inside this class task main(); repeat(10) begin assert(trans.randomize) else $error(\"GEN: Randomization Failed\"); //randomize the transaction and verify if is randomized //trans.randomize();\t//randomize the transaction trans.DISP(\"GEN\");\t//Display the values gen2drv.put(trans);\t//put them in the mailbox @(ev); // wait for the event to be triggered in scoreboard class end endtask endclass Driver The driver component is responsible for translating the stimulus generated by the generator into actual signal activity on the DUT. It interacts with the DUT’s via interface (virutal interface) and ensures that the signals are driven correctly according to the specified protocols.\nExample\nclass driver; virtual intf vif;\t//vif is the handle of virtual interface mailbox gen2drv;\t//handle of the mailbox transaction trans;\t//handle of transaction class, to get the data from mailbox function new (virtual intf vif, mailbox gen2drv); this.vif = vif; this.gen2drv = gen2drv; endfunction task main; forever begin gen2drv.get(trans); //receive the info from generator vif.a \u003c= trans.a;\t//sample the input for the virtual interface vif.b \u003c= trans.b; trans.s = vif.s;\t//sample the output from the virtual interface trans.c = vif.c;\t//sampling the output may not be required here trans.DISP(\"DRV\"); end endtask endclass Monitor The monitor component is a vital part of the verification environment responsible for observing and collecting data from the DUT. The monitor simply observes and records the signals for later verification.\nExample\nclass monitor; virtual intf vif;\t//declare virtual interface mailbox mon2scb;\t//declare mailbox to transfer info from monitor to scoreboard transaction trans;\t//handle for transaction class function new (virtual intf vif, mailbox mon2scb); this.vif = vif; trans = new(); this.mon2scb = mon2scb; //constructor or create an object for transaction class endfunction task main; forever begin #3;\t//sample after 3 ns trans.a = vif.a;\t//send the data from virtual interface to monitor trans.b = vif.b; trans.s = vif.s; trans.c = vif.c; mon2scb.put(trans);\t//put the info to send to scoreboard trans.DISP(\"MON\"); end endtask endclass Scoreboard The scoreboard component in the verification environment validates the outputs of the DUT against the expected results. It acts as a comparison mechanism, collecting data from the DUT and comparing it to the expected outcomes to determine if the DUT is functioning correctly.\nExample\nclass scoreboard; event ev; //Create event to trigger the next stimulus in generator class mailbox mon2scb; //Create a mailbox: sending info from Monitor to Scroeboard transaction trans; //Create an handle of the transaction class function new (mailbox mon2scb); this.mon2scb = mon2scb; endfunction task main; forever begin mon2scb.get(trans); trans.DISP(\"SCR\"); if( ((trans.a ^ trans.b) == trans.s) \u0026\u0026 ((trans.a \u0026 trans.b) == trans.c) ) $display(\"Verification Passed! :)\"); else $error(\"Verification Failed! :(\"); $display(\"-----------------------\"); -\u003eev; //trigger an event to proceed to the next stimulus end endtask endclass Execute the code in EDA Playground\n",
+  "wordCount" : "1112",
+  "inLanguage": "en",
+  "datePublished": "2024-10-05T21:56:00-04:00",
+  "dateModified": "2024-10-05T21:56:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      SV Testbench Overview
+    </h1>
+    <div class="post-meta"><span title='2024-10-05 21:56:00 -0400 EDT'>October 5, 2024</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;1112 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/half_adder">Source</a> &ndash; <a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
+<p>A layered testbench is a modular verification environment where the components are divided into specific layers, with each layer responsible for a distinct task. This structured approach ensures better organization, reusability, and scalability, making it easier to manage complex verification environments. The typical components of a SystemVerilog testbench are illustrated in Figure 1.</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/sv_testbench_overview.svg"
+         alt="Figure 1: Testbench Environment"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 1: <!-- raw HTML omitted -->Testbench Environment</p>
+        </figcaption>
+</figure>
+
+<p>Let’s explore the SystemVerilog verification components using a <code>Half Adder</code> as an example.</p>
+<h3 id="top">Top<a hidden class="anchor" aria-hidden="true" href="#top">#</a></h3>
+<p>The top module acts as a wrapper that connects the Design Under Test (DUT) to the testbench environment, ensuring seamless communication between the two.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> tb_half_adder;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/*AUTOWIRE*/</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Beginning of automatic wires (for undeclared instantiated-module outputs)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">wire</span>			c;			<span style="color:#75715e">// From DUT of half_adder.v
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">wire</span>			s;			<span style="color:#75715e">// From DUT of half_adder.v
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// End of automatics
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  intf i_intf();	<span style="color:#75715e">//interface handle
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  test t1(i_intf);	<span style="color:#75715e">//connect test class handle to interface
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  half_adder DUT (<span style="color:#75715e">/*AUTOINST*/</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                  .s			(i_intf.s),
+</span></span><span style="display:flex;"><span>                  .c			(i_intf.c),
+</span></span><span style="display:flex;"><span>                  <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                  .a			(i_intf.a),
+</span></span><span style="display:flex;"><span>                  .b			(i_intf.b));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">initial</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>    $dumpfile(<span style="color:#e6db74">&#34;dump.vcd&#34;</span>);
+</span></span><span style="display:flex;"><span>    $dumpvars;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span>
+</span></span></code></pre></div></li>
+</ul>
+<h3 id="design-under-test--dut">Design Under Test (DUT)<a hidden class="anchor" aria-hidden="true" href="#design-under-test--dut">#</a></h3>
+<p>The Design Under Test (DUT) refers to the actual hardware design or module that is being verified within a simulation environment. The DUT is the focus of the verification process, and it can be any digital design component, such as a microprocessor, a memory block, or a custom logic circuit.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> half_adder(a,b,s,c);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">input</span>  a,b;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">output</span> s,c;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">xor</span> X1 (s,a,b);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">and</span> A1 (c,a,b);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span>
+</span></span></code></pre></div></li>
+</ul>
+<h3 id="test">Test<a hidden class="anchor" aria-hidden="true" href="#test">#</a></h3>
+<p>The test component creates an instance of the environment and configures it for the simulation. Multiple test components can be defined to handle different test cases, ensuring comprehensive verification of the DUT under various scenarios.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">`include</span> <span style="color:#e6db74">&#34;environment.sv&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>program test(intf i_intf);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  environment env;	   <span style="color:#75715e">//class handle
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">initial</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>    env <span style="color:#f92672">=</span> new(i_intf); <span style="color:#75715e">//class object
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    env.run();	       <span style="color:#75715e">//class task
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>endprogram
+</span></span></code></pre></div></li>
+</ul>
+<h3 id="interface">Interface<a hidden class="anchor" aria-hidden="true" href="#interface">#</a></h3>
+<p>All the signals are grouped under a single component, allowing them to be shared across different testbench components using a single reference. This approach simplifies the testbench by eliminating the need to reference each signal individually, promoting cleaner and more maintainable code.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span>interface intf();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">logic</span> a;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">logic</span> b;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">logic</span> s;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">logic</span> c;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>endinterface
+</span></span></code></pre></div></li>
+</ul>
+<h3 id="clocking-block">Clocking Block<a hidden class="anchor" aria-hidden="true" href="#clocking-block">#</a></h3>
+<p>A clocking block in a testbench is used to manage the timing relationships and synchronization of a group of signals. It provides a clear and organized way to define clocking events, control the sampling and driving of signals, and ensure synchronized operations within the testbench.</p>
+<h3 id="environment">Environment<a hidden class="anchor" aria-hidden="true" href="#environment">#</a></h3>
+<p>The environment component acts as the top-module for all the key components of a verification environment. It provides a modular structure by instantiating and connecting drivers, monitors, generators, scoreboards, and interfaces.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">`include</span> <span style="color:#e6db74">&#34;transaction.sv&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">`include</span> <span style="color:#e6db74">&#34;generator.sv&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">`include</span> <span style="color:#e6db74">&#34;driver.sv&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">`include</span> <span style="color:#e6db74">&#34;monitor.sv&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">`include</span> <span style="color:#e6db74">&#34;scoreboard.sv&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>class environment;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  generator		gen;	<span style="color:#75715e">//create the handle
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  driver		drv;
+</span></span><span style="display:flex;"><span>  monitor		mon;
+</span></span><span style="display:flex;"><span>  scoreboard	scb;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  mailbox m1;			<span style="color:#75715e">//mailbox : Generator to Driver
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  mailbox m2;			<span style="color:#75715e">//mailbox : Monitor to Scoreboard
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">event</span> ev;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  virtual intf vif;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> new (virtual intf vif);
+</span></span><span style="display:flex;"><span>    this.vif <span style="color:#f92672">=</span> vif;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    m1 <span style="color:#f92672">=</span> new();		<span style="color:#75715e">//create the mailbox for connection
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    m2 <span style="color:#f92672">=</span> new();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    gen <span style="color:#f92672">=</span> new(m1);
+</span></span><span style="display:flex;"><span>    drv <span style="color:#f92672">=</span> new(vif,m1);
+</span></span><span style="display:flex;"><span>    mon <span style="color:#f92672">=</span> new(vif,m2);
+</span></span><span style="display:flex;"><span>    scb <span style="color:#f92672">=</span> new(m2);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    gen.ev <span style="color:#f92672">=</span> ev;    <span style="color:#75715e">//connect event from generator class
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    scb.ev <span style="color:#f92672">=</span> ev;    <span style="color:#75715e">//to scroboard class
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">endfunction</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">task</span> test();		<span style="color:#75715e">//performs the task in the classes
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">fork</span>
+</span></span><span style="display:flex;"><span>      gen.main();
+</span></span><span style="display:flex;"><span>      drv.main();
+</span></span><span style="display:flex;"><span>      mon.main();
+</span></span><span style="display:flex;"><span>      scb.main();
+</span></span><span style="display:flex;"><span>    join_any
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endtask</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">task</span> run();		<span style="color:#75715e">//main which calls test() task
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    test();
+</span></span><span style="display:flex;"><span>    $finish;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endtask</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>endclass
+</span></span></code></pre></div></li>
+</ul>
+<h3 id="generator">Generator<a hidden class="anchor" aria-hidden="true" href="#generator">#</a></h3>
+<p>The generator is key component responsible for creating stimulus or transactions that drive the DUT. It can generate both randomized and directed inputs. The generator is typically connected to the driver, which sends the generated stimulus to the DUT.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span>class generator;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">event</span> ev;              <span style="color:#75715e">// Create event to wait until the scr is verified the transaction
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  mailbox gen2drv;       <span style="color:#75715e">//Create a mailbox: sending info from Generator to Driver
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  transaction trans;     <span style="color:#75715e">//Create an handle of the transaction class
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//Create a constructor of generator class
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//&#34;new&#34; will create a memory for  variable for gen2drv and initialize
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//them with their default values and return the address to generator handle
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">function</span> new(mailbox gen2drv);
+</span></span><span style="display:flex;"><span>    trans <span style="color:#f92672">=</span> new(); 					<span style="color:#75715e">//object for transaction class
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    this.gen2drv <span style="color:#f92672">=</span> gen2drv; 		<span style="color:#75715e">//info from the outside class is passed to the
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">endfunction</span>						<span style="color:#75715e">//gen2drv present inside this class
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">task</span> main();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">repeat</span>(<span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>        assert(trans.randomize)
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>        $error(<span style="color:#e6db74">&#34;GEN: Randomization Failed&#34;</span>);  <span style="color:#75715e">//randomize the transaction and verify if is randomized
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">//trans.randomize();			      //randomize the transaction
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        trans.DISP(<span style="color:#e6db74">&#34;GEN&#34;</span>);	                  <span style="color:#75715e">//Display the values
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        gen2drv.put(trans);			          <span style="color:#75715e">//put them in the mailbox
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>        @(ev);                                <span style="color:#75715e">// wait for the event to be triggered in scoreboard class
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endtask</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>endclass
+</span></span></code></pre></div></li>
+</ul>
+<h3 id="driver">Driver<a hidden class="anchor" aria-hidden="true" href="#driver">#</a></h3>
+<p>The driver component is responsible for translating the stimulus generated by the generator into actual signal activity on the DUT. It interacts with the DUT&rsquo;s via interface (virutal interface) and ensures that the signals are driven correctly according to the specified protocols.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span>class driver;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  virtual intf vif;			<span style="color:#75715e">//vif is the handle of virtual interface
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  mailbox gen2drv;			<span style="color:#75715e">//handle of the mailbox
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  transaction trans;	    <span style="color:#75715e">//handle of transaction class, to get the data from mailbox
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> new (virtual intf vif, mailbox gen2drv);
+</span></span><span style="display:flex;"><span>    this.vif <span style="color:#f92672">=</span> vif;
+</span></span><span style="display:flex;"><span>    this.gen2drv <span style="color:#f92672">=</span> gen2drv;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endfunction</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">task</span> main;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">forever</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>        gen2drv.get(trans); <span style="color:#75715e">//receive the info from generator
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>        vif.a <span style="color:#f92672">&lt;=</span> trans.a;	<span style="color:#75715e">//sample the input for the virtual interface
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        vif.b <span style="color:#f92672">&lt;=</span> trans.b;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        trans.s <span style="color:#f92672">=</span> vif.s;	<span style="color:#75715e">//sample the output from the virtual interface
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        trans.c <span style="color:#f92672">=</span> vif.c;	<span style="color:#75715e">//sampling the output may not be required here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>        trans.DISP(<span style="color:#e6db74">&#34;DRV&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endtask</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>endclass
+</span></span></code></pre></div></li>
+</ul>
+<h3 id="monitor">Monitor<a hidden class="anchor" aria-hidden="true" href="#monitor">#</a></h3>
+<p>The monitor component is a vital part of the verification environment responsible for observing and collecting data from the DUT. The monitor simply observes and records the signals for later verification.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span>class monitor;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  virtual intf vif;		<span style="color:#75715e">//declare virtual interface
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  mailbox mon2scb;		<span style="color:#75715e">//declare mailbox to transfer info from monitor to scoreboard
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  transaction trans;	<span style="color:#75715e">//handle for transaction class
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> new (virtual intf vif, mailbox mon2scb);
+</span></span><span style="display:flex;"><span>    this.vif <span style="color:#f92672">=</span> vif;
+</span></span><span style="display:flex;"><span>    trans <span style="color:#f92672">=</span> new();
+</span></span><span style="display:flex;"><span>    this.mon2scb <span style="color:#f92672">=</span> mon2scb;     <span style="color:#75715e">//constructor or create an object for transaction class
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endfunction</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">task</span> main;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">forever</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>          #<span style="color:#ae81ff">3</span>;				    <span style="color:#75715e">//sample after 3 ns
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>          trans.a <span style="color:#f92672">=</span> vif.a;		<span style="color:#75715e">//send the data from virtual interface to monitor
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          trans.b <span style="color:#f92672">=</span> vif.b;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>          trans.s <span style="color:#f92672">=</span> vif.s;
+</span></span><span style="display:flex;"><span>          trans.c <span style="color:#f92672">=</span> vif.c;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>          mon2scb.put(trans);	<span style="color:#75715e">//put the info to send to scoreboard
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>          trans.DISP(<span style="color:#e6db74">&#34;MON&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endtask</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>endclass
+</span></span></code></pre></div></li>
+</ul>
+<h3 id="scoreboard">Scoreboard<a hidden class="anchor" aria-hidden="true" href="#scoreboard">#</a></h3>
+<p>The scoreboard component in the verification environment validates the outputs of the DUT against the expected results. It acts as a comparison mechanism, collecting data from the DUT and comparing it to the expected outcomes to determine if the DUT is functioning correctly.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span>class scoreboard;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">event</span> ev;            <span style="color:#75715e">//Create event to trigger the next stimulus in generator class
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  mailbox mon2scb;     <span style="color:#75715e">//Create a mailbox: sending info from Monitor to Scroeboard
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  transaction trans;   <span style="color:#75715e">//Create an handle of the transaction class
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> new (mailbox mon2scb);
+</span></span><span style="display:flex;"><span>    this.mon2scb <span style="color:#f92672">=</span> mon2scb;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endfunction</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">task</span> main;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">forever</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>        mon2scb.get(trans);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        trans.DISP(<span style="color:#e6db74">&#34;SCR&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( ((trans.a <span style="color:#f92672">^</span> trans.b) <span style="color:#f92672">==</span> trans.s) <span style="color:#f92672">&amp;&amp;</span> ((trans.a <span style="color:#f92672">&amp;</span> trans.b) <span style="color:#f92672">==</span> trans.c) )
+</span></span><span style="display:flex;"><span>          $display(<span style="color:#e6db74">&#34;Verification Passed! :)&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>          $error(<span style="color:#e6db74">&#34;Verification Failed! :(&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $display(<span style="color:#e6db74">&#34;-----------------------&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">-&gt;</span>ev;         <span style="color:#75715e">//trigger an event to proceed to the next stimulus
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endtask</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>endclass
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="d41d8c"><a hidden class="anchor" aria-hidden="true" href="#d41d8c">#</a></h2>
+<p><a href="https://www.edaplayground.com/x/qt53">Execute the code in EDA Playground</a></p>
+
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

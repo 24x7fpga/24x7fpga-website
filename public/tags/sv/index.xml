@@ -6,8 +6,18 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Oct 2024 18:24:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 05 Oct 2024 21:56:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SV Testbench Overview</title>
+      <link>https://24x7fpga.com/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/</link>
+      <pubDate>Sat, 05 Oct 2024 21:56:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/</guid>
+      <description>Source &amp;ndash; SV Verification Directory
+A layered testbench is a modular verification environment where the components are divided into specific layers, with each layer responsible for a distinct task. This structured approach ensures better organization, reusability, and scalability, making it easier to manage complex verification environments. The typical components of a SystemVerilog testbench are illustrated in Figure 1.
+Figure 1: Testbench Environment
+Let’s explore the SystemVerilog verification components using a Half Adder as an example.</description>
+    </item>
     <item>
       <title>SV Verification Workflow in Vivado</title>
       <link>https://24x7fpga.com/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/</link>

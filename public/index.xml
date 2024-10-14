@@ -28,6 +28,16 @@ Example: 4&amp;#39;b101X == 4&amp;#39;b1011; // Result: x (unknown) 4&amp;#39;b1
 Data can be shared across the an UVM testbench using two key mechanisms: the configuration database and the resources database. While both serve the purpose of sharing data between components, they are used in distinct contexts. The configuration database is typically used for setting up component-specific configurations, while the resources database is a more general-purpose tool for sharing any kind of data across the testbench.</description>
     </item>
     <item>
+      <title>SV Testbench Overview</title>
+      <link>https://24x7fpga.com/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/</link>
+      <pubDate>Sat, 05 Oct 2024 21:56:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/</guid>
+      <description>Source &amp;ndash; SV Verification Directory
+A layered testbench is a modular verification environment where the components are divided into specific layers, with each layer responsible for a distinct task. This structured approach ensures better organization, reusability, and scalability, making it easier to manage complex verification environments. The typical components of a SystemVerilog testbench are illustrated in Figure 1.
+Figure 1: Testbench Environment
+Let’s explore the SystemVerilog verification components using a Half Adder as an example.</description>
+    </item>
+    <item>
       <title>SV Verification Workflow in Vivado</title>
       <link>https://24x7fpga.com/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/</link>
       <pubDate>Sat, 05 Oct 2024 18:24:00 -0400</pubDate>
@@ -813,7 +823,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Automated Workflow in Vivado SV Verification Workflow in Vivado Layered Testbench Testbench overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block </description>
+Automated Workflow in Vivado SV Verification Workflow in Vivado Layered Testbench SV Testbench Overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block Randomization </description>
     </item>
     <item>
       <title>Decoder</title>

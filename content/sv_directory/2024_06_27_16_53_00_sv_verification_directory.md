@@ -17,7 +17,7 @@ In the rapidly evolving world of digital design, verification is paramount to en
 
 ## Layered Testbench {#layered-testbench}
 
--   Testbench overview
+-   [SV Testbench Overview]({{< relref "2024_10_05_21_56_25_sv_testbench_overview.md" >}})
 
 
 ## Data Types {#data-types}
@@ -93,3 +93,6 @@ In the rapidly evolving world of digital design, verification is paramount to en
 -   [Interface]({{< relref "2024_08_08_10_27_00_interface.md" >}})
 -   [Modport]({{< relref "2024_08_08_10_17_52_modport.md" >}})
 -   [Clocking Block]({{< relref "2024_08_08_13_51_50_clocking_block.md" >}})
+
+
+## Randomization {#randomization}
