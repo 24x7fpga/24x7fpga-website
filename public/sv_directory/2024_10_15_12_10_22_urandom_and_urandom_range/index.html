@@ -82,8 +82,8 @@ $urandom Returns a 32-bit unsigned random number each time it is called. It uses
   "keywords": [
     "sv"
   ],
-  "articleBody": "SV Verification Directory\nIn SystemVerilog, $urandom and $urandom_range are system functions used to generate pseudo-random integers. It’s especially useful in testbenches and verification environments where randomization is essential to stimulate various input scenarios for DUT (Design Under Test).\n$urandom Returns a 32-bit unsigned random number each time it is called. It uses a seed to initialize the random number generator, and each call to $urandom produces a different value based on this seed. If you use the same seed, the random numbers will follow the same sequence, which is useful for debugging. Without explicit seeding, $urandom uses an automatic seed. Example int rn; rn = $urandom; // automatic seed rn = $urandom(24); // seed with a specific values rn = $urandom % 10; // random value between 0 and 9 $urandom_range The function $urandom_range(min,max) returns an unsigned integer within the specified range (min, max). Example int rn; rn = $urandom(10,20); // generates random values between 10 and 20 ",
-  "wordCount" : "158",
+  "articleBody": "SV Verification Directory\nIn SystemVerilog, $urandom and $urandom_range are system functions used to generate pseudo-random integers. It’s especially useful in testbenches and verification environments where randomization is essential to stimulate various input scenarios for DUT (Design Under Test).\n$urandom Returns a 32-bit unsigned random number each time it is called. It uses a seed to initialize the random number generator, and each call to $urandom produces a different value based on this seed. If you use the same seed, the random numbers will follow the same sequence, which is useful for debugging. Without explicit seeding, $urandom uses an automatic seed. Example int rn; rn = $urandom; // automatic seed rn = $urandom(24); // seed with a specific values rn = $urandom % 10; // random value between 0 and 9 $urandom_range The function $urandom_range(min,max) returns an unsigned integer within the specified range (min, max). Example int rn; rn = $urandom(10,20); // generates random values between 10 and 20 Points to Remember Both $urandom and $urandom_range functions generate only 32-bit integers. To create a random value larger than 32 bits, you can concatenate two 32-bit random numbers. ",
+  "wordCount" : "186",
   "inLanguage": "en",
   "datePublished": "2024-10-15T12:10:00-04:00",
   "dateModified": "2024-10-15T12:10:00-04:00",
@@ -246,7 +246,7 @@ $urandom Returns a 32-bit unsigned random number each time it is called. It uses
     <h1 class="post-title entry-hint-parent">
       $urandom and $urandom_range
     </h1>
-    <div class="post-meta"><span title='2024-10-15 12:10:00 -0400 EDT'>October 15, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;158 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-10-15 12:10:00 -0400 EDT'>October 15, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;186 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
@@ -270,7 +270,12 @@ $urandom Returns a 32-bit unsigned random number each time it is called. It uses
 <h3 id="example">Example<a hidden class="anchor" aria-hidden="true" href="#example">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> rn;
 </span></span><span style="display:flex;"><span>rn <span style="color:#f92672">=</span> $urandom(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">20</span>); <span style="color:#75715e">// generates random values between 10 and 20
-</span></span></span></code></pre></div>
+</span></span></span></code></pre></div><h2 id="points-to-remember">Points to Remember<a hidden class="anchor" aria-hidden="true" href="#points-to-remember">#</a></h2>
+<ol>
+<li>Both <code>$urandom</code> and <code>$urandom_range</code> functions generate only 32-bit integers.</li>
+<li>To create a random value larger than 32 bits, you can concatenate two 32-bit random numbers.</li>
+</ol>
+
 
   </div>
 

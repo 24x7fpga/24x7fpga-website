@@ -40,3 +40,9 @@ rn = $urandom % 10;  // random value between 0 and 9
 int rn;
 rn = $urandom(10,20); // generates random values between 10 and 20
 ```
+
+
+## Points to Remember {#points-to-remember}
+
+1.  Both `$urandom` and `$urandom_range` functions generate only 32-bit integers.
+2.  To create a random value larger than 32 bits, you can concatenate two 32-bit random numbers.
