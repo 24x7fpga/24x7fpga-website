@@ -98,3 +98,4 @@ In the rapidly evolving world of digital design, verification is paramount to en
 ## Randomization {#randomization}
 
 -   [$urandom and $urandom_range]({{< relref "2024_10_15_12_10_22_urandom_and_urandom_range.md" >}})
+-   [rand and randc]({{< relref "2024_10_15_12_34_46_rand_and_randc.md" >}})
