@@ -164,7 +164,7 @@ The environment component acts as the top-module for all the key components of a
         scb = new(m2);
 
         gen.ev = ev;    //connect event from generator class
-        scb.ev = ev;    //to scroboard class
+        scb.ev = ev;    //to scoreboard class
       endfunction
 
 
