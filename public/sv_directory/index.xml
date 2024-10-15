@@ -6,8 +6,17 @@
     <description>Recent content in Sv_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Oct 2024 12:34:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2024 12:53:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/sv_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Constraint Randomization</title>
+      <link>https://24x7fpga.com/sv_directory/2024_10_15_12_53_31_constraint_randomization/</link>
+      <pubDate>Tue, 15 Oct 2024 12:53:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_10_15_12_53_31_constraint_randomization/</guid>
+      <description>SV Verification Directory
+In SystemVerilog, constraints are expressions that must be satisfied by the constraint solver during randomization. These constraints guide the solver to generate valid random values that meet the desired conditions.
+Syntax constraint &amp;lt;constraint_name&amp;gt; {condition 1; condition 2; .... condition N} Constraints in SystemVerilog only support 2-state values (no X or Z) and work bidirectionally, meaning the value of one variable can influence others. The solver must find a solution if possible, handling complex equations and expressions with integral types (like bit, logic, integer, or enum), unless the constraints are unsolvable.</description>
+    </item>
     <item>
       <title>rand and randc</title>
       <link>https://24x7fpga.com/sv_directory/2024_10_15_12_34_46_rand_and_randc/</link>
@@ -436,7 +445,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Automated Workflow in Vivado SV Verification Workflow in Vivado Layered Testbench SV Testbench Overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block Randomization $urandom and $urandom_range rand and randc </description>
+Automated Workflow in Vivado SV Verification Workflow in Vivado Layered Testbench SV Testbench Overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block Randomization $urandom and $urandom_range rand and randc Constraint Randomization </description>
     </item>
   </channel>
 </rss>
