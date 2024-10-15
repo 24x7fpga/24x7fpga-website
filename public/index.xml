@@ -6,8 +6,17 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Oct 2024 00:08:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2024 12:10:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>$urandom and $urandom_range</title>
+      <link>https://24x7fpga.com/sv_directory/2024_10_15_12_10_22_urandom_and_urandom_range/</link>
+      <pubDate>Tue, 15 Oct 2024 12:10:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_10_15_12_10_22_urandom_and_urandom_range/</guid>
+      <description>SV Verification Directory
+In SystemVerilog, $urandom and $urandom_range are system functions used to generate pseudo-random integers. It’s especially useful in testbenches and verification environments where randomization is essential to stimulate various input scenarios for DUT (Design Under Test).
+$urandom Returns a 32-bit unsigned random number each time it is called. It uses a seed to initialize the random number generator, and each call to $urandom produces a different value based on this seed.</description>
+    </item>
     <item>
       <title>  Difference between &#34;=&#34; and &#34;==&#34;
   </title>
@@ -823,7 +832,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Automated Workflow in Vivado SV Verification Workflow in Vivado Layered Testbench SV Testbench Overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block Randomization </description>
+Automated Workflow in Vivado SV Verification Workflow in Vivado Layered Testbench SV Testbench Overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block Randomization $urandom and $urandom_range </description>
     </item>
     <item>
       <title>Decoder</title>

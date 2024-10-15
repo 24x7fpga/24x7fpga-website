@@ -6,8 +6,17 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Oct 2024 21:56:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2024 12:10:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>$urandom and $urandom_range</title>
+      <link>https://24x7fpga.com/sv_directory/2024_10_15_12_10_22_urandom_and_urandom_range/</link>
+      <pubDate>Tue, 15 Oct 2024 12:10:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_10_15_12_10_22_urandom_and_urandom_range/</guid>
+      <description>SV Verification Directory
+In SystemVerilog, $urandom and $urandom_range are system functions used to generate pseudo-random integers. It’s especially useful in testbenches and verification environments where randomization is essential to stimulate various input scenarios for DUT (Design Under Test).
+$urandom Returns a 32-bit unsigned random number each time it is called. It uses a seed to initialize the random number generator, and each call to $urandom produces a different value based on this seed.</description>
+    </item>
     <item>
       <title>SV Testbench Overview</title>
       <link>https://24x7fpga.com/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/</link>
