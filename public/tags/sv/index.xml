@@ -6,8 +6,26 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Oct 2024 12:53:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2024 17:48:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Constraint: Array Randomization</title>
+      <link>https://24x7fpga.com/sv_directory/2024_10_15_17_48_30_constraint_array_randomization/</link>
+      <pubDate>Tue, 15 Oct 2024 17:48:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_10_15_17_48_30_constraint_array_randomization/</guid>
+      <description>Source &amp;ndash; SV Verification Directory
+The unique keyword ensures that variables or elements within an array have unique values. This can be applied to fixed arrays, associative arrays, dynamic arrays, or queues, making it useful for scenarios where duplication of values is not allowed.
+Syntax rand int arr[10]; constraint unique_array {unique {arr};} // ensure all the array elements are unique Note: Vivado simulator does not support the unique keyword. Use EDA Playground or other simulator when using the unique keyword.</description>
+    </item>
+    <item>
+      <title>Constraint: Inside Operator</title>
+      <link>https://24x7fpga.com/sv_directory/2024_10_15_15_54_33_constraint_inside_operator/</link>
+      <pubDate>Tue, 15 Oct 2024 15:54:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_10_15_15_54_33_constraint_inside_operator/</guid>
+      <description>[Source] &amp;ndash; SV Verification Directory
+The inside operator lets you create sets of values from which a variable can randomly be selected. By default, all values are chosen with equal probability, unless other constraints are applied. You can also include variables in these sets to make the randomization more dynamic.
+Example rand int rn; constraint set_value {rn inside {1,2,3,4};} // randomly selects from set of values constraint set_value {rn inside {10:20};} // randomly selects values from 10 to 20 constraint set_value {!</description>
+    </item>
     <item>
       <title>Constraint Randomization</title>
       <link>https://24x7fpga.com/sv_directory/2024_10_15_12_53_31_constraint_randomization/</link>
