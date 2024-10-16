@@ -102,3 +102,4 @@ In the rapidly evolving world of digital design, verification is paramount to en
 -   [Constraint Randomization]({{< relref "2024_10_15_12_53_31_constraint_randomization.md" >}})
 -   [Constraint: Inside Operator]({{< relref "2024_10_15_15_54_33_constraint_inside_operator.md" >}})
 -   [Constraint: Array Randomization]({{< relref "2024_10_15_17_48_30_constraint_array_randomization.md" >}})
+-   [Constraint: Bidirectional and Conditional]({{< relref "2024_10_16_11_12_51_constraint_bidirectional_and_conditional.md" >}})

@@ -6,8 +6,16 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Oct 2024 17:48:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 16 Oct 2024 11:12:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Constraint: Bidirectional and Conditional</title>
+      <link>https://24x7fpga.com/sv_directory/2024_10_16_11_12_51_constraint_bidirectional_and_conditional/</link>
+      <pubDate>Wed, 16 Oct 2024 11:12:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_10_16_11_12_51_constraint_bidirectional_and_conditional/</guid>
+      <description>Source &amp;ndash; SV Verification Directory
+The code inside a constraint block does not execute sequentially. This allows multiple conditions to be declared within the same block without any specific order and all the conditions will be checked. One key feature of SystemVerilog constraints is their bidirectional nature—the solver evaluates both sides of an expression to satisfy the constraints. Moreover, conditional statements such as if-else are supported within constraint blocks. These statements enable expressions to become active or inactive based on specific conditions, providing flexibility in complex scenarios.</description>
+    </item>
     <item>
       <title>Constraint: Array Randomization</title>
       <link>https://24x7fpga.com/sv_directory/2024_10_15_17_48_30_constraint_array_randomization/</link>
