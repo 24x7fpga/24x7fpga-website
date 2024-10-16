@@ -22,9 +22,9 @@ Syntax rand int arr[10]; constraint unique_array {unique {arr};} // ensure all t
       <link>https://24x7fpga.com/sv_directory/2024_10_15_15_54_33_constraint_inside_operator/</link>
       <pubDate>Tue, 15 Oct 2024 15:54:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_10_15_15_54_33_constraint_inside_operator/</guid>
-      <description>[Source] &amp;ndash; SV Verification Directory
+      <description>Source &amp;ndash; SV Verification Directory
 The inside operator lets you create sets of values from which a variable can randomly be selected. By default, all values are chosen with equal probability, unless other constraints are applied. You can also include variables in these sets to make the randomization more dynamic.
-Example rand int rn; constraint set_value {rn inside {1,2,3,4};} // randomly selects from set of values constraint set_value {rn inside {10:20};} // randomly selects values from 10 to 20 constraint set_value {!</description>
+Syntax rand int rn; constraint set_value {rn inside {1,2,3,4};} // randomly selects from set of values constraint set_value {rn inside {10:20};} // randomly selects values from 10 to 20 constraint set_value {!</description>
     </item>
     <item>
       <title>Constraint Randomization</title>
@@ -463,7 +463,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Automated Workflow in Vivado SV Verification Workflow in Vivado Layered Testbench SV Testbench Overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block Randomization $urandom and $urandom_range rand and randc Constraint Randomization Constraint: Array Randomization </description>
+Automated Workflow in Vivado SV Verification Workflow in Vivado Layered Testbench SV Testbench Overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block Randomization $urandom and $urandom_range rand and randc Constraint Randomization Constraint: Inside Operator Constraint: Array Randomization </description>
     </item>
   </channel>
 </rss>

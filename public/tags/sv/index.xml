@@ -22,9 +22,9 @@ Syntax rand int arr[10]; constraint unique_array {unique {arr};} // ensure all t
       <link>https://24x7fpga.com/sv_directory/2024_10_15_15_54_33_constraint_inside_operator/</link>
       <pubDate>Tue, 15 Oct 2024 15:54:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_10_15_15_54_33_constraint_inside_operator/</guid>
-      <description>[Source] &amp;ndash; SV Verification Directory
+      <description>Source &amp;ndash; SV Verification Directory
 The inside operator lets you create sets of values from which a variable can randomly be selected. By default, all values are chosen with equal probability, unless other constraints are applied. You can also include variables in these sets to make the randomization more dynamic.
-Example rand int rn; constraint set_value {rn inside {1,2,3,4};} // randomly selects from set of values constraint set_value {rn inside {10:20};} // randomly selects values from 10 to 20 constraint set_value {!</description>
+Syntax rand int rn; constraint set_value {rn inside {1,2,3,4};} // randomly selects from set of values constraint set_value {rn inside {10:20};} // randomly selects values from 10 to 20 constraint set_value {!</description>
     </item>
     <item>
       <title>Constraint Randomization</title>
