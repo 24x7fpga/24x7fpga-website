@@ -20,6 +20,15 @@ In Verilog, == and === are both used for comparison, but they behave differently
 Example: 4&amp;#39;b101X == 4&amp;#39;b1011; // Result: x (unknown) 4&amp;#39;b1X00 == 4&amp;#39;b1100; // Result: x (unknown) === Equality The === operator is a strict equality check.</description>
     </item>
     <item>
+      <title>UART</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_09_17_20_46_04_uart/</link>
+      <pubDate>Tue, 17 Sep 2024 20:46:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_09_17_20_46_04_uart/</guid>
+      <description>Design &amp;ndash; Testbench &amp;ndash; RTL Design Directory
+UART: Overview UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.
+Transmitter: Converts parallel data into a serial stream for transmission over a single communication line. Receiver: Converts the incoming serial data back into parallel form for further processing.</description>
+    </item>
+    <item>
       <title>Clock Gating</title>
       <link>https://24x7fpga.com/rtl_directory/2024_09_13_12_36_11_clock_gating/</link>
       <pubDate>Fri, 13 Sep 2024 12:36:00 -0400</pubDate>

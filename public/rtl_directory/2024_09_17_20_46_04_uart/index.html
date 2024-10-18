@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>UART | Home</title>
+<meta name="keywords" content="rtl">
+<meta name="description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+UART: Overview UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.
+Transmitter: Converts parallel data into a serial stream for transmission over a single communication line. Receiver: Converts the incoming serial data back into parallel form for further processing.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="https://24x7fpga.com/rtl_directory/2024_09_17_20_46_04_uart/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.19a7d7ba8a856bc3605fc7ca61a989cac3905b8b7707571254a3f97e6b40052a.css" integrity="sha256-GafXuoqFa8NgX8fKYamJysOQW4t3B1cSVKP5fmtABSo=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+<meta property="og:title" content="UART" />
+<meta property="og:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+UART: Overview UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.
+Transmitter: Converts parallel data into a serial stream for transmission over a single communication line. Receiver: Converts the incoming serial data back into parallel form for further processing." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/rtl_directory/2024_09_17_20_46_04_uart/" /><meta property="article:section" content="rtl_directory" />
+<meta property="article:published_time" content="2024-09-17T20:46:00-04:00" />
+<meta property="article:modified_time" content="2024-09-17T20:46:00-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="UART"/>
+<meta name="twitter:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+UART: Overview UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.
+Transmitter: Converts parallel data into a serial stream for transmission over a single communication line. Receiver: Converts the incoming serial data back into parallel form for further processing."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Rtl_directories",
+      "item": "https://24x7fpga.com/rtl_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "UART",
+      "item": "https://24x7fpga.com/rtl_directory/2024_09_17_20_46_04_uart/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "UART",
+  "name": "UART",
+  "description": "Design \u0026ndash; Testbench \u0026ndash; RTL Design Directory\nUART: Overview UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.\nTransmitter: Converts parallel data into a serial stream for transmission over a single communication line. Receiver: Converts the incoming serial data back into parallel form for further processing.",
+  "keywords": [
+    "rtl"
+  ],
+  "articleBody": "Design – Testbench – RTL Design Directory\nUART: Overview UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.\nTransmitter: Converts parallel data into a serial stream for transmission over a single communication line. Receiver: Converts the incoming serial data back into parallel form for further processing. The asynchronous nature of UART means that there is no shared clock signal between the transmitter and receiver. Instead, both sides must agree on the baud rate (data transmission speed) beforehand to ensure accurate communication. This simplicity makes UART popular in microcontrollers, sensors, and other embedded systems.\nFigure 1: UART Frame\nAn optional parity bit may be include at the end of data transmission. Odd parity means that sum of all bits gives an odd number and even parity means sum of all the bit gives an even number. Parity bit can be used to check the data is corrctly been transmitted.\nAn optional parity bit can be included at the end of the data transmission to provide error detection. The parity bit helps ensure that the data has been transmitted correctly by checking the number of 1s in the data.\nOdd Parity: The parity bit is set so that the total number of 1s is odd. Even Parity: The parity bit is set to ensure that the total number of 1s is even. If the receiver detects a parity mismatch, it can identify that an error occurred during transmission. Using a parity bit adds an extra layer of reliability.\nBaud Rate The baud rate represents the speed of data transfer within a communication channel. It measures the number of signal changes per second. On the other hand, bit rate—often expressed as bits per second (bps)—indicates the number of bits transmitted per second. In a UART setup, one signal change corresponds to one bit, meaning the baud rate and bit rate are equal. For reliable data transmission, both the transmitter and receiver must agree on the same baud rate. If the baud rates are mismatched, the receiver may misinterpret the incoming data, leading to communication errors.\nBaud Rate Divider While implementing the UART on FPGA the baud rate is derived by dividin the system clock frequency to match the desired data transfer rate. The baud rate divider dvsr is essential parameter to generate the desired baud rate. The equation for calculaing the baud rate is:\n\\begin{equation} \\label{eq.1} dvsr = \\frac{f_{clk}}{baud rate \\times 16} \\end{equation}\nfclk - system clock frequency baud rate - desired baud rate 16 - oversampling factor A counter is implemented to generate the baud rate. Since the counter starts from 0 to dvsr, a mod(dvsr + 1) counter is designed. Because of the counter implementation the above dvsr is rewritten as:\nA counter is used to generate the desired baud rate. The counter starts from 0 and counts up to the dvsr (divider value) to achieve the necessary timing. To account for this behavior, the counter is implemented as a mod(dvsr + 1) counter. This ensures the baud rate is accurately maintained. Due to the counter-based implementation, the dvsr equation is adjusted as follows:\n\\begin{equation} \\label{eq.2} \\begin{aligned} dvsr + 1 \u0026 = \\frac{f_{clk}}{baud rate \\times 16} \\\\ dvsr \u0026 = \\frac{f_{clk}}{baud rate \\times 16} - 1 \\end{aligned} \\end{equation}\nFor a system clock of 125 MHz and baud rate of 115200 bps, the required dvsr is:\n\\begin{equation} \\label{eq.3} \\begin{aligned} dvsr \u0026 = \\frac{125 \\times 10^6}{115200 \\times 16} - 1 \\\\ \u0026 = 67.68 - 1 \\\\ \u0026 = 66.68 \\\\ dvsr \u0026 \\approx 66 \\end{aligned} \\end{equation}\nA counter is implemented to run from 0 to 66, therefore a pulse is generated for every \\[ 67*(1/125MHz) = 536 ns \\]\nBaud Rate Generator A baud rate generator produces a pulse at regular intervals to ensure the correct data transmission rate. In this example, the generator produces a pulse every 536 nanoseconds (ns). To achieve this timing, a counter (cnt) is used. The counter increments with each clock cycle and resets to 0 when it reaches a value of 66 to restart the counting process.\n`timescale 1ns/1ns module baud_rate(/*AUTOARG*/ // Outputs s_tick, // Inputs clk, rst, dvsr ); input logic clk; input logic rst; input logic [10:0] dvsr; output logic s_tick; logic [10:0] cnt_reg, cnt_nxt; always_ff@(posedge clk, posedge rst) if(rst) cnt_reg \u003c= 0; else cnt_reg \u003c= cnt_nxt; assign cnt_nxt = (cnt_reg == dvsr) ? 0 : cnt_reg + 1; assign s_tick = (cnt_reg == 1); endmodule // baud_rate Oversampling Oversampling is a technique used in UART to improve the accuracy of data detection by sampling each bit multiple times. It helps ensure that even if there are slight timing variations or noise, the receiver can accurately detect the transmitted data.\nIn UART, oversampling is typically implemented on the receiver side. The serial data is sampled at multiple points within each bit period, with the sample taken at the middle of the bit being used to determine the bit value. A 16x oversampling factor means that instead of sampling the incoming data once per bit, the receiver samples it 16 times during each bit period. Each bit of the incoming serial data is divided into 16 equal sampling intervals. The receiver takes multiple samples, but the 8th sample (middle of the bit) is used to decide the bit value. This ensures that minor timing shifts won’t cause data errors. It ensures that even if the edges of the signal are slightly distorted, the correct bit value is still detected.\nFigure 2: Oversampling\nConsider a 115200 baud rate. Each bit period lasts:\n\\begin{equation} \\label{eq.4} \\begin{aligned} \\frac{1}{115200} = 8.68 us \\end{aligned} \\end{equation}\nWith 16x oversampling, the receiver samples the bit every:\n\\begin{equation} \\label{eq.5} \\begin{aligned} \\frac{8.68 us}{16} = 542.53 ns \\end{aligned} \\end{equation}\nFrom the baud rate generator, the sample tick s_tick is generated for every 536ns.\nUART TX A black box refers to a design module where only the inputs and outputs are visible, without exposing the internal logic. It abstracts the complex functionality, focusing on how the module interacts with other components in the system.\nBelow is a black box representation of a UART transmission module:\nFigure 3: UART TX Black box\nInput\nd_in: An 8-bit parallel input representing the data to be transmitted over the tx output line. s_tick: A pulse signal generated every 536 ns, used to control the timing of the transmission. tx_start: A control signal that indicates the UART controller has received the 8-bit data and is ready to begin transmission. tx_done: This signal is set high once the entire 8-bit data has been successfully transmitted. Output\ntx: The serial output signal carrying the transmitted data. Figure 4: UART TX FSM\n`timescale 1ns/1ns module uart_tx #(parameter DBIT = 8, SB_TICK = 16)(/*AUTOARG*/ // Outputs tx_done_tick, tx, // Inputs clk, rst, din, tx_start, s_tick ); input logic clk; input logic rst; input logic [7:0] din; input logic tx_start; input logic s_tick; output logic tx_done_tick; output logic tx; // fsm states typedef enum {idle, start, data, stop} state_type; state_type st_reg, st_nxt; logic [3:0] tk_reg, tk_nxt; logic [2:0] bt_reg, bt_nxt; logic [7:0] dt_reg, dt_nxt; logic tx_reg, tx_nxt; always_ff@(posedge clk, posedge rst) if(rst)begin st_reg \u003c= idle; tk_reg \u003c= 0; bt_reg \u003c= 0; dt_reg \u003c= 0; tx_reg \u003c= 0; end else begin st_reg \u003c= st_nxt; tk_reg \u003c= tk_nxt; bt_reg \u003c= bt_nxt; dt_reg \u003c= dt_nxt; tx_reg \u003c= tx_nxt; end // else: !if(rst) always_comb begin st_nxt = st_reg; tk_nxt = tk_reg; bt_nxt = bt_reg; dt_nxt = dt_reg; tx_nxt = tx_reg; tx_done_tick = 1'b0; case(st_reg) idle: begin tx_nxt = 1'b1; if(tx_start)begin st_nxt = start; tk_nxt = 0; dt_nxt = din; end end // case: begin start: begin tx_nxt = 1'b0; if(s_tick) if(tk_reg == 15)begin st_nxt = data; tk_nxt = 0; bt_nxt = 0; end else tk_nxt = tk_reg + 1; end // case: start data: begin tx_nxt = dt_reg[0]; if(s_tick) if(tk_reg == 15)begin tk_nxt = 0; dt_nxt = dt_reg \u003e\u003e 1; if(bt_nxt == (DBIT-1)) st_nxt = stop; else bt_nxt = bt_reg + 1; end else tk_nxt = tk_reg + 1; end // case: data stop: begin tx_nxt = 1'b1; if(s_tick) if(tk_reg == (SB_TICK-1))begin st_nxt = idle; tx_done_tick = 1'b1; end else tk_nxt = tk_reg +1; end // case: stop endcase // case (st_reg) end // always_comb assign tx = tx_reg; endmodule // uart_tx UART RX Below is a black box representation of a UART receiver module:\nFigure 5: UART RX Black box\nInput\nrx: The serial input signal that carries the data from the transmitter. s_tick: A pulse signal generated every 536 ns, used to control the timing of the transmission. Output\nd_out: An 8-bit parallel output representing the received data. rx_done: This signal is set high once the entire 8-bit data has been successfully received. Figure 6: UART RX FSM\n`timescale 1ns/1ns module uart_rx #(parameter DBIT = 8, SB_TICK = 16)(/*AUTOARG*/ // Outputs dout, rx_done_tick, // Inputs clk, rst, rx, s_tick ); input logic clk; input logic rst; input logic rx; input logic s_tick; output logic [7:0] dout; output logic\trx_done_tick; // fsm states typedef enum {idle, start, data, stop} state_type; state_type st_reg, st_nxt; logic [3:0] tk_reg, tk_nxt; // tick counter logic [2:0] bt_reg, bt_nxt; // bit position counter logic [7:0] dt_reg, dt_nxt; // data registers always_ff@(posedge clk, posedge rst) if(rst)begin st_reg \u003c= idle; tk_reg \u003c= 0; bt_reg \u003c= 0; dt_reg \u003c= 0; end else begin st_reg \u003c= st_nxt; tk_reg \u003c= tk_nxt; bt_reg \u003c= bt_nxt; dt_reg \u003c= dt_nxt; end // else: !if(rst) always_comb begin st_nxt = st_reg; tk_nxt = tk_reg; bt_nxt = bt_reg; dt_nxt = dt_reg; rx_done_tick = 1'b0; case(st_reg) idle: begin if(~rx)begin st_nxt = start; tk_nxt = 0; end end // case: idle start: begin if(s_tick) if(tk_reg == 7)begin st_nxt = data; tk_nxt = 0; bt_nxt = 0; end else tk_nxt = tk_reg + 1; end // case: start data: begin if(s_tick) if(tk_reg == 15)begin tk_nxt = 0; dt_nxt = {rx, dt_reg[7:1]}; if(bt_nxt == (DBIT-1)) st_nxt = stop; else bt_nxt = bt_reg + 1; end else tk_nxt = tk_reg + 1; end // case: data stop: begin if(s_tick) if(tk_reg == (SB_TICK - 1))begin st_nxt = idle; rx_done_tick = 1'b1; end else tk_nxt = tk_reg + 1; end // case: stop endcase // case (st_reg) end // always_comb assign dout = dt_reg; endmodule // uart_rx UART TOP The UART TOP module serves as a wrapper that connects the baud rate generator to the UART transmitter and UART receiver. It integrates these components to simulate the entire UART communication system.\nIn this setup, the transmitter sends data, and the receiver receives the data, demonstrating how the UART protocol works. This design allows for functional verification and helps in understanding the flow of data between the transmitter and receiver.\nBelow is a pictorial representation of the wrapper design:\nFigure 7: UART Design\nThis simulation-based project provides a clear understanding of UART transmission and reception, making it easier to grasp the working of the protocol in real-world applications.\n`timescale 1ns/1ns module uart #(parameter DBIT = 8, SB_TICK = 16)(/*AUTOARG*/ // Outputs tx_done_tick, rx_done_tick, dout, // Inputs clk, rst, din, dvsr, tx_start ); input logic clk; input logic rst; input logic [DBIT-1: 0] din; input logic [10:0] dvsr; input logic tx_start; //input logic rx; //output logic tx; output logic tx_done_tick; output logic rx_done_tick; output logic [DBIT-1:0] dout; /*AUTOREG*/ /*AUTOWIRE*/ // Beginning of automatic wires (for undeclared instantiated-module outputs) logic\ts_tick;\t// From BR of baud_rate.v logic\ttx;\t// From TX of uart_tx.v // End of automatics logic rx; assign rx = tx; baud_rate BR (/*AUTOINST*/ // Outputs .s_tick\t(s_tick), // Inputs .clk\t(clk), .rst\t(rst), .dvsr\t(dvsr[10:0])); uart_tx #(/*AUTOINSTPARAM*/ // Parameters .DBIT\t(DBIT), .SB_TICK\t(SB_TICK)) TX (/*AUTOINST*/ // Outputs .tx_done_tick\t(tx_done_tick), .tx\t(tx), // Inputs .clk\t(clk), .rst\t(rst), .din\t(din[7:0]), .tx_start\t(tx_start), .s_tick\t(s_tick)); uart_rx #(/*AUTOINSTPARAM*/ // Parameters .DBIT\t(DBIT), .SB_TICK\t(SB_TICK)) RX (/*AUTOINST*/ // Outputs .dout\t(dout[7:0]), .rx_done_tick\t(rx_done_tick), // Inputs .clk\t(clk), .rst\t(rst), .rx\t(rx), .s_tick\t(s_tick)); endmodule UART SELF CHECKING TESTBENCH A self-checking testbench automates the process of comparing the transmitted data with the received data, ensuring the correctness of the UART module without requiring manual inspection.\nSelf Checking logic For the UART Protocol Validation with tx_start and rx_done signals behave similarly to the valid and ready handshake mechanism commonly used in producer-consumer protocols.\nThe tx_start signal indicates that the data on the d_in line is valid and ready to be transmitted. The rx_done signal confirms that the receiver has successfully captured all 8-bits of data and is prepared to accept the next data packet. The testbench plays a critical role in validating this communication. It compares the transmitted data on the d_in line with the received data on the d_out line. If both signals match, the protocol is functioning correctly. If there is a mismatch, the testbench will flag it as an error, indicating a potential issue in the transmission or reception process.\n`timescale 1ns/1ns module tb_uart(); localparam t = 8; //125MHz for ZyboZ7 logic clk; logic rst; localparam DBIT = 8; localparam SB_TICK = 16; /*AUTOREG*/ /*AUTOWIRE*/ // Beginning of automatic wires (for undeclared instantiated-module outputs) logic [DBIT-1:0]\tdout;\t// From DUT of uart.v logic\trx_done_tick;\t// From DUT of uart.v // End of automatics logic [7:0] din; // = 8'b01010110; logic [10:0] dvsr = 11'd66; logic tx_start; uart #(/*AUTOINSTPARAM*/ // Parameters .DBIT\t(DBIT), .SB_TICK\t(SB_TICK)) DUT (/*AUTOINST*/ // Outputs .tx_done_tick (tx_done_tick), .rx_done_tick\t(rx_done_tick), .dout\t(dout[DBIT-1:0]), // Inputs .clk\t(clk), .rst\t(rst), .din\t(din[DBIT-1:0]), .dvsr\t(dvsr[10:0]), .tx_start\t(tx_start)); initial clk = 1; always #(t/2) clk = ~clk; initial begin rst = 1; #(2*t); rst = 0; #(t); tx_start = 1; #(2*t); tx_start = 0; end always@(posedge clk) begin for(int i= 0; i\u003c20; i= i+1) begin din = $urandom(); tx_start = 1; #(4*t); tx_start = 0; wait(rx_done_tick == 1); if(dout == din)begin $display(\"PASS ;) : tx = %d == rx = %d\", din, dout); end else begin $display(\"FAIL ;( : tx = %d != rx = %d\", din, dout); $finish; end wait(tx_done_tick == 1); end $finish; end initial begin $dumpfile(\"tb_uart.vcd\"); $dumpvars(0,tb_uart); end endmodule Results of are shown below:\n",
+  "wordCount" : "2345",
+  "inLanguage": "en",
+  "datePublished": "2024-09-17T20:46:00-04:00",
+  "dateModified": "2024-09-17T20:46:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/rtl_directory/2024_09_17_20_46_04_uart/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 20"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
+
+
+<script src="https://24x7fpga.com/js/mathjax-config.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      UART
+    </h1>
+    <div class="post-meta"><span title='2024-09-17 20:46:00 -0400 EDT'>September 17, 2024</span>&nbsp;·&nbsp;12 min&nbsp;·&nbsp;2345 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/iVerilog/tree/master/design/uart">Design</a> &ndash; <a href="https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_uart/tb_uart.sv">Testbench</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
+<h2 id="uart-overview">UART: Overview<a hidden class="anchor" aria-hidden="true" href="#uart-overview">#</a></h2>
+<p>UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.</p>
+<ul>
+<li>Transmitter: Converts parallel data into a serial stream for transmission over a single communication line.</li>
+<li>Receiver: Converts the incoming serial data back into parallel form for further processing.</li>
+</ul>
+<p>The asynchronous nature of UART means that there is no shared clock signal between the transmitter and receiver. Instead, both sides must agree on the baud rate (data transmission speed) beforehand to ensure accurate communication. This simplicity makes UART popular in microcontrollers, sensors, and other embedded systems.</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/uart.svg"
+         alt="Figure 1: UART Frame"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 1: <!-- raw HTML omitted -->UART Frame</p>
+        </figcaption>
+</figure>
+
+<p>An optional parity bit may be include at the end of data transmission. Odd parity means that sum of all bits gives an odd number and even parity means sum of all the bit gives an even number. Parity bit can be used to check the data is corrctly been transmitted.</p>
+<p>An optional parity bit can be included at the end of the data transmission to provide error detection. The parity bit helps ensure that the data has been transmitted correctly by checking the number of 1s in the data.</p>
+<ul>
+<li>Odd Parity: The parity bit is set so that the total number of 1s is odd.</li>
+<li>Even Parity: The parity bit is set to ensure that the total number of 1s is even.</li>
+</ul>
+<p>If the receiver detects a parity mismatch, it can identify that an error occurred during transmission. Using a parity bit adds an extra layer of reliability.</p>
+<h3 id="baud-rate">Baud Rate<a hidden class="anchor" aria-hidden="true" href="#baud-rate">#</a></h3>
+<p>The baud rate represents the speed of data transfer within a communication channel. It measures the number of signal changes per second. On the other hand, bit rate—often expressed as bits per second (bps)—indicates the number of bits transmitted per second. In a UART setup, one signal change corresponds to one bit, meaning the baud rate and bit rate are equal. For reliable data transmission, both the transmitter and receiver must agree on the same baud rate. If the baud rates are mismatched, the receiver may misinterpret the incoming data, leading to communication errors.</p>
+<h4 id="baud-rate-divider">Baud Rate Divider<a hidden class="anchor" aria-hidden="true" href="#baud-rate-divider">#</a></h4>
+<p>While implementing the UART on FPGA the baud rate is derived by dividin the system clock frequency to match the desired data transfer rate. The baud rate divider <code>dvsr</code> is essential parameter to generate the desired baud rate.
+The equation for calculaing the baud rate is:</p>
+<p>\begin{equation}
+\label{eq.1}
+dvsr = \frac{f_{clk}}{baud rate \times 16}
+\end{equation}</p>
+<ul>
+<li><em>fclk</em> - system clock frequency</li>
+<li><em>baud rate</em> - desired baud rate</li>
+<li><em>16</em> - oversampling factor</li>
+</ul>
+<p>A counter is implemented to generate the baud rate. Since the counter starts from 0 to dvsr, a mod(dvsr + 1) counter is designed. Because of the counter implementation the above  dvsr is rewritten as:</p>
+<p>A counter is used to generate the desired baud rate. The counter starts from 0 and counts up to the <code>dvsr</code> (divider value) to achieve the necessary timing. To account for this behavior, the counter is implemented as a mod(dvsr + 1) counter. This ensures the baud rate is accurately maintained. Due to the counter-based implementation, the dvsr equation is adjusted as follows:</p>
+<p>\begin{equation}
+\label{eq.2}
+\begin{aligned}
+dvsr + 1 &amp; = \frac{f_{clk}}{baud rate \times 16} \\
+dvsr &amp; = \frac{f_{clk}}{baud rate \times 16} - 1
+\end{aligned}
+\end{equation}</p>
+<p>For a system clock of 125 MHz and baud rate of 115200 bps, the required dvsr is:</p>
+<p>\begin{equation}
+\label{eq.3}
+\begin{aligned}
+dvsr &amp; = \frac{125 \times 10^6}{115200 \times 16} - 1 \\
+&amp; = 67.68 - 1 \\
+&amp; = 66.68 \\
+dvsr &amp; \approx 66
+\end{aligned}
+\end{equation}</p>
+<p>A counter is implemented to run from 0 to 66, therefore a pulse is generated for every \[ 67*(1/125MHz) = 536 ns \]</p>
+<h3 id="baud-rate-generator">Baud Rate Generator<a hidden class="anchor" aria-hidden="true" href="#baud-rate-generator">#</a></h3>
+<p>A baud rate generator produces a pulse at regular intervals to ensure the correct data transmission rate. In this example, the generator produces a pulse every 536 nanoseconds (ns). To achieve this timing, a counter (cnt) is used. The counter increments with each clock cycle and resets to 0 when it reaches a value of 66 to restart the counting process.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">`timescale</span> <span style="color:#ae81ff">1</span>ns<span style="color:#f92672">/</span><span style="color:#ae81ff">1</span>ns
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> baud_rate(<span style="color:#75715e">/*AUTOARG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   s_tick,
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   clk, rst, dvsr
+</span></span><span style="display:flex;"><span>   );
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> clk;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> rst;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">10</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] dvsr;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> <span style="color:#66d9ef">logic</span>       s_tick;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">10</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]       cnt_reg, cnt_nxt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always_ff</span>@(<span style="color:#66d9ef">posedge</span> clk, <span style="color:#66d9ef">posedge</span> rst)
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span>(rst)
+</span></span><span style="display:flex;"><span>       cnt_reg <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>       cnt_reg <span style="color:#f92672">&lt;=</span> cnt_nxt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> cnt_nxt <span style="color:#f92672">=</span> (cnt_reg <span style="color:#f92672">==</span> dvsr) <span style="color:#f92672">?</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">:</span> cnt_reg <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> s_tick <span style="color:#f92672">=</span> (cnt_reg <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span> <span style="color:#75715e">// baud_rate
+</span></span></span></code></pre></div><h3 id="oversampling">Oversampling<a hidden class="anchor" aria-hidden="true" href="#oversampling">#</a></h3>
+<p>Oversampling is a technique used in UART to improve the accuracy of data detection by sampling each bit multiple times. It helps ensure that even if there are slight timing variations or noise, the receiver can accurately detect the transmitted data.</p>
+<p>In UART, oversampling is typically implemented on the receiver side. The serial data is sampled at multiple points within each bit period, with the sample taken at the middle of the bit being used to determine the bit value. A 16x oversampling factor means that instead of sampling the incoming data once per bit, the receiver samples it 16 times during each bit period. Each bit of the incoming serial data is divided into 16 equal sampling intervals. The receiver takes multiple samples, but the 8th sample (middle of the bit) is used to decide the bit value. This ensures that minor timing shifts won’t cause data errors. It ensures that even if the edges of the signal are slightly distorted, the correct bit value is still detected.</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/oversampling.svg"
+         alt="Figure 2: Oversampling"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 2: <!-- raw HTML omitted -->Oversampling</p>
+        </figcaption>
+</figure>
+
+<p>Consider a 115200 baud rate. Each bit period lasts:</p>
+<p>\begin{equation}
+\label{eq.4}
+\begin{aligned}
+\frac{1}{115200}  = 8.68 us
+\end{aligned}
+\end{equation}</p>
+<p>With 16x oversampling, the receiver samples the bit every:</p>
+<p>\begin{equation}
+\label{eq.5}
+\begin{aligned}
+\frac{8.68 us}{16}  = 542.53 ns
+\end{aligned}
+\end{equation}</p>
+<p>From the baud rate generator, the sample tick <code>s_tick</code> is generated for every 536ns.</p>
+<h2 id="uart-tx">UART TX<a hidden class="anchor" aria-hidden="true" href="#uart-tx">#</a></h2>
+<p>A black box refers to a design module where only the inputs and outputs are visible, without exposing the internal logic. It abstracts the complex functionality, focusing on how the module interacts with other components in the system.</p>
+<p>Below is a black box representation of a UART transmission module:</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/uart_tx.svg"
+         alt="Figure 3: UART TX Black box" width="500px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 3: <!-- raw HTML omitted -->UART TX Black box</p>
+        </figcaption>
+</figure>
+
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Input</p>
+<ul>
+<li><code>d_in</code>: An 8-bit parallel input representing the data to be transmitted over the <code>tx</code> output line.</li>
+<li><code>s_tick</code>: A pulse signal generated every 536 ns, used to control the timing of the transmission.</li>
+<li><code>tx_start</code>: A control signal that indicates the UART controller has received the 8-bit data and is ready to begin transmission.</li>
+<li><code>tx_done</code>: This signal is set high once the entire 8-bit data has been successfully transmitted.</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Output</p>
+<ul>
+<li><code>tx</code>: The serial output signal carrying the transmitted data.</li>
+</ul>
+</li>
+</ul>
+<h3 id="d41d8c"><a hidden class="anchor" aria-hidden="true" href="#d41d8c">#</a></h3>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/uart_tx_fsm.svg"
+         alt="Figure 4: UART TX FSM" width="500px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 4: <!-- raw HTML omitted -->UART TX FSM</p>
+        </figcaption>
+</figure>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">`timescale</span> <span style="color:#ae81ff">1</span>ns<span style="color:#f92672">/</span><span style="color:#ae81ff">1</span>ns
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> uart_tx #(<span style="color:#66d9ef">parameter</span> DBIT <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>, SB_TICK <span style="color:#f92672">=</span> <span style="color:#ae81ff">16</span>)(<span style="color:#75715e">/*AUTOARG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   tx_done_tick, tx,
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   clk, rst, din, tx_start, s_tick
+</span></span><span style="display:flex;"><span>   );
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> clk;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> rst;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] din;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> 	     tx_start;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> 	     s_tick;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> <span style="color:#66d9ef">logic</span>      tx_done_tick;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> <span style="color:#66d9ef">logic</span>      tx;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// fsm states
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">enum</span>      {idle, start, data, stop} state_type;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   state_type st_reg, st_nxt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] 	tk_reg, tk_nxt;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] 	bt_reg, bt_nxt;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] 	dt_reg, dt_nxt;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> 	tx_reg, tx_nxt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always_ff</span>@(<span style="color:#66d9ef">posedge</span> clk, <span style="color:#66d9ef">posedge</span> rst)
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span>(rst)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>        st_reg <span style="color:#f92672">&lt;=</span> idle;
+</span></span><span style="display:flex;"><span>        tk_reg <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>        bt_reg <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>        dt_reg <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>        tx_reg <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>        st_reg <span style="color:#f92672">&lt;=</span> st_nxt;
+</span></span><span style="display:flex;"><span>        tk_reg <span style="color:#f92672">&lt;=</span> tk_nxt;
+</span></span><span style="display:flex;"><span>        bt_reg <span style="color:#f92672">&lt;=</span> bt_nxt;
+</span></span><span style="display:flex;"><span>        dt_reg <span style="color:#f92672">&lt;=</span> dt_nxt;
+</span></span><span style="display:flex;"><span>        tx_reg <span style="color:#f92672">&lt;=</span> tx_nxt;
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">end</span> <span style="color:#75715e">// else: !if(rst)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always_comb</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>      st_nxt <span style="color:#f92672">=</span> st_reg;
+</span></span><span style="display:flex;"><span>      tk_nxt <span style="color:#f92672">=</span> tk_reg;
+</span></span><span style="display:flex;"><span>      bt_nxt <span style="color:#f92672">=</span> bt_reg;
+</span></span><span style="display:flex;"><span>      dt_nxt <span style="color:#f92672">=</span> dt_reg;
+</span></span><span style="display:flex;"><span>      tx_nxt <span style="color:#f92672">=</span> tx_reg;
+</span></span><span style="display:flex;"><span>      tx_done_tick <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">case</span>(st_reg)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        idle: <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>          tx_nxt <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>;
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">if</span>(tx_start)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>             st_nxt <span style="color:#f92672">=</span> start;
+</span></span><span style="display:flex;"><span>             tk_nxt <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>             dt_nxt <span style="color:#f92672">=</span> din;
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">end</span> <span style="color:#75715e">// case: begin
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>        start: <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>           tx_nxt <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>;
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">if</span>(s_tick)
+</span></span><span style="display:flex;"><span>             <span style="color:#66d9ef">if</span>(tk_reg <span style="color:#f92672">==</span> <span style="color:#ae81ff">15</span>)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>                st_nxt <span style="color:#f92672">=</span> data;
+</span></span><span style="display:flex;"><span>                tk_nxt <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>                bt_nxt <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>             <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>             <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>               tk_nxt <span style="color:#f92672">=</span> tk_reg <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">end</span> <span style="color:#75715e">// case: start
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>        data: <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>           tx_nxt <span style="color:#f92672">=</span> dt_reg[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">if</span>(s_tick)
+</span></span><span style="display:flex;"><span>             <span style="color:#66d9ef">if</span>(tk_reg <span style="color:#f92672">==</span> <span style="color:#ae81ff">15</span>)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>                      tk_nxt <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>                      dt_nxt <span style="color:#f92672">=</span> dt_reg <span style="color:#f92672">&gt;&gt;</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>(bt_nxt <span style="color:#f92672">==</span> (DBIT<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span>              st_nxt <span style="color:#f92672">=</span> stop;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>              bt_nxt <span style="color:#f92672">=</span> bt_reg <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>             <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>             <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>               tk_nxt <span style="color:#f92672">=</span> tk_reg <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">end</span> <span style="color:#75715e">// case: data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>        stop: <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>           tx_nxt <span style="color:#f92672">=</span>  <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>;
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">if</span>(s_tick)
+</span></span><span style="display:flex;"><span>             <span style="color:#66d9ef">if</span>(tk_reg <span style="color:#f92672">==</span> (SB_TICK<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>))<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>                st_nxt <span style="color:#f92672">=</span> idle;
+</span></span><span style="display:flex;"><span>                tx_done_tick <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>;
+</span></span><span style="display:flex;"><span>             <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>             <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>               tk_nxt <span style="color:#f92672">=</span> tk_reg <span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">end</span> <span style="color:#75715e">// case: stop
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">endcase</span> <span style="color:#75715e">// case (st_reg)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">end</span> <span style="color:#75715e">// always_comb
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> tx <span style="color:#f92672">=</span> tx_reg;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span> <span style="color:#75715e">// uart_tx
+</span></span></span></code></pre></div><h2 id="uart-rx">UART RX<a hidden class="anchor" aria-hidden="true" href="#uart-rx">#</a></h2>
+<p>Below is a black box representation of a UART receiver module:</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/uart_rx.svg"
+         alt="Figure 5: UART RX Black box" width="500px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 5: <!-- raw HTML omitted -->UART RX Black box</p>
+        </figcaption>
+</figure>
+
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Input</p>
+<ul>
+<li><code>rx</code>: The serial input signal that carries the data from the transmitter.</li>
+<li><code>s_tick</code>: A pulse signal generated every 536 ns, used to control the timing of the transmission.</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Output</p>
+<ul>
+<li><code>d_out</code>: An 8-bit parallel output representing the received data.</li>
+<li><code>rx_done</code>: This signal is set high once the entire 8-bit data has been successfully received.</li>
+</ul>
+</li>
+</ul>
+<h3 id="d41d8c"><a hidden class="anchor" aria-hidden="true" href="#d41d8c">#</a></h3>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/uart_rx_fsm.svg"
+         alt="Figure 6: UART RX FSM" width="500px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 6: <!-- raw HTML omitted -->UART RX FSM</p>
+        </figcaption>
+</figure>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">`timescale</span> <span style="color:#ae81ff">1</span>ns<span style="color:#f92672">/</span><span style="color:#ae81ff">1</span>ns
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> uart_rx #(<span style="color:#66d9ef">parameter</span> DBIT <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>, SB_TICK <span style="color:#f92672">=</span> <span style="color:#ae81ff">16</span>)(<span style="color:#75715e">/*AUTOARG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   dout, rx_done_tick,
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   clk, rst, rx, s_tick
+</span></span><span style="display:flex;"><span>   );
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> clk;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> rst;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> rx;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> s_tick;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] dout;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> <span style="color:#66d9ef">logic</span>	rx_done_tick;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// fsm states
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">enum</span> {idle, start, data, stop} state_type;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   state_type st_reg, st_nxt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] 	tk_reg, tk_nxt;    <span style="color:#75715e">// tick counter
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] 	bt_reg, bt_nxt;    <span style="color:#75715e">// bit position counter
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] 	dt_reg, dt_nxt;    <span style="color:#75715e">// data registers
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always_ff</span>@(<span style="color:#66d9ef">posedge</span> clk, <span style="color:#66d9ef">posedge</span> rst)
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span>(rst)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>        st_reg <span style="color:#f92672">&lt;=</span> idle;
+</span></span><span style="display:flex;"><span>        tk_reg <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>        bt_reg <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>        dt_reg <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>        st_reg <span style="color:#f92672">&lt;=</span> st_nxt;
+</span></span><span style="display:flex;"><span>        tk_reg <span style="color:#f92672">&lt;=</span> tk_nxt;
+</span></span><span style="display:flex;"><span>        bt_reg <span style="color:#f92672">&lt;=</span> bt_nxt;
+</span></span><span style="display:flex;"><span>        dt_reg <span style="color:#f92672">&lt;=</span> dt_nxt;
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">end</span> <span style="color:#75715e">// else: !if(rst)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always_comb</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>      st_nxt <span style="color:#f92672">=</span> st_reg;
+</span></span><span style="display:flex;"><span>      tk_nxt <span style="color:#f92672">=</span> tk_reg;
+</span></span><span style="display:flex;"><span>      bt_nxt <span style="color:#f92672">=</span> bt_reg;
+</span></span><span style="display:flex;"><span>      dt_nxt <span style="color:#f92672">=</span> dt_reg;
+</span></span><span style="display:flex;"><span>      rx_done_tick <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">case</span>(st_reg)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        idle: <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">if</span>(<span style="color:#f92672">~</span>rx)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>            st_nxt <span style="color:#f92672">=</span> start;
+</span></span><span style="display:flex;"><span>             tk_nxt <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">end</span> <span style="color:#75715e">// case: idle
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        start: <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">if</span>(s_tick)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>(tk_reg <span style="color:#f92672">==</span> <span style="color:#ae81ff">7</span>)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>               st_nxt <span style="color:#f92672">=</span> data;
+</span></span><span style="display:flex;"><span>               tk_nxt <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>               bt_nxt <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>              tk_nxt <span style="color:#f92672">=</span> tk_reg <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">end</span> <span style="color:#75715e">// case: start
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        data: <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">if</span>(s_tick)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>(tk_reg <span style="color:#f92672">==</span> <span style="color:#ae81ff">15</span>)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>               tk_nxt <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>               dt_nxt <span style="color:#f92672">=</span> {rx, dt_reg[<span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>]};
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">if</span>(bt_nxt <span style="color:#f92672">==</span> (DBIT<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span>                 st_nxt <span style="color:#f92672">=</span> stop;
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>                 bt_nxt <span style="color:#f92672">=</span> bt_reg <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>              tk_nxt <span style="color:#f92672">=</span> tk_reg <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">end</span> <span style="color:#75715e">// case: data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        stop: <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">if</span>(s_tick)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>(tk_reg <span style="color:#f92672">==</span> (SB_TICK <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>))<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>               st_nxt <span style="color:#f92672">=</span> idle;
+</span></span><span style="display:flex;"><span>               rx_done_tick <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>              tk_nxt <span style="color:#f92672">=</span> tk_reg <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">end</span> <span style="color:#75715e">// case: stop
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">endcase</span> <span style="color:#75715e">// case (st_reg)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">end</span> <span style="color:#75715e">// always_comb
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> dout <span style="color:#f92672">=</span> dt_reg;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span> <span style="color:#75715e">// uart_rx
+</span></span></span></code></pre></div><h2 id="uart-top">UART TOP<a hidden class="anchor" aria-hidden="true" href="#uart-top">#</a></h2>
+<p>The <code>UART TOP</code> module serves as a wrapper that connects the baud rate generator to the <code>UART transmitter</code> and <code>UART receiver</code>. It integrates these components to simulate the entire UART communication system.</p>
+<p>In this setup, the transmitter sends data, and the receiver receives the data, demonstrating how the UART protocol works. This design allows for functional verification and helps in understanding the flow of data between the transmitter and receiver.</p>
+<p>Below is a pictorial representation of the wrapper design:</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/uart_top.svg"
+         alt="Figure 7: UART Design" width="800px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 7: <!-- raw HTML omitted -->UART Design</p>
+        </figcaption>
+</figure>
+
+<p>This simulation-based project provides a clear understanding of UART transmission and reception, making it easier to grasp the working of the protocol in real-world applications.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">`timescale</span> <span style="color:#ae81ff">1</span>ns<span style="color:#f92672">/</span><span style="color:#ae81ff">1</span>ns
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> uart #(<span style="color:#66d9ef">parameter</span> DBIT <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>, SB_TICK <span style="color:#f92672">=</span> <span style="color:#ae81ff">16</span>)(<span style="color:#75715e">/*AUTOARG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   tx_done_tick, rx_done_tick, dout,
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   clk, rst, din, dvsr, tx_start
+</span></span><span style="display:flex;"><span>   );
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> clk;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> rst;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> [DBIT<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>] din;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">10</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] 	   dvsr;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> <span style="color:#66d9ef">logic</span> 		   tx_start;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">//input logic 	   rx;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#75715e">//output logic 	   tx;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">output</span> <span style="color:#66d9ef">logic</span> tx_done_tick;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> <span style="color:#66d9ef">logic</span> rx_done_tick;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> <span style="color:#66d9ef">logic</span> [DBIT<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] dout;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/*AUTOREG*/</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/*AUTOWIRE*/</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Beginning of automatic wires (for undeclared instantiated-module outputs)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">logic</span>			s_tick;			<span style="color:#75715e">// From BR of baud_rate.v
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">logic</span>			tx;			<span style="color:#75715e">// From TX of uart_tx.v
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// End of automatics
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> 		rx;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> rx <span style="color:#f92672">=</span> tx;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   baud_rate BR (<span style="color:#75715e">/*AUTOINST*/</span>
+</span></span><span style="display:flex;"><span>                 <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                 .s_tick		(s_tick),
+</span></span><span style="display:flex;"><span>                 <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                 .clk			(clk),
+</span></span><span style="display:flex;"><span>                 .rst			(rst),
+</span></span><span style="display:flex;"><span>                 .dvsr			(dvsr[<span style="color:#ae81ff">10</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   uart_tx #(<span style="color:#75715e">/*AUTOINSTPARAM*/</span>
+</span></span><span style="display:flex;"><span>             <span style="color:#75715e">// Parameters
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>             .DBIT			(DBIT),
+</span></span><span style="display:flex;"><span>             .SB_TICK			(SB_TICK)) TX (<span style="color:#75715e">/*AUTOINST*/</span>
+</span></span><span style="display:flex;"><span>                                                       <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                                                       .tx_done_tick	(tx_done_tick),
+</span></span><span style="display:flex;"><span>                                                       .tx		(tx),
+</span></span><span style="display:flex;"><span>                                                       <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                                                       .clk		(clk),
+</span></span><span style="display:flex;"><span>                                                       .rst		(rst),
+</span></span><span style="display:flex;"><span>                                                       .din		(din[<span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]),
+</span></span><span style="display:flex;"><span>                                                       .tx_start	(tx_start),
+</span></span><span style="display:flex;"><span>                                                       .s_tick		(s_tick));
+</span></span><span style="display:flex;"><span>   uart_rx #(<span style="color:#75715e">/*AUTOINSTPARAM*/</span>
+</span></span><span style="display:flex;"><span>             <span style="color:#75715e">// Parameters
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>             .DBIT			(DBIT),
+</span></span><span style="display:flex;"><span>             .SB_TICK			(SB_TICK)) RX (<span style="color:#75715e">/*AUTOINST*/</span>
+</span></span><span style="display:flex;"><span>                                                       <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                                                       .dout		(dout[<span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]),
+</span></span><span style="display:flex;"><span>                                                       .rx_done_tick	(rx_done_tick),
+</span></span><span style="display:flex;"><span>                                                       <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                                                       .clk		(clk),
+</span></span><span style="display:flex;"><span>                                                       .rst		(rst),
+</span></span><span style="display:flex;"><span>                                                       .rx		(rx),
+</span></span><span style="display:flex;"><span>                                                       .s_tick		(s_tick));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span>
+</span></span></code></pre></div><h3 id="uart-self-checking-testbench">UART SELF CHECKING TESTBENCH<a hidden class="anchor" aria-hidden="true" href="#uart-self-checking-testbench">#</a></h3>
+<p>A self-checking testbench automates the process of comparing the transmitted data with the received data, ensuring the correctness of the UART module without requiring manual inspection.</p>
+<h4 id="self-checking-logic">Self Checking logic<a hidden class="anchor" aria-hidden="true" href="#self-checking-logic">#</a></h4>
+<p>For the UART Protocol Validation with <code>tx_start</code> and <code>rx_done</code> signals behave similarly to the valid and ready handshake mechanism commonly used in producer-consumer protocols.</p>
+<ul>
+<li>The <code>tx_start</code> signal indicates that the data on the <code>d_in</code> line is valid and ready to be transmitted.</li>
+<li>The <code>rx_done</code> signal confirms that the receiver has successfully captured all 8-bits of data and is prepared to accept the next data packet.</li>
+</ul>
+<p>The testbench plays a critical role in validating this communication. It compares the transmitted data on the <code>d_in</code> line with the received data on the <code>d_out</code> line. If both signals match, the protocol is functioning correctly. If there is a mismatch, the testbench will flag it as an error, indicating a potential issue in the transmission or reception process.</p>
+<h3 id="d41d8c"><a hidden class="anchor" aria-hidden="true" href="#d41d8c">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">`timescale</span> <span style="color:#ae81ff">1</span>ns<span style="color:#f92672">/</span><span style="color:#ae81ff">1</span>ns
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> tb_uart();
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">localparam</span> t <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>; <span style="color:#75715e">//125MHz for ZyboZ7
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">logic</span> clk;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> rst;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">localparam</span> DBIT <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">localparam</span> SB_TICK <span style="color:#f92672">=</span> <span style="color:#ae81ff">16</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/*AUTOREG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/*AUTOWIRE*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Beginning of automatic wires (for undeclared instantiated-module outputs)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">logic</span> [DBIT<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	dout;			<span style="color:#75715e">// From DUT of uart.v
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">logic</span>		rx_done_tick;		<span style="color:#75715e">// From DUT of uart.v
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#75715e">// End of automatics
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] din; <span style="color:#75715e">// = 8&#39;b01010110;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">10</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] dvsr <span style="color:#f92672">=</span> <span style="color:#ae81ff">11</span><span style="color:#ae81ff">&#39;d66</span>;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> 	tx_start;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   uart #(<span style="color:#75715e">/*AUTOINSTPARAM*/</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#75715e">// Parameters
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          .DBIT				(DBIT),
+</span></span><span style="display:flex;"><span>          .SB_TICK			(SB_TICK)) DUT (<span style="color:#75715e">/*AUTOINST*/</span>
+</span></span><span style="display:flex;"><span>                                                        <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                                                        .tx_done_tick   (tx_done_tick),
+</span></span><span style="display:flex;"><span>                                                        .rx_done_tick	(rx_done_tick),
+</span></span><span style="display:flex;"><span>                                                        .dout		(dout[DBIT<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]),
+</span></span><span style="display:flex;"><span>                                                        <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                                                        .clk		(clk),
+</span></span><span style="display:flex;"><span>                                                        .rst		(rst),
+</span></span><span style="display:flex;"><span>                                                        .din		(din[DBIT<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]),
+</span></span><span style="display:flex;"><span>                                                        .dvsr		(dvsr[<span style="color:#ae81ff">10</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]),
+</span></span><span style="display:flex;"><span>                                                        .tx_start	(tx_start));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">initial</span> clk <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always</span> #(t<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>) clk <span style="color:#f92672">=</span> <span style="color:#f92672">~</span>clk;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">initial</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>      rst <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>      #(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>t);
+</span></span><span style="display:flex;"><span>      rst <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>      #(t);
+</span></span><span style="display:flex;"><span>      tx_start <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>      #(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>t);
+</span></span><span style="display:flex;"><span>      tx_start <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always</span>@(<span style="color:#66d9ef">posedge</span> clk) <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">20</span>; i<span style="color:#f92672">=</span> i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>          din <span style="color:#f92672">=</span> $urandom();
+</span></span><span style="display:flex;"><span>          tx_start <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>          #(<span style="color:#ae81ff">4</span><span style="color:#f92672">*</span>t);
+</span></span><span style="display:flex;"><span>          tx_start <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">wait</span>(rx_done_tick <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">if</span>(dout <span style="color:#f92672">==</span> din)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>            $display(<span style="color:#e6db74">&#34;PASS ;) : tx = %d == rx = %d&#34;</span>, din, dout);
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>            $display(<span style="color:#e6db74">&#34;FAIL ;( : tx = %d != rx = %d&#34;</span>, din, dout);
+</span></span><span style="display:flex;"><span>            $finish;
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">wait</span>(tx_done_tick <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>      $finish;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">initial</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>      $dumpfile(<span style="color:#e6db74">&#34;tb_uart.vcd&#34;</span>);
+</span></span><span style="display:flex;"><span>      $dumpvars(<span style="color:#ae81ff">0</span>,tb_uart);
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span>
+</span></span></code></pre></div><p>Results of are shown below:</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/uart_results.png"/> 
+</figure>
+
+
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://24x7fpga.com/tags/rtl/">rtl</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
