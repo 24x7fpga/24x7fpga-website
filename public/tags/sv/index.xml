@@ -6,8 +6,18 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Oct 2024 13:18:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2024 14:42:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Constraint: Weighted Distribution</title>
+      <link>https://24x7fpga.com/sv_directory/2024_10_22_14_42_44_constraint_weighted_distribution/</link>
+      <pubDate>Tue, 22 Oct 2024 14:42:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_10_22_14_42_44_constraint_weighted_distribution/</guid>
+      <description>Source &amp;ndash; SV Verification Directory
+The weighted distribution constraint is used with the dist operator to control the probability of specific values being generated during randomization. This is useful when certain values have to appear more or less frequently in a set of random outcomes.
+Syntax The dist keyword is utilized to generated weighted distribution during randomization.
+constraint &amp;lt;constraint_name&amp;gt; {varible_name dist {1 := 4, [2:5] := 8};} // value := weight constraint &amp;lt;constraint_name&amp;gt; {varible_name dist {1 :/ 4, [2:5] :/ 8};} // value :/ weight :=: This operator specifies that the weight is the same for every value within the specified range.</description>
+    </item>
     <item>
       <title>Constraint: Solve-Before</title>
       <link>https://24x7fpga.com/sv_directory/2024_10_22_13_18_19_constraint_solve_before/</link>
