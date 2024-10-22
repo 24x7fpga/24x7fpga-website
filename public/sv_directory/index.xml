@@ -6,8 +6,17 @@
     <description>Recent content in Sv_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Oct 2024 13:50:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2024 13:18:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/sv_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Constraint: Solve-Before</title>
+      <link>https://24x7fpga.com/sv_directory/2024_10_22_13_18_19_constraint_solve_before/</link>
+      <pubDate>Tue, 22 Oct 2024 13:18:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_10_22_13_18_19_constraint_solve_before/</guid>
+      <description>Source &amp;ndash; SV Verification Directory
+As the name implies, the solve-before constraint ensures that the specified constraint is resolved prior to any other constraints during randomization. This feature becomes particularly useful when you need to control the order of constraint solving to achieve specific results or meet dependencies within the randomization process for varible ordering
+In a typical scenario, the constraint solver assigns equal priority to all constraints, meaning that the order in which constraints are resolved is non-deterministic.</description>
+    </item>
     <item>
       <title>Constraint: Implication and Equivalence</title>
       <link>https://24x7fpga.com/sv_directory/2024_10_16_13_50_42_constraint_implication_and_equivalence/</link>
@@ -481,7 +490,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Automated Workflow in Vivado SV Verification Workflow in Vivado Layered Testbench SV Testbench Overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block Randomization $urandom and $urandom_range rand and randc Constraint Randomization Constraint: Inside Operator Constraint: Array Randomization Constraint: Bidirectional and Conditional Constraint: Implication and Equivalence </description>
+Automated Workflow in Vivado SV Verification Workflow in Vivado Layered Testbench SV Testbench Overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block Randomization $urandom and $urandom_range rand and randc Constraint Randomization Constraint: Inside Operator Constraint: Array Randomization Constraint: Bidirectional and Conditional Constraint: Implication and Equivalence Constraint: Solve-Before </description>
     </item>
   </channel>
 </rss>
