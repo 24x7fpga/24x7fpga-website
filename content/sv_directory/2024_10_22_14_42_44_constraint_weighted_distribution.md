@@ -29,11 +29,11 @@ In the above example:
 -   First constraint: The probability of generating the values 1, 2, 3, 4, and 5 will follow a weighted ratio of 4 : 8 : 8 : 8 : 8, respectively.
 -   Second constraint: The probability for the same values will follow a weighted ratio of 4 : 8/4 : 8/4 : 8/4 : 8/4, which simplifies to 4 : 2 : 2 : 2 : 2.
 
-For a single value, both the `:=` and `:/=` operators behave the same, as the specified weight is directly applied. However, the difference becomes evident when applied to a range of values. This probability is calculated as:
+For a single value, both the `:=` and `:/=` operators behave the same, as the specified weight is directly applied. However, the difference becomes evident when applied to a range of values. The probability of a value in a range when using `:/` operator is calculated as:
 
 \begin{equation}
 \label{eq.1}
-Probability of a value = \frac{Specified \\;  weight}{Total \\; number \\; of\\; values}
+Probability = \frac{Specified \\;  weight}{Total \\; number \\; of\\; values}
 \end{equation}
 
 
