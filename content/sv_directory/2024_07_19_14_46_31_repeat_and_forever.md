@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-[SV Verification Directory]({{< relref "2024_06_27_16_53_00_sv_verification_directory.md" >}})
+[Source](https://github.com/24x7fpga/SystemVerilog_Verification) -- [SV Verification Directory]({{< relref "2024_06_27_16_53_00_sv_verification_directory.md" >}})
 
 
 ## Repeat and Forever Loops {#repeat-and-forever-loops}
@@ -20,7 +20,7 @@ The "repeat" and "forever" loops are another looping constructs available constr
 The repeat loop executes a block of code a specified number of times. This loop is handy when you know the exact number of iterations required.
 
 
-#### Syntax: Repeat Loop {#syntax-repeat-loop}
+#### Syntax {#syntax}
 
 ```verilog
 repeat (count) begin
@@ -29,10 +29,10 @@ end
 ```
 
 
-#### Example Code: Repeat Loop {#example-code-repeat-loop}
+#### [Example Code](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/repeat_code/tb_repeat_code.sv) {#example-code}
 
 ```verilog
-module repeat_code;
+module tb_repeat_code;
 
   initial begin
     int i = 0;
@@ -54,7 +54,7 @@ endmodule
 The "forever" loop executes a block of code indefinitely until it is interrupted by a disable statement, a break statement, or some external condition like a simulation time limit.
 
 
-#### Syntax: Forever Loop {#syntax-forever-loop}
+#### Syntax {#syntax}
 
 ```verilog
 forever begin
@@ -63,10 +63,10 @@ end
 ```
 
 
-#### Example Code: Forever Loop {#example-code-forever-loop}
+#### [Example Code](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/forever_code/tb_forever_code.sv) {#example-code}
 
 ```verilog
-module forever_code;
+module tb_forever_code;
 
   initial begin
     int i = 0;

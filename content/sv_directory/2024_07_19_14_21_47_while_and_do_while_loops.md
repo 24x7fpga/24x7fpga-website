@@ -20,7 +20,7 @@ While and do while loops are used for iterative control structures that execute 
 The "while" loop executes a block code until the specified condition is true. The condition is evaluated before each iteration.
 
 
-#### Syntax: While Loop {#syntax-while-loop}
+#### Syntax {#syntax}
 
 ```verilog
 while (condition) begin
@@ -29,12 +29,10 @@ end
 ```
 
 
-### Example Code: While Loop {#example-code-while-loop}
-
-[Source]
+#### Example Code: [While Loop](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/while_loop/tb_while_loop.sv) {#example-code-while-loop}
 
 ```verilog
-module while_loop;
+module tb_while_loop;
 
   initial begin
 
@@ -57,7 +55,7 @@ endmodule
 The "do while" loop differs from the while based on the evaluation of the condition. In the "do while" loop the block of code is executed once before the condition is evaluated.
 
 
-#### Syntax: Do While Loop {#syntax-do-while-loop}
+#### Syntax {#syntax}
 
 ```verilog
 do begin
@@ -66,12 +64,10 @@ end
 ```
 
 
-#### Example Code: Do While Loop {#example-code-do-while-loop}
-
-[Source](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/do_while_loop/tb_do_while_loop.sv)
+#### Example Code: [Do While](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/do_while_loop/tb_do_while_loop.sv) {#example-code-do-while}
 
 ```verilog
-module do_while_loop;
+module tb_do_while_loop;
 
   initial begin
 

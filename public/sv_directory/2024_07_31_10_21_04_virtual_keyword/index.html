@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Virtual Keyword | Home</title>
 <meta name="keywords" content="sv">
-<meta name="description" content="SV Verification Directory
+<meta name="description" content="Source &ndash; SV Verification Directory
 Virtual Keyword Virtual keyword enables a child class to override a method defined in its parent class. When a virtual keyword is prefixed before a method in the parent class and if the base class handle is pointed to the extended class, then the extended class method handle will get assigned to the base class handle.
 Once the virtual keyword is used for the parent class method, all the extended child classes become virtual.">
 <meta name="author" content="Kiran">
@@ -37,7 +37,7 @@ Once the virtual keyword is used for the parent class method, all the extended c
 <link rel="stylesheet" href="../../zcustom.css">
 
 <meta property="og:title" content="Virtual Keyword" />
-<meta property="og:description" content="SV Verification Directory
+<meta property="og:description" content="Source &ndash; SV Verification Directory
 Virtual Keyword Virtual keyword enables a child class to override a method defined in its parent class. When a virtual keyword is prefixed before a method in the parent class and if the base class handle is pointed to the extended class, then the extended class method handle will get assigned to the base class handle.
 Once the virtual keyword is used for the parent class method, all the extended child classes become virtual." />
 <meta property="og:type" content="article" />
@@ -47,7 +47,7 @@ Once the virtual keyword is used for the parent class method, all the extended c
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Virtual Keyword"/>
-<meta name="twitter:description" content="SV Verification Directory
+<meta name="twitter:description" content="Source &ndash; SV Verification Directory
 Virtual Keyword Virtual keyword enables a child class to override a method defined in its parent class. When a virtual keyword is prefixed before a method in the parent class and if the base class handle is pointed to the extended class, then the extended class method handle will get assigned to the base class handle.
 Once the virtual keyword is used for the parent class method, all the extended child classes become virtual."/>
 
@@ -78,12 +78,12 @@ Once the virtual keyword is used for the parent class method, all the extended c
   "@type": "BlogPosting",
   "headline": "Virtual Keyword",
   "name": "Virtual Keyword",
-  "description": "SV Verification Directory\nVirtual Keyword Virtual keyword enables a child class to override a method defined in its parent class. When a virtual keyword is prefixed before a method in the parent class and if the base class handle is pointed to the extended class, then the extended class method handle will get assigned to the base class handle.\nOnce the virtual keyword is used for the parent class method, all the extended child classes become virtual.",
+  "description": "Source \u0026ndash; SV Verification Directory\nVirtual Keyword Virtual keyword enables a child class to override a method defined in its parent class. When a virtual keyword is prefixed before a method in the parent class and if the base class handle is pointed to the extended class, then the extended class method handle will get assigned to the base class handle.\nOnce the virtual keyword is used for the parent class method, all the extended child classes become virtual.",
   "keywords": [
     "sv"
   ],
-  "articleBody": "SV Verification Directory\nVirtual Keyword Virtual keyword enables a child class to override a method defined in its parent class. When a virtual keyword is prefixed before a method in the parent class and if the base class handle is pointed to the extended class, then the extended class method handle will get assigned to the base class handle.\nOnce the virtual keyword is used for the parent class method, all the extended child classes become virtual. Syntax // declaration virtual function display(); // execute code endfunction // usage parent_class = child_class; // parent class is pointed to the child class parent_class.display(); // this calls the funtion display() in the base class if virtual keyword // is NOT used, if the virtual keyword is used the function display() will // execute from the child class In cases where the parent class and child class have methods with the same name and arguments, the method that gets executed depends on whether the method is declared as virtual or non-virtual in the parent class. The table below illustrates the behavior for both virtual and non-virtual method declarations in parent and child classes. The method column indicates the origin of the method execution.\nParent Class Child Class Method Execution Non-Virtual Non-Virtual Child Method Non-Virtual Virtual Child Method Virtual Non-Virtual Parent Method Virtual Virtual Parent Method From the table, it can be observed that if the method in the parent class is not declared as virtual, the method will be executed from the child class. Conversely, if the method in the parent class is declared with the virtual keyword, the method from the parent class will be executed.\nExample Code // Parent class class parent_class; // class properties or variables int a, b, s; // task method task func1 (int a,b); s = a + b; $display(\"Parent Class =\u003e a = %0d , b = %0d, sum s = %0d\", a, b, s); endtask virtual task func2 (int a,b); s = a + b; $display(\"Parent Class =\u003e a = %0d , b = %0d, sum s = %0d\", a, b, s); endtask endclass // Child Class class child_class extends parent_class; // class properties or variables int a, b, m; // task method task func1 (int a,b); m = a * b; $display(\"Child Class =\u003e a = %0d , b = %0d, mul m = %0d\", a, b, m); endtask virtual task func2 (int a,b); // good practice to declare a class method as virtual m = a * b; $display(\"Child Class =\u003e a = %0d , b = %0d, mul m = %0d\", a, b, m); endtask endclass module test; parent_class pr_obj; // declare a handle for parent class child_class cl_obj; // declare a handle for child class initial begin cl_obj = new( ); // construct an object pr_obj = cl_obj; // WHEN THE CHILD CLASS HANDLE POINTS TO THE PARENT CLASS HANDLE $display(\"------------ Non-Virtual Method ------------\"); pr_obj.func1(30,10); // access a method $display(\"-------------- Virtual Method --------------\"); pr_obj.func2(30,10); // access a method end endmodule Execute the code in EDA Playground\nPoints to Remember Always declare base class methods as virtual so that existing base class handles will refer to the function override in the child class. ",
-  "wordCount" : "531",
+  "articleBody": "Source – SV Verification Directory\nVirtual Keyword Virtual keyword enables a child class to override a method defined in its parent class. When a virtual keyword is prefixed before a method in the parent class and if the base class handle is pointed to the extended class, then the extended class method handle will get assigned to the base class handle.\nOnce the virtual keyword is used for the parent class method, all the extended child classes become virtual. Syntax // declaration virtual function display(); // execute code endfunction // usage parent_class = child_class; // parent class is pointed to the child class parent_class.display(); // this calls the funtion display() in the base class if virtual keyword // is NOT used, if the virtual keyword is used the function display() will // execute from the child class In cases where the parent class and child class have methods with the same name and arguments, the method that gets executed depends on whether the method is declared as virtual or non-virtual in the parent class. The table below illustrates the behavior for both virtual and non-virtual method declarations in parent and child classes. The method column indicates the origin of the method execution.\nParent Class Child Class Method Execution Non-Virtual Non-Virtual Child Method Non-Virtual Virtual Child Method Virtual Non-Virtual Parent Method Virtual Virtual Parent Method From the table, it can be observed that if the method in the parent class is not declared as virtual, the method will be executed from the child class. Conversely, if the method in the parent class is declared with the virtual keyword, the method from the parent class will be executed.\nExample Code // Parent class class parent_class; // class properties or variables int a, b, s; // task method task func1 (int a,b); s = a + b; $display(\"Parent Class =\u003e a = %0d , b = %0d, sum s = %0d\", a, b, s); endtask virtual task func2 (int a,b); s = a + b; $display(\"Parent Class =\u003e a = %0d , b = %0d, sum s = %0d\", a, b, s); endtask endclass // Child Class class child_class extends parent_class; // class properties or variables int a, b, m; // task method task func1 (int a,b); m = a * b; $display(\"Child Class =\u003e a = %0d , b = %0d, mul m = %0d\", a, b, m); endtask virtual task func2 (int a,b); // good practice to declare a class method as virtual m = a * b; $display(\"Child Class =\u003e a = %0d , b = %0d, mul m = %0d\", a, b, m); endtask endclass module tb_virtual_keyword; parent_class pr_obj; // declare a handle for parent class child_class cl_obj; // declare a handle for child class initial begin cl_obj = new( ); // construct an object pr_obj = cl_obj; // WHEN THE CHILD CLASS HANDLE POINTS TO THE PARENT CLASS HANDLE $display(\"------------ Non-Virtual Method ------------\"); pr_obj.func1(30,10); // access a method $display(\"-------------- Virtual Method --------------\"); pr_obj.func2(30,10); // access a method end endmodule Execute the code in EDA Playground\nPoints to Remember Always declare base class methods as virtual so that existing base class handles will refer to the function override in the child class. ",
+  "wordCount" : "533",
   "inLanguage": "en",
   "datePublished": "2024-07-31T10:21:00-04:00",
   "dateModified": "2024-07-31T10:21:00-04:00",
@@ -256,11 +256,11 @@ Once the virtual keyword is used for the parent class method, all the extended c
     <h1 class="post-title entry-hint-parent">
       Virtual Keyword
     </h1>
-    <div class="post-meta"><span title='2024-07-31 10:21:00 -0400 EDT'>July 31, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;531 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-07-31 10:21:00 -0400 EDT'>July 31, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;533 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
-  <div class="post-content"><p><a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/virtual_keyword/tb_virtual_keyword.sv">Source</a> &ndash; <a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
 <h2 id="virtual-keyword">Virtual Keyword<a hidden class="anchor" aria-hidden="true" href="#virtual-keyword">#</a></h2>
 <p>Virtual keyword enables a child class to override a method defined in its parent class. When a <strong>virtual</strong> keyword is prefixed before a method in the parent class and if the base class handle is pointed to the extended class, then the extended class method handle will get assigned to the base class handle.</p>
 <ul>
@@ -271,7 +271,6 @@ Once the virtual keyword is used for the parent class method, all the extended c
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>virtual <span style="color:#66d9ef">function</span> display();
 </span></span><span style="display:flex;"><span>   <span style="color:#75715e">// execute code
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">endfunction</span>
-</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// usage
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>parent_class <span style="color:#f92672">=</span> child_class;   <span style="color:#75715e">// parent class is pointed to the child class
@@ -329,7 +328,6 @@ Once the virtual keyword is used for the parent class method, all the extended c
 </span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;Parent Class =&gt; a = %0d , b = %0d, sum s = %0d&#34;</span>, a, b, s);
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">endtask</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>endclass
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Child Class
@@ -350,7 +348,7 @@ Once the virtual keyword is used for the parent class method, all the extended c
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>endclass
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> test;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> tb_virtual_keyword;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  parent_class pr_obj;          <span style="color:#75715e">// declare a handle for parent class
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  child_class cl_obj;           <span style="color:#75715e">// declare a handle for child class

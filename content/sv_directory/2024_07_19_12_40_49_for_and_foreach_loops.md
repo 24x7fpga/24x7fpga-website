@@ -20,7 +20,7 @@ Loops are essential constructs to repeat a block of code for a specified amount 
 Similar to other programming languages, the "for" loop in SystemVerilog repeats a block of code for a specified number of times. Ideal for controlled, indexed iterations where the number of iterations is known beforehand.
 
 
-#### Syntax: For Loop {#syntax-for-loop}
+#### Syntax {#syntax}
 
 ```verilog
 for(initialization; condition; increment/decrement)begin
@@ -29,9 +29,7 @@ end
 ```
 
 
-#### Example Code: For Loop {#example-code-for-loop}
-
-[Source](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/for_loop/tb_for_loop.sv)
+#### Example Code: [For Loop](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/for_loop/tb_for_loop.sv) {#example-code-for-loop}
 
 ```verilog
 module for_loop;
@@ -54,7 +52,7 @@ endmodule
 The "Foreach" loop in SystemVerilog is specifically designed for iterating over arrays. It provides a simple and easy method to access each element in the array without the need of manipulating the index especially when dealing with dynamic or associative arrays.
 
 
-#### Syntax: Foreach Loop {#syntax-foreach-loop}
+#### Syntax {#syntax}
 
 ```verilog
 foreach (array[index]) begin
@@ -63,9 +61,7 @@ end
 ```
 
 
-#### Example Code: Foreach Loop {#example-code-foreach-loop}
-
-[Source](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/foreach_loop/tb_foreach_loop.sv)
+#### Example Code: [Foreach](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/foreach_loop/tb_foreach_loop.sv) {#example-code-foreach}
 
 ```verilog
 module foreach_loop;

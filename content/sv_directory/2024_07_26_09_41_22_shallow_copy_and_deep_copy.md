@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-[SV Verification Directory]({{< relref "2024_06_27_16_53_00_sv_verification_directory.md" >}})
+[Source](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main) -- [SV Verification Directory]({{< relref "2024_06_27_16_53_00_sv_verification_directory.md" >}})
 
 
 ## Shallow Copy and Deep Copy {#shallow-copy-and-deep-copy}
@@ -29,7 +29,7 @@ Shallow copy is a method where the objects are duplicated to a new memory locati
 | Changes made to any object will reflect in both | Changes made to the copied objects will not reflect in the parent object |
 
 
-#### Example Code {#example-code}
+#### Example Code: [Shallow Copy](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/shallow_copy/tb_shallow_copy.sv) {#example-code-shallow-copy}
 
 The example shown below shows the example of shallow copy and the **limitation** of nested objects in shallow copy. Along with the difference in class assignment and shallow copy.
 
@@ -58,7 +58,7 @@ endclass
 
 
 
-module shallow_copy;
+module tb_shallow_copy;
 
   name std1, std2, std3;	  // class handle
 
@@ -100,7 +100,7 @@ endmodule
 One method to overcome the limitation of shallow copy is to write a copy function inside the class to make a copy of the object. This method is called deep copy, which duplicates not only the object itself but also all the objects referenced by the original object, creating independent copies of these nested objects.
 
 
-#### Example Code {#example-code}
+#### Example Code: [Deep Copy](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/deep_copy/tb_deep_copy.sv) {#example-code-deep-copy}
 
 ```verilog
 // class
@@ -137,7 +137,7 @@ endclass
 
 
 
-module deep_copy;
+module tb_deep_copy;
 
   name std1, std2;	       // class handle
 
