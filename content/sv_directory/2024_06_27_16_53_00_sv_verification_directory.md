@@ -106,3 +106,4 @@ In the rapidly evolving world of digital design, verification is paramount to en
 -   [Constraint: Implication and Equivalence]({{< relref "2024_10_16_13_50_42_constraint_implication_and_equivalence.md" >}})
 -   [Constraint: Solve-Before]({{< relref "2024_10_22_13_18_19_constraint_solve_before.md" >}})
 -   [Constraint: Weighted Distribution]({{< relref "2024_10_22_14_42_44_constraint_weighted_distribution.md" >}})
+-   [Constraint: In-line and External]({{< relref "2024_10_22_16_57_37_constraint_in_line_and_external.md" >}})

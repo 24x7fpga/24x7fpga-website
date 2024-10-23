@@ -6,8 +6,17 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Oct 2024 14:42:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2024 16:57:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Constraint: In-line and External</title>
+      <link>https://24x7fpga.com/sv_directory/2024_10_22_16_57_37_constraint_in_line_and_external/</link>
+      <pubDate>Tue, 22 Oct 2024 16:57:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_10_22_16_57_37_constraint_in_line_and_external/</guid>
+      <description>Source &amp;ndash; SV Verification Directory
+In-Line Constraint The in-line constraint allows for applying constraints directly within the randomize() function call. This makes it easier to define temporary or context-specific constraints without modifying the original constraint block. Additional, with keyword must be used along with the add-on constraints while calling randomize() function.
+Syntax handle_name.randomize() with { &amp;lt;constraint&amp;gt;;} Example Code class const_ex; rand bit [7:0] a; constraint const_1 {a inside {[1:100]};} function void disp(); $display(&amp;#34;a = %d&amp;#34;, a); endfunction // disp endclass // const_ex module tb_const_in_ln_extn; const_ex in_ln; initial begin in_ln = new(); for(int i = 0; i &amp;lt; 16; i++) begin in_ln.</description>
+    </item>
     <item>
       <title>Constraint: Weighted Distribution</title>
       <link>https://24x7fpga.com/sv_directory/2024_10_22_14_42_44_constraint_weighted_distribution/</link>
@@ -914,7 +923,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Automated Workflow in Vivado SV Verification Workflow in Vivado Layered Testbench SV Testbench Overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block Randomization $urandom and $urandom_range rand and randc Constraint Randomization Constraint: Inside Operator Constraint: Array Randomization Constraint: Bidirectional and Conditional Constraint: Implication and Equivalence Constraint: Solve-Before Constraint: Weighted Distribution </description>
+Automated Workflow in Vivado SV Verification Workflow in Vivado Layered Testbench SV Testbench Overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block Randomization $urandom and $urandom_range rand and randc Constraint Randomization Constraint: Inside Operator Constraint: Array Randomization Constraint: Bidirectional and Conditional Constraint: Implication and Equivalence Constraint: Solve-Before Constraint: Weighted Distribution Constraint: In-line and External </description>
     </item>
     <item>
       <title>Decoder</title>

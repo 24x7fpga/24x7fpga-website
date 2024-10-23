@@ -6,8 +6,17 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Oct 2024 14:42:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2024 16:57:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Constraint: In-line and External</title>
+      <link>https://24x7fpga.com/sv_directory/2024_10_22_16_57_37_constraint_in_line_and_external/</link>
+      <pubDate>Tue, 22 Oct 2024 16:57:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_10_22_16_57_37_constraint_in_line_and_external/</guid>
+      <description>Source &amp;ndash; SV Verification Directory
+In-Line Constraint The in-line constraint allows for applying constraints directly within the randomize() function call. This makes it easier to define temporary or context-specific constraints without modifying the original constraint block. Additional, with keyword must be used along with the add-on constraints while calling randomize() function.
+Syntax handle_name.randomize() with { &amp;lt;constraint&amp;gt;;} Example Code class const_ex; rand bit [7:0] a; constraint const_1 {a inside {[1:100]};} function void disp(); $display(&amp;#34;a = %d&amp;#34;, a); endfunction // disp endclass // const_ex module tb_const_in_ln_extn; const_ex in_ln; initial begin in_ln = new(); for(int i = 0; i &amp;lt; 16; i++) begin in_ln.</description>
+    </item>
     <item>
       <title>Constraint: Weighted Distribution</title>
       <link>https://24x7fpga.com/sv_directory/2024_10_22_14_42_44_constraint_weighted_distribution/</link>
