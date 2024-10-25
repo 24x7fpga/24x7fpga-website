@@ -13,6 +13,16 @@ The UVM (Universal Verification Methodology) workflow is centered around creatin
 
 Vivado installation guide can be found [here](https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/).
 
+{{< alert warning >}}
+<div class="alert-heading">
+
+Restricted Language Support
+
+</div>
+
+The Vivado simulator offers limited support for SystemVerilog features (e.g., the unique keyword and others). Similarly, the QuestaSim Starter Edition has restrictions, particularly with advanced verification features of SystemVerilog. As a result, I have adopted EDA Playground as my primary platform for developing and testing verification environments due to its comprehensive support for multiple simulators.
+{{< /alert >}}
+
 
 ## Vivado Setup for UVM Simulation {#vivado-setup-for-uvm-simulation}
 
