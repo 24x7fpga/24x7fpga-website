@@ -13,6 +13,16 @@ SystemVerilog was introduced to simplify the verification process by incorporati
 
 In my own workflow, I prefer using Vivado Simulator, as it integrates seamlessly with my design flow. Vivado installation guide can be found [here](https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/).
 
+{{< alert warning >}}
+<div class="alert-heading">
+
+Restricted Language Support
+
+</div>
+
+Although the Vivado simulator integrates seamlessly with my design flow, it lacks support for certain SystemVerilog attributes. As a result, I transitioned to the QuestaSim Starter version. However, the starter version of QuestaSim has limited support for SystemVerilog, particularly for advanced verification features. This ultimately led me to fully transition to EDA Playground which has become my go-to platform for developing and experimenting with verification environments.
+{{< /alert >}}
+
 
 ## Project Folder {#project-folder}
 
