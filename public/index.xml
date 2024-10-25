@@ -134,7 +134,7 @@ Let’s explore the SystemVerilog verification components using a Half Adder as 
       <pubDate>Sat, 05 Oct 2024 18:24:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/</guid>
       <description>SystemVerilog &amp;ndash; SV Vivado Script &amp;ndash; SV Python Script
-SystemVerilog was introduced to simplify the verification process by incorporating software features like Object-Oriented Programming (OOP). It significantly enhances testbench development, making the verification of complex designs more manageable. For those looking to experiment with different tools, EDA Playgorund offers a convenient platform to perform verification using a variety of commercial simulators, such as Cadence Xcelium, Synopsys VCS, and Aldec Riviera-PRO.</description>
+SystemVerilog was introduced to simplify the verification process by incorporating software features like Object-Oriented Programming (OOP). It significantly enhances testbench development, making the verification of complex designs more manageable. For those looking to experiment with different tools, EDA Playground offers a convenient platform to perform verification using a variety of commercial simulators, such as Cadence Xcelium, Synopsys VCS, and Aldec Riviera-PRO.</description>
     </item>
     <item>
       <title>UVM Phases</title>

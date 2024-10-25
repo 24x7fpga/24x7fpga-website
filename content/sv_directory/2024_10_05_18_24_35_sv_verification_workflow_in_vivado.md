@@ -9,7 +9,7 @@ css = "../../zcustom.css"
 
 [SystemVerilog](https://github.com/24x7fpga/SystemVerilog_Verification) -- [SV Vivado Script](https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_tcl_script/sv_run.tcl) -- [SV Python Script](https://github.com/24x7fpga/PythonScripts/tree/master/sv_scripts)
 
-SystemVerilog was introduced to simplify the verification process by incorporating software features like Object-Oriented Programming (OOP). It significantly enhances testbench development, making the verification of complex designs more manageable. For those looking to experiment with different tools, [EDA Playgorund](https://www.edaplayground.com/)  offers a convenient platform to perform verification using a variety of commercial simulators, such as Cadence Xcelium, Synopsys VCS, and Aldec Riviera-PRO.
+SystemVerilog was introduced to simplify the verification process by incorporating software features like Object-Oriented Programming (OOP). It significantly enhances testbench development, making the verification of complex designs more manageable. For those looking to experiment with different tools, [EDA Playground](https://www.edaplayground.com/) offers a convenient platform to perform verification using a variety of commercial simulators, such as Cadence Xcelium, Synopsys VCS, and Aldec Riviera-PRO.
 
 In my own workflow, I prefer using Vivado Simulator, as it integrates seamlessly with my design flow. Vivado installation guide can be found [here](https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/).
 
