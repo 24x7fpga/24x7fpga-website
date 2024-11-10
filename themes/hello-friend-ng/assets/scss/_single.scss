@@ -4,6 +4,9 @@
   text-align: justify;
   padding: 20px;
   margin: 20px auto;
+  @media #{$media-size-phone} {
+    max-width: 384px !important;
+  }
   @media #{$media-size-tablet} {
     max-width: 768px;
   }

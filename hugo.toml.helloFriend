@@ -2,8 +2,6 @@ baseURL = 'https://24x7fpga.com/'
 languageCode = 'en-us'
 title = 'Think, Design and Build'
 theme = "hello-friend-ng"
-theme = "maverick"
-
 
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
@@ -11,7 +9,7 @@ theme = "maverick"
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
  [params.logo]
     logoMark     = "$"
-    logoText     = "/home/24x7fpga/"
+    logoText     = "/24x7fpga/"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
@@ -63,40 +61,10 @@ theme = "maverick"
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Uncomment this if you want a portrait on your start page
    [params.portrait]
-     path     = "/img/ai-zeus3.png"
+     path     = "/img/profile.png"
      alt      = "Portrait"
      maxWidth  = "160px" 
      maxHeight = "300px" 
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
-# For PaperMod 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # #     
-[params.profileMode]
-    enabled     = true 
-    imageUrl    = "/img/anonymous2.png"
-    imageWidth  = 265 # custom size
-    imageHeight = 320 # custom size
-
-  [[params.socialIcons]]
-      name = "linkedin"
-      url  = "https://www.linkedin.com/in/kiran760043/" 
-
-  [[params.socialIcons]]
-      name = "github"
-      url  = "https://github.com/24x7fpga"
-    
-    [[params.socialIcons]]
-      name = "googlescholar"
-      url  = "https://googlescholar.com/"
-
-    [[params.socialIcons]]
-      name = "orcid"
-      url  = "https://orcid.org/0009-0003-7024-3868"
-    
-    [[params.socialIcons]]
-      name = "instagram"
-      url  = "https://www.instagram.com/negativeparking/"
-
 
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
@@ -124,16 +92,22 @@ theme = "maverick"
     weight     = 20
 
   [[menu.main]]
-    identifier = "rtl_directory"
-    name       = "rtl directory"
+  #  identifier = "rtl"
+    name       = "rtl"
     url        = "rtl_directory/2024_06_05_00_21_53_rtl_design_directory" 
     weight     = 30
 
     [[menu.main]]
-    identifier = "sv_directory"
-    name       = "sv directory"
+  #  identifier = "sv_directory"
+    name       = "sv"
     url        = "sv_directory/2024_06_27_16_53_00_sv_verification_directory" 
     weight     = 40
+
+    [[menu.main]]
+  #  identifier = "uvm_directory"
+    name       = "uvm"
+    url        = "uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" 
+    weight     = 50
 
 
 
