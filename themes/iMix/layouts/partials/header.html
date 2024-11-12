@@ -1,0 +1,453 @@
+{{- /* theme-toggle is enabled */}}
+{{- if (not site.Params.disableThemeToggle) }}
+{{- /* theme is light */}}
+{{- if (eq site.Params.defaultTheme "light") }}
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+{{- /* theme is dark */}}
+{{- else if (eq site.Params.defaultTheme "dark") }}
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+{{- else }}
+{{- /* theme is auto */}}
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+{{- end }}
+{{- /* theme-toggle is disabled and theme is auto */}}
+{{- else if (and (ne site.Params.defaultTheme "light") (ne site.Params.defaultTheme "dark"))}}
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+{{- end }}
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            {{- $label_text := (site.Params.label.text | default site.Title) }}
+            {{- if site.Title }}
+            <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
+                {{- if site.Params.label.icon }}
+                {{- $img := resources.Get site.Params.label.icon }}
+                {{- if $img }}
+                    {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+                    {{- if hugo.IsExtended -}}
+                        {{- $processableFormats = $processableFormats | append "webp" -}}
+                    {{- end -}}
+                    {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+                    {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
+                        {{- if site.Params.label.iconHeight }}
+                            {{- $img = $img.Resize (printf "x%d" site.Params.label.iconHeight) }}
+                        {{ else }}
+                            {{- $img = $img.Resize "x30" }}
+                        {{- end }}
+                    {{- end }}
+                    <img src="{{ $img.Permalink }}" alt="" aria-label="logo"
+                        height="{{- site.Params.label.iconHeight | default "30" -}}">
+                {{- else }}
+                <img src="{{- site.Params.label.icon | absURL -}}" alt="" aria-label="logo"
+                    height="{{- site.Params.label.iconHeight | default "30" -}}">
+                {{- end -}}
+                {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}
+                    {{ site.Params.label.iconSVG | safeHTML }}
+                {{- end -}}
+                {{- $label_text -}}
+            </a>
+            {{- end }}
+            
+            <!-- add a small partition line nex to home-->
+            <div class="vertical-line" style="height: 20px;"></div>
+            <!-- add a small partition line nex to home-->
+            
+            <div class="logo-switches">
+                
+                {{- if (not site.Params.disableThemeToggle) }}
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                {{- end }}
+
+                {{- $lang := .Lang}}
+                {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
+                {{- with site.Home.Translations }}
+                <ul class="lang-switch">
+                    {{- if $separator }}<li>|</li>{{ end }}
+                    {{- range . -}}
+                    {{- if ne $lang .Lang }}
+                    <li>
+                        <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
+                            aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
+                            {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
+                            {{- .Language.LanguageName | emojify -}}
+                            {{- else }}
+                            {{- .Lang | title -}}
+                            {{- end -}}
+                        </a>
+                    </li>
+                    {{- end -}}
+                    {{- end}}
+                </ul>
+                {{- end }}
+            </div>
+        </div>
+        {{- $currentPage := . }}
+        <ul id="menu">
+            {{- range site.Menus.main }}
+            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+            {{- $page_url:= $currentPage.Permalink | absLangURL }}
+            {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
+            <li>
+                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
+                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}> 
+
+
+                        <!-- adding tags symbols with pre -->   
+                        <!--                  
+                        {{ if eq .Pre "tags" }}
+                        <div class="logo-switches">
+                        -->
+                            
+                    <!-- Horizontal tag -->
+                    <!--
+                    <svg width="24" height="18" viewBox="0 0 24 24" fill="none"  xmlns="http://www.w3.org/2000/svg"> 
+                        <svg width="16" x="0" y="0">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </svg> 
+                -->
+                    <!-- Horizontal tag -->
+
+                    <!--  tag -->
+                    <!--
+                    <svg width="18" height="16" viewBox="0 0 20 24" style="color:currentColor" xmlns="http://www.w3.org/2000/svg" class="h-full w-full">
+                        <rect width="20" height="24" x="0" y="0" rx="0" fill="transparent" stroke="transparent" stroke-width="0" stroke-opacity="0%" paint-order="stroke"></rect>
+                        <svg width="20px" height="24px" viewBox="0 0 24 24" fill="currentColor" x="0" y="0" role="img" style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="currentColor">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3">
+                                    <path stroke-linejoin="round" d="M15.244 21.366a2.164 2.164 0 0 1-3.061 0l-8.549-8.549A2.164 2.164 0 0 1 3 11.287V5.163C3 3.97 3.97 3 5.164 3h6.123c.573 0 1.124.228 1.53.634l8.549 8.549a2.164 2.164 0 0 1 0 3.061l-6.122 6.122Z"/>
+                                    <g stroke-width="2"> <path d="M6.5 6.5L7 7"/> </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </svg>
+                    -->
+                    <!-- tag -->
+
+                    <!-- Another Tag -->
+                    <!--
+                    <svg width="24" height="20" viewBox="0 0 24 22" style="color:currentColor" xmlns="http://www.w3.org/2000/svg" class="h-full w-full">
+                        <rect width="24" height="20" x="0" y="0" rx="0" fill="transparent" stroke="transparent" stroke-width="0" stroke-opacity="0%" paint-order="stroke"></rect>
+                        <svg width="24px" height="20px" viewBox="0 0 24 24" fill="currentColor" x="2" y="10" role="img" style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="currentColor"><g fill="currentColor">
+                                <path d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"/>
+                                <path d="M5.5 5a.5.5 0 1 1 0-1a.5.5 0 0 1 0 1zm0 1a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3zM1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
+                            </g>
+                            </g>
+                        </svg>
+                    </svg>
+                    -->
+                    <!-- Another Tag -->
+                    
+
+
+                    <!-- Hashtag icon -->
+                    <!--
+                    <svg width="24" height="16" viewBox="0 0 24 22" style="color:currentColor" xmlns="http://www.w3.org/2000/svg" class="h-full w-full">
+                        <rect width="24" height="16" x="0" y="0" rx="0" fill="transparent" stroke="transparent" stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect>
+                        <svg width="24px" height="16px" viewBox="0 0 24 24" fill="currentColor" x="0" y="5" role="img" style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="currentColor">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 3L6 21M18 3l-4 18M4 8h17M3 16h17"/>
+                            </g>
+                        </svg>
+                    </svg>
+                    -->
+                    <!-- Hashtag icon -->
+                    
+
+                    <!-- Regualar Tags -->
+                    <!--
+                            <svg width="24" height="24" viewBox="0 0 16 14" style="color:currentColor" xmlns="http://www.w3.org/2000/svg" class="h-full w-full">
+                            <rect width="12" height="10" x="0" y="0" rx="30" fill="transparent" stroke="transparent" stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect>
+                            <svg width="10px" height="20px" viewBox="0 0 100 100" fill="currentColor" x="2" y="0" role="img" style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="currentColor"><path fill="currentColor" fill-rule="evenodd" d="M27.832 0a7.923 7.923 0 0 0-4.889 1.705L7.48 13.922a7.901 7.901 0 0 0-2.443 9.115l7.281 18.31a7.904 7.904 0 0 0 5.301 4.715l57.319 15.362a7.903 7.903 0 0 0 9.675-5.592l8.18-30.53a7.901 7.901 0 0 0-5.588-9.675L29.887.267A7.883 7.883 0 0 0 27.832 0zm31.643 15.049c-1.082.633-2.128 1.478-3.104 2.494a21.867 21.867 0 0 0-2.576 3.299l-4.928-1.319a17.073 17.073 0 0 1 10.608-4.474zm4.351.635l-1.96 7.322l-6.136-1.645a19.363 19.363 0 0 1 2.008-2.504c2.032-2.116 4.163-3.21 6.088-3.173zm1.852.416c1.84.845 3.258 2.93 4.004 5.957c.24.975.401 2.04.486 3.172l-6.47-1.733l1.98-7.396zm-47.416.074a5.532 5.532 0 1 1 .076 11.06a5.532 5.532 0 0 1-.076-11.06zm51.94 1.93a17.083 17.083 0 0 1 6.491 8.875l-4.591-1.231a21.797 21.797 0 0 0-.58-4.144c-.316-1.28-.757-2.461-1.32-3.5zm-22.833 2.978l5.422 1.455a31.389 31.389 0 0 0-2.437 5.875l-6.15-1.65a16.976 16.976 0 0 1 3.165-5.68zm7.313 1.959l6.691 1.793l-1.63 6.092l-7.556-2.024c.66-2.152 1.513-4.131 2.495-5.861zm8.523 2.285l7.031 1.883c-.014 1.989-.264 4.128-.77 6.322l-7.894-2.115l1.633-6.09zm8.92 2.39l5.086 1.362c.376 2.1.363 4.303-.1 6.504L71.3 34.023c.505-2.169.774-4.294.826-6.306zm-28.412.876l6.139 1.646a31.775 31.775 0 0 0-.903 6.287l-5.334-1.43c-.376-2.1-.365-4.302.098-6.503zm7.97 2.137l7.567 2.029l-1.633 6.09l-6.781-1.817a29.66 29.66 0 0 1 .848-6.302zm9.401 2.519l7.906 2.117a29.683 29.683 0 0 1-2.418 5.881l-7.12-1.906l1.632-6.092zm9.73 2.607l5.807 1.555a16.98 16.98 0 0 1-3.164 5.68l-5.002-1.338a31.861 31.861 0 0 0 2.36-5.897zm-26.683 1.34l4.81 1.29c.054 1.617.258 3.147.602 4.544c.27 1.098.635 2.12 1.088 3.045a17.081 17.081 0 0 1-6.5-8.879zM50.869 39l6.26 1.678l-2.041 7.617c-.111-.036-.22-.077-.33-.115c-1.534-1-2.717-2.935-3.375-5.606A19.724 19.724 0 0 1 50.869 39zm8.092 2.168l6.598 1.77a19.718 19.718 0 0 1-2.233 2.837c-1.866 1.944-3.814 3.026-5.611 3.163a17.312 17.312 0 0 1-.797-.15l2.043-7.62zm8.523 2.285l4.475 1.197a17.093 17.093 0 0 1-9.508 4.38a15.447 15.447 0 0 0 2.242-1.94c.997-1.038 1.937-2.263 2.791-3.637zm-46.55 12.218l34.862 41.786c2.281 2.938 6.788 3.408 9.625 1.003c8.22-6.853 16.463-13.685 24.666-20.567l.016-.014l.015-.015c2.725-2.478 2.854-6.93.33-9.591l-.038-.041l-.046-.04a1.336 1.336 0 0 0-.881-.304a1.292 1.292 0 0 0-.755.304c-.313.26-.407.474-.514.666c-.107.193-.19.369-.257.488c-.066.119-.145.176-.018.07l.037-.03c-.287.22-.562.582-.631.994c-.07.41.05.743.15.956c.199.424.331.628.306.536l.016.058l.023.057c.4.992.076 2.354-.775 2.888l-.066.042l-.057.049c-7.956 6.798-16.073 13.43-24.107 20.17c-1 .79-2.688.827-3.503-.076C50.858 84.97 42.434 74.835 34 64.706Z" color="currentColor"/>
+                                    <path fill="currentColor" fill-rule="evenodd" d="m92.114 41.972l-1.254 4.71l.175.354c.396.803.333 1.859-.2 2.468l-.053.06l-.041.066C85.272 58.189 79.74 66.718 74.3 75.31l-.02.034l-.02.037c-.328.622-.859 1.21-1.44 1.562c-.58.353-1.17.485-1.792.333h-.006l-.004-.002c-.76-.176-1.581-.96-2.784-1.622c-12.061-7.708-24.086-15.479-36.122-23.237c-5.12-1.524-10.434-3.106-15.078-4.557l51.13 32.781l.017.01l.016.011c3.139 1.85 7.391.715 9.21-2.434l-.025.043c5.752-8.956 11.559-17.885 17.284-26.87l.018-.026l.015-.029c1.476-2.658.914-6.105-1.303-8.173z" color="currentColor"/>
+                                </g>
+                            </svg>
+                        </svg> 
+                    -->
+                    <!-- Regualar Tags -->
+                    
+                    <!-- hello-friend tag -->
+                    <!-- 
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon">
+                        <svg x="0" y="1" style="display:inline-block">
+                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg>
+                    </svg> 
+                    -->
+                    <!-- hello-friend tag -->
+                    
+                <!--    
+                    </div>
+                
+
+                    {{ end }}
+                -->
+                        <!-- adding tags symbols with pre --> 
+                        {{ if eq .Pre "tags" }}
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 15"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        {{ end }}
+                        {{- .Name -}}
+                        {{ .Post -}}            
+             
+
+                    </span>                   
+                    {{- if (findRE "://" .URL) }}&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                    {{- end }}  
+                </a>
+            </li>
+            {{- end }}
+        </ul>
+    </nav>
+</header>
+
+<!--
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+        {{ partial "logo.html" . }}
+        
+            {{- $label_text := (site.Params.label.text | default site.Title) }}
+            {{- if site.Title }}
+            <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
+                {{- if site.Params.label.icon }}
+                {{- $img := resources.Get site.Params.label.icon }}
+                {{- if $img }}
+                    {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+                    {{- if hugo.IsExtended -}}
+                        {{- $processableFormats = $processableFormats | append "webp" -}}
+                    {{- end -}}
+                    {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+                    {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
+                        {{- if site.Params.label.iconHeight }}
+                            {{- $img = $img.Resize (printf "x%d" site.Params.label.iconHeight) }}
+                        {{ else }}
+                            {{- $img = $img.Resize "x30" }}
+                        {{- end }}
+                    {{- end }}
+                    <img src="{{ $img.Permalink }}" alt="" aria-label="logo"
+                        height="{{- site.Params.label.iconHeight | default "30" -}}">
+                {{- else }}
+                <img src="{{- site.Params.label.icon | absURL -}}" alt="" aria-label="logo"
+                    height="{{- site.Params.label.iconHeight | default "30" -}}">
+                {{- end -}}
+                {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}
+                    {{ site.Params.label.iconSVG | safeHTML }}
+                {{- end -}}
+                {{- $label_text -}}
+            </a>
+            {{- end }}
+            
+            
+                {{- $lang := .Lang}}
+                {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
+                {{- with site.Home.Translations }}
+                <ul class="lang-switch">
+                    {{- if $separator }}<li>|</li>{{ end }}
+                    {{- range . -}}
+                    {{- if ne $lang .Lang }}
+                    <li>
+                        <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
+                            aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
+                            {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
+                            {{- .Language.LanguageName | emojify -}}
+                            {{- else }}
+                            {{- .Lang | title -}}
+                            {{- end -}}
+                        </a>
+                    </li>
+                    {{- end -}}
+                    {{- end}}
+                </ul>
+                {{- end }}
+            </div>
+        </div>
+        
+        {{- $currentPage := . }}
+        <ul id="menu">
+            {{- range site.Menus.main }}
+            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+            {{- $page_url:= $currentPage.Permalink | absLangURL }}
+            {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
+            <li>
+                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
+                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                        {{- .Pre }}
+                        {{- .Name -}}
+                        {{ .Post -}}
+                    </span>
+                    {{- if (findRE "://" .URL) }}&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                    {{- end }}
+                </a>
+            </li>
+            {{- end }}
+            
+            
+             
+            <svg height="24" width="18" xmlns="http://www.w3.org/2000/svg" > 
+  		        <line x1="10" y1="20" x2="10" y2="40" style="stroke:red;stroke-width:2" />
+	        </svg> 
+            
+             theme toggle 
+            <div class="logo-switches">
+                {{- if (not site.Params.disableThemeToggle) }}
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                {{- end }}
+            
+            
+        </ul>
+    </nav>
+</header>
+
+
+
+
+{{- /* theme-toggle is enabled */}}
+{{- if (not site.Params.disableThemeToggle) }}
+{{- /* theme is light */}}
+{{- if (eq site.Params.defaultTheme "light") }}
+
+
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+{{- /* theme is dark */}}
+{{- else if (eq site.Params.defaultTheme "dark") }}
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+{{- else }}
+{{- /* theme is auto */}}
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+{{- end }}
+{{- /* theme-toggle is disabled and theme is auto */}}
+{{- else if (and (ne site.Params.defaultTheme "light") (ne site.Params.defaultTheme "dark"))}}
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+{{- end }}
+
+-->
+
+<!-- MAthJax Latex -->
+<!-- https://github.com/mathjax/MathJax/issues/1988#issuecomment-384978927
+     Use plain Javascript to prevent the use of window.eval(). Then
+     'unsafe-eval' won't be needed to be added to script-src CSP.
+
+     Also move the mathjax config to a separate file from the inline script so
+     that 'unsafe-inline can also be removed from script-src CSP.
+-->
+
+<!-- MAthJax Latex -->
+<script src="{{ "js/mathjax-config.js" | absURL }}"></script>
+
+<!-- Use MathJax 3 for faster loading -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>

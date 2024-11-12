@@ -1,0 +1,39 @@
+:root {
+    --link-color: var(--primary);
+    --link-hover-color: #573eaa;
+    --link-underline-shadow: 0 1px 0 var(--link-color);
+    --link-hover-underline-color: #573eaa;
+    --link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);
+  }
+ 
+/*
+Alert css from alert.html
+*/
+  .alert {
+    position: relative;
+    padding: 0rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+  }
+  
+  .alert-warning {
+    border-style: solid;
+    border-color: #ed6a5a;
+    border-width: 0 0 0 4px;
+  }
+  
+  .alert-heading {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: #ed6a5a;
+    weight: bold;
+  }
+  
+
+  
+
+
+
+  
+  
+  

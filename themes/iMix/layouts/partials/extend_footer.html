@@ -1,0 +1,13 @@
+{{- /* Footer custom content area start */ -}}
+{{- /*     Insert any custom code web-analytics, resources, etc. here */ -}}
+{{- /* Footer custom content area end */ -}}
+<footer class="footer">
+{{with .Site.Params.footer.bottomText}}
+<div class="footer__inner">
+    <div class="footer__content">
+        {{ range . }}<span>{{ . | safeHTML}}</span>{{ end }}
+    </div>
+</div>
+{{ end }}
+</footer>
+
