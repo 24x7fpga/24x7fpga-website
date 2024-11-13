@@ -4,11 +4,14 @@
 .post-header {
     
     margin: 24px auto var(--content-gap) auto;
+    text-align: left !important; /* heading aligned to left for small screens */
 }
 
 .post-title {
     margin-bottom: 2px;
     font-size: 40px;
+    text-align: left !important; 
+    
 }
 
 .post-description {
@@ -44,11 +47,13 @@
 .post-content h5,
 .post-content h6 {
     margin: 24px 0 16px;
+    
 }
 
 .post-content h1 {
     margin: 40px auto 32px;
     font-size: 40px;
+    
 }
 
 .post-content h2 {
