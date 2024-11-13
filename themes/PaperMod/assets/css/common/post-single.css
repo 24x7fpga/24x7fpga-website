@@ -3,8 +3,8 @@
 .page-header,
 .post-header {
 
-    
     margin: 24px auto var(--content-gap) auto;
+    text-align: left !important; /* heading aligned to left for small screens */
 }
 
 .post-title {

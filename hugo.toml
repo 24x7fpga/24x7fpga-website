@@ -182,7 +182,7 @@ url = "https://github.com/24x7fpga"
 #[[params.socialLinks.fontAwesomeIcons]]
 [[params.socialLinks.customIcons]]
 icon = "/orcid.png"
-url = "https://example.com"
+url = "https://orcid.org/0009-0003-7024-3868"
 
 [[params.socialLinks.customIcons]]
 icon = "/instagram.png"
