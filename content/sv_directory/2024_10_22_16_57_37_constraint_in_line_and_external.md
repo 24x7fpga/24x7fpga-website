@@ -83,7 +83,7 @@ class const_ex;
      $display("b = %d", b);
    endfunction // disp
 
-   // declare exteranl constraint
+   // declare external constraint
    extern constraint extn;
 
 endclass // const_ex
