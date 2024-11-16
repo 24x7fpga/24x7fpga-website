@@ -8,6 +8,8 @@ As a teaching assistant I Instructed students in modeling digital systems using 
 
 My research focus is on wideband digital receivers for radar applications.
 
+-   🌱 I’m currently learning new technology in the field of digital design.
+
  `✨Share Knowledge, Spread Love.✨` -->
 
 
@@ -20,7 +22,6 @@ With a strong background in Digital Design, RTL Design, and FPGA Prototyping, I 
 Through these experiences, I have developed a deep passion for crafting efficient digital systems and mentoring others in the field of digital design and verification.
 
 -   🔭 I’m currently working on my Ph.D 😣😅😆.
--   🌱 I’m currently learning new technology in the field of digital design.
 -   👯 I’m looking to collaborate with other FPGA enthusiasts 🤝.
 -   💬 Ask me about FPGAs.
 -   ⚡ Fun fact: I love photography 📸. 
