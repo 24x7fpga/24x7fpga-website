@@ -30,4 +30,4 @@ Design Process for Constraint Challenges
 Design challenge home page can be found [here](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges).
 
 -   [Generate Diagonal Zeros/Ones](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges/diag_zero)
--   [Divide by X](https:https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges/div_by_X)
+-   [Divide by X](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges/div_by_X)
