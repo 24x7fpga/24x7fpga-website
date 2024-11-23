@@ -107,3 +107,14 @@ In the rapidly evolving world of digital design, verification is paramount to en
 -   [Constraint: Solve-Before]({{< relref "2024_10_22_13_18_19_constraint_solve_before.md" >}})
 -   [Constraint: Weighted Distribution]({{< relref "2024_10_22_14_42_44_constraint_weighted_distribution.md" >}})
 -   [Constraint: In-line and External]({{< relref "2024_10_22_16_57_37_constraint_in_line_and_external.md" >}})
+
+
+## SV Mastery Challenges {#sv-mastery-challenges}
+
+-   [Constraint Challenges]({{< relref "2024_11_12_18_40_22_constraint_challenges.md" >}})
+
+
+## Verification Examples {#verification-examples}
+
+-   [Half Adder](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challengesD)
+-   [Full Adder](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challengesD)
