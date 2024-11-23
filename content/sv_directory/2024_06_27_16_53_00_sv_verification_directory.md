@@ -116,5 +116,5 @@ In the rapidly evolving world of digital design, verification is paramount to en
 
 ## Verification Examples {#verification-examples}
 
--   [Half Adder](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challengesD)
--   [Full Adder](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challengesD)
+-   [Half Adder](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/half_adder)
+-   [Full Adder](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/full_adder)
