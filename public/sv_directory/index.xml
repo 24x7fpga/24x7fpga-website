@@ -6,8 +6,16 @@
     <description>Recent content in Sv_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Nov 2024 18:40:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2024 19:05:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/sv_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Design Process for Constraint Challenges</title>
+      <link>https://24x7fpga.com/sv_directory/2024_11_12_19_05_16_design_process_for_constraint_challenges/</link>
+      <pubDate>Tue, 12 Nov 2024 19:05:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_11_12_19_05_16_design_process_for_constraint_challenges/</guid>
+      <description>In digital design, automation is key to streamlining workflows. I developed a Python script that generates the required .sv files for simulation. This script automates the process of creating all the necessary files for the design, saving time and reducing manual effort. By automatically generating these simulation files, the script helps standardize and expedite the verification process, ensuring consistency and minimizing the chances of human error.
+Folder Structure Projects . ├── FPGA_Projects │ └── SystemVerilog_Verification │ ├── Readme.</description>
+    </item>
     <item>
       <title>Constraint Challenges</title>
       <link>https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/</link>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Design Process for Constraint Challenges | Home</title>
+<meta name="keywords" content="sv">
+<meta name="description" content="In digital design, automation is key to streamlining workflows. I developed a Python script that generates the required .sv files for simulation. This script automates the process of creating all the necessary files for the design, saving time and reducing manual effort. By automatically generating these simulation files, the script helps standardize and expedite the verification process, ensuring consistency and minimizing the chances of human error.
+Folder Structure Projects . ├── FPGA_Projects │ └── SystemVerilog_Verification │ ├── Readme.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_11_12_19_05_16_design_process_for_constraint_challenges/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.52e0c6b907e6faf457675afdd077415881f3ecbbc7a62643d105f99d8fe2a124.css" integrity="sha256-UuDGuQfm&#43;vRXZ1r90HdBWIHz7LvHpiZD0QX5nY/ioSQ=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+
+<meta property="og:title" content="Design Process for Constraint Challenges" />
+<meta property="og:description" content="In digital design, automation is key to streamlining workflows. I developed a Python script that generates the required .sv files for simulation. This script automates the process of creating all the necessary files for the design, saving time and reducing manual effort. By automatically generating these simulation files, the script helps standardize and expedite the verification process, ensuring consistency and minimizing the chances of human error.
+Folder Structure Projects . ├── FPGA_Projects │ └── SystemVerilog_Verification │ ├── Readme." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_11_12_19_05_16_design_process_for_constraint_challenges/" /><meta property="article:section" content="sv_directory" />
+<meta property="article:published_time" content="2024-11-12T19:05:00-05:00" />
+<meta property="article:modified_time" content="2024-11-12T19:05:00-05:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Design Process for Constraint Challenges"/>
+<meta name="twitter:description" content="In digital design, automation is key to streamlining workflows. I developed a Python script that generates the required .sv files for simulation. This script automates the process of creating all the necessary files for the design, saving time and reducing manual effort. By automatically generating these simulation files, the script helps standardize and expedite the verification process, ensuring consistency and minimizing the chances of human error.
+Folder Structure Projects . ├── FPGA_Projects │ └── SystemVerilog_Verification │ ├── Readme."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Sv_directories",
+      "item": "https://24x7fpga.com/sv_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Design Process for Constraint Challenges",
+      "item": "https://24x7fpga.com/sv_directory/2024_11_12_19_05_16_design_process_for_constraint_challenges/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Design Process for Constraint Challenges",
+  "name": "Design Process for Constraint Challenges",
+  "description": "In digital design, automation is key to streamlining workflows. I developed a Python script that generates the required .sv files for simulation. This script automates the process of creating all the necessary files for the design, saving time and reducing manual effort. By automatically generating these simulation files, the script helps standardize and expedite the verification process, ensuring consistency and minimizing the chances of human error.\nFolder Structure Projects . ├── FPGA_Projects │ └── SystemVerilog_Verification │ ├── Readme.",
+  "keywords": [
+    "sv"
+  ],
+  "articleBody": "In digital design, automation is key to streamlining workflows. I developed a Python script that generates the required .sv files for simulation. This script automates the process of creating all the necessary files for the design, saving time and reducing manual effort. By automatically generating these simulation files, the script helps standardize and expedite the verification process, ensuring consistency and minimizing the chances of human error.\nFolder Structure Projects . ├── FPGA_Projects │ └── SystemVerilog_Verification │ ├── Readme.org │ ├── sv_tcl_script │ ├── sv_templates │ └── sv_verification │ ├── ... │ ├── cstrs_challenges │ ├── ... │ └── ... │ └── Python_Scripts └── sv_scripts ├── sv_clean.py ├── sv_cstrs_design.py ├── sv_cstrs_run.py ├── sv_design.py └── sv_run.py The project directory is organized into two main sections: FPGA_Projects and Python_Scripts.\nFPGA_Projects: This folder contains all files related to SystemVerilog verification for FPGA projects. SystemVerilog_Verification: The core directory for SystemVerilog-based verification projects. Readme.org: Documentation detailing the project structure, setup, and usage instructions. sv_tcl_script: Stores TCL scripts for automating simulation process using Vivado. sv_templates: Contains template files used for SystemVerilog modules, ensuring consistency and reusability. sv_verification: Holds the verification-specific designs folders. cstrs_challenges: Holds the constrains design challenge examples. Python_Scripts: This folder includes Python scripts that support and automate tasks within the Projects directory. sv_scripts: A collection of scripts focused on different aspects of the SystemVerilog workflow. sv_clean.py: Removes the generated files and directories from Vivado runs. sv_cstrs_design.py: Files are generated based on the files from the sv_templates folder for simulations. sv_cstrs_run.py: Automates running constraint-based checks for verification using Vivado. sv_design.py: Handles file generation for SystemVerilog design modules based on the templates from sv_templates/design. sv_run.py: Executes simulation runs using Vivado. Due to limited verification support in Vivado Simulator, EDA Playground is utilized for full SystemVerilog compatibility in design simulations. Even the run scripts are create to streamline the process using Vivado, due to its limited support, the scripts are used solely to generate the necessary files to complete the code. Simulations are conducted on EDA Playground. Only sv_cstrs_design.py and the template files in the sv_templates directory are required to create design files. The sv_cstrs_design.py script creates a directory labeled by the user inside the sv_verification directory, while the template files in sv_templates serve as a blueprint to streamline simulation.\nTemplates Templates for constraint challenges are located in the constraints subdirectory within the sv_templates directory.\nHierarchical design structure is shown below that maintains modularity and enhances scalability.\ntb.sv └── test.sv └── cstrs_challenge.sv tb.sv: The top-level testbench file that sets up similation environment. `include \"test.sv\" module tb_$ARG; test t1 (); endmodule // tb_$ARG test.sv: This serves as a foundational component in the SystemVerilog Constraints Challenge. It demonstrates how to instantiate a constraint class, randomize its values, and display the results `include \"cstrs_challenge.sv\" program test(); cstrs_challenge ct; initial begin ct = new(); // Create a new instance of the cstrs_challenge class. ct.randomize(); // Randomize the fields based on defined constraints. ct.disp(); // Display the randomized values. end endprogram // test cstrs_challenge.sv: This file is dedicated to implementing the constraints challenge. It serves as the primary focus when taking on a new challenge, as it is the only file that requires completion. class cstrs_challenge; // class properties // display function function void disp(); endfunction // disp endclass // cstrs_challenge Python Scripts To make it easier to run your Python scripts from any location in the terminal, you can add the directory containing your Python file to your .bashrc (for Bash users) or .zshrc (for Zsh users) configuration file.\necho 'export PATH=\"$HOME/Projects/Python_scripts/sv_scripts:$PATH\"' \u003e\u003e ~/.zshrc \u0026\u0026 source ~/.zshrc Design Script The Python script sv_design.py, located in the sv_script directory, simplifies the process of setting up new challenges. Its purpose is to automate the creation of a subdirectory with the challenge name inside the cstrs_challenge directory and copy the necessary challenge scripts into the newly created folder.\nThis script ensures a consistent and efficient workflow for organizing and managing multiple constraints challenges and reducing manual effort.\n#!/usr/bin/env python3 import os import sys name = sys.argv[1] home = os.environ['HOME'] proj_path = home + \"/Projects/FPGA_Projects/SystemVerilog_Verification/sv_verification/cstrs_challenges\" temp_path = home + \"/Projects/FPGA_Projects/SystemVerilog_Verification/sv_templates/constraints\" # create a folder is the project name try: os.chdir(proj_path) os.mkdir(name) print('Directory creation successful ;)') except: print('Directory creation Failed ;(') # copy the template file into the source directory try: os.system(\"cp -f \"+temp_path+\"/* \"+proj_path+\"/\"+name) print('Copied the Template Files ;)') except: print('Copying Templates Failed ;(') # rename top module try: os.chdir(proj_path+\"/\"+name) os.system(\"mv tb.sv tb_\"+name+\".sv\") print('Topmodule Rename Successful ;)') except: print('Topmodule Rename Failed ;(') # rename the test program try: os.chdir(proj_path+\"/\"+name) os.system(\"sed -i 's/$ARG/\"+name+\"/g' tb_\"+name+\".sv\") print('Renamed the Program ;)') except: print('Renaming the Program Failed ;(') Run Script The script sv_run.py is designed to call the sv_run.tcl file, which automates the creation and execution of a Vivado project. However, due to Vivado’s limited support for verification, this script is not currently in use.\n#!/usr/bin/env python3 import os import sys import subprocess name = sys.argv[1] home = os.environ['HOME'] t_path = home + \"/Projects/FPGA_Projects/SystemVerilog_Verification/sv_tcl_script/sv_run.tcl\" d_path = home + \"/Projects/FPGA_Projects/SystemVerilog_Verification/sv_verification/\"+name vivado_command = [ \"vivado\", \"-mode\", \"batch\", \"-source\", t_path, \"-tclargs\", name, d_path ] subprocess.run(vivado_command) ",
+  "wordCount" : "831",
+  "inLanguage": "en",
+  "datePublished": "2024-11-12T19:05:00-05:00",
+  "dateModified": "2024-11-12T19:05:00-05:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/sv_directory/2024_11_12_19_05_16_design_process_for_constraint_challenges/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 15"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
+
+
+<script src="https://24x7fpga.com/js/mathjax-config.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Design Process for Constraint Challenges
+    </h1>
+    <div class="post-meta"><span title='2024-11-12 19:05:00 -0500 EST'>November 12, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;831 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p>In digital design, automation is key to streamlining workflows. I developed a Python script that generates the required <code>.sv</code> files for simulation. This script automates the process of creating all the necessary files for the design, saving time and reducing manual effort. By automatically generating these simulation files, the script helps standardize and expedite the verification process, ensuring consistency and minimizing the chances of human error.</p>
+<h2 id="folder-structure">Folder Structure<a hidden class="anchor" aria-hidden="true" href="#folder-structure">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Projects
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── FPGA_Projects
+</span></span><span style="display:flex;"><span>│   └── SystemVerilog_Verification
+</span></span><span style="display:flex;"><span>│       ├── Readme.org
+</span></span><span style="display:flex;"><span>│       ├── sv_tcl_script
+</span></span><span style="display:flex;"><span>│       ├── sv_templates
+</span></span><span style="display:flex;"><span>│       └── sv_verification
+</span></span><span style="display:flex;"><span>│           ├──   ...
+</span></span><span style="display:flex;"><span>│           ├── cstrs_challenges
+</span></span><span style="display:flex;"><span>│           ├──   ...
+</span></span><span style="display:flex;"><span>│           └──   ...
+</span></span><span style="display:flex;"><span>│
+</span></span><span style="display:flex;"><span>└── Python_Scripts
+</span></span><span style="display:flex;"><span>    └── sv_scripts
+</span></span><span style="display:flex;"><span>        ├── sv_clean.py
+</span></span><span style="display:flex;"><span>        ├── sv_cstrs_design.py
+</span></span><span style="display:flex;"><span>        ├── sv_cstrs_run.py
+</span></span><span style="display:flex;"><span>        ├── sv_design.py
+</span></span><span style="display:flex;"><span>        └── sv_run.py
+</span></span></code></pre></div><p>The project directory is organized into two main sections: <code>FPGA_Projects</code> and <code>Python_Scripts</code>.</p>
+<ul>
+<li><strong>FPGA_Projects</strong>: This folder contains all files related to SystemVerilog verification for FPGA projects.
+<ul>
+<li><em>SystemVerilog_Verification</em>: The core directory for SystemVerilog-based verification projects.
+<ul>
+<li><code>Readme.org</code>: Documentation detailing the project structure, setup, and usage instructions.</li>
+<li><code>sv_tcl_script</code>: Stores TCL scripts for automating simulation process using Vivado.</li>
+<li><code>sv_templates</code>: Contains template files used for SystemVerilog modules, ensuring consistency and reusability.</li>
+<li><code>sv_verification</code>: Holds the verification-specific designs folders.
+<ul>
+<li><code>cstrs_challenges</code>: Holds the constrains design challenge examples.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Python_Scripts</strong>: This folder includes Python scripts that support and automate tasks within the <strong>Projects</strong> directory.
+<ul>
+<li><em>sv_scripts</em>: A collection of scripts focused on different aspects of the SystemVerilog workflow.
+<ul>
+<li><code>sv_clean.py</code>: Removes the generated files and directories from Vivado runs.</li>
+<li><code>sv_cstrs_design.py</code>: Files are generated based on the files from the <code>sv_templates</code> folder for simulations.</li>
+<li><code>sv_cstrs_run.py</code>: Automates running constraint-based checks for verification using Vivado.</li>
+<li><code>sv_design.py</code>: Handles file generation for SystemVerilog design modules based on the templates from <code>sv_templates/design</code>.</li>
+<li><code>sv_run.py</code>: Executes simulation runs using Vivado.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="alert alert-warning">
+    
+Due to limited verification support in Vivado Simulator, EDA Playground is utilized for full SystemVerilog compatibility in design simulations.
+
+</div>
+<p>Even the run scripts are create to streamline the process using Vivado, due to its limited support, the scripts are used solely to generate the necessary files to complete the code. Simulations are conducted on EDA Playground. Only <code>sv_cstrs_design.py</code> and the template files in the <code>sv_templates</code> directory are required to create design files. The <code>sv_cstrs_design.py</code> script creates a directory labeled by the user inside the sv_verification directory, while the template files in <code>sv_templates</code> serve as a blueprint to streamline simulation.</p>
+<h2 id="templates">Templates<a hidden class="anchor" aria-hidden="true" href="#templates">#</a></h2>
+<p>Templates for constraint challenges are located in the <code>constraints</code> subdirectory within the <code>sv_templates</code> directory.</p>
+<p>Hierarchical design structure is shown below that maintains modularity and enhances scalability.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tb.sv
+</span></span><span style="display:flex;"><span>└── test.sv
+</span></span><span style="display:flex;"><span>    └── cstrs_challenge.sv
+</span></span></code></pre></div><ul>
+<li><code>tb.sv</code>: The top-level testbench file that sets up similation environment.</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">`include</span> <span style="color:#e6db74">&#34;test.sv&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> tb_$ARG;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   test t1 ();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span> <span style="color:#75715e">// tb_$ARG
+</span></span></span></code></pre></div><ul>
+<li><code>test.sv</code>: This serves as a foundational component in the SystemVerilog Constraints Challenge. It demonstrates how to instantiate a constraint class, randomize its values, and display the results</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">`include</span> <span style="color:#e6db74">&#34;cstrs_challenge.sv&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>program test();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   cstrs_challenge ct;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">initial</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>      ct <span style="color:#f92672">=</span> new();         <span style="color:#75715e">// Create a new instance of the cstrs_challenge class.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      ct.randomize();     <span style="color:#75715e">// Randomize the fields based on defined constraints.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      ct.disp();          <span style="color:#75715e">// Display the randomized values.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>endprogram <span style="color:#75715e">// test
+</span></span></span></code></pre></div><ul>
+<li><code>cstrs_challenge.sv</code>: This file is dedicated to implementing the constraints challenge. It serves as the primary focus when taking on a new challenge, as it is the only file that requires completion.</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span>class cstrs_challenge;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// class properties
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// display function
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">function</span> <span style="color:#66d9ef">void</span> disp();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">endfunction</span> <span style="color:#75715e">// disp
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>endclass <span style="color:#75715e">// cstrs_challenge
+</span></span></span></code></pre></div><h2 id="python-scripts">Python Scripts<a hidden class="anchor" aria-hidden="true" href="#python-scripts">#</a></h2>
+<p>To make it easier to run your Python scripts from any location in the terminal, you can add the directory containing your Python file to your .bashrc (for Bash users) or .zshrc (for Zsh users) configuration file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;export PATH=&#34;$HOME/Projects/Python_scripts/sv_scripts:$PATH&#34;&#39;</span> &gt;&gt; ~/.zshrc <span style="color:#f92672">&amp;&amp;</span> source ~/.zshrc
+</span></span></code></pre></div><h3 id="design-script">Design Script<a hidden class="anchor" aria-hidden="true" href="#design-script">#</a></h3>
+<p>The Python script <code>sv_design.py</code>, located in the <code>sv_script</code> directory, simplifies the process of setting up new challenges. Its purpose is to automate the creation of a subdirectory with the challenge name inside the <code>cstrs_challenge</code> directory and copy the necessary challenge scripts into the newly created folder.</p>
+<p>This script ensures a consistent and efficient workflow for organizing and managing multiple constraints challenges and reducing manual effort.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env python3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>home <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>environ[<span style="color:#e6db74">&#39;HOME&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>proj_path  <span style="color:#f92672">=</span> home <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/Projects/FPGA_Projects/SystemVerilog_Verification/sv_verification/cstrs_challenges&#34;</span>
+</span></span><span style="display:flex;"><span>temp_path  <span style="color:#f92672">=</span> home <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/Projects/FPGA_Projects/SystemVerilog_Verification/sv_templates/constraints&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># create a folder is the project name</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>chdir(proj_path)
+</span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>mkdir(name)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#39;Directory creation successful ;)&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#39;Directory creation Failed ;(&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># copy the template file into the source directory</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#34;cp -f &#34;</span><span style="color:#f92672">+</span>temp_path<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;/* &#34;</span><span style="color:#f92672">+</span>proj_path<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">+</span>name)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#39;Copied the Template Files ;)&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#39;Copying Templates Failed ;(&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># rename top module</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>chdir(proj_path<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">+</span>name)
+</span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#34;mv tb.sv tb_&#34;</span><span style="color:#f92672">+</span>name<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;.sv&#34;</span>)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#39;Topmodule Rename Successful ;)&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#39;Topmodule Rename Failed ;(&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># rename the test program</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>chdir(proj_path<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">+</span>name)
+</span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#34;sed -i &#39;s/$ARG/&#34;</span><span style="color:#f92672">+</span>name<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;/g&#39; tb_&#34;</span><span style="color:#f92672">+</span>name<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;.sv&#34;</span>)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#39;Renamed the Program ;)&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#39;Renaming the Program Failed ;(&#39;</span>)
+</span></span></code></pre></div><h3 id="run-script">Run Script<a hidden class="anchor" aria-hidden="true" href="#run-script">#</a></h3>
+<p>The script <code>sv_run.py</code> is designed to call the <code>sv_run.tcl</code> file, which automates the creation and execution of a Vivado project. However, due to Vivado&rsquo;s limited support for verification, this script is not currently in use.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env python3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> subprocess
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>home <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>environ[<span style="color:#e6db74">&#39;HOME&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>t_path <span style="color:#f92672">=</span> home <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/Projects/FPGA_Projects/SystemVerilog_Verification/sv_tcl_script/sv_run.tcl&#34;</span>
+</span></span><span style="display:flex;"><span>d_path <span style="color:#f92672">=</span> home <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/Projects/FPGA_Projects/SystemVerilog_Verification/sv_verification/&#34;</span><span style="color:#f92672">+</span>name
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>vivado_command <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;vivado&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;-mode&#34;</span>, <span style="color:#e6db74">&#34;batch&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;-source&#34;</span>, t_path,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;-tclargs&#34;</span>, name, d_path
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>subprocess<span style="color:#f92672">.</span>run(vivado_command)
+</span></span></code></pre></div>
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
