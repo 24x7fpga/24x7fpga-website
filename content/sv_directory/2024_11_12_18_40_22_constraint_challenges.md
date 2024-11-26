@@ -31,3 +31,4 @@ Design challenge home page can be found [here](https://github.com/24x7fpga/Syste
 
 -   [Generate Diagonal Zeros/Ones](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges/diag_zero)
 -   [Divide by X](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges/div_by_X)
+-   [Generate Randc varibles without using Randc](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges)
