@@ -6,8 +6,18 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Nov 2024 19:05:00 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 29 Nov 2024 21:53:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generate Diagonal Zeros/Ones</title>
+      <link>https://24x7fpga.com/sv_directory/2024_11_29_21_53_39_generate_diagonal_zeros_ones/</link>
+      <pubDate>Fri, 29 Nov 2024 21:53:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_11_29_21_53_39_generate_diagonal_zeros_ones/</guid>
+      <description>Source &amp;ndash; SV Verification Directory
+Problem Statement Write a constraint to generate an N×N matrix where diagonal elements are set to zeros (or ones), while the rest of the matrix can be filled with either random values or a predefined value.
+Problem Breakdown To make the solution more manageable, we can decompose the constraint into smaller, focused sub-constraints:
+Generate an N×N Matrix: Define a rand array to hold the matrix values.</description>
+    </item>
     <item>
       <title>Design Process for Constraint Challenges</title>
       <link>https://24x7fpga.com/sv_directory/2024_11_12_19_05_16_design_process_for_constraint_challenges/</link>

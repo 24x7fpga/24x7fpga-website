@@ -29,6 +29,6 @@ Cited source: Spear, C., &amp; Tumbush, G. (2012). [SystemVerilog for Verificati
 
 Design challenge home page can be found [here](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges).
 
--   [Generate Diagonal Zeros/Ones](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges/diag_zero)
+-   [Generate Diagonal Zeros/Ones]({{< relref "2024_11_29_21_53_39_generate_diagonal_zeros_ones.md" >}})
 -   [Divide by X](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges/div_by_X)
 -   [Generate Randc varibles without using Randc](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges)
