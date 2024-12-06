@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-[Design](https://github.com/24x7fpga/iVerilog/blob/master/design/asyn_rst/asyn_rst.v) -- [Testbench](https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_asyn_rst/tb_asyn_rst.v) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
+[Source](https://github.com/24x7fpga/RTL/tree/master/rtl_designs/asyn_rst) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
 
 
 ## Synchronous and Asynchronous Reset {#synchronous-and-asynchronous-reset}

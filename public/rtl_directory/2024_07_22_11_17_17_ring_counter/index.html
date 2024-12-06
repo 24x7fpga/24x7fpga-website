@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Ring Counter | Home</title>
 <meta name="keywords" content="rtl">
-<meta name="description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta name="description" content="Source &ndash; RTL Design Directory
 Ring Counter: An Overview A ring counter is a type of shift register that where the output of the last register is fed to the input of the first register forming a type of circular shift register. There are two types of ring counters based on how the last bit is fed to the input and they are:
 Simple Ring Counter Twisted Ring Counter Simple Ring Counter A simple ring counter is where the output of the last register is fed to the input of the first register.">
 <meta name="author" content="Kiran">
@@ -38,7 +38,7 @@ Simple Ring Counter Twisted Ring Counter Simple Ring Counter A simple ring count
 
 
 <meta property="og:title" content="Ring Counter" />
-<meta property="og:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta property="og:description" content="Source &ndash; RTL Design Directory
 Ring Counter: An Overview A ring counter is a type of shift register that where the output of the last register is fed to the input of the first register forming a type of circular shift register. There are two types of ring counters based on how the last bit is fed to the input and they are:
 Simple Ring Counter Twisted Ring Counter Simple Ring Counter A simple ring counter is where the output of the last register is fed to the input of the first register." />
 <meta property="og:type" content="article" />
@@ -48,7 +48,7 @@ Simple Ring Counter Twisted Ring Counter Simple Ring Counter A simple ring count
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Ring Counter"/>
-<meta name="twitter:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta name="twitter:description" content="Source &ndash; RTL Design Directory
 Ring Counter: An Overview A ring counter is a type of shift register that where the output of the last register is fed to the input of the first register forming a type of circular shift register. There are two types of ring counters based on how the last bit is fed to the input and they are:
 Simple Ring Counter Twisted Ring Counter Simple Ring Counter A simple ring counter is where the output of the last register is fed to the input of the first register."/>
 
@@ -79,12 +79,12 @@ Simple Ring Counter Twisted Ring Counter Simple Ring Counter A simple ring count
   "@type": "BlogPosting",
   "headline": "Ring Counter",
   "name": "Ring Counter",
-  "description": "Design \u0026ndash; Testbench \u0026ndash; RTL Design Directory\nRing Counter: An Overview A ring counter is a type of shift register that where the output of the last register is fed to the input of the first register forming a type of circular shift register. There are two types of ring counters based on how the last bit is fed to the input and they are:\nSimple Ring Counter Twisted Ring Counter Simple Ring Counter A simple ring counter is where the output of the last register is fed to the input of the first register.",
+  "description": "Source \u0026ndash; RTL Design Directory\nRing Counter: An Overview A ring counter is a type of shift register that where the output of the last register is fed to the input of the first register forming a type of circular shift register. There are two types of ring counters based on how the last bit is fed to the input and they are:\nSimple Ring Counter Twisted Ring Counter Simple Ring Counter A simple ring counter is where the output of the last register is fed to the input of the first register.",
   "keywords": [
     "rtl"
   ],
-  "articleBody": "Design – Testbench – RTL Design Directory\nRing Counter: An Overview A ring counter is a type of shift register that where the output of the last register is fed to the input of the first register forming a type of circular shift register. There are two types of ring counters based on how the last bit is fed to the input and they are:\nSimple Ring Counter Twisted Ring Counter Simple Ring Counter A simple ring counter is where the output of the last register is fed to the input of the first register. At reset, the initial values of the first register is set to high (‘1’) and the rest to low (‘0’). On every clock cycle, the initial set bit is shifted right. Therefore, the total number of unused states is given by (2**N-N) where N is the input width. For a 4-bit simple ring counter, the input N = 4, the total states are 2**4 = 16 and the total number of unused states is 2**4 - 4 = 12.\nVerilog Code: 4-bit Ring counter module simp_ring_cntr #(parameter N = 4)(/*AUTOARG*/ // Outputs sr_cntr, // Inputs clk, rst ); // outputs output [N-1:0] sr_cntr; // inputs input\tclk; input\trst; /*AUTOREG*/ // Beginning of automatic regs (for this module's undeclared outputs) reg [N-1:0]\tsr_cntr; // End of automatics /*AUTOWIRE*/ always_ff@(posedge clk) if(rst) sr_cntr \u003c= 1; else sr_cntr \u003c= {sr_cntr[0],sr_cntr[N-1:1]}; endmodule // simp_ring_cntr Twisted Ring Counter A twisted ring counter is one where the output of the last register is negated and fed to the input of the first register. Unlike in a simple ring counter, on reset, all the registers are cleared or set to zero. Since the inverted output of the last register is fed to the input of the first register, the total number of unused states is given by (2**N-2N) where N is the input width. For a 4-bit twisted ring counter, the input N = 4, the total number of states is 2**4 = 16 and the total number of unused states are 2**4 - 2*4 = 8.\nVerilog Code: 4-bit Twister Ring Counter module twist_ring_cntr #(parameter N = 4) (/*AUTOARG*/ // Outputs tr_cntr, // Inputs clk, rst ); // outputs output [N-1:0] tr_cntr; // input input\tclk; input\trst; /*AUTOREG*/ // Beginning of automatic regs (for this module's undeclared outputs) reg [N-1:0]\ttr_cntr; // End of automatics /*AUTOWIRE*/ always_ff@(posedge clk) if(rst) tr_cntr \u003c= 0; else tr_cntr \u003c={~tr_cntr[0], tr_cntr[N-1:1]}; endmodule // twist_ring_cntr ",
-  "wordCount" : "410",
+  "articleBody": "Source – RTL Design Directory\nRing Counter: An Overview A ring counter is a type of shift register that where the output of the last register is fed to the input of the first register forming a type of circular shift register. There are two types of ring counters based on how the last bit is fed to the input and they are:\nSimple Ring Counter Twisted Ring Counter Simple Ring Counter A simple ring counter is where the output of the last register is fed to the input of the first register. At reset, the initial values of the first register is set to high (‘1’) and the rest to low (‘0’). On every clock cycle, the initial set bit is shifted right. Therefore, the total number of unused states is given by (2**N-N) where N is the input width. For a 4-bit simple ring counter, the input N = 4, the total states are 2**4 = 16 and the total number of unused states is 2**4 - 4 = 12.\nVerilog Code: 4-bit Ring counter module simp_ring_cntr #(parameter N = 4)(/*AUTOARG*/ // Outputs sr_cntr, // Inputs clk, rst ); // outputs output [N-1:0] sr_cntr; // inputs input\tclk; input\trst; /*AUTOREG*/ // Beginning of automatic regs (for this module's undeclared outputs) reg [N-1:0]\tsr_cntr; // End of automatics /*AUTOWIRE*/ always_ff@(posedge clk) if(rst) sr_cntr \u003c= 1; else sr_cntr \u003c= {sr_cntr[0],sr_cntr[N-1:1]}; endmodule // simp_ring_cntr Twisted Ring Counter A twisted ring counter is one where the output of the last register is negated and fed to the input of the first register. Unlike in a simple ring counter, on reset, all the registers are cleared or set to zero. Since the inverted output of the last register is fed to the input of the first register, the total number of unused states is given by (2**N-2N) where N is the input width. For a 4-bit twisted ring counter, the input N = 4, the total number of states is 2**4 = 16 and the total number of unused states are 2**4 - 2*4 = 8.\nVerilog Code: 4-bit Twister Ring Counter module twist_ring_cntr #(parameter N = 4) (/*AUTOARG*/ // Outputs tr_cntr, // Inputs clk, rst ); // outputs output [N-1:0] tr_cntr; // input input\tclk; input\trst; /*AUTOREG*/ // Beginning of automatic regs (for this module's undeclared outputs) reg [N-1:0]\ttr_cntr; // End of automatics /*AUTOWIRE*/ always_ff@(posedge clk) if(rst) tr_cntr \u003c= 0; else tr_cntr \u003c={~tr_cntr[0], tr_cntr[N-1:1]}; endmodule // twist_ring_cntr ",
+  "wordCount" : "408",
   "inLanguage": "en",
   "datePublished": "2024-07-22T11:17:00-04:00",
   "dateModified": "2024-07-22T11:17:00-04:00",
@@ -257,11 +257,11 @@ Simple Ring Counter Twisted Ring Counter Simple Ring Counter A simple ring count
     <h1 class="post-title entry-hint-parent">
       Ring Counter
     </h1>
-    <div class="post-meta"><span title='2024-07-22 11:17:00 -0400 EDT'>July 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;410 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-07-22 11:17:00 -0400 EDT'>July 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;408 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
-  <div class="post-content"><p><a href="https://github.com/24x7fpga/iVerilog/blob/master/design/ring_cntr/ring_cntr.sv">Design</a> &ndash; <a href="https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_ring_cntr/tb_ring_cntr.sv">Testbench</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/RTL/tree/master/rtl_designs/ring_cntr">Source</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
 <h2 id="ring-counter-an-overview">Ring Counter: An Overview<a hidden class="anchor" aria-hidden="true" href="#ring-counter-an-overview">#</a></h2>
 <p>A ring counter is a type of shift register that where the output of the last register is fed to the input of the first register forming a type of circular shift register. There are two types of ring counters based on how the last bit is fed to the input and they are:</p>
 <ol>

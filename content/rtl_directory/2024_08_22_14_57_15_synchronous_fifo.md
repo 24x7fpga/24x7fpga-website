@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-[Design](https://github.com/24x7fpga/iVerilog/blob/master/design/fifo_buffer_syn/fifo_buffer_ctrl.v) -- [Testbench](https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_fifo_buffer_syn/tb_fifo_buffer_syn.v) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
+[Source](https://github.com/24x7fpga/RTL/tree/master/rtl_designs/fifo_buffer_syn) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
 
 
 ## Synchronous FIFO {#synchronous-fifo}

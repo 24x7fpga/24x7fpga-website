@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-[Design](https://github.com/24x7fpga/iVerilog/blob/master/design/adder_subtractor/adder_subtractor.sv) -- [Testbench](https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_adder_subtractor/tb_adder_subtractor.sv) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
+[Source](https://github.com/24x7fpga/RTL/tree/master/rtl_designs/adder_subtractor) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
 
 
 ## Adder-Subtractor: An Overview {#adder-subtractor-an-overview}

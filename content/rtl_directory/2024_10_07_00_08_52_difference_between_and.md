@@ -9,7 +9,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-[Design](https://github.com/24x7fpga/iVerilog/blob/master/design/equals/equals.sv) -- [Testbench](https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_equals/tb_equals.sv) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
+[Source](https://github.com/24x7fpga/RTL/tree/master/rtl_designs/equals) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
 
 In Verilog, **==** and **===** are both used for comparison, but they behave differently in how they handle X (unknown).
 
@@ -46,5 +46,5 @@ NOTE: In synthesizable RTL, it is not advisible to use **===** since it will hid
 
 ## Points to Remember {#points-to-remember}
 
-1.  **==** : Ignores X and checks for logical equality.
+1.  **==**  : Ignores X and checks for logical equality.
 2.  **===** : Considers X in the comparison and checks for strict equality. It is not considered for synthesizable RTL.

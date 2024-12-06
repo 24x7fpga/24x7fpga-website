@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-[Design](https://github.com/24x7fpga/iVerilog/blob/master/design/freq_div/freq_div.v) -- [Testbench](https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_freq_div/tb_freq_div.v) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
+[Source](https://github.com/24x7fpga/RTL/tree/master/rtl_designs/freq_div) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
 
 
 ## Frequency Divider: An Overview {#frequency-divider-an-overview}

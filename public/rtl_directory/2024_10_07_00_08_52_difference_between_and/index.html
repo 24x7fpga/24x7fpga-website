@@ -8,7 +8,7 @@
 <title>  Difference between &#34;=&#34; and &#34;==&#34;
    | Home</title>
 <meta name="keywords" content="rtl">
-<meta name="description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta name="description" content="Source &ndash; RTL Design Directory
 In Verilog, == and === are both used for comparison, but they behave differently in how they handle X (unknown).
 == Equality The == operator checks if two values are logically equal. It used for comparisons on only 1&rsquo;s and 0&rsquo;s. If any operand contains an X, the comparison result will be a unknown value.
 Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39;b1100; // Result: x (unknown) === Equality The === operator is a strict equality check.">
@@ -41,7 +41,7 @@ Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39
 
 <meta property="og:title" content="  Difference between &#34;=&#34; and &#34;==&#34;
   " />
-<meta property="og:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta property="og:description" content="Source &ndash; RTL Design Directory
 In Verilog, == and === are both used for comparison, but they behave differently in how they handle X (unknown).
 == Equality The == operator checks if two values are logically equal. It used for comparisons on only 1&rsquo;s and 0&rsquo;s. If any operand contains an X, the comparison result will be a unknown value.
 Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39;b1100; // Result: x (unknown) === Equality The === operator is a strict equality check." />
@@ -53,7 +53,7 @@ Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="  Difference between &#34;=&#34; and &#34;==&#34;
   "/>
-<meta name="twitter:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta name="twitter:description" content="Source &ndash; RTL Design Directory
 In Verilog, == and === are both used for comparison, but they behave differently in how they handle X (unknown).
 == Equality The == operator checks if two values are logically equal. It used for comparisons on only 1&rsquo;s and 0&rsquo;s. If any operand contains an X, the comparison result will be a unknown value.
 Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39;b1100; // Result: x (unknown) === Equality The === operator is a strict equality check."/>
@@ -85,12 +85,12 @@ Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39
   "@type": "BlogPosting",
   "headline": "  Difference between \"=\" and \"==\"\n  ",
   "name": "  Difference between \u0022=\u0022 and \u0022==\u0022\n  ",
-  "description": "Design \u0026ndash; Testbench \u0026ndash; RTL Design Directory\nIn Verilog, == and === are both used for comparison, but they behave differently in how they handle X (unknown).\n== Equality The == operator checks if two values are logically equal. It used for comparisons on only 1\u0026rsquo;s and 0\u0026rsquo;s. If any operand contains an X, the comparison result will be a unknown value.\nExample: 4\u0026#39;b101X == 4\u0026#39;b1011; // Result: x (unknown) 4\u0026#39;b1X00 == 4\u0026#39;b1100; // Result: x (unknown) === Equality The === operator is a strict equality check.",
+  "description": "Source \u0026ndash; RTL Design Directory\nIn Verilog, == and === are both used for comparison, but they behave differently in how they handle X (unknown).\n== Equality The == operator checks if two values are logically equal. It used for comparisons on only 1\u0026rsquo;s and 0\u0026rsquo;s. If any operand contains an X, the comparison result will be a unknown value.\nExample: 4\u0026#39;b101X == 4\u0026#39;b1011; // Result: x (unknown) 4\u0026#39;b1X00 == 4\u0026#39;b1100; // Result: x (unknown) === Equality The === operator is a strict equality check.",
   "keywords": [
     "rtl"
   ],
-  "articleBody": "Design – Testbench – RTL Design Directory\nIn Verilog, == and === are both used for comparison, but they behave differently in how they handle X (unknown).\n== Equality The == operator checks if two values are logically equal. It used for comparisons on only 1’s and 0’s. If any operand contains an X, the comparison result will be a unknown value.\nExample: 4'b101X == 4'b1011; // Result: x (unknown) 4'b1X00 == 4'b1100; // Result: x (unknown) === Equality The === operator is a strict equality check. It treats X as don’t-care values. When both RHS and LHS are X’s the results will true (high).\nExample: 4'b101X === 4'b101x; // Result: true 4'bxxxx === 4'bxxxx; // Result: true Here, === treats X as a distinct value, so the comparison returns false if the two values are not strictly equal, including the X bits.\nNOTE: In synthesizable RTL, it is not advisible to use === since it will hide “X” propogations issues.\nPoints to Remember == : Ignores X and checks for logical equality. === : Considers X in the comparison and checks for strict equality. It is not considered for synthesizable RTL. ",
-  "wordCount" : "192",
+  "articleBody": "Source – RTL Design Directory\nIn Verilog, == and === are both used for comparison, but they behave differently in how they handle X (unknown).\n== Equality The == operator checks if two values are logically equal. It used for comparisons on only 1’s and 0’s. If any operand contains an X, the comparison result will be a unknown value.\nExample: 4'b101X == 4'b1011; // Result: x (unknown) 4'b1X00 == 4'b1100; // Result: x (unknown) === Equality The === operator is a strict equality check. It treats X as don’t-care values. When both RHS and LHS are X’s the results will true (high).\nExample: 4'b101X === 4'b101x; // Result: true 4'bxxxx === 4'bxxxx; // Result: true Here, === treats X as a distinct value, so the comparison returns false if the two values are not strictly equal, including the X bits.\nNOTE: In synthesizable RTL, it is not advisible to use === since it will hide “X” propogations issues.\nPoints to Remember == : Ignores X and checks for logical equality. === : Considers X in the comparison and checks for strict equality. It is not considered for synthesizable RTL. ",
+  "wordCount" : "190",
   "inLanguage": "en",
   "datePublished": "2024-10-07T00:08:00-04:00",
   "dateModified": "2024-10-07T00:08:00-04:00",
@@ -264,11 +264,11 @@ Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39
         Difference between &#34;=&#34; and &#34;==&#34;
   
     </h1>
-    <div class="post-meta"><span title='2024-10-07 00:08:00 -0400 EDT'>October 7, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;192 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-10-07 00:08:00 -0400 EDT'>October 7, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;190 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
-  <div class="post-content"><p><a href="https://github.com/24x7fpga/iVerilog/blob/master/design/equals/equals.sv">Design</a> &ndash; <a href="https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_equals/tb_equals.sv">Testbench</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/RTL/tree/master/rtl_designs/equals">Source</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
 <p>In Verilog, <strong>==</strong> and <strong>===</strong> are both used for comparison, but they behave differently in how they handle X (unknown).</p>
 <h2 id="equality">== Equality<a hidden class="anchor" aria-hidden="true" href="#equality">#</a></h2>
 <p>The <strong>==</strong> operator checks if two values are logically equal. It used for comparisons on only 1&rsquo;s and 0&rsquo;s. If any operand contains an X, the comparison result will be a unknown value.</p>
@@ -284,7 +284,7 @@ Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39
 <p>NOTE: In synthesizable RTL, it is not advisible to use <strong>===</strong> since it will hide &ldquo;X&rdquo; propogations issues.</p>
 <h2 id="points-to-remember">Points to Remember<a hidden class="anchor" aria-hidden="true" href="#points-to-remember">#</a></h2>
 <ol>
-<li><strong>==</strong> : Ignores X and checks for logical equality.</li>
+<li><strong>==</strong>  : Ignores X and checks for logical equality.</li>
 <li><strong>===</strong> : Considers X in the comparison and checks for strict equality. It is not considered for synthesizable RTL.</li>
 </ol>
 

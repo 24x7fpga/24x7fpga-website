@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-[Design](https://github.com/24x7fpga/iVerilog/blob/master/design/always_at_comb/always_at_comb.sv) -- [Testbench](https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_always_at_comb/tb_always_at_comb.sv) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
+[Source](https://github.com/24x7fpga/RTL/tree/master/rtl_designs/always_at_comb) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
 
 
 ## Always@(\*) and Always_Comb {#always-----and-always-comb}

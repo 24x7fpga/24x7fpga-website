@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Encoder | Home</title>
 <meta name="keywords" content="rtl">
-<meta name="description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta name="description" content="Source &ndash; RTL Design Directory
 Encoder: An Overview An encoder is a digital combinational circuit that converts 2^n inputs to n outputs. It converts a set of binary inputs to binary-coded output, where only one input line is active at a given time.
 Design: 4-to-2 Encoder A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 2^2 = 4 input lines named as in[3], in[2], in[1], in[0] and two output lines named as out[1] and out[0].">
 <meta name="author" content="Kiran">
@@ -38,7 +38,7 @@ Design: 4-to-2 Encoder A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 
 
 
 <meta property="og:title" content="Encoder" />
-<meta property="og:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta property="og:description" content="Source &ndash; RTL Design Directory
 Encoder: An Overview An encoder is a digital combinational circuit that converts 2^n inputs to n outputs. It converts a set of binary inputs to binary-coded output, where only one input line is active at a given time.
 Design: 4-to-2 Encoder A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 2^2 = 4 input lines named as in[3], in[2], in[1], in[0] and two output lines named as out[1] and out[0]." />
 <meta property="og:type" content="article" />
@@ -48,7 +48,7 @@ Design: 4-to-2 Encoder A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Encoder"/>
-<meta name="twitter:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta name="twitter:description" content="Source &ndash; RTL Design Directory
 Encoder: An Overview An encoder is a digital combinational circuit that converts 2^n inputs to n outputs. It converts a set of binary inputs to binary-coded output, where only one input line is active at a given time.
 Design: 4-to-2 Encoder A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 2^2 = 4 input lines named as in[3], in[2], in[1], in[0] and two output lines named as out[1] and out[0]."/>
 
@@ -79,12 +79,12 @@ Design: 4-to-2 Encoder A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 
   "@type": "BlogPosting",
   "headline": "Encoder",
   "name": "Encoder",
-  "description": "Design \u0026ndash; Testbench \u0026ndash; RTL Design Directory\nEncoder: An Overview An encoder is a digital combinational circuit that converts 2^n inputs to n outputs. It converts a set of binary inputs to binary-coded output, where only one input line is active at a given time.\nDesign: 4-to-2 Encoder A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 2^2 = 4 input lines named as in[3], in[2], in[1], in[0] and two output lines named as out[1] and out[0].",
+  "description": "Source \u0026ndash; RTL Design Directory\nEncoder: An Overview An encoder is a digital combinational circuit that converts 2^n inputs to n outputs. It converts a set of binary inputs to binary-coded output, where only one input line is active at a given time.\nDesign: 4-to-2 Encoder A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 2^2 = 4 input lines named as in[3], in[2], in[1], in[0] and two output lines named as out[1] and out[0].",
   "keywords": [
     "rtl"
   ],
-  "articleBody": "Design – Testbench – RTL Design Directory\nEncoder: An Overview An encoder is a digital combinational circuit that converts 2^n inputs to n outputs. It converts a set of binary inputs to binary-coded output, where only one input line is active at a given time.\nDesign: 4-to-2 Encoder A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 2^2 = 4 input lines named as in[3], in[2], in[1], in[0] and two output lines named as out[1] and out[0].\nin[3] in[2] in[1] in[0] out[1] out[0] 0 0 0 1 0 0 0 0 1 0 0 1 0 1 0 0 1 0 1 0 0 0 1 1 From the truth table, the boolean equation of the 4-to-2 encoder can be written as:\nout[0] = in[1] + in[0]\nout[1] = in[3] + in[2]\nDesign: 8-to-3 Encoder An 8-to-3 encoder consists of eight inputs and three outputs. For the eight-bit inputs, only one of them will be hight at a given time. The truth table for an 8-to-3 encoder is as follows:\nin[7] in[6] in[5] in[4] in[3] in[2] in[1] in[0] out[2] out[1] out[0] 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 1 0 1 0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 1 1 1 The boolean equation for the 8-to-3 encoder can be written as:\nout[0] = in[1] + in[3] + in[5] + in[7]\nout[1] = in[2] + in[3] + in[6] + in[7]\nout[2] = in[4] + in[5] + in[6] + in[7]\nImplementing an encoder can be in Verilog achieved with the help of a for loop. It is necessary to abide by certain constraints when implementing a for loop in Verilog. They are as follows:\nNo dynamic looping: Verilog language does not support dynamic looping, i.e., the iteration count should be a constant and should not change during run time. Loop variable: the iteration loop variable e.g. “i” should be declared as an integer. During simulation and synthesis, the for loop will unroll and be converted into hardware logic.\nVerilog Code: 8-to-3 Encoder always_comb begin out = 'h0; for(int i = 0; i \u003c 8; i = i+1)begin if(in[i]) out = i; end end ",
-  "wordCount" : "424",
+  "articleBody": "Source – RTL Design Directory\nEncoder: An Overview An encoder is a digital combinational circuit that converts 2^n inputs to n outputs. It converts a set of binary inputs to binary-coded output, where only one input line is active at a given time.\nDesign: 4-to-2 Encoder A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 2^2 = 4 input lines named as in[3], in[2], in[1], in[0] and two output lines named as out[1] and out[0].\nin[3] in[2] in[1] in[0] out[1] out[0] 0 0 0 1 0 0 0 0 1 0 0 1 0 1 0 0 1 0 1 0 0 0 1 1 From the truth table, the boolean equation of the 4-to-2 encoder can be written as:\nout[0] = in[1] + in[0]\nout[1] = in[3] + in[2]\nDesign: 8-to-3 Encoder An 8-to-3 encoder consists of eight inputs and three outputs. For the eight-bit inputs, only one of them will be hight at a given time. The truth table for an 8-to-3 encoder is as follows:\nin[7] in[6] in[5] in[4] in[3] in[2] in[1] in[0] out[2] out[1] out[0] 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 1 0 1 0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 1 1 1 The boolean equation for the 8-to-3 encoder can be written as:\nout[0] = in[1] + in[3] + in[5] + in[7]\nout[1] = in[2] + in[3] + in[6] + in[7]\nout[2] = in[4] + in[5] + in[6] + in[7]\nImplementing an encoder can be in Verilog achieved with the help of a for loop. It is necessary to abide by certain constraints when implementing a for loop in Verilog. They are as follows:\nNo dynamic looping: Verilog language does not support dynamic looping, i.e., the iteration count should be a constant and should not change during run time. Loop variable: the iteration loop variable e.g. “i” should be declared as an integer. During simulation and synthesis, the for loop will unroll and be converted into hardware logic.\nVerilog Code: 8-to-3 Encoder always_comb begin out = 'h0; for(int i = 0; i \u003c 8; i = i+1)begin if(in[i]) out = i; end end ",
+  "wordCount" : "422",
   "inLanguage": "en",
   "datePublished": "2024-06-23T20:40:00-04:00",
   "dateModified": "2024-06-23T20:40:00-04:00",
@@ -257,11 +257,11 @@ Design: 4-to-2 Encoder A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 
     <h1 class="post-title entry-hint-parent">
       Encoder
     </h1>
-    <div class="post-meta"><span title='2024-06-23 20:40:00 -0400 EDT'>June 23, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;424 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-06-23 20:40:00 -0400 EDT'>June 23, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;422 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
-  <div class="post-content"><p><a href="https://github.com/24x7fpga/iVerilog/blob/master/design/encoder8_to_3/encoder8_to_3.sv">Design</a> &ndash; <a href="https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_encoder8_to_3/tb_encoder8_to_3.sv">Testbench</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/RTL/tree/master/rtl_designs/encoder8_to_3">Source</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
 <h2 id="encoder-an-overview">Encoder: An Overview<a hidden class="anchor" aria-hidden="true" href="#encoder-an-overview">#</a></h2>
 <p>An encoder is a digital combinational circuit that converts 2^n inputs to n outputs. It converts a set of binary inputs to binary-coded output, where only one input line is active at a given time.</p>
 <h3 id="design-4-to-2-encoder">Design: 4-to-2 Encoder<a hidden class="anchor" aria-hidden="true" href="#design-4-to-2-encoder">#</a></h3>

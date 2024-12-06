@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-[Design](https://github.com/24x7fpga/iVerilog/blob/master/design/assign_vs_if/assign_vs_if.sv) -- [Testbench](https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_assign_vs_if/tb_assign_vs_if.sv) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
+[Source](https://github.com/24x7fpga/RTL/tree/master/rtl_designs/assign_vs_if) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
 
 
 ## Assign Statement {#assign-statement}

@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Assign and If-Else Statement | Home</title>
 <meta name="keywords" content="rtl">
-<meta name="description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta name="description" content="Source &ndash; RTL Design Directory
 Assign Statement The &lsquo;assign&rsquo; statement is used to model combinational logic by creating continuous assignments. It is typically implemented where the output continuously reflects the changes in the input without any delay. The assign statement is used with signals declared as wire, tri, or other net types, but not with reg types. However, in SystemVerilog, logic type can be used in continuous assignments, similar to wire.">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/rtl_directory/2024_07_26_17_07_08_assign_and_if_else_statement/">
@@ -37,7 +37,7 @@ Assign Statement The &lsquo;assign&rsquo; statement is used to model combination
 
 
 <meta property="og:title" content="Assign and If-Else Statement" />
-<meta property="og:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta property="og:description" content="Source &ndash; RTL Design Directory
 Assign Statement The &lsquo;assign&rsquo; statement is used to model combinational logic by creating continuous assignments. It is typically implemented where the output continuously reflects the changes in the input without any delay. The assign statement is used with signals declared as wire, tri, or other net types, but not with reg types. However, in SystemVerilog, logic type can be used in continuous assignments, similar to wire." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/rtl_directory/2024_07_26_17_07_08_assign_and_if_else_statement/" /><meta property="article:section" content="rtl_directory" />
@@ -46,7 +46,7 @@ Assign Statement The &lsquo;assign&rsquo; statement is used to model combination
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Assign and If-Else Statement"/>
-<meta name="twitter:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta name="twitter:description" content="Source &ndash; RTL Design Directory
 Assign Statement The &lsquo;assign&rsquo; statement is used to model combinational logic by creating continuous assignments. It is typically implemented where the output continuously reflects the changes in the input without any delay. The assign statement is used with signals declared as wire, tri, or other net types, but not with reg types. However, in SystemVerilog, logic type can be used in continuous assignments, similar to wire."/>
 
 
@@ -76,12 +76,12 @@ Assign Statement The &lsquo;assign&rsquo; statement is used to model combination
   "@type": "BlogPosting",
   "headline": "Assign and If-Else Statement",
   "name": "Assign and If-Else Statement",
-  "description": "Design \u0026ndash; Testbench \u0026ndash; RTL Design Directory\nAssign Statement The \u0026lsquo;assign\u0026rsquo; statement is used to model combinational logic by creating continuous assignments. It is typically implemented where the output continuously reflects the changes in the input without any delay. The assign statement is used with signals declared as wire, tri, or other net types, but not with reg types. However, in SystemVerilog, logic type can be used in continuous assignments, similar to wire.",
+  "description": "Source \u0026ndash; RTL Design Directory\nAssign Statement The \u0026lsquo;assign\u0026rsquo; statement is used to model combinational logic by creating continuous assignments. It is typically implemented where the output continuously reflects the changes in the input without any delay. The assign statement is used with signals declared as wire, tri, or other net types, but not with reg types. However, in SystemVerilog, logic type can be used in continuous assignments, similar to wire.",
   "keywords": [
     "rtl"
   ],
-  "articleBody": "Design – Testbench – RTL Design Directory\nAssign Statement The ‘assign’ statement is used to model combinational logic by creating continuous assignments. It is typically implemented where the output continuously reflects the changes in the input without any delay. The assign statement is used with signals declared as wire, tri, or other net types, but not with reg types. However, in SystemVerilog, logic type can be used in continuous assignments, similar to wire.\nSyntax assign \u003cwire name\u003e = expression; Example Code The assign statement shown in the example code will implement a simple 2-to-1 MUX. The output c is continuously assigned the value of ‘a’ if sel is high or ‘b’ if sel is low.\nmodule assign_vs_if(/*AUTOARG*/ // Outputs c, // Inputs a, b, sel ); // outputs output [1:0] c; // inputs input [1:0] a, b; input\tsel; // assign statement assign c = sel ? a : b; endmodule If-Else Statement The if-else statement is a basic building block of any programming language. It is used to make decisions based on the condition. In hardware design, if-else statements lead to priority encoding, where the first condition takes the priority over other. The variable being assigned must be of type reg when using if-else statement.\nSyntax if(condition)begin // execute the block of code if the condition is true else // execute the block of code if the condition is false end Example Code The if statement checks whether sel is high, if sel is high, the output is set to ‘a’ else to ‘b’. The if-else statement implements a simple 2-to-1 MUX.\nmodule assign_vs_if(/*AUTOARG*/ // Outputs d, // Inputs a, b, sel ); // outputs output logic [1:0] d; // inputs input [1:0] a, b; input\tsel; // if-else statement always_comb if(sel) d = a; else d = b; endmodule Difference While both the assign statement and the if-else statement implements a MUX during implementing,it’s crucial to understand their behavior during simulation. When ‘sel’ is x or z, the assign statement merges a and b to evaluate the output where as in an if-else statement, the condition is evaluated to be false, leading to different simulation results.\n",
-  "wordCount" : "358",
+  "articleBody": "Source – RTL Design Directory\nAssign Statement The ‘assign’ statement is used to model combinational logic by creating continuous assignments. It is typically implemented where the output continuously reflects the changes in the input without any delay. The assign statement is used with signals declared as wire, tri, or other net types, but not with reg types. However, in SystemVerilog, logic type can be used in continuous assignments, similar to wire.\nSyntax assign \u003cwire name\u003e = expression; Example Code The assign statement shown in the example code will implement a simple 2-to-1 MUX. The output c is continuously assigned the value of ‘a’ if sel is high or ‘b’ if sel is low.\nmodule assign_vs_if(/*AUTOARG*/ // Outputs c, // Inputs a, b, sel ); // outputs output [1:0] c; // inputs input [1:0] a, b; input\tsel; // assign statement assign c = sel ? a : b; endmodule If-Else Statement The if-else statement is a basic building block of any programming language. It is used to make decisions based on the condition. In hardware design, if-else statements lead to priority encoding, where the first condition takes the priority over other. The variable being assigned must be of type reg when using if-else statement.\nSyntax if(condition)begin // execute the block of code if the condition is true else // execute the block of code if the condition is false end Example Code The if statement checks whether sel is high, if sel is high, the output is set to ‘a’ else to ‘b’. The if-else statement implements a simple 2-to-1 MUX.\nmodule assign_vs_if(/*AUTOARG*/ // Outputs d, // Inputs a, b, sel ); // outputs output logic [1:0] d; // inputs input [1:0] a, b; input\tsel; // if-else statement always_comb if(sel) d = a; else d = b; endmodule Difference While both the assign statement and the if-else statement implements a MUX during implementing,it’s crucial to understand their behavior during simulation. When ‘sel’ is x or z, the assign statement merges a and b to evaluate the output where as in an if-else statement, the condition is evaluated to be false, leading to different simulation results.\n",
+  "wordCount" : "356",
   "inLanguage": "en",
   "datePublished": "2024-07-26T17:07:00-04:00",
   "dateModified": "2024-07-26T17:07:00-04:00",
@@ -254,11 +254,11 @@ Assign Statement The &lsquo;assign&rsquo; statement is used to model combination
     <h1 class="post-title entry-hint-parent">
       Assign and If-Else Statement
     </h1>
-    <div class="post-meta"><span title='2024-07-26 17:07:00 -0400 EDT'>July 26, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;358 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-07-26 17:07:00 -0400 EDT'>July 26, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;356 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
-  <div class="post-content"><p><a href="https://github.com/24x7fpga/iVerilog/blob/master/design/assign_vs_if/assign_vs_if.sv">Design</a> &ndash; <a href="https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_assign_vs_if/tb_assign_vs_if.sv">Testbench</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/RTL/tree/master/rtl_designs/assign_vs_if">Source</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
 <h2 id="assign-statement">Assign Statement<a hidden class="anchor" aria-hidden="true" href="#assign-statement">#</a></h2>
 <p>The &lsquo;assign&rsquo; statement is used to model combinational logic by creating continuous assignments. It is typically implemented where the output continuously reflects the changes in the input without any delay. The assign statement is used with signals declared as wire, tri, or other net types, but not with reg types. However, in SystemVerilog, logic type can be used in continuous assignments, similar to wire.</p>
 <h3 id="syntax">Syntax<a hidden class="anchor" aria-hidden="true" href="#syntax">#</a></h3>

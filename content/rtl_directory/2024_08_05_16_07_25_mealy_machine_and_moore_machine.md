@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-[Design](https://github.com/24x7fpga/iVerilog/tree/master/design/fsm_seq) -- [Testbench](https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_fsm_seq/tb_fsm_seq.v) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
+[Source](https://github.com/24x7fpga/RTL/tree/master/rtl_designs/fsm_seq) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
 
 
 ## Finite State Machine {#finite-state-machine}

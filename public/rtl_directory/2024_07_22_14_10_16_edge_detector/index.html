@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Edge Detector | Home</title>
 <meta name="keywords" content="rtl">
-<meta name="description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta name="description" content="Source &ndash; RTL Design Directory
 Edge Detector: An Overview Edge detectors play a crucial role in synchronous systems to generate a short pulse when a transition of a signal occurs from low to high or high to low. These short pulses are used to trigger an event or generate an interrupt.
 There are three types of edge detectors, and they are as follows:
 Rising edge detector: detects a signal transition from low to high.">
@@ -39,7 +39,7 @@ Rising edge detector: detects a signal transition from low to high.">
 
 
 <meta property="og:title" content="Edge Detector" />
-<meta property="og:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta property="og:description" content="Source &ndash; RTL Design Directory
 Edge Detector: An Overview Edge detectors play a crucial role in synchronous systems to generate a short pulse when a transition of a signal occurs from low to high or high to low. These short pulses are used to trigger an event or generate an interrupt.
 There are three types of edge detectors, and they are as follows:
 Rising edge detector: detects a signal transition from low to high." />
@@ -50,7 +50,7 @@ Rising edge detector: detects a signal transition from low to high." />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Edge Detector"/>
-<meta name="twitter:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta name="twitter:description" content="Source &ndash; RTL Design Directory
 Edge Detector: An Overview Edge detectors play a crucial role in synchronous systems to generate a short pulse when a transition of a signal occurs from low to high or high to low. These short pulses are used to trigger an event or generate an interrupt.
 There are three types of edge detectors, and they are as follows:
 Rising edge detector: detects a signal transition from low to high."/>
@@ -82,12 +82,12 @@ Rising edge detector: detects a signal transition from low to high."/>
   "@type": "BlogPosting",
   "headline": "Edge Detector",
   "name": "Edge Detector",
-  "description": "Design \u0026ndash; Testbench \u0026ndash; RTL Design Directory\nEdge Detector: An Overview Edge detectors play a crucial role in synchronous systems to generate a short pulse when a transition of a signal occurs from low to high or high to low. These short pulses are used to trigger an event or generate an interrupt.\nThere are three types of edge detectors, and they are as follows:\nRising edge detector: detects a signal transition from low to high.",
+  "description": "Source \u0026ndash; RTL Design Directory\nEdge Detector: An Overview Edge detectors play a crucial role in synchronous systems to generate a short pulse when a transition of a signal occurs from low to high or high to low. These short pulses are used to trigger an event or generate an interrupt.\nThere are three types of edge detectors, and they are as follows:\nRising edge detector: detects a signal transition from low to high.",
   "keywords": [
     "rtl"
   ],
-  "articleBody": "Design – Testbench – RTL Design Directory\nEdge Detector: An Overview Edge detectors play a crucial role in synchronous systems to generate a short pulse when a transition of a signal occurs from low to high or high to low. These short pulses are used to trigger an event or generate an interrupt.\nThere are three types of edge detectors, and they are as follows:\nRising edge detector: detects a signal transition from low to high. Falling edge detector: detects a signal transition from high to low. Dual edge detector: detects both rising and falling edges of a signal. Verilog Code module edge_detect(/*AUTOARG*/ // Outputs posEdge, negEdge, dualEdge, // Inputs clk, rst, din ); input clk; input rst; input din; output posEdge; output negEdge; output dualEdge; /*AUTOREG*/ /*AUTOWIRE*/ reg\tdin_reg; always@(posedge clk) begin if(!rst) din_reg \u003c= 'h0; else din_reg \u003c= din; end // Posedge detection assign posEdge = (~din_reg) \u0026 din; // Negedge detection assign negEdge = din_reg \u0026 (~din); // Dualedge detection assign dualEdge = posEdge || negEdge; endmodule ",
-  "wordCount" : "170",
+  "articleBody": "Source – RTL Design Directory\nEdge Detector: An Overview Edge detectors play a crucial role in synchronous systems to generate a short pulse when a transition of a signal occurs from low to high or high to low. These short pulses are used to trigger an event or generate an interrupt.\nThere are three types of edge detectors, and they are as follows:\nRising edge detector: detects a signal transition from low to high. Falling edge detector: detects a signal transition from high to low. Dual edge detector: detects both rising and falling edges of a signal. Verilog Code module edge_detect(/*AUTOARG*/ // Outputs posEdge, negEdge, dualEdge, // Inputs clk, rst, din ); input clk; input rst; input din; output posEdge; output negEdge; output dualEdge; /*AUTOREG*/ /*AUTOWIRE*/ reg\tdin_reg; always@(posedge clk) begin if(!rst) din_reg \u003c= 'h0; else din_reg \u003c= din; end // Posedge detection assign posEdge = (~din_reg) \u0026 din; // Negedge detection assign negEdge = din_reg \u0026 (~din); // Dualedge detection assign dualEdge = posEdge || negEdge; endmodule ",
+  "wordCount" : "168",
   "inLanguage": "en",
   "datePublished": "2024-07-22T14:10:00-04:00",
   "dateModified": "2024-07-22T14:10:00-04:00",
@@ -260,11 +260,11 @@ Rising edge detector: detects a signal transition from low to high."/>
     <h1 class="post-title entry-hint-parent">
       Edge Detector
     </h1>
-    <div class="post-meta"><span title='2024-07-22 14:10:00 -0400 EDT'>July 22, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;170 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-07-22 14:10:00 -0400 EDT'>July 22, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;168 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
-  <div class="post-content"><p><a href="https://github.com/24x7fpga/iVerilog/blob/master/design/edge_detect/edge_detect.v">Design</a> &ndash; <a href="https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_edge_detect/tb_edge_detect.v">Testbench</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/RTL/tree/master/rtl_designs/edge_detect">Source</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
 <h2 id="edge-detector-an-overview">Edge Detector: An Overview<a hidden class="anchor" aria-hidden="true" href="#edge-detector-an-overview">#</a></h2>
 <p>Edge detectors play a crucial role in synchronous systems to generate a short pulse when a transition of a signal occurs from low to high or high to low. These short pulses are used to trigger an event or generate an interrupt.</p>
 <p>There are three types of edge detectors, and they are as follows:</p>

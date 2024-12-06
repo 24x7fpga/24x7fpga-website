@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-[Design](https://github.com/24x7fpga/iVerilog/blob/master/design/block_vs_non_block/block_vs_non_block.sv) -- [Testbench](https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_block_vs_non_block/tb_block_vs_non_block.sv) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
+[Source](https://github.com/24x7fpga/RTL/tree/master/rtl_designs/block_vs_non_block) -- [RTL Design Directory]({{< relref "2024_06_05_00_21_53_rtl_design_directory.md" >}})
 
 
 ## Blocking and Non-Blocking Assignment {#blocking-and-non-blocking-assignment}

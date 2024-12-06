@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Read Only Memory | Home</title>
 <meta name="keywords" content="rtl">
-<meta name="description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta name="description" content="Source &ndash; RTL Design Directory
 Read Only Memory(ROM): An Overview Read-only memory widely known as ROM is a non-volatile memory that is used to store data or programs that do not change over time. As the name suggests, data can only be read from the memory. In digital design, ROM can be used to store image data or signal data for processing.
 Memory File A memory file is a simple file with an extension of *.">
 <meta name="author" content="Kiran">
@@ -38,7 +38,7 @@ Memory File A memory file is a simple file with an extension of *.">
 
 
 <meta property="og:title" content="Read Only Memory" />
-<meta property="og:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta property="og:description" content="Source &ndash; RTL Design Directory
 Read Only Memory(ROM): An Overview Read-only memory widely known as ROM is a non-volatile memory that is used to store data or programs that do not change over time. As the name suggests, data can only be read from the memory. In digital design, ROM can be used to store image data or signal data for processing.
 Memory File A memory file is a simple file with an extension of *." />
 <meta property="og:type" content="article" />
@@ -48,7 +48,7 @@ Memory File A memory file is a simple file with an extension of *." />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Read Only Memory"/>
-<meta name="twitter:description" content="Design &ndash; Testbench &ndash; RTL Design Directory
+<meta name="twitter:description" content="Source &ndash; RTL Design Directory
 Read Only Memory(ROM): An Overview Read-only memory widely known as ROM is a non-volatile memory that is used to store data or programs that do not change over time. As the name suggests, data can only be read from the memory. In digital design, ROM can be used to store image data or signal data for processing.
 Memory File A memory file is a simple file with an extension of *."/>
 
@@ -79,12 +79,12 @@ Memory File A memory file is a simple file with an extension of *."/>
   "@type": "BlogPosting",
   "headline": "Read Only Memory",
   "name": "Read Only Memory",
-  "description": "Design \u0026ndash; Testbench \u0026ndash; RTL Design Directory\nRead Only Memory(ROM): An Overview Read-only memory widely known as ROM is a non-volatile memory that is used to store data or programs that do not change over time. As the name suggests, data can only be read from the memory. In digital design, ROM can be used to store image data or signal data for processing.\nMemory File A memory file is a simple file with an extension of *.",
+  "description": "Source \u0026ndash; RTL Design Directory\nRead Only Memory(ROM): An Overview Read-only memory widely known as ROM is a non-volatile memory that is used to store data or programs that do not change over time. As the name suggests, data can only be read from the memory. In digital design, ROM can be used to store image data or signal data for processing.\nMemory File A memory file is a simple file with an extension of *.",
   "keywords": [
     "rtl"
   ],
-  "articleBody": "Design – Testbench – RTL Design Directory\nRead Only Memory(ROM): An Overview Read-only memory widely known as ROM is a non-volatile memory that is used to store data or programs that do not change over time. As the name suggests, data can only be read from the memory. In digital design, ROM can be used to store image data or signal data for processing.\nMemory File A memory file is a simple file with an extension of *.mem that can store data in decimal, binary, or hexadecimal format. An example of a seven-segment ROM file is shown below:\n0111111 // 0 0000110 // 1 1011011 // 2 1001111 // 3 1100110 // 4 1101101 // 5 1111101 // 6 0000111 // 7 1111111 // 8 1101111 // 9 Verilog Code module rom #(parameter N = 7)(/*AUTOARG*/ // Outputs data, // Inputs addr, en ); // output output [N-1:0] data; //input input [$clog2(N):0] addr; input\ten; /*AUTOREG*/ /*AUTOWIRE*/ reg [N-1:0] mem [0:9]; initial begin $display(\"-------- Loading ROM --------\"); $readmemb(\"memory.mem\", mem); end assign data = (en \u0026\u0026 (addr \u003c= 'h9)) ? mem[addr] : 'h0; endmodule ",
-  "wordCount" : "183",
+  "articleBody": "Source – RTL Design Directory\nRead Only Memory(ROM): An Overview Read-only memory widely known as ROM is a non-volatile memory that is used to store data or programs that do not change over time. As the name suggests, data can only be read from the memory. In digital design, ROM can be used to store image data or signal data for processing.\nMemory File A memory file is a simple file with an extension of *.mem that can store data in decimal, binary, or hexadecimal format. An example of a seven-segment ROM file is shown below:\n0111111 // 0 0000110 // 1 1011011 // 2 1001111 // 3 1100110 // 4 1101101 // 5 1111101 // 6 0000111 // 7 1111111 // 8 1101111 // 9 Verilog Code module rom #(parameter N = 7)(/*AUTOARG*/ // Outputs data, // Inputs addr, en ); // output output [N-1:0] data; //input input [$clog2(N):0] addr; input\ten; /*AUTOREG*/ /*AUTOWIRE*/ reg [N-1:0] mem [0:9]; initial begin $display(\"-------- Loading ROM --------\"); $readmemb(\"memory.mem\", mem); end assign data = (en \u0026\u0026 (addr \u003c= 'h9)) ? mem[addr] : 'h0; endmodule ",
+  "wordCount" : "181",
   "inLanguage": "en",
   "datePublished": "2024-07-23T13:11:00-04:00",
   "dateModified": "2024-07-23T13:11:00-04:00",
@@ -257,11 +257,11 @@ Memory File A memory file is a simple file with an extension of *."/>
     <h1 class="post-title entry-hint-parent">
       Read Only Memory
     </h1>
-    <div class="post-meta"><span title='2024-07-23 13:11:00 -0400 EDT'>July 23, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;183 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-07-23 13:11:00 -0400 EDT'>July 23, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;181 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
-  <div class="post-content"><p><a href="https://github.com/24x7fpga/iVerilog/blob/master/design/rom/rom.sv">Design</a> &ndash; <a href="https://github.com/24x7fpga/iVerilog/blob/master/tb_design/tb_rom/tb_rom.sv">Testbench</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/RTL/tree/master/rtl_designs/rom">Source</a> &ndash; <a href="/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/">RTL Design Directory</a></p>
 <h2 id="read-only-memory--rom--an-overview">Read Only Memory(ROM): An Overview<a hidden class="anchor" aria-hidden="true" href="#read-only-memory--rom--an-overview">#</a></h2>
 <p>Read-only memory widely known as ROM is a non-volatile memory that is used to store data or programs that do not change over time. As the name suggests, data can only be read from the memory. In digital design, ROM can be used to store image data or signal data for processing.</p>
 <h4 id="memory-file">Memory File<a hidden class="anchor" aria-hidden="true" href="#memory-file">#</a></h4>
