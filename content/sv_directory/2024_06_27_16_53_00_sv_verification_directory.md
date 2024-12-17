@@ -118,3 +118,4 @@ In the rapidly evolving world of digital design, verification is paramount to en
 
 -   [Half Adder](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/half_adder)
 -   [Full Adder](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/full_adder)
+-   [Adder Subtractor](https://github.com/24x7fpga/SV/tree/main/sv_verification/adder_subtractor)

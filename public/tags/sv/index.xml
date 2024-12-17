@@ -6,8 +6,19 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Nov 2024 21:53:00 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 14 Dec 2024 21:47:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Divide by X</title>
+      <link>https://24x7fpga.com/sv_directory/2024_12_14_divide_by_x/</link>
+      <pubDate>Sat, 14 Dec 2024 21:47:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2024_12_14_divide_by_x/</guid>
+      <description>Source &amp;ndash; SV Verification Directory
+Problem Statement Create a constraint to generate an N-bit random number that is divisible by a given natural number X. The value of X is parameterized, allowing it to be easily changed for different test scenarios.
+Problem Breakdown The key idea is to ensure that the random number generated satisfies the condition below:
+\begin{equation} \label{eq.1} NUM \quad \% \quad X == 0 \end{equation}
+The modulus operator (%) plays a key role in checking divisibility.</description>
+    </item>
     <item>
       <title>Generate Diagonal Zeros/Ones</title>
       <link>https://24x7fpga.com/sv_directory/2024_11_29_21_53_39_generate_diagonal_zeros_ones/</link>
