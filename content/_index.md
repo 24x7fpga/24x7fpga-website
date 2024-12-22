@@ -10,6 +10,13 @@ My research focus is on wideband digital receivers for radar applications.
 
 -   🌱 I’m currently learning new technology in the field of digital design.
 
+
+-   🔭 I’m currently working on my Ph.D 😣😅😆.
+-   👯 I’m looking to collaborate with other FPGA enthusiasts 🤝.
+-   💬 Ask me about FPGAs.
+-   ⚡ Fun fact: I love photography 📸. 
+
+
  `✨Share Knowledge, Spread Love.✨` -->
 
 
@@ -20,11 +27,6 @@ During my internship at Ambarella, Inc., I gained hands-on experience in develop
 With a strong background in Digital Design, RTL Design, and FPGA Prototyping, I have also honed my skills as a Graduate Teaching Assistant while pursuing my Master’s Degree in Electrical Engineering. In this role, I guided students in modeling digital systems using hardware descriptive languages, implemented and tested their designs on FPGAs, and evaluated their performance through quizzes and grading in the Digital Integrated Circuit Design Lab.
 
 Through these experiences, I have developed a deep passion for crafting efficient digital systems and mentoring others in the field of digital design and verification.
-
--   🔭 I’m currently working on my Ph.D 😣😅😆.
--   👯 I’m looking to collaborate with other FPGA enthusiasts 🤝.
--   💬 Ask me about FPGAs.
--   ⚡ Fun fact: I love photography 📸. 
 
 #
 FPGAs are often compared to _LEGO_ blocks where you can build a complex structure using small basic blocks. In my [GitHub](https://github.com/24x7fpga) repositories I present to you some of these basic building blocks (basic designs in verilog/system verilog) that can be used as a foundation for building large and complex systems.
