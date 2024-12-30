@@ -88,7 +88,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 ## Communication Protocols {#communication-protocols}
 
 -   [UART]({{< relref "2024_09_17_20_46_04_uart.md" >}})
--   SPI
+-   [SPI]({{< relref "2024_09_18_22_25_40_spi.md" >}})
 -   I2C
 -   VGA
 -   I2S

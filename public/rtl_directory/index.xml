@@ -20,6 +20,15 @@ In Verilog, == and === are both used for comparison, but they behave differently
 Example: 4&amp;#39;b101X == 4&amp;#39;b1011; // Result: x (unknown) 4&amp;#39;b1X00 == 4&amp;#39;b1100; // Result: x (unknown) === Equality The === operator is a strict equality check.</description>
     </item>
     <item>
+      <title>SPI</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_09_18_22_25_40_spi/</link>
+      <pubDate>Wed, 18 Sep 2024 22:25:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_09_18_22_25_40_spi/</guid>
+      <description>Source &amp;ndash; RTL Design Directory
+SPI: Overview The Serial Peripheral Interface (SPI) is a widely used communication protocol that enables microcontrollers to interact with external peripherals such as OLED displays, sensors, and SD cards. Known for its simplicity SPI facilitates efficient data exchange between devices in embedded systems.
+SPI and UART are both serial communication protocols used to exchange data between peripheral devices, but they differ significantly in how they achieve synchronization.</description>
+    </item>
+    <item>
       <title>UART</title>
       <link>https://24x7fpga.com/rtl_directory/2024_09_17_20_46_04_uart/</link>
       <pubDate>Tue, 17 Sep 2024 20:46:00 -0400</pubDate>
