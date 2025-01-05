@@ -1,3 +1,3 @@
 ## 24x7fpga-website
 
-[https://24x7fpga.com/](www.24x7fpga.com)
+[24x7fpga.com](https://24x7fpga.com/)
