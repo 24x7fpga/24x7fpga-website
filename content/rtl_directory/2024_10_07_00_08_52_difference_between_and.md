@@ -1,6 +1,6 @@
 +++
 title = """
-  Difference between "=" and "=="
+  Difference between "==" and "==="
   """
 author = ["Kiran"]
 date = 2024-10-07T00:08:00-04:00
@@ -46,5 +46,5 @@ NOTE: In synthesizable RTL, it is not advisible to use **===** since it will hid
 
 ## Points to Remember {#points-to-remember}
 
-1.  **==**  : Ignores X and checks for logical equality.
-2.  **===** : Considers X in the comparison and checks for strict equality. It is not considered for synthesizable RTL.
+1.  **==**: Ignores X and checks for logical equality.
+2.  **===**: Considers X in the comparison and checks for strict equality. It is not considered for synthesizable RTL.

@@ -6,10 +6,20 @@
     <description>Recent content in rtl on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Oct 2024 00:08:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 29 Nov 2024 18:17:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/rtl/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>  Difference between &#34;=&#34; and &#34;==&#34;
+      <title>Valid-Ready Protocol</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_11_29_18_17_10_valid_ready_protocol/</link>
+      <pubDate>Fri, 29 Nov 2024 18:17:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_11_29_18_17_10_valid_ready_protocol/</guid>
+      <description>Source &amp;ndash; RTL Design Directory
+The valid-ready protocol is a fundamental handshake mechanism in digital design, commonly used in protocols like AXI. It ensures smooth data flow between a producer (the data source) and a consumer (the data sink), enabling reliable and synchronized communication in hardware systems.
+Figure 1: Valid-Ready Flow Control
+Guidelines The valid and ready signals are integral to many handshaking protocols, ensuring reliable data transfer between components in a digital system.</description>
+    </item>
+    <item>
+      <title>  Difference between &#34;==&#34; and &#34;===&#34;
   </title>
       <link>https://24x7fpga.com/rtl_directory/2024_10_07_00_08_52_difference_between_and/</link>
       <pubDate>Mon, 07 Oct 2024 00:08:00 -0400</pubDate>

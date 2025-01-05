@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>  Difference between &#34;=&#34; and &#34;==&#34;
+<title>  Difference between &#34;==&#34; and &#34;===&#34;
    | Home</title>
 <meta name="keywords" content="rtl">
 <meta name="description" content="Source &ndash; RTL Design Directory
@@ -39,7 +39,7 @@ Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39
 <link rel="stylesheet" href="../../zcustom.css">
 
 
-<meta property="og:title" content="  Difference between &#34;=&#34; and &#34;==&#34;
+<meta property="og:title" content="  Difference between &#34;==&#34; and &#34;===&#34;
   " />
 <meta property="og:description" content="Source &ndash; RTL Design Directory
 In Verilog, == and === are both used for comparison, but they behave differently in how they handle X (unknown).
@@ -51,7 +51,7 @@ Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39
 <meta property="article:modified_time" content="2024-10-07T00:08:00-04:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="  Difference between &#34;=&#34; and &#34;==&#34;
+<meta name="twitter:title" content="  Difference between &#34;==&#34; and &#34;===&#34;
   "/>
 <meta name="twitter:description" content="Source &ndash; RTL Design Directory
 In Verilog, == and === are both used for comparison, but they behave differently in how they handle X (unknown).
@@ -73,7 +73,7 @@ Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "  Difference between \"=\" and \"==\"\n  ",
+      "name": "  Difference between \"==\" and \"===\"\n  ",
       "item": "https://24x7fpga.com/rtl_directory/2024_10_07_00_08_52_difference_between_and/"
     }
   ]
@@ -83,14 +83,14 @@ Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "  Difference between \"=\" and \"==\"\n  ",
-  "name": "  Difference between \u0022=\u0022 and \u0022==\u0022\n  ",
+  "headline": "  Difference between \"==\" and \"===\"\n  ",
+  "name": "  Difference between \u0022==\u0022 and \u0022===\u0022\n  ",
   "description": "Source \u0026ndash; RTL Design Directory\nIn Verilog, == and === are both used for comparison, but they behave differently in how they handle X (unknown).\n== Equality The == operator checks if two values are logically equal. It used for comparisons on only 1\u0026rsquo;s and 0\u0026rsquo;s. If any operand contains an X, the comparison result will be a unknown value.\nExample: 4\u0026#39;b101X == 4\u0026#39;b1011; // Result: x (unknown) 4\u0026#39;b1X00 == 4\u0026#39;b1100; // Result: x (unknown) === Equality The === operator is a strict equality check.",
   "keywords": [
     "rtl"
   ],
-  "articleBody": "Source – RTL Design Directory\nIn Verilog, == and === are both used for comparison, but they behave differently in how they handle X (unknown).\n== Equality The == operator checks if two values are logically equal. It used for comparisons on only 1’s and 0’s. If any operand contains an X, the comparison result will be a unknown value.\nExample: 4'b101X == 4'b1011; // Result: x (unknown) 4'b1X00 == 4'b1100; // Result: x (unknown) === Equality The === operator is a strict equality check. It treats X as don’t-care values. When both RHS and LHS are X’s the results will true (high).\nExample: 4'b101X === 4'b101x; // Result: true 4'bxxxx === 4'bxxxx; // Result: true Here, === treats X as a distinct value, so the comparison returns false if the two values are not strictly equal, including the X bits.\nNOTE: In synthesizable RTL, it is not advisible to use === since it will hide “X” propogations issues.\nPoints to Remember == : Ignores X and checks for logical equality. === : Considers X in the comparison and checks for strict equality. It is not considered for synthesizable RTL. ",
-  "wordCount" : "190",
+  "articleBody": "Source – RTL Design Directory\nIn Verilog, == and === are both used for comparison, but they behave differently in how they handle X (unknown).\n== Equality The == operator checks if two values are logically equal. It used for comparisons on only 1’s and 0’s. If any operand contains an X, the comparison result will be a unknown value.\nExample: 4'b101X == 4'b1011; // Result: x (unknown) 4'b1X00 == 4'b1100; // Result: x (unknown) === Equality The === operator is a strict equality check. It treats X as don’t-care values. When both RHS and LHS are X’s the results will true (high).\nExample: 4'b101X === 4'b101x; // Result: true 4'bxxxx === 4'bxxxx; // Result: true Here, === treats X as a distinct value, so the comparison returns false if the two values are not strictly equal, including the X bits.\nNOTE: In synthesizable RTL, it is not advisible to use === since it will hide “X” propogations issues.\nPoints to Remember ==: Ignores X and checks for logical equality. ===: Considers X in the comparison and checks for strict equality. It is not considered for synthesizable RTL. ",
+  "wordCount" : "188",
   "inLanguage": "en",
   "datePublished": "2024-10-07T00:08:00-04:00",
   "dateModified": "2024-10-07T00:08:00-04:00",
@@ -261,10 +261,10 @@ Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-        Difference between &#34;=&#34; and &#34;==&#34;
+        Difference between &#34;==&#34; and &#34;===&#34;
   
     </h1>
-    <div class="post-meta"><span title='2024-10-07 00:08:00 -0400 EDT'>October 7, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;190 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-10-07 00:08:00 -0400 EDT'>October 7, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;188 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
@@ -284,8 +284,8 @@ Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39
 <p>NOTE: In synthesizable RTL, it is not advisible to use <strong>===</strong> since it will hide &ldquo;X&rdquo; propogations issues.</p>
 <h2 id="points-to-remember">Points to Remember<a hidden class="anchor" aria-hidden="true" href="#points-to-remember">#</a></h2>
 <ol>
-<li><strong>==</strong>  : Ignores X and checks for logical equality.</li>
-<li><strong>===</strong> : Considers X in the comparison and checks for strict equality. It is not considered for synthesizable RTL.</li>
+<li><strong>==</strong>: Ignores X and checks for logical equality.</li>
+<li><strong>===</strong>: Considers X in the comparison and checks for strict equality. It is not considered for synthesizable RTL.</li>
 </ol>
 
 
@@ -312,7 +312,7 @@ Example: 4&#39;b101X == 4&#39;b1011; // Result: x (unknown) 4&#39;b1X00 == 4&#39
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://24x7fpga.com/"></a></span>
+        <span>&copy; 2025 <a href="https://24x7fpga.com/"></a></span>
         
         
 

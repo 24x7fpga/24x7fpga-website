@@ -44,6 +44,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 -   [Mealy Machine and Moore Machine]({{< relref "2024_08_05_16_07_25_mealy_machine_and_moore_machine.md" >}})
 -   [Clock Gating]({{< relref "2024_09_13_12_36_11_clock_gating.md" >}})
 -   [Difference between "==" and "==="]({{< relref "2024_10_07_00_08_52_difference_between_and.md" >}})
+-   [Valid-Ready Protocol]({{< relref "2024_11_29_18_17_10_valid_ready_protocol.md" >}})
 
 
 ## Generic RTL Blocks {#generic-rtl-blocks}
@@ -129,8 +130,3 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 -   [Single Cycle MIPS Design](https://github.com/24x7fpga/MIPsSingleCycle)
 -   Multi Cycle MIPS design
 -   RISC-V Core
-
-
-## FPGA as Accelerator {#fpga-as-accelerator}
-
--   8-pt FFT Accelerator
