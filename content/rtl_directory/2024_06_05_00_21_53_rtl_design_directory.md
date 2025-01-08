@@ -77,6 +77,8 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 
 ## Static Timing Analysis {#static-timing-analysis}
 
+-   [Latch and Flip-Flop]({{< relref "2024_12_21_latch_and_flip_flop.md" >}})
+
 
 ## Clock Domain Crossing {#clock-domain-crossing}
 

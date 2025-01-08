@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>sta on Home</title>
+    <link>https://24x7fpga.com/tags/sta/</link>
+    <description>Recent content in sta on Home</description>
+    <generator>Hugo -- 0.121.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Dec 2024 13:07:00 -0500</lastBuildDate>
+    <atom:link href="https://24x7fpga.com/tags/sta/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Latch and Flip-Flop</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_12_21_latch_and_flip_flop/</link>
+      <pubDate>Sat, 21 Dec 2024 13:07:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_12_21_latch_and_flip_flop/</guid>
+      <description>Source &amp;ndash; RTL Design Directory
+Latchs and Flip-Flops are fundamental digital components used to store information. Both play a critical role in sequential circuits, but they differ in their operation and applications.
+Latch A latch is level-sensitive memory element that stores a single bit of data. It operates based on the state of an enable signal:
+Transparent Mode: When the enable signal is active, the latch allows data to flow through, making it &amp;ldquo;transparent.</description>
+    </item>
+  </channel>
+</rss>
