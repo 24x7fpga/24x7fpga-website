@@ -7,11 +7,10 @@
 <meta name="robots" content="index, follow">
 <title>Divide by X | Home</title>
 <meta name="keywords" content="sv">
-<meta name="description" content="Source &ndash; SV Verification Directory
+<meta name="description" content="Source &ndash; Constraint Challenges &ndash; SV Verification Directory
 Problem Statement Create a constraint to generate an N-bit random number that is divisible by a given natural number X. The value of X is parameterized, allowing it to be easily changed for different test scenarios.
 Problem Breakdown The key idea is to ensure that the random number generated satisfies the condition below:
-\begin{equation} \label{eq.1} NUM \quad \% \quad X == 0 \end{equation}
-The modulus operator (%) plays a key role in checking divisibility.">
+\begin{equation} \label{eq.1} NUM \quad \% \quad X == 0 \end{equation}">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_12_14_divide_by_x/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.52e0c6b907e6faf457675afdd077415881f3ecbbc7a62643d105f99d8fe2a124.css" integrity="sha256-UuDGuQfm&#43;vRXZ1r90HdBWIHz7LvHpiZD0QX5nY/ioSQ=" rel="preload stylesheet" as="style">
@@ -40,11 +39,10 @@ The modulus operator (%) plays a key role in checking divisibility.">
 
 
 <meta property="og:title" content="Divide by X" />
-<meta property="og:description" content="Source &ndash; SV Verification Directory
+<meta property="og:description" content="Source &ndash; Constraint Challenges &ndash; SV Verification Directory
 Problem Statement Create a constraint to generate an N-bit random number that is divisible by a given natural number X. The value of X is parameterized, allowing it to be easily changed for different test scenarios.
 Problem Breakdown The key idea is to ensure that the random number generated satisfies the condition below:
-\begin{equation} \label{eq.1} NUM \quad \% \quad X == 0 \end{equation}
-The modulus operator (%) plays a key role in checking divisibility." />
+\begin{equation} \label{eq.1} NUM \quad \% \quad X == 0 \end{equation}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_12_14_divide_by_x/" /><meta property="article:section" content="sv_directory" />
 <meta property="article:published_time" content="2024-12-14T21:47:00-05:00" />
@@ -52,11 +50,10 @@ The modulus operator (%) plays a key role in checking divisibility." />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Divide by X"/>
-<meta name="twitter:description" content="Source &ndash; SV Verification Directory
+<meta name="twitter:description" content="Source &ndash; Constraint Challenges &ndash; SV Verification Directory
 Problem Statement Create a constraint to generate an N-bit random number that is divisible by a given natural number X. The value of X is parameterized, allowing it to be easily changed for different test scenarios.
 Problem Breakdown The key idea is to ensure that the random number generated satisfies the condition below:
-\begin{equation} \label{eq.1} NUM \quad \% \quad X == 0 \end{equation}
-The modulus operator (%) plays a key role in checking divisibility."/>
+\begin{equation} \label{eq.1} NUM \quad \% \quad X == 0 \end{equation}"/>
 
 
 <script type="application/ld+json">
@@ -85,12 +82,12 @@ The modulus operator (%) plays a key role in checking divisibility."/>
   "@type": "BlogPosting",
   "headline": "Divide by X",
   "name": "Divide by X",
-  "description": "Source \u0026ndash; SV Verification Directory\nProblem Statement Create a constraint to generate an N-bit random number that is divisible by a given natural number X. The value of X is parameterized, allowing it to be easily changed for different test scenarios.\nProblem Breakdown The key idea is to ensure that the random number generated satisfies the condition below:\n\\begin{equation} \\label{eq.1} NUM \\quad \\% \\quad X == 0 \\end{equation}\nThe modulus operator (%) plays a key role in checking divisibility.",
+  "description": "Source \u0026ndash; Constraint Challenges \u0026ndash; SV Verification Directory\nProblem Statement Create a constraint to generate an N-bit random number that is divisible by a given natural number X. The value of X is parameterized, allowing it to be easily changed for different test scenarios.\nProblem Breakdown The key idea is to ensure that the random number generated satisfies the condition below:\n\\begin{equation} \\label{eq.1} NUM \\quad \\% \\quad X == 0 \\end{equation}",
   "keywords": [
     "sv"
   ],
-  "articleBody": "Source – SV Verification Directory\nProblem Statement Create a constraint to generate an N-bit random number that is divisible by a given natural number X. The value of X is parameterized, allowing it to be easily changed for different test scenarios.\nProblem Breakdown The key idea is to ensure that the random number generated satisfies the condition below:\n\\begin{equation} \\label{eq.1} NUM \\quad \\% \\quad X == 0 \\end{equation}\nThe modulus operator (%) plays a key role in checking divisibility. To ensure a number is divisible by X, the remainder when dividing the number (NUM) by X must be zero.\nImplementation class cstrs_challenge #(int X = 5, N = 4); // class properties rand bit [N:0] y; constraint c { y % X == 0; } // display function function void disp(); $display(\"Rand Num = %d\", y); endfunction // disp endclass // cstrs_challenge ",
-  "wordCount" : "142",
+  "articleBody": "Source – Constraint Challenges – SV Verification Directory\nProblem Statement Create a constraint to generate an N-bit random number that is divisible by a given natural number X. The value of X is parameterized, allowing it to be easily changed for different test scenarios.\nProblem Breakdown The key idea is to ensure that the random number generated satisfies the condition below:\n\\begin{equation} \\label{eq.1} NUM \\quad \\% \\quad X == 0 \\end{equation}\nThe modulus operator (%) plays a key role in checking divisibility. To ensure a number is divisible by X, the remainder when dividing the number (NUM) by X must be zero.\nImplementation class cstrs_challenge #(int X = 5, N = 4); // class properties rand bit [N:0] y; constraint c { y % X == 0; } // display function function void disp(); $display(\"Rand Num = %d\", y); endfunction // disp endclass // cstrs_challenge ",
+  "wordCount" : "145",
   "inLanguage": "en",
   "datePublished": "2024-12-14T21:47:00-05:00",
   "dateModified": "2024-12-14T21:47:00-05:00",
@@ -263,11 +260,11 @@ The modulus operator (%) plays a key role in checking divisibility."/>
     <h1 class="post-title entry-hint-parent">
       Divide by X
     </h1>
-    <div class="post-meta"><span title='2024-12-14 21:47:00 -0500 EST'>December 14, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;142 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-12-14 21:47:00 -0500 EST'>December 14, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;145 words&nbsp;·&nbsp;Kiran
 
 </div>
   </header> 
-  <div class="post-content"><p><a href="https://github.com/24x7fpga/SV/tree/main/sv_verification/cstrs_challenges/div_by_X">Source</a> &ndash; <a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/SV/tree/main/sv_verification/cstrs_challenges/div_by_X">Source</a> &ndash; <a href="/sv_directory/2024_11_12_18_40_22_constraint_challenges/">Constraint Challenges</a> &ndash; <a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
 <h2 id="problem-statement">Problem Statement<a hidden class="anchor" aria-hidden="true" href="#problem-statement">#</a></h2>
 <p>Create a constraint to generate an <code>N-bit</code> random number that is divisible by a given natural number <code>X</code>. The value of <code>X</code> is parameterized, allowing it to be easily changed for different test scenarios.</p>
 <h2 id="problem-breakdown">Problem Breakdown<a hidden class="anchor" aria-hidden="true" href="#problem-breakdown">#</a></h2>
