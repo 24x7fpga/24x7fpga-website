@@ -10,12 +10,15 @@ css = "../../zcustom.css"
 [Source](https://github.com/24x7fpga/SV/tree/main/sv_verification/cstrs_challenges/div_by_X) -- [Constraint Challenges]({{< relref "2024_11_12_18_40_22_constraint_challenges.md" >}}) -- [SV Verification Directory]({{< relref "2024_06_27_16_53_00_sv_verification_directory.md" >}})
 
 
-## Problem Statement {#problem-statement}
+##  {#d41d8c}
+
+
+### Problem Statement {#problem-statement}
 
 Create a constraint to generate an `N-bit` random number that is divisible by a given natural number `X`. The value of `X` is parameterized, allowing it to be easily changed for different test scenarios.
 
 
-## Problem Breakdown {#problem-breakdown}
+### Problem Breakdown {#problem-breakdown}
 
 The key idea is to ensure that the random number generated satisfies the condition below:
 
@@ -27,7 +30,7 @@ NUM \quad \\% \quad X == 0
 The modulus operator (%) plays a key role in checking divisibility. To ensure a number is divisible by `X`, the remainder when dividing the number `(NUM)` by `X` must be **zero**.
 
 
-## Implementation {#implementation}
+### Implementation {#implementation}
 
 ```verilog
 class cstrs_challenge #(int X = 5, N = 4);

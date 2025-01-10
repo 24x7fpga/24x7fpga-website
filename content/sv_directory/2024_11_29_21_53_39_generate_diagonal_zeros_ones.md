@@ -10,7 +10,10 @@ css = "../../zcustom.css"
 [Source](https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges/diag_zero) -- [Constraint Challenges]({{< relref "2024_11_12_18_40_22_constraint_challenges.md" >}}) -- [SV Verification Directory]({{< relref "2024_06_27_16_53_00_sv_verification_directory.md" >}})
 
 
-## Problem Statement {#problem-statement}
+##  {#d41d8c}
+
+
+### Problem Statement {#problem-statement}
 
 Write a constraint to generate an N×N matrix where diagonal elements are set to zeros (or ones), while the rest of the matrix can be filled with either random values or a predefined value.
 
