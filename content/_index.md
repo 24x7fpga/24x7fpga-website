@@ -29,4 +29,4 @@ With a strong background in Digital Design, RTL Design, and FPGA Prototyping, I 
 Through these experiences, I have developed a deep passion for crafting efficient digital systems and mentoring others in the field of digital design and verification.
 
 #
-FPGAs are often compared to _LEGO_ blocks where you can build a complex structure using small basic blocks. In my [GitHub](https://github.com/24x7fpga) repositories I present to you some of these basic building blocks (basic designs in verilog/system verilog) that can be used as a foundation for building large and complex systems.
+FPGAs are often compared to _LEGO_ blocks where you can build a complex structure using small basic blocks. In my [GitHub](https://github.com/24x7fpga) repositories I present to you some of these basic building blocks (basic designs in Verilog/SystemVerilog) that can be used as a foundation for building large and complex systems.
