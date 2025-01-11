@@ -2,7 +2,7 @@
 title = "Divide by X"
 author = ["Kiran"]
 date = 2024-12-14T21:47:00-05:00
-tags = ["sv"]
+tags = ["cstr", "sv"]
 draft = false
 css = "../../zcustom.css"
 +++

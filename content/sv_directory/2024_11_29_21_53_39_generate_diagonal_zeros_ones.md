@@ -2,7 +2,7 @@
 title = "Generate Diagonal Zeros/Ones"
 author = ["Kiran"]
 date = 2024-11-29T21:53:00-05:00
-tags = ["sv"]
+tags = ["cstr", "sv"]
 draft = false
 css = "../../zcustom.css"
 +++

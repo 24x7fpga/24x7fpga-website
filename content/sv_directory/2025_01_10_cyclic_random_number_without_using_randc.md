@@ -2,7 +2,7 @@
 title = "Cyclic Random Number Without Using Randc"
 author = ["Kiran"]
 date = 2025-01-10T15:45:00-05:00
-tags = ["sv"]
+tags = ["cstr", "sv"]
 draft = false
 css = "../../zcustom.css"
 +++

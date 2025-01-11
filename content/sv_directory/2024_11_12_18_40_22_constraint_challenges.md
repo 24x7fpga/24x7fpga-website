@@ -2,7 +2,7 @@
 title = "Constraint Challenges"
 author = ["Kiran"]
 date = 2024-11-12T18:40:00-05:00
-tags = ["toc", "sv"]
+tags = ["toc", "cstr", "sv"]
 draft = false
 css = "../../zcustom.css"
 +++
