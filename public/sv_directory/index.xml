@@ -6,8 +6,17 @@
     <description>Recent content in Sv_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jan 2025 15:45:00 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jan 2025 19:30:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/sv_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Random Powers of Two</title>
+      <link>https://24x7fpga.com/sv_directory/2025_01_10_random_powers_of_two/</link>
+      <pubDate>Fri, 10 Jan 2025 19:30:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2025_01_10_random_powers_of_two/</guid>
+      <description>Source &amp;ndash; Constraint Challenges &amp;ndash; SV Verification Directory
+Problem Statement Write a SystemVerilog constraint to generate random numbers that are powers of two. The generated numbers should only include values such as 2, 4, 8, 16, 32, and so on, up to a specified maximum limit. Ensure the constraint restricts randomization to these valid values only and do not use the multiplication operator.
+Problem Breakdown Create an array to hold the numbers that are powers of two.</description>
+    </item>
     <item>
       <title>Cyclic Random Number Without Using Randc</title>
       <link>https://24x7fpga.com/sv_directory/2025_01_10_cyclic_random_number_without_using_randc/</link>

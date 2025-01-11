@@ -32,3 +32,4 @@ Design challenge home page can be found [here](https://github.com/24x7fpga/Syste
 -   [Generate Diagonal Zeros/Ones]({{< relref "2024_11_29_21_53_39_generate_diagonal_zeros_ones.md" >}})
 -   [Divide by X]({{< relref "2024_12_14_divide_by_x.md" >}})
 -   [Cyclic Random Number Without Using Randc]({{< relref "2025_01_10_cyclic_random_number_without_using_randc.md" >}})
+-   [Random Powers of Two]({{< relref "2025_01_10_random_powers_of_two.md" >}})
