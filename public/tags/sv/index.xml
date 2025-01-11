@@ -6,8 +6,17 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Dec 2024 21:47:00 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jan 2025 15:45:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cyclic Random Number Without Using Randc</title>
+      <link>https://24x7fpga.com/sv_directory/2025_01_10_cyclic_random_number_without_using_randc/</link>
+      <pubDate>Fri, 10 Jan 2025 15:45:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2025_01_10_cyclic_random_number_without_using_randc/</guid>
+      <description>Source &amp;ndash; Constraint Challenges &amp;ndash; SV Verification Directory
+Problem Statement Generate a sequence of non-repeating random numbers stored in an array. The solution should ensure that each number appears only once and should cover all possible values in the specified range. Do not use the randc function in SystemVerilog.
+Randc Randc is a built-in command in SystemVerilog designed to generate random variables in a cyclic manner. Unlike standard randomization methods, randc ensures that all possible values within the specified range are generated exactly once before any value repeats.</description>
+    </item>
     <item>
       <title>Divide by X</title>
       <link>https://24x7fpga.com/sv_directory/2024_12_14_divide_by_x/</link>
