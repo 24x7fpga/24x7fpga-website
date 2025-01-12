@@ -6,8 +6,16 @@
     <description>Recent content in sta on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Dec 2024 13:07:00 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 21 Dec 2024 17:41:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sta/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>D Flip-Flop: Operation</title>
+      <link>https://24x7fpga.com/rtl_directory/2024_12_21_d_flip_flop_operation/</link>
+      <pubDate>Sat, 21 Dec 2024 17:41:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2024_12_21_d_flip_flop_operation/</guid>
+      <description>Source &amp;ndash; RTL Design Directory
+A flip-flop, also known as a register, is a fundamental building block in digital circuits used to store a single bit of data. The stored data remains stable until a new input is latched, triggered by an external clock signal. Depending on the design, the data is captured on either the rising edge or falling edge of the clock, making flip-flops essential for synchronizing data in sequential logic circuits.</description>
+    </item>
     <item>
       <title>Latch and Flip-Flop</title>
       <link>https://24x7fpga.com/rtl_directory/2024_12_21_latch_and_flip_flop/</link>
