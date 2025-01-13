@@ -110,7 +110,7 @@
 
 /* about me page : content  */
 .content {
-    /* max-width: 70ch; */ /* caused issues with chome */
+    /* max-width: 70ch; */ /* caused issues with chrome */
     /* margin: 0 auto; */
     text-align: justify;
     line-height: 28px;   /* within paragraph */
