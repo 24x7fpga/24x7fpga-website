@@ -76,7 +76,7 @@ module power3(
  input        clk, start
 );
 
-reg [7:0] X!, X2;
+reg [7:0] X1, X2;
 reg [7:0] Xpower1, Xpower2;
 
 always@(posedge clk)begin
@@ -113,7 +113,7 @@ module power3(
  input        clk, start
 );
 
-reg [7:0] X!, X2;
+reg [7:0] X1, X2;
 reg [7:0] Xpower1, Xpower2;
 
 assign Xpower = Xpower2 * X2;
