@@ -6,8 +6,16 @@
     <description>Recent content in Sv_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jan 2025 19:30:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2025 17:25:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/sv_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scheduling Semantics</title>
+      <link>https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/</link>
+      <pubDate>Tue, 14 Jan 2025 17:25:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/</guid>
+      <description>Source &amp;ndash; SV Verification Directory
+In digital design, it&amp;rsquo;s crucial to ensure that simulations accurately reflect real-time hardware behavior. Interestingly, there are instances where a design performs flawlessly on hardware but fails during simulation. One common culprit behind such discrepancies is a race condition—an issue that arises due to timing mismatches between design modules and the verification environment. Effectively identifying and resolving race conditions is critical, but it is even more important to strive for and master designs that are inherently free of race conditions.</description>
+    </item>
     <item>
       <title>Random Powers of Two</title>
       <link>https://24x7fpga.com/sv_directory/2025_01_10_random_powers_of_two/</link>
@@ -564,7 +572,7 @@ Language Data Type State Type No. of Bits Signed/Unsigned C Equivalent SystemVer
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.
-Automated Workflow in Vivado SV Verification Workflow in Vivado Layered Testbench SV Testbench Overview Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block Randomization $urandom and $urandom_range rand and randc Constraint Randomization Constraint: Inside Operator Constraint: Array Randomization Constraint: Bidirectional and Conditional Constraint: Implication and Equivalence Constraint: Solve-Before Constraint: Weighted Distribution Constraint: In-line and External SV Mastery Challenges Constraint Challenges Verification Examples Half Adder Full Adder Adder Subtractor </description>
+Automated Workflow in Vivado SV Verification Workflow in Vivado Layered Testbench SV Testbench Overview SV Scheduling Semantics Scheduling Semantics Data Types Logic Type Fixed-Size Arrays Packed and Unpacked Array Dynamic Arrays Queues Associative Arrays Array Methods Enumeration Structures Streaming Operator Type Converstion Static Cast Dynamic Cast Flow Control For and Foreach Loops While and Do While Loops Repeat and Forever Break and Continue Tasks and Functions Tasks Functions Process Fork Join Fork Join Any Fork Join None Wait Fork Disable Fork OOP in SV Object-Oriented Programming Class Handle Object Method This Keyword Static Class Properties and Methods Shallow Copy and Deep Copy Four Pillars of OOP Inheritance Super Keyword Virtual Keyword Polymorphism Encapsulation Interprocess Communication Events Mailbox Semaphore Interface Interface Modport Clocking Block Randomization $urandom and $urandom_range rand and randc Constraint Randomization Constraint: Inside Operator Constraint: Array Randomization Constraint: Bidirectional and Conditional Constraint: Implication and Equivalence Constraint: Solve-Before Constraint: Weighted Distribution Constraint: In-line and External SV Mastery Challenges Constraint Challenges Verification Examples Half Adder Full Adder Adder Subtractor </description>
     </item>
   </channel>
 </rss>

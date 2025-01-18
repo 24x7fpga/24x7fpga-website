@@ -6,8 +6,16 @@
     <description>Recent content in sv on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jan 2025 19:30:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2025 17:25:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scheduling Semantics</title>
+      <link>https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/</link>
+      <pubDate>Tue, 14 Jan 2025 17:25:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/</guid>
+      <description>Source &amp;ndash; SV Verification Directory
+In digital design, it&amp;rsquo;s crucial to ensure that simulations accurately reflect real-time hardware behavior. Interestingly, there are instances where a design performs flawlessly on hardware but fails during simulation. One common culprit behind such discrepancies is a race condition—an issue that arises due to timing mismatches between design modules and the verification environment. Effectively identifying and resolving race conditions is critical, but it is even more important to strive for and master designs that are inherently free of race conditions.</description>
+    </item>
     <item>
       <title>Random Powers of Two</title>
       <link>https://24x7fpga.com/sv_directory/2025_01_10_random_powers_of_two/</link>

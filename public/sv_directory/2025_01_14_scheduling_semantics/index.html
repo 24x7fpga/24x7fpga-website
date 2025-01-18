@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Scheduling Semantics | Home</title>
+<meta name="keywords" content="sv">
+<meta name="description" content="Source &ndash; SV Verification Directory
+In digital design, it&rsquo;s crucial to ensure that simulations accurately reflect real-time hardware behavior. Interestingly, there are instances where a design performs flawlessly on hardware but fails during simulation. One common culprit behind such discrepancies is a race condition—an issue that arises due to timing mismatches between design modules and the verification environment. Effectively identifying and resolving race conditions is critical, but it is even more important to strive for and master designs that are inherently free of race conditions.">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+
+<meta property="og:title" content="Scheduling Semantics" />
+<meta property="og:description" content="Source &ndash; SV Verification Directory
+In digital design, it&rsquo;s crucial to ensure that simulations accurately reflect real-time hardware behavior. Interestingly, there are instances where a design performs flawlessly on hardware but fails during simulation. One common culprit behind such discrepancies is a race condition—an issue that arises due to timing mismatches between design modules and the verification environment. Effectively identifying and resolving race conditions is critical, but it is even more important to strive for and master designs that are inherently free of race conditions." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/" /><meta property="article:section" content="sv_directory" />
+<meta property="article:published_time" content="2025-01-14T17:25:00-05:00" />
+<meta property="article:modified_time" content="2025-01-14T17:25:00-05:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Scheduling Semantics"/>
+<meta name="twitter:description" content="Source &ndash; SV Verification Directory
+In digital design, it&rsquo;s crucial to ensure that simulations accurately reflect real-time hardware behavior. Interestingly, there are instances where a design performs flawlessly on hardware but fails during simulation. One common culprit behind such discrepancies is a race condition—an issue that arises due to timing mismatches between design modules and the verification environment. Effectively identifying and resolving race conditions is critical, but it is even more important to strive for and master designs that are inherently free of race conditions."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Sv_directories",
+      "item": "https://24x7fpga.com/sv_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Scheduling Semantics",
+      "item": "https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Scheduling Semantics",
+  "name": "Scheduling Semantics",
+  "description": "Source \u0026ndash; SV Verification Directory\nIn digital design, it\u0026rsquo;s crucial to ensure that simulations accurately reflect real-time hardware behavior. Interestingly, there are instances where a design performs flawlessly on hardware but fails during simulation. One common culprit behind such discrepancies is a race condition—an issue that arises due to timing mismatches between design modules and the verification environment. Effectively identifying and resolving race conditions is critical, but it is even more important to strive for and master designs that are inherently free of race conditions.",
+  "keywords": [
+    "sv"
+  ],
+  "articleBody": "Source – SV Verification Directory\nIn digital design, it’s crucial to ensure that simulations accurately reflect real-time hardware behavior. Interestingly, there are instances where a design performs flawlessly on hardware but fails during simulation. One common culprit behind such discrepancies is a race condition—an issue that arises due to timing mismatches between design modules and the verification environment. Effectively identifying and resolving race conditions is critical, but it is even more important to strive for and master designs that are inherently free of race conditions.\nRace Condition In SystemVerilog, processes or threads run concurrently, with each thread acting as an independent block of code. This concurrent execution is a powerful feature, but it demands careful attention to ensure that the order of execution remains predictable. Without proper control, this can lead to race conditions, where non-deterministic behavior makes debugging and design verification both challenging and error-prone.\nRace Condition: Example To demonstrate an example of a race condition, a simple N-bit adder is implemented. The adder’s inputs are sampled only when arg_vld is high, and the result is valid only when res_vld is high. The complete design example can be found here. The following code snippet highlights a section of the design that can cause simulation discrepancies.\nalways@(posedge clk)begin if(res_vld)begin if(queue.size() == 0)begin $error(\"Failure: Queue Empty ;(\"); $finish; end else begin exp_res \u003c= queue.pop_front(); // Updated in NBA :: Race Condition // exp_res = queue.pop_front(); // Updated in Active :: Correct implementation if(exp_res == res) $display(\"PASS :: Exp_Result = %d and Result = %d\", exp_res, res); else begin $error(\"FAIL :: Exp_Result = %d and Result = %d\", exp_res, res); $finish; end end // else: !if(queue.size() == 0) end // if (res_vld) end From the discussion on Blocking and Non-Blocking Assignment, it’s clear that a common rule of thumb is to use non-blocking assignments \u003c= for sequential logic and blocking assignments = for combinational logic. However, blindly following this rule can sometimes lead to unexpected errors, as seen in the example code above. Understanding when and how to apply these assignments correctly is key to avoiding such issues. Figure 1 illustrates the simulation failure.\nFigure 1: Simulation Failure\nThe simulation waveform is examined to understand where the failure occurs. The waveform is shown in Figure 2. At time 24ns, the arg_vld signal is set high indicating the inputs are valid. The input a and b are zero, therefore, the result should be zero in the next clock cycle.\nThe simulation waveform is analyzed to identify the point of failure, as shown in Figure 2. At 24 ns, the arg_vld signal is set high, indicating that the inputs are valid. The input values, a and b, are both zero; therefore, the expected result in the next clock cycle should also be zero.\nFigure 2: Simulation Waveform Outputs Correct Waveform\nFrom Figure 2, at 32 ns, the res_vld signal is high, indicating that the output is valid. The result value is zero, which aligns with the given inputs. However, as shown in Figure 1, the simulation fails when evaluating an expression to verify the design’s functionality.\nWhile waveforms are useful for verifying smaller designs, they become impractical for larger designs comprising multiple components and IPs. Verifying such complex designs solely through waveforms is extremely challenging.\nIn this case, the simulation fails due to the following main reason:\nThe expression exp_res \u003c= queue.pop_front() is evaluated at a different time than the conditional statement exp_res == res, leading to a race condition. To address and resolve challenges like this, it is essential to understand how SystemVerilog scheduling semantics operate.\nScheduling Semantics Scheduling semantics define how each line of code is evaluated and updated within a single simulation time slot. A time slot in SystemVerilog scheduling semantics refers to a single unit of simulation time. Within each time slot, the simulation is further divided into multiple regions, with each region designated to perform specific tasks such as evaluating, updating, or propagating signals. This subdivision ensures precise control over the order of operations and prevents ambiguity during simulation. Figure 3 illustrates the event regions involved in SystemVerilog scheduling semantics.\nFigure 3: Flow of Execution in a Time Slot\nPreponed Region\nBeginning of a Time Slot: Marks the start of a simulation time slot. Sample Values for Concurrent Assertions: Captures the values required for evaluating concurrent assertions at this point in the simulation. Executed Once Per Time Slot: This step occurs only once during each simulation time slot to ensure accurate assertion evaluation. Active Region\nExecution of module Code: In this region, all blocking and non-blocking assignments within the module are scheduled for execution. Execute all module blocking assignments: This includes processing statements using = for immediate updates. Evaluate the Right-Hand Side (RHS) of all non-blocking assignments and schedule updates into the NBA region: The computed RHS values are stored and scheduled for later updates in the Non-Blocking Assignment (NBA) region. Execute all module continuous assignments: Continuous assignments update assign statements as per the current input signals. Evaluate inputs and update outputs of Verilog primitives: Inputs to primitives (like gates) are evaluated, and outputs are updated accordingly. Execute $display and $finish commands: Simulation-related tasks such as printing messages and ending the simulation are performed here. Note: The active region is used to schedule blocking and non-blocking assignments, as well as tasks or functions called from module code, focusing primarily on RTL activity. To ensure isolation from RTL execution, it is recommended to use the program block for testbench code, as the program block executes in the reactive region.\nIn-Active Region\n#0 Blocking Assignments: These are scheduled in this region. Best Practice: As suggested in [3], it is advised to avoid executing any statements in this region to prevent unintended simulation behavior. NBA Region\nUpdate NBAs: The Left-Hand Side (LHS) of non-blocking assignments, which are evaluated in the active region, are updated in this region. Sequential designs within always blocks should be modeled using non-blocking assignments \u003c= to accurately represent the pipelined behavior of sequential elements. Observed Region\nEvaluate Concurrent Assertions: Concurrent assertions sampled in the Preponed Region are evaluated in this region. The pass/fail decision is then scheduled for execution in the Reactive Region within the same time slot. Reactive Region\nExecute all program blocking assignments: Processes blocking assignments = initiated within program blocks. Execute pass/fail code from concurrent assertions: Handles the outcomes of concurrent assertions evaluated earlier in the time slot. Evaluate the Right-Hand Side (RHS) of program non-blocking assignments: The RHS values of non-blocking assignments \u003c= in program blocks are evaluated and scheduled for updates in the Re-NBA Region. Execute all program continuous assignments: Updates continuous assignments specific to program blocks. Execute $exit and implicit $exit commands: Handles commands that terminate the simulation or program execution. The Reactive Region is dedicated to executing verification processes initiated by program blocks. Positioned near the end of the simulation time slot, this region provides access to crucial information for verification purposes:\nThe current steady-state values from the Active Region at the start of the time slot. The updated steady-state values from the Active Region after clock and signal propagation. The results of all concurrent assertions triggered during this time slot. This sequencing ensures that the verification processes can accurately analyze the design’s behavior within a given simulation cycle.\nRe-Inactive Region\nHandling Events in Verification: This region manages events scheduled by #0 delays in program blocks, commonly used in verification. Safe Usage in Verification: Unlike the Inactive Region in RTL design, which is typically avoided to prevent race conditions, the Re-Inactive Region is safe for verification code and adds control and predictability to simulation behavior. Interaction with Reactive Region: The Re-Inactive Region works in tandem with the Reactive Region in a loop, executing repeatedly until all events in both regions are resolved. This ensures that all verification-related tasks are completed before moving to other parts of the simulation. Re-NBA Region\nExecuting Non-Blocking Assignment Updates: The primary purpose of this region is to update the Left-Hand Side (LHS) variables of non-blocking assignments \u003c= that were scheduled in the Re-Active Region during their evaluation in the Reactive Region. Iterative Operation: This region works in a loop alongside the Reactive and Re-Inactive Regions, ensuring all events within the Reactive Region Set are resolved before proceeding to the next phase of simulation. Postpone Region\nExecute $strobe and $monitor Commands: The main function of this region is to execute $strobe and $monitor commands, which display the final updated values for the current time slot. Functional Coverage Collection: This region is also utilized to collect functional coverage for items that rely on strobe sampling. End of the Time Slot: Marks the conclusion of the current simulation time slot. The Pre and Post regions in the event scheduler are excluded from discussion here for simplicity. These regions are primarily reserved for Programming Language Interface (PLI) commands, which allow simulation tools to interface with external programs such as C/C++. PLI commands are predominantly used for monitoring and debugging purposes in the design process. Some of the commonly used PLI commands are: $display, $monitor, $strobe, $finish, and $stop.\nRace Condition: Resolved Example To resolve the issue that occured in the example simple change the exp_res expression from non-blocking to a blocking statment: exp_res = queue.pop_front(). The code below is snippit of the complete code that is posted here.\nWhen the expression uses a non-blocking assignment (NBA), the exp_res is updated in the NBA Region. The if condition, exp_res == res, is evaluated in the Active Region, which is why the simulation is reported as a failure. When the expression uses a blocking assignment, exp_res is evaluated and updated in the Active Region, and the if statement is also evaluated in the same region. As a result, the simulation does not fail. Although it is recommended to use non-blocking assignments (NBA) for sequential logic inside an always block [4], in this particular case, it should not have been used. always@(posedge clk)begin if(res_vld)begin if(queue.size() == 0)begin $error(\"Failure: Queue Empty ;(\"); $finish; end else begin // exp_res \u003c= queue.pop_front(); // Updated in NBA :: Race Condition exp_res = queue.pop_front(); // Updated in Active :: Correct implementation if(exp_res == res) $display(\"PASS :: Exp_Result = %d and Result = %d\", exp_res, res); else begin $error(\"FAIL :: Exp_Result = %d and Result = %d\", exp_res, res); $finish; end end // else: !if(queue.size() == 0) end // if (res_vld) end The simulation results shown in Figure 4 indicate that after updating the code, no errors are encountered. This highlights the importance of understanding event semantics in SystemVerilog to ensure the correctness of the verification process.\nFigure 4: Resolved Simulation\nUnderstanding scheduling semantics is crucial for streamlining the verification process, as it governs the order of execution of tasks such as evaluating expressions, updating values, executing assertions, and evaluating them during simulation. A clear grasp of how events are scheduled ensures that the design behaves as expected and helps avoid timing-related issues, leading to more efficient and reliable simulations.\nPoints to Remember Active Region: This region is designed to implement the correct RTL functionality, where the actual design logic is evaluated. Preponed, Reactive, and Postponed Regions: These regions are primarily designed to ensure the correct execution of verification tasks. Preponed, Observed, and Reactive Regions: These regions are specifically designed for concurrent assertion checking to validate design behavior in real-time. Inactive Region: This region should be avoided as it can lead to unintended behavior and potential race conditions in the simulation. Reference 1800-2023 - IEEE Standard for SystemVerilog–Unified Hardware Design, Specification, and Verification Language SystemVerilog 3.1a LRM Accellera’s Externions to Verilog SystemVerilog Event Regions, Race Avoidance \u0026 Guidelines Nonblocking Assignments in Verilog Synthesis, Coding Styles That Kills! ",
+  "wordCount" : "1938",
+  "inLanguage": "en",
+  "datePublished": "2025-01-14T17:25:00-05:00",
+  "dateModified": "2025-01-14T17:25:00-05:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 15"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
+
+
+<script src="https://24x7fpga.com/js/mathjax-config.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Scheduling Semantics
+    </h1>
+    <div class="post-meta"><span title='2025-01-14 17:25:00 -0500 EST'>January 14, 2025</span>&nbsp;·&nbsp;10 min&nbsp;·&nbsp;1938 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="https://github.com/24x7fpga/RTL/tree/master/rtl_designs/race_condition">Source</a> &ndash; <a href="/sv_directory/2024_06_27_16_53_00_sv_verification_directory/">SV Verification Directory</a></p>
+<h2 id="d41d8c"><a hidden class="anchor" aria-hidden="true" href="#d41d8c">#</a></h2>
+<p>In digital design, it&rsquo;s crucial to ensure that simulations accurately reflect real-time hardware behavior. Interestingly, there are instances where a design performs flawlessly on hardware but fails during simulation. One common culprit behind such discrepancies is a race condition—an issue that arises due to timing mismatches between design modules and the verification environment. Effectively identifying and resolving race conditions is critical, but it is even more important to strive for and master designs that are inherently free of race conditions.</p>
+<h3 id="race-condition">Race Condition<a hidden class="anchor" aria-hidden="true" href="#race-condition">#</a></h3>
+<p>In SystemVerilog, processes or threads run concurrently, with each thread acting as an independent block of code. This concurrent execution is a powerful feature, but it demands careful attention to ensure that the order of execution remains predictable. Without proper control, this can lead to race conditions, where non-deterministic behavior makes debugging and design verification both challenging and error-prone.</p>
+<h4 id="race-condition-example">Race Condition: Example<a hidden class="anchor" aria-hidden="true" href="#race-condition-example">#</a></h4>
+<p>To demonstrate an example of a race condition, a simple N-bit adder is implemented. The adder&rsquo;s inputs are sampled only when <code>arg_vld</code> is high, and the result is valid only when <code>res_vld</code> is high. The complete design example can be found <a href="https://github.com/24x7fpga/RTL/blob/master/rtl_designs/race_condition/interface.sv">here</a>. The following code snippet highlights a section of the design that can cause simulation discrepancies.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">always</span>@(<span style="color:#66d9ef">posedge</span> clk)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">if</span>(res_vld)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span>(queue.size() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>         $error(<span style="color:#e6db74">&#34;Failure: Queue Empty ;(&#34;</span>);
+</span></span><span style="display:flex;"><span>         $finish;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>         exp_res <span style="color:#f92672">&lt;=</span> queue.pop_front(); <span style="color:#75715e">// Updated in NBA :: Race Condition
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>         <span style="color:#75715e">//   exp_res  = queue.pop_front(); // Updated in Active :: Correct implementation
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>         <span style="color:#66d9ef">if</span>(exp_res <span style="color:#f92672">==</span> res)
+</span></span><span style="display:flex;"><span>           $display(<span style="color:#e6db74">&#34;PASS :: Exp_Result = %d and Result = %d&#34;</span>, exp_res, res);
+</span></span><span style="display:flex;"><span>         <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>            $error(<span style="color:#e6db74">&#34;FAIL :: Exp_Result = %d and Result = %d&#34;</span>, exp_res, res);
+</span></span><span style="display:flex;"><span>            $finish;
+</span></span><span style="display:flex;"><span>         <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">end</span> <span style="color:#75715e">// else: !if(queue.size() == 0)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">end</span> <span style="color:#75715e">// if (res_vld)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>From the discussion on <a href="/rtl_directory/2024_07_26_17_10_23_blocking_and_non_blocking_assignment/">Blocking and Non-Blocking Assignment</a>, it’s clear that a common rule of thumb is to use non-blocking assignments <code>&lt;=</code> for sequential logic and blocking assignments <code>=</code> for combinational logic. However, blindly following this rule can sometimes lead to unexpected errors, as seen in the example code above. Understanding when and how to apply these assignments correctly is key to avoiding such issues. Figure 1 illustrates the simulation failure.</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/result.png"
+         alt="Figure 1: Simulation Failure"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 1: <!-- raw HTML omitted -->Simulation Failure</p>
+        </figcaption>
+</figure>
+
+<p>The simulation waveform is examined to understand where the failure occurs. The waveform is shown in Figure 2. At time 24ns, the <code>arg_vld</code> signal is set high indicating the inputs are valid. The input <code>a</code> and <code>b</code> are zero, therefore, the result should be zero in the next clock cycle.</p>
+<p>The simulation waveform is analyzed to identify the point of failure, as shown in Figure 2. At 24 ns, the <code>arg_vld</code> signal is set high, indicating that the inputs are valid. The input values, <code>a</code> and <code>b</code>, are both zero; therefore, the expected result in the next clock cycle should also be zero.</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/sim.png"
+         alt="Figure 2: Simulation Waveform Outputs Correct Waveform"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 2: <!-- raw HTML omitted -->Simulation Waveform Outputs Correct Waveform</p>
+        </figcaption>
+</figure>
+
+<p>From Figure 2, at 32 ns, the <code>res_vld</code> signal is high, indicating that the output is valid. The result value is zero, which aligns with the given inputs. However, as shown in Figure 1, the simulation fails when evaluating an expression to verify the design&rsquo;s functionality.</p>
+<p>While waveforms are useful for verifying smaller designs, they become impractical for larger designs comprising multiple components and IPs. Verifying such complex designs solely through waveforms is extremely challenging.</p>
+<p>In this case, the simulation fails due to the following main reason:</p>
+<ul>
+<li>The expression <strong>exp_res &lt;= queue.pop_front()</strong> is evaluated at a different time than the conditional statement <strong>exp_res == res</strong>, leading to a race condition.</li>
+</ul>
+<p>To address and resolve challenges like this, it is essential to understand how SystemVerilog scheduling semantics operate.</p>
+<h3 id="scheduling-semantics">Scheduling Semantics<a hidden class="anchor" aria-hidden="true" href="#scheduling-semantics">#</a></h3>
+<p>Scheduling semantics define how each line of code is evaluated and updated within a single simulation <code>time slot</code>. A <code>time slot</code> in SystemVerilog scheduling semantics refers to a single unit of simulation time. Within each <code>time slot</code>, the simulation is further divided into multiple regions, with each region designated to perform specific tasks such as evaluating, updating, or propagating signals. This subdivision ensures precise control over the order of operations and prevents ambiguity during simulation. Figure 3 illustrates the event regions involved in SystemVerilog scheduling semantics.</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/event_regions.svg"
+         alt="Figure 3: Flow of Execution in a Time Slot"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 3: <!-- raw HTML omitted -->Flow of Execution in a Time Slot</p>
+        </figcaption>
+</figure>
+
+<ul>
+<li>
+<p><strong>Preponed Region</strong></p>
+<ul>
+<li>Beginning of a Time Slot: Marks the start of a simulation time slot.</li>
+<li>Sample Values for Concurrent Assertions: Captures the values required for evaluating concurrent assertions at this point in the simulation.</li>
+<li>Executed Once Per Time Slot: This step occurs only once during each simulation time slot to ensure accurate assertion evaluation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Active Region</strong></p>
+<ul>
+<li>Execution of <code>module</code> Code: In this region, all blocking and non-blocking assignments within the module are scheduled for execution.</li>
+<li>Execute all module blocking assignments: This includes processing statements using <code>=</code> for immediate updates.</li>
+<li>Evaluate the Right-Hand Side (RHS) of all non-blocking assignments and schedule updates into the NBA region: The computed RHS values are stored and scheduled for later updates in the Non-Blocking Assignment (NBA) region.</li>
+<li>Execute all module continuous assignments: Continuous assignments update <code>assign</code> statements as per the current input signals.</li>
+<li>Evaluate inputs and update outputs of Verilog primitives: Inputs to primitives (like gates) are evaluated, and outputs are updated accordingly.</li>
+<li>Execute <code>$display</code> and <code>$finish</code> commands: Simulation-related tasks such as printing messages and ending the simulation are performed here.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Note</strong>: The <em>active region</em> is used to schedule blocking and non-blocking assignments, as well as tasks or functions called from module code, focusing primarily on RTL activity. To ensure isolation from RTL execution, it is recommended to use the <code>program</code> block for testbench code, as the <code>program</code> block executes in the <em>reactive region</em>.</p>
+<ul>
+<li>
+<p><strong>In-Active Region</strong></p>
+<ul>
+<li>#0 Blocking Assignments: These are scheduled in this region.</li>
+<li>Best Practice: As suggested in [3], it is advised to avoid executing any statements in this region to prevent unintended simulation behavior.</li>
+</ul>
+</li>
+<li>
+<p><strong>NBA Region</strong></p>
+<ul>
+<li>Update NBAs: The Left-Hand Side (LHS) of non-blocking assignments, which are evaluated in the active region, are updated in this region. Sequential designs within <code>always</code> blocks should be modeled using non-blocking assignments <code>&lt;=</code> to accurately represent the pipelined behavior of sequential elements.</li>
+</ul>
+</li>
+<li>
+<p><strong>Observed Region</strong></p>
+<ul>
+<li>Evaluate Concurrent Assertions: Concurrent assertions sampled in the Preponed Region are evaluated in this region. The pass/fail decision is then scheduled for execution in the <strong>Reactive Region</strong> within the same time slot.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reactive Region</strong></p>
+<ul>
+<li>Execute all program blocking assignments: Processes blocking assignments <code>=</code> initiated within program blocks.</li>
+<li>Execute pass/fail code from concurrent assertions: Handles the outcomes of concurrent assertions evaluated earlier in the time slot.</li>
+<li>Evaluate the Right-Hand Side (RHS) of program non-blocking assignments: The RHS values of non-blocking assignments <code>&lt;=</code> in program blocks are evaluated and scheduled for updates in the Re-NBA Region.</li>
+<li>Execute all program continuous assignments: Updates continuous assignments specific to program blocks.</li>
+<li>Execute <code>$exit</code> and implicit <code>$exit</code> commands: Handles commands that terminate the simulation or program execution.</li>
+</ul>
+</li>
+</ul>
+<p>The <strong>Reactive Region</strong> is dedicated to executing verification processes initiated by program blocks. Positioned near the end of the simulation time slot, this region provides access to crucial information for verification purposes:</p>
+<ol>
+<li>The current steady-state values from the <strong>Active Region</strong> at the start of the time slot.</li>
+<li>The updated steady-state values from the <strong>Active Region</strong> after clock and signal propagation.</li>
+<li>The results of all concurrent assertions triggered during this time slot.</li>
+</ol>
+<p>This sequencing ensures that the verification processes can accurately analyze the design&rsquo;s behavior within a given simulation cycle.</p>
+<ul>
+<li>
+<p><strong>Re-Inactive Region</strong></p>
+<ul>
+<li>Handling Events in Verification: This region manages events scheduled by #0 delays in program blocks, commonly used in verification.</li>
+<li>Safe Usage in Verification: Unlike the <strong>Inactive Region</strong> in RTL design, which is typically avoided to prevent race conditions, the <strong>Re-Inactive Region</strong> is safe for verification code and adds control and predictability to simulation behavior.</li>
+<li>Interaction with Reactive Region: The <strong>Re-Inactive Region</strong> works in tandem with the <strong>Reactive Region</strong> in a loop, executing repeatedly until all events in both regions are resolved. This ensures that all verification-related tasks are completed before moving to other parts of the simulation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Re-NBA Region</strong></p>
+<ul>
+<li>Executing Non-Blocking Assignment Updates: The primary purpose of this region is to update the Left-Hand Side (LHS) variables of non-blocking assignments <code>&lt;=</code> that were scheduled in the <strong>Re-Active Region</strong> during their evaluation in the Reactive Region.</li>
+<li>Iterative Operation: This region works in a loop alongside the <strong>Reactive</strong> and <strong>Re-Inactive Regions</strong>, ensuring all events within the Reactive Region Set are resolved before proceeding to the next phase of simulation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Postpone Region</strong></p>
+<ul>
+<li>Execute $strobe and $monitor Commands: The main function of this region is to execute $strobe and $monitor commands, which display the final updated values for the current time slot.</li>
+<li>Functional Coverage Collection: This region is also utilized to collect functional coverage for items that rely on strobe sampling.</li>
+<li>End of the Time Slot: Marks the conclusion of the current simulation time slot.</li>
+</ul>
+</li>
+</ul>
+<h2 id="d41d8c"><a hidden class="anchor" aria-hidden="true" href="#d41d8c">#</a></h2>
+<p>The <code>Pre</code> and <code>Post</code> regions in the event scheduler are excluded from discussion here for simplicity. These regions are primarily reserved for Programming Language Interface (PLI) commands, which allow simulation tools to interface with external programs such as C/C++. PLI commands are predominantly used for monitoring and debugging purposes in the design process. Some of the commonly used PLI commands are: <code>$display</code>, <code>$monitor</code>, <code>$strobe</code>, <code>$finish</code>, and <code>$stop</code>.</p>
+<h4 id="race-condition-resolved-example">Race Condition: Resolved Example<a hidden class="anchor" aria-hidden="true" href="#race-condition-resolved-example">#</a></h4>
+<p>To resolve the issue that occured in the example simple change the <strong>exp_res</strong> expression from non-blocking to a blocking statment: <strong>exp_res = queue.pop_front()</strong>. The code below is snippit of the complete code that is posted <a href="https://github.com/24x7fpga/RTL/blob/master/rtl_designs/race_condition/interface.sv">here</a>.</p>
+<ul>
+<li>When the expression uses a non-blocking assignment (NBA), the <strong>exp_res</strong> is updated in the NBA Region.</li>
+<li>The <em>if condition</em>, <strong>exp_res == res</strong>, is evaluated in the Active Region, which is why the simulation is reported as a failure.</li>
+<li>When the expression uses a blocking assignment, <strong>exp_res</strong> is evaluated and updated in the Active Region, and the if statement is also evaluated in the same region. As a result, the simulation does not fail.</li>
+<li>Although it is recommended to use non-blocking assignments (NBA) for sequential logic inside an always block [4], in this particular case, it should not have been used.</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">always</span>@(<span style="color:#66d9ef">posedge</span> clk)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">if</span>(res_vld)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span>(queue.size() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)<span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>         $error(<span style="color:#e6db74">&#34;Failure: Queue Empty ;(&#34;</span>);
+</span></span><span style="display:flex;"><span>         $finish;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#75715e">// exp_res &lt;= queue.pop_front(); // Updated in NBA :: Race Condition
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            exp_res  <span style="color:#f92672">=</span> queue.pop_front(); <span style="color:#75715e">// Updated in Active :: Correct implementation
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>         <span style="color:#66d9ef">if</span>(exp_res <span style="color:#f92672">==</span> res)
+</span></span><span style="display:flex;"><span>           $display(<span style="color:#e6db74">&#34;PASS :: Exp_Result = %d and Result = %d&#34;</span>, exp_res, res);
+</span></span><span style="display:flex;"><span>         <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>            $error(<span style="color:#e6db74">&#34;FAIL :: Exp_Result = %d and Result = %d&#34;</span>, exp_res, res);
+</span></span><span style="display:flex;"><span>            $finish;
+</span></span><span style="display:flex;"><span>         <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">end</span> <span style="color:#75715e">// else: !if(queue.size() == 0)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">end</span> <span style="color:#75715e">// if (res_vld)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>The simulation results shown in Figure 4 indicate that after updating the code, no errors are encountered. This highlights the importance of understanding event semantics in SystemVerilog to ensure the correctness of the verification process.</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/resolved_sim.png"
+         alt="Figure 4: Resolved Simulation"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 4: <!-- raw HTML omitted -->Resolved Simulation</p>
+        </figcaption>
+</figure>
+
+<h2 id="d41d8c"><a hidden class="anchor" aria-hidden="true" href="#d41d8c">#</a></h2>
+<p>Understanding scheduling semantics is crucial for streamlining the verification process, as it governs the order of execution of tasks such as evaluating expressions, updating values, executing assertions, and evaluating them during simulation. A clear grasp of how events are scheduled ensures that the design behaves as expected and helps avoid timing-related issues, leading to more efficient and reliable simulations.</p>
+<h3 id="points-to-remember">Points to Remember<a hidden class="anchor" aria-hidden="true" href="#points-to-remember">#</a></h3>
+<ul>
+<li><strong>Active Region</strong>: This region is designed to <code>implement the correct RTL functionality</code>, where the actual design logic is evaluated.</li>
+<li><strong>Preponed, Reactive, and Postponed Regions</strong>: These regions are primarily designed to ensure <code>the correct execution of verification tasks</code>.</li>
+<li><strong>Preponed, Observed, and Reactive Regions</strong>: These regions are specifically designed for <code>concurrent assertion checking</code> to validate design behavior in real-time.</li>
+<li><strong>Inactive Region</strong>: This region should be avoided as it can lead to unintended behavior and potential race conditions in the simulation.</li>
+</ul>
+<h4 id="reference">Reference<a hidden class="anchor" aria-hidden="true" href="#reference">#</a></h4>
+<ol>
+<li><a href="https://ieeexplore.ieee.org/document/10458102/versions#versions">1800-2023 - IEEE Standard for SystemVerilog&ndash;Unified Hardware Design, Specification, and Verification Language</a></li>
+<li><a href="https://ece.uah.edu/~gaede/cpe526/SystemVerilog_3.1a.pdf">SystemVerilog 3.1a LRM Accellera&rsquo;s Externions to Verilog</a></li>
+<li><a href="http://www.sunburst-design.com/papers/CummingsSNUG2006Boston_SystemVerilog_Events.pdf">SystemVerilog Event Regions, Race Avoidance &amp; Guidelines</a></li>
+<li><a href="http://www.sunburst-design.com/papers/CummingsSNUG2000SJ_NBA.pdf">Nonblocking Assignments in Verilog Synthesis, Coding Styles That Kills!</a></li>
+</ol>
+
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://24x7fpga.com/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
