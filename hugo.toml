@@ -114,6 +114,13 @@ theme = "iMix"
 #    url        = "research/2024_07_08_10_15_40_research"
 #    weight     = 20
 
+
+#  [[menu.main]]
+#    #identifier = "ams"
+#    name        = "ams"
+#    url         = "ams_directory/" 
+#    weight      = 20
+
   [[menu.main]]
     #identifier = "rtl"
     name        = "rtl"
