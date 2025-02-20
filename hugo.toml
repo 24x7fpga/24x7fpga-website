@@ -115,11 +115,11 @@ theme = "iMix"
 #    weight     = 20
 
 
-  [[menu.main]]
-    #identifier = "risc-v"
-    name        = "risc-v"
-    url         = "riscv_directory/2025_02_14_risc_v_directory"
-    weight      = 20
+#  [[menu.main]]
+#    #identifier = "risc-v"
+#    name        = "risc-v"
+#    url         = "riscv_directory/2025_02_14_risc_v_directory"
+#    weight      = 20
 
   [[menu.main]]
     #identifier = "rtl"
