@@ -511,7 +511,7 @@ git remote show origin </description>
       <guid>https://24x7fpga.com/sv_directory/2024_07_29_12_16_52_super_keyword/</guid>
       <description>Source &amp;ndash; SV Verification Directory
 Super Keyword The super keyword is useful for accessing the properties and methods of a parent class without needing to declare a parent class handle. It consistently refers to the immediate parent class.
-By default, SystemVerilog complier calls super.new() function calls automatically from extende class.
+By default, SystemVerilog complier calls super.new() function call automatically from the extended class.
 When the class method require input arguments, the the user has to call super.new{arguments} explicitly.
 Note: super.super.{class_member} is not allowed to access multilevel inheritance.</description>
     </item>
