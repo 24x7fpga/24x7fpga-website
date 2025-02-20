@@ -73,6 +73,20 @@ In this example:
 Note: Among the UVM reporting macros, only `uvm_info` includes the verbosity argument. The other three macros: `uvm_warning`, `uvm_error`, and `uvm_fatal` do not have this argument. These macros report messages of fixed severity, meaning they do not rely on verbosity settings to filter or display the message.
 
 
+## UVM_TOP {#uvm-top}
+
+The `uvm_top` is the name of the static class variable that is present inside the `uvm_pkg`. It holds a handle to the `uvm_root`. It can be used to change the default verbosity level.
+
+
+#### Example {#example}
+
+The default verbosity is changed from _medium_ to _low_.
+
+```nil
+uvm_top.set_report_verbosity_level(UVM_LOW);
+```
+
+
 ## Reference {#reference}
 
 1.  [Universal Verification Methodology (UVM) 1.1 Class Reference](https://accellera.org/images/downloads/standards/uvm/UVM_1.1_Class_Reference_Final_06062011.pdf)
