@@ -82,7 +82,7 @@ The `uvm_top` is the name of the static class variable that is present inside th
 
 The default verbosity is changed from _medium_ to _low_.
 
-```nil
+```systemverilog
 uvm_top.set_report_verbosity_level(UVM_LOW);
 ```
 
