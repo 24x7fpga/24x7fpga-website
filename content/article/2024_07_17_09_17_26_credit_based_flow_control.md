@@ -7,6 +7,8 @@ draft = false
 css = "../../zcustom.css"
 +++
 
+[Published Article](https://verilog-meetup.com/2025/02/11/credit-based-flow-control/)
+
 Flow control is a crucial synchronization technique for data transmission. It ensures the efficient flow of data between the transmitter and the receiver by maintaining a balance between the data production rate of the sender and the data consumption rate of the receiver. The data that is being transmitted is buffered to maintain the balance between the transmitter and the receiver. The control mechanism holds the intermediate data in the buffer until the receiver is ready to process the data. The most commonly implemented control mechanism in hardware is "Valid/Ready Handshake Protocol", where the sender asserts a "valid" signal when the data is ready to be transmitted, the receiver asserts a "ready" signal when it is ready to receive data, data transfer occurs only when both valid and ready signals are asserted. This mechanism was studied in detail in a pipeline design example in [A Case Study on Effective Pipeline Design in Digital Systems]({{< relref "2024_06_18_16_45_29_a_case_study_on_effective_pipeline_design_in_digital_systems.md" >}}). Here, we will look at a flow control mechanism that is mostly implemented in Network-on-Chips (NoCs) called credit-based flow control.
 
 
