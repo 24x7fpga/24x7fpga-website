@@ -13,7 +13,7 @@
       <link>https://24x7fpga.com/vim_directory/2024_11_05_15_21_27_adding_and_removing_text_in_mulitple_lines_in_vim/</link>
       <pubDate>Tue, 05 Nov 2024 15:21:00 -0500</pubDate>
       <guid>https://24x7fpga.com/vim_directory/2024_11_05_15_21_27_adding_and_removing_text_in_mulitple_lines_in_vim/</guid>
-      <description>Adding Text at the Beginning of Multiple Lines Go the line you want to select the text. Press V (upppercase V) to state Visual line mode. Select multiple line using arrow or j/k keys. Press : after selecting the desired lines. This will open the line range command :&#39;&amp;lt;,&#39;&amp;gt;. Type s/^/&amp;lt;text&amp;gt;/, where &amp;ldquo;&amp;lt;text&amp;gt;&amp;rdquo; is the text you want to add at the beginning of each fo the selected lines. (^) indicats the will be added to the beginning of the line.</description>
+      <description>Adding Text at the Beginning of Multiple Lines Go the line you want to select the text. Press V (upppercase V) to state Visual line mode. Select multiple line using arrow or j/k keys. Press : after selecting the desired lines. This will open the line range command :&#39;&amp;lt;,&#39;&amp;gt;. Type s/^/&amp;lt;text&amp;gt;/, where &amp;ldquo;&amp;lt;text&amp;gt;&amp;rdquo; is the text you want to add at the beginning of each fo the selected lines. (^) indicates the will be added to the beginning of the line.</description>
     </item>
     <item>
       <title>Redo In Vim</title>
