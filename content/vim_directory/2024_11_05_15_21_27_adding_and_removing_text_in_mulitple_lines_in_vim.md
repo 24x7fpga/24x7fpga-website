@@ -13,7 +13,7 @@ css = "../../zcustom.css"
 -   Press **V** (upppercase `V`) to state Visual line mode.
 -   Select multiple line using arrow or j/k keys.
 -   Press `:` after selecting the desired lines. This will open the line range command `:'<,'>`.
--   Type `s/^/<text>/`, where "&lt;text&gt;" is the text you want to add at the beginning of each fo the selected lines. `(^)` indicats the will be added to the beginning of the line.
+-   Type `s/^/<text>/`, where "&lt;text&gt;" is the text you want to add at the beginning of each fo the selected lines. `(^)` indicates the will be added to the beginning of the line.
 
 
 #### Example 1: Add text to the selected lines {#example-1-add-text-to-the-selected-lines}
