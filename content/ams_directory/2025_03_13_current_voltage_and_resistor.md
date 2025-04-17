@@ -7,14 +7,9 @@ draft = false
 css = "../../zcustom.css"
 +++
 
+## Current {#current}
 
-
-##  {#d41d8c}
-
-
-### Current {#current}
-
-Current occurs when electic charge (Q) flows thorugh a wire. The current passing thorugh the wire can be given as the amount of charge **Q** passing through a wire in a given time **t**.
+Current occurs when electic charge (Q) flows through a wire. The current passing through the wire can be given as the amount of charge **Q** passing through a wire in a given time **t**.
 
 The general definition of current is given as the rate at which the charge passes through a wire.
 
@@ -32,7 +27,7 @@ where:
 Current is measured in _amperes (A)_ and charge is represented as _coulomb Q_.
 
 
-#### Points to Remember {#points-to-remember}
+### Points to Remember {#points-to-remember}
 
 1.  Each current has a value and a direction
 2.  In an open circuit the current is zero.
@@ -52,24 +47,24 @@ where:
 This describes the that the amount of charge in time T is defined as the area under the curve.
 
 
-### Voltage {#voltage}
+## Voltage {#voltage}
 
 Voltage is the potential difference between two points **A** and **B**, it the measure of amount of energy required to move a positive unit charge from point **A** to point **B** in an electrial circuit.
 
 
-#### Points to Remember {#points-to-remember}
+### Points to Remember {#points-to-remember}
 
 1.  A voltage has a value and sign.
 2.  A voltage diffenerce exists only between two points/nodes.
 3.  Votage is zero in a short circuit.
 
 
-### Resistor {#resistor}
+## Resistor {#resistor}
 
-A resistor is passive electonic elements that obsrtucts the flow is current. A resistor dissipates electical energy in the form of heat (passive) unlike active elements that amplify the energy, e.g., transistors and op-amps.
+A resistor is passive electonic elements that obstructs the flow is current. A resistor dissipates electical energy in the form of heat (passive) unlike active elements that amplify the energy, e.g., transistors and op-amps.
 
 
-### Ohm's Law {#ohm-s-law}
+## Ohm's Law {#ohm-s-law}
 
 Ohm’s Law is one of the most fundamental principles in electrical engineering, describing the relationship between voltage (V), current (I), and resistance (R). It states that the voltage across a resistor is directly proportional to the current flowing through it, given by the equation:
 
