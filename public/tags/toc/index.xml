@@ -6,8 +6,18 @@
     <description>Recent content in toc on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Nov 2024 18:40:00 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 14 Feb 2025 14:45:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/toc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RISC-V Directory</title>
+      <link>https://24x7fpga.com/riscv_directory/2025_02_14_risc_v_directory/</link>
+      <pubDate>Fri, 14 Feb 2025 14:45:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/riscv_directory/2025_02_14_risc_v_directory/</guid>
+      <description>This directory explores the fundamentals of microarchitecture design, with the ultimate goal of developing a RISC-V core for FPGA implementation. Here, you&amp;rsquo;ll find insights into processor design, pipeline architecture, and the steps involved in bringing a custom RISC-V core to life on an FPGA.
+Figure 1: RISC-V Instruction Set
+Digital Design and Computer Architecture RISC-V Edition
+My Workflow RISC-V Simulator Theory Assembly Language RISC-V Register Set Instruction Set R-Type I-Type S-Type B-Type U-Type J-Type Single Cycle Microarchitecture Overview Data Path Control Path Design Trade-offs </description>
+    </item>
     <item>
       <title>Constraint Challenges</title>
       <link>https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/</link>

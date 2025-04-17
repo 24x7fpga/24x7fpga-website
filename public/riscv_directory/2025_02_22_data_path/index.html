@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Path | Home</title>
+<meta name="keywords" content="riscv">
+<meta name="description" content="Let&rsquo;s begin by constructing the data path to establish the flow of data. We&rsquo;ll start with a simple instruction, analyze its requirements, and gradually build upon it to develop a more comprehensive understanding.
+addi x5, zero, 6 addi x6, zero, 7 add x7, x5, x6 The hexadecimal format of the above instruction are stored in a memory file that will be read during program execution.
+00600293 // addi x5 x0 6 00700313 // addi x6 x0 7 006283b3 // add x7 x5 x6 Instruction Fetch Every instruction typically follows these two fundamental steps:">
+<meta name="author" content="Kiran">
+<link rel="canonical" href="https://24x7fpga.com/riscv_directory/2025_02_22_data_path/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+
+<meta property="og:title" content="Data Path" />
+<meta property="og:description" content="Let&rsquo;s begin by constructing the data path to establish the flow of data. We&rsquo;ll start with a simple instruction, analyze its requirements, and gradually build upon it to develop a more comprehensive understanding.
+addi x5, zero, 6 addi x6, zero, 7 add x7, x5, x6 The hexadecimal format of the above instruction are stored in a memory file that will be read during program execution.
+00600293 // addi x5 x0 6 00700313 // addi x6 x0 7 006283b3 // add x7 x5 x6 Instruction Fetch Every instruction typically follows these two fundamental steps:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/riscv_directory/2025_02_22_data_path/" /><meta property="article:section" content="riscv_directory" />
+<meta property="article:published_time" content="2025-02-22T15:23:00-05:00" />
+<meta property="article:modified_time" content="2025-02-22T15:23:00-05:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Data Path"/>
+<meta name="twitter:description" content="Let&rsquo;s begin by constructing the data path to establish the flow of data. We&rsquo;ll start with a simple instruction, analyze its requirements, and gradually build upon it to develop a more comprehensive understanding.
+addi x5, zero, 6 addi x6, zero, 7 add x7, x5, x6 The hexadecimal format of the above instruction are stored in a memory file that will be read during program execution.
+00600293 // addi x5 x0 6 00700313 // addi x6 x0 7 006283b3 // add x7 x5 x6 Instruction Fetch Every instruction typically follows these two fundamental steps:"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Riscv_directories",
+      "item": "https://24x7fpga.com/riscv_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Data Path",
+      "item": "https://24x7fpga.com/riscv_directory/2025_02_22_data_path/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Data Path",
+  "name": "Data Path",
+  "description": "Let\u0026rsquo;s begin by constructing the data path to establish the flow of data. We\u0026rsquo;ll start with a simple instruction, analyze its requirements, and gradually build upon it to develop a more comprehensive understanding.\naddi x5, zero, 6 addi x6, zero, 7 add x7, x5, x6 The hexadecimal format of the above instruction are stored in a memory file that will be read during program execution.\n00600293 // addi x5 x0 6 00700313 // addi x6 x0 7 006283b3 // add x7 x5 x6 Instruction Fetch Every instruction typically follows these two fundamental steps:",
+  "keywords": [
+    "riscv"
+  ],
+  "articleBody": " Let’s begin by constructing the data path to establish the flow of data. We’ll start with a simple instruction, analyze its requirements, and gradually build upon it to develop a more comprehensive understanding.\naddi x5, zero, 6 addi x6, zero, 7 add x7, x5, x6 The hexadecimal format of the above instruction are stored in a memory file that will be read during program execution.\n00600293 // addi x5 x0 6 00700313 // addi x6 x0 7 006283b3 // add x7 x5 x6 Instruction Fetch Every instruction typically follows these two fundamental steps:\nInstruction Fetch – The Program Counter points to the instruction memory from where the instruction are fetched. Register Read – Based on the instruction fields, one or two registers are selected and read from the register file. Figure 1: Instruction fetch\nProgram Counter The Program Counter (PC) increments by 4 in every clock cycle, as instructions are typically word-aligned in memory. However, since the memory file instr.mem stores instructions sequentially, the verilog design may increment the PC by 1 instead. It is important to understand that, in reality, the actual PC progression follows an increment of 4 to maintain proper instruction addressing.\nmodule program_counter (/*AUTOARG*/ // Outputs pc, // Inputs clk, rst ); // Outputs output [31:0] pc; // Inputs input\tclk; input\trst; /*AUTOREG*/ // Beginning of automatic regs (for this module's undeclared outputs) reg [31:0]\tpc; // End of automatics /*AUTOWIRE*/ always_ff@(posedge clk) if(rst) pc \u003c= '0; else pc \u003c= pc + 1; endmodule // program_counter Instruction Memory The memory file, as shown above, is read by the instruction memory. Based on the PC value, the corresponding instruction is retrieved and sent to the register file for execution.\nmodule instruction_mem (/*AUTOARG*/ // Outputs instr, // Inputs pc ); // Outputs output [31:0] instr; // Inputs input [31:0]\tpc; logic [31:0]\tinstr_mem [31:0]; initial $readmemh(\"instr.mem\", instr_mem); assign instr = instr_mem[pc]; endmodule // instruction_mem Data Path The top module serves as the central connection point for all data path modules in this design. As new instructions are added, the data path is progressively updated to accommodate them, ensuring seamless execution and expansion.\nmodule data_path (/*AUTOARG*/ // Outputs instr, // Inputs clk, rst ); // Outputs output [31:0] instr; // Inputs input\tclk; input\trst; /*AUTOREG*/ /*AUTOWIRE*/ // Beginning of automatic wires (for undeclared instantiated-module outputs) wire [31:0]\tpc;\t// From PC of program_counter.v // End of automatics program_counter PC (/*AUTOINST*/ // Outputs .pc\t(pc[31:0]), // Inputs .clk\t(clk), .rst\t(rst)); instruction_mem IM (/*AUTOINST*/ // Outputs .instr\t(instr[31:0]), // Inputs .pc\t(pc[31:0])); endmodule // data_path This is first step in the design and the design files can be found [here].\nRegister File The register file processes incoming instructions and distributes data to the appropriate registers. It has three 5-bit input addresses: two for source registers and one for the destination (write) register. Additionally, a write data input holds the value to be stored when the write signal is enabled.\nUntil now, no control signal was involved. Here, a new control signal, rw, is introduced. When rw is set high, the data from wd3 is stored at the register address specified by a3, enabling controlled data writing.\nLet’s begin constructing the microarchitecture by focusing on the first instruction in the program. This will serve as the foundation, and we will expand the design as we introduce more instructions.\naddi x5, zero, 6 The instruction shown above is an I-type instruction, where an immediate value is added to a source register. In this case, the source register is x0 (zero), and the result is stored in the temporary register x5.\nThe instruction is fetched from the instruction memory and then passed to the register file, where the necessary registers are accessed for execution.\nFigure 2: Decode\nOnce the instruction is retreived from the input a1 receives bits 19 to 15 from the 32-bit instruction. This is 5-bit data is register address. Similarly, a2 receives bits from 24 to 20 from the 32-bit instruction and a3 receives bits from 11 to 7.\nOnce the instruction is retrieved, the input a1 receives bits 19 to 15 from the 32-bit instruction. This 5-bit data represents the register address for the first source register rs1. Similarly, a2 receives bits 24 to 20, while a3 gets bits 11 to 7, each corresponding to register rs2 and rd respectively.\nSince the first instruction is an immediate instruction the immediate value should be sign extended and produced to the ALU. Hence, another block is added, the instruction from 31 to 7 is sent to the sign extended block.\nThe first instruction is shown in binary with its respective fields.\nimm rs1 funct3 rd opcode 000000000110 (6) 00000(0) 000 00101 (5) 0010011 (19) The data in green is shown in Figure 2. We’ll get back to the control signal we3 once the addition operation is takes place. The next step is build the ALU. Based on the update microarhitecture the data path is also update.\nThe updated data path is as follows:\nmodule data_path (/*AUTOARG*/ // Outputs pc, a1, a2, a3, // Inputs clk, rst, instr ); // Outputs output [31:0] pc; output [4:0] a1; output [4:0]\ta2; output [4:0]\ta3; // Inputs input\tclk; input\trst; input [31:0]\tinstr; /*AUTOREG*/ /*AUTOWIRE*/ program_counter PC (/*AUTOINST*/ // Outputs .pc\t(pc[31:0]), // Inputs .clk\t(clk), .rst\t(rst)); logic [31:0]\tsign_ext; assign a1 = instr[19:15]; assign a2 = instr[24:20]; assign a3 = instr[11:7]; assign sign_ext = {{20{instr[31]}}, instr[31:20]}; endmodule // data_path The new block the register file is shown below:\nmodule reg_file (/*AUTOARG*/ // Outputs rd1, rd2, // Inputs clk, a1, a2, a3, wd3, we3 ); // Outputs output [31:0] rd1; output [31:0] rd2; // Inputs input\tclk; input [4:0]\ta1; // rs1 input [4:0]\ta2; // rs2 input [4:0]\ta3; // rd input [31:0]\twd3; // write data from memory input\twe3; // write enable /*AUTOREG*/ /*AUTOWIRE*/ logic [31:0]\tregs[31:0]; // 32 registers always_ff@(posedge clk) if(we3) regs[a3] \u003c= wd3; assign rd1 = (a1 == 0) ? 32'h0 : regs[a1]; assign rd2 = (a2 == 0) ? 32'h0 : regs[a2]; endmodule // reg_file The source files for the second stage can be found [here].\nArithmetic Logic Unit (ALU) The Arithmetic Logic Unit (ALU) handles all arithmetic and logical operations, such as addition, subtraction, shifting, and logical operations. Initially, the basic operations will be implemented, and as we progress, additional instructions will be incorporated to expand the ALU’s functionality. The signals in blue are control signals\nFigure 3: ALU\nA mux is added in between ALU and Register File that helps in chosing data between the imm value or the from the register. The control signal for the mux is ALUSrc, when set high the data from the immediate value imm is chosen as the source for the ALU operation and when set to zero the data from the register is chosen as source for the ALU operation.\nA mux is added between the ALU and the Register File to facilitate data selection between the immediate value imm and the data from the register. The control signal for the mux is ALUSrc. When control signal ALUSrc is set high, the immediate value imm is chosen as the source for the ALU operation. When the control signal ALUSrc is set low, the data from the register is selected as the source for the ALU operation.\nAnother mux is placed after the data memory to choose between the data from the ALU result or the data from data memory. For the first instruction, the result of the ALU operation is written to the destination register, rd, which is x5. The control signal for this mux is MemReg. When MemReg is set high, the data from the data memory is loaded into the destination register. When set low, the data from the ALU result is directly written to the destination register.\nmodule alu (/*AUTOARG*/ // Outputs res, // Inputs src_a, src_b, alu_op ); // Outputs output [31:0] res; // Inputs input [31:0]\tsrc_a; input [31:0]\tsrc_b; input [3:0]\talu_op; parameter add = 4'd0, sub = 4'd1, sll = 4'd2, slt = 4'd3, sltu = 4'd4, xorp = 4'd5, srl = 4'd6, sra = 4'd7, orp = 4'd8, andp = 4'd9; /*AUTOREG*/ // Beginning of automatic regs (for this module's undeclared outputs) reg [31:0]\tres; // End of automatics /*AUTOWIRE*/ logic signed [31:0]\tsrc_a_sign; logic signed [31:0]\tsrc_b_sign; assign src_a_sign = src_a; assign src_b_sign = src_b; always@(/*AUTOSENSE*/alu_op or src_a or src_b) begin casez(alu_op) add : res = src_a + src_b; sub : res = src_a - src_b; sll : res = src_a \u003c\u003c src_b; slt : res = src_a_sign \u003c src_b_sign ? 32'h00000001 : 32'h00000000; sltu: res = src_a \u003c src_b ? 32'h00000001 : 32'h00000000; xorp: res = src_a ^ src_b; srl : res = src_a \u003e\u003e src_b; sra : res = src_a_sign \u003e\u003e\u003e src_b_sign; orp : res = src_a | src_b; andp: res = src_a \u0026 src_b; endcase // casez (alu_op) end // always_comb endmodule // alu The control unit is generates the signal for control the data flow. The control unit is shown below which will be updated:\nmodule control_unit (/*AUTOARG*/ // Outputs we3, alu_src, alu_op, mem_rw, mem_reg, imm_src, // Inputs funct7, funct3, opcode ); // Outputs output we3; output alu_src; output [4:0]\talu_op; output\tmem_rw; output\tmem_reg; output [1:0]\timm_src; // Inputs input [6:0]\tfunct7; input [2:0]\tfunct3; input [6:0]\topcode; parameter add = 4'd0, sub = 4'd1, sll = 4'd2, slt = 4'd3, sltu = 4'd4, xorp = 4'd5, srl = 4'd6, sra = 4'd7, orp = 4'd8, andp = 4'd9; /*AUTOREG*/ // Beginning of automatic regs (for this module's undeclared outputs) reg [4:0]\talu_op; reg\talu_src; reg [1:0]\timm_src; reg\tmem_reg; reg\tmem_rw; reg\twe3; // End of automatics /*AUTOWIRE*/ always@(/*AUTOSENSE*/funct3 or opcode) begin casez(opcode) 7'd51: {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'b1, 1'b0, 1'b0, 1'b0, 2'bxx}; // R-type 7'd19: begin if(funct3 == 1 || funct3 == 5) {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'b1, 1'b1, 1'b0, 1'b0, 2'b01}; // I-type else {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'b1, 1'b1, 1'b0, 1'b0, 2'b00}; // I-type end default : {we3, alu_src, mem_rw, mem_reg} = 4'hx; endcase // case (opcode) end always@(/*AUTOSENSE*/funct3 or funct7) begin casez(funct3) 3'd0 : alu_op = funct7[5] ? sub : add; 3'd1 : alu_op = sll; 3'd2 : alu_op = slt; 3'd3 : alu_op = sltu; 3'd4 : alu_op = xorp; 3'd5 : alu_op = funct7[5] ? sra : srl; 3'd6 : alu_op = orp; 3'd7 : alu_op = andp; default: alu_op = 4'dx; endcase // casez (funct3) end // always_comb endmodule // control_unit The design performs arithmetic and logical operations. There are three I-type instructions that has to be carefully analyzed and there slli, srli and srai.\nfunct7 imm rs1 funct3 rd opcode instr 0000000 (5-bits) (5-bits) 001 (5-bits) 0010011 slli 0000000 (5-bits) (5-bits) 101 (5-bits) 0010011 srli 0100000 (5-bits) (5-bits) 101 (5-bits) 0010011 srai The if-statement inside the case statement of the main decoder handles this condition. The control signal imm_src determines which immediate encoding to use.\nFor shift immediate instructions, the standard 12-bit immediate is not selected. Instead:\nimm[11:5] is treated as the funct7 value. imm[4:0] is sign-extended to form the immediate value for the operation. This ensures correct handling of shift instructions while maintaining flexibility for different immediate encodings.\nFigure 4: Includes Immediate\nLets look at the instruction:\nsrai x21, x7, 2 It is a shift right arithmetic imm. The instruction in hexadecimal with their respective fields is shown below:\nfunct7 imm rs1 funct3 rd opcode 0100000 00010 00111 101 10101 0010011 Up untill now the design takes cares for all the arithmetic and logical operation. The next set of instruction is load and store. The code can be found [here] step3.\nLoad and Store Instruction Let’s implement store instruction in the data memory and load the data from the data memory.\nStore Lets understand how the store instruction works/\nsw x21, 0(x0) =\u003e sw rs2, imm(rs1) The above instruction can be understood as sw src, off(dst) =\u003e Address[dst + off] = src.\nFor the above instruction the hexadecimal value is 0x01502023. The rs2 = 21 and rs1 = 0. Writing data into a registers in verilog begins from zero. For simplity one store word is implemented and offset can be incremented by 1 instread of 4.\nimm[11:5] rs2 rs1 funct3 imm[4:0] opcode 0000000 10101 00000 010 00000 0100011 Lets create a data memory.\nmodule data_mem (/*AUTOARG*/ // Outputs rd, // Inputs clk, addr, wd, mem_rw ); // Outputs output [31:0] rd; // Inputs input\tclk; input [31:0] addr; // address location input [31:0] wd; // write data input\tmem_rw; // write when set to 1 /*AUTOREG*/ /*AUTOWIRE*/ logic [31:0]\tdmem[31:0]; always_ff@(posedge clk) if(mem_rw) dmem[addr] \u003c= wd; assign rd = dmem[addr]; endmodule // data_mem The updated control unit is illustrated below:\nmodule control_unit (/*AUTOARG*/ // Outputs we3, alu_src, alu_op, mem_rw, mem_reg, imm_src, // Inputs funct7, funct3, opcode ); // Outputs output we3; output alu_src; output [4:0]\talu_op; output\tmem_rw; output\tmem_reg; output [1:0]\timm_src; // Inputs input [6:0]\tfunct7; input [2:0]\tfunct3; input [6:0]\topcode; parameter add = 4'd0, sub = 4'd1, sll = 4'd2, slt = 4'd3, sltu = 4'd4, xorp = 4'd5, srl = 4'd6, sra = 4'd7, orp = 4'd8, andp = 4'd9; /*AUTOREG*/ // Beginning of automatic regs (for this module's undeclared outputs) reg [4:0]\talu_op; reg\talu_src; reg [1:0]\timm_src; reg\tmem_reg; reg\tmem_rw; reg\twe3; // End of automatics /*AUTOWIRE*/ always@(/*AUTOSENSE*/funct3 or opcode) begin casez(opcode) 7'd51: {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'b1, 1'b0, 1'b0, 1'b0, 2'bxx}; // R-type 7'd19: begin if(funct3 == 1 || funct3 == 5) {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'b1, 1'b1, 1'b0, 1'b0, 2'b01}; // I-type else {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'b1, 1'b1, 1'b0, 1'b0, 2'b00}; // I-type end 7'd35: {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'bx, 1'b0, 1'b1, 1'bx, 2'b10}; // S-type default : {we3, alu_src, mem_rw, mem_reg} = 4'hx; endcase // case (opcode) end always@(/*AUTOSENSE*/funct3 or funct7) begin casez(funct3) 3'd0 : alu_op = funct7[5] ? sub : add; 3'd1 : alu_op = sll; 3'd2 : alu_op = slt; 3'd3 : alu_op = sltu; 3'd4 : alu_op = xorp; 3'd5 : alu_op = funct7[5] ? sra : srl; 3'd6 : alu_op = orp; 3'd7 : alu_op = andp; default: alu_op = 4'dx; endcase // casez (funct3) end // always_comb endmodule // control_unit Load Now lets load the data from location stored in data memeory to register x24.\nlw x24, 0(x0) =\u003e lw rd, imm(rs1) The data from the address location [imm + rs1] is load to register x24.\nimm rs1 funct3 rd opcode 00000000000 00000 010 11000 0000011 The decode instruction is added to the control unit for the main decoder. The decode instruction is shown below.\n7'd03: {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'bx, 1'b1, 1'b0, 1'b0, 2'b00}; // I- type load Till now the R-type, I-type and S-type instruction have been implemented and the code can be found [here] step4.\nBranch Instructions imm[12,10:5] rs2 rs1 funct3 imm[4:1,11] opcode 0000000 00110 00101 000 01000 1100011 ",
+  "wordCount" : "2495",
+  "inLanguage": "en",
+  "datePublished": "2025-02-22T15:23:00-05:00",
+  "dateModified": "2025-02-22T15:23:00-05:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/riscv_directory/2025_02_22_data_path/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 15"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
+
+
+<script src="https://24x7fpga.com/js/mathjax-config.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Data Path
+    </h1>
+    <div class="post-meta"><span title='2025-02-22 15:23:00 -0500 EST'>February 22, 2025</span>&nbsp;·&nbsp;12 min&nbsp;·&nbsp;2495 words&nbsp;·&nbsp;Kiran
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="d41d8c"><a hidden class="anchor" aria-hidden="true" href="#d41d8c">#</a></h2>
+<p>Let&rsquo;s begin by constructing the data path to establish the flow of data. We&rsquo;ll start with a simple instruction, analyze its requirements, and gradually build upon it to develop a more comprehensive understanding.</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">addi x5, zero, 6
+addi x6, zero, 7
+add  x7, x5, x6
+</code></pre><p>The hexadecimal format of the above instruction are stored in a memory file that will be read during program execution.</p>
+<pre tabindex="0"><code class="language-nil" data-lang="nil">00600293        // addi x5 x0 6
+00700313        // addi x6 x0 7
+006283b3        // add x7 x5 x6
+</code></pre><h3 id="instruction-fetch">Instruction Fetch<a hidden class="anchor" aria-hidden="true" href="#instruction-fetch">#</a></h3>
+<p>Every instruction typically follows these two fundamental steps:</p>
+<ol>
+<li>Instruction Fetch – The <em>Program Counter</em> points to the instruction memory from where the instruction are fetched.</li>
+<li>Register Read – Based on the instruction fields, one or two registers are selected and read from the register file.</li>
+</ol>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/fetch.svg"
+         alt="Figure 1: Instruction fetch" width="300px"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 1: <!-- raw HTML omitted -->Instruction fetch</p>
+        </figcaption>
+</figure>
+
+<h4 id="program-counter">Program Counter<a hidden class="anchor" aria-hidden="true" href="#program-counter">#</a></h4>
+<p>The <em>Program Counter</em> (PC) increments by 4 in every clock cycle, as instructions are typically word-aligned in memory. However, since the memory file <code>instr.mem</code> stores instructions sequentially, the verilog design may increment the PC by 1 instead. It is important to understand that, in reality, the actual PC progression follows an increment of 4 to maintain proper instruction addressing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> program_counter (<span style="color:#75715e">/*AUTOARG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   pc,
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   clk, rst
+</span></span><span style="display:flex;"><span>   );
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] pc;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span>	 clk;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span>	 rst;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/*AUTOREG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Beginning of automatic regs (for this module&#39;s undeclared outputs)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">reg</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]		pc;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// End of automatics
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#75715e">/*AUTOWIRE*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always_ff</span>@(<span style="color:#66d9ef">posedge</span> clk)
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span>(rst)
+</span></span><span style="display:flex;"><span>       pc <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">&#39;0</span>;
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>       pc <span style="color:#f92672">&lt;=</span> pc <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span> <span style="color:#75715e">// program_counter
+</span></span></span></code></pre></div><h3 id="instruction-memory">Instruction Memory<a hidden class="anchor" aria-hidden="true" href="#instruction-memory">#</a></h3>
+<p>The memory file, as shown above, is read by the instruction memory. Based on the PC value, the corresponding instruction is retrieved and sent to the register file for execution.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> instruction_mem (<span style="color:#75715e">/*AUTOARG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   instr,
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   pc
+</span></span><span style="display:flex;"><span>   );
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] instr;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	 pc;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	 instr_mem [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">initial</span>
+</span></span><span style="display:flex;"><span>     $readmemh(<span style="color:#e6db74">&#34;instr.mem&#34;</span>, instr_mem);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> instr <span style="color:#f92672">=</span> instr_mem[pc];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span> <span style="color:#75715e">// instruction_mem
+</span></span></span></code></pre></div><h3 id="data-path">Data Path<a hidden class="anchor" aria-hidden="true" href="#data-path">#</a></h3>
+<p>The top module serves as the central connection point for all data path modules in this design. As new instructions are added, the data path is progressively updated to accommodate them, ensuring seamless execution and expansion.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> data_path (<span style="color:#75715e">/*AUTOARG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   instr,
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   clk, rst
+</span></span><span style="display:flex;"><span>   );
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] instr;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span>	 clk;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span>	 rst;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/*AUTOREG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/*AUTOWIRE*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Beginning of automatic wires (for undeclared instantiated-module outputs)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">wire</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]		pc;			<span style="color:#75715e">// From PC of program_counter.v
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#75715e">// End of automatics
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>   program_counter PC (<span style="color:#75715e">/*AUTOINST*/</span>
+</span></span><span style="display:flex;"><span>                       <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                       .pc		(pc[<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]),
+</span></span><span style="display:flex;"><span>                       <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                       .clk		(clk),
+</span></span><span style="display:flex;"><span>                       .rst		(rst));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   instruction_mem IM (<span style="color:#75715e">/*AUTOINST*/</span>
+</span></span><span style="display:flex;"><span>                       <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                       .instr		(instr[<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]),
+</span></span><span style="display:flex;"><span>                       <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                       .pc		(pc[<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span> <span style="color:#75715e">// data_path
+</span></span></span></code></pre></div><p>This is first step in the design and the design files can be found [here].</p>
+<h3 id="register-file">Register File<a hidden class="anchor" aria-hidden="true" href="#register-file">#</a></h3>
+<p>The register file processes incoming instructions and distributes data to the appropriate registers. It has three 5-bit input addresses: two for source registers and one for the destination (write) register. Additionally, a write data input holds the value to be stored when the write signal is enabled.</p>
+<p>Until now, no control signal was involved. Here, a new control signal, <code>rw</code>, is introduced. When <code>rw</code> is set high, the data from <code>wd3</code> is stored at the register address specified by <code>a3</code>, enabling controlled data writing.</p>
+<p>Let&rsquo;s begin constructing the microarchitecture by focusing on the first instruction in the program. This will serve as the foundation, and we will expand the design as we introduce more instructions.</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">addi x5, zero, 6
+</code></pre><p>The instruction shown above is an I-type instruction, where an immediate value is added to a source register. In this case, the source register is x0 (zero), and the result is stored in the temporary register x5.</p>
+<p>The instruction is fetched from the instruction memory and then passed to the register file, where the necessary registers are accessed for execution.</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/decode.svg"
+         alt="Figure 2: Decode"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 2: <!-- raw HTML omitted -->Decode</p>
+        </figcaption>
+</figure>
+
+<p>Once the instruction is retreived from the input <code>a1</code> receives bits 19 to 15 from the 32-bit instruction. This is 5-bit data is register address. Similarly, <code>a2</code> receives bits from 24 to 20 from the 32-bit instruction and <code>a3</code> receives bits from 11 to 7.</p>
+<p>Once the instruction is retrieved, the input <code>a1</code> receives bits 19 to 15 from the 32-bit instruction. This 5-bit data represents the register address for the first source register <code>rs1</code>. Similarly, <code>a2</code> receives bits 24 to 20, while <code>a3</code> gets bits 11 to 7, each corresponding to register <code>rs2</code> and <code>rd</code> respectively.</p>
+<p>Since the first instruction is an immediate instruction the immediate value should be sign extended and produced to the ALU. Hence, another block is added, the instruction from 31 to 7 is sent to the sign extended block.</p>
+<p>The first instruction is shown in binary with its respective fields.</p>
+<table>
+<thead>
+<tr>
+<th>imm</th>
+<th>rs1</th>
+<th>funct3</th>
+<th>rd</th>
+<th>opcode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>000000000110 (6)</td>
+<td>00000(0)</td>
+<td>000</td>
+<td>00101 (5)</td>
+<td>0010011 (19)</td>
+</tr>
+</tbody>
+</table>
+<p>The data in green is shown in Figure 2. We&rsquo;ll get back to the control signal <code>we3</code> once the addition operation is takes place. The next step is build the ALU. Based on the update microarhitecture the data path is also update.</p>
+<p>The updated data path is as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> data_path (<span style="color:#75715e">/*AUTOARG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   pc, a1, a2, a3,
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   clk, rst, instr
+</span></span><span style="display:flex;"><span>   );
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] pc;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] a1;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	a2;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	a3;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span>	 clk;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span>	 rst;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	 instr;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/*AUTOREG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/*AUTOWIRE*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   program_counter PC (<span style="color:#75715e">/*AUTOINST*/</span>
+</span></span><span style="display:flex;"><span>                       <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                       .pc		(pc[<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]),
+</span></span><span style="display:flex;"><span>                       <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                       .clk		(clk),
+</span></span><span style="display:flex;"><span>                       .rst		(rst));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]		sign_ext;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> a1 <span style="color:#f92672">=</span> instr[<span style="color:#ae81ff">19</span><span style="color:#f92672">:</span><span style="color:#ae81ff">15</span>];
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> a2 <span style="color:#f92672">=</span> instr[<span style="color:#ae81ff">24</span><span style="color:#f92672">:</span><span style="color:#ae81ff">20</span>];
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> a3 <span style="color:#f92672">=</span> instr[<span style="color:#ae81ff">11</span><span style="color:#f92672">:</span><span style="color:#ae81ff">7</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> sign_ext <span style="color:#f92672">=</span> {{<span style="color:#ae81ff">20</span>{instr[<span style="color:#ae81ff">31</span>]}}, instr[<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">20</span>]};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span> <span style="color:#75715e">// data_path
+</span></span></span></code></pre></div><p>The new block the register file is shown below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> reg_file (<span style="color:#75715e">/*AUTOARG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   rd1, rd2,
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   clk, a1, a2, a3, wd3, we3
+</span></span><span style="display:flex;"><span>   );
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] rd1;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] rd2;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span>	 clk;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	 a1;   <span style="color:#75715e">// rs1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	 a2;   <span style="color:#75715e">// rs2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	 a3;   <span style="color:#75715e">// rd
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	 wd3;  <span style="color:#75715e">// write data from memory
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span>	 we3;  <span style="color:#75715e">// write enable
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/*AUTOREG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/*AUTOWIRE*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	 regs[<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]; <span style="color:#75715e">// 32 registers
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always_ff</span>@(<span style="color:#66d9ef">posedge</span> clk)
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span>(we3)
+</span></span><span style="display:flex;"><span>       regs[a3] <span style="color:#f92672">&lt;=</span> wd3;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> rd1 <span style="color:#f92672">=</span> (a1 <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">?</span> <span style="color:#ae81ff">32&#39;h0</span> <span style="color:#f92672">:</span> regs[a1];
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> rd2 <span style="color:#f92672">=</span> (a2 <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">?</span> <span style="color:#ae81ff">32&#39;h0</span> <span style="color:#f92672">:</span> regs[a2];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span> <span style="color:#75715e">// reg_file
+</span></span></span></code></pre></div><p>The source files for the second stage can be found [here].</p>
+<h3 id="arithmetic-logic-unit--alu">Arithmetic Logic Unit (ALU)<a hidden class="anchor" aria-hidden="true" href="#arithmetic-logic-unit--alu">#</a></h3>
+<p>The Arithmetic Logic Unit (ALU) handles all arithmetic and logical operations, such as addition, subtraction, shifting, and logical operations. Initially, the basic operations will be implemented, and as we progress, additional instructions will be incorporated to expand the ALU&rsquo;s functionality. The signals in blue are control signals</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/alu.svg"
+         alt="Figure 3: ALU"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 3: <!-- raw HTML omitted -->ALU</p>
+        </figcaption>
+</figure>
+
+<p>A mux is added in between ALU and Register File that helps in chosing data between the <code>imm</code> value or the from the register. The control signal for the mux is <code>ALUSrc</code>, when set high the data from the immediate value <code>imm</code> is chosen as the source for the ALU operation and when set to zero the data from the register is chosen as source for the ALU operation.</p>
+<p>A mux is added between the ALU and the Register File to facilitate data selection between the immediate value <code>imm</code> and the data from the register. The control signal for the mux is <code>ALUSrc</code>. When control signal <code>ALUSrc</code> is set high, the immediate value <code>imm</code> is chosen as the source for the ALU operation. When the control signal <code>ALUSrc</code> is set low, the data from the register is selected as the source for the ALU operation.</p>
+<p>Another mux is placed after the data memory to choose between the data from the ALU result or the data from data memory. For the first instruction, the result of the ALU operation is written to the destination register, <code>rd</code>, which is <code>x5</code>. The control signal for this mux is <code>MemReg</code>. When <code>MemReg</code> is set high, the data from the data memory is loaded into the destination register. When set low, the data from the ALU result is directly written to the destination register.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> alu (<span style="color:#75715e">/*AUTOARG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   res,
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   src_a, src_b, alu_op
+</span></span><span style="display:flex;"><span>   );
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] res;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	 src_a;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	 src_b;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	 alu_op;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">parameter</span>
+</span></span><span style="display:flex;"><span>            add  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d0</span>,
+</span></span><span style="display:flex;"><span>            sub  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d1</span>,
+</span></span><span style="display:flex;"><span>            sll  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d2</span>,
+</span></span><span style="display:flex;"><span>            slt  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d3</span>,
+</span></span><span style="display:flex;"><span>            sltu <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d4</span>,
+</span></span><span style="display:flex;"><span>            xorp <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d5</span>,
+</span></span><span style="display:flex;"><span>            srl  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d6</span>,
+</span></span><span style="display:flex;"><span>            sra  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d7</span>,
+</span></span><span style="display:flex;"><span>            orp  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d8</span>,
+</span></span><span style="display:flex;"><span>            andp <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d9</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/*AUTOREG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Beginning of automatic regs (for this module&#39;s undeclared outputs)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">reg</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]		res;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// End of automatics
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#75715e">/*AUTOWIRE*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> <span style="color:#66d9ef">signed</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]		src_a_sign;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> <span style="color:#66d9ef">signed</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]		src_b_sign;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> src_a_sign <span style="color:#f92672">=</span> src_a;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> src_b_sign <span style="color:#f92672">=</span> src_b;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always</span>@(<span style="color:#75715e">/*AUTOSENSE*/</span>alu_op <span style="color:#66d9ef">or</span> src_a <span style="color:#66d9ef">or</span> src_b) <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">casez</span>(alu_op)
+</span></span><span style="display:flex;"><span>        add <span style="color:#f92672">:</span> res <span style="color:#f92672">=</span> src_a <span style="color:#f92672">+</span> src_b;
+</span></span><span style="display:flex;"><span>        sub <span style="color:#f92672">:</span> res <span style="color:#f92672">=</span> src_a <span style="color:#f92672">-</span> src_b;
+</span></span><span style="display:flex;"><span>        sll <span style="color:#f92672">:</span> res <span style="color:#f92672">=</span> src_a <span style="color:#f92672">&lt;&lt;</span> src_b;
+</span></span><span style="display:flex;"><span>        slt <span style="color:#f92672">:</span> res <span style="color:#f92672">=</span> src_a_sign <span style="color:#f92672">&lt;</span> src_b_sign <span style="color:#f92672">?</span> <span style="color:#ae81ff">32&#39;h00000001</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">32&#39;h00000000</span>;
+</span></span><span style="display:flex;"><span>        sltu: res <span style="color:#f92672">=</span> src_a <span style="color:#f92672">&lt;</span> src_b <span style="color:#f92672">?</span> <span style="color:#ae81ff">32&#39;h00000001</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">32&#39;h00000000</span>;
+</span></span><span style="display:flex;"><span>        xorp: res <span style="color:#f92672">=</span> src_a <span style="color:#f92672">^</span> src_b;
+</span></span><span style="display:flex;"><span>        srl <span style="color:#f92672">:</span> res <span style="color:#f92672">=</span> src_a <span style="color:#f92672">&gt;&gt;</span> src_b;
+</span></span><span style="display:flex;"><span>        sra <span style="color:#f92672">:</span> res <span style="color:#f92672">=</span> src_a_sign <span style="color:#f92672">&gt;&gt;&gt;</span> src_b_sign;
+</span></span><span style="display:flex;"><span>        orp <span style="color:#f92672">:</span> res <span style="color:#f92672">=</span> src_a <span style="color:#f92672">|</span> src_b;
+</span></span><span style="display:flex;"><span>        andp: res <span style="color:#f92672">=</span> src_a <span style="color:#f92672">&amp;</span> src_b;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">endcase</span> <span style="color:#75715e">// casez (alu_op)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">end</span> <span style="color:#75715e">// always_comb
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span> <span style="color:#75715e">// alu
+</span></span></span></code></pre></div><p>The control unit is generates the signal for control the data flow. The control unit is shown below which will be updated:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> control_unit (<span style="color:#75715e">/*AUTOARG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   we3, alu_src, alu_op, mem_rw, mem_reg, imm_src,
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   funct7, funct3, opcode
+</span></span><span style="display:flex;"><span>   );
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">output</span>       we3;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span>       alu_src;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	alu_op;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span>	mem_rw;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span>	mem_reg;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	imm_src;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">6</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	funct7;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	funct3;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">6</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	opcode;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">parameter</span>
+</span></span><span style="display:flex;"><span>            add  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d0</span>,
+</span></span><span style="display:flex;"><span>            sub  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d1</span>,
+</span></span><span style="display:flex;"><span>            sll  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d2</span>,
+</span></span><span style="display:flex;"><span>            slt  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d3</span>,
+</span></span><span style="display:flex;"><span>            sltu <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d4</span>,
+</span></span><span style="display:flex;"><span>            xorp <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d5</span>,
+</span></span><span style="display:flex;"><span>            srl  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d6</span>,
+</span></span><span style="display:flex;"><span>            sra  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d7</span>,
+</span></span><span style="display:flex;"><span>            orp  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d8</span>,
+</span></span><span style="display:flex;"><span>            andp <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d9</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/*AUTOREG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Beginning of automatic regs (for this module&#39;s undeclared outputs)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">reg</span> [<span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]		alu_op;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">reg</span>			alu_src;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">reg</span> [<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]		imm_src;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">reg</span>			mem_reg;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">reg</span>			mem_rw;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">reg</span>			we3;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// End of automatics
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#75715e">/*AUTOWIRE*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always</span>@(<span style="color:#75715e">/*AUTOSENSE*/</span>funct3 <span style="color:#66d9ef">or</span> opcode) <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">casez</span>(opcode)
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">7</span><span style="color:#ae81ff">&#39;d51</span><span style="color:#f92672">:</span> {we3, alu_src, mem_rw, mem_reg, imm_src} <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">2</span>&#39;bxx}; <span style="color:#75715e">// R-type
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#ae81ff">7</span><span style="color:#ae81ff">&#39;d19</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">if</span>(funct3 <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> funct3 <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>                   {we3, alu_src, mem_rw, mem_reg, imm_src} <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">2</span><span style="color:#ae81ff">&#39;b01</span>}; <span style="color:#75715e">// I-type
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>               <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>                   {we3, alu_src, mem_rw, mem_reg, imm_src} <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">2</span><span style="color:#ae81ff">&#39;b00</span>}; <span style="color:#75715e">// I-type
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>               <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">default</span> <span style="color:#f92672">:</span> {we3, alu_src, mem_rw, mem_reg} <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>&#39;hx;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">endcase</span> <span style="color:#75715e">// case (opcode)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always</span>@(<span style="color:#75715e">/*AUTOSENSE*/</span>funct3 <span style="color:#66d9ef">or</span> funct7) <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">casez</span>(funct3)
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d0</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> funct7[<span style="color:#ae81ff">5</span>] <span style="color:#f92672">?</span> sub <span style="color:#f92672">:</span> add;
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d1</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> sll;
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d2</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> slt;
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d3</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> sltu;
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d4</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> xorp;
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d5</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> funct7[<span style="color:#ae81ff">5</span>] <span style="color:#f92672">?</span> sra <span style="color:#f92672">:</span> srl;
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d6</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> orp;
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d7</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> andp;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>&#39;dx;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">endcase</span> <span style="color:#75715e">// casez (funct3)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">end</span> <span style="color:#75715e">// always_comb
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span> <span style="color:#75715e">// control_unit
+</span></span></span></code></pre></div><p>The design performs arithmetic and logical operations. There are three I-type instructions that has to be carefully analyzed and there slli, srli and srai.</p>
+<table>
+<thead>
+<tr>
+<th>funct7</th>
+<th>imm</th>
+<th>rs1</th>
+<th>funct3</th>
+<th>rd</th>
+<th>opcode</th>
+<th>instr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0000000</td>
+<td>(5-bits)</td>
+<td>(5-bits)</td>
+<td>001</td>
+<td>(5-bits)</td>
+<td>0010011</td>
+<td>slli</td>
+</tr>
+<tr>
+<td>0000000</td>
+<td>(5-bits)</td>
+<td>(5-bits)</td>
+<td>101</td>
+<td>(5-bits)</td>
+<td>0010011</td>
+<td>srli</td>
+</tr>
+<tr>
+<td>0100000</td>
+<td>(5-bits)</td>
+<td>(5-bits)</td>
+<td>101</td>
+<td>(5-bits)</td>
+<td>0010011</td>
+<td>srai</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>if-statement</em> inside the case statement of the main decoder handles this condition. The control signal <code>imm_src</code> determines which immediate encoding to use.</p>
+<p>For shift immediate instructions, the standard 12-bit immediate is not selected. Instead:</p>
+<ul>
+<li>imm[11:5] is treated as the <code>funct7</code> value.</li>
+<li>imm[4:0] is sign-extended to form the immediate value for the operation.</li>
+</ul>
+<p>This ensures correct handling of shift instructions while maintaining flexibility for different immediate encodings.</p>
+<figure>
+    <img loading="lazy" src="/ox-hugo/alui.svg"
+         alt="Figure 4: Includes Immediate"/> <figcaption>
+            <p><!-- raw HTML omitted -->Figure 4: <!-- raw HTML omitted -->Includes Immediate</p>
+        </figcaption>
+</figure>
+
+<p>Lets look at the instruction:</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">srai x21, x7, 2
+</code></pre><p>It is a shift right arithmetic imm. The instruction in hexadecimal with their respective fields is shown below:</p>
+<table>
+<thead>
+<tr>
+<th>funct7</th>
+<th>imm</th>
+<th>rs1</th>
+<th>funct3</th>
+<th>rd</th>
+<th>opcode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0100000</td>
+<td>00010</td>
+<td>00111</td>
+<td>101</td>
+<td>10101</td>
+<td>0010011</td>
+</tr>
+</tbody>
+</table>
+<p>Up untill now the design takes cares for all the arithmetic and logical operation. The next set of instruction is load and store. The code can be found [here] step3.</p>
+<h3 id="load-and-store-instruction">Load and Store Instruction<a hidden class="anchor" aria-hidden="true" href="#load-and-store-instruction">#</a></h3>
+<p>Let&rsquo;s implement store instruction in the data memory and load the data from the data memory.</p>
+<h4 id="store">Store<a hidden class="anchor" aria-hidden="true" href="#store">#</a></h4>
+<p>Lets understand how the store instruction works/</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">sw x21, 0(x0) =&gt; sw rs2, imm(rs1)
+</code></pre><p>The above instruction can be understood as sw src, off(dst) =&gt; Address[dst + off] = src.</p>
+<p>For the above instruction the hexadecimal value is 0x01502023. The rs2 = 21 and rs1 = 0. Writing data into a registers in verilog begins from zero. For simplity one store word is implemented and offset can be incremented by 1 instread of 4.</p>
+<table>
+<thead>
+<tr>
+<th>imm[11:5]</th>
+<th>rs2</th>
+<th>rs1</th>
+<th>funct3</th>
+<th>imm[4:0]</th>
+<th>opcode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0000000</td>
+<td>10101</td>
+<td>00000</td>
+<td>010</td>
+<td>00000</td>
+<td>0100011</td>
+</tr>
+</tbody>
+</table>
+<p>Lets create a data memory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> data_mem (<span style="color:#75715e">/*AUTOARG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   rd,
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   clk, addr, wd, mem_rw
+</span></span><span style="display:flex;"><span>   );
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] rd;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span>	    clk;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] addr;   <span style="color:#75715e">// address location
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>] wd;     <span style="color:#75715e">// write data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span>	    mem_rw; <span style="color:#75715e">// write when set to 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/*AUTOREG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/*AUTOWIRE*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">logic</span> [<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	 dmem[<span style="color:#ae81ff">31</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always_ff</span>@(<span style="color:#66d9ef">posedge</span> clk)
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span>(mem_rw)
+</span></span><span style="display:flex;"><span>       dmem[addr] <span style="color:#f92672">&lt;=</span> wd;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">assign</span> rd <span style="color:#f92672">=</span> dmem[addr];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span> <span style="color:#75715e">// data_mem
+</span></span></span></code></pre></div><p>The updated control unit is illustrated below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> control_unit (<span style="color:#75715e">/*AUTOARG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   we3, alu_src, alu_op, mem_rw, mem_reg, imm_src,
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   funct7, funct3, opcode
+</span></span><span style="display:flex;"><span>   );
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Outputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">output</span>       we3;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span>       alu_src;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	alu_op;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span>	mem_rw;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span>	mem_reg;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">output</span> [<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	imm_src;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Inputs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">6</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	funct7;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	funct3;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">input</span> [<span style="color:#ae81ff">6</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]	opcode;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">parameter</span>
+</span></span><span style="display:flex;"><span>            add  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d0</span>,
+</span></span><span style="display:flex;"><span>            sub  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d1</span>,
+</span></span><span style="display:flex;"><span>            sll  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d2</span>,
+</span></span><span style="display:flex;"><span>            slt  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d3</span>,
+</span></span><span style="display:flex;"><span>            sltu <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d4</span>,
+</span></span><span style="display:flex;"><span>            xorp <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d5</span>,
+</span></span><span style="display:flex;"><span>            srl  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d6</span>,
+</span></span><span style="display:flex;"><span>            sra  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d7</span>,
+</span></span><span style="display:flex;"><span>            orp  <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d8</span>,
+</span></span><span style="display:flex;"><span>            andp <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#ae81ff">&#39;d9</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/*AUTOREG*/</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// Beginning of automatic regs (for this module&#39;s undeclared outputs)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">reg</span> [<span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]		alu_op;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">reg</span>			alu_src;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">reg</span> [<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>]		imm_src;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">reg</span>			mem_reg;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">reg</span>			mem_rw;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">reg</span>			we3;
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">// End of automatics
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#75715e">/*AUTOWIRE*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always</span>@(<span style="color:#75715e">/*AUTOSENSE*/</span>funct3 <span style="color:#66d9ef">or</span> opcode) <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">casez</span>(opcode)
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">7</span><span style="color:#ae81ff">&#39;d51</span><span style="color:#f92672">:</span> {we3, alu_src, mem_rw, mem_reg, imm_src} <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">2</span>&#39;bxx}; <span style="color:#75715e">// R-type
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#ae81ff">7</span><span style="color:#ae81ff">&#39;d19</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">if</span>(funct3 <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> funct3 <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>                   {we3, alu_src, mem_rw, mem_reg, imm_src} <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">2</span><span style="color:#ae81ff">&#39;b01</span>}; <span style="color:#75715e">// I-type
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>               <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>                   {we3, alu_src, mem_rw, mem_reg, imm_src} <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">2</span><span style="color:#ae81ff">&#39;b00</span>}; <span style="color:#75715e">// I-type
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">7</span><span style="color:#ae81ff">&#39;d35</span><span style="color:#f92672">:</span> {we3, alu_src, mem_rw, mem_reg, imm_src} <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>&#39;bx, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>, <span style="color:#ae81ff">1</span>&#39;bx, <span style="color:#ae81ff">2</span><span style="color:#ae81ff">&#39;b10</span>}; <span style="color:#75715e">// S-type
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">default</span> <span style="color:#f92672">:</span> {we3, alu_src, mem_rw, mem_reg} <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>&#39;hx;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">endcase</span> <span style="color:#75715e">// case (opcode)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">always</span>@(<span style="color:#75715e">/*AUTOSENSE*/</span>funct3 <span style="color:#66d9ef">or</span> funct7) <span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">casez</span>(funct3)
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d0</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> funct7[<span style="color:#ae81ff">5</span>] <span style="color:#f92672">?</span> sub <span style="color:#f92672">:</span> add;
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d1</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> sll;
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d2</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> slt;
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d3</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> sltu;
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d4</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> xorp;
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d5</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> funct7[<span style="color:#ae81ff">5</span>] <span style="color:#f92672">?</span> sra <span style="color:#f92672">:</span> srl;
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d6</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> orp;
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">3</span><span style="color:#ae81ff">&#39;d7</span> <span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> andp;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> alu_op <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>&#39;dx;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">endcase</span> <span style="color:#75715e">// casez (funct3)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   <span style="color:#66d9ef">end</span> <span style="color:#75715e">// always_comb
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">endmodule</span> <span style="color:#75715e">// control_unit
+</span></span></span></code></pre></div><h4 id="load">Load<a hidden class="anchor" aria-hidden="true" href="#load">#</a></h4>
+<p>Now lets load the data from location stored in data memeory to register x24.</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">lw x24, 0(x0) =&gt; lw rd, imm(rs1)
+</code></pre><p>The data from the address location [imm + rs1] is load to register x24.</p>
+<table>
+<thead>
+<tr>
+<th>imm</th>
+<th>rs1</th>
+<th>funct3</th>
+<th>rd</th>
+<th>opcode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00000000000</td>
+<td>00000</td>
+<td>010</td>
+<td>11000</td>
+<td>0000011</td>
+</tr>
+</tbody>
+</table>
+<p>The decode instruction is added to the control unit for the main decoder. The decode instruction is shown below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span><span style="color:#ae81ff">7</span><span style="color:#ae81ff">&#39;d03</span><span style="color:#f92672">:</span> {we3, alu_src, mem_rw, mem_reg, imm_src} <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>&#39;bx, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b1</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>, <span style="color:#ae81ff">2</span><span style="color:#ae81ff">&#39;b00</span>}; <span style="color:#75715e">// I- type load
+</span></span></span></code></pre></div><p>Till now the R-type, I-type and S-type instruction have been implemented and the code can be found [here] step4.</p>
+<h3 id="branch-instructions">Branch Instructions<a hidden class="anchor" aria-hidden="true" href="#branch-instructions">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>imm[12,10:5]</th>
+<th>rs2</th>
+<th>rs1</th>
+<th>funct3</th>
+<th>imm[4:1,11]</th>
+<th>opcode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0000000</td>
+<td>00110</td>
+<td>00101</td>
+<td>000</td>
+<td>01000</td>
+<td>1100011</td>
+</tr>
+</tbody>
+</table>
+
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://24x7fpga.com/tags/riscv/">riscv</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://24x7fpga.com/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

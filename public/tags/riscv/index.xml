@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>riscv on Home</title>
+    <link>https://24x7fpga.com/tags/riscv/</link>
+    <description>Recent content in riscv on Home</description>
+    <generator>Hugo -- 0.121.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Feb 2025 15:23:00 -0500</lastBuildDate>
+    <atom:link href="https://24x7fpga.com/tags/riscv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Path</title>
+      <link>https://24x7fpga.com/riscv_directory/2025_02_22_data_path/</link>
+      <pubDate>Sat, 22 Feb 2025 15:23:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/riscv_directory/2025_02_22_data_path/</guid>
+      <description>Let&amp;rsquo;s begin by constructing the data path to establish the flow of data. We&amp;rsquo;ll start with a simple instruction, analyze its requirements, and gradually build upon it to develop a more comprehensive understanding.
+addi x5, zero, 6 addi x6, zero, 7 add x7, x5, x6 The hexadecimal format of the above instruction are stored in a memory file that will be read during program execution.
+00600293 // addi x5 x0 6 00700313 // addi x6 x0 7 006283b3 // add x7 x5 x6 Instruction Fetch Every instruction typically follows these two fundamental steps:</description>
+    </item>
+    <item>
+      <title>Microarchitecture Overview</title>
+      <link>https://24x7fpga.com/riscv_directory/2025_02_21_microarchitecture_overview/</link>
+      <pubDate>Fri, 21 Feb 2025 14:59:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/riscv_directory/2025_02_21_microarchitecture_overview/</guid>
+      <description>Figure 1 illustrates a simplified RISC-V microarchitecture, highlighting only the major functional units. These units play a crucial role in executing instructions efficiently. The key components can be categorized as follows:
+Program Counter (PC) – Keeps track of the instruction sequence by incrementing to the next program instruction on every clock cycle. Instruction Memory – Stores the program instructions that are fetched and executed sequentially. Register File – Receives instructions from the instruction memory, decodes them, and provides the appropriate inputs to the ALU.</description>
+    </item>
+    <item>
+      <title>J-Type</title>
+      <link>https://24x7fpga.com/riscv_directory/2025_02_20_j_type/</link>
+      <pubDate>Thu, 20 Feb 2025 12:29:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/riscv_directory/2025_02_20_j_type/</guid>
+      <description>The J-type (jump) instruction is similar to the U-type instruction but differs only in the way the immediate field is arranged. Figure 1 describes how the J-type instruction format is divided into its respective fields.
+Figure 1: Instruction Format
+Opcode: The opcode or operation code is a 7-bit field that defines the type of operation to be performed. Destination Register: Stores the result of the operation in the destination register rd.</description>
+    </item>
+    <item>
+      <title>U-Type</title>
+      <link>https://24x7fpga.com/riscv_directory/2025_02_20_u_type/</link>
+      <pubDate>Thu, 20 Feb 2025 12:17:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/riscv_directory/2025_02_20_u_type/</guid>
+      <description>The U-type (upper immediate) instruction has one destination register rd and one immediate fields imm which is 20-bit. Figure 1 shows the instruction format for the U-type instruction.
+Figure 1: Instruction Format
+Opcode: The opcode or operation code is a 7-bit field that defines the type of operation to be performed. Destination Register: Stores the result of the operation in the destination register rd. Immediate Field: A 20-bit immediate value is specified in here.</description>
+    </item>
+    <item>
+      <title>B-Type</title>
+      <link>https://24x7fpga.com/riscv_directory/2025_02_20_b_type/</link>
+      <pubDate>Thu, 20 Feb 2025 11:53:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/riscv_directory/2025_02_20_b_type/</guid>
+      <description>The B-type (branch) instruction is similar to the S-type (store) instruction. It differs slightly with the use of immediate values. Figure 1 illustrate the fields of the branch type instruction.
+Figure 1: Instruction Format
+Opcode: The opcode or operation code is a 7-bit field that defines the type of operation to be performed. Function Field: This 3-bit funct3 field, known as the control bits, determines the specific operation to be executed such as store byte (sb), store half (sh) and store word (sw).</description>
+    </item>
+    <item>
+      <title>S-Type</title>
+      <link>https://24x7fpga.com/riscv_directory/2025_02_20_s_type/</link>
+      <pubDate>Thu, 20 Feb 2025 11:25:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/riscv_directory/2025_02_20_s_type/</guid>
+      <description>The S-type (store) instruction operates on two registers and one immediate operand. There are two immediate fields that together form a 12-bit signed immediate value. Figure 1 illustrates the instruction format for an S-type instruction, showing how the register, opcode, and immediate fields are segregated.
+Figure 1: Instruction Format
+Opcode: The opcode or operation code is a 7-bit field that defines the type of operation to be performed. Function Field: This 3-bit funct3 field, known as the control bits, determines the specific operation to be executed such as store byte (sb), store half (sh) and store word (sw).</description>
+    </item>
+    <item>
+      <title>I-Type</title>
+      <link>https://24x7fpga.com/riscv_directory/2025_02_19_i_type/</link>
+      <pubDate>Wed, 19 Feb 2025 14:53:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/riscv_directory/2025_02_19_i_type/</guid>
+      <description>The I-type (Immediate) instruction performs operations using one register and one immediate operand. The result of the operation is stored in the destination register rd. Figure 1 illustrates the instruction format for an I-type instruction, showing how the opcode, source register rs1, immediate value, and function fields are structured.
+Figure 1: Instruction Format
+Opcode: The opcode or operation code is a 7-bit field that defines the type of operation to be performed on the data stored in the source registers.</description>
+    </item>
+    <item>
+      <title>R-Type</title>
+      <link>https://24x7fpga.com/riscv_directory/2025_02_18_r_type/</link>
+      <pubDate>Tue, 18 Feb 2025 12:47:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/riscv_directory/2025_02_18_r_type/</guid>
+      <description>The R-type (register-type) instruction in RISC-V operates on three registers. Two of these registers serve as source registers rs2 and rs1, providing the input operands, while the third register rd functions as the destination register, storing the result of the operation. This format is commonly used for arithmetic and logical operations in the instruction set. Figure 1, illustrates the instruction format of the R-type instruction.
+Figure 1: Instruction Format
+The R-Type instruction in RISC-V is a 32-bit instruction that contains essential information to execute arithmetic or logical operations.</description>
+    </item>
+    <item>
+      <title>RISC-V Register Set</title>
+      <link>https://24x7fpga.com/riscv_directory/2025_02_14_risc_v_register_set/</link>
+      <pubDate>Fri, 14 Feb 2025 15:38:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/riscv_directory/2025_02_14_risc_v_register_set/</guid>
+      <description>Registers are fundamental components of a processor, serving as high-speed storage units that enable the CPU to access data, addresses, and instructions efficiently. Since registers are located within the CPU, they provide significantly faster access compared to main memory, enhancing overall execution speed. The table below outlines the registers used in a RISC-V CPU and their functions.
+Name Register Name Description zero x0 Constant Value 0 ra x1 Return Address sp x2 Stack Pointer gp x3 Global Pointer tp x4 Thread Pointer t0-t2 x5-x7 Temporary Registers s0/fp x8 Saved Register/Frame Pointer s1 x9 Saved Register a0-a1 x10-x11 Function Arguments/Return Value a2-a7 x12-x17 Functions Arguments s2-s11 x18-x27 Saved Registers t3-t6 x28-x31 Temporary Registers RISC-V features a total of 32 registers, numbered from 0 to 31, each serving a specific purpose.</description>
+    </item>
+    <item>
+      <title>Assembly Language</title>
+      <link>https://24x7fpga.com/riscv_directory/2025_02_14_assembly_language/</link>
+      <pubDate>Fri, 14 Feb 2025 15:07:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/riscv_directory/2025_02_14_assembly_language/</guid>
+      <description>Machine language, which consists solely of 1&amp;rsquo;s and 0&amp;rsquo;s, is the language understood by machines. Writing even a simple addition operation in machine language requires extensive effort; therefore, assembly language is used to make programs more readable and understandable for humans. Assembly language is then converted into machine language using a compiler. In this section, basic assembly language operations and the micro-operations required for their execution will be explored.</description>
+    </item>
+  </channel>
+</rss>

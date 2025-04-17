@@ -131,5 +131,4 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 ## Computer Architecture {#computer-architecture}
 
 -   [Single Cycle MIPS Design](https://github.com/24x7fpga/MIPsSingleCycle)
--   Multi Cycle MIPS design
--   RISC-V Core
+-   [RISC-V Core]({{< relref "2025_02_14_risc_v_directory.md" >}})

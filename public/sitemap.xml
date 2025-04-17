@@ -3,7 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://24x7fpga.com/</loc>
-    <lastmod>2025-01-14T17:25:00-05:00</lastmod>
+    <lastmod>2025-03-13T12:40:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/ams/</loc>
+    <lastmod>2025-03-13T12:40:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/ams_directory/</loc>
+    <lastmod>2025-03-13T12:40:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/ams_directory/2025_03_13_current_voltage_and_resistor/</loc>
+    <lastmod>2025-03-13T12:40:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/</loc>
+    <lastmod>2025-03-13T12:40:00-04:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/riscv_directory/2025_02_22_data_path/</loc>
+    <lastmod>2025-02-22T15:23:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/riscv/</loc>
+    <lastmod>2025-02-22T15:23:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/riscv_directory/</loc>
+    <lastmod>2025-02-22T15:23:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/riscv_directory/2025_02_21_microarchitecture_overview/</loc>
+    <lastmod>2025-02-21T14:59:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/riscv_directory/2025_02_20_j_type/</loc>
+    <lastmod>2025-02-20T12:29:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/riscv_directory/2025_02_20_u_type/</loc>
+    <lastmod>2025-02-20T12:17:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/riscv_directory/2025_02_20_b_type/</loc>
+    <lastmod>2025-02-20T11:53:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/riscv_directory/2025_02_20_s_type/</loc>
+    <lastmod>2025-02-20T11:25:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/riscv_directory/2025_02_19_i_type/</loc>
+    <lastmod>2025-02-19T14:53:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/riscv_directory/2025_02_18_r_type/</loc>
+    <lastmod>2025-02-18T12:47:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/riscv_directory/2025_02_14_risc_v_register_set/</loc>
+    <lastmod>2025-02-14T15:38:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/riscv_directory/2025_02_14_assembly_language/</loc>
+    <lastmod>2025-02-14T15:07:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/riscv_directory/2025_02_14_risc_v_directory/</loc>
+    <lastmod>2025-02-14T14:45:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/toc/</loc>
+    <lastmod>2025-02-14T14:45:00-05:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/</loc>
     <lastmod>2025-01-14T17:25:00-05:00</lastmod>
@@ -12,9 +66,6 @@
     <lastmod>2025-01-14T17:25:00-05:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/</loc>
-    <lastmod>2025-01-14T17:25:00-05:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/tags/</loc>
     <lastmod>2025-01-14T17:25:00-05:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/tags/cstr/</loc>
@@ -54,9 +105,6 @@
     <lastmod>2024-11-12T19:05:00-05:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/</loc>
-    <lastmod>2024-11-12T18:40:00-05:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/tags/toc/</loc>
     <lastmod>2024-11-12T18:40:00-05:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/vim_directory/2024_11_05_15_21_27_adding_and_removing_text_in_mulitple_lines_in_vim/</loc>
