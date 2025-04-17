@@ -61,7 +61,7 @@ Voltage is the potential difference between two points **A** and **B**, it the m
 
 ## Resistor {#resistor}
 
-A resistor is passive electonic elements that obstructs the flow is current. A resistor dissipates electical energy in the form of heat (passive) unlike active elements that amplify the energy, e.g., transistors and op-amps.
+A resistor is passive electonic element that obstructs the flow of current. A resistor dissipates electical energy in the form of heat, unlike active elements that amplify the energy, e.g., transistors and op-amps.
 
 
 ## Ohm's Law {#ohm-s-law}
