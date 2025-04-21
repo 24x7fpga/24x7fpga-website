@@ -6,8 +6,15 @@
     <description>Recent content in toc on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Feb 2025 14:45:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 13 Mar 2025 12:37:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/toc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AMS Directory</title>
+      <link>https://24x7fpga.com/ams_directory/2025_03_13_ams_directory/</link>
+      <pubDate>Thu, 13 Mar 2025 12:37:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/ams_directory/2025_03_13_ams_directory/</guid>
+      <description>Basic Circuit Current, Voltage and Resistor Voltage Source, Current Source and Dependent Source </description>
+    </item>
     <item>
       <title>RISC-V Directory</title>
       <link>https://24x7fpga.com/riscv_directory/2025_02_14_risc_v_directory/</link>

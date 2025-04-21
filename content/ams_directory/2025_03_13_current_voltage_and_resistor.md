@@ -7,7 +7,13 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-## Current {#current}
+[AMS Directory]({{< relref "2025_03_13_ams_directory.md" >}})
+
+
+##  {#d41d8c}
+
+
+### Current {#current}
 
 Current occurs when electic charge (Q) flows through a wire. The current passing through the wire can be given as the amount of charge **Q** passing through a wire in a given time **t**.
 
@@ -27,7 +33,7 @@ where:
 Current is measured in _amperes (A)_ and charge is represented as _coulomb Q_.
 
 
-### Points to Remember {#points-to-remember}
+#### Points to Remember {#points-to-remember}
 
 1.  Each current has a value and a direction
 2.  In an open circuit the current is zero.
@@ -47,24 +53,24 @@ where:
 This describes the that the amount of charge in time T is defined as the area under the curve.
 
 
-## Voltage {#voltage}
+### Voltage {#voltage}
 
 Voltage is the potential difference between two points **A** and **B**, it the measure of amount of energy required to move a positive unit charge from point **A** to point **B** in an electrial circuit.
 
 
-### Points to Remember {#points-to-remember}
+#### Points to Remember {#points-to-remember}
 
 1.  A voltage has a value and sign.
 2.  A voltage diffenerce exists only between two points/nodes.
 3.  Votage is zero in a short circuit.
 
 
-## Resistor {#resistor}
+### Resistor {#resistor}
 
 A resistor is passive electonic element that obstructs the flow of current. A resistor dissipates electical energy in the form of heat, unlike active elements that amplify the energy, e.g., transistors and op-amps.
 
 
-## Ohm's Law {#ohm-s-law}
+### Ohm's Law {#ohm-s-law}
 
 Ohm’s Law is one of the most fundamental principles in electrical engineering, describing the relationship between voltage (V), current (I), and resistance (R). It states that the voltage across a resistor is directly proportional to the current flowing through it, given by the equation:
 
@@ -78,3 +84,9 @@ where:
 -   V is voltage in volts, V
 -   I is cuurent in amperes, A
 -   R is resistance in ohm, &Omega;
+
+
+#### Reference {#reference}
+
+1.  [Basic Circuits: Behzad Razavi](https://www.youtube.com/playlist?list=PLf3-Y54_5J6NqqY3wbNGWMXNcp6yafKnB)
+2.  [Design of Analog CMOS IC by Behazad Razavi](https://www.amazon.com/Integrated-Circuits-Electronics-Computer-Enginering/dp/0072524936/140-2434170-9079053?pd_rd_w=lFu00&content-id=amzn1.sym.081392b0-c07f-4fc2-8965-84d15d431f0d&pf_rd_p=081392b0-c07f-4fc2-8965-84d15d431f0d&pf_rd_r=SCR736BQYSXTEC5X3E10&pd_rd_wg=RQnBY&pd_rd_r=6667b244-37a9-4b2a-885b-239912ea914f&pd_rd_i=0072524936&psc=1)

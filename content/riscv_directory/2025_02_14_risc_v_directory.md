@@ -22,7 +22,7 @@ This directory explores the fundamentals of microarchitecture design, with the u
 ## Theory {#theory}
 
 -   [Assembly Language]({{< relref "2025_02_14_assembly_language.md" >}})
--   RISC-V Register Set
+-   [RISC-V Register Set]({{< relref "2025_02_14_risc_v_register_set.md" >}})
 
 
 #### Instruction Set {#instruction-set}

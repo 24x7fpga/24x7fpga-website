@@ -13,11 +13,19 @@
       <link>https://24x7fpga.com/ams_directory/2025_03_13_current_voltage_and_resistor/</link>
       <pubDate>Thu, 13 Mar 2025 12:40:00 -0400</pubDate>
       <guid>https://24x7fpga.com/ams_directory/2025_03_13_current_voltage_and_resistor/</guid>
-      <description>Current Current occurs when electic charge (Q) flows through a wire. The current passing through the wire can be given as the amount of charge Q passing through a wire in a given time t.
+      <description>AMS Directory
+Current Current occurs when electic charge (Q) flows through a wire. The current passing through the wire can be given as the amount of charge Q passing through a wire in a given time t.
 The general definition of current is given as the rate at which the charge passes through a wire.
 \begin{equation} \label{eq.1} I = \frac{dQ}{dt} \end{equation}
 where:
 I is current in amperes, A Q is charge in coulomb, Q t is time in seconds, s Current is measured in amperes (A) and charge is represented as coulomb Q.</description>
+    </item>
+    <item>
+      <title>AMS Directory</title>
+      <link>https://24x7fpga.com/ams_directory/2025_03_13_ams_directory/</link>
+      <pubDate>Thu, 13 Mar 2025 12:37:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/ams_directory/2025_03_13_ams_directory/</guid>
+      <description>Basic Circuit Current, Voltage and Resistor Voltage Source, Current Source and Dependent Source </description>
     </item>
     <item>
       <title>Data Path</title>
