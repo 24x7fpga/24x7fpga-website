@@ -86,6 +86,13 @@ where:
 -   R is resistance in ohm, &Omega;
 
 
+### Points to Remember {#points-to-remember}
+
+1.  Ideal Wire (Short Circuit): an ideal wire has zero resistance, zero capacitance, and zero inductance. According to Ohm’s Law (V = IR), if resistance (R) is zero, the voltage drop (V) across the wire is also zero—regardless of the current. This means an ideal wire behaves as a short circuit, where the two ends of the wire are at the same potential.
+
+2.  Switch Behavior: An open or off switch acts as an open circuit. In this case, no current flows through the circuit (i.e., the current is zero), regardless of the voltage across the switch. A closed or on switch behaves like a short circuit, allowing current to flow freely. Here, the voltage drop across the switch is zero—just like an ideal wire (ie., short circuit).
+
+
 #### Reference {#reference}
 
 1.  [Basic Circuits: Behzad Razavi](https://www.youtube.com/playlist?list=PLf3-Y54_5J6NqqY3wbNGWMXNcp6yafKnB)

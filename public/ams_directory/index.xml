@@ -6,8 +6,17 @@
     <description>Recent content in Ams_directories on Home</description>
     <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Mar 2025 12:40:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 30 Mar 2025 13:46:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/ams_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Voltage Source, Current Source and Dependent Source</title>
+      <link>https://24x7fpga.com/ams_directory/2025_03_30_voltage_source_current_source_and_dependent_source/</link>
+      <pubDate>Sun, 30 Mar 2025 13:46:00 -0400</pubDate>
+      <guid>https://24x7fpga.com/ams_directory/2025_03_30_voltage_source_current_source_and_dependent_source/</guid>
+      <description>AMS Directory
+Voltage Source A voltage source is an electrical component that provide constant or varying voltage between two terminals. It is a key component in circuit that is responsible for pushing electric charge through a closed circuit.
+Variable and Constant Voltage Source A variable voltage source is one that varies its voltage over time. THe variations can be adjusted manully via nknob or automatic via signal generator. These sources are useful for testing and controlling circuits with different voltage requirements.</description>
+    </item>
     <item>
       <title>Current, Voltage and Resistor</title>
       <link>https://24x7fpga.com/ams_directory/2025_03_13_current_voltage_and_resistor/</link>
