@@ -28,7 +28,7 @@ This directory explores the fundamentals of microarchitecture design, with the u
 #### Instruction Set {#instruction-set}
 
 -   [R-Type]({{< relref "2025_02_18_r_type.md" >}})
--   I-Type
+-   [I-Type]({{< relref "2025_02_19_i_type.md" >}})
 -   S-Type
 -   B-Type
 -   U-Type
