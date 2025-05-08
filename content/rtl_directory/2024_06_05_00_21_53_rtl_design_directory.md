@@ -93,7 +93,7 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 
 -   [UART]({{< relref "2024_09_17_20_46_04_uart.md" >}})
 -   [SPI]({{< relref "2024_09_18_22_25_40_spi.md" >}})
--   I2C
+-   [I2C](https://github.com/24x7fpga/RTL/tree/master/rtl_designs/i2c)
 -   VGA
 -   I2S
 -   HDMI
