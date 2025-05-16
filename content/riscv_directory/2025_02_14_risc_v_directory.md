@@ -29,7 +29,7 @@ This directory explores the fundamentals of microarchitecture design, with the u
 
 -   [R-Type]({{< relref "2025_02_18_r_type.md" >}})
 -   [I-Type]({{< relref "2025_02_19_i_type.md" >}})
--   S-Type
+-   [S-Type]({{< relref "2025_02_20_s_type.md" >}})
 -   B-Type
 -   U-Type
 -   J-Type
