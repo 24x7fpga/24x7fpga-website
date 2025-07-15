@@ -8,6 +8,7 @@
 <title>Scheduling Semantics | Home</title>
 <meta name="keywords" content="sv">
 <meta name="description" content="Source &ndash; SV Verification Directory
+
 In digital design, it&rsquo;s crucial to ensure that simulations accurately reflect real-time hardware behavior. Interestingly, there are instances where a design performs flawlessly on hardware but fails during simulation. One common culprit behind such discrepancies is a race condition—an issue that arises due to timing mismatches between design modules and the verification environment. Effectively identifying and resolving race conditions is critical, but it is even more important to strive for and master designs that are inherently free of race conditions.">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/">
@@ -23,6 +24,7 @@ In digital design, it&rsquo;s crucial to ensure that simulations accurately refl
 <link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/">
 <noscript>
     <style>
         #theme-toggle,
@@ -38,6 +40,7 @@ In digital design, it&rsquo;s crucial to ensure that simulations accurately refl
 
 <meta property="og:title" content="Scheduling Semantics" />
 <meta property="og:description" content="Source &ndash; SV Verification Directory
+
 In digital design, it&rsquo;s crucial to ensure that simulations accurately reflect real-time hardware behavior. Interestingly, there are instances where a design performs flawlessly on hardware but fails during simulation. One common culprit behind such discrepancies is a race condition—an issue that arises due to timing mismatches between design modules and the verification environment. Effectively identifying and resolving race conditions is critical, but it is even more important to strive for and master designs that are inherently free of race conditions." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/" /><meta property="article:section" content="sv_directory" />
@@ -47,6 +50,7 @@ In digital design, it&rsquo;s crucial to ensure that simulations accurately refl
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Scheduling Semantics"/>
 <meta name="twitter:description" content="Source &ndash; SV Verification Directory
+
 In digital design, it&rsquo;s crucial to ensure that simulations accurately reflect real-time hardware behavior. Interestingly, there are instances where a design performs flawlessly on hardware but fails during simulation. One common culprit behind such discrepancies is a race condition—an issue that arises due to timing mismatches between design modules and the verification environment. Effectively identifying and resolving race conditions is critical, but it is even more important to strive for and master designs that are inherently free of race conditions."/>
 
 
@@ -76,7 +80,7 @@ In digital design, it&rsquo;s crucial to ensure that simulations accurately refl
   "@type": "BlogPosting",
   "headline": "Scheduling Semantics",
   "name": "Scheduling Semantics",
-  "description": "Source \u0026ndash; SV Verification Directory\nIn digital design, it\u0026rsquo;s crucial to ensure that simulations accurately reflect real-time hardware behavior. Interestingly, there are instances where a design performs flawlessly on hardware but fails during simulation. One common culprit behind such discrepancies is a race condition—an issue that arises due to timing mismatches between design modules and the verification environment. Effectively identifying and resolving race conditions is critical, but it is even more important to strive for and master designs that are inherently free of race conditions.",
+  "description": "Source \u0026ndash; SV Verification Directory\nIn digital design, it\u0026rsquo;s crucial to ensure that simulations accurately reflect real-time hardware behavior. Interestingly, there are instances where a design performs flawlessly on hardware but fails during simulation. One common culprit behind such discrepancies is a race condition—an issue that arises due to timing mismatches between design modules and the verification environment. Effectively identifying and resolving race conditions is critical, but it is even more important to strive for and master designs that are inherently free of race conditions.\n",
   "keywords": [
     "sv"
   ],
@@ -410,7 +414,6 @@ In digital design, it&rsquo;s crucial to ensure that simulations accurately refl
 <li>When the expression uses a blocking assignment, <strong>exp_res</strong> is evaluated and updated in the Active Region, and the if statement is also evaluated in the same region. As a result, the simulation does not fail.</li>
 <li>Although it is recommended to use non-blocking assignments (NBA) for sequential logic inside an always block [4], in this particular case, it should not have been used.</li>
 </ul>
-<!-- raw HTML omitted -->
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">always</span>@(<span style="color:#66d9ef">posedge</span> clk)<span style="color:#66d9ef">begin</span>
 </span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">if</span>(res_vld)<span style="color:#66d9ef">begin</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span>(queue.size() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)<span style="color:#66d9ef">begin</span>
@@ -460,7 +463,7 @@ In digital design, it&rsquo;s crucial to ensure that simulations accurately refl
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
+      <li><a href="https://24x7fpga.com/tags/sv/">Sv</a></li>
     </ul>
 
 

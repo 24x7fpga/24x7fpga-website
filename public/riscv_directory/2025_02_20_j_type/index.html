@@ -8,8 +8,18 @@
 <title>J-Type | Home</title>
 <meta name="keywords" content="riscv">
 <meta name="description" content="The J-type (jump) instruction is similar to the U-type instruction but differs only in the way the immediate field is arranged. Figure 1 describes how the J-type instruction format is divided into its respective fields.
-Figure 1: Instruction Format
-Opcode: The opcode or operation code is a 7-bit field that defines the type of operation to be performed. Destination Register: Stores the result of the operation in the destination register rd.">
+
+     
+            Figure 1: Instruction Format
+        
+
+
+
+Opcode: The opcode or operation code is a 7-bit field that defines the type of operation to be performed.
+Destination Register: Stores the result of the operation in the destination register rd.
+Immediate Field: A 20-bit immediate value is the difference of the label address and jal address such that the addition of the jal and diff is equal to label address.
+
+Note: The ordinary j jump instruction is encoded as jal where rd is set to zero.">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/riscv_directory/2025_02_20_j_type/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
@@ -24,6 +34,7 @@ Opcode: The opcode or operation code is a 7-bit field that defines the type of o
 <link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/riscv_directory/2025_02_20_j_type/">
 <noscript>
     <style>
         #theme-toggle,
@@ -39,8 +50,18 @@ Opcode: The opcode or operation code is a 7-bit field that defines the type of o
 
 <meta property="og:title" content="J-Type" />
 <meta property="og:description" content="The J-type (jump) instruction is similar to the U-type instruction but differs only in the way the immediate field is arranged. Figure 1 describes how the J-type instruction format is divided into its respective fields.
-Figure 1: Instruction Format
-Opcode: The opcode or operation code is a 7-bit field that defines the type of operation to be performed. Destination Register: Stores the result of the operation in the destination register rd." />
+
+     
+            Figure 1: Instruction Format
+        
+
+
+
+Opcode: The opcode or operation code is a 7-bit field that defines the type of operation to be performed.
+Destination Register: Stores the result of the operation in the destination register rd.
+Immediate Field: A 20-bit immediate value is the difference of the label address and jal address such that the addition of the jal and diff is equal to label address.
+
+Note: The ordinary j jump instruction is encoded as jal where rd is set to zero." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/riscv_directory/2025_02_20_j_type/" /><meta property="article:section" content="riscv_directory" />
 <meta property="article:published_time" content="2025-02-20T12:29:00-05:00" />
@@ -49,8 +70,18 @@ Opcode: The opcode or operation code is a 7-bit field that defines the type of o
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="J-Type"/>
 <meta name="twitter:description" content="The J-type (jump) instruction is similar to the U-type instruction but differs only in the way the immediate field is arranged. Figure 1 describes how the J-type instruction format is divided into its respective fields.
-Figure 1: Instruction Format
-Opcode: The opcode or operation code is a 7-bit field that defines the type of operation to be performed. Destination Register: Stores the result of the operation in the destination register rd."/>
+
+     
+            Figure 1: Instruction Format
+        
+
+
+
+Opcode: The opcode or operation code is a 7-bit field that defines the type of operation to be performed.
+Destination Register: Stores the result of the operation in the destination register rd.
+Immediate Field: A 20-bit immediate value is the difference of the label address and jal address such that the addition of the jal and diff is equal to label address.
+
+Note: The ordinary j jump instruction is encoded as jal where rd is set to zero."/>
 
 
 <script type="application/ld+json">
@@ -79,7 +110,7 @@ Opcode: The opcode or operation code is a 7-bit field that defines the type of o
   "@type": "BlogPosting",
   "headline": "J-Type",
   "name": "J-Type",
-  "description": "The J-type (jump) instruction is similar to the U-type instruction but differs only in the way the immediate field is arranged. Figure 1 describes how the J-type instruction format is divided into its respective fields.\nFigure 1: Instruction Format\nOpcode: The opcode or operation code is a 7-bit field that defines the type of operation to be performed. Destination Register: Stores the result of the operation in the destination register rd.",
+  "description": "The J-type (jump) instruction is similar to the U-type instruction but differs only in the way the immediate field is arranged. Figure 1 describes how the J-type instruction format is divided into its respective fields.\nFigure 1: Instruction Format\nOpcode: The opcode or operation code is a 7-bit field that defines the type of operation to be performed. Destination Register: Stores the result of the operation in the destination register rd. Immediate Field: A 20-bit immediate value is the difference of the label address and jal address such that the addition of the jal and diff is equal to label address. Note: The ordinary j jump instruction is encoded as jal where rd is set to zero.\n",
   "keywords": [
     "riscv"
   ],
@@ -278,20 +309,20 @@ Opcode: The opcode or operation code is a 7-bit field that defines the type of o
 <p>Below is table that describes the list of U-type instructions.</p>
 <!-- raw HTML omitted -->
 <table>
-<thead>
-<tr>
-<th><em>opcode</em></th>
-<th>Description</th>
-<th>Instruction</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1101111 (111)</td>
-<td>jump and link</td>
-<td>jal rd, label</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th><em>opcode</em></th>
+          <th>Description</th>
+          <th>Instruction</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1101111 (111)</td>
+          <td>jump and link</td>
+          <td>jal rd, label</td>
+      </tr>
+  </tbody>
 </table>
 
 
@@ -301,7 +332,7 @@ Opcode: The opcode or operation code is a 7-bit field that defines the type of o
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/riscv/">riscv</a></li>
+      <li><a href="https://24x7fpga.com/tags/riscv/">Riscv</a></li>
     </ul>
 
 

@@ -1,6 +1,6 @@
 +++
 title = "Valid-Ready Protocol"
-author = ["Kiran"]
+author = ["kiran"]
 date = 2024-11-29T18:17:00-05:00
 tags = ["rtl"]
 draft = false
@@ -113,7 +113,7 @@ The waveform illustrates how `dwn_vld` and `up_rdy` signals are randomly asserte
 -   Error-Prone Design: The logic, as currently implemented, introduces inefficiencies that can compound in high-throughput systems as it cabe be seen in the comparison table.
 
 
-## Updated Valid-Ready Implemenation {#updated-valid-ready-implemenation}
+## Updated Valid-Ready Implementation {#updated-valid-ready-implementation}
 
 The data fails to latch at **b** because `dwn_rdy` was not set high when there was no valid data stored in the slice. An additional logic must be added in the if statement to latch data when the data is read from the slice.
 
@@ -179,7 +179,7 @@ This design not only addresses inefficiencies in the earlier implementation but 
 These changes not only ensure smoother data transitions but also significantly enhance the overall reliability and performance of the system. By analyzing the waveform, it’s evident how these optimizations contribute to better performance and reliability in handshake logic systems.
 
 
-## Comparision Table {#comparision-table}
+## Comparison Table {#comparison-table}
 
 To evaluate the efficiency of the valid-ready handshake protocol, simulations were conducted using Icarus Verilog. In these simulations, random values of dwn_vld and up_rdy were applied to compare the performance of two different design versions.
 

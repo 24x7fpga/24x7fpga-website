@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>ams on Home</title>
+    <title>Ams on Home</title>
     <link>https://24x7fpga.com/tags/ams/</link>
-    <description>Recent content in ams on Home</description>
-    <generator>Hugo -- 0.121.1</generator>
+    <description>Recent content in Ams on Home</description>
+    <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 30 Mar 2025 13:46:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/ams/index.xml" rel="self" type="application/rss+xml" />
@@ -13,21 +13,34 @@
       <link>https://24x7fpga.com/ams_directory/2025_03_30_voltage_source_current_source_and_dependent_source/</link>
       <pubDate>Sun, 30 Mar 2025 13:46:00 -0400</pubDate>
       <guid>https://24x7fpga.com/ams_directory/2025_03_30_voltage_source_current_source_and_dependent_source/</guid>
-      <description>AMS Directory
-Voltage Source A voltage source is an electrical component that provide constant or varying voltage between two terminals. It is a key component in circuit that is responsible for pushing electric charge through a closed circuit.
-Variable and Constant Voltage Source A variable voltage source is one that varies its voltage over time. THe variations can be adjusted manully via nknob or automatic via signal generator. These sources are useful for testing and controlling circuits with different voltage requirements.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/ams_directory/2025_03_13_ams_directory/&#34;&gt;AMS Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;voltage-source&#34;&gt;Voltage Source&lt;/h3&gt;
+&lt;p&gt;A voltage source is an electrical component that provide constant or varying voltage between two terminals. It is a key component in circuit that is responsible for pushing electric charge through a closed circuit.&lt;/p&gt;
+&lt;h4 id=&#34;variable-and-constant-voltage-source&#34;&gt;Variable and Constant Voltage Source&lt;/h4&gt;
+&lt;p&gt;A variable voltage source is one that varies its voltage over time. THe variations can be adjusted manully via nknob or automatic via signal generator. These sources are useful for testing and controlling circuits with different voltage requirements.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Current, Voltage and Resistor</title>
       <link>https://24x7fpga.com/ams_directory/2025_03_13_current_voltage_and_resistor/</link>
       <pubDate>Thu, 13 Mar 2025 12:40:00 -0400</pubDate>
       <guid>https://24x7fpga.com/ams_directory/2025_03_13_current_voltage_and_resistor/</guid>
-      <description>AMS Directory
-Current Current occurs when electic charge (Q) flows through a wire. The current passing through the wire can be given as the amount of charge Q passing through a wire in a given time t.
-The general definition of current is given as the rate at which the charge passes through a wire.
-\begin{equation} \label{eq.1} I = \frac{dQ}{dt} \end{equation}
-where:
-I is current in amperes, A Q is charge in coulomb, Q t is time in seconds, s Current is measured in amperes (A) and charge is represented as coulomb Q.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/ams_directory/2025_03_13_ams_directory/&#34;&gt;AMS Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;current&#34;&gt;Current&lt;/h3&gt;
+&lt;p&gt;Current occurs when electic charge (Q) flows through a wire. The current passing through the wire can be given as the amount of charge &lt;strong&gt;Q&lt;/strong&gt; passing through a wire in a given time &lt;strong&gt;t&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The general definition of current is given as the rate at which the charge passes through a wire.&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\label{eq.1}
+I = \frac{dQ}{dt}
+\end{equation}&lt;/p&gt;
+&lt;p&gt;where:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I is current in amperes, A&lt;/li&gt;
+&lt;li&gt;Q is charge in coulomb, Q&lt;/li&gt;
+&lt;li&gt;t is time in seconds, s&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Current is measured in &lt;em&gt;amperes (A)&lt;/em&gt; and charge is represented as &lt;em&gt;coulomb Q&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

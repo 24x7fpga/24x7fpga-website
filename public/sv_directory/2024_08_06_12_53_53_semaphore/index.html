@@ -9,7 +9,13 @@
 <meta name="keywords" content="sv">
 <meta name="description" content="SV Verification Directory
 Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:
-Events Mailbox Semaphore Semaphore A semaphore in SystemVerilog is a built-in class used for synchronization. It acts as a container holding a fixed number of keys, which regulate access to shared memory resources. Semaphores are specifically designed to manage and control concurrent access, ensuring that multiple processes can safely interact with shared resources without conflicts.">
+
+Events
+Mailbox
+Semaphore
+
+Semaphore
+A semaphore in SystemVerilog is a built-in class used for synchronization. It acts as a container holding a fixed number of keys, which regulate access to shared memory resources. Semaphores are specifically designed to manage and control concurrent access, ensuring that multiple processes can safely interact with shared resources without conflicts.">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_08_06_12_53_53_semaphore/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
@@ -24,6 +30,7 @@ Events Mailbox Semaphore Semaphore A semaphore in SystemVerilog is a built-in cl
 <link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/sv_directory/2024_08_06_12_53_53_semaphore/">
 <noscript>
     <style>
         #theme-toggle,
@@ -40,7 +47,13 @@ Events Mailbox Semaphore Semaphore A semaphore in SystemVerilog is a built-in cl
 <meta property="og:title" content="Semaphore" />
 <meta property="og:description" content="SV Verification Directory
 Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:
-Events Mailbox Semaphore Semaphore A semaphore in SystemVerilog is a built-in class used for synchronization. It acts as a container holding a fixed number of keys, which regulate access to shared memory resources. Semaphores are specifically designed to manage and control concurrent access, ensuring that multiple processes can safely interact with shared resources without conflicts." />
+
+Events
+Mailbox
+Semaphore
+
+Semaphore
+A semaphore in SystemVerilog is a built-in class used for synchronization. It acts as a container holding a fixed number of keys, which regulate access to shared memory resources. Semaphores are specifically designed to manage and control concurrent access, ensuring that multiple processes can safely interact with shared resources without conflicts." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_08_06_12_53_53_semaphore/" /><meta property="article:section" content="sv_directory" />
 <meta property="article:published_time" content="2024-08-06T12:53:00-04:00" />
@@ -50,7 +63,13 @@ Events Mailbox Semaphore Semaphore A semaphore in SystemVerilog is a built-in cl
 <meta name="twitter:title" content="Semaphore"/>
 <meta name="twitter:description" content="SV Verification Directory
 Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:
-Events Mailbox Semaphore Semaphore A semaphore in SystemVerilog is a built-in class used for synchronization. It acts as a container holding a fixed number of keys, which regulate access to shared memory resources. Semaphores are specifically designed to manage and control concurrent access, ensuring that multiple processes can safely interact with shared resources without conflicts."/>
+
+Events
+Mailbox
+Semaphore
+
+Semaphore
+A semaphore in SystemVerilog is a built-in class used for synchronization. It acts as a container holding a fixed number of keys, which regulate access to shared memory resources. Semaphores are specifically designed to manage and control concurrent access, ensuring that multiple processes can safely interact with shared resources without conflicts."/>
 
 
 <script type="application/ld+json">
@@ -79,7 +98,7 @@ Events Mailbox Semaphore Semaphore A semaphore in SystemVerilog is a built-in cl
   "@type": "BlogPosting",
   "headline": "Semaphore",
   "name": "Semaphore",
-  "description": "SV Verification Directory\nInterprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:\nEvents Mailbox Semaphore Semaphore A semaphore in SystemVerilog is a built-in class used for synchronization. It acts as a container holding a fixed number of keys, which regulate access to shared memory resources. Semaphores are specifically designed to manage and control concurrent access, ensuring that multiple processes can safely interact with shared resources without conflicts.",
+  "description": "SV Verification Directory\nInterprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:\nEvents Mailbox Semaphore Semaphore A semaphore in SystemVerilog is a built-in class used for synchronization. It acts as a container holding a fixed number of keys, which regulate access to shared memory resources. Semaphores are specifically designed to manage and control concurrent access, ensuring that multiple processes can safely interact with shared resources without conflicts.\n",
   "keywords": [
     "sv"
   ],
@@ -276,30 +295,30 @@ Events Mailbox Semaphore Semaphore A semaphore in SystemVerilog is a built-in cl
 </span></span></code></pre></div><h3 id="semaphore-methods">Semaphore Methods<a hidden class="anchor" aria-hidden="true" href="#semaphore-methods">#</a></h3>
 <p>Similar to the mailbox, the semaphore in SystemVerilog is equipped with methods for its operation. However, it provides only four distinct methods:</p>
 <table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>new();</td>
-<td>creates a semaphore with specified no. of keys, the default no. of keys is zero &lsquo;0&rsquo;</td>
-</tr>
-<tr>
-<td>get();</td>
-<td>acquires keys from semaphore, the default no. of requrested key is one &lsquo;1&rsquo;</td>
-</tr>
-<tr>
-<td>put();</td>
-<td>return keys to semaphore, the default no.of keys returned is one &lsquo;1&rsquo;</td>
-</tr>
-<tr>
-<td>try_get();</td>
-<td>attempts to acquire keys without blocking the execution</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>new();</td>
+          <td>creates a semaphore with specified no. of keys, the default no. of keys is zero &lsquo;0&rsquo;</td>
+      </tr>
+      <tr>
+          <td>get();</td>
+          <td>acquires keys from semaphore, the default no. of requrested key is one &lsquo;1&rsquo;</td>
+      </tr>
+      <tr>
+          <td>put();</td>
+          <td>return keys to semaphore, the default no.of keys returned is one &lsquo;1&rsquo;</td>
+      </tr>
+      <tr>
+          <td>try_get();</td>
+          <td>attempts to acquire keys without blocking the execution</td>
+      </tr>
+  </tbody>
 </table>
 
 
@@ -309,7 +328,7 @@ Events Mailbox Semaphore Semaphore A semaphore in SystemVerilog is a built-in cl
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
+      <li><a href="https://24x7fpga.com/tags/sv/">Sv</a></li>
     </ul>
 
 

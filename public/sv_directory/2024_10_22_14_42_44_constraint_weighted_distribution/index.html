@@ -9,8 +9,15 @@
 <meta name="keywords" content="sv">
 <meta name="description" content="Source &ndash; SV Verification Directory
 The weighted distribution constraint is used with the dist operator to control the probability of specific values being generated during randomization. This is useful when certain values have to appear more or less frequently in a set of random outcomes.
-Syntax The dist keyword is utilized to generated weighted distribution during randomization.
-constraint &lt;constraint_name&gt; {varible_name dist {1 := 4, [2:5] := 8};} // value := weight constraint &lt;constraint_name&gt; {varible_name dist {1 :/ 4, [2:5] :/ 8};} // value :/ weight :=: This operator specifies that the weight is the same for every value within the specified range.">
+Syntax
+The dist keyword is utilized to generated weighted distribution during randomization.
+constraint &lt;constraint_name&gt; {varible_name dist {1 := 4, [2:5] := 8};}   // value := weight
+constraint &lt;constraint_name&gt; {varible_name dist {1 :/ 4, [2:5] :/ 8};}   // value :/ weight
+
+:=: This operator specifies that the weight is the same for every value within the specified range.
+:/: This operator ensures that the weight is equally divided among all values in the range.
+
+In the above example:">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_10_22_14_42_44_constraint_weighted_distribution/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
@@ -25,6 +32,7 @@ constraint &lt;constraint_name&gt; {varible_name dist {1 := 4, [2:5] := 8};} // 
 <link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/sv_directory/2024_10_22_14_42_44_constraint_weighted_distribution/">
 <noscript>
     <style>
         #theme-toggle,
@@ -41,8 +49,15 @@ constraint &lt;constraint_name&gt; {varible_name dist {1 := 4, [2:5] := 8};} // 
 <meta property="og:title" content="Constraint: Weighted Distribution" />
 <meta property="og:description" content="Source &ndash; SV Verification Directory
 The weighted distribution constraint is used with the dist operator to control the probability of specific values being generated during randomization. This is useful when certain values have to appear more or less frequently in a set of random outcomes.
-Syntax The dist keyword is utilized to generated weighted distribution during randomization.
-constraint &lt;constraint_name&gt; {varible_name dist {1 := 4, [2:5] := 8};} // value := weight constraint &lt;constraint_name&gt; {varible_name dist {1 :/ 4, [2:5] :/ 8};} // value :/ weight :=: This operator specifies that the weight is the same for every value within the specified range." />
+Syntax
+The dist keyword is utilized to generated weighted distribution during randomization.
+constraint &lt;constraint_name&gt; {varible_name dist {1 := 4, [2:5] := 8};}   // value := weight
+constraint &lt;constraint_name&gt; {varible_name dist {1 :/ 4, [2:5] :/ 8};}   // value :/ weight
+
+:=: This operator specifies that the weight is the same for every value within the specified range.
+:/: This operator ensures that the weight is equally divided among all values in the range.
+
+In the above example:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_10_22_14_42_44_constraint_weighted_distribution/" /><meta property="article:section" content="sv_directory" />
 <meta property="article:published_time" content="2024-10-22T14:42:00-04:00" />
@@ -52,8 +67,15 @@ constraint &lt;constraint_name&gt; {varible_name dist {1 := 4, [2:5] := 8};} // 
 <meta name="twitter:title" content="Constraint: Weighted Distribution"/>
 <meta name="twitter:description" content="Source &ndash; SV Verification Directory
 The weighted distribution constraint is used with the dist operator to control the probability of specific values being generated during randomization. This is useful when certain values have to appear more or less frequently in a set of random outcomes.
-Syntax The dist keyword is utilized to generated weighted distribution during randomization.
-constraint &lt;constraint_name&gt; {varible_name dist {1 := 4, [2:5] := 8};} // value := weight constraint &lt;constraint_name&gt; {varible_name dist {1 :/ 4, [2:5] :/ 8};} // value :/ weight :=: This operator specifies that the weight is the same for every value within the specified range."/>
+Syntax
+The dist keyword is utilized to generated weighted distribution during randomization.
+constraint &lt;constraint_name&gt; {varible_name dist {1 := 4, [2:5] := 8};}   // value := weight
+constraint &lt;constraint_name&gt; {varible_name dist {1 :/ 4, [2:5] :/ 8};}   // value :/ weight
+
+:=: This operator specifies that the weight is the same for every value within the specified range.
+:/: This operator ensures that the weight is equally divided among all values in the range.
+
+In the above example:"/>
 
 
 <script type="application/ld+json">
@@ -82,7 +104,7 @@ constraint &lt;constraint_name&gt; {varible_name dist {1 := 4, [2:5] := 8};} // 
   "@type": "BlogPosting",
   "headline": "Constraint: Weighted Distribution",
   "name": "Constraint: Weighted Distribution",
-  "description": "Source \u0026ndash; SV Verification Directory\nThe weighted distribution constraint is used with the dist operator to control the probability of specific values being generated during randomization. This is useful when certain values have to appear more or less frequently in a set of random outcomes.\nSyntax The dist keyword is utilized to generated weighted distribution during randomization.\nconstraint \u0026lt;constraint_name\u0026gt; {varible_name dist {1 := 4, [2:5] := 8};} // value := weight constraint \u0026lt;constraint_name\u0026gt; {varible_name dist {1 :/ 4, [2:5] :/ 8};} // value :/ weight :=: This operator specifies that the weight is the same for every value within the specified range.",
+  "description": "Source \u0026ndash; SV Verification Directory\nThe weighted distribution constraint is used with the dist operator to control the probability of specific values being generated during randomization. This is useful when certain values have to appear more or less frequently in a set of random outcomes.\nSyntax The dist keyword is utilized to generated weighted distribution during randomization.\nconstraint \u0026lt;constraint_name\u0026gt; {varible_name dist {1 := 4, [2:5] := 8};} // value := weight constraint \u0026lt;constraint_name\u0026gt; {varible_name dist {1 :/ 4, [2:5] :/ 8};} // value :/ weight :=: This operator specifies that the weight is the same for every value within the specified range. :/: This operator ensures that the weight is equally divided among all values in the range. In the above example:\n",
   "keywords": [
     "sv"
   ],
@@ -337,7 +359,7 @@ Probability = \frac{Specified \;  weight}{Total \; number \; of\; values}
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
+      <li><a href="https://24x7fpga.com/tags/sv/">Sv</a></li>
     </ul>
 
 
