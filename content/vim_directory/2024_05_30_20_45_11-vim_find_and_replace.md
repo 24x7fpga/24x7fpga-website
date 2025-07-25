@@ -35,7 +35,7 @@ Examples:
 1.  :s/foo/bar/g =&gt; replaces foo with bar in the current line.
 2.  :%s/foo/bar/g =&gt; replaces foo with bar in the entire document.
 
-Some necessart flags:
+Some necessary flags:
 
 1.  g =&gt; is used to replaces the occurances.
 2.  c =&gt; is used to confirm the replacement.

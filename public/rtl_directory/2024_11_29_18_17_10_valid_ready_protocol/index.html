@@ -9,14 +9,8 @@
 <meta name="keywords" content="rtl">
 <meta name="description" content="Source &ndash; RTL Design Directory
 The valid-ready protocol is a fundamental handshake mechanism in digital design, commonly used in protocols like AXI. It ensures smooth data flow between a producer (the data source) and a consumer (the data sink), enabling reliable and synchronized communication in hardware systems.
-
-     
-            Figure 1: Valid-Ready Flow Control
-        
-
-
-Guidelines
-The valid and ready signals are integral to many handshaking protocols, ensuring reliable data transfer between components in a digital system. Let’s break down their behavior:">
+Figure 1: Valid-Ready Flow Control
+Guidelines The valid and ready signals are integral to many handshaking protocols, ensuring reliable data transfer between components in a digital system.">
 <meta name="author" content="kiran">
 <link rel="canonical" href="https://24x7fpga.com/rtl_directory/2024_11_29_18_17_10_valid_ready_protocol/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
@@ -31,7 +25,6 @@ The valid and ready signals are integral to many handshaking protocols, ensuring
 <link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://24x7fpga.com/rtl_directory/2024_11_29_18_17_10_valid_ready_protocol/">
 <noscript>
     <style>
         #theme-toggle,
@@ -48,14 +41,8 @@ The valid and ready signals are integral to many handshaking protocols, ensuring
 <meta property="og:title" content="Valid-Ready Protocol" />
 <meta property="og:description" content="Source &ndash; RTL Design Directory
 The valid-ready protocol is a fundamental handshake mechanism in digital design, commonly used in protocols like AXI. It ensures smooth data flow between a producer (the data source) and a consumer (the data sink), enabling reliable and synchronized communication in hardware systems.
-
-     
-            Figure 1: Valid-Ready Flow Control
-        
-
-
-Guidelines
-The valid and ready signals are integral to many handshaking protocols, ensuring reliable data transfer between components in a digital system. Let’s break down their behavior:" />
+Figure 1: Valid-Ready Flow Control
+Guidelines The valid and ready signals are integral to many handshaking protocols, ensuring reliable data transfer between components in a digital system." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/rtl_directory/2024_11_29_18_17_10_valid_ready_protocol/" /><meta property="article:section" content="rtl_directory" />
 <meta property="article:published_time" content="2024-11-29T18:17:00-05:00" />
@@ -65,14 +52,8 @@ The valid and ready signals are integral to many handshaking protocols, ensuring
 <meta name="twitter:title" content="Valid-Ready Protocol"/>
 <meta name="twitter:description" content="Source &ndash; RTL Design Directory
 The valid-ready protocol is a fundamental handshake mechanism in digital design, commonly used in protocols like AXI. It ensures smooth data flow between a producer (the data source) and a consumer (the data sink), enabling reliable and synchronized communication in hardware systems.
-
-     
-            Figure 1: Valid-Ready Flow Control
-        
-
-
-Guidelines
-The valid and ready signals are integral to many handshaking protocols, ensuring reliable data transfer between components in a digital system. Let’s break down their behavior:"/>
+Figure 1: Valid-Ready Flow Control
+Guidelines The valid and ready signals are integral to many handshaking protocols, ensuring reliable data transfer between components in a digital system."/>
 
 
 <script type="application/ld+json">
@@ -101,7 +82,7 @@ The valid and ready signals are integral to many handshaking protocols, ensuring
   "@type": "BlogPosting",
   "headline": "Valid-Ready Protocol",
   "name": "Valid-Ready Protocol",
-  "description": "Source \u0026ndash; RTL Design Directory\nThe valid-ready protocol is a fundamental handshake mechanism in digital design, commonly used in protocols like AXI. It ensures smooth data flow between a producer (the data source) and a consumer (the data sink), enabling reliable and synchronized communication in hardware systems.\nFigure 1: Valid-Ready Flow Control\nGuidelines The valid and ready signals are integral to many handshaking protocols, ensuring reliable data transfer between components in a digital system. Let’s break down their behavior:\n",
+  "description": "Source \u0026ndash; RTL Design Directory\nThe valid-ready protocol is a fundamental handshake mechanism in digital design, commonly used in protocols like AXI. It ensures smooth data flow between a producer (the data source) and a consumer (the data sink), enabling reliable and synchronized communication in hardware systems.\nFigure 1: Valid-Ready Flow Control\nGuidelines The valid and ready signals are integral to many handshaking protocols, ensuring reliable data transfer between components in a digital system.",
   "keywords": [
     "rtl"
   ],
@@ -341,6 +322,7 @@ The valid and ready signals are integral to many handshaking protocols, ensuring
 <li>The <code>up_valid</code> signal must stay asserted (high) until the <code>up_rdy</code> signal is asserted by the consumer.</li>
 <li>On the other hand, the <code>dwn_valid</code> signal can be deasserted once the data has been successfully latched onto the slice. This ensures compliance with the third guideline.</li>
 </ul>
+<!-- raw HTML omitted -->
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">always_ff</span>@(<span style="color:#66d9ef">posedge</span> clk)<span style="color:#66d9ef">begin</span>
 </span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">if</span>(rst)
 </span></span><span style="display:flex;"><span>      up_vld_reg <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span><span style="color:#ae81ff">&#39;b0</span>;
@@ -480,40 +462,40 @@ The valid and ready signals are integral to many handshaking protocols, ensuring
 <p>To evaluate the efficiency of the valid-ready handshake protocol, simulations were conducted using Icarus Verilog. In these simulations, random values of dwn_vld and up_rdy were applied to compare the performance of two different design versions.</p>
 <p>To quantify the improvements made in the handshake mechanism, a performance comparison was conducted between Version 1 and Version 2. The table below summarizes the results, showing the total number of transactions completed by each version over varying numbers of clock cycles.</p>
 <table>
-  <thead>
-      <tr>
-          <th>No. of Clock Cycles</th>
-          <th>Total No. of Transactions in Version 1</th>
-          <th>Total No. of Transactions in Version 2</th>
-          <th>Difference</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>16</td>
-          <td>57</td>
-          <td>59</td>
-          <td>2</td>
-      </tr>
-      <tr>
-          <td>32</td>
-          <td>63</td>
-          <td>66</td>
-          <td>3</td>
-      </tr>
-      <tr>
-          <td>64</td>
-          <td>80</td>
-          <td>92</td>
-          <td>12</td>
-      </tr>
-      <tr>
-          <td>128</td>
-          <td>117</td>
-          <td>138</td>
-          <td>21</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>No. of Clock Cycles</th>
+<th>Total No. of Transactions in Version 1</th>
+<th>Total No. of Transactions in Version 2</th>
+<th>Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16</td>
+<td>57</td>
+<td>59</td>
+<td>2</td>
+</tr>
+<tr>
+<td>32</td>
+<td>63</td>
+<td>66</td>
+<td>3</td>
+</tr>
+<tr>
+<td>64</td>
+<td>80</td>
+<td>92</td>
+<td>12</td>
+</tr>
+<tr>
+<td>128</td>
+<td>117</td>
+<td>138</td>
+<td>21</td>
+</tr>
+</tbody>
 </table>
 <p>The results highlight a critical takeaway: over time version 2 leads to significantly improved performance where the total number of transaction in a given time increases, making it the superior choice for systems requiring high transaction throughput and the correct implementation of valid-ready protocol.</p>
 <p>While the valid-ready protocol might seem straightforward at first glance, its implementation demands meticulous analysis. If not carefully designed, the protocol can introduce subtle bugs and inefficiencies, potentially compromising system performance.</p>
@@ -525,7 +507,7 @@ The valid and ready signals are integral to many handshaking protocols, ensuring
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/rtl/">Rtl</a></li>
+      <li><a href="https://24x7fpga.com/tags/rtl/">rtl</a></li>
     </ul>
 
 

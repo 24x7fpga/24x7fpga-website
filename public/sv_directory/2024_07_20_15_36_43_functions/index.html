@@ -8,40 +8,8 @@
 <title>Functions | Home</title>
 <meta name="keywords" content="sv">
 <meta name="description" content="Source &ndash; SV Verification Directory
-Functions
-
-A function must return a value.
-A function should not include delays, event controls, or wait statements.
-A function can only contain inputs as arguments as it returns only one output value.
-
-Similar to tasks:
-
-A function can be declared as automatic or static.
-It can contain static variables in automatic function and vice-versa.
-
-Syntax: Function
-function [return type] function_name  (input_arguments);
-   // execute the code
-   return [value];
-endfunction
-Example Code: Function
-module tb_function_ex;
-
-  function int mul_3(int x);
-    return x*3;
-  endfunction
-
-  initial begin
-    int x;
-    $display(&#34;---------- Multiply by 3 ----------&#34;);
-    repeat(20)begin
-      x = $urandom_range(1,9);
-      $display(&#34;x = %0d, mul_by_3 = %0d&#34;, x, mul_3(x));
-    end
-  end
-
-endmodule
-Execute the code in EDA Playground">
+Functions A function must return a value. A function should not include delays, event controls, or wait statements. A function can only contain inputs as arguments as it returns only one output value. Similar to tasks:
+A function can be declared as automatic or static. It can contain static variables in automatic function and vice-versa. Syntax: Function function [return type] function_name (input_arguments); // execute the code return [value]; endfunction Example Code: Function module tb_function_ex; function int mul_3(int x); return x*3; endfunction initial begin int x; $display(&#34;---------- Multiply by 3 ----------&#34;); repeat(20)begin x = $urandom_range(1,9); $display(&#34;x = %0d, mul_by_3 = %0d&#34;, x, mul_3(x)); end end endmodule Execute the code in EDA Playground">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_20_15_36_43_functions/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
@@ -56,7 +24,6 @@ Execute the code in EDA Playground">
 <link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://24x7fpga.com/sv_directory/2024_07_20_15_36_43_functions/">
 <noscript>
     <style>
         #theme-toggle,
@@ -72,40 +39,8 @@ Execute the code in EDA Playground">
 
 <meta property="og:title" content="Functions" />
 <meta property="og:description" content="Source &ndash; SV Verification Directory
-Functions
-
-A function must return a value.
-A function should not include delays, event controls, or wait statements.
-A function can only contain inputs as arguments as it returns only one output value.
-
-Similar to tasks:
-
-A function can be declared as automatic or static.
-It can contain static variables in automatic function and vice-versa.
-
-Syntax: Function
-function [return type] function_name  (input_arguments);
-   // execute the code
-   return [value];
-endfunction
-Example Code: Function
-module tb_function_ex;
-
-  function int mul_3(int x);
-    return x*3;
-  endfunction
-
-  initial begin
-    int x;
-    $display(&#34;---------- Multiply by 3 ----------&#34;);
-    repeat(20)begin
-      x = $urandom_range(1,9);
-      $display(&#34;x = %0d, mul_by_3 = %0d&#34;, x, mul_3(x));
-    end
-  end
-
-endmodule
-Execute the code in EDA Playground" />
+Functions A function must return a value. A function should not include delays, event controls, or wait statements. A function can only contain inputs as arguments as it returns only one output value. Similar to tasks:
+A function can be declared as automatic or static. It can contain static variables in automatic function and vice-versa. Syntax: Function function [return type] function_name (input_arguments); // execute the code return [value]; endfunction Example Code: Function module tb_function_ex; function int mul_3(int x); return x*3; endfunction initial begin int x; $display(&#34;---------- Multiply by 3 ----------&#34;); repeat(20)begin x = $urandom_range(1,9); $display(&#34;x = %0d, mul_by_3 = %0d&#34;, x, mul_3(x)); end end endmodule Execute the code in EDA Playground" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_07_20_15_36_43_functions/" /><meta property="article:section" content="sv_directory" />
 <meta property="article:published_time" content="2024-07-20T15:36:00-04:00" />
@@ -114,40 +49,8 @@ Execute the code in EDA Playground" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Functions"/>
 <meta name="twitter:description" content="Source &ndash; SV Verification Directory
-Functions
-
-A function must return a value.
-A function should not include delays, event controls, or wait statements.
-A function can only contain inputs as arguments as it returns only one output value.
-
-Similar to tasks:
-
-A function can be declared as automatic or static.
-It can contain static variables in automatic function and vice-versa.
-
-Syntax: Function
-function [return type] function_name  (input_arguments);
-   // execute the code
-   return [value];
-endfunction
-Example Code: Function
-module tb_function_ex;
-
-  function int mul_3(int x);
-    return x*3;
-  endfunction
-
-  initial begin
-    int x;
-    $display(&#34;---------- Multiply by 3 ----------&#34;);
-    repeat(20)begin
-      x = $urandom_range(1,9);
-      $display(&#34;x = %0d, mul_by_3 = %0d&#34;, x, mul_3(x));
-    end
-  end
-
-endmodule
-Execute the code in EDA Playground"/>
+Functions A function must return a value. A function should not include delays, event controls, or wait statements. A function can only contain inputs as arguments as it returns only one output value. Similar to tasks:
+A function can be declared as automatic or static. It can contain static variables in automatic function and vice-versa. Syntax: Function function [return type] function_name (input_arguments); // execute the code return [value]; endfunction Example Code: Function module tb_function_ex; function int mul_3(int x); return x*3; endfunction initial begin int x; $display(&#34;---------- Multiply by 3 ----------&#34;); repeat(20)begin x = $urandom_range(1,9); $display(&#34;x = %0d, mul_by_3 = %0d&#34;, x, mul_3(x)); end end endmodule Execute the code in EDA Playground"/>
 
 
 <script type="application/ld+json">
@@ -176,7 +79,7 @@ Execute the code in EDA Playground"/>
   "@type": "BlogPosting",
   "headline": "Functions",
   "name": "Functions",
-  "description": "Source \u0026ndash; SV Verification Directory\nFunctions A function must return a value. A function should not include delays, event controls, or wait statements. A function can only contain inputs as arguments as it returns only one output value. Similar to tasks:\nA function can be declared as automatic or static. It can contain static variables in automatic function and vice-versa. Syntax: Function function [return type] function_name (input_arguments); // execute the code return [value]; endfunction Example Code: Function module tb_function_ex; function int mul_3(int x); return x*3; endfunction initial begin int x; $display(\u0026#34;---------- Multiply by 3 ----------\u0026#34;); repeat(20)begin x = $urandom_range(1,9); $display(\u0026#34;x = %0d, mul_by_3 = %0d\u0026#34;, x, mul_3(x)); end end endmodule Execute the code in EDA Playground\n",
+  "description": "Source \u0026ndash; SV Verification Directory\nFunctions A function must return a value. A function should not include delays, event controls, or wait statements. A function can only contain inputs as arguments as it returns only one output value. Similar to tasks:\nA function can be declared as automatic or static. It can contain static variables in automatic function and vice-versa. Syntax: Function function [return type] function_name (input_arguments); // execute the code return [value]; endfunction Example Code: Function module tb_function_ex; function int mul_3(int x); return x*3; endfunction initial begin int x; $display(\u0026#34;---------- Multiply by 3 ----------\u0026#34;); repeat(20)begin x = $urandom_range(1,9); $display(\u0026#34;x = %0d, mul_by_3 = %0d\u0026#34;, x, mul_3(x)); end end endmodule Execute the code in EDA Playground",
   "keywords": [
     "sv"
   ],
@@ -401,7 +304,7 @@ Execute the code in EDA Playground"/>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/sv/">Sv</a></li>
+      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
     </ul>
 
 

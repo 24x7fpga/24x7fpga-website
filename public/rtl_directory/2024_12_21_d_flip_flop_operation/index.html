@@ -8,7 +8,6 @@
 <title>D Flip-Flop: Operation | Home</title>
 <meta name="keywords" content="rtl, sta">
 <meta name="description" content="Source &ndash; RTL Design Directory
-
 A flip-flop, also known as a register, is a fundamental building block in digital circuits used to store a single bit of data. The stored data remains stable until a new input is latched, triggered by an external clock signal. Depending on the design, the data is captured on either the rising edge or falling edge of the clock, making flip-flops essential for synchronizing data in sequential logic circuits.">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/rtl_directory/2024_12_21_d_flip_flop_operation/">
@@ -24,7 +23,6 @@ A flip-flop, also known as a register, is a fundamental building block in digita
 <link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://24x7fpga.com/rtl_directory/2024_12_21_d_flip_flop_operation/">
 <noscript>
     <style>
         #theme-toggle,
@@ -40,7 +38,6 @@ A flip-flop, also known as a register, is a fundamental building block in digita
 
 <meta property="og:title" content="D Flip-Flop: Operation" />
 <meta property="og:description" content="Source &ndash; RTL Design Directory
-
 A flip-flop, also known as a register, is a fundamental building block in digital circuits used to store a single bit of data. The stored data remains stable until a new input is latched, triggered by an external clock signal. Depending on the design, the data is captured on either the rising edge or falling edge of the clock, making flip-flops essential for synchronizing data in sequential logic circuits." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/rtl_directory/2024_12_21_d_flip_flop_operation/" /><meta property="article:section" content="rtl_directory" />
@@ -50,7 +47,6 @@ A flip-flop, also known as a register, is a fundamental building block in digita
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="D Flip-Flop: Operation"/>
 <meta name="twitter:description" content="Source &ndash; RTL Design Directory
-
 A flip-flop, also known as a register, is a fundamental building block in digital circuits used to store a single bit of data. The stored data remains stable until a new input is latched, triggered by an external clock signal. Depending on the design, the data is captured on either the rising edge or falling edge of the clock, making flip-flops essential for synchronizing data in sequential logic circuits."/>
 
 
@@ -80,7 +76,7 @@ A flip-flop, also known as a register, is a fundamental building block in digita
   "@type": "BlogPosting",
   "headline": "D Flip-Flop: Operation",
   "name": "D Flip-Flop: Operation",
-  "description": "Source \u0026ndash; RTL Design Directory\nA flip-flop, also known as a register, is a fundamental building block in digital circuits used to store a single bit of data. The stored data remains stable until a new input is latched, triggered by an external clock signal. Depending on the design, the data is captured on either the rising edge or falling edge of the clock, making flip-flops essential for synchronizing data in sequential logic circuits.\n",
+  "description": "Source \u0026ndash; RTL Design Directory\nA flip-flop, also known as a register, is a fundamental building block in digital circuits used to store a single bit of data. The stored data remains stable until a new input is latched, triggered by an external clock signal. Depending on the design, the data is captured on either the rising edge or falling edge of the clock, making flip-flops essential for synchronizing data in sequential logic circuits.",
   "keywords": [
     "rtl", "sta"
   ],
@@ -274,38 +270,38 @@ A flip-flop, also known as a register, is a fundamental building block in digita
 
 <p>The truth table of a simple D-FF is shown below:</p>
 <table>
-  <thead>
-      <tr>
-          <th>CLK</th>
-          <th>D</th>
-          <th>Q</th>
-          <th>Q'</th>
-          <th>Description</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>LOW  (falling edge)</td>
-          <td>X</td>
-          <td>Q</td>
-          <td>Q'</td>
-          <td>No Change</td>
-      </tr>
-      <tr>
-          <td>HIGH (rising edge)</td>
-          <td>0</td>
-          <td>0</td>
-          <td>1</td>
-          <td>Reset Q -&gt; 0</td>
-      </tr>
-      <tr>
-          <td>HIGH (rising edge)</td>
-          <td>1</td>
-          <td>1</td>
-          <td>0</td>
-          <td>Set Q -&gt; 1</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>CLK</th>
+<th>D</th>
+<th>Q</th>
+<th>Q'</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LOW  (falling edge)</td>
+<td>X</td>
+<td>Q</td>
+<td>Q'</td>
+<td>No Change</td>
+</tr>
+<tr>
+<td>HIGH (rising edge)</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>Reset Q -&gt; 0</td>
+</tr>
+<tr>
+<td>HIGH (rising edge)</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>Set Q -&gt; 1</td>
+</tr>
+</tbody>
 </table>
 <p>The D-FF behavior is controlled by a clock signal. When the clock is <strong>low</strong>, the output remains unchanged, regardless of the input. The flip-flop simply holds or stores its previous value. When the clock is <strong>high</strong>, the flip-flop becomes active. On the rising edge of the clock, the output follows the input, capturing its value in the next clock cycle.</p>
 <figure>
@@ -327,25 +323,25 @@ A flip-flop, also known as a register, is a fundamental building block in digita
 
 <p>The table below summarizes the swithcing behavior of the PMOS and NMOS transistors. This interplay determines whether the transmission gate is turned on (conducting) or off (blocking):</p>
 <table>
-  <thead>
-      <tr>
-          <th>Gate Input</th>
-          <th>PMOS</th>
-          <th>NMOS</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>0</td>
-          <td>ON</td>
-          <td>OFF</td>
-      </tr>
-      <tr>
-          <td>1</td>
-          <td>OFF</td>
-          <td>ON</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Gate Input</th>
+<th>PMOS</th>
+<th>NMOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>ON</td>
+<td>OFF</td>
+</tr>
+<tr>
+<td>1</td>
+<td>OFF</td>
+<td>ON</td>
+</tr>
+</tbody>
 </table>
 <p>By utilizing the complementary behavior of PMOS and NMOS transistors, the transmission gate ensurese efficient signal transfer while minimizing distortion and power loss.</p>
 <p>The truth table below illustrates the functionality of a transmission gate.</p>
@@ -354,35 +350,35 @@ A flip-flop, also known as a register, is a fundamental building block in digita
 <li>Conversely, when the control signal is set to <strong>low</strong>, the gate is open, and the output remains in a high-impedance <code>Z</code> state, effectively disconnecting the input and output.</li>
 </ul>
 <table>
-  <thead>
-      <tr>
-          <th>Control</th>
-          <th>A</th>
-          <th>B</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>1</td>
-          <td>0</td>
-          <td>0</td>
-      </tr>
-      <tr>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-      </tr>
-      <tr>
-          <td>0</td>
-          <td>0</td>
-          <td>Z</td>
-      </tr>
-      <tr>
-          <td>0</td>
-          <td>1</td>
-          <td>Z</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Control</th>
+<th>A</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>Z</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>Z</td>
+</tr>
+</tbody>
 </table>
 <p>With this foundation, let’s now explore the internal structure of the D flip-flop in detail.</p>
 <h3 id="operation">Operation<a hidden class="anchor" aria-hidden="true" href="#operation">#</a></h3>
@@ -439,8 +435,8 @@ A flip-flop, also known as a register, is a fundamental building block in digita
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/rtl/">Rtl</a></li>
-      <li><a href="https://24x7fpga.com/tags/sta/">Sta</a></li>
+      <li><a href="https://24x7fpga.com/tags/rtl/">rtl</a></li>
+      <li><a href="https://24x7fpga.com/tags/sta/">sta</a></li>
     </ul>
 
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Emacs on Home</title>
+    <title>emacs on Home</title>
     <link>https://24x7fpga.com/tags/emacs/</link>
-    <description>Recent content in Emacs on Home</description>
-    <generator>Hugo -- 0.142.0</generator>
+    <description>Recent content in emacs on Home</description>
+    <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 May 2024 12:47:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,10 @@
       <link>https://24x7fpga.com/emacs_directory/2024_05_31_12_47_08_emacs_display_image/</link>
       <pubDate>Fri, 31 May 2024 12:47:00 -0400</pubDate>
       <guid>https://24x7fpga.com/emacs_directory/2024_05_31_12_47_08_emacs_display_image/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://orgmode.org/manual/Images.html&#34;&gt;Reference1&lt;/a&gt;, &lt;a href=&#34;https://emacs.stackexchange.com/questions/10114/org-mode-no-images-to-display-inline&#34;&gt;Reference2&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;how-to-include-an-image-in-emacs&#34;&gt;How to include an image in emacs?&lt;/h2&gt;
-&lt;p&gt;Simple way to include images in an org document is by using the following command:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-quote&#34; data-lang=&#34;quote&#34;&gt;[[ ./path/to/image.png ]]
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;how-to-display-the-image-in-emacs&#34;&gt;How to display the image in emacs?&lt;/h2&gt;
-&lt;p&gt;To display an inline image in emacs org file simply type &amp;quot; C-c C-x C-v&amp;quot;. The same command is used to toggle the display.&lt;/p&gt;
-&lt;h2 id=&#34;how-to-add-caption-and-label-to-the-image&#34;&gt;How to add caption and label to the image?&lt;/h2&gt;
-&lt;p&gt;To include the caption and label to the name it is necessary to have the image link in the separate line and add &amp;quot; #+caption and #+name: &amp;quot; before the link. See the example for reference:&lt;/p&gt;</description>
+      <description>Reference1, Reference2
+How to include an image in emacs? Simple way to include images in an org document is by using the following command:
+[[ ./path/to/image.png ]] How to display the image in emacs? To display an inline image in emacs org file simply type &amp;quot; C-c C-x C-v&amp;quot;. The same command is used to toggle the display.
+How to add caption and label to the image? To include the caption and label to the name it is necessary to have the image link in the separate line and add &amp;quot; #+caption and #+name: &amp;quot; before the link.</description>
     </item>
   </channel>
 </rss>
