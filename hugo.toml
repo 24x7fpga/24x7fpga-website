@@ -200,6 +200,12 @@ url = "https://www.instagram.com/negativeparking/"
 #url = "https://example.com"
 
 
+# ADDED TO REMOVE THE WARNING "WARN Raw HTML omitted while rendering #rendererunsafe You can suppress this warning by adding the following to your site configuration: ignoreLogs = ['warning-goldmark-raw-html']"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 
 
 

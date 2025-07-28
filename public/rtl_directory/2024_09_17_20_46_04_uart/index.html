@@ -8,8 +8,13 @@
 <title>UART | Home</title>
 <meta name="keywords" content="rtl">
 <meta name="description" content="Source &ndash; RTL Design Directory
-UART: Overview UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.
-Transmitter: Converts parallel data into a serial stream for transmission over a single communication line. Receiver: Converts the incoming serial data back into parallel form for further processing.">
+UART: Overview
+UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.
+
+Transmitter: Converts parallel data into a serial stream for transmission over a single communication line.
+Receiver: Converts the incoming serial data back into parallel form for further processing.
+
+The asynchronous nature of UART means that there is no shared clock signal between the transmitter and receiver. Instead, both sides must agree on the baud rate (data transmission speed) beforehand to ensure accurate communication. This simplicity makes UART popular in microcontrollers, sensors, and other embedded systems.">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/rtl_directory/2024_09_17_20_46_04_uart/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
@@ -24,6 +29,7 @@ Transmitter: Converts parallel data into a serial stream for transmission over a
 <link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/rtl_directory/2024_09_17_20_46_04_uart/">
 <noscript>
     <style>
         #theme-toggle,
@@ -39,19 +45,30 @@ Transmitter: Converts parallel data into a serial stream for transmission over a
 
 <meta property="og:title" content="UART" />
 <meta property="og:description" content="Source &ndash; RTL Design Directory
-UART: Overview UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.
-Transmitter: Converts parallel data into a serial stream for transmission over a single communication line. Receiver: Converts the incoming serial data back into parallel form for further processing." />
+UART: Overview
+UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.
+
+Transmitter: Converts parallel data into a serial stream for transmission over a single communication line.
+Receiver: Converts the incoming serial data back into parallel form for further processing.
+
+The asynchronous nature of UART means that there is no shared clock signal between the transmitter and receiver. Instead, both sides must agree on the baud rate (data transmission speed) beforehand to ensure accurate communication. This simplicity makes UART popular in microcontrollers, sensors, and other embedded systems." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/rtl_directory/2024_09_17_20_46_04_uart/" /><meta property="article:section" content="rtl_directory" />
 <meta property="article:published_time" content="2024-09-17T20:46:00-04:00" />
 <meta property="article:modified_time" content="2024-09-17T20:46:00-04:00" />
 
+
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="UART"/>
 <meta name="twitter:description" content="Source &ndash; RTL Design Directory
-UART: Overview UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.
-Transmitter: Converts parallel data into a serial stream for transmission over a single communication line. Receiver: Converts the incoming serial data back into parallel form for further processing."/>
+UART: Overview
+UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.
 
+Transmitter: Converts parallel data into a serial stream for transmission over a single communication line.
+Receiver: Converts the incoming serial data back into parallel form for further processing.
+
+The asynchronous nature of UART means that there is no shared clock signal between the transmitter and receiver. Instead, both sides must agree on the baud rate (data transmission speed) beforehand to ensure accurate communication. This simplicity makes UART popular in microcontrollers, sensors, and other embedded systems."/>
 
 <script type="application/ld+json">
 {
@@ -79,7 +96,7 @@ Transmitter: Converts parallel data into a serial stream for transmission over a
   "@type": "BlogPosting",
   "headline": "UART",
   "name": "UART",
-  "description": "Source \u0026ndash; RTL Design Directory\nUART: Overview UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.\nTransmitter: Converts parallel data into a serial stream for transmission over a single communication line. Receiver: Converts the incoming serial data back into parallel form for further processing.",
+  "description": "Source \u0026ndash; RTL Design Directory\nUART: Overview UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.\nTransmitter: Converts parallel data into a serial stream for transmission over a single communication line. Receiver: Converts the incoming serial data back into parallel form for further processing. The asynchronous nature of UART means that there is no shared clock signal between the transmitter and receiver. Instead, both sides must agree on the baud rate (data transmission speed) beforehand to ensure accurate communication. This simplicity makes UART popular in microcontrollers, sensors, and other embedded systems.\n",
   "keywords": [
     "rtl"
   ],
@@ -272,7 +289,7 @@ Transmitter: Converts parallel data into a serial stream for transmission over a
 <figure class="center !important">
     <img loading="lazy" src="/ox-hugo/uart.svg"
          alt="Figure 1: UART Frame"/> <figcaption>
-            <p><!-- raw HTML omitted -->Figure 1: <!-- raw HTML omitted -->UART Frame</p>
+            <p><span class="figure-number">Figure 1: </span>UART Frame</p>
         </figcaption>
 </figure>
 
@@ -349,7 +366,7 @@ dvsr &amp; \approx 67
 <figure>
     <img loading="lazy" src="/ox-hugo/oversampling.svg"
          alt="Figure 2: Oversampling"/> <figcaption>
-            <p><!-- raw HTML omitted -->Figure 2: <!-- raw HTML omitted -->Oversampling</p>
+            <p><span class="figure-number">Figure 2: </span>Oversampling</p>
         </figcaption>
 </figure>
 
@@ -374,11 +391,11 @@ dvsr &amp; \approx 67
 <figure class="center !important">
     <img loading="lazy" src="/ox-hugo/uart_tx.svg"
          alt="Figure 3: UART TX Black box" width="500px"/> <figcaption>
-            <p><!-- raw HTML omitted -->Figure 3: <!-- raw HTML omitted -->UART TX Black box</p>
+            <p><span class="figure-number">Figure 3: </span>UART TX Black box</p>
         </figcaption>
 </figure>
 
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Input</p>
@@ -390,7 +407,7 @@ dvsr &amp; \approx 67
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Output</p>
@@ -403,7 +420,7 @@ dvsr &amp; \approx 67
 <figure class="center !important">
     <img loading="lazy" src="/ox-hugo/uart_tx_fsm.svg"
          alt="Figure 4: UART TX FSM" width="500px"/> <figcaption>
-            <p><!-- raw HTML omitted -->Figure 4: <!-- raw HTML omitted -->UART TX FSM</p>
+            <p><span class="figure-number">Figure 4: </span>UART TX FSM</p>
         </figcaption>
 </figure>
 
@@ -515,11 +532,11 @@ dvsr &amp; \approx 67
 <figure class="center !important">
     <img loading="lazy" src="/ox-hugo/uart_rx.svg"
          alt="Figure 5: UART RX Black box" width="500px"/> <figcaption>
-            <p><!-- raw HTML omitted -->Figure 5: <!-- raw HTML omitted -->UART RX Black box</p>
+            <p><span class="figure-number">Figure 5: </span>UART RX Black box</p>
         </figcaption>
 </figure>
 
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Input</p>
@@ -529,7 +546,7 @@ dvsr &amp; \approx 67
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Output</p>
@@ -543,7 +560,7 @@ dvsr &amp; \approx 67
 <figure class="center !important">
     <img loading="lazy" src="/ox-hugo/uart_rx_fsm.svg"
          alt="Figure 6: UART RX FSM" width="500px"/> <figcaption>
-            <p><!-- raw HTML omitted -->Figure 6: <!-- raw HTML omitted -->UART RX FSM</p>
+            <p><span class="figure-number">Figure 6: </span>UART RX FSM</p>
         </figcaption>
 </figure>
 
@@ -653,7 +670,7 @@ dvsr &amp; \approx 67
 <figure class="center !important">
     <img loading="lazy" src="/ox-hugo/uart_top.svg"
          alt="Figure 7: UART Design" width="800px"/> <figcaption>
-            <p><!-- raw HTML omitted -->Figure 7: <!-- raw HTML omitted -->UART Design</p>
+            <p><span class="figure-number">Figure 7: </span>UART Design</p>
         </figcaption>
 </figure>
 
@@ -821,7 +838,7 @@ dvsr &amp; \approx 67
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/rtl/">rtl</a></li>
+      <li><a href="https://24x7fpga.com/tags/rtl/">Rtl</a></li>
     </ul>
 
 

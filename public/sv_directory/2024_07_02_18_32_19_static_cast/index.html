@@ -7,9 +7,34 @@
 <meta name="robots" content="index, follow">
 <title>Static Cast | Home</title>
 <meta name="keywords" content="sv">
-<meta name="description" content="Source &ndash; SV Verification Directory
-Static Cast Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,
-Static Casting Dynamic Casting Static Casting Static casting converts one data type to another compartible datatypes, as the name suggest, the conversion data type is fixed. The cast (&rsquo;) operator should be placed before the data along with the intended data type.">
+<meta name="description" content="Source  &ndash; SV Verification Directory
+Static Cast
+Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,
+
+Static Casting
+Dynamic Casting
+
+Static Casting
+Static casting converts one data type to another compartible datatypes, as the name suggest, the conversion data type is fixed. The cast (&rsquo;) operator should be placed before the data along with the intended data type.
+Example
+module static_conv;
+
+  int  i = 75;
+  real r = 13.75;
+
+
+  initial begin
+
+    int  m = i * (int &#39;(r));
+    real k = (real &#39;(i)) * r;
+
+    $display(&#34;multiplication result in int  = %0f&#34;, m);
+    $display(&#34;multiplication result in real = %0f&#34;, k);
+
+  end
+
+endmodule
+Execute the code in EDA Playground">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
@@ -24,6 +49,7 @@ Static Casting Dynamic Casting Static Casting Static casting converts one data t
 <link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/">
 <noscript>
     <style>
         #theme-toggle,
@@ -38,20 +64,71 @@ Static Casting Dynamic Casting Static Casting Static casting converts one data t
 
 
 <meta property="og:title" content="Static Cast" />
-<meta property="og:description" content="Source &ndash; SV Verification Directory
-Static Cast Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,
-Static Casting Dynamic Casting Static Casting Static casting converts one data type to another compartible datatypes, as the name suggest, the conversion data type is fixed. The cast (&rsquo;) operator should be placed before the data along with the intended data type." />
+<meta property="og:description" content="Source  &ndash; SV Verification Directory
+Static Cast
+Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,
+
+Static Casting
+Dynamic Casting
+
+Static Casting
+Static casting converts one data type to another compartible datatypes, as the name suggest, the conversion data type is fixed. The cast (&rsquo;) operator should be placed before the data along with the intended data type.
+Example
+module static_conv;
+
+  int  i = 75;
+  real r = 13.75;
+
+
+  initial begin
+
+    int  m = i * (int &#39;(r));
+    real k = (real &#39;(i)) * r;
+
+    $display(&#34;multiplication result in int  = %0f&#34;, m);
+    $display(&#34;multiplication result in real = %0f&#34;, k);
+
+  end
+
+endmodule
+Execute the code in EDA Playground" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/" /><meta property="article:section" content="sv_directory" />
 <meta property="article:published_time" content="2024-07-02T18:32:00-04:00" />
 <meta property="article:modified_time" content="2024-07-02T18:32:00-04:00" />
 
+
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Static Cast"/>
-<meta name="twitter:description" content="Source &ndash; SV Verification Directory
-Static Cast Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,
-Static Casting Dynamic Casting Static Casting Static casting converts one data type to another compartible datatypes, as the name suggest, the conversion data type is fixed. The cast (&rsquo;) operator should be placed before the data along with the intended data type."/>
+<meta name="twitter:description" content="Source  &ndash; SV Verification Directory
+Static Cast
+Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,
 
+Static Casting
+Dynamic Casting
+
+Static Casting
+Static casting converts one data type to another compartible datatypes, as the name suggest, the conversion data type is fixed. The cast (&rsquo;) operator should be placed before the data along with the intended data type.
+Example
+module static_conv;
+
+  int  i = 75;
+  real r = 13.75;
+
+
+  initial begin
+
+    int  m = i * (int &#39;(r));
+    real k = (real &#39;(i)) * r;
+
+    $display(&#34;multiplication result in int  = %0f&#34;, m);
+    $display(&#34;multiplication result in real = %0f&#34;, k);
+
+  end
+
+endmodule
+Execute the code in EDA Playground"/>
 
 <script type="application/ld+json">
 {
@@ -79,7 +156,7 @@ Static Casting Dynamic Casting Static Casting Static casting converts one data t
   "@type": "BlogPosting",
   "headline": "Static Cast",
   "name": "Static Cast",
-  "description": "Source \u0026ndash; SV Verification Directory\nStatic Cast Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,\nStatic Casting Dynamic Casting Static Casting Static casting converts one data type to another compartible datatypes, as the name suggest, the conversion data type is fixed. The cast (\u0026rsquo;) operator should be placed before the data along with the intended data type.",
+  "description": "Source \u0026ndash; SV Verification Directory\nStatic Cast Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,\nStatic Casting Dynamic Casting Static Casting Static casting converts one data type to another compartible datatypes, as the name suggest, the conversion data type is fixed. The cast (\u0026rsquo;) operator should be placed before the data along with the intended data type.\nExample module static_conv; int i = 75; real r = 13.75; initial begin int m = i * (int \u0026#39;(r)); real k = (real \u0026#39;(i)) * r; $display(\u0026#34;multiplication result in int = %0f\u0026#34;, m); $display(\u0026#34;multiplication result in real = %0f\u0026#34;, k); end endmodule Execute the code in EDA Playground\n",
   "keywords": [
     "sv"
   ],
@@ -297,7 +374,7 @@ Static Casting Dynamic Casting Static Casting Static casting converts one data t
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
+      <li><a href="https://24x7fpga.com/tags/sv/">Sv</a></li>
     </ul>
 
 

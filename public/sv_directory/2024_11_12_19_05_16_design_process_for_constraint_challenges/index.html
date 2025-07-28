@@ -8,7 +8,28 @@
 <title>Design Process for Constraint Challenges | Home</title>
 <meta name="keywords" content="sv">
 <meta name="description" content="In digital design, automation is key to streamlining workflows. I developed a Python script that generates the required .sv files for simulation. This script automates the process of creating all the necessary files for the design, saving time and reducing manual effort. By automatically generating these simulation files, the script helps standardize and expedite the verification process, ensuring consistency and minimizing the chances of human error.
-Folder Structure Projects . ├── FPGA_Projects │ └── SystemVerilog_Verification │ ├── Readme.">
+Folder Structure
+Projects
+.
+├── FPGA_Projects
+│   └── SystemVerilog_Verification
+│       ├── Readme.org
+│       ├── sv_tcl_script
+│       ├── sv_templates
+│       └── sv_verification
+│           ├──   ...
+│           ├── cstrs_challenges
+│           ├──   ...
+│           └──   ...
+│
+└── Python_Scripts
+    └── sv_scripts
+        ├── sv_clean.py
+        ├── sv_cstrs_design.py
+        ├── sv_cstrs_run.py
+        ├── sv_design.py
+        └── sv_run.py
+The project directory is organized into two main sections: FPGA_Projects and Python_Scripts.">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_11_12_19_05_16_design_process_for_constraint_challenges/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
@@ -23,6 +44,7 @@ Folder Structure Projects . ├── FPGA_Projects │ └── SystemVerilog_
 <link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/sv_directory/2024_11_12_19_05_16_design_process_for_constraint_challenges/">
 <noscript>
     <style>
         #theme-toggle,
@@ -38,17 +60,60 @@ Folder Structure Projects . ├── FPGA_Projects │ └── SystemVerilog_
 
 <meta property="og:title" content="Design Process for Constraint Challenges" />
 <meta property="og:description" content="In digital design, automation is key to streamlining workflows. I developed a Python script that generates the required .sv files for simulation. This script automates the process of creating all the necessary files for the design, saving time and reducing manual effort. By automatically generating these simulation files, the script helps standardize and expedite the verification process, ensuring consistency and minimizing the chances of human error.
-Folder Structure Projects . ├── FPGA_Projects │ └── SystemVerilog_Verification │ ├── Readme." />
+Folder Structure
+Projects
+.
+├── FPGA_Projects
+│   └── SystemVerilog_Verification
+│       ├── Readme.org
+│       ├── sv_tcl_script
+│       ├── sv_templates
+│       └── sv_verification
+│           ├──   ...
+│           ├── cstrs_challenges
+│           ├──   ...
+│           └──   ...
+│
+└── Python_Scripts
+    └── sv_scripts
+        ├── sv_clean.py
+        ├── sv_cstrs_design.py
+        ├── sv_cstrs_run.py
+        ├── sv_design.py
+        └── sv_run.py
+The project directory is organized into two main sections: FPGA_Projects and Python_Scripts." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_11_12_19_05_16_design_process_for_constraint_challenges/" /><meta property="article:section" content="sv_directory" />
 <meta property="article:published_time" content="2024-11-12T19:05:00-05:00" />
 <meta property="article:modified_time" content="2024-11-12T19:05:00-05:00" />
 
+
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Design Process for Constraint Challenges"/>
 <meta name="twitter:description" content="In digital design, automation is key to streamlining workflows. I developed a Python script that generates the required .sv files for simulation. This script automates the process of creating all the necessary files for the design, saving time and reducing manual effort. By automatically generating these simulation files, the script helps standardize and expedite the verification process, ensuring consistency and minimizing the chances of human error.
-Folder Structure Projects . ├── FPGA_Projects │ └── SystemVerilog_Verification │ ├── Readme."/>
-
+Folder Structure
+Projects
+.
+├── FPGA_Projects
+│   └── SystemVerilog_Verification
+│       ├── Readme.org
+│       ├── sv_tcl_script
+│       ├── sv_templates
+│       └── sv_verification
+│           ├──   ...
+│           ├── cstrs_challenges
+│           ├──   ...
+│           └──   ...
+│
+└── Python_Scripts
+    └── sv_scripts
+        ├── sv_clean.py
+        ├── sv_cstrs_design.py
+        ├── sv_cstrs_run.py
+        ├── sv_design.py
+        └── sv_run.py
+The project directory is organized into two main sections: FPGA_Projects and Python_Scripts."/>
 
 <script type="application/ld+json">
 {
@@ -76,7 +141,7 @@ Folder Structure Projects . ├── FPGA_Projects │ └── SystemVerilog_
   "@type": "BlogPosting",
   "headline": "Design Process for Constraint Challenges",
   "name": "Design Process for Constraint Challenges",
-  "description": "In digital design, automation is key to streamlining workflows. I developed a Python script that generates the required .sv files for simulation. This script automates the process of creating all the necessary files for the design, saving time and reducing manual effort. By automatically generating these simulation files, the script helps standardize and expedite the verification process, ensuring consistency and minimizing the chances of human error.\nFolder Structure Projects . ├── FPGA_Projects │ └── SystemVerilog_Verification │ ├── Readme.",
+  "description": "In digital design, automation is key to streamlining workflows. I developed a Python script that generates the required .sv files for simulation. This script automates the process of creating all the necessary files for the design, saving time and reducing manual effort. By automatically generating these simulation files, the script helps standardize and expedite the verification process, ensuring consistency and minimizing the chances of human error.\nFolder Structure Projects . ├── FPGA_Projects │ └── SystemVerilog_Verification │ ├── Readme.org │ ├── sv_tcl_script │ ├── sv_templates │ └── sv_verification │ ├── ... │ ├── cstrs_challenges │ ├── ... │ └── ... │ └── Python_Scripts └── sv_scripts ├── sv_clean.py ├── sv_cstrs_design.py ├── sv_cstrs_run.py ├── sv_design.py └── sv_run.py The project directory is organized into two main sections: FPGA_Projects and Python_Scripts.\n",
   "keywords": [
     "sv"
   ],
@@ -327,7 +392,7 @@ Due to limited verification support in Vivado Simulator, EDA Playground is utili
 </span></span></code></pre></div><ul>
 <li><code>tb.sv</code>: The top-level testbench file that sets up similation environment.</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--listend-->
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">`include</span> <span style="color:#e6db74">&#34;test.sv&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> tb_$ARG;
@@ -338,7 +403,7 @@ Due to limited verification support in Vivado Simulator, EDA Playground is utili
 </span></span></span></code></pre></div><ul>
 <li><code>test.sv</code>: This serves as a foundational component in the SystemVerilog Constraints Challenge. It demonstrates how to instantiate a constraint class, randomize its values, and display the results</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--listend-->
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span><span style="color:#66d9ef">`include</span> <span style="color:#e6db74">&#34;cstrs_challenge.sv&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>program test();
@@ -355,7 +420,7 @@ Due to limited verification support in Vivado Simulator, EDA Playground is utili
 </span></span></span></code></pre></div><ul>
 <li><code>cstrs_challenge.sv</code>: This file is dedicated to implementing the constraints challenge. It serves as the primary focus when taking on a new challenge, as it is the only file that requires completion.</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--listend-->
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span>class cstrs_challenge;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>   <span style="color:#75715e">// class properties
@@ -443,7 +508,7 @@ Due to limited verification support in Vivado Simulator, EDA Playground is utili
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
+      <li><a href="https://24x7fpga.com/tags/sv/">Sv</a></li>
     </ul>
 
 

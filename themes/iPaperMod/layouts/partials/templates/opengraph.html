@@ -42,6 +42,20 @@
 {{ end }}{{ end }}
 {{- end }}
 
+<!-- DELETE THE COMMENTED LINES IF YOU SEE "ERROR deprecated: .Site.Social was deprecated in Hugo v0.124.0 and will be removed in Hugo 0.143.0. Implement taxonomy 'social' or use .Site.Params.Social instead."
+
+{{- /* If it is part of a series, link to related articles */}}
+{{- $permalink := .Permalink }}
+{{- $siteSeries := site.Taxonomies.series }}
+{{- if $siteSeries }}
+{{ with .Params.series }}{{- range $name := . }}
+  {{- $series := index $siteSeries ($name | urlize) }}
+  {{- range $page := first 6 $series.Pages }}
+    {{- if ne $page.Permalink $permalink }}<meta property="og:see_also" content="{{ $page.Permalink }}" />{{ end }}
+  {{- end }}
+{{ end }}{{ end }}
+{{- end }}
+
 {{- /* Deprecate site.Social.facebook_admin in favor of site.Params.social.facebook_admin */}}
 {{- $facebookAdmin := "" }}
 {{- with site.Params.social }}
@@ -57,3 +71,16 @@
 
 {{- /* Facebook Page Admin ID for Domain Insights */}}
 {{ with $facebookAdmin }}<meta property="fb:admins" content="{{ . }}" />{{ end }}
+-->
+<!-- These lines added to resolve the error above -->
+{{/* Use only site.Params.social.facebook_admin to avoid deprecation */}}
+{{- $facebookAdmin := "" }}
+{{- with site.Params.social }}
+  {{- if reflect.IsMap . }}
+    {{- $facebookAdmin = .facebook_admin }}
+  {{- end }}
+{{- end }}
+
+{{- with $facebookAdmin }}
+  <meta property="fb:admins" content="{{ . }}" />
+{{- end }}
