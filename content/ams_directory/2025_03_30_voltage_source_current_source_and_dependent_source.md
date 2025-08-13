@@ -1,6 +1,6 @@
 +++
 title = "Voltage Source, Current Source and Dependent Source"
-author = ["Kiran"]
+author = ["kiran"]
 date = 2025-03-30T13:46:00-04:00
 tags = ["ams"]
 draft = false
@@ -31,7 +31,7 @@ An independent voltage source provides a voltage that is not influenced by any o
 
 A dependent voltage source, on the other hand, has a voltage that depends on another quantity in the circuit—such as a current or voltage at a different part of the circuit.
 
-{{< figure src="/ox-hugo/voltage_source.svg" caption="<span class=\"figure-number\">Figure 1: </span>Voltage Source" width="600px" >}}
+{{< figure src="/ox-hugo/voltage_source.svg" caption="<span class=\"figure-number\">Figure 1: </span>Voltage Source" width="600px class center !important" >}}
 
 Figure 1 shows the standard circuit symbols used to represent constant, variable, and dependent voltage sources. These symbols help distinguish between a fixed power supply, an adjustable one, and a source that is controlled by another part of the circuit.
 
