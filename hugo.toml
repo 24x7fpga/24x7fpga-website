@@ -8,7 +8,7 @@ theme = "iMix"
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #     
 [params.profileMode]
     enabled     = true 
-    imageUrl    = "/img/profile.png"
+    imageUrl    = "/img/profile.jpg"
     imageWidth  = 126 # custom size
     imageHeight = 240 # custom size
     title       = "Hi there! 👋" 
@@ -38,8 +38,7 @@ theme = "iMix"
   intro = "Hi 👋, my name is"
   name = "Kiran."
   subtitle = "Front-End Digital Design Engineer"
-  #imageUrl    = "/img/profile.png"
-  image = "/img/profile.png"
+  image = "/img/profile2.jpg"
   bio = "Proficient in RTL design using Verilog and SystemVerilog, with a strong focus on creating hardware-efficient implementations on FPGA platforms."
   button = "Research"
   btn_url = "research/2024_07_08_10_15_40_research"
