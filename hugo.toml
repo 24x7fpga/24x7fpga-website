@@ -8,12 +8,14 @@ theme = "iMix"
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #     
 [params.profileMode]
     enabled     = true 
-    imageUrl    = "/img/profile.jpg"
+    imageUrl    = "/img/profile2.jpg"
     imageWidth  = 126 # custom size
     imageHeight = 240 # custom size
     title       = "Hi there! 👋" 
 
-
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+# For iMix
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #    
 [params]
   showWordCount         = true 
   author                = "Kiran"
