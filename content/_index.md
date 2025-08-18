@@ -1,4 +1,4 @@
-I am currently a Graduate Research Assistant at Wright State University, where I am pursuing my Doctoral degree in Electrical Engineering. My research focuses on innovative solutions in digital design and signal processing. You can explore more about my research [here](research/2024_07_08_10_15_40_research).
+I am a recent Ph.D. graduate from Wright State University, where I worked as a Graduate Research Assistant in the Digital Receiver Lab. My research focuses on innovative solutions in digital design and signal processing. You can explore more about my research [here](research/2024_07_08_10_15_40_research).
 
 During my internship at Ambarella, Inc., I gained hands-on experience in developing and automating timing assertions for MIPI-DPHY IP, optimizing the verification process for D-PHY data and clock lanes, and significantly reducing overall verification time. I also designed a three-phase encoding algorithm for MIPI-CPHY transmitter and receiver modules. My responsibilities involved performing formal verification by creating testbenches and assertions to ensure precise adherence to timing and functional specifications.
 
