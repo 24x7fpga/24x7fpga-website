@@ -179,7 +179,7 @@ theme = "iMix"
 #icon = "fab fa-linkedin"
 [[params.socialLinks.customIcons]]
 icon = "/linkedin.png"
-url = "https://www.linkedin.com/in/kiran760043/"
+url = "https://www.linkedin.com/in/kirn-j/"
 
 #[[params.socialLinks.fontAwesomeIcons]]
 #icon = "fab fa-github"
