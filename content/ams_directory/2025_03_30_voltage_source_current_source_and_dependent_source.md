@@ -90,14 +90,36 @@ Current source provide a good model for some other devices such as transistors.
 {{< figure src="/ox-hugo/current_source.svg" caption="<span class=\"figure-number\">Figure 3: </span>Current Source" width="300px" >}}
 
 
+#### Voltage Dependent Current Source {#voltage-dependent-current-source}
+
+A voltage dependent current source (VDCS) is a current source whose output current depends on the voltage, scaled by a factor k.
+
+{{< figure src="/ox-hugo/voltage_dependent_current_source2.svg" caption="<span class=\"figure-number\">Figure 4: </span>Voltage Dependent Current Source" width="500px class center !important" >}}
+
+Figure 4, illustrates a voltage dependent current source. The output current \\(I\_1\\) is proportional to the controlling voltage \\(V\_1\\), scaled by a factor of \\(k\\). According to Ohm's law, the voltage across resistor \\(R\_1\\) can be expressed as:
+
+\begin{equation}
+\begin{aligned}
+V\_2 = I\_1\times R\_1
+\end{aligned}
+\end{equation}
+
+Replacing \\(I\_1\\),
+
+\begin{equation}
+\begin{aligned}
+V\_2 = (V\_1 \cdot k) \times R\_1
+\end{aligned}
+\end{equation}
+
+This relationship becomes especially important when \\(k \times R\_1 \gt 1\\), as the circuit then behaves like an amplifier.
+
+
 #### Points to Remember {#points-to-remember}
 
 1.  A voltage source is a two-terminal device that maintains a specified voltage across its terminals, regardless of the load or the amount of current drawn from it. It `enforces a constant voltage` in the circuit.
 2.  A current source is a two-terminal device that delivers a specified current, regardless of the voltage that appears across its terminals. It `enforces a constant current` through the circuit, no matter the load.
 3.  A current source must always be part of a closed circuit. If it is left in an open-circuit condition, it means there is infinite resistance in the path of the current. According to Ohm’s Law, \\(V=I \cdot R\\), if the resistance \\(R\\) becomes infinite while the current \\(I\\) remains fixed (as enforced by the current source), the resulting voltage \\(V\\) also becomes infinite—which is physically impractical and can damage real-world components.
-
-
-### Dependent Source {#dependent-source}
 
 
 #### Reference {#reference}
