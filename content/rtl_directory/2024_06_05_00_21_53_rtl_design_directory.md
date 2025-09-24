@@ -1,6 +1,6 @@
 +++
 title = "RTL Design Directory"
-author = ["Kiran"]
+author = ["kiran"]
 date = 2024-06-05T00:21:00-04:00
 tags = ["toc"]
 draft = false
@@ -94,9 +94,10 @@ Welcome to my comprehensive collection of [RTL(Register Transfer Level)](<https:
 -   [UART]({{< relref "2024_09_17_20_46_04_uart.md" >}})
 -   [SPI]({{< relref "2024_09_18_22_25_40_spi.md" >}})
 -   [I2C](https://github.com/24x7fpga/RTL/tree/master/rtl_designs/i2c)
--   VGA
+-   [VGA](https://github.com/24x7fpga/RTL/tree/master/rtl_designs/vga)
 -   I2S
 -   HDMI
+-   [APB](https://github.com/24x7fpga/RTL/tree/master/rtl_designs/apb)
 -   AXI-Stream
 -   AXI4-Lite
 -   AXI-Interconnect
