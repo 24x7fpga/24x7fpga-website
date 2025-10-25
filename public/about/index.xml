@@ -4,7 +4,7 @@
     <title>Abouts on Home</title>
     <link>https://24x7fpga.com/about/</link>
     <description>Recent content in Abouts on Home</description>
-    <generator>Hugo -- 0.142.0</generator>
+    <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://24x7fpga.com/about/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,9 @@
       <link>https://24x7fpga.com/about/about/</link>
       <pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://24x7fpga.com/about/about/</guid>
-      <description>&lt;h1 id=&#34;hi-there-&#34;&gt;Hi there 👋.&lt;/h1&gt;
-&lt;!--![FPGA](fpga.png)--&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://user-images.githubusercontent.com/34355273/89976131-a2260700-dc35-11ea-8b5d-8a62fd78734a.png&#34; alt=&#34;fpga&#34;  /&gt;
-&lt;/p&gt;
-&lt;h3 id=&#34;im-kiran&#34;&gt;I&amp;rsquo;m Kiran.&lt;/h3&gt;
-&lt;p&gt;I work as Graduate Research Assistant at Wright State University currently pursuing my Doctoral degree.&lt;/p&gt;
-&lt;p&gt;My background includes Digital Design, RTL design, FPGA prototyping, Circuit design, and I have worked as a graduate teaching assistant while pursuing a Master’s Degree in Electrical Engineering.&lt;/p&gt;
-&lt;p&gt;As a teaching assistant I Instructed students in modeling digital systems using hardware descriptive language. Implemented and tested the designs on FPGAs. Evaluated the student&amp;rsquo;s performance based on quizzes and graded them accordingly for Digital Integrated Circuit Design Lab.&lt;/p&gt;</description>
+      <description>Hi there 👋. I&amp;rsquo;m Kiran. I work as Graduate Research Assistant at Wright State University currently pursuing my Doctoral degree.
+My background includes Digital Design, RTL design, FPGA prototyping, Circuit design, and I have worked as a graduate teaching assistant while pursuing a Master’s Degree in Electrical Engineering.
+As a teaching assistant I Instructed students in modeling digital systems using hardware descriptive language. Implemented and tested the designs on FPGAs. Evaluated the student&amp;rsquo;s performance based on quizzes and graded them accordingly for Digital Integrated Circuit Design Lab.</description>
     </item>
   </channel>
 </rss>

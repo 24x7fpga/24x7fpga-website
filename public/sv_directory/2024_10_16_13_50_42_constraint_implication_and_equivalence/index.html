@@ -8,14 +8,8 @@
 <title>Constraint: Implication and Equivalence | Home</title>
 <meta name="keywords" content="sv">
 <meta name="description" content="Source &ndash; SV Verification Directory
-Implication Operator
-The implication operator -&gt; is another form of conditional (if) constraint. Where the antecedent (condition A) is on left hand side of the -&gt; and consequent (condition B) is on the right hand side of the -&gt; operator.
-
-Syntax
-constraint &lt;constrain name&gt; {A -&gt; B;}
-The expression A -&gt; B is equivalent to the expression (!A || B).
-
-
+Implication Operator The implication operator -&gt; is another form of conditional (if) constraint. Where the antecedent (condition A) is on left hand side of the -&gt; and consequent (condition B) is on the right hand side of the -&gt; operator.
+Syntax constraint &lt;constrain name&gt; {A -&gt; B;} The expression A -&gt; B is equivalent to the expression (!A || B).
 If A is true, then B must also hold true.">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_10_16_13_50_42_constraint_implication_and_equivalence/">
@@ -31,7 +25,6 @@ If A is true, then B must also hold true.">
 <link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://24x7fpga.com/sv_directory/2024_10_16_13_50_42_constraint_implication_and_equivalence/">
 <noscript>
     <style>
         #theme-toggle,
@@ -47,14 +40,8 @@ If A is true, then B must also hold true.">
 
 <meta property="og:title" content="Constraint: Implication and Equivalence" />
 <meta property="og:description" content="Source &ndash; SV Verification Directory
-Implication Operator
-The implication operator -&gt; is another form of conditional (if) constraint. Where the antecedent (condition A) is on left hand side of the -&gt; and consequent (condition B) is on the right hand side of the -&gt; operator.
-
-Syntax
-constraint &lt;constrain name&gt; {A -&gt; B;}
-The expression A -&gt; B is equivalent to the expression (!A || B).
-
-
+Implication Operator The implication operator -&gt; is another form of conditional (if) constraint. Where the antecedent (condition A) is on left hand side of the -&gt; and consequent (condition B) is on the right hand side of the -&gt; operator.
+Syntax constraint &lt;constrain name&gt; {A -&gt; B;} The expression A -&gt; B is equivalent to the expression (!A || B).
 If A is true, then B must also hold true." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_10_16_13_50_42_constraint_implication_and_equivalence/" /><meta property="article:section" content="sv_directory" />
@@ -66,14 +53,8 @@ If A is true, then B must also hold true." />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Constraint: Implication and Equivalence"/>
 <meta name="twitter:description" content="Source &ndash; SV Verification Directory
-Implication Operator
-The implication operator -&gt; is another form of conditional (if) constraint. Where the antecedent (condition A) is on left hand side of the -&gt; and consequent (condition B) is on the right hand side of the -&gt; operator.
-
-Syntax
-constraint &lt;constrain name&gt; {A -&gt; B;}
-The expression A -&gt; B is equivalent to the expression (!A || B).
-
-
+Implication Operator The implication operator -&gt; is another form of conditional (if) constraint. Where the antecedent (condition A) is on left hand side of the -&gt; and consequent (condition B) is on the right hand side of the -&gt; operator.
+Syntax constraint &lt;constrain name&gt; {A -&gt; B;} The expression A -&gt; B is equivalent to the expression (!A || B).
 If A is true, then B must also hold true."/>
 
 <script type="application/ld+json">
@@ -102,7 +83,7 @@ If A is true, then B must also hold true."/>
   "@type": "BlogPosting",
   "headline": "Constraint: Implication and Equivalence",
   "name": "Constraint: Implication and Equivalence",
-  "description": "Source \u0026ndash; SV Verification Directory\nImplication Operator The implication operator -\u0026gt; is another form of conditional (if) constraint. Where the antecedent (condition A) is on left hand side of the -\u0026gt; and consequent (condition B) is on the right hand side of the -\u0026gt; operator.\nSyntax constraint \u0026lt;constrain name\u0026gt; {A -\u0026gt; B;} The expression A -\u0026gt; B is equivalent to the expression (!A || B).\nIf A is true, then B must also hold true.\n",
+  "description": "Source \u0026ndash; SV Verification Directory\nImplication Operator The implication operator -\u0026gt; is another form of conditional (if) constraint. Where the antecedent (condition A) is on left hand side of the -\u0026gt; and consequent (condition B) is on the right hand side of the -\u0026gt; operator.\nSyntax constraint \u0026lt;constrain name\u0026gt; {A -\u0026gt; B;} The expression A -\u0026gt; B is equivalent to the expression (!A || B).\nIf A is true, then B must also hold true.",
   "keywords": [
     "sv"
   ],
@@ -301,49 +282,49 @@ If A is true, then B must also hold true."/>
 </li>
 </ul>
 <table>
-  <thead>
-      <tr>
-          <th>A -&gt; B</th>
-          <th>B = false</th>
-          <th>B = true</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>A = false</td>
-          <td>true</td>
-          <td>true</td>
-      </tr>
-      <tr>
-          <td>A = true</td>
-          <td>false</td>
-          <td>true</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>A -&gt; B</th>
+<th>B = false</th>
+<th>B = true</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A = false</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>A = true</td>
+<td>false</td>
+<td>true</td>
+</tr>
+</tbody>
 </table>
 <p><code>Note:</code> The implication operator is partly bidirectional constraint, meaning A-&gt;B does not imply that B-&gt;A.</p>
 <h3 id="equivalence-operator">Equivalence Operator<a hidden class="anchor" aria-hidden="true" href="#equivalence-operator">#</a></h3>
 <p>The equivalence operator <code>&lt;-&gt;</code> is bidirectional where A &lt;-&gt; B is defined as ((A -&gt; B) &amp;&amp; (B-&gt;A)). This operator is same as logical XNOR. The truth table below shows the logical values of A and B.</p>
 <table>
-  <thead>
-      <tr>
-          <th>A &lt;-&gt; B</th>
-          <th>B = false</th>
-          <th>B = true</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>A = false</td>
-          <td>true</td>
-          <td>false</td>
-      </tr>
-      <tr>
-          <td>A = true</td>
-          <td>false</td>
-          <td>true</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>A &lt;-&gt; B</th>
+<th>B = false</th>
+<th>B = true</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A = false</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>A = true</td>
+<td>false</td>
+<td>true</td>
+</tr>
+</tbody>
 </table>
 <h4 id="syntax">Syntax<a hidden class="anchor" aria-hidden="true" href="#syntax">#</a></h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-verilog" data-lang="verilog"><span style="display:flex;"><span>constraint <span style="color:#f92672">&lt;</span>constraint_name<span style="color:#f92672">&gt;</span> {A <span style="color:#f92672">&lt;-&gt;</span> B;}
@@ -390,7 +371,7 @@ If A is true, then B must also hold true."/>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/sv/">Sv</a></li>
+      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
     </ul>
 
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Git on Home</title>
+    <title>git on Home</title>
     <link>https://24x7fpga.com/tags/git/</link>
-    <description>Recent content in Git on Home</description>
-    <generator>Hugo -- 0.142.0</generator>
+    <description>Recent content in git on Home</description>
+    <generator>Hugo -- 0.121.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Aug 2024 14:34:00 -0400</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
@@ -13,65 +13,40 @@
       <link>https://24x7fpga.com/git_directory/2024_08_04_14_34_41_git_sync_a_forked_repository/</link>
       <pubDate>Sun, 04 Aug 2024 14:34:00 -0400</pubDate>
       <guid>https://24x7fpga.com/git_directory/2024_08_04_14_34_41_git_sync_a_forked_repository/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=oJoyyTxtRRg&#34;&gt;Reference Video&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;git-sync-a-forked-repository&#34;&gt;Git Sync a Forked Repository&lt;/h2&gt;
-&lt;p&gt;To sync a forked repository with the upstream repository (the original repository from which you forked), you can follow these steps:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Add the parent repository/upstream repository if not already added:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;!--listend--&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-linux&#34; data-lang=&#34;linux&#34;&gt;git remote add {upstream/parent} {ssh original git repo}
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;{upstream/parent} is user defined the name given to the original repo.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Once the original repository is added, &lt;a href=&#34;https://24x7fpga.com/git_directory/2024_08_04_12_24_44_git_pull/&#34;&gt;Git Pull&lt;/a&gt;  the original repository to the local repository:&lt;/p&gt;</description>
+      <description>Reference Video
+Git Sync a Forked Repository To sync a forked repository with the upstream repository (the original repository from which you forked), you can follow these steps:
+Add the parent repository/upstream repository if not already added: git remote add {upstream/parent} {ssh original git repo} {upstream/parent} is user defined the name given to the original repo.
+Once the original repository is added, Git Pull the original repository to the local repository:</description>
     </item>
     <item>
       <title>Git Pull</title>
       <link>https://24x7fpga.com/git_directory/2024_08_04_12_24_44_git_pull/</link>
       <pubDate>Sun, 04 Aug 2024 12:24:00 -0400</pubDate>
       <guid>https://24x7fpga.com/git_directory/2024_08_04_12_24_44_git_pull/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://git-scm.com/docs/git-pull&#34;&gt;Git Pull Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;git-pull&#34;&gt;Git Pull&lt;/h2&gt;
-&lt;p&gt;Git &lt;strong&gt;pull&lt;/strong&gt; is used to sync up the local repository with the remote repository. This command performs two operation:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;[Git Fetch]: will download the contents from the remote repository.&lt;/li&gt;
-&lt;li&gt;[Git Rebase] or [Git Merge]: will update the local repository with the remote repository.&lt;/li&gt;
-&lt;/ol&gt;</description>
+      <description>Git Pull Documentation
+Git Pull Git pull is used to sync up the local repository with the remote repository. This command performs two operation:
+[Git Fetch]: will download the contents from the remote repository. [Git Rebase] or [Git Merge]: will update the local repository with the remote repository. </description>
     </item>
     <item>
       <title>Git Checkout</title>
       <link>https://24x7fpga.com/git_directory/2024_07_30_10_18_06_git_checkout/</link>
       <pubDate>Tue, 30 Jul 2024 10:18:00 -0400</pubDate>
       <guid>https://24x7fpga.com/git_directory/2024_07_30_10_18_06_git_checkout/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://git-scm.com/docs/git-checkout&#34;&gt;Git Checkout Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;git-checkout&#34;&gt;Git Checkout&lt;/h2&gt;
-&lt;p&gt;Git checkout is used to switch or restore branches.&lt;/p&gt;
-&lt;h3 id=&#34;switch-branch&#34;&gt;Switch Branch&lt;/h3&gt;
-&lt;p&gt;From &lt;a href=&#34;https://24x7fpga.com/git_directory/2024_07_30_09_58_52_git_branch/&#34;&gt;Git Branch&lt;/a&gt;, you can identify the branch name to which you want to switch to.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-linux&#34; data-lang=&#34;linux&#34;&gt;git checkout &amp;lt;branch&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>Git Checkout Documentation
+Git Checkout Git checkout is used to switch or restore branches.
+Switch Branch From Git Branch, you can identify the branch name to which you want to switch to.
+git checkout &amp;lt;branch&amp;gt; </description>
     </item>
     <item>
       <title>Git Branch</title>
       <link>https://24x7fpga.com/git_directory/2024_07_30_09_58_52_git_branch/</link>
       <pubDate>Tue, 30 Jul 2024 09:58:00 -0400</pubDate>
       <guid>https://24x7fpga.com/git_directory/2024_07_30_09_58_52_git_branch/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://git-scm.com/docs/git-branch&#34;&gt;Git Branch Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;git-branch&#34;&gt;Git Branch&lt;/h2&gt;
-&lt;h3 id=&#34;display-local-branches&#34;&gt;Display Local Branches&lt;/h3&gt;
-&lt;p&gt;Displays local branches. The (*) asterisk symbol next to branch indicates the current branch.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-linux&#34; data-lang=&#34;linux&#34;&gt;git branch
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;display-remote-branches&#34;&gt;Display Remote Branches&lt;/h3&gt;
-&lt;p&gt;Displays remote branches, i.e., branches hosted on the remote repositories.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;git branch --remote   // displays only remote repo
-git branch -a         // displays remote and local repo
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;checking-remote-repository-information&#34;&gt;Checking Remote Repository Information&lt;/h3&gt;
-&lt;p&gt;Provides remote repository information such as repository structure, configuration and branches.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-linux&#34; data-lang=&#34;linux&#34;&gt;git remote show origin
-&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>Git Branch Documentation
+Git Branch Display Local Branches Displays local branches. The (*) asterisk symbol next to branch indicates the current branch.
+git branch Display Remote Branches Displays remote branches, i.e., branches hosted on the remote repositories.
+git branch --remote // displays only remote repo git branch -a // displays remote and local repo Checking Remote Repository Information Provides remote repository information such as repository structure, configuration and branches.
+git remote show origin </description>
     </item>
   </channel>
 </rss>
