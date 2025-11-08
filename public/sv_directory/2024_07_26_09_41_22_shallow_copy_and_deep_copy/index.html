@@ -8,8 +8,10 @@
 <title>Shallow Copy and Deep Copy | Home</title>
 <meta name="keywords" content="sv">
 <meta name="description" content="Source &ndash; SV Verification Directory
-Shallow Copy and Deep Copy SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.
-Shallow Copy Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle&rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects.">
+Shallow Copy and Deep Copy
+SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.
+Shallow Copy
+Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle&rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects.">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
@@ -24,6 +26,7 @@ Shallow Copy Shallow copy is a method where the objects are duplicated to a new 
 <link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/">
 <noscript>
     <style>
         #theme-toggle,
@@ -39,8 +42,10 @@ Shallow Copy Shallow copy is a method where the objects are duplicated to a new 
 
 <meta property="og:title" content="Shallow Copy and Deep Copy" />
 <meta property="og:description" content="Source &ndash; SV Verification Directory
-Shallow Copy and Deep Copy SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.
-Shallow Copy Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle&rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects." />
+Shallow Copy and Deep Copy
+SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.
+Shallow Copy
+Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle&rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/" /><meta property="article:section" content="sv_directory" />
 <meta property="article:published_time" content="2024-07-26T09:41:00-04:00" />
@@ -51,8 +56,10 @@ Shallow Copy Shallow copy is a method where the objects are duplicated to a new 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shallow Copy and Deep Copy"/>
 <meta name="twitter:description" content="Source &ndash; SV Verification Directory
-Shallow Copy and Deep Copy SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.
-Shallow Copy Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle&rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects."/>
+Shallow Copy and Deep Copy
+SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.
+Shallow Copy
+Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle&rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects."/>
 
 <script type="application/ld+json">
 {
@@ -80,7 +87,7 @@ Shallow Copy Shallow copy is a method where the objects are duplicated to a new 
   "@type": "BlogPosting",
   "headline": "Shallow Copy and Deep Copy",
   "name": "Shallow Copy and Deep Copy",
-  "description": "Source \u0026ndash; SV Verification Directory\nShallow Copy and Deep Copy SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.\nShallow Copy Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle\u0026rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects.",
+  "description": "Source \u0026ndash; SV Verification Directory\nShallow Copy and Deep Copy SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.\nShallow Copy Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle\u0026rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects.\n",
   "keywords": [
     "sv"
   ],
@@ -269,26 +276,26 @@ Shallow Copy Shallow copy is a method where the objects are duplicated to a new 
 <p>Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle&rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects.</p>
 <h4 id="class-assignment-and-shallow-copy">Class assignment and Shallow Copy<a hidden class="anchor" aria-hidden="true" href="#class-assignment-and-shallow-copy">#</a></h4>
 <table>
-<thead>
-<tr>
-<th>Class Assignment</th>
-<th>Shallow Copy</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>obj1 = obj2</td>
-<td>obj1 = new obj2</td>
-</tr>
-<tr>
-<td>Both the objects point to the same memory</td>
-<td>Allocates memory, copies the variable, and returns the memory handle</td>
-</tr>
-<tr>
-<td>Changes made to any object will reflect in both</td>
-<td>Changes made to the copied objects will not reflect in the parent object</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Class Assignment</th>
+          <th>Shallow Copy</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>obj1 = obj2</td>
+          <td>obj1 = new obj2</td>
+      </tr>
+      <tr>
+          <td>Both the objects point to the same memory</td>
+          <td>Allocates memory, copies the variable, and returns the memory handle</td>
+      </tr>
+      <tr>
+          <td>Changes made to any object will reflect in both</td>
+          <td>Changes made to the copied objects will not reflect in the parent object</td>
+      </tr>
+  </tbody>
 </table>
 <h4 id="example-code-shallow-copy">Example Code: <a href="https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/shallow_copy/tb_shallow_copy.sv">Shallow Copy</a><a hidden class="anchor" aria-hidden="true" href="#example-code-shallow-copy">#</a></h4>
 <p>The example shown below shows the example of shallow copy and the <strong>limitation</strong> of nested objects in shallow copy. Along with the difference in class assignment and shallow copy.</p>
@@ -428,7 +435,7 @@ Shallow Copy Shallow copy is a method where the objects are duplicated to a new 
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/sv/">sv</a></li>
+      <li><a href="https://24x7fpga.com/tags/sv/">Sv</a></li>
     </ul>
 
 

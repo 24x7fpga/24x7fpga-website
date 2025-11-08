@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>cstr on Home</title>
+    <title>Cstr on Home</title>
     <link>https://24x7fpga.com/tags/cstr/</link>
-    <description>Recent content in cstr on Home</description>
-    <generator>Hugo -- 0.121.1</generator>
+    <description>Recent content in Cstr on Home</description>
+    <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Jan 2025 19:30:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/cstr/index.xml" rel="self" type="application/rss+xml" />
@@ -13,47 +13,64 @@
       <link>https://24x7fpga.com/sv_directory/2025_01_10_random_powers_of_two/</link>
       <pubDate>Fri, 10 Jan 2025 19:30:00 -0500</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2025_01_10_random_powers_of_two/</guid>
-      <description>Source &amp;ndash; Constraint Challenges &amp;ndash; SV Verification Directory
-Problem Statement Write a SystemVerilog constraint to generate random numbers that are powers of two. The generated numbers should only include values such as 2, 4, 8, 16, 32, and so on, up to a specified maximum limit. Ensure the constraint restricts randomization to these valid values only and do not use the multiplication operator.
-Problem Breakdown Create an array to hold the numbers that are powers of two.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SV/tree/main/sv_verification/cstrs_challenges/pwr_two&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/&#34;&gt;Constraint Challenges&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h3&gt;
+&lt;p&gt;Write a SystemVerilog constraint to generate random numbers that are powers of two. The generated numbers should only include values such as 2, 4, 8, 16, 32, and so on, up to a specified maximum limit. Ensure the constraint restricts randomization to these valid values only and &lt;strong&gt;do not&lt;/strong&gt; use the multiplication operator.&lt;/p&gt;
+&lt;h3 id=&#34;problem-breakdown&#34;&gt;Problem Breakdown&lt;/h3&gt;
+&lt;p&gt;Create an array to hold the numbers that are powers of two. Generate a random number that is greater than 1 and less than the specified range. Write a constraint to check if the number is power of two.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cyclic Random Number Without Using Randc</title>
       <link>https://24x7fpga.com/sv_directory/2025_01_10_cyclic_random_number_without_using_randc/</link>
       <pubDate>Fri, 10 Jan 2025 15:45:00 -0500</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2025_01_10_cyclic_random_number_without_using_randc/</guid>
-      <description>Source &amp;ndash; Constraint Challenges &amp;ndash; SV Verification Directory
-Problem Statement Generate a sequence of non-repeating random numbers stored in an array. The solution should ensure that each number appears only once and should cover all possible values in the specified range. Do not use the randc function in SystemVerilog.
-Randc Randc is a built-in command in SystemVerilog designed to generate random variables in a cyclic manner. Unlike standard randomization methods, randc ensures that all possible values within the specified range are generated exactly once before any value repeats.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SV/tree/main/sv_verification/cstrs_challenges/rand_wo_randc&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/&#34;&gt;Constraint Challenges&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h3&gt;
+&lt;p&gt;Generate a sequence of non-repeating random numbers stored in an array. The solution should ensure that each number appears only once and should cover all possible values in the specified range. &lt;strong&gt;Do not&lt;/strong&gt; use the &lt;code&gt;randc&lt;/code&gt; function in SystemVerilog.&lt;/p&gt;
+&lt;h4 id=&#34;randc&#34;&gt;Randc&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;Randc&lt;/code&gt; is a built-in command in SystemVerilog designed to generate random variables in a cyclic manner. Unlike standard randomization methods, &lt;code&gt;randc&lt;/code&gt; ensures that all possible values within the specified range are generated exactly once before any value repeats.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Divide by X</title>
       <link>https://24x7fpga.com/sv_directory/2024_12_14_divide_by_x/</link>
       <pubDate>Sat, 14 Dec 2024 21:47:00 -0500</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_12_14_divide_by_x/</guid>
-      <description>Source &amp;ndash; Constraint Challenges &amp;ndash; SV Verification Directory
-Problem Statement Create a constraint to generate an N-bit random number that is divisible by a given natural number X. The value of X is parameterized, allowing it to be easily changed for different test scenarios.
-Problem Breakdown The key idea is to ensure that the random number generated satisfies the condition below:
-\begin{equation} \label{eq.1} NUM \quad \% \quad X == 0 \end{equation}</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SV/tree/main/sv_verification/cstrs_challenges/div_by_X&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/&#34;&gt;Constraint Challenges&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h3&gt;
+&lt;p&gt;Create a constraint to generate an &lt;code&gt;N-bit&lt;/code&gt; random number that is divisible by a given natural number &lt;code&gt;X&lt;/code&gt;. The value of &lt;code&gt;X&lt;/code&gt; is parameterized, allowing it to be easily changed for different test scenarios.&lt;/p&gt;
+&lt;h3 id=&#34;problem-breakdown&#34;&gt;Problem Breakdown&lt;/h3&gt;
+&lt;p&gt;The key idea is to ensure that the random number generated satisfies the condition below:&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\label{eq.1}
+NUM \quad \% \quad X == 0
+\end{equation}&lt;/p&gt;</description>
     </item>
     <item>
       <title>Generate Diagonal Zeros/Ones</title>
       <link>https://24x7fpga.com/sv_directory/2024_11_29_21_53_39_generate_diagonal_zeros_ones/</link>
       <pubDate>Fri, 29 Nov 2024 21:53:00 -0500</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_11_29_21_53_39_generate_diagonal_zeros_ones/</guid>
-      <description>Source &amp;ndash; Constraint Challenges &amp;ndash; SV Verification Directory
-Problem Statement Write a constraint to generate an N×N matrix where diagonal elements are set to zeros (or ones), while the rest of the matrix can be filled with either random values or a predefined value.
-Problem Breakdown To make the solution more manageable, we can decompose the constraint into smaller, focused sub-constraints:
-Generate an N×N Matrix: Define a rand array to hold the matrix values.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges/diag_zero&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/&#34;&gt;Constraint Challenges&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h3&gt;
+&lt;p&gt;Write a constraint to generate an N×N matrix where diagonal elements are set to zeros (or ones), while the rest of the matrix can be filled with either random values or a predefined value.&lt;/p&gt;
+&lt;h3 id=&#34;problem-breakdown&#34;&gt;Problem Breakdown&lt;/h3&gt;
+&lt;p&gt;To make the solution more manageable, we can decompose the constraint into smaller, focused sub-constraints:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Generate an N×N Matrix: Define a rand array to hold the matrix values.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Constraint Challenges</title>
       <link>https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/</link>
       <pubDate>Tue, 12 Nov 2024 18:40:00 -0500</pubDate>
       <guid>https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/</guid>
-      <description>GitHub &amp;ndash; SV Verification Directory
-Constraints in SystemVerilog play a vital role in verification by enabling robust and efficient generation of test scenarios that thoroughly exercise the design under test (DUT). When designing a verification environment, especially for complex digital designs, simply testing with fixed values isn’t sufficient.
-Learning constraints in SystemVerilog is crucial for verification because they enable controlled randomization, helping engineers generate targeted, meaningful test cases while covering a wide range of scenarios.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges&#34;&gt;GitHub&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Constraints in SystemVerilog play a vital role in verification by enabling robust and efficient generation of test scenarios that thoroughly exercise the design under test (DUT). When designing a verification environment, especially for complex digital designs, simply testing with fixed values isn’t sufficient.&lt;/p&gt;
+&lt;p&gt;Learning constraints in SystemVerilog is crucial for verification because they enable controlled randomization, helping engineers generate targeted, meaningful test cases while covering a wide range of scenarios. Constraints define rules for random values, guiding the testbench to create valid inputs, edge cases, and corner cases, which leads to higher functional coverage without manually scripting every test.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>vim on Home</title>
+    <title>Vim on Home</title>
     <link>https://24x7fpga.com/tags/vim/</link>
-    <description>Recent content in vim on Home</description>
-    <generator>Hugo -- 0.121.1</generator>
+    <description>Recent content in Vim on Home</description>
+    <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Nov 2024 15:21:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
@@ -13,50 +13,80 @@
       <link>https://24x7fpga.com/vim_directory/2024_11_05_15_21_27_adding_and_removing_text_in_mulitple_lines_in_vim/</link>
       <pubDate>Tue, 05 Nov 2024 15:21:00 -0500</pubDate>
       <guid>https://24x7fpga.com/vim_directory/2024_11_05_15_21_27_adding_and_removing_text_in_mulitple_lines_in_vim/</guid>
-      <description>Adding Text at the Beginning of Multiple Lines Go the line you want to select the text. Press V (upppercase V) to state Visual line mode. Select multiple line using arrow or j/k keys. Press : after selecting the desired lines. This will open the line range command :&#39;&amp;lt;,&#39;&amp;gt;. Type s/^/&amp;lt;text&amp;gt;/, where &amp;ldquo;&amp;lt;text&amp;gt;&amp;rdquo; is the text you want to add at the beginning of each fo the selected lines. (^) indicates the will be added to the beginning of the line.</description>
+      <description>&lt;h2 id=&#34;adding-text-at-the-beginning-of-multiple-lines&#34;&gt;Adding Text at the Beginning of Multiple Lines&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Go the line you want to select the text.&lt;/li&gt;
+&lt;li&gt;Press &lt;strong&gt;V&lt;/strong&gt; (upppercase &lt;code&gt;V&lt;/code&gt;) to state Visual line mode.&lt;/li&gt;
+&lt;li&gt;Select multiple line using arrow or j/k keys.&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;:&lt;/code&gt; after selecting the desired lines. This will open the line range command &lt;code&gt;:&#39;&amp;lt;,&#39;&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;s/^/&amp;lt;text&amp;gt;/&lt;/code&gt;, where &amp;ldquo;&amp;lt;text&amp;gt;&amp;rdquo; is the text you want to add at the beginning of each fo the selected lines. &lt;code&gt;(^)&lt;/code&gt; indicates the will be added to the beginning of the line.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;example-1-add-text-to-the-selected-lines&#34;&gt;Example 1: Add text to the selected lines&lt;/h4&gt;
+&lt;p&gt;Adding comments &lt;code&gt;//&lt;/code&gt; to each line in verilog.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Redo In Vim</title>
       <link>https://24x7fpga.com/vim_directory/2024_06_28_15_38_01_redo_in_vim/</link>
       <pubDate>Fri, 28 Jun 2024 15:38:00 -0400</pubDate>
       <guid>https://24x7fpga.com/vim_directory/2024_06_28_15_38_01_redo_in_vim/</guid>
-      <description>Reference
-Redo in Vim Come out of the insert mode by pressing &amp;ldquo;Esc&amp;rdquo; and press &amp;ldquo;ctrl+shift+r&amp;rdquo; to redo.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=d975TRmAfv4&#34;&gt;Reference&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;redo-in-vim&#34;&gt;Redo in Vim&lt;/h2&gt;
+&lt;p&gt;Come out of the insert mode by pressing &amp;ldquo;Esc&amp;rdquo; and press &amp;ldquo;ctrl+shift+r&amp;rdquo; to redo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Undo In Vim</title>
       <link>https://24x7fpga.com/vim_directory/2024_06_28_15_35_07_undo_in_vim/</link>
       <pubDate>Fri, 28 Jun 2024 15:35:00 -0400</pubDate>
       <guid>https://24x7fpga.com/vim_directory/2024_06_28_15_35_07_undo_in_vim/</guid>
-      <description>Reference
-Undo Come out from the insert mode by pressing &amp;ldquo;Esc&amp;rdquo; and press &amp;lsquo;u&amp;rsquo; to undo.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=d975TRmAfv4&#34;&gt;Reference&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;undo&#34;&gt;Undo&lt;/h2&gt;
+&lt;p&gt;Come out from the insert mode by pressing &amp;ldquo;Esc&amp;rdquo; and press &amp;lsquo;u&amp;rsquo; to undo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Copy A Word In A Line</title>
       <link>https://24x7fpga.com/vim_directory/2024_06_28_15_15_48_copy_a_word_in_a_line/</link>
       <pubDate>Fri, 28 Jun 2024 15:15:00 -0400</pubDate>
       <guid>https://24x7fpga.com/vim_directory/2024_06_28_15_15_48_copy_a_word_in_a_line/</guid>
-      <description>Reference
-Copying a Word To copy a word in a line you must go into visual mode in vim. You press &amp;lsquo;v&amp;rsquo; to go into visual mode.
-First go to a the word that you want to copy using &amp;lsquo;w&amp;rsquo;. More instructin can be found @ Move The Cursor by One Word. Press &amp;lsquo;v&amp;rsquo; to get into visual mode. Use &amp;lsquo;h, j, k, l&amp;rsquo; to selected the word or a sentence.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=eEQEwq_rHIc&#34;&gt;Reference&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;copying-a-word&#34;&gt;Copying a Word&lt;/h2&gt;
+&lt;p&gt;To copy a word in a line you must go into visual mode in vim. You press &amp;lsquo;v&amp;rsquo; to go into visual mode.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First go to a the word that you want to copy using &amp;lsquo;w&amp;rsquo;. More instructin can be found @ &lt;a href=&#34;https://24x7fpga.com/vim_directory/2024_06_28_15_10_34_move_the_cursor_by_one_word/&#34;&gt;Move The Cursor by One Word&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Press &amp;lsquo;v&amp;rsquo; to get into visual mode.&lt;/li&gt;
+&lt;li&gt;Use &amp;lsquo;h, j, k, l&amp;rsquo; to selected the word or a sentence.&lt;/li&gt;
+&lt;li&gt;Press &amp;lsquo;y&amp;rsquo; to yank or copy the content that is selected.&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Move The Cursor by One Word</title>
       <link>https://24x7fpga.com/vim_directory/2024_06_28_15_10_34_move_the_cursor_by_one_word/</link>
       <pubDate>Fri, 28 Jun 2024 15:10:00 -0400</pubDate>
       <guid>https://24x7fpga.com/vim_directory/2024_06_28_15_10_34_move_the_cursor_by_one_word/</guid>
-      <description>Reference
-Jump the cursor by One Word To move the cursor location to the next word in vim use lowercase &amp;lsquo;w&amp;rsquo;.
-To the begining of the line using the line number eg. :57. Press &amp;lsquo;w&amp;rsquo; the cursor will move to the next word. </description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=eEQEwq_rHIc&#34;&gt;Reference&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;jump-the-cursor-by-one-word&#34;&gt;Jump the cursor by One Word&lt;/h2&gt;
+&lt;p&gt;To move the cursor location to the next word in vim use lowercase &amp;lsquo;w&amp;rsquo;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;To the begining of the line using the line number eg. :57.&lt;/li&gt;
+&lt;li&gt;Press &amp;lsquo;w&amp;rsquo; the cursor will move to the next word.&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Vim Find and Replace</title>
       <link>https://24x7fpga.com/vim_directory/2024_05_30_20_45_11-vim_find_and_replace/</link>
       <pubDate>Thu, 30 May 2024 20:45:00 -0400</pubDate>
       <guid>https://24x7fpga.com/vim_directory/2024_05_30_20_45_11-vim_find_and_replace/</guid>
-      <description>Reference
-Find and Replace Command The command to find and replace a word in a document is by the use of :subtitute (:S) command. The basic command is as follows:
-:[range]s/{pattern}/{string}/[flags] [count] [range] = the word to be replaced will be searched within this specified lines. {pattern} = the word that has to be replaced {string} = the new replaced word [flags] = is constraint for the command [count] = is a postive number that mutliplies the command Note: To replace a special charater use &amp;ldquo;\&amp;rdquo; before the character, for example, to replace $apple =&amp;gt; ^orange use &amp;quot;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://linuxize.com/post/vim-find-replace/&#34;&gt;Reference&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;find-and-replace-command&#34;&gt;Find and Replace Command&lt;/h2&gt;
+&lt;p&gt;The command to find and replace a word in a document is by the use of :subtitute (:S) command. The basic command is as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;:[range]s/{pattern}/{string}/[flags] [count]
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;[range] = the word to be replaced will be searched within this specified lines.&lt;/li&gt;
+&lt;li&gt;{pattern} = the word that has to be replaced&lt;/li&gt;
+&lt;li&gt;{string} = the new replaced word&lt;/li&gt;
+&lt;li&gt;[flags] = is constraint for the command&lt;/li&gt;
+&lt;li&gt;[count] = is a postive number that mutliplies the command&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: To replace a special charater use &amp;ldquo;\&amp;rdquo; before the character, for example, to replace $apple =&amp;gt; ^orange use &amp;quot;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

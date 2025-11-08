@@ -7,7 +7,8 @@
 <meta name="robots" content="index, follow">
 <title>Assembly Language | Home</title>
 <meta name="keywords" content="riscv">
-<meta name="description" content="Machine language, which consists solely of 1&rsquo;s and 0&rsquo;s, is the language understood by machines. Writing even a simple addition operation in machine language requires extensive effort; therefore, assembly language is used to make programs more readable and understandable for humans. Assembly language is then converted into machine language using a compiler. In this section, basic assembly language operations and the micro-operations required for their execution will be explored.">
+<meta name="description" content="
+Machine language, which consists solely of 1&rsquo;s and 0&rsquo;s, is the language understood by machines. Writing even a simple addition operation in machine language requires extensive effort; therefore, assembly language is used to make programs more readable and understandable for humans. Assembly language is then converted into machine language using a compiler. In this section, basic assembly language operations and the micro-operations required for their execution will be explored.">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/riscv_directory/2025_02_14_assembly_language/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
@@ -22,6 +23,7 @@
 <link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/riscv_directory/2025_02_14_assembly_language/">
 <noscript>
     <style>
         #theme-toggle,
@@ -36,7 +38,8 @@
 
 
 <meta property="og:title" content="Assembly Language" />
-<meta property="og:description" content="Machine language, which consists solely of 1&rsquo;s and 0&rsquo;s, is the language understood by machines. Writing even a simple addition operation in machine language requires extensive effort; therefore, assembly language is used to make programs more readable and understandable for humans. Assembly language is then converted into machine language using a compiler. In this section, basic assembly language operations and the micro-operations required for their execution will be explored." />
+<meta property="og:description" content="
+Machine language, which consists solely of 1&rsquo;s and 0&rsquo;s, is the language understood by machines. Writing even a simple addition operation in machine language requires extensive effort; therefore, assembly language is used to make programs more readable and understandable for humans. Assembly language is then converted into machine language using a compiler. In this section, basic assembly language operations and the micro-operations required for their execution will be explored." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/riscv_directory/2025_02_14_assembly_language/" /><meta property="article:section" content="riscv_directory" />
 <meta property="article:published_time" content="2025-02-14T15:07:00-05:00" />
@@ -46,7 +49,8 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Assembly Language"/>
-<meta name="twitter:description" content="Machine language, which consists solely of 1&rsquo;s and 0&rsquo;s, is the language understood by machines. Writing even a simple addition operation in machine language requires extensive effort; therefore, assembly language is used to make programs more readable and understandable for humans. Assembly language is then converted into machine language using a compiler. In this section, basic assembly language operations and the micro-operations required for their execution will be explored."/>
+<meta name="twitter:description" content="
+Machine language, which consists solely of 1&rsquo;s and 0&rsquo;s, is the language understood by machines. Writing even a simple addition operation in machine language requires extensive effort; therefore, assembly language is used to make programs more readable and understandable for humans. Assembly language is then converted into machine language using a compiler. In this section, basic assembly language operations and the micro-operations required for their execution will be explored."/>
 
 <script type="application/ld+json">
 {
@@ -74,7 +78,7 @@
   "@type": "BlogPosting",
   "headline": "Assembly Language",
   "name": "Assembly Language",
-  "description": "Machine language, which consists solely of 1\u0026rsquo;s and 0\u0026rsquo;s, is the language understood by machines. Writing even a simple addition operation in machine language requires extensive effort; therefore, assembly language is used to make programs more readable and understandable for humans. Assembly language is then converted into machine language using a compiler. In this section, basic assembly language operations and the micro-operations required for their execution will be explored.",
+  "description": " Machine language, which consists solely of 1\u0026rsquo;s and 0\u0026rsquo;s, is the language understood by machines. Writing even a simple addition operation in machine language requires extensive effort; therefore, assembly language is used to make programs more readable and understandable for humans. Assembly language is then converted into machine language using a compiler. In this section, basic assembly language operations and the micro-operations required for their execution will be explored.\n",
   "keywords": [
     "riscv"
   ],
@@ -358,35 +362,35 @@ sub x6, x5, x6
 <h4 id="inverting-bits">Inverting Bits<a hidden class="anchor" aria-hidden="true" href="#inverting-bits">#</a></h4>
 <p>The xori instruction is commonly used for bitwise negation, <em>NOT</em> operation). The <em>XOR</em> truth table is shown below:</p>
 <table>
-<thead>
-<tr>
-<th>A</th>
-<th>B</th>
-<th>Z</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><strong>1</strong></td>
-<td><strong>0</strong></td>
-<td><strong>1</strong></td>
-</tr>
-<tr>
-<td><strong>1</strong></td>
-<td><strong>1</strong></td>
-<td><strong>0</strong></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>Z</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td><strong>1</strong></td>
+          <td><strong>0</strong></td>
+          <td><strong>1</strong></td>
+      </tr>
+      <tr>
+          <td><strong>1</strong></td>
+          <td><strong>1</strong></td>
+          <td><strong>0</strong></td>
+      </tr>
+  </tbody>
 </table>
 <p>The invert operation in assembly is shown below:</p>
 <pre tabindex="0"><code class="language-assembly" data-lang="assembly">xori x5, x6, -1
@@ -667,7 +671,7 @@ sub x6, x5, x6
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/riscv/">riscv</a></li>
+      <li><a href="https://24x7fpga.com/tags/riscv/">Riscv</a></li>
     </ul>
 
 

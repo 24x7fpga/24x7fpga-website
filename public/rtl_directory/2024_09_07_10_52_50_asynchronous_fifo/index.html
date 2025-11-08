@@ -8,7 +8,9 @@
 <title>Asynchronous FIFO | Home</title>
 <meta name="keywords" content="rtl">
 <meta name="description" content="Source &ndash; RTL Design Directory
-Asynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral.">
+Asynchronous FIFO
+An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral.
+The primary role of the asynchronous FIFO is to ensure smooth data flow between these distinct clock domains, preventing data loss during transmission. By temporarily storing data in the buffer, the asynchronous FIFO allows the system to handle varying clock speeds without missing any critical data.">
 <meta name="author" content="Kiran">
 <link rel="canonical" href="https://24x7fpga.com/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
@@ -23,6 +25,7 @@ Asynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and r
 <link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/">
 <noscript>
     <style>
         #theme-toggle,
@@ -38,7 +41,9 @@ Asynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and r
 
 <meta property="og:title" content="Asynchronous FIFO" />
 <meta property="og:description" content="Source &ndash; RTL Design Directory
-Asynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral." />
+Asynchronous FIFO
+An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral.
+The primary role of the asynchronous FIFO is to ensure smooth data flow between these distinct clock domains, preventing data loss during transmission. By temporarily storing data in the buffer, the asynchronous FIFO allows the system to handle varying clock speeds without missing any critical data." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://24x7fpga.com/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/" /><meta property="article:section" content="rtl_directory" />
 <meta property="article:published_time" content="2024-09-07T10:52:00-04:00" />
@@ -49,7 +54,9 @@ Asynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and r
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Asynchronous FIFO"/>
 <meta name="twitter:description" content="Source &ndash; RTL Design Directory
-Asynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral."/>
+Asynchronous FIFO
+An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral.
+The primary role of the asynchronous FIFO is to ensure smooth data flow between these distinct clock domains, preventing data loss during transmission. By temporarily storing data in the buffer, the asynchronous FIFO allows the system to handle varying clock speeds without missing any critical data."/>
 
 <script type="application/ld+json">
 {
@@ -77,7 +84,7 @@ Asynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and r
   "@type": "BlogPosting",
   "headline": "Asynchronous FIFO",
   "name": "Asynchronous FIFO",
-  "description": "Source \u0026ndash; RTL Design Directory\nAsynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral.",
+  "description": "Source \u0026ndash; RTL Design Directory\nAsynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral.\nThe primary role of the asynchronous FIFO is to ensure smooth data flow between these distinct clock domains, preventing data loss during transmission. By temporarily storing data in the buffer, the asynchronous FIFO allows the system to handle varying clock speeds without missing any critical data.\n",
   "keywords": [
     "rtl"
   ],
@@ -270,95 +277,95 @@ Asynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and r
 <h4 id="gray-code-counter">Gray Code Counter<a hidden class="anchor" aria-hidden="true" href="#gray-code-counter">#</a></h4>
 <p>Detailed design for binary to Gray code and Gray to binary conversion <a href="https://24x7fpga.com/rtl_directory/2024_07_18_21_58_46_code_converter/">here</a>. From the table below, you’ll notice that Gray code exhibits a mirrored symmetry from decimal values 8 to 15. This makes Gray code a symmetric code, except for the most significant bit (MSB).</p>
 <table>
-<thead>
-<tr>
-<th>Decimal system</th>
-<th>Binary System</th>
-<th>Gray Code</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>0000</td>
-<td>0000</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0001</td>
-<td>0001</td>
-</tr>
-<tr>
-<td>2</td>
-<td>0010</td>
-<td>0011</td>
-</tr>
-<tr>
-<td>3</td>
-<td>0011</td>
-<td>0010</td>
-</tr>
-<tr>
-<td>4</td>
-<td>0100</td>
-<td>0110</td>
-</tr>
-<tr>
-<td>5</td>
-<td>0101</td>
-<td>0111</td>
-</tr>
-<tr>
-<td>6</td>
-<td>0110</td>
-<td>0101</td>
-</tr>
-<tr>
-<td>7</td>
-<td>0111</td>
-<td>0100</td>
-</tr>
-<tr>
-<td>8</td>
-<td>1000</td>
-<td>1100</td>
-</tr>
-<tr>
-<td>9</td>
-<td>1001</td>
-<td>1101</td>
-</tr>
-<tr>
-<td>10</td>
-<td>1010</td>
-<td>1111</td>
-</tr>
-<tr>
-<td>11</td>
-<td>1011</td>
-<td>1110</td>
-</tr>
-<tr>
-<td>12</td>
-<td>1100</td>
-<td>1010</td>
-</tr>
-<tr>
-<td>13</td>
-<td>1101</td>
-<td>1011</td>
-</tr>
-<tr>
-<td>14</td>
-<td>1110</td>
-<td>1001</td>
-</tr>
-<tr>
-<td>15</td>
-<td>1111</td>
-<td>1000</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Decimal system</th>
+          <th>Binary System</th>
+          <th>Gray Code</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>0000</td>
+          <td>0000</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>0001</td>
+          <td>0001</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>0010</td>
+          <td>0011</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>0011</td>
+          <td>0010</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>0100</td>
+          <td>0110</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>0101</td>
+          <td>0111</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>0110</td>
+          <td>0101</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>0111</td>
+          <td>0100</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>1000</td>
+          <td>1100</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>1001</td>
+          <td>1101</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td>1010</td>
+          <td>1111</td>
+      </tr>
+      <tr>
+          <td>11</td>
+          <td>1011</td>
+          <td>1110</td>
+      </tr>
+      <tr>
+          <td>12</td>
+          <td>1100</td>
+          <td>1010</td>
+      </tr>
+      <tr>
+          <td>13</td>
+          <td>1101</td>
+          <td>1011</td>
+      </tr>
+      <tr>
+          <td>14</td>
+          <td>1110</td>
+          <td>1001</td>
+      </tr>
+      <tr>
+          <td>15</td>
+          <td>1111</td>
+          <td>1000</td>
+      </tr>
+  </tbody>
 </table>
 <p>For instance, if the FIFO depth is eight, the three least significant bits (LSBs) of the Gray code are used as the address to access FIFO locations. The MSB, on the other hand, is crucial for checking the FIFO full condition. Hence, for a N-depth FIFO (from N-1 to 0), the number of bits required to represent the pointer is log₂(N) + 1. For example, for a 8-depth FIFO (0 to 7 memory location), log₂(8) + 1 = 3 + 1 = 4 bits are required for pointer representation.</p>
 <h4 id="two-flop-synchronizer">Two-Flop Synchronizer<a hidden class="anchor" aria-hidden="true" href="#two-flop-synchronizer">#</a></h4>
@@ -477,7 +484,7 @@ Asynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and r
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/rtl/">rtl</a></li>
+      <li><a href="https://24x7fpga.com/tags/rtl/">Rtl</a></li>
     </ul>
 
 

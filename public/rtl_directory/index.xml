@@ -4,7 +4,7 @@
     <title>Rtl_directories on Home</title>
     <link>https://24x7fpga.com/rtl_directory/</link>
     <description>Recent content in Rtl_directories on Home</description>
-    <generator>Hugo -- 0.121.1</generator>
+    <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Dec 2024 17:41:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/rtl_directory/index.xml" rel="self" type="application/rss+xml" />
@@ -13,28 +13,41 @@
       <link>https://24x7fpga.com/rtl_directory/2024_12_21_d_flip_flop_operation/</link>
       <pubDate>Sat, 21 Dec 2024 17:41:00 -0500</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_12_21_d_flip_flop_operation/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-A flip-flop, also known as a register, is a fundamental building block in digital circuits used to store a single bit of data. The stored data remains stable until a new input is latched, triggered by an external clock signal. Depending on the design, the data is captured on either the rising edge or falling edge of the clock, making flip-flops essential for synchronizing data in sequential logic circuits.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/d_ff_en&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
+&lt;p&gt;A &lt;strong&gt;flip-flop&lt;/strong&gt;, also known as a register, is a fundamental building block in digital circuits used to store a single bit of data. The stored data remains stable until a new input is latched, triggered by an external clock signal. Depending on the design, the data is captured on either the rising edge or falling edge of the clock, making flip-flops essential for synchronizing data in sequential logic circuits.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Latch and Flip-Flop</title>
       <link>https://24x7fpga.com/rtl_directory/2024_12_21_latch_and_flip_flop/</link>
       <pubDate>Sat, 21 Dec 2024 13:07:00 -0500</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_12_21_latch_and_flip_flop/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Latchs and Flip-Flops are fundamental digital components used to store information. Both play a critical role in sequential circuits, but they differ in their operation and applications.
-Latch A latch is level-sensitive memory element that stores a single bit of data. It operates based on the state of an enable signal:
-Transparent Mode: When the enable signal is active, the latch allows data to flow through, making it &amp;ldquo;transparent.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/latch_ff&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Latchs and Flip-Flops are fundamental digital components used to store information. Both play a critical role in sequential circuits, but they differ in their operation and applications.&lt;/p&gt;
+&lt;h2 id=&#34;latch&#34;&gt;Latch&lt;/h2&gt;
+&lt;p&gt;A &lt;strong&gt;latch&lt;/strong&gt; is level-sensitive memory element that stores a single bit of data. It operates based on the state of an enable signal:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Transparent Mode: When the enable signal is active, the latch allows data to flow through, making it &amp;ldquo;transparent.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Hold Mode: When the enable signal is inactive, the latch retains its last state, effectively &amp;ldquo;latching&amp;rdquo; the data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Latches are commonly used in designs where immediate data storage or asynchronous operation is required.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Valid-Ready Protocol</title>
       <link>https://24x7fpga.com/rtl_directory/2024_11_29_18_17_10_valid_ready_protocol/</link>
       <pubDate>Fri, 29 Nov 2024 18:17:00 -0500</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_11_29_18_17_10_valid_ready_protocol/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-The valid-ready protocol is a fundamental handshake mechanism in digital design, commonly used in protocols like AXI. It ensures smooth data flow between a producer (the data source) and a consumer (the data sink), enabling reliable and synchronized communication in hardware systems.
-Figure 1: Valid-Ready Flow Control
-Guidelines The valid and ready signals are integral to many handshaking protocols, ensuring reliable data transfer between components in a digital system.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/valid_ready&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;valid-ready&lt;/strong&gt; protocol is a fundamental handshake mechanism in digital design, commonly used in protocols like AXI. It ensures smooth data flow between a producer (the data source) and a consumer (the data sink), enabling reliable and synchronized communication in hardware systems.&lt;/p&gt;
+&lt;figure class=&#34;center !important&#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/valid_ready.svg&#34;
+         alt=&#34;Figure 1: Valid-Ready Flow Control&#34; width=&#34;600px&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;Valid-Ready Flow Control&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;guidelines&#34;&gt;Guidelines&lt;/h2&gt;
+&lt;p&gt;The valid and ready signals are integral to many handshaking protocols, ensuring reliable data transfer between components in a digital system. Let’s break down their behavior:&lt;/p&gt;</description>
     </item>
     <item>
       <title>  Difference between &#34;==&#34; and &#34;===&#34;
@@ -42,307 +55,646 @@ Guidelines The valid and ready signals are integral to many handshaking protocol
       <link>https://24x7fpga.com/rtl_directory/2024_10_07_00_08_52_difference_between_and/</link>
       <pubDate>Mon, 07 Oct 2024 00:08:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_10_07_00_08_52_difference_between_and/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-In Verilog, == and === are both used for comparison, but they behave differently in how they handle X (unknown).
-== Equality The == operator checks if two values are logically equal. It used for comparisons on only 1&amp;rsquo;s and 0&amp;rsquo;s. If any operand contains an X, the comparison result will be a unknown value.
-Example: 4&amp;#39;b101X == 4&amp;#39;b1011; // Result: x (unknown) 4&amp;#39;b1X00 == 4&amp;#39;b1100; // Result: x (unknown) === Equality The === operator is a strict equality check.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/equals&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In Verilog, &lt;strong&gt;==&lt;/strong&gt; and &lt;strong&gt;===&lt;/strong&gt; are both used for comparison, but they behave differently in how they handle X (unknown).&lt;/p&gt;
+&lt;h2 id=&#34;equality&#34;&gt;== Equality&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;==&lt;/strong&gt; operator checks if two values are logically equal. It used for comparisons on only 1&amp;rsquo;s and 0&amp;rsquo;s. If any operand contains an X, the comparison result will be a unknown value.&lt;/p&gt;
+&lt;h3 id=&#34;example&#34;&gt;Example:&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-verilog&#34; data-lang=&#34;verilog&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&amp;#39;b101&lt;/span&gt;X &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&amp;#39;b1011&lt;/span&gt;;  &lt;span style=&#34;color:#75715e&#34;&gt;// Result: x (unknown)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&amp;#39;b1&lt;/span&gt;X00 &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&amp;#39;b1100&lt;/span&gt;;  &lt;span style=&#34;color:#75715e&#34;&gt;// Result: x (unknown)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;equality&#34;&gt;=== Equality&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;===&lt;/strong&gt; operator is a strict equality check. It treats X as don&amp;rsquo;t-care values. When both RHS and LHS are X&amp;rsquo;s the results will true (high).&lt;/p&gt;</description>
     </item>
     <item>
       <title>SPI</title>
       <link>https://24x7fpga.com/rtl_directory/2024_09_18_22_25_40_spi/</link>
       <pubDate>Wed, 18 Sep 2024 22:25:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_09_18_22_25_40_spi/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-SPI: Overview The Serial Peripheral Interface (SPI) is a widely used communication protocol that enables microcontrollers to interact with external peripherals such as OLED displays, sensors, and SD cards. Known for its simplicity SPI facilitates efficient data exchange between devices in embedded systems.
-SPI and UART are both serial communication protocols used to exchange data between peripheral devices, but they differ significantly in how they achieve synchronization.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/spi&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;spi-overview&#34;&gt;SPI: Overview&lt;/h2&gt;
+&lt;p&gt;The Serial Peripheral Interface (SPI) is a widely used communication protocol that enables microcontrollers to interact with external peripherals such as OLED displays, sensors, and SD cards. Known for its simplicity SPI facilitates efficient data exchange between devices in embedded systems.&lt;/p&gt;
+&lt;p&gt;SPI and &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_09_17_20_46_04_uart/&#34;&gt;UART&lt;/a&gt; are both serial communication protocols used to exchange data between peripheral devices, but they differ significantly in how they achieve synchronization. SPI is a synchronous protocol, meaning it relies on a shared clock signal to synchronize data transfer between the transmitter and receiver, ensuring precise timing. In contrast, UART is asynchronous, operating without a clock signal and instead relying on predefined transmission speeds and additional start and stop bits to maintain synchronization. This fundamental difference makes SPI more efficient for high-speed data transfer, while UART is simpler but more prone to timing mismatches and overhead.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UART</title>
       <link>https://24x7fpga.com/rtl_directory/2024_09_17_20_46_04_uart/</link>
       <pubDate>Tue, 17 Sep 2024 20:46:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_09_17_20_46_04_uart/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-UART: Overview UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.
-Transmitter: Converts parallel data into a serial stream for transmission over a single communication line. Receiver: Converts the incoming serial data back into parallel form for further processing.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/uart&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;uart-overview&#34;&gt;UART: Overview&lt;/h2&gt;
+&lt;p&gt;UART, or Universal Asynchronous Receiver/Transmitter, is a widely used protocol for data communication over long distances due to its simplicity and low cost. It facilitates communication by transmitting data sequentially over a single line, making it ideal for scenarios where minimal wiring is preferred.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Transmitter: Converts parallel data into a serial stream for transmission over a single communication line.&lt;/li&gt;
+&lt;li&gt;Receiver: Converts the incoming serial data back into parallel form for further processing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The asynchronous nature of UART means that there is no shared clock signal between the transmitter and receiver. Instead, both sides must agree on the baud rate (data transmission speed) beforehand to ensure accurate communication. This simplicity makes UART popular in microcontrollers, sensors, and other embedded systems.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clock Gating</title>
       <link>https://24x7fpga.com/rtl_directory/2024_09_13_12_36_11_clock_gating/</link>
       <pubDate>Fri, 13 Sep 2024 12:36:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_09_13_12_36_11_clock_gating/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Clock Gating Clock gating is a widely used technique to reduce dynamic power consumption in digital circuits, particularly in complex systems like processors and FPGAs. Before diving into the benefits of clock gating, let’s take a look at the following SystemVerilog code snippet:
-always_ff@(posedge clk) if(en) Dout &amp;lt;= Din; The gate-level diagram of this code is illustrated in Figure 1. In this design, a multiplexer (MUX) controls the data flow, ensuring that when the &amp;lsquo;En&amp;rsquo; signal is high, &amp;lsquo;Din&amp;rsquo; is passed to &amp;lsquo;Dout&amp;rsquo; on the next clock edge.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/clk_gating&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;clock-gating&#34;&gt;Clock Gating&lt;/h2&gt;
+&lt;p&gt;Clock gating is a widely used technique to reduce dynamic power consumption in digital circuits, particularly in complex systems like processors and FPGAs. Before diving into the benefits of clock gating, let’s take a look at the following SystemVerilog code snippet:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-verilog&#34; data-lang=&#34;verilog&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;always_ff&lt;/span&gt;@(&lt;span style=&#34;color:#66d9ef&#34;&gt;posedge&lt;/span&gt; clk)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(en)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     Dout &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; Din;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The gate-level diagram of this code is illustrated in Figure 1. In this design, a multiplexer (MUX) controls the data flow, ensuring that when the &amp;lsquo;En&amp;rsquo; signal is high, &amp;lsquo;Din&amp;rsquo; is passed to &amp;lsquo;Dout&amp;rsquo; on the next clock edge. However, this MUX can be replaced with an AND gate to describe the conditional effect more efficiently.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Asynchronous FIFO</title>
       <link>https://24x7fpga.com/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/</link>
       <pubDate>Sat, 07 Sep 2024 10:52:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Asynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/fifo_asyn&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;asynchronous-fifo&#34;&gt;Asynchronous FIFO&lt;/h2&gt;
+&lt;p&gt;An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral.&lt;/p&gt;
+&lt;p&gt;The primary role of the asynchronous FIFO is to ensure smooth data flow between these distinct clock domains, preventing data loss during transmission. By temporarily storing data in the buffer, the asynchronous FIFO allows the system to handle varying clock speeds without missing any critical data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Synchronous FIFO</title>
       <link>https://24x7fpga.com/rtl_directory/2024_08_22_14_57_15_synchronous_fifo/</link>
       <pubDate>Thu, 22 Aug 2024 14:57:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_08_22_14_57_15_synchronous_fifo/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Synchronous FIFO A FIFO (First-In-First-Out) is a storage buffer that is widely used in digital systems where the data that is stored in the memory is retrieved first, hence the name FIFO.
-A synchronous FIFO is a type of FIFO where the write and read operations are synchronized with the same clock signal.
-Figure 1: FIFO Buffer
-The data retrieval is based on the order of the data written to the FIFO buffer.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/fifo_buffer_syn&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;synchronous-fifo&#34;&gt;Synchronous FIFO&lt;/h2&gt;
+&lt;p&gt;A FIFO (First-In-First-Out) is a storage buffer that is widely used in digital systems where the data that is stored in the memory is retrieved first, hence the name FIFO.&lt;/p&gt;
+&lt;p&gt;A synchronous FIFO is a type of FIFO where the write and read operations are synchronized with the same clock signal.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/fifo.svg&#34;
+         alt=&#34;Figure 1: FIFO Buffer&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;FIFO Buffer&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The data retrieval is based on the order of the data written to the FIFO buffer. A FIFO buffer can be categorized as the first word fall through (FWFT) FIFO or a standard FIFO based on the data read-out configuration. From Figure 1, if the data is read from the FIFO head without any assertion of the control signal it is called as a FWFT FIFO. This type of FIFO is particularly useful in situations where minimal latency is desired, and the first data word needs to be accessed as soon as it&amp;rsquo;s written. The read operation still requires the read enable signal to increment the read pointer. The difference is that the first data word is already present on the output without requiring an initial read. Whereas in a standard FIFO, separate pointers for write and read are initiated to write and read data from the FIFO. The read point remains unchanged until a read enable signal is applied and the data from the head of the FIFO is retrieved on the next clock cycle.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mealy Machine and Moore Machine</title>
       <link>https://24x7fpga.com/rtl_directory/2024_08_05_16_07_25_mealy_machine_and_moore_machine/</link>
       <pubDate>Mon, 05 Aug 2024 16:07:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_08_05_16_07_25_mealy_machine_and_moore_machine/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Finite State Machine A Finite State Machine (FSM) is a mathematical model used to represent a system with a finite number of states and a set of transitions between those states, driven by inputs. Each state can be considered as a decision node, where the decision is based on the input and or the input and the current decision tree node.
-Components of an FSM: States: Unique condition that define the state of the system.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/fsm_seq&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;finite-state-machine&#34;&gt;Finite State Machine&lt;/h2&gt;
+&lt;p&gt;A Finite State Machine (FSM) is a mathematical model used to represent a system with a finite number of states and a set of transitions between those states, driven by inputs. Each state can be considered as a decision node, where the decision is based on the input and or the input and the current decision tree node.&lt;/p&gt;
+&lt;h4 id=&#34;components-of-an-fsm&#34;&gt;Components of an FSM:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;States: Unique condition that define the state of the system.&lt;/li&gt;
+&lt;li&gt;Inputs: Inputs are signals or data that trigger a state change.&lt;/li&gt;
+&lt;li&gt;Transitions: Rules that dictate how the FSM moves from one state to another based on inputs.&lt;/li&gt;
+&lt;li&gt;Outputs: Values that the FSM produces, based either on the state (Moore) or state and inputs (Mealy).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
+&lt;p&gt;The two main types of FSMs:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Always@(*) and Always_Comb</title>
       <link>https://24x7fpga.com/rtl_directory/2024_08_05_16_05_55_always_and_always_comb/</link>
       <pubDate>Mon, 05 Aug 2024 16:05:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_08_05_16_05_55_always_and_always_comb/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Always@(*) and Always_Comb In digital design, both always @(*) in Verilog and always_comb in SystemVerilog are commonly used to model combinational logic. While they serve a similar purpose, there are important differences that make always_comb the preferred choice in modern design flows. In this article, we&amp;rsquo;ll explore these differences and explain why always_comb offers enhanced safety and robustness over always @(*) in SystemVerilog-based designs.
-Always@(*) In Verilog, the always @(*) construct was introduced to simplify the sensitivity list in combinational logic.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/always_at_comb&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;always-----and-always-comb&#34;&gt;Always@(*) and Always_Comb&lt;/h2&gt;
+&lt;p&gt;In digital design, both &lt;code&gt;always @(*)&lt;/code&gt; in Verilog and &lt;code&gt;always_comb&lt;/code&gt; in SystemVerilog are commonly used to model combinational logic. While they serve a similar purpose, there are important differences that make &lt;code&gt;always_comb&lt;/code&gt; the preferred choice in modern design flows. In this article, we&amp;rsquo;ll explore these differences and explain why always_comb offers enhanced safety and robustness over &lt;code&gt;always @(*)&lt;/code&gt; in SystemVerilog-based designs.&lt;/p&gt;
+&lt;h3 id=&#34;always&#34;&gt;Always@(*)&lt;/h3&gt;
+&lt;p&gt;In Verilog, the &lt;code&gt;always @(*)&lt;/code&gt; construct was introduced to simplify the sensitivity list in combinational logic. Instead of manually specifying every signal in the sensitivity list, &lt;code&gt;always @(*)&lt;/code&gt; automatically infers all the signals that are read within the always block. This feature not only saves time but also improves coding efficiency by eliminating potential errors from manually listing signals.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vivado Installation</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/</link>
       <pubDate>Sun, 28 Jul 2024 10:50:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/</guid>
-      <description>Digilent&amp;rsquo;s Zybo-Z7 is a ready-to-use embedded software and digital circuit development board built around the Xilinx Zynq™-7000 family. Xilinx provides free licensing to certain development boards and Zybo-Z7 is one among them. This article provides detailed steps to install Vivado 2022.2 on Ubuntu 22.04 LTS. The same procedure can be followed to install the desired version of the software.
-Initial Requirements A desktop/laptop with at least 16GB of RAM (DDR4 preferred) and 100GB of free storage space for full installation.</description>
+      <description>&lt;p&gt;Digilent&amp;rsquo;s &lt;a href=&#34;https://digilent.com/shop/zybo-z7-zynq-7000-arm-fpga-soc-development-board/&#34;&gt;Zybo-Z7&lt;/a&gt; is a ready-to-use embedded software and digital circuit development board built around the Xilinx Zynq™-7000 family. Xilinx provides free licensing to certain development boards and Zybo-Z7 is one among them. This article provides detailed steps to install Vivado 2022.2 on Ubuntu 22.04 LTS. The same procedure can be followed to install the desired version of the software.&lt;/p&gt;
+&lt;h2 id=&#34;initial-requirements&#34;&gt;Initial Requirements&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;A desktop/laptop with at least 16GB of RAM (DDR4 preferred) and 100GB of free storage space for full installation.&lt;/li&gt;
+&lt;li&gt;Create an &lt;a href=&#34;https://www.amd.com/en/registration/create-account.html&#34;&gt;AMD Xilinx Account&lt;/a&gt; to download the software.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;More information regarding the system requirements is detailed in the Vivado Design Suite User Guide &lt;a href=&#34;https://www.xilinx.com/support/documents/sw_manuals/xilinx2022_2/ug973-vivado-release-notes-install-license.pdf&#34;&gt;UG973&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Blocking and Non-Blocking Assignment</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_26_17_10_23_blocking_and_non_blocking_assignment/</link>
       <pubDate>Fri, 26 Jul 2024 17:10:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_26_17_10_23_blocking_and_non_blocking_assignment/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Blocking and Non-Blocking Assignment Let us model a simple design that is given in Figure 1 in Verilog. There are many ways to optimally model the design but here we will learn the difference between blocking and non-blocking assignments in Verilog.
-Boolean Equation We will model our design based on the equations given below.
-x = a and b y = x xor c z = y Figure 1: Digital Logic</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/block_vs_non_block&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;blocking-and-non-blocking-assignment&#34;&gt;Blocking and Non-Blocking Assignment&lt;/h2&gt;
+&lt;p&gt;Let us model a simple design that is given in Figure 1 in Verilog. There are many ways to optimally model the design but here we will learn the difference between blocking and non-blocking assignments in Verilog.&lt;/p&gt;
+&lt;h4 id=&#34;boolean-equation&#34;&gt;Boolean Equation&lt;/h4&gt;
+&lt;p&gt;We will model our design based on the equations given below.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-verilog&#34; data-lang=&#34;verilog&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a &lt;span style=&#34;color:#66d9ef&#34;&gt;and&lt;/span&gt; b
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; x &lt;span style=&#34;color:#66d9ef&#34;&gt;xor&lt;/span&gt; c
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;z &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;d41d8c&#34;&gt;&lt;/h3&gt;
+&lt;figure class=&#34;center !important&#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/b_&amp;amp;_b.svg&#34;
+         alt=&#34;Figure 1: Digital Logic&#34; width=&#34;500px&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;Digital Logic&lt;/p&gt;</description>
     </item>
     <item>
       <title>Assign and If-Else Statement</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_26_17_07_08_assign_and_if_else_statement/</link>
       <pubDate>Fri, 26 Jul 2024 17:07:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_26_17_07_08_assign_and_if_else_statement/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Assign Statement The &amp;lsquo;assign&amp;rsquo; statement is used to model combinational logic by creating continuous assignments. It is typically implemented where the output continuously reflects the changes in the input without any delay. The assign statement is used with signals declared as wire, tri, or other net types, but not with reg types. However, in SystemVerilog, logic type can be used in continuous assignments, similar to wire.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/assign_vs_if&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;assign-statement&#34;&gt;Assign Statement&lt;/h2&gt;
+&lt;p&gt;The &amp;lsquo;assign&amp;rsquo; statement is used to model combinational logic by creating continuous assignments. It is typically implemented where the output continuously reflects the changes in the input without any delay. The assign statement is used with signals declared as wire, tri, or other net types, but not with reg types. However, in SystemVerilog, logic type can be used in continuous assignments, similar to wire.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Full Case and Parallel Case</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_26_17_05_01_full_case_and_parallel_case/</link>
       <pubDate>Fri, 26 Jul 2024 17:05:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_26_17_05_01_full_case_and_parallel_case/</guid>
-      <description>[Source] &amp;ndash; RTL Design Directory
-Full Case and Parallel Case The case statement is a fundamental construct used for conditional branching across various programming languages. In SystemVerilog, it is implemented as a simple if-else-if statement. SystemVerilog introduces two specialized variations of the case statement, casex and casez, that allow for handling &amp;ldquo;don&amp;rsquo;t care&amp;rdquo; conditions in the case items, discussed in Casex and Casez.
-The case statement can be caterogired as full and parallel based on the how the case items are being matched to case expression.</description>
+      <description>&lt;p&gt;[Source] &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;full-case-and-parallel-case&#34;&gt;Full Case and Parallel Case&lt;/h2&gt;
+&lt;p&gt;The &lt;em&gt;case&lt;/em&gt; statement is a fundamental construct used for conditional branching across various programming languages. In SystemVerilog, it is implemented as a simple if-else-if statement. SystemVerilog introduces two specialized variations of the case statement, casex and casez, that allow for handling &amp;ldquo;don&amp;rsquo;t care&amp;rdquo; conditions in the case items, discussed in &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_07_25_11_36_52_casex_and_casez/&#34;&gt;Casex and Casez&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The case statement can be caterogired as &lt;strong&gt;full&lt;/strong&gt; and &lt;strong&gt;parallel&lt;/strong&gt; based on the how the case items are being matched to case expression.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Casex and Casez</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_25_11_36_52_casex_and_casez/</link>
       <pubDate>Thu, 25 Jul 2024 11:36:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_25_11_36_52_casex_and_casez/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Case Statement: An Overview The case statement is a fundamental construct in any programming language. The case statement selects one of many outputs based on the value of the case expression. It is equicalent to an if-else-if statement.
-Syntax case(case expression) case item1 : case statement_1; case item2 : case statement_2; case item3 : case statement_3; ... default : case statement_default; endcase Case Expression: The case statement chooses the case item based on the case expression.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/casex_nd_casez&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;case-statement-an-overview&#34;&gt;Case Statement: An Overview&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;case&lt;/strong&gt; statement is a fundamental construct in any programming language. The case statement selects one of many outputs based on the value of the case expression. It is equicalent to an if-else-if statement.&lt;/p&gt;
+&lt;h4 id=&#34;syntax&#34;&gt;Syntax&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-verilog&#34; data-lang=&#34;verilog&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; expression)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; item1 &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; statement_1;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; item2 &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; statement_2;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; item3 &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; statement_3;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; statement_default;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;endcase&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Case Expression: The case statement chooses the &lt;em&gt;case item&lt;/em&gt; based on the case expression.&lt;/li&gt;
+&lt;li&gt;Case Item: Case item is an expression,  bit or a vector. When the case expression matches the case item, case statement will be executed.&lt;/li&gt;
+&lt;li&gt;Case Statement: Case item is single or a block of code that will be execute when the case item matched the case expression.&lt;/li&gt;
+&lt;li&gt;Default Case: The default case is optional but recommend to hancdle any values that do not match the specified case item.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;case-variants&#34;&gt;Case Variants&lt;/h3&gt;
+&lt;p&gt;There are two case variants for called &lt;strong&gt;casex&lt;/strong&gt; and &lt;strong&gt;casez&lt;/strong&gt; more flexible case item matching.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Synchronous and Asynchronous Reset</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/</link>
       <pubDate>Thu, 25 Jul 2024 11:34:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_25_11_34_45_synchronous_and_asynchronous_reset/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Synchronous and Asynchronous Reset Resets are crucial in digital circuits for ensuring the system starts from a known state.
-Resets allow the system to recover from errors by reinitializing the state. Resets ensure that all flip-flops start from a known state. There are two types of resets based on the reset activation and they are:
-Synchronous Reset Asynchronous Reset Synchronous Reset In synchronous reset circuits, the reset signal is synchronized with the clock.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/asyn_rst&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;synchronous-and-asynchronous-reset&#34;&gt;Synchronous and Asynchronous Reset&lt;/h2&gt;
+&lt;p&gt;Resets are crucial in digital circuits for ensuring the system starts from a known state.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Resets allow the system to recover from errors by reinitializing the state.&lt;/li&gt;
+&lt;li&gt;Resets ensure that all flip-flops start from a known state.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are two types of resets based on the reset activation and they are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Synchronous Reset&lt;/li&gt;
+&lt;li&gt;Asynchronous Reset&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;synchronous-reset&#34;&gt;Synchronous Reset&lt;/h3&gt;
+&lt;p&gt;In synchronous reset circuits, the reset signal is synchronized with the clock. When the reset is applied, the action only occurs at clock edges (positive or negative edge), avoiding glitches and metastability. The coding style to model synchronous reset is an &lt;strong&gt;if/else&lt;/strong&gt; priority style with reset in the &lt;strong&gt;if&lt;/strong&gt; condition and all the other logic in the &lt;strong&gt;else&lt;/strong&gt; section. This type of logic will be implemented as shown in the figure below:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Throughput and Latency</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_23_21_33_58_throughput_and_latency/</link>
       <pubDate>Tue, 23 Jul 2024 21:33:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_23_21_33_58_throughput_and_latency/</guid>
-      <description>Introduction Speed in digital design can have three primary meanings/definitions based on the context of the problem. There are as follows:
-Throughput: refers to the amount of time a system takes to process the data per clock cycle, measured in bits per second. Latency: refers to the time between the input and the processed output, measured as clock cycles. Timing: refers to the logic delays between the sequential elements, the standard metric is clock period or frequency.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Speed in digital design can have three primary meanings/definitions based on the context of the problem. There are as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Throughput: refers to the amount of time a system takes to process the data per clock cycle, measured in bits per second.&lt;/li&gt;
+&lt;li&gt;Latency: refers to the time between the input and the processed output, measured as clock cycles.&lt;/li&gt;
+&lt;li&gt;Timing: refers to the logic delays between the sequential elements, the standard metric is clock period or frequency.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here, the impacts of timing based on architecture designs and optimizations will be discussed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Read Only Memory</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_23_13_11_22_read_only_memory/</link>
       <pubDate>Tue, 23 Jul 2024 13:11:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_23_13_11_22_read_only_memory/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Read Only Memory(ROM): An Overview Read-only memory widely known as ROM is a non-volatile memory that is used to store data or programs that do not change over time. As the name suggests, data can only be read from the memory. In digital design, ROM can be used to store image data or signal data for processing.
-Memory File A memory file is a simple file with an extension of *.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/rom&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;read-only-memory--rom--an-overview&#34;&gt;Read Only Memory(ROM): An Overview&lt;/h2&gt;
+&lt;p&gt;Read-only memory widely known as ROM is a non-volatile memory that is used to store data or programs that do not change over time. As the name suggests, data can only be read from the memory. In digital design, ROM can be used to store image data or signal data for processing.&lt;/p&gt;
+&lt;h4 id=&#34;memory-file&#34;&gt;Memory File&lt;/h4&gt;
+&lt;p&gt;A memory file is a simple file with an extension of *.mem that can store data in decimal, binary, or hexadecimal format. An example of a seven-segment ROM file is shown below:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Frequency Divider</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_22_15_24_11_frequency_divider/</link>
       <pubDate>Mon, 22 Jul 2024 15:24:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_22_15_24_11_frequency_divider/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Frequency Divider: An Overview A frequency divider is a digital circuit that reduces the frequency of the main clock by a certain factor. They are typically used in clock generation circuits, timers, counters, etc. Frequency dividers can be categorized into two even and odd frequency dividers based on the factor N. If N is an even number the frequency divider is categorized under an even frequency divider and when N is an odd number it is categorized as an odd frequency divider.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/freq_div&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;frequency-divider-an-overview&#34;&gt;Frequency Divider: An Overview&lt;/h2&gt;
+&lt;p&gt;A frequency divider is a digital circuit that reduces the frequency of the main clock by a certain factor. They are typically used in clock generation circuits, timers, counters, etc. Frequency dividers can be categorized into two even and odd frequency dividers based on the factor N. If N is an even number the frequency divider is categorized under an even frequency divider and when N is an odd number it is categorized as an odd frequency divider.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Edge Detector</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_22_14_10_16_edge_detector/</link>
       <pubDate>Mon, 22 Jul 2024 14:10:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_22_14_10_16_edge_detector/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Edge Detector: An Overview Edge detectors play a crucial role in synchronous systems to generate a short pulse when a transition of a signal occurs from low to high or high to low. These short pulses are used to trigger an event or generate an interrupt.
-There are three types of edge detectors, and they are as follows:
-Rising edge detector: detects a signal transition from low to high.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/edge_detect&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;edge-detector-an-overview&#34;&gt;Edge Detector: An Overview&lt;/h2&gt;
+&lt;p&gt;Edge detectors play a crucial role in synchronous systems to generate a short pulse when a transition of a signal occurs from low to high or high to low. These short pulses are used to trigger an event or generate an interrupt.&lt;/p&gt;
+&lt;p&gt;There are three types of edge detectors, and they are as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Rising edge detector: detects a signal transition from low to high.&lt;/li&gt;
+&lt;li&gt;Falling edge detector: detects a signal transition from high to low.&lt;/li&gt;
+&lt;li&gt;Dual edge detector: detects both rising and falling edges of a signal.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;verilog-code&#34;&gt;Verilog Code&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-verilog&#34; data-lang=&#34;verilog&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;module&lt;/span&gt; edge_detect(&lt;span style=&#34;color:#75715e&#34;&gt;/*AUTOARG*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;// Outputs
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   posEdge, negEdge, dualEdge,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;// Inputs
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   clk, rst, din
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   );
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;input&lt;/span&gt; clk;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;input&lt;/span&gt; rst;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;input&lt;/span&gt; din;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;output&lt;/span&gt; posEdge;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;output&lt;/span&gt; negEdge;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;output&lt;/span&gt; dualEdge;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;/*AUTOREG*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;/*AUTOWIRE*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;reg&lt;/span&gt;	  din_reg;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;always&lt;/span&gt;@(&lt;span style=&#34;color:#66d9ef&#34;&gt;posedge&lt;/span&gt; clk)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     &lt;span style=&#34;color:#66d9ef&#34;&gt;begin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;             &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;rst)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               din_reg &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;&amp;#39;h0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;             &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;               din_reg &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; din;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;// Posedge detection
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;assign&lt;/span&gt; posEdge &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;din_reg) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt; din;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;// Negedge detection
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;assign&lt;/span&gt; negEdge &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; din_reg &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;din);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;// Dualedge detection
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;assign&lt;/span&gt; dualEdge &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; posEdge &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; negEdge;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;endmodule&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Ring Counter</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_22_11_17_17_ring_counter/</link>
       <pubDate>Mon, 22 Jul 2024 11:17:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_22_11_17_17_ring_counter/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Ring Counter: An Overview A ring counter is a type of shift register that where the output of the last register is fed to the input of the first register forming a type of circular shift register. There are two types of ring counters based on how the last bit is fed to the input and they are:
-Simple Ring Counter Twisted Ring Counter Simple Ring Counter A simple ring counter is where the output of the last register is fed to the input of the first register.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/ring_cntr&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ring-counter-an-overview&#34;&gt;Ring Counter: An Overview&lt;/h2&gt;
+&lt;p&gt;A ring counter is a type of shift register that where the output of the last register is fed to the input of the first register forming a type of circular shift register. There are two types of ring counters based on how the last bit is fed to the input and they are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Simple Ring Counter&lt;/li&gt;
+&lt;li&gt;Twisted Ring Counter&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;simple-ring-counter&#34;&gt;Simple Ring Counter&lt;/h3&gt;
+&lt;p&gt;A simple ring counter is where the output of the last register is fed to the input of the first register. At reset, the initial values of the first register is set to high (&amp;lsquo;1&amp;rsquo;) and the rest to low (&amp;lsquo;0&amp;rsquo;). On every clock cycle, the initial set bit is shifted right. Therefore, the total number of unused states is given by (2**N-N) where N is the input width. For a 4-bit simple ring counter, the input N = 4, the total states are 2**4 = 16 and the total number of unused states is 2**4 - 4 = 12.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mod-N Counter</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_18_23_30_22_mod_n_counter/</link>
       <pubDate>Thu, 18 Jul 2024 23:30:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_18_23_30_22_mod_n_counter/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Mod-N Counter: An Overview A modulo-N counter (Mod-N) is counter that counts from 0 to N-1 and then wraps back to 0. This type of counter is useful in [Frequency Divider], timers and state machines. The number of flop-flop required to calculate a mod-N counter is ceil(log2(N)). Forexample: for a mod 10 counter the number of flip-flop required is 4 (ceil(log2(10))).
-Verilog Code: Mod-N Counter module mod_cntr #(parameter N = 4)(/*AUTOARG*/ // Outputs mod_cntr, // Inputs clk, rst ); // Outputs output [N-1:0] mod_cntr; // Inputs input	clk; input	rst; logic [$clog2(N)-1:0] cntr_reg, cntr_nxt; /*AUTOREG*/ /*AUTOWIRE*/ always_ff@(posedge clk) if(rst) cntr_reg &amp;lt;= 0; else cntr_reg &amp;lt;= cntr_nxt; always_comb cntr_nxt = (cntr_reg == N-1) ?</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/mod_cntr&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;mod-n-counter-an-overview&#34;&gt;Mod-N Counter: An Overview&lt;/h2&gt;
+&lt;p&gt;A modulo-N counter (Mod-N) is counter that counts from 0 to N-1 and then wraps back to 0. This type of counter is useful in [Frequency Divider], timers and state machines. The number of flop-flop required to calculate a mod-N counter is ceil(log2(N)). Forexample: for a mod 10 counter the number of flip-flop required is 4 (ceil(log2(10))).&lt;/p&gt;
+&lt;h4 id=&#34;verilog-code-mod-n-counter&#34;&gt;Verilog Code: Mod-N Counter&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-verilog&#34; data-lang=&#34;verilog&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;module&lt;/span&gt; mod_cntr #(&lt;span style=&#34;color:#66d9ef&#34;&gt;parameter&lt;/span&gt; N &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;)(&lt;span style=&#34;color:#75715e&#34;&gt;/*AUTOARG*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;// Outputs
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   mod_cntr,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;// Inputs
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   clk, rst
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   );
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;// Outputs
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;output&lt;/span&gt; [N&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] mod_cntr;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;// Inputs
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;input&lt;/span&gt;	  clk;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;input&lt;/span&gt;	  rst;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;logic&lt;/span&gt; [$clog2(N)&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] cntr_reg, cntr_nxt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;/*AUTOREG*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;/*AUTOWIRE*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;always_ff&lt;/span&gt;@(&lt;span style=&#34;color:#66d9ef&#34;&gt;posedge&lt;/span&gt; clk)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(rst)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;       cntr_reg &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;       cntr_reg &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; cntr_nxt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;always_comb&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     cntr_nxt &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (cntr_reg &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; N&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; cntr_reg &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;assign&lt;/span&gt; mod_cntr &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; cntr_reg;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;endmodule&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Code Converter</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_18_21_58_46_code_converter/</link>
       <pubDate>Thu, 18 Jul 2024 21:58:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_18_21_58_46_code_converter/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Code Converter: Binary to/from Gray Code Code converters are digital circuits that convert data from one form of binary representation to another. The two most important code converts are binary to gray and gray to binary. This converters are crucial digital components in designing [Aysnchronous FIFO].
-Binary Code Binary code is a data representation system using only two states, zero (0) and one (1). Each digit is represented by the power of 2 with the starting bit as 2^0 and 2^1 and so on.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/numConv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;code-converter-binary-to-from-gray-code&#34;&gt;Code Converter: Binary to/from Gray Code&lt;/h2&gt;
+&lt;p&gt;Code converters are digital circuits that convert data from one form of binary representation to another. The two most important code converts are binary to gray and gray to binary. This converters are crucial digital components in designing [Aysnchronous FIFO].&lt;/p&gt;
+&lt;h3 id=&#34;binary-code&#34;&gt;Binary Code&lt;/h3&gt;
+&lt;p&gt;Binary code is a data representation system using only two states, zero (0) and one (1). Each digit is represented by the power of 2 with the starting bit as 2^0 and 2^1 and so on. Binary code is basic is the fundamental numerical representation in computer systems.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Up/Down Counter</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_16_22_30_28_up_down_counter/</link>
       <pubDate>Tue, 16 Jul 2024 22:30:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_16_22_30_28_up_down_counter/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Up/Down Counter: An Overview An up/down counter, also known as a bidirectional counter, is a sequential digital circuit that can increment(count up) of decrement(count down) its values. The control signal dictates the direction of the counter. These counters are widely used in digital design for counting purposes such as in frequency division, event counting, etc.
-Applications Digital Clocks: To count seconds, minutes, and hours. Frequency Dividers: To divide the frequency of a clock signal.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/up_down_cntr&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;up-down-counter-an-overview&#34;&gt;Up/Down Counter: An Overview&lt;/h2&gt;
+&lt;p&gt;An up/down counter, also known as a bidirectional counter, is a sequential digital circuit that can increment(count up) of decrement(count down) its values. The control signal dictates the direction of the counter. These counters are widely used in digital design for counting purposes such as in frequency division, event counting, etc.&lt;/p&gt;
+&lt;h3 id=&#34;applications&#34;&gt;Applications&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Digital Clocks: To count seconds, minutes, and hours.&lt;/li&gt;
+&lt;li&gt;Frequency Dividers: To divide the frequency of a clock signal.&lt;/li&gt;
+&lt;li&gt;Event Counters: To count occurrences of events in a digital system.&lt;/li&gt;
+&lt;li&gt;Position Encoders: In robotics to keep track of position.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;design-4-bit-up-down-counter&#34;&gt;Design: 4-bit Up/Down Counter&lt;/h3&gt;
+&lt;p&gt;A 4-bit binary up/down counter counts from 0 (0000 in binary) to 15 (1111 in binary). When in up-counting mode, the counter increases its value by 1 with each clock pulse. Starting from 0000, it counts up to 0001, 0010, 0011, and so on, until it reaches 1111. After reaching 1111, the next increment will cause the counter to wrap around and start again from 0000. Similarly, when in down-counting mode, the counter decreases its value by 1 with each clock pulse. Starting from 1111, it counts down to 1110, 1101, 1100, and so on, until it reaches 0000. After reaching 0000, the next decrement will cause the counter to wrap around and start again from 1111. A control signal (often labeled as UP/DOWN) determines the counting direction. When the control signal is high (1), the counter operates in up-counting mode. When the control signal is low (0), the counter operates in down-counting mode.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Universal Shift Register</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_10_20_30_35_universal_shift_register/</link>
       <pubDate>Wed, 10 Jul 2024 20:30:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_10_20_30_35_universal_shift_register/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Universal Shift Register: An Overview A universal shift register is a digital component that performs more than one data operation. It combines the functionalities of several types of shift registers into one, allowing for greater flexibility in data handling.
-Design: 4-bit Universal Shift Register The figure below shows a design of a 4-bit universal shift register. It is an extension of a Shift Register which includes a series of Multiplexer which acts as switch to change the functionality of the register.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/univ_shift_reg&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;universal-shift-register-an-overview&#34;&gt;Universal Shift Register: An Overview&lt;/h2&gt;
+&lt;p&gt;A universal shift register is a digital component that performs more than one data operation. It combines the functionalities of several types of shift registers into one, allowing for greater flexibility in data handling.&lt;/p&gt;
+&lt;h3 id=&#34;design-4-bit-universal-shift-register&#34;&gt;Design: 4-bit Universal Shift Register&lt;/h3&gt;
+&lt;p&gt;The figure below shows a design of a 4-bit universal shift register. It is an extension of a &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_07_06_19_54_50_shift_register/&#34;&gt;Shift Register&lt;/a&gt; which includes a series of &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_13_12_22_45_multiplexer/&#34;&gt;Multiplexer&lt;/a&gt; which acts as switch to change the functionality of the register.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Shift Register</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_06_19_54_50_shift_register/</link>
       <pubDate>Sat, 06 Jul 2024 19:54:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_06_19_54_50_shift_register/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Shift Register: An Overview A shift register is a set of sequential registers placed in series to transfer and store data. The figure below shows a 4-bit serial shift register.
-The waveform below shows the data being shifted from flip-flop 1 to 4 on the rising edge of the clock.
-Applications Shift registers are typically used to collect and transfer data for various applications. They are also used for data conversion, the types of data converters are listed below:</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/shift_register&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;shift-register-an-overview&#34;&gt;Shift Register: An Overview&lt;/h2&gt;
+&lt;p&gt;A shift register is a set of sequential registers placed in series to transfer and store data. The figure below shows a 4-bit serial shift register.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/shift_register.png&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;The waveform below shows the data being shifted from flip-flop 1 to 4 on the rising edge of the clock.&lt;/p&gt;
+&lt;figure class=&#34;center !important&#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/shift_register_wave.png&#34; width=&#34;500px&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;applications&#34;&gt;Applications&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Shift registers are typically used to collect and transfer data for various applications.  They are also used for data conversion, the types of data converters are listed below:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Register</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_06_19_23_36_register/</link>
       <pubDate>Sat, 06 Jul 2024 19:23:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_06_19_23_36_register/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Register: An Overview A register in digital design is a fast storage sequential circuit that can hold data temporarily. A widely used register is D Flip-FLop. A D Flip-Flop is an edge-triggered circuit that combines a pair of latches to store one bit.
-Advantages of Registers Registers provide fast access to data compared to main memory. Ideal for temporary storage during data processing. Desgin: D Flip-Flop A D Flip-Flop is an edge-trigger register, either positive edge-triggered, negative edge-triggered, or dual edge-triggered.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/register&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;register-an-overview&#34;&gt;Register: An Overview&lt;/h2&gt;
+&lt;p&gt;A register in digital design is a fast storage sequential circuit that can hold data temporarily. A widely used register is D Flip-FLop. A D Flip-Flop is an edge-triggered circuit that combines a pair of latches to store one bit.&lt;/p&gt;
+&lt;h3 id=&#34;advantages-of-registers&#34;&gt;Advantages of Registers&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Registers provide fast access to data compared to main memory.&lt;/li&gt;
+&lt;li&gt;Ideal for temporary storage during data processing.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;desgin-d-flip-flop&#34;&gt;Desgin: D Flip-Flop&lt;/h3&gt;
+&lt;p&gt;A D Flip-Flop is an edge-trigger register, either positive edge-triggered, negative edge-triggered, or dual edge-triggered. For the purpose of discussion let&amp;rsquo;s consider a positive edge-triggered :flip-flop.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Adder-Subtractor</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_06_16_50_01_adder_subtractor/</link>
       <pubDate>Sat, 06 Jul 2024 16:50:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_06_16_50_01_adder_subtractor/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Adder-Subtractor: An Overview An adder-subtractor is a combinational digital circuit that can perform the operation of an adder and subtractor based on the control signal. It is an essential component in arithmetic logic units (ALUs) in microprocessors and digital signal processors.
-Applications of Adder-Subtractor CPUs, microcontrollers, and digital signal processors implement adder subtractors for arithmetic operations. Computer graphics make use of adder-subtractors blocks for calculating coordinates and pixel values.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/adder_subtractor&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adder-subtractor-an-overview&#34;&gt;Adder-Subtractor: An Overview&lt;/h2&gt;
+&lt;p&gt;An adder-subtractor is a combinational digital circuit that can perform the operation of an adder and subtractor based on the control signal. It is an essential component in arithmetic logic units (ALUs) in microprocessors and digital signal processors.&lt;/p&gt;
+&lt;h3 id=&#34;applications-of-adder-subtractor&#34;&gt;Applications of Adder-Subtractor&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;CPUs, microcontrollers, and digital signal processors implement adder subtractors for arithmetic operations.&lt;/li&gt;
+&lt;li&gt;Computer graphics make use of adder-subtractors blocks for calculating coordinates and pixel values.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;components-of-adder-subtractor&#34;&gt;Components of Adder-Subtractor&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Binary Adder: A simple &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_08_11_32_42_full_adder/&#34;&gt;Full Adder&lt;/a&gt; with three inputs, two significant bits and one carry-in bit, and two outputs sum and carry-out.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Comparator</title>
       <link>https://24x7fpga.com/rtl_directory/2024_07_06_15_54_47_comparator/</link>
       <pubDate>Sat, 06 Jul 2024 15:54:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_07_06_15_54_47_comparator/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Comparator: An Overview A comparator is a fundamental building block in digital design that compares two binary numbers. Comparators can be categorized based on their use and functionality.
-Equality Comparator: it compares the two binary numbers to up a true bit or high when all the binary bits are identical and false or low when the bits are not identical. Magnitude Comparator: has three functionality, to determine the relationship between the two binary numbers that are being compared.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/comparator&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;comparator-an-overview&#34;&gt;Comparator: An Overview&lt;/h2&gt;
+&lt;p&gt;A comparator is a fundamental building block in digital design that compares two binary numbers. Comparators can be categorized based on their use and functionality.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Equality Comparator: it compares the two binary numbers to up a true bit or high when all the binary bits are identical and false or low when the bits are not identical.&lt;/li&gt;
+&lt;li&gt;Magnitude Comparator: has three functionality, to determine the relationship between the two binary numbers that are being compared. The three functionalities are greater than, less than, and equal to.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;applications-of-comparators&#34;&gt;Applications of Comparators&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Comparators are used in sorting algorithms to compare and order numbers.&lt;/li&gt;
+&lt;li&gt;In signed subtractions, it is necessary to compare the magnitudes to perform the operation.&lt;/li&gt;
+&lt;li&gt;Many control systems and processors use comparators to make decisions based on numerical comparisons.&lt;/li&gt;
+&lt;li&gt;Extremely helpful in looping statements.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;design-4-bit-comparator&#34;&gt;Design: 4-bit Comparator&lt;/h3&gt;
+&lt;p&gt;A 4-bit comparator consists of two inputs each of four bits and three outputs, one for each comparison. Typically, a magnitude comparator is used widely in many digital system applications. Verilog provides three operators for the three-magnitude comparator operations. They are as follows:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Decoder</title>
       <link>https://24x7fpga.com/rtl_directory/2024_06_23_21_30_22_decoder/</link>
       <pubDate>Sun, 23 Jun 2024 21:30:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_06_23_21_30_22_decoder/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Decoder: An Overview The functionality of a decoder is the opposite of an Encoder. A decoder is a combinational circuit that converts a binary coder to a set of output signals with only one bit of the being high at any given time. It consists of N input lines and 2^N output lines.
-Design: 2-to-4 Decoder A 2-to-4 decoder consists of two input lines and four output lines.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/decoder3_to_8&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;decoder-an-overview&#34;&gt;Decoder: An Overview&lt;/h2&gt;
+&lt;p&gt;The functionality of a decoder is the opposite of an &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_23_20_40_25_encoder/&#34;&gt;Encoder&lt;/a&gt;. A decoder is a combinational circuit that converts a binary coder to a set of output signals with only one bit of the being high at any given time. It consists of N input lines and 2^N output lines.&lt;/p&gt;
+&lt;h3 id=&#34;design-2-to-4-decoder&#34;&gt;Design: 2-to-4 Decoder&lt;/h3&gt;
+&lt;p&gt;A 2-to-4 decoder consists of two input lines and four output lines. The truth table of the decoder is shown below:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Encoder</title>
       <link>https://24x7fpga.com/rtl_directory/2024_06_23_20_40_25_encoder/</link>
       <pubDate>Sun, 23 Jun 2024 20:40:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_06_23_20_40_25_encoder/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Encoder: An Overview An encoder is a digital combinational circuit that converts 2^n inputs to n outputs. It converts a set of binary inputs to binary-coded output, where only one input line is active at a given time.
-Design: 4-to-2 Encoder A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 2^2 = 4 input lines named as in[3], in[2], in[1], in[0] and two output lines named as out[1] and out[0].</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/encoder8_to_3&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;encoder-an-overview&#34;&gt;Encoder: An Overview&lt;/h2&gt;
+&lt;p&gt;An encoder is a digital combinational circuit that converts 2^n inputs to n outputs. It converts a set of binary inputs to binary-coded output, where only one input line is active at a given time.&lt;/p&gt;
+&lt;h3 id=&#34;design-4-to-2-encoder&#34;&gt;Design: 4-to-2 Encoder&lt;/h3&gt;
+&lt;p&gt;A 4-to-2 encoder, where n = 2 i.e., it consists of 2^n = 2^2 = 4 input lines named as in[3], in[2], in[1], in[0] and two output lines named as out[1] and out[0].&lt;/p&gt;</description>
     </item>
     <item>
       <title>De-Multiplexer</title>
       <link>https://24x7fpga.com/rtl_directory/2024_06_14_22_07_44_de_multiplexer/</link>
       <pubDate>Fri, 14 Jun 2024 22:07:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_06_14_22_07_44_de_multiplexer/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-De-Multiplexer (DEMUX): An Overview A DEMUX or data distributor is a one-to-many combinational circuit that receives inputs from a single input line and transmits the same information over one of &amp;rsquo;n&amp;rsquo; possible output lines. DEMUX transmits the same data that is received on the input to different destinations. A de-multiplexer is a 1-to-N device, where N/n is the number of outputs and with &amp;rsquo;m&amp;rsquo; select line, therefore, 2^m = n.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/demux1_to_8&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;de-multiplexer--demux--an-overview&#34;&gt;De-Multiplexer (DEMUX): An Overview&lt;/h2&gt;
+&lt;p&gt;A DEMUX or data distributor is a one-to-many combinational circuit that receives inputs from a single input line and transmits the same information over one of &amp;rsquo;n&amp;rsquo; possible output lines. DEMUX transmits the same data that is received on the input to different destinations. A de-multiplexer is a 1-to-N device, where N/n is the number of outputs and with &amp;rsquo;m&amp;rsquo; select line, therefore, 2^m = n.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Multiplexer</title>
       <link>https://24x7fpga.com/rtl_directory/2024_06_13_12_22_45_multiplexer/</link>
       <pubDate>Thu, 13 Jun 2024 12:22:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_06_13_12_22_45_multiplexer/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Multiplexer (MUX): An Overview A multiplexer is a digital circuit that selects one input out of many inputs, hence, it is also called a data selector. It consists of 2^n inputs with n selector lines, which are used to select which input to send to the output.
-Need For Multiplexers The need for MUXs arises wherever there is a need to transmit multiple data over a shared communication channel.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/mux8_to_1&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;multiplexer--mux--an-overview&#34;&gt;Multiplexer (MUX): An Overview&lt;/h2&gt;
+&lt;p&gt;A multiplexer is a digital circuit that selects one input out of many inputs, hence, it is also called a data selector. It consists of 2^n inputs with n selector lines, which are used to select which input to send to the output.&lt;/p&gt;
+&lt;h3 id=&#34;need-for-multiplexers&#34;&gt;Need For Multiplexers&lt;/h3&gt;
+&lt;p&gt;The need for MUXs arises wherever there is a need to transmit multiple data over a shared communication channel.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Full Adder</title>
       <link>https://24x7fpga.com/rtl_directory/2024_06_08_11_32_42_full_adder/</link>
       <pubDate>Sat, 08 Jun 2024 11:32:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_06_08_11_32_42_full_adder/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Full Adder A full adder is a basic building block of a digital circuit. Full adder requires three inputs a, b, and c(carry-in) to result in two outputs s(sum) and co(carry-out).
-Full adder truth table:
-A B C SUM (S) Carry (Co) 0 0 0 0 0 0 0 1 1 0 0 1 0 1 0 0 1 1 0 1 1 0 0 1 0 1 0 1 0 1 1 1 0 0 1 1 1 1 1 1 Boolean equation for sum and carry is :</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/full_add&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;full-adder&#34;&gt;Full Adder&lt;/h2&gt;
+&lt;p&gt;A full adder is a basic building block of a digital circuit. Full adder requires three inputs a, b, and c(carry-in) to result in two outputs s(sum) and co(carry-out).&lt;/p&gt;
+&lt;p&gt;Full adder truth table:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;A&lt;/th&gt;
+          &lt;th&gt;B&lt;/th&gt;
+          &lt;th&gt;C&lt;/th&gt;
+          &lt;th&gt;SUM (S)&lt;/th&gt;
+          &lt;th&gt;Carry (Co)&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Boolean equation for sum and carry is :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Half Adder</title>
       <link>https://24x7fpga.com/rtl_directory/2024_06_05_22_56_41_half_adder/</link>
       <pubDate>Wed, 05 Jun 2024 22:56:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_06_05_22_56_41_half_adder/</guid>
-      <description>Source &amp;ndash; RTL Design Directory
-Half Adder Half adder is a combinational arithmetic circuit. Its functionality is to add two 1-bit binary digits to produce a sum bit and carry as the output.
-Half adder truth table:
-A B Sum (S) Carry (Co) 0 0 0 0 0 1 1 0 1 0 1 0 1 1 0 1 Boolean equation for sum and carry can be written as :</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/half_add&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;half-adder&#34;&gt;Half Adder&lt;/h2&gt;
+&lt;p&gt;Half adder is a combinational arithmetic circuit. Its functionality is to add two 1-bit binary digits to produce a sum bit and carry as the output.&lt;/p&gt;
+&lt;p&gt;Half adder truth table:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;A&lt;/th&gt;
+          &lt;th&gt;B&lt;/th&gt;
+          &lt;th&gt;Sum (S)&lt;/th&gt;
+          &lt;th&gt;Carry (Co)&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Boolean equation for sum and carry can be written as :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sum = A xor B&lt;/li&gt;
+&lt;li&gt;Carry = A and B&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Half adder can be modelled in verilog using data flow representation:&lt;/p&gt;</description>
     </item>
     <item>
       <title>RTL Design Directory</title>
       <link>https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/</link>
       <pubDate>Wed, 05 Jun 2024 00:21:00 -0400</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/</guid>
-      <description>Welcome to my comprehensive collection of RTL(Register Transfer Level) designs. It is an evolving collection highlighting my projects, skills, and achievements in digital circuit design and verification. I specialize in developing efficient, high-performance hardware architectures using industry-standard languages like SystemVerilog and Verilog. Explore my blog for insightful articles on the latest trends and best practices in RTL design, and visit the tutorials section for step-by-step guides to mastering this critical aspect of hardware engineering.</description>
+      <description>&lt;p&gt;Welcome to my comprehensive collection of &lt;a href=&#34;https://en.wikipedia.org/wiki/Register-transfer_level&#34;&gt;RTL(Register Transfer Level)&lt;/a&gt; designs. It is an evolving collection highlighting my projects, skills, and achievements in digital circuit design and verification. I specialize in developing efficient, high-performance hardware architectures using industry-standard languages like &lt;a href=&#34;https://ieeexplore.ieee.org/document/10458102&#34;&gt;SystemVerilog&lt;/a&gt; and &lt;a href=&#34;https://accellera.org/images/downloads/standards/v-ams/VAMS-LRM-2023.pdf&#34;&gt;Verilog&lt;/a&gt;. Explore my blog for insightful articles on the latest trends and best practices in RTL design, and visit the tutorials section for step-by-step guides to mastering this critical aspect of hardware engineering. Connect with me to collaborate on innovative solutions and advance your knowledge in RTL design.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
