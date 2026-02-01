@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Events | Home</title>
 <meta name="keywords" content="sv">
 <meta name="description" content="SV Verification Directory
@@ -44,20 +44,20 @@ Events are static objects in SystemVerilog, used to synchronize different testbe
 
 This is a two stage mechanism where:">
 <meta name="author" content="Kiran">
-<link rel="canonical" href="http://localhost:1313/sv_directory/2024_07_31_17_20_12_events/">
+<link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/assets/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/sv_directory/2024_07_31_17_20_12_events/">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/">
 <noscript>
     <style>
         #theme-toggle,
@@ -71,7 +71,142 @@ This is a two stage mechanism where:">
 <link rel="stylesheet" href="../../zcustom.css">
 
 
-<link rel="stylesheet" href="/css/syntax.css" !important>
+<meta property="og:title" content="Events" />
+<meta property="og:description" content="SV Verification Directory
+Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:
+
+Events
+Mailbox
+Semaphore
+
+Events
+Events are static objects in SystemVerilog, used to synchronize different testbench components. The events are triggered using -&gt; or -&gt;&gt; and the process can wait for the event to be triggered using  @ operator or wait() construct.
+
+  
+      
+          Event
+          Description
+      
+  
+  
+      
+          - &gt;
+          Blocking events, also know as instanteous event, block the process untill the event is triggered.
+      
+      
+          - &gt;&gt;
+          Non-blocking events, using this operator does not block the process. Can be used when two events are triggere at the same time.
+      
+      
+          @
+          Blocks the calling process untill the given event is triggered. This is an edge-sensitive operator, hence, waiting event should be triggered before triggering an event to aviod blocking the waiting process.
+      
+      
+          wait()
+          Unlike @ operator, the wait() construct does not block the process. Triggering an event and waiting for an event can occur at the same time.
+      
+  
+
+This is a two stage mechanism where:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/" /><meta property="article:section" content="sv_directory" />
+<meta property="article:published_time" content="2024-07-31T17:20:00-04:00" />
+<meta property="article:modified_time" content="2024-07-31T17:20:00-04:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Events"/>
+<meta name="twitter:description" content="SV Verification Directory
+Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:
+
+Events
+Mailbox
+Semaphore
+
+Events
+Events are static objects in SystemVerilog, used to synchronize different testbench components. The events are triggered using -&gt; or -&gt;&gt; and the process can wait for the event to be triggered using  @ operator or wait() construct.
+
+  
+      
+          Event
+          Description
+      
+  
+  
+      
+          - &gt;
+          Blocking events, also know as instanteous event, block the process untill the event is triggered.
+      
+      
+          - &gt;&gt;
+          Non-blocking events, using this operator does not block the process. Can be used when two events are triggere at the same time.
+      
+      
+          @
+          Blocks the calling process untill the given event is triggered. This is an edge-sensitive operator, hence, waiting event should be triggered before triggering an event to aviod blocking the waiting process.
+      
+      
+          wait()
+          Unlike @ operator, the wait() construct does not block the process. Triggering an event and waiting for an event can occur at the same time.
+      
+  
+
+This is a two stage mechanism where:"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Sv_directories",
+      "item": "https://24x7fpga.com/sv_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Events",
+      "item": "https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Events",
+  "name": "Events",
+  "description": "SV Verification Directory\nInterprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:\nEvents Mailbox Semaphore Events Events are static objects in SystemVerilog, used to synchronize different testbench components. The events are triggered using -\u0026gt; or -\u0026gt;\u0026gt; and the process can wait for the event to be triggered using @ operator or wait() construct.\nEvent Description - \u0026gt; Blocking events, also know as instanteous event, block the process untill the event is triggered. - \u0026gt;\u0026gt; Non-blocking events, using this operator does not block the process. Can be used when two events are triggere at the same time. @ Blocks the calling process untill the given event is triggered. This is an edge-sensitive operator, hence, waiting event should be triggered before triggering an event to aviod blocking the waiting process. wait() Unlike @ operator, the wait() construct does not block the process. Triggering an event and waiting for an event can occur at the same time. This is a two stage mechanism where:\n",
+  "keywords": [
+    "sv"
+  ],
+  "articleBody": "SV Verification Directory\nInterprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:\nEvents Mailbox Semaphore Events Events are static objects in SystemVerilog, used to synchronize different testbench components. The events are triggered using -\u003e or -\u003e\u003e and the process can wait for the event to be triggered using @ operator or wait() construct.\nEvent Description - \u003e Blocking events, also know as instanteous event, block the process untill the event is triggered. - \u003e\u003e Non-blocking events, using this operator does not block the process. Can be used when two events are triggere at the same time. @ Blocks the calling process untill the given event is triggered. This is an edge-sensitive operator, hence, waiting event should be triggered before triggering an event to aviod blocking the waiting process. wait() Unlike @ operator, the wait() construct does not block the process. Triggering an event and waiting for an event can occur at the same time. This is a two stage mechanism where:\nFirst Stage: trigger an event. Second Stage: wait for an event to be triggered. Three Types of Event Trigger Events are distinguished based on which stage occurs first.\nType A: Second stage and then first stage. Type B: First stage followed by second stage. Type C: First and second stage occurs at the same time. Combination of event triggers(-\u003e and -\u003e\u003e) and wait responses(@ and wait()) can be used to synchronize processes based on the requirement.\nType A The wait event is triggered first followed by the event.\n// class class event_typeA; event ev; task ev_trg(); #10; $display(\"t= %0t =\u003e Trigger event\", $time); -\u003eev; $display(\"t= %0t =\u003e Event is triggered\", $time); endtask task wait_trg(); #5; $display(\"t= %0t =\u003e Wait for the event\", $time); @ev; //wait(ev.triggered); // uncomment to comment @ev to see the difference $display(\"t= %0t =\u003e Wait event is triggered\", $time); endtask endclass module test; event_typeA ev_a; // class handle task run(event_typeA arg); arg.ev_trg(); arg.wait_trg(); endtask initial begin ev_a = new( ); // construct the class object $display(\"---------------------- Event: Type A ----------------------\"); run(ev_a); end endmodule Execute the code in EDA Playground\nType B The event is triggered first followed by the wait event.\n// class class event_typeB; event ev; task ev_trg(); #10; $display(\"t = %0t =\u003e Trigger event\", $time); -\u003eev; $display(\"t = %0t =\u003e Event is triggered\", $time); endtask task wait_trg(); #15; $display(\"t = %0t =\u003e Wait for the event\", $time); @(ev); //wait(ev.triggered); $display(\"t= %0t =\u003e Wait event is triggered\", $time); endtask endclass module test; event_typeB ev_b; // class handle task run(event_typeB arg); fork arg.ev_trg(); arg.wait_trg(); join endtask initial begin ev_b = new( ); // construct the class object $display(\"---------------------- Event: Type B ----------------------\"); run(ev_b); end endmodule Execute the code in EDA Playground\nType C Event trigger and wait event both are triggered at the same time.\n// class class event_typeC; event ev; task ev_trg(); $display(\"t = %0t =\u003e Trigger event\", $time); -\u003eev; $display(\"t = %0t =\u003e Event is triggered\", $time); endtask task wait_trg(); $display(\"t = %0t =\u003e Wait for the event\", $time); @(ev); //wait(ev.triggered); $display(\"t= %0t =\u003e Wait event is triggered\", $time); endtask endclass module test; event_typeC ev_c; // class handle task run(event_typeC arg); fork arg.ev_trg(); arg.wait_trg(); join endtask initial begin ev_c = new( ); // construct the class object $display(\"---------------------- Event: Type C ----------------------\"); run(ev_c); end endmodule Execute the code in EDA Playground\nDifference between @ Operator and wait() Construct The wait event does not block the process. When both the event and wait event is triggered at the same it always best to use a wait() construct. If the event triggering and waiting for event trigger with @ operator happens at the same time, @ operator may miss detecting the event trigger.\n// class class event_typeC; event ev; task ev_trg(); $display(\"t = %0t =\u003e Trigger event\", $time); -\u003eev; $display(\"t = %0t =\u003e Event is triggered\", $time); endtask task wait_trg(); $display(\"t = %0t =\u003e Wait for the event\", $time); //@(ev); wait(ev.triggered); $display(\"t= %0t =\u003e Wait event is triggered\", $time); endtask endclass module test; event_typeC ev_c; // class handle task run(event_typeC arg); fork arg.ev_trg(); arg.wait_trg(); join endtask initial begin ev_c = new( ); // construct the class object $display(\"---------------------- Event: Type C ----------------------\"); run(ev_c); end endmodule Execute the code in EDA Playground\nDifference between -\u003e and -\u003e\u003e Event Triggers Similar to the @ operator and the wait() construct, the -\u003e operator blocks the process until it is triggered, while the -\u003e\u003e operator does not block the process. When using the -\u003e\u003e operator, irrespective of the @ operator or the wait() construct, the process continues to execute. The following code illustrates these differences more clearly.\n// class class event_typeC; event ev; task ev_trg(); $display(\"t = %0t =\u003e Trigger event\", $time); -\u003e\u003eev; $display(\"t = %0t =\u003e Event is triggered\", $time); endtask task wait_trg(); $display(\"t = %0t =\u003e Wait for the event\", $time); @(ev); // comment and uncomment //wait(ev.triggered); // comment and uncomment $display(\"t= %0t =\u003e Wait event is triggered\", $time); endtask endclass module test; event_typeC ev_c; // class handle task run(event_typeC arg); fork arg.ev_trg(); arg.wait_trg(); join endtask initial begin ev_c = new( ); // construct the class object $display(\"---------------------- Event: Type C ----------------------\"); run(ev_c); end endmodule Execute the code in EDA Playground\n",
+  "wordCount" : "861",
+  "inLanguage": "en",
+  "datePublished": "2024-07-31T17:20:00-04:00",
+  "dateModified": "2024-07-31T17:20:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
 
 </head>
 
@@ -87,7 +222,7 @@ This is a two stage mechanism where:">
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
             
             
             <div class="vertical-line" style="height: 20px;"></div>
@@ -119,7 +254,7 @@ This is a two stage mechanism where:">
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
                     <span> 
 
 
@@ -130,7 +265,7 @@ This is a two stage mechanism where:">
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
                     <span> 
 
 
@@ -141,7 +276,7 @@ This is a two stage mechanism where:">
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
                     <span> 
 
 
@@ -152,7 +287,7 @@ This is a two stage mechanism where:">
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="">
+                <a href="https://24x7fpga.com/tags/" title="">
                     <span> 
 
 
@@ -211,7 +346,7 @@ This is a two stage mechanism where:">
 
 
 
-<script src="http://localhost:1313/js/mathjax-config.js"></script>
+<script src="https://24x7fpga.com/js/mathjax-config.js"></script>
 
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -505,7 +640,7 @@ This is a two stage mechanism where:">
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/sv/">Sv</a></li>
+      <li><a href="https://24x7fpga.com/tags/sv/">Sv</a></li>
     </ul>
 
 
@@ -522,7 +657,7 @@ This is a two stage mechanism where:">
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/"></a></span>
+        <span>&copy; 2026 <a href="https://24x7fpga.com/"></a></span>
         
         
 

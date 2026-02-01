@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Rfsoc on Home</title>
-    <link>http://localhost:1313/tags/rfsoc/</link>
+    <link>https://24x7fpga.com/tags/rfsoc/</link>
     <description>Recent content in Rfsoc on Home</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 07 Aug 2024 22:15:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/rfsoc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://24x7fpga.com/tags/rfsoc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RFSoC Loop Back Tutorial</title>
-      <link>http://localhost:1313/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/</link>
+      <link>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/</link>
       <pubDate>Wed, 07 Aug 2024 22:15:00 -0400</pubDate>
-      <guid>http://localhost:1313/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/rfsoc_directory/2024_08_07_22_09_59_rfsoc/&#34;&gt;RFSoC&lt;/a&gt;&lt;/p&gt;
+      <guid>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/rfsoc_directory/2024_08_07_22_09_59_rfsoc/&#34;&gt;RFSoC&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;rfsoc-loop-back-tutorial&#34;&gt;RFSoC Loop Back Tutorial&lt;/h2&gt;
 &lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/1275.jpg&#34;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/1275.jpg&#34;
          alt=&#34;Figure 1: Zynq UltraScale&amp;#43; RFSoC 1275 Characterization Kit&#34;/&gt; &lt;figcaption&gt;
             &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;Zynq UltraScale+ RFSoC 1275 Characterization Kit&lt;/p&gt;
         &lt;/figcaption&gt;
@@ -27,16 +27,16 @@
     </item>
     <item>
       <title>RFSoC</title>
-      <link>http://localhost:1313/rfsoc_directory/2024_08_07_22_09_59_rfsoc/</link>
+      <link>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_09_59_rfsoc/</link>
       <pubDate>Wed, 07 Aug 2024 22:09:00 -0400</pubDate>
-      <guid>http://localhost:1313/rfsoc_directory/2024_08_07_22_09_59_rfsoc/</guid>
+      <guid>https://24x7fpga.com/rfsoc_directory/2024_08_07_22_09_59_rfsoc/</guid>
       <description>&lt;h2 id=&#34;rfsoc&#34;&gt;RFSoC&lt;/h2&gt;
 &lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/zcu1275-top.png&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/zcu1275-top.png&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/&#34;&gt;RFSoC Loop Back Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/rfsoc_directory/2024_08_07_22_15_09_rfsoc_loop_back_tutorial/&#34;&gt;RFSoC Loop Back Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;RFSoC External Clock and Data&lt;/li&gt;
 &lt;li&gt;RFSoC MTS Tutorial&lt;/li&gt;
 &lt;/ul&gt;</description>

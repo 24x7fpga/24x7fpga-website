@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Researches on Home</title>
-    <link>http://localhost:1313/research/</link>
+    <link>https://24x7fpga.com/research/</link>
     <description>Recent content in Researches on Home</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 08 Jul 2024 10:15:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/research/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://24x7fpga.com/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Research</title>
-      <link>http://localhost:1313/research/2024_07_08_10_15_40_research/</link>
+      <link>https://24x7fpga.com/research/2024_07_08_10_15_40_research/</link>
       <pubDate>Mon, 08 Jul 2024 10:15:00 -0400</pubDate>
-      <guid>http://localhost:1313/research/2024_07_08_10_15_40_research/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&amp;amp;p10_accession_num=wright1736445262641106&#34;&gt;Dissertation&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/rfsoc_directory/2024_08_07_22_09_59_rfsoc/&#34;&gt;RFSoC&lt;/a&gt;&lt;/p&gt;
+      <guid>https://24x7fpga.com/research/2024_07_08_10_15_40_research/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&amp;amp;p10_accession_num=wright1736445262641106&#34;&gt;Dissertation&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rfsoc_directory/2024_08_07_22_09_59_rfsoc/&#34;&gt;RFSoC&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;My doctroal research concentrates on designing a wideband digital receiver system to receive and process the data for accurate multiple signal detection. &lt;a href=&#34;https://en.wikipedia.org/wiki/Fast_Fourier_transform&#34;&gt;Fast Fourier transform (FFT)&lt;/a&gt; is a widely used digital signal processing technique to detect signals in a bandwidth. However, there are some limitations when using the FFT algorithm for signal detection&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;The number of fixed-length samples used by the FFT algorithm determines the frequency resolution. The number of samples from the input signal must be increased to increase the frequency resolution.&lt;/li&gt;

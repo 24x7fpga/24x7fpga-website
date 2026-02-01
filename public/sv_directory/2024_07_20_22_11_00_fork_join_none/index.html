@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Fork Join None | Home</title>
 <meta name="keywords" content="sv">
 <meta name="description" content="SV Verification Directory
@@ -45,20 +45,20 @@ module fork_join_any;
 endmodule
 ">
 <meta name="author" content="Kiran">
-<link rel="canonical" href="http://localhost:1313/sv_directory/2024_07_20_22_11_00_fork_join_none/">
+<link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/assets/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/sv_directory/2024_07_20_22_11_00_fork_join_none/">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/">
 <noscript>
     <style>
         #theme-toggle,
@@ -72,7 +72,144 @@ endmodule
 <link rel="stylesheet" href="../../zcustom.css">
 
 
-<link rel="stylesheet" href="/css/syntax.css" !important>
+<meta property="og:title" content="Fork Join None" />
+<meta property="og:description" content="SV Verification Directory
+Fork Join None
+As the name suggests, the process in the fork will start and does not wait till it completes any of the threads. The figure below depicts the fork join none constructs.
+
+     
+
+
+Syntax: Fork Join None
+fork
+   // process 1
+   // process 2
+   // process 3
+join_none
+Example Code: Fork Join None
+module fork_join_any;
+
+  initial begin
+    fork
+      #2  $display(&#34;t = %0t, fork 1 =&gt; process 1&#34;, $time);
+      #10 $display(&#34;t = %0t, fork 1 =&gt; process 2&#34;, $time);
+      #5  $display(&#34;t = %0t, fork 1 =&gt; process 3&#34;, $time);
+    join_none
+    $display(&#34;--------------- Exited Fork 1 ---------------&#34;);
+    end
+
+
+  initial begin
+    fork
+      #3 $display(&#34;t = %0t, fork 2 =&gt; process 1&#34;, $time);
+      #6 $display(&#34;t = %0t, fork 2 =&gt; process 2&#34;, $time);
+      #1 $display(&#34;t = %0t, fork 2 =&gt; process 3&#34;, $time);
+    join_none
+    $display(&#34;--------------- Exited Fork 2 ---------------&#34;);
+    end
+
+endmodule
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/" /><meta property="article:section" content="sv_directory" />
+<meta property="article:published_time" content="2024-07-20T22:11:00-04:00" />
+<meta property="article:modified_time" content="2024-07-20T22:11:00-04:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Fork Join None"/>
+<meta name="twitter:description" content="SV Verification Directory
+Fork Join None
+As the name suggests, the process in the fork will start and does not wait till it completes any of the threads. The figure below depicts the fork join none constructs.
+
+     
+
+
+Syntax: Fork Join None
+fork
+   // process 1
+   // process 2
+   // process 3
+join_none
+Example Code: Fork Join None
+module fork_join_any;
+
+  initial begin
+    fork
+      #2  $display(&#34;t = %0t, fork 1 =&gt; process 1&#34;, $time);
+      #10 $display(&#34;t = %0t, fork 1 =&gt; process 2&#34;, $time);
+      #5  $display(&#34;t = %0t, fork 1 =&gt; process 3&#34;, $time);
+    join_none
+    $display(&#34;--------------- Exited Fork 1 ---------------&#34;);
+    end
+
+
+  initial begin
+    fork
+      #3 $display(&#34;t = %0t, fork 2 =&gt; process 1&#34;, $time);
+      #6 $display(&#34;t = %0t, fork 2 =&gt; process 2&#34;, $time);
+      #1 $display(&#34;t = %0t, fork 2 =&gt; process 3&#34;, $time);
+    join_none
+    $display(&#34;--------------- Exited Fork 2 ---------------&#34;);
+    end
+
+endmodule
+"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Sv_directories",
+      "item": "https://24x7fpga.com/sv_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Fork Join None",
+      "item": "https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Fork Join None",
+  "name": "Fork Join None",
+  "description": "SV Verification Directory\nFork Join None As the name suggests, the process in the fork will start and does not wait till it completes any of the threads. The figure below depicts the fork join none constructs.\nSyntax: Fork Join None fork // process 1 // process 2 // process 3 join_none Example Code: Fork Join None module fork_join_any; initial begin fork #2 $display(\u0026#34;t = %0t, fork 1 =\u0026gt; process 1\u0026#34;, $time); #10 $display(\u0026#34;t = %0t, fork 1 =\u0026gt; process 2\u0026#34;, $time); #5 $display(\u0026#34;t = %0t, fork 1 =\u0026gt; process 3\u0026#34;, $time); join_none $display(\u0026#34;--------------- Exited Fork 1 ---------------\u0026#34;); end initial begin fork #3 $display(\u0026#34;t = %0t, fork 2 =\u0026gt; process 1\u0026#34;, $time); #6 $display(\u0026#34;t = %0t, fork 2 =\u0026gt; process 2\u0026#34;, $time); #1 $display(\u0026#34;t = %0t, fork 2 =\u0026gt; process 3\u0026#34;, $time); join_none $display(\u0026#34;--------------- Exited Fork 2 ---------------\u0026#34;); end endmodule ",
+  "keywords": [
+    "sv"
+  ],
+  "articleBody": "SV Verification Directory\nFork Join None As the name suggests, the process in the fork will start and does not wait till it completes any of the threads. The figure below depicts the fork join none constructs.\nSyntax: Fork Join None fork // process 1 // process 2 // process 3 join_none Example Code: Fork Join None module fork_join_any; initial begin fork #2 $display(\"t = %0t, fork 1 =\u003e process 1\", $time); #10 $display(\"t = %0t, fork 1 =\u003e process 2\", $time); #5 $display(\"t = %0t, fork 1 =\u003e process 3\", $time); join_none $display(\"--------------- Exited Fork 1 ---------------\"); end initial begin fork #3 $display(\"t = %0t, fork 2 =\u003e process 1\", $time); #6 $display(\"t = %0t, fork 2 =\u003e process 2\", $time); #1 $display(\"t = %0t, fork 2 =\u003e process 3\", $time); join_none $display(\"--------------- Exited Fork 2 ---------------\"); end endmodule ",
+  "wordCount" : "140",
+  "inLanguage": "en",
+  "datePublished": "2024-07-20T22:11:00-04:00",
+  "dateModified": "2024-07-20T22:11:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
 
 </head>
 
@@ -88,7 +225,7 @@ endmodule
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
             
             
             <div class="vertical-line" style="height: 20px;"></div>
@@ -120,7 +257,7 @@ endmodule
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
                     <span> 
 
 
@@ -131,7 +268,7 @@ endmodule
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
                     <span> 
 
 
@@ -142,7 +279,7 @@ endmodule
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
                     <span> 
 
 
@@ -153,7 +290,7 @@ endmodule
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="">
+                <a href="https://24x7fpga.com/tags/" title="">
                     <span> 
 
 
@@ -212,7 +349,7 @@ endmodule
 
 
 
-<script src="http://localhost:1313/js/mathjax-config.js"></script>
+<script src="https://24x7fpga.com/js/mathjax-config.js"></script>
 
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -272,7 +409,7 @@ endmodule
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/sv/">Sv</a></li>
+      <li><a href="https://24x7fpga.com/tags/sv/">Sv</a></li>
     </ul>
 
 
@@ -289,7 +426,7 @@ endmodule
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/"></a></span>
+        <span>&copy; 2026 <a href="https://24x7fpga.com/"></a></span>
         
         
 

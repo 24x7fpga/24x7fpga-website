@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Asynchronous FIFO | Home</title>
 <meta name="keywords" content="rtl">
 <meta name="description" content="Source &ndash; RTL Design Directory
@@ -12,20 +12,20 @@ Asynchronous FIFO
 An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral.
 The primary role of the asynchronous FIFO is to ensure smooth data flow between these distinct clock domains, preventing data loss during transmission. By temporarily storing data in the buffer, the asynchronous FIFO allows the system to handle varying clock speeds without missing any critical data.">
 <meta name="author" content="Kiran">
-<link rel="canonical" href="http://localhost:1313/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/">
+<link rel="canonical" href="https://24x7fpga.com/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/assets/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/">
 <noscript>
     <style>
         #theme-toggle,
@@ -39,7 +39,78 @@ The primary role of the asynchronous FIFO is to ensure smooth data flow between 
 <link rel="stylesheet" href="../../zcustom.css">
 
 
-<link rel="stylesheet" href="/css/syntax.css" !important>
+<meta property="og:title" content="Asynchronous FIFO" />
+<meta property="og:description" content="Source &ndash; RTL Design Directory
+Asynchronous FIFO
+An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral.
+The primary role of the asynchronous FIFO is to ensure smooth data flow between these distinct clock domains, preventing data loss during transmission. By temporarily storing data in the buffer, the asynchronous FIFO allows the system to handle varying clock speeds without missing any critical data." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/" /><meta property="article:section" content="rtl_directory" />
+<meta property="article:published_time" content="2024-09-07T10:52:00-04:00" />
+<meta property="article:modified_time" content="2024-09-07T10:52:00-04:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Asynchronous FIFO"/>
+<meta name="twitter:description" content="Source &ndash; RTL Design Directory
+Asynchronous FIFO
+An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral.
+The primary role of the asynchronous FIFO is to ensure smooth data flow between these distinct clock domains, preventing data loss during transmission. By temporarily storing data in the buffer, the asynchronous FIFO allows the system to handle varying clock speeds without missing any critical data."/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Rtl_directories",
+      "item": "https://24x7fpga.com/rtl_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Asynchronous FIFO",
+      "item": "https://24x7fpga.com/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Asynchronous FIFO",
+  "name": "Asynchronous FIFO",
+  "description": "Source \u0026ndash; RTL Design Directory\nAsynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral.\nThe primary role of the asynchronous FIFO is to ensure smooth data flow between these distinct clock domains, preventing data loss during transmission. By temporarily storing data in the buffer, the asynchronous FIFO allows the system to handle varying clock speeds without missing any critical data.\n",
+  "keywords": [
+    "rtl"
+  ],
+  "articleBody": "Source – RTL Design Directory\nAsynchronous FIFO An Asynchronous FIFO is a type of buffer where the write and read operations are controlled by different or unsynchronized clock signals. This makes it ideal for digital systems where data is transferred between components running at different speeds, such as when data is transmitted from a peripheral device to a CPU operating at a different clock frequency than that of the peripheral.\nThe primary role of the asynchronous FIFO is to ensure smooth data flow between these distinct clock domains, preventing data loss during transmission. By temporarily storing data in the buffer, the asynchronous FIFO allows the system to handle varying clock speeds without missing any critical data.\nHandling Pointer Synchronization In an asynchronous FIFO, the write pointer is updated in the write clock domain, while the read pointer is updated in the read clock domain. The full flag is generated based on the write clock, and the empty flag is generated based on the read clock. Challenge arises when comparing the write and read pointers to generate the full and empty flags, as the pointers are updated in different clock domains from each other. This is different from a synchronous FIFO, where both pointers are updated in the same clock domain, making comparisons straightforward.\nThe key issue with asynchronous FIFOs is metastability—a situation where the design works fine in simulations but fails in real hardware due to timing violations when crossing clock domains. This can lead to unreliable data handling or system failures. One of many solutions for clock-domain crossing is to use a two-flop synchronizer.\nWhen implementing a two-flop synchronizer in asynchronous FIFOs, one critical constraint is ensuring that only one bit of the data signal changes at a time while crossing from one clock domain to another. This minimizes the risk of metastability. To meet this constraint, gray code is used instead of a traditional binary counter for the read and write pointers. Unlike binary counters, where multiple bits can change simultaneously, gray code ensures that only a single bit changes with each transition. This makes Gray code ideal for safely synchronizing data between different clock domains, providing a robust solution for clock domain crossings in digital design.\nGray Code Counter Detailed design for binary to Gray code and Gray to binary conversion here. From the table below, you’ll notice that Gray code exhibits a mirrored symmetry from decimal values 8 to 15. This makes Gray code a symmetric code, except for the most significant bit (MSB).\nDecimal system Binary System Gray Code 0 0000 0000 1 0001 0001 2 0010 0011 3 0011 0010 4 0100 0110 5 0101 0111 6 0110 0101 7 0111 0100 8 1000 1100 9 1001 1101 10 1010 1111 11 1011 1110 12 1100 1010 13 1101 1011 14 1110 1001 15 1111 1000 For instance, if the FIFO depth is eight, the three least significant bits (LSBs) of the Gray code are used as the address to access FIFO locations. The MSB, on the other hand, is crucial for checking the FIFO full condition. Hence, for a N-depth FIFO (from N-1 to 0), the number of bits required to represent the pointer is log₂(N) + 1. For example, for a 8-depth FIFO (0 to 7 memory location), log₂(8) + 1 = 3 + 1 = 4 bits are required for pointer representation.\nTwo-Flop Synchronizer A two-flop synchronizer consists of two flip-flops arranged in series without any combinational logic in between. By placing these flip-flops close together, the design minimizes propagation delay, improving the reliability of data transfer between asynchronous clock domains.\nThe synchronizer circuit ensures reliable data transfer between clock domains by sampling the incoming signal with the receiving clock, aligning it to the timing of the destination clock domain. This helps prevent metastability and ensures the stable operation of the system. A two-flop synchronizer is shown in Figure 1.\nFigure 1: Two-Flop Synchronizer\nIn a two-flip-flop synchronizer, the first flip-flop captures the asynchronous input signal as it enters the new clock domain. This signal then remains in the first stage for a full clock cycle, allowing any metastability in the signal to settle. After this cycle, the stabilized signal is passed to a second flip-flop, where it is sampled again by the same clock. The second-stage flip-flop ensures that the signal is now stable, valid, and fully synchronized with the new clock domain. This process helps eliminate timing issues when signals transition between different clock domains.\nalways@(posedge sync_clk) if(!sync_rst) {sync_out, sync_temp} \u003c= 'h0; else {sync_out, sync_temp} \u003c= {sync_temp, sync_in}; Two-flop synchronizer design can be found here.\nFIFO Design When working on a complex design, it’s a good practice to break it down into smaller, manageable parts. This not only simplifies the design process but also makes it easier to understand and debug. In Figure 2, you can see the complete design of an asynchronous FIFO, divided into its essential components for clarity.\nFigure 2: Asynchronous FIFO\nPointer Generation and Comparision Pointer generation and comparison in asynchronous FIFOs involve tracking the read and write pointer across different clock domains.\nWrite Pointer All the variables discussed in this section are generated within the write clock domain, ensuring they are synchronized and operate in alignment with the write-side logic of the asynchronous FIFO.\nWrite Address: An N-bit binary counter is used to generate the address for writing to the FIFO when it’s not full and the write enable signal is high.\nWrite Pointer: A binary-to-Gray code converter is implemented to translate the write address from binary to Gray code, allowing for synchronization with the read clock domain.\nFull Flag: The write pointer (in Gray code) is compared with the read pointer (also in Gray code) from the two-flop synchronizer to generate the full flag. If the first two most significant bits (MSBs) of the write and read pointers are inverted, and the remaining bits (from the 3rd MSB to the LSB) are the same, the full flag is set high, indicating the FIFO is full.\nN = FIFO Address Width\n// write address counter: binary counter assign wr_bin_nxt = (wr_en \u0026\u0026 !wr_ful_reg) ? (wr_bin_reg + 'h1) : wr_bin_reg; // write pointer counter: gray counter assign wr_gry_nxt = (wr_bin_nxt \u003e\u003e 1) ^ wr_bin_nxt; // full condition assign wr_ful_nxt = (wr_gry_nxt == {~r2w_rd_ptr[`ADDR_WIDTH:`ADDR_WIDTH-1], r2w_rd_ptr[`ADDR_WIDTH-2:0]}); // write address and write pointer assign wr_addr = wr_bin_reg[`ADDR_WIDTH-1:0]; assign wr_ptr = wr_gry_reg; Note: The wr_gry_nxt i.e., is the next write pointer in Gray code is compared against the write clock synchronized read pointer r2w_rd_ptr in Gray code.\nComplete code for the write pointer design can be found here.\nRead Pointer All the variables discussed in this section are generated within the read clock domain, ensuring they are synchronized and operate in alignment with the read-side logic of the asynchronous FIFO.\nRead Address: An N-bit binary counter is used to generate the address forreading from FIFO when it’s not empty and the read enable signal is high.\nRead Pointer: A binary-to-Gray code converter is implemented to translate the read address from binary to Gray code, allowing for synchronization with the write clock domain.\nEmpty Flag: The empty signal is set when the write pointer is equal to the read pointer (both in Gray code).\n// read address counter: binary counter assign rd_bin_nxt = (rd_en \u0026\u0026 !rd_emp_reg) ? (rd_bin_reg + 'h1) : rd_bin_reg; // read pointer counter: gray counter assign rd_gry_nxt = (rd_bin_nxt\u003e\u003e1) ^ rd_bin_nxt; // empty condition assign rd_emp_nxt = (rd_gry_nxt == w2r_wr_ptr); // read address and read pointer assign rd_addr = rd_bin_reg[`ADDR_WIDTH-1:0]; assign rd_ptr = rd_gry_reg; Note: The rd_gry_nxt i.e., is the next read pointer in Gray code is compared against the read clock synchronized write pointer w2r_wr_ptr in Gray code.\nComplete code for read pointer design can be found here.\nAsynchronous FIFO Depth Calculation When designing a FIFO, knowing the read clock domain’s frequency and the write burst length is crucial for calculating the required FIFO depth. Follow these steps to determine the appropriate depth:\nCalculate the time to write one data item: Determine how long it takes to write a single data item into the FIFO buffer, based on the write clock speed.\nCalculate the total write time for the data burst: Multiply the time per data item by the total number of data items in the burst to find the total time required to write the entire burst.\nDetermine how many data items can be read during the write duration: Based on the read clock frequency, calculate how many data items can be read from the FIFO during the total write time.\nCalculate the minimum FIFO depth: Subtract the number of items read during the write duration from the burst length. The difference gives you the minimum FIFO depth required to ensure no data loss or overflow during operation.\nAn excellent article that explains FIFO depth calculation in detail can be found here.\nReference Cummings, Clifford E. “Synthesis and scripting techniques for designing multi-asynchronous clock designs.” SNUG 2001 (Synopsys Users Group Conference, San Jose, CA, 2001) User Papers. 2001. Cummings, Clifford E. “Simulation and synthesis techniques for asynchronous FIFO design.” SNUG 2002 (Synopsys Users Group Conference, San Jose, CA, 2002) User Papers. Vol. 281. 2002. C. Cummings, P. Alfke, “Simulation and Synthesis Techniques for Asynchronous FIFO Design with Asynchronous Pointer Comparisons” SNUG, 2002. ",
+  "wordCount" : "1547",
+  "inLanguage": "en",
+  "datePublished": "2024-09-07T10:52:00-04:00",
+  "dateModified": "2024-09-07T10:52:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/rtl_directory/2024_09_07_10_52_50_asynchronous_fifo/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
 
 </head>
 
@@ -55,7 +126,7 @@ The primary role of the asynchronous FIFO is to ensure smooth data flow between 
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
             
             
             <div class="vertical-line" style="height: 20px;"></div>
@@ -87,7 +158,7 @@ The primary role of the asynchronous FIFO is to ensure smooth data flow between 
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
                     <span> 
 
 
@@ -98,7 +169,7 @@ The primary role of the asynchronous FIFO is to ensure smooth data flow between 
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
                     <span> 
 
 
@@ -109,7 +180,7 @@ The primary role of the asynchronous FIFO is to ensure smooth data flow between 
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
                     <span> 
 
 
@@ -120,7 +191,7 @@ The primary role of the asynchronous FIFO is to ensure smooth data flow between 
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="">
+                <a href="https://24x7fpga.com/tags/" title="">
                     <span> 
 
 
@@ -179,7 +250,7 @@ The primary role of the asynchronous FIFO is to ensure smooth data flow between 
 
 
 
-<script src="http://localhost:1313/js/mathjax-config.js"></script>
+<script src="https://24x7fpga.com/js/mathjax-config.js"></script>
 
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -413,7 +484,7 @@ The primary role of the asynchronous FIFO is to ensure smooth data flow between 
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/rtl/">Rtl</a></li>
+      <li><a href="https://24x7fpga.com/tags/rtl/">Rtl</a></li>
     </ul>
 
 
@@ -430,7 +501,7 @@ The primary role of the asynchronous FIFO is to ensure smooth data flow between 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/"></a></span>
+        <span>&copy; 2026 <a href="https://24x7fpga.com/"></a></span>
         
         
 

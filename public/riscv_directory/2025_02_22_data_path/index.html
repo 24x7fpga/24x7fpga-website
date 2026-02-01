@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Data Path | Home</title>
 <meta name="keywords" content="riscv">
 <meta name="description" content="
@@ -19,20 +19,20 @@ The hexadecimal format of the above instruction are stored in a memory file that
 Instruction Fetch
 Every instruction typically follows these two fundamental steps:">
 <meta name="author" content="Kiran">
-<link rel="canonical" href="http://localhost:1313/riscv_directory/2025_02_22_data_path/">
+<link rel="canonical" href="https://24x7fpga.com/riscv_directory/2025_02_22_data_path/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/assets/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/riscv_directory/2025_02_22_data_path/">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/riscv_directory/2025_02_22_data_path/">
 <noscript>
     <style>
         #theme-toggle,
@@ -46,7 +46,92 @@ Every instruction typically follows these two fundamental steps:">
 <link rel="stylesheet" href="../../zcustom.css">
 
 
-<link rel="stylesheet" href="/css/syntax.css" !important>
+<meta property="og:title" content="Data Path" />
+<meta property="og:description" content="
+Let&rsquo;s begin by constructing the data path to establish the flow of data. We&rsquo;ll start with a simple instruction, analyze its requirements, and gradually build upon it to develop a more comprehensive understanding.
+addi x5, zero, 6
+addi x6, zero, 7
+add  x7, x5, x6
+The hexadecimal format of the above instruction are stored in a memory file that will be read during program execution.
+00600293        // addi x5 x0 6
+00700313        // addi x6 x0 7
+006283b3        // add x7 x5 x6
+Instruction Fetch
+Every instruction typically follows these two fundamental steps:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/riscv_directory/2025_02_22_data_path/" /><meta property="article:section" content="riscv_directory" />
+<meta property="article:published_time" content="2025-02-22T15:23:00-05:00" />
+<meta property="article:modified_time" content="2025-02-22T15:23:00-05:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Data Path"/>
+<meta name="twitter:description" content="
+Let&rsquo;s begin by constructing the data path to establish the flow of data. We&rsquo;ll start with a simple instruction, analyze its requirements, and gradually build upon it to develop a more comprehensive understanding.
+addi x5, zero, 6
+addi x6, zero, 7
+add  x7, x5, x6
+The hexadecimal format of the above instruction are stored in a memory file that will be read during program execution.
+00600293        // addi x5 x0 6
+00700313        // addi x6 x0 7
+006283b3        // add x7 x5 x6
+Instruction Fetch
+Every instruction typically follows these two fundamental steps:"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Riscv_directories",
+      "item": "https://24x7fpga.com/riscv_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Data Path",
+      "item": "https://24x7fpga.com/riscv_directory/2025_02_22_data_path/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Data Path",
+  "name": "Data Path",
+  "description": " Let\u0026rsquo;s begin by constructing the data path to establish the flow of data. We\u0026rsquo;ll start with a simple instruction, analyze its requirements, and gradually build upon it to develop a more comprehensive understanding.\naddi x5, zero, 6 addi x6, zero, 7 add x7, x5, x6 The hexadecimal format of the above instruction are stored in a memory file that will be read during program execution.\n00600293 // addi x5 x0 6 00700313 // addi x6 x0 7 006283b3 // add x7 x5 x6 Instruction Fetch Every instruction typically follows these two fundamental steps:\n",
+  "keywords": [
+    "riscv"
+  ],
+  "articleBody": " Let’s begin by constructing the data path to establish the flow of data. We’ll start with a simple instruction, analyze its requirements, and gradually build upon it to develop a more comprehensive understanding.\naddi x5, zero, 6 addi x6, zero, 7 add x7, x5, x6 The hexadecimal format of the above instruction are stored in a memory file that will be read during program execution.\n00600293 // addi x5 x0 6 00700313 // addi x6 x0 7 006283b3 // add x7 x5 x6 Instruction Fetch Every instruction typically follows these two fundamental steps:\nInstruction Fetch – The Program Counter points to the instruction memory from where the instruction are fetched. Register Read – Based on the instruction fields, one or two registers are selected and read from the register file. Figure 1: Instruction fetch\nProgram Counter The Program Counter (PC) increments by 4 in every clock cycle, as instructions are typically word-aligned in memory. However, since the memory file instr.mem stores instructions sequentially, the verilog design may increment the PC by 1 instead. It is important to understand that, in reality, the actual PC progression follows an increment of 4 to maintain proper instruction addressing.\nmodule program_counter (/*AUTOARG*/ // Outputs pc, // Inputs clk, rst ); // Outputs output [31:0] pc; // Inputs input\tclk; input\trst; /*AUTOREG*/ // Beginning of automatic regs (for this module's undeclared outputs) reg [31:0]\tpc; // End of automatics /*AUTOWIRE*/ always_ff@(posedge clk) if(rst) pc \u003c= '0; else pc \u003c= pc + 1; endmodule // program_counter Instruction Memory The memory file, as shown above, is read by the instruction memory. Based on the PC value, the corresponding instruction is retrieved and sent to the register file for execution.\nmodule instruction_mem (/*AUTOARG*/ // Outputs instr, // Inputs pc ); // Outputs output [31:0] instr; // Inputs input [31:0]\tpc; logic [31:0]\tinstr_mem [31:0]; initial $readmemh(\"instr.mem\", instr_mem); assign instr = instr_mem[pc]; endmodule // instruction_mem Data Path The top module serves as the central connection point for all data path modules in this design. As new instructions are added, the data path is progressively updated to accommodate them, ensuring seamless execution and expansion.\nmodule data_path (/*AUTOARG*/ // Outputs instr, // Inputs clk, rst ); // Outputs output [31:0] instr; // Inputs input\tclk; input\trst; /*AUTOREG*/ /*AUTOWIRE*/ // Beginning of automatic wires (for undeclared instantiated-module outputs) wire [31:0]\tpc;\t// From PC of program_counter.v // End of automatics program_counter PC (/*AUTOINST*/ // Outputs .pc\t(pc[31:0]), // Inputs .clk\t(clk), .rst\t(rst)); instruction_mem IM (/*AUTOINST*/ // Outputs .instr\t(instr[31:0]), // Inputs .pc\t(pc[31:0])); endmodule // data_path This is first step in the design and the design files can be found [here].\nRegister File The register file processes incoming instructions and distributes data to the appropriate registers. It has three 5-bit input addresses: two for source registers and one for the destination (write) register. Additionally, a write data input holds the value to be stored when the write signal is enabled.\nUntil now, no control signal was involved. Here, a new control signal, rw, is introduced. When rw is set high, the data from wd3 is stored at the register address specified by a3, enabling controlled data writing.\nLet’s begin constructing the microarchitecture by focusing on the first instruction in the program. This will serve as the foundation, and we will expand the design as we introduce more instructions.\naddi x5, zero, 6 The instruction shown above is an I-type instruction, where an immediate value is added to a source register. In this case, the source register is x0 (zero), and the result is stored in the temporary register x5.\nThe instruction is fetched from the instruction memory and then passed to the register file, where the necessary registers are accessed for execution.\nFigure 2: Decode\nOnce the instruction is retreived from the input a1 receives bits 19 to 15 from the 32-bit instruction. This is 5-bit data is register address. Similarly, a2 receives bits from 24 to 20 from the 32-bit instruction and a3 receives bits from 11 to 7.\nOnce the instruction is retrieved, the input a1 receives bits 19 to 15 from the 32-bit instruction. This 5-bit data represents the register address for the first source register rs1. Similarly, a2 receives bits 24 to 20, while a3 gets bits 11 to 7, each corresponding to register rs2 and rd respectively.\nSince the first instruction is an immediate instruction the immediate value should be sign extended and produced to the ALU. Hence, another block is added, the instruction from 31 to 7 is sent to the sign extended block.\nThe first instruction is shown in binary with its respective fields.\nimm rs1 funct3 rd opcode 000000000110 (6) 00000(0) 000 00101 (5) 0010011 (19) The data in green is shown in Figure 2. We’ll get back to the control signal we3 once the addition operation is takes place. The next step is build the ALU. Based on the update microarhitecture the data path is also update.\nThe updated data path is as follows:\nmodule data_path (/*AUTOARG*/ // Outputs pc, a1, a2, a3, // Inputs clk, rst, instr ); // Outputs output [31:0] pc; output [4:0] a1; output [4:0]\ta2; output [4:0]\ta3; // Inputs input\tclk; input\trst; input [31:0]\tinstr; /*AUTOREG*/ /*AUTOWIRE*/ program_counter PC (/*AUTOINST*/ // Outputs .pc\t(pc[31:0]), // Inputs .clk\t(clk), .rst\t(rst)); logic [31:0]\tsign_ext; assign a1 = instr[19:15]; assign a2 = instr[24:20]; assign a3 = instr[11:7]; assign sign_ext = {{20{instr[31]}}, instr[31:20]}; endmodule // data_path The new block the register file is shown below:\nmodule reg_file (/*AUTOARG*/ // Outputs rd1, rd2, // Inputs clk, a1, a2, a3, wd3, we3 ); // Outputs output [31:0] rd1; output [31:0] rd2; // Inputs input\tclk; input [4:0]\ta1; // rs1 input [4:0]\ta2; // rs2 input [4:0]\ta3; // rd input [31:0]\twd3; // write data from memory input\twe3; // write enable /*AUTOREG*/ /*AUTOWIRE*/ logic [31:0]\tregs[31:0]; // 32 registers always_ff@(posedge clk) if(we3) regs[a3] \u003c= wd3; assign rd1 = (a1 == 0) ? 32'h0 : regs[a1]; assign rd2 = (a2 == 0) ? 32'h0 : regs[a2]; endmodule // reg_file The source files for the second stage can be found [here].\nArithmetic Logic Unit (ALU) The Arithmetic Logic Unit (ALU) handles all arithmetic and logical operations, such as addition, subtraction, shifting, and logical operations. Initially, the basic operations will be implemented, and as we progress, additional instructions will be incorporated to expand the ALU’s functionality. The signals in blue are control signals\nFigure 3: ALU\nA mux is added in between ALU and Register File that helps in chosing data between the imm value or the from the register. The control signal for the mux is ALUSrc, when set high the data from the immediate value imm is chosen as the source for the ALU operation and when set to zero the data from the register is chosen as source for the ALU operation.\nA mux is added between the ALU and the Register File to facilitate data selection between the immediate value imm and the data from the register. The control signal for the mux is ALUSrc. When control signal ALUSrc is set high, the immediate value imm is chosen as the source for the ALU operation. When the control signal ALUSrc is set low, the data from the register is selected as the source for the ALU operation.\nAnother mux is placed after the data memory to choose between the data from the ALU result or the data from data memory. For the first instruction, the result of the ALU operation is written to the destination register, rd, which is x5. The control signal for this mux is MemReg. When MemReg is set high, the data from the data memory is loaded into the destination register. When set low, the data from the ALU result is directly written to the destination register.\nmodule alu (/*AUTOARG*/ // Outputs res, // Inputs src_a, src_b, alu_op ); // Outputs output [31:0] res; // Inputs input [31:0]\tsrc_a; input [31:0]\tsrc_b; input [3:0]\talu_op; parameter add = 4'd0, sub = 4'd1, sll = 4'd2, slt = 4'd3, sltu = 4'd4, xorp = 4'd5, srl = 4'd6, sra = 4'd7, orp = 4'd8, andp = 4'd9; /*AUTOREG*/ // Beginning of automatic regs (for this module's undeclared outputs) reg [31:0]\tres; // End of automatics /*AUTOWIRE*/ logic signed [31:0]\tsrc_a_sign; logic signed [31:0]\tsrc_b_sign; assign src_a_sign = src_a; assign src_b_sign = src_b; always@(/*AUTOSENSE*/alu_op or src_a or src_b) begin casez(alu_op) add : res = src_a + src_b; sub : res = src_a - src_b; sll : res = src_a \u003c\u003c src_b; slt : res = src_a_sign \u003c src_b_sign ? 32'h00000001 : 32'h00000000; sltu: res = src_a \u003c src_b ? 32'h00000001 : 32'h00000000; xorp: res = src_a ^ src_b; srl : res = src_a \u003e\u003e src_b; sra : res = src_a_sign \u003e\u003e\u003e src_b_sign; orp : res = src_a | src_b; andp: res = src_a \u0026 src_b; endcase // casez (alu_op) end // always_comb endmodule // alu The control unit is generates the signal for control the data flow. The control unit is shown below which will be updated:\nmodule control_unit (/*AUTOARG*/ // Outputs we3, alu_src, alu_op, mem_rw, mem_reg, imm_src, // Inputs funct7, funct3, opcode ); // Outputs output we3; output alu_src; output [4:0]\talu_op; output\tmem_rw; output\tmem_reg; output [1:0]\timm_src; // Inputs input [6:0]\tfunct7; input [2:0]\tfunct3; input [6:0]\topcode; parameter add = 4'd0, sub = 4'd1, sll = 4'd2, slt = 4'd3, sltu = 4'd4, xorp = 4'd5, srl = 4'd6, sra = 4'd7, orp = 4'd8, andp = 4'd9; /*AUTOREG*/ // Beginning of automatic regs (for this module's undeclared outputs) reg [4:0]\talu_op; reg\talu_src; reg [1:0]\timm_src; reg\tmem_reg; reg\tmem_rw; reg\twe3; // End of automatics /*AUTOWIRE*/ always@(/*AUTOSENSE*/funct3 or opcode) begin casez(opcode) 7'd51: {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'b1, 1'b0, 1'b0, 1'b0, 2'bxx}; // R-type 7'd19: begin if(funct3 == 1 || funct3 == 5) {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'b1, 1'b1, 1'b0, 1'b0, 2'b01}; // I-type else {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'b1, 1'b1, 1'b0, 1'b0, 2'b00}; // I-type end default : {we3, alu_src, mem_rw, mem_reg} = 4'hx; endcase // case (opcode) end always@(/*AUTOSENSE*/funct3 or funct7) begin casez(funct3) 3'd0 : alu_op = funct7[5] ? sub : add; 3'd1 : alu_op = sll; 3'd2 : alu_op = slt; 3'd3 : alu_op = sltu; 3'd4 : alu_op = xorp; 3'd5 : alu_op = funct7[5] ? sra : srl; 3'd6 : alu_op = orp; 3'd7 : alu_op = andp; default: alu_op = 4'dx; endcase // casez (funct3) end // always_comb endmodule // control_unit The design performs arithmetic and logical operations. There are three I-type instructions that has to be carefully analyzed and there slli, srli and srai.\nfunct7 imm rs1 funct3 rd opcode instr 0000000 (5-bits) (5-bits) 001 (5-bits) 0010011 slli 0000000 (5-bits) (5-bits) 101 (5-bits) 0010011 srli 0100000 (5-bits) (5-bits) 101 (5-bits) 0010011 srai The if-statement inside the case statement of the main decoder handles this condition. The control signal imm_src determines which immediate encoding to use.\nFor shift immediate instructions, the standard 12-bit immediate is not selected. Instead:\nimm[11:5] is treated as the funct7 value. imm[4:0] is sign-extended to form the immediate value for the operation. This ensures correct handling of shift instructions while maintaining flexibility for different immediate encodings.\nFigure 4: Includes Immediate\nLets look at the instruction:\nsrai x21, x7, 2 It is a shift right arithmetic imm. The instruction in hexadecimal with their respective fields is shown below:\nfunct7 imm rs1 funct3 rd opcode 0100000 00010 00111 101 10101 0010011 Up untill now the design takes cares for all the arithmetic and logical operation. The next set of instruction is load and store. The code can be found [here] step3.\nLoad and Store Instruction Let’s implement store instruction in the data memory and load the data from the data memory.\nStore Lets understand how the store instruction works/\nsw x21, 0(x0) =\u003e sw rs2, imm(rs1) The above instruction can be understood as sw src, off(dst) =\u003e Address[dst + off] = src.\nFor the above instruction the hexadecimal value is 0x01502023. The rs2 = 21 and rs1 = 0. Writing data into a registers in verilog begins from zero. For simplity one store word is implemented and offset can be incremented by 1 instread of 4.\nimm[11:5] rs2 rs1 funct3 imm[4:0] opcode 0000000 10101 00000 010 00000 0100011 Lets create a data memory.\nmodule data_mem (/*AUTOARG*/ // Outputs rd, // Inputs clk, addr, wd, mem_rw ); // Outputs output [31:0] rd; // Inputs input\tclk; input [31:0] addr; // address location input [31:0] wd; // write data input\tmem_rw; // write when set to 1 /*AUTOREG*/ /*AUTOWIRE*/ logic [31:0]\tdmem[31:0]; always_ff@(posedge clk) if(mem_rw) dmem[addr] \u003c= wd; assign rd = dmem[addr]; endmodule // data_mem The updated control unit is illustrated below:\nmodule control_unit (/*AUTOARG*/ // Outputs we3, alu_src, alu_op, mem_rw, mem_reg, imm_src, // Inputs funct7, funct3, opcode ); // Outputs output we3; output alu_src; output [4:0]\talu_op; output\tmem_rw; output\tmem_reg; output [1:0]\timm_src; // Inputs input [6:0]\tfunct7; input [2:0]\tfunct3; input [6:0]\topcode; parameter add = 4'd0, sub = 4'd1, sll = 4'd2, slt = 4'd3, sltu = 4'd4, xorp = 4'd5, srl = 4'd6, sra = 4'd7, orp = 4'd8, andp = 4'd9; /*AUTOREG*/ // Beginning of automatic regs (for this module's undeclared outputs) reg [4:0]\talu_op; reg\talu_src; reg [1:0]\timm_src; reg\tmem_reg; reg\tmem_rw; reg\twe3; // End of automatics /*AUTOWIRE*/ always@(/*AUTOSENSE*/funct3 or opcode) begin casez(opcode) 7'd51: {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'b1, 1'b0, 1'b0, 1'b0, 2'bxx}; // R-type 7'd19: begin if(funct3 == 1 || funct3 == 5) {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'b1, 1'b1, 1'b0, 1'b0, 2'b01}; // I-type else {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'b1, 1'b1, 1'b0, 1'b0, 2'b00}; // I-type end 7'd35: {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'bx, 1'b0, 1'b1, 1'bx, 2'b10}; // S-type default : {we3, alu_src, mem_rw, mem_reg} = 4'hx; endcase // case (opcode) end always@(/*AUTOSENSE*/funct3 or funct7) begin casez(funct3) 3'd0 : alu_op = funct7[5] ? sub : add; 3'd1 : alu_op = sll; 3'd2 : alu_op = slt; 3'd3 : alu_op = sltu; 3'd4 : alu_op = xorp; 3'd5 : alu_op = funct7[5] ? sra : srl; 3'd6 : alu_op = orp; 3'd7 : alu_op = andp; default: alu_op = 4'dx; endcase // casez (funct3) end // always_comb endmodule // control_unit Load Now lets load the data from location stored in data memeory to register x24.\nlw x24, 0(x0) =\u003e lw rd, imm(rs1) The data from the address location [imm + rs1] is load to register x24.\nimm rs1 funct3 rd opcode 00000000000 00000 010 11000 0000011 The decode instruction is added to the control unit for the main decoder. The decode instruction is shown below.\n7'd03: {we3, alu_src, mem_rw, mem_reg, imm_src} = {1'bx, 1'b1, 1'b0, 1'b0, 2'b00}; // I- type load Till now the R-type, I-type and S-type instruction have been implemented and the code can be found [here] step4.\nBranch Instructions imm[12,10:5] rs2 rs1 funct3 imm[4:1,11] opcode 0000000 00110 00101 000 01000 1100011 ",
+  "wordCount" : "2495",
+  "inLanguage": "en",
+  "datePublished": "2025-02-22T15:23:00-05:00",
+  "dateModified": "2025-02-22T15:23:00-05:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/riscv_directory/2025_02_22_data_path/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
 
 </head>
 
@@ -62,7 +147,7 @@ Every instruction typically follows these two fundamental steps:">
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
             
             
             <div class="vertical-line" style="height: 20px;"></div>
@@ -94,7 +179,7 @@ Every instruction typically follows these two fundamental steps:">
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
                     <span> 
 
 
@@ -105,7 +190,7 @@ Every instruction typically follows these two fundamental steps:">
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
                     <span> 
 
 
@@ -116,7 +201,7 @@ Every instruction typically follows these two fundamental steps:">
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
                     <span> 
 
 
@@ -127,7 +212,7 @@ Every instruction typically follows these two fundamental steps:">
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="">
+                <a href="https://24x7fpga.com/tags/" title="">
                     <span> 
 
 
@@ -186,7 +271,7 @@ Every instruction typically follows these two fundamental steps:">
 
 
 
-<script src="http://localhost:1313/js/mathjax-config.js"></script>
+<script src="https://24x7fpga.com/js/mathjax-config.js"></script>
 
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -820,7 +905,7 @@ add  x7, x5, x6
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/riscv/">Riscv</a></li>
+      <li><a href="https://24x7fpga.com/tags/riscv/">Riscv</a></li>
     </ul>
 
 
@@ -837,7 +922,7 @@ add  x7, x5, x6
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/"></a></span>
+        <span>&copy; 2026 <a href="https://24x7fpga.com/"></a></span>
         
         
 

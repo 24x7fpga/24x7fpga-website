@@ -2,108 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Home</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://24x7fpga.com/tags/</link>
     <description>Recent content in Tags on Home</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 16 Dec 2025 18:56:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://24x7fpga.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ca</title>
-      <link>http://localhost:1313/tags/ca/</link>
+      <link>https://24x7fpga.com/tags/ca/</link>
       <pubDate>Tue, 16 Dec 2025 18:56:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/ca/</guid>
+      <guid>https://24x7fpga.com/tags/ca/</guid>
       <description></description>
     </item>
     <item>
       <title>Riscv</title>
-      <link>http://localhost:1313/tags/riscv/</link>
+      <link>https://24x7fpga.com/tags/riscv/</link>
       <pubDate>Tue, 16 Dec 2025 18:56:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/riscv/</guid>
+      <guid>https://24x7fpga.com/tags/riscv/</guid>
       <description></description>
     </item>
     <item>
       <title>Ams</title>
-      <link>http://localhost:1313/tags/ams/</link>
+      <link>https://24x7fpga.com/tags/ams/</link>
       <pubDate>Fri, 05 Dec 2025 14:39:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/ams/</guid>
+      <guid>https://24x7fpga.com/tags/ams/</guid>
       <description></description>
     </item>
     <item>
       <title>Toc</title>
-      <link>http://localhost:1313/tags/toc/</link>
+      <link>https://24x7fpga.com/tags/toc/</link>
       <pubDate>Thu, 13 Mar 2025 12:37:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/toc/</guid>
+      <guid>https://24x7fpga.com/tags/toc/</guid>
       <description></description>
     </item>
     <item>
       <title>Sv</title>
-      <link>http://localhost:1313/tags/sv/</link>
+      <link>https://24x7fpga.com/tags/sv/</link>
       <pubDate>Tue, 14 Jan 2025 17:25:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/sv/</guid>
+      <guid>https://24x7fpga.com/tags/sv/</guid>
       <description></description>
     </item>
     <item>
       <title>Cstr</title>
-      <link>http://localhost:1313/tags/cstr/</link>
+      <link>https://24x7fpga.com/tags/cstr/</link>
       <pubDate>Fri, 10 Jan 2025 19:30:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/cstr/</guid>
+      <guid>https://24x7fpga.com/tags/cstr/</guid>
       <description></description>
     </item>
     <item>
       <title>Rtl</title>
-      <link>http://localhost:1313/tags/rtl/</link>
+      <link>https://24x7fpga.com/tags/rtl/</link>
       <pubDate>Sat, 21 Dec 2024 17:41:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/rtl/</guid>
+      <guid>https://24x7fpga.com/tags/rtl/</guid>
       <description></description>
     </item>
     <item>
       <title>Sta</title>
-      <link>http://localhost:1313/tags/sta/</link>
+      <link>https://24x7fpga.com/tags/sta/</link>
       <pubDate>Sat, 21 Dec 2024 17:41:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/sta/</guid>
+      <guid>https://24x7fpga.com/tags/sta/</guid>
       <description></description>
     </item>
     <item>
       <title>Vim</title>
-      <link>http://localhost:1313/tags/vim/</link>
+      <link>https://24x7fpga.com/tags/vim/</link>
       <pubDate>Tue, 05 Nov 2024 15:21:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/vim/</guid>
+      <guid>https://24x7fpga.com/tags/vim/</guid>
       <description></description>
     </item>
     <item>
       <title>Uvm</title>
-      <link>http://localhost:1313/tags/uvm/</link>
+      <link>https://24x7fpga.com/tags/uvm/</link>
       <pubDate>Sun, 06 Oct 2024 11:18:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/uvm/</guid>
+      <guid>https://24x7fpga.com/tags/uvm/</guid>
       <description></description>
     </item>
     <item>
       <title>Rfsoc</title>
-      <link>http://localhost:1313/tags/rfsoc/</link>
+      <link>https://24x7fpga.com/tags/rfsoc/</link>
       <pubDate>Wed, 07 Aug 2024 22:15:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/rfsoc/</guid>
+      <guid>https://24x7fpga.com/tags/rfsoc/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>http://localhost:1313/tags/git/</link>
+      <link>https://24x7fpga.com/tags/git/</link>
       <pubDate>Sun, 04 Aug 2024 14:34:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/git/</guid>
+      <guid>https://24x7fpga.com/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Article</title>
-      <link>http://localhost:1313/tags/article/</link>
+      <link>https://24x7fpga.com/tags/article/</link>
       <pubDate>Wed, 17 Jul 2024 09:17:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/article/</guid>
+      <guid>https://24x7fpga.com/tags/article/</guid>
       <description></description>
     </item>
     <item>
       <title>Emacs</title>
-      <link>http://localhost:1313/tags/emacs/</link>
+      <link>https://24x7fpga.com/tags/emacs/</link>
       <pubDate>Fri, 31 May 2024 12:47:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/emacs/</guid>
+      <guid>https://24x7fpga.com/tags/emacs/</guid>
       <description></description>
     </item>
   </channel>

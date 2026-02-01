@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Vim on Home</title>
-    <link>http://localhost:1313/tags/vim/</link>
+    <link>https://24x7fpga.com/tags/vim/</link>
     <description>Recent content in Vim on Home</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Nov 2024 15:21:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://24x7fpga.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adding and Removing Text in mulitple lines in Vim</title>
-      <link>http://localhost:1313/vim_directory/2024_11_05_15_21_27_adding_and_removing_text_in_mulitple_lines_in_vim/</link>
+      <link>https://24x7fpga.com/vim_directory/2024_11_05_15_21_27_adding_and_removing_text_in_mulitple_lines_in_vim/</link>
       <pubDate>Tue, 05 Nov 2024 15:21:00 -0500</pubDate>
-      <guid>http://localhost:1313/vim_directory/2024_11_05_15_21_27_adding_and_removing_text_in_mulitple_lines_in_vim/</guid>
+      <guid>https://24x7fpga.com/vim_directory/2024_11_05_15_21_27_adding_and_removing_text_in_mulitple_lines_in_vim/</guid>
       <description>&lt;h2 id=&#34;adding-text-at-the-beginning-of-multiple-lines&#34;&gt;Adding Text at the Beginning of Multiple Lines&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Go the line you want to select the text.&lt;/li&gt;
@@ -26,32 +26,32 @@
     </item>
     <item>
       <title>Redo In Vim</title>
-      <link>http://localhost:1313/vim_directory/2024_06_28_15_38_01_redo_in_vim/</link>
+      <link>https://24x7fpga.com/vim_directory/2024_06_28_15_38_01_redo_in_vim/</link>
       <pubDate>Fri, 28 Jun 2024 15:38:00 -0400</pubDate>
-      <guid>http://localhost:1313/vim_directory/2024_06_28_15_38_01_redo_in_vim/</guid>
+      <guid>https://24x7fpga.com/vim_directory/2024_06_28_15_38_01_redo_in_vim/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=d975TRmAfv4&#34;&gt;Reference&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;redo-in-vim&#34;&gt;Redo in Vim&lt;/h2&gt;
 &lt;p&gt;Come out of the insert mode by pressing &amp;ldquo;Esc&amp;rdquo; and press &amp;ldquo;ctrl+shift+r&amp;rdquo; to redo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Undo In Vim</title>
-      <link>http://localhost:1313/vim_directory/2024_06_28_15_35_07_undo_in_vim/</link>
+      <link>https://24x7fpga.com/vim_directory/2024_06_28_15_35_07_undo_in_vim/</link>
       <pubDate>Fri, 28 Jun 2024 15:35:00 -0400</pubDate>
-      <guid>http://localhost:1313/vim_directory/2024_06_28_15_35_07_undo_in_vim/</guid>
+      <guid>https://24x7fpga.com/vim_directory/2024_06_28_15_35_07_undo_in_vim/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=d975TRmAfv4&#34;&gt;Reference&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;undo&#34;&gt;Undo&lt;/h2&gt;
 &lt;p&gt;Come out from the insert mode by pressing &amp;ldquo;Esc&amp;rdquo; and press &amp;lsquo;u&amp;rsquo; to undo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Copy A Word In A Line</title>
-      <link>http://localhost:1313/vim_directory/2024_06_28_15_15_48_copy_a_word_in_a_line/</link>
+      <link>https://24x7fpga.com/vim_directory/2024_06_28_15_15_48_copy_a_word_in_a_line/</link>
       <pubDate>Fri, 28 Jun 2024 15:15:00 -0400</pubDate>
-      <guid>http://localhost:1313/vim_directory/2024_06_28_15_15_48_copy_a_word_in_a_line/</guid>
+      <guid>https://24x7fpga.com/vim_directory/2024_06_28_15_15_48_copy_a_word_in_a_line/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=eEQEwq_rHIc&#34;&gt;Reference&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;copying-a-word&#34;&gt;Copying a Word&lt;/h2&gt;
 &lt;p&gt;To copy a word in a line you must go into visual mode in vim. You press &amp;lsquo;v&amp;rsquo; to go into visual mode.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;First go to a the word that you want to copy using &amp;lsquo;w&amp;rsquo;. More instructin can be found @ &lt;a href=&#34;http://localhost:1313/vim_directory/2024_06_28_15_10_34_move_the_cursor_by_one_word/&#34;&gt;Move The Cursor by One Word&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;First go to a the word that you want to copy using &amp;lsquo;w&amp;rsquo;. More instructin can be found @ &lt;a href=&#34;https://24x7fpga.com/vim_directory/2024_06_28_15_10_34_move_the_cursor_by_one_word/&#34;&gt;Move The Cursor by One Word&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Press &amp;lsquo;v&amp;rsquo; to get into visual mode.&lt;/li&gt;
 &lt;li&gt;Use &amp;lsquo;h, j, k, l&amp;rsquo; to selected the word or a sentence.&lt;/li&gt;
 &lt;li&gt;Press &amp;lsquo;y&amp;rsquo; to yank or copy the content that is selected.&lt;/li&gt;
@@ -59,9 +59,9 @@
     </item>
     <item>
       <title>Move The Cursor by One Word</title>
-      <link>http://localhost:1313/vim_directory/2024_06_28_15_10_34_move_the_cursor_by_one_word/</link>
+      <link>https://24x7fpga.com/vim_directory/2024_06_28_15_10_34_move_the_cursor_by_one_word/</link>
       <pubDate>Fri, 28 Jun 2024 15:10:00 -0400</pubDate>
-      <guid>http://localhost:1313/vim_directory/2024_06_28_15_10_34_move_the_cursor_by_one_word/</guid>
+      <guid>https://24x7fpga.com/vim_directory/2024_06_28_15_10_34_move_the_cursor_by_one_word/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=eEQEwq_rHIc&#34;&gt;Reference&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;jump-the-cursor-by-one-word&#34;&gt;Jump the cursor by One Word&lt;/h2&gt;
 &lt;p&gt;To move the cursor location to the next word in vim use lowercase &amp;lsquo;w&amp;rsquo;.&lt;/p&gt;
@@ -72,9 +72,9 @@
     </item>
     <item>
       <title>Vim Find and Replace</title>
-      <link>http://localhost:1313/vim_directory/2024_05_30_20_45_11-vim_find_and_replace/</link>
+      <link>https://24x7fpga.com/vim_directory/2024_05_30_20_45_11-vim_find_and_replace/</link>
       <pubDate>Thu, 30 May 2024 20:45:00 -0400</pubDate>
-      <guid>http://localhost:1313/vim_directory/2024_05_30_20_45_11-vim_find_and_replace/</guid>
+      <guid>https://24x7fpga.com/vim_directory/2024_05_30_20_45_11-vim_find_and_replace/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://linuxize.com/post/vim-find-replace/&#34;&gt;Reference&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;find-and-replace-command&#34;&gt;Find and Replace Command&lt;/h2&gt;
 &lt;p&gt;The command to find and replace a word in a document is by the use of :subtitute (:S) command. The basic command is as follows:&lt;/p&gt;

@@ -26,7 +26,7 @@ The complete list of class libraries can be found in [UVM 1.2 Class Reference](h
 
 -   **uvm_component**: The uvm_component is the root class for all the component classes. It is a quasi-static object meaning that exist throughout the simulation. Components are addressable via a hierarchical path name. Components can have phases (such as build, connect, run) and are typically instantiated as static objects.
 
--   **uvm_transaction**: The uvm-transaction is extended from uvm_object, is the root class for all the UVM transaction and transient in nature meaning. It includes timing and event recording, which is essential for transaction-level modeling.
+-   **uvm_transaction**: The uvm-transaction is extended from uvm_object and serves as the base class for all UVM transaction types. It represents transient objects and supports timing and event recording, which is essential for transaction-level-modeling (TLM).
 
 
 ## Extended Classes {#extended-classes}
