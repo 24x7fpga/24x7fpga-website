@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Polymorphism | Home</title>
 <meta name="keywords" content="sv">
 <meta name="description" content="Source &ndash; SV Verification Directory
@@ -75,20 +75,20 @@ module tb_polymorphism;
 endmodule
 Execute the code in EDA Playground">
 <meta name="author" content="Kiran">
-<link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/">
+<link rel="canonical" href="http://localhost:1313/sv_directory/2024_07_31_10_26_49_polymorphism/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-<link rel="icon" href="https://24x7fpga.com/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
-<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/sv_directory/2024_07_31_10_26_49_polymorphism/">
 <noscript>
     <style>
         #theme-toggle,
@@ -102,204 +102,7 @@ Execute the code in EDA Playground">
 <link rel="stylesheet" href="../../zcustom.css">
 
 
-<meta property="og:title" content="Polymorphism" />
-<meta property="og:description" content="Source &ndash; SV Verification Directory
-Polymorphism
-As the term &lsquo;polymorphism&rsquo; implies, &lsquo;poly&rsquo; means &lsquo;many&rsquo; and &lsquo;morph&rsquo; means &lsquo;form&rsquo; or &lsquo;shape&rsquo;. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.
-
-An extended class object can be assigned to the base class but not the other way round.
-Virtual Keyword should be used in parent class to override the method by the child class.
-
-Example Code
-// Parent class
-class parent_class;
-   // class properties or variables
-  int a, b, s;
-
-   // task method
-  task func1 (int a, b);
-    s      = a &#43; b;
-    $display(&#34;Non-Virtual: Parent Class =&gt; a = %0d , b = %0d, sum s = %0d&#34;, a, b, s);
-  endtask
-
-  virtual task func2 (int a, b);
-    s      = a &#43; b;
-    $display(&#34;Virtual:     Parent Class =&gt; a = %0d , b = %0d, sum s = %0d&#34;, a, b, s);
-  endtask
-
-endclass
-
-// Child Class
-class child_class extends parent_class;
-  // class properties or variables
-  int a, b, m;
-
-  // task method
-  task func1 (int a, b);
-    m      = a * b;
-    $display(&#34;Non-Virtual: Child Class  =&gt; a = %0d , b = %0d, mul m = %0d&#34;, a, b, m);
-  endtask
-
-  virtual task func2 (int a, b); // good practice to declare a class method as virtual
-    m      = a * b;
-    $display(&#34;Virtual:     Child Class  =&gt; a = %0d , b = %0d, mul m = %0d&#34;, a, b, m);
-  endtask
-
-endclass
-
-module tb_polymorphism;
-
-  parent_class pr_obj;          // declare a handle for parent class
-  child_class cl_obj;           // declare a handle for child class
-
-  task run(parent_class arg, int a, b);
-    arg.func1(a, b);            // commented and uncomment to
-    arg.func2(a, b);            // see the effects
-  endtask
-
-   initial begin
-     cl_obj = new( );           // construct an object
-
-     pr_obj = new( );           // WHEN THE CHILD CLASS HANDLE POINTS TO THE PARENT CLASS HANDLE
-
-     $display(&#34;---------------------- Polymorphism ----------------------&#34;);
-     run(pr_obj, 30, 10);
-     run(cl_obj, 30, 10);
-
-   end
-
-endmodule
-Execute the code in EDA Playground" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/" /><meta property="article:section" content="sv_directory" />
-<meta property="article:published_time" content="2024-07-31T10:26:00-04:00" />
-<meta property="article:modified_time" content="2024-07-31T10:26:00-04:00" />
-
-
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Polymorphism"/>
-<meta name="twitter:description" content="Source &ndash; SV Verification Directory
-Polymorphism
-As the term &lsquo;polymorphism&rsquo; implies, &lsquo;poly&rsquo; means &lsquo;many&rsquo; and &lsquo;morph&rsquo; means &lsquo;form&rsquo; or &lsquo;shape&rsquo;. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.
-
-An extended class object can be assigned to the base class but not the other way round.
-Virtual Keyword should be used in parent class to override the method by the child class.
-
-Example Code
-// Parent class
-class parent_class;
-   // class properties or variables
-  int a, b, s;
-
-   // task method
-  task func1 (int a, b);
-    s      = a &#43; b;
-    $display(&#34;Non-Virtual: Parent Class =&gt; a = %0d , b = %0d, sum s = %0d&#34;, a, b, s);
-  endtask
-
-  virtual task func2 (int a, b);
-    s      = a &#43; b;
-    $display(&#34;Virtual:     Parent Class =&gt; a = %0d , b = %0d, sum s = %0d&#34;, a, b, s);
-  endtask
-
-endclass
-
-// Child Class
-class child_class extends parent_class;
-  // class properties or variables
-  int a, b, m;
-
-  // task method
-  task func1 (int a, b);
-    m      = a * b;
-    $display(&#34;Non-Virtual: Child Class  =&gt; a = %0d , b = %0d, mul m = %0d&#34;, a, b, m);
-  endtask
-
-  virtual task func2 (int a, b); // good practice to declare a class method as virtual
-    m      = a * b;
-    $display(&#34;Virtual:     Child Class  =&gt; a = %0d , b = %0d, mul m = %0d&#34;, a, b, m);
-  endtask
-
-endclass
-
-module tb_polymorphism;
-
-  parent_class pr_obj;          // declare a handle for parent class
-  child_class cl_obj;           // declare a handle for child class
-
-  task run(parent_class arg, int a, b);
-    arg.func1(a, b);            // commented and uncomment to
-    arg.func2(a, b);            // see the effects
-  endtask
-
-   initial begin
-     cl_obj = new( );           // construct an object
-
-     pr_obj = new( );           // WHEN THE CHILD CLASS HANDLE POINTS TO THE PARENT CLASS HANDLE
-
-     $display(&#34;---------------------- Polymorphism ----------------------&#34;);
-     run(pr_obj, 30, 10);
-     run(cl_obj, 30, 10);
-
-   end
-
-endmodule
-Execute the code in EDA Playground"/>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Sv_directories",
-      "item": "https://24x7fpga.com/sv_directory/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Polymorphism",
-      "item": "https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Polymorphism",
-  "name": "Polymorphism",
-  "description": "Source \u0026ndash; SV Verification Directory\nPolymorphism As the term \u0026lsquo;polymorphism\u0026rsquo; implies, \u0026lsquo;poly\u0026rsquo; means \u0026lsquo;many\u0026rsquo; and \u0026lsquo;morph\u0026rsquo; means \u0026lsquo;form\u0026rsquo; or \u0026lsquo;shape\u0026rsquo;. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.\nAn extended class object can be assigned to the base class but not the other way round. Virtual Keyword should be used in parent class to override the method by the child class. Example Code // Parent class class parent_class; // class properties or variables int a, b, s; // task method task func1 (int a, b); s = a + b; $display(\u0026#34;Non-Virtual: Parent Class =\u0026gt; a = %0d , b = %0d, sum s = %0d\u0026#34;, a, b, s); endtask virtual task func2 (int a, b); s = a + b; $display(\u0026#34;Virtual: Parent Class =\u0026gt; a = %0d , b = %0d, sum s = %0d\u0026#34;, a, b, s); endtask endclass // Child Class class child_class extends parent_class; // class properties or variables int a, b, m; // task method task func1 (int a, b); m = a * b; $display(\u0026#34;Non-Virtual: Child Class =\u0026gt; a = %0d , b = %0d, mul m = %0d\u0026#34;, a, b, m); endtask virtual task func2 (int a, b); // good practice to declare a class method as virtual m = a * b; $display(\u0026#34;Virtual: Child Class =\u0026gt; a = %0d , b = %0d, mul m = %0d\u0026#34;, a, b, m); endtask endclass module tb_polymorphism; parent_class pr_obj; // declare a handle for parent class child_class cl_obj; // declare a handle for child class task run(parent_class arg, int a, b); arg.func1(a, b); // commented and uncomment to arg.func2(a, b); // see the effects endtask initial begin cl_obj = new( ); // construct an object pr_obj = new( ); // WHEN THE CHILD CLASS HANDLE POINTS TO THE PARENT CLASS HANDLE $display(\u0026#34;---------------------- Polymorphism ----------------------\u0026#34;); run(pr_obj, 30, 10); run(cl_obj, 30, 10); end endmodule Execute the code in EDA Playground\n",
-  "keywords": [
-    "sv"
-  ],
-  "articleBody": "Source – SV Verification Directory\nPolymorphism As the term ‘polymorphism’ implies, ‘poly’ means ‘many’ and ‘morph’ means ‘form’ or ‘shape’. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.\nAn extended class object can be assigned to the base class but not the other way round. Virtual Keyword should be used in parent class to override the method by the child class. Example Code // Parent class class parent_class; // class properties or variables int a, b, s; // task method task func1 (int a, b); s = a + b; $display(\"Non-Virtual: Parent Class =\u003e a = %0d , b = %0d, sum s = %0d\", a, b, s); endtask virtual task func2 (int a, b); s = a + b; $display(\"Virtual: Parent Class =\u003e a = %0d , b = %0d, sum s = %0d\", a, b, s); endtask endclass // Child Class class child_class extends parent_class; // class properties or variables int a, b, m; // task method task func1 (int a, b); m = a * b; $display(\"Non-Virtual: Child Class =\u003e a = %0d , b = %0d, mul m = %0d\", a, b, m); endtask virtual task func2 (int a, b); // good practice to declare a class method as virtual m = a * b; $display(\"Virtual: Child Class =\u003e a = %0d , b = %0d, mul m = %0d\", a, b, m); endtask endclass module tb_polymorphism; parent_class pr_obj; // declare a handle for parent class child_class cl_obj; // declare a handle for child class task run(parent_class arg, int a, b); arg.func1(a, b); // commented and uncomment to arg.func2(a, b); // see the effects endtask initial begin cl_obj = new( ); // construct an object pr_obj = new( ); // WHEN THE CHILD CLASS HANDLE POINTS TO THE PARENT CLASS HANDLE $display(\"---------------------- Polymorphism ----------------------\"); run(pr_obj, 30, 10); run(cl_obj, 30, 10); end endmodule Execute the code in EDA Playground\nIn the example, the task run behaves differently each time it is called, depending on the argument passed to it. This behavior is known as polymorphism, and it is achieved by combining the behaviour of the class pointer and inheritance. When the task run is called, an argument is created, and based on this argument, the task’s pointer can reference either the base or the child class. This works because the base and child classes are of the same type, meaning the child class inherits all the characteristics of the base class. However, a potential issue arises when both the base and child classes define a method with the same name. In the example above, both classes contain func1 and func2. When executing the child class, func1 from the base class is executed instead of the child’s implementation. This behavior defeats the purpose of polymorphism. To ensure that the child class’s method is executed, the virtual keyword is prefixed to the function declaration. In the example, the function func2 executes as intended, demonstrating proper polymorphism.\nNote: It is not permissible to assign a parent class handle to a child class handle directly. To address this issue, Dynamic Casting is employed.\n",
-  "wordCount" : "527",
-  "inLanguage": "en",
-  "datePublished": "2024-07-31T10:26:00-04:00",
-  "dateModified": "2024-07-31T10:26:00-04:00",
-  "author":[{
-    "@type": "Person",
-    "name": "Kiran"
-  }],
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Home",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://24x7fpga.com/favicon.ico"
-    }
-  }
-}
-</script><link rel="stylesheet" href="/css/syntax.css" !important>
+<link rel="stylesheet" href="/css/syntax.css" !important>
 
 </head>
 
@@ -315,7 +118,7 @@ Execute the code in EDA Playground"/>
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
             
             
             <div class="vertical-line" style="height: 20px;"></div>
@@ -347,7 +150,7 @@ Execute the code in EDA Playground"/>
         </div>
         <ul id="menu">
             <li>
-                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                <a href="http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
                     <span> 
 
 
@@ -358,7 +161,7 @@ Execute the code in EDA Playground"/>
                 </a>
             </li>
             <li>
-                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                <a href="http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
                     <span> 
 
 
@@ -369,7 +172,7 @@ Execute the code in EDA Playground"/>
                 </a>
             </li>
             <li>
-                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                <a href="http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
                     <span> 
 
 
@@ -380,7 +183,7 @@ Execute the code in EDA Playground"/>
                 </a>
             </li>
             <li>
-                <a href="https://24x7fpga.com/tags/" title="">
+                <a href="http://localhost:1313/tags/" title="">
                     <span> 
 
 
@@ -439,7 +242,7 @@ Execute the code in EDA Playground"/>
 
 
 
-<script src="https://24x7fpga.com/js/mathjax-config.js"></script>
+<script src="http://localhost:1313/js/mathjax-config.js"></script>
 
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -532,7 +335,7 @@ Execute the code in EDA Playground"/>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/sv/">Sv</a></li>
+      <li><a href="http://localhost:1313/tags/sv/">Sv</a></li>
     </ul>
 
 
@@ -549,7 +352,7 @@ Execute the code in EDA Playground"/>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://24x7fpga.com/"></a></span>
+        <span>&copy; 2026 <a href="http://localhost:1313/"></a></span>
         
         
 

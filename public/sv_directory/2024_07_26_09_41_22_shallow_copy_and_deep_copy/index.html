@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Shallow Copy and Deep Copy | Home</title>
 <meta name="keywords" content="sv">
 <meta name="description" content="Source &ndash; SV Verification Directory
@@ -13,20 +13,20 @@ SystemVerilog provides two means of copying or duplicating objects to keep a met
 Shallow Copy
 Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle&rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects.">
 <meta name="author" content="Kiran">
-<link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/">
+<link rel="canonical" href="http://localhost:1313/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-<link rel="icon" href="https://24x7fpga.com/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
-<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/">
 <noscript>
     <style>
         #theme-toggle,
@@ -40,80 +40,7 @@ Shallow copy is a method where the objects are duplicated to a new memory locati
 <link rel="stylesheet" href="../../zcustom.css">
 
 
-<meta property="og:title" content="Shallow Copy and Deep Copy" />
-<meta property="og:description" content="Source &ndash; SV Verification Directory
-Shallow Copy and Deep Copy
-SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.
-Shallow Copy
-Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle&rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/" /><meta property="article:section" content="sv_directory" />
-<meta property="article:published_time" content="2024-07-26T09:41:00-04:00" />
-<meta property="article:modified_time" content="2024-07-26T09:41:00-04:00" />
-
-
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Shallow Copy and Deep Copy"/>
-<meta name="twitter:description" content="Source &ndash; SV Verification Directory
-Shallow Copy and Deep Copy
-SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.
-Shallow Copy
-Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle&rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects."/>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Sv_directories",
-      "item": "https://24x7fpga.com/sv_directory/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Shallow Copy and Deep Copy",
-      "item": "https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Shallow Copy and Deep Copy",
-  "name": "Shallow Copy and Deep Copy",
-  "description": "Source \u0026ndash; SV Verification Directory\nShallow Copy and Deep Copy SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.\nShallow Copy Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle\u0026rsquo;s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects.\n",
-  "keywords": [
-    "sv"
-  ],
-  "articleBody": "Source – SV Verification Directory\nShallow Copy and Deep Copy SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.\nShallow Copy Shallow copy is a method where the objects are duplicated to a new memory location. If the class contains a handle to another class, only the handle’s value is copied not the lower level object, meaning both the original and copied object share the same instances of nested objects.\nClass assignment and Shallow Copy Class Assignment Shallow Copy obj1 = obj2 obj1 = new obj2 Both the objects point to the same memory Allocates memory, copies the variable, and returns the memory handle Changes made to any object will reflect in both Changes made to the copied objects will not reflect in the parent object Example Code: Shallow Copy The example shown below shows the example of shallow copy and the limitation of nested objects in shallow copy. Along with the difference in class assignment and shallow copy.\n// class class grade; string mrk; function new (string mrk); this.mrk = mrk; endfunction endclass // class class name; string student; grade mrk; // class handle function new (string student, string mrk); this.student = student; this.mrk = new(mrk); // construct the object endfunction endclass module tb_shallow_copy; name std1, std2, std3;\t// class handle initial begin std1 = new(\"John\", \"B\"); // construct $display(\"------------------------- Display -------------------------\"); $display(\"STD1 =\u003e Student Name = %s; Grade = %s\", std1.student, std1.mrk.mrk); std2 = new std1; // shallow copy $display(\"---------------------- Shallow Copy -----------------------\"); $display(\"STD2 =\u003e Student Name = %s; Grade = %s\", std2.student, std2.mrk.mrk); $display(\"------------------ Change Name and Grade ------------------\"); std2.student = \"Noah\"; std2.mrk.mrk = \"A\"; $display(\"STD2 =\u003e Student Name = %s; Grade = %s\", std2.student, std2.mrk.mrk); $display(\"---------------- Limitation of Shallow Copy ---------------\"); $display(\"STD1 =\u003e Student Name = %s; Grade = %s =\u003e %s's Grade is also changed\", std1.student, std1.mrk.mrk, std1.student); std3 = std1; $display(\"--------------------- Class assignment --------------------\"); $display(\"STD3 =\u003e Student Name = %s; Grade = %s\", std3.student, std3.mrk.mrk); std3.student = \"Theo\"; std3.mrk.mrk = \"C\"; $display(\"------------------ Change Name and Grade ------------------\"); $display(\"STD3 =\u003e Student Name = %s; Grade = %s\", std3.student, std3.mrk.mrk); $display(\"--------------------- Class assignment --------------------\"); $display(\"----------------- Points to the same memory ---------------\"); $display(\"----------------- Original is also changed ----------------\"); $display(\"STD1 =\u003e Student Name = %s; Grade = %s\", std1.student, std1.mrk.mrk); end endmodule Execute the code in EDA Playground\nDeep Copy One method to overcome the limitation of shallow copy is to write a copy function inside the class to make a copy of the object. This method is called deep copy, which duplicates not only the object itself but also all the objects referenced by the original object, creating independent copies of these nested objects.\nExample Code: Deep Copy // class class grade; string mrk; function new(string mrk); this.mrk = mrk; endfunction //deep copy function function grade copy(); copy = new(this.mrk); endfunction endclass // class class name; string student; grade mrk; // class handle function new(string student, string mrk); this.student = student; this.mrk = new(mrk); // construct the object endfunction // deep copy function function name copy(); copy = new(this.student, this.mrk.mrk); endfunction endclass module tb_deep_copy; name std1, std2;\t// class handle initial begin std1 = new(\"John\", \"B\"); // construct $display(\"------------------------- Display -------------------------\"); $display(\"STD1 =\u003e Student Name = %s; Grade = %s\", std1.student, std1.mrk.mrk); std2 = std1.copy(); // deep copy $display(\"----------------------- Deep Copy -------------------------\"); $display(\"STD2 =\u003e Student Name = %s; Grade = %s\", std2.student, std2.mrk.mrk); $display(\"------------------ Change Name and Grade ------------------\"); std2.student = \"Noah\"; std2.mrk.mrk = \"A\"; $display(\"STD2 =\u003e Student Name = %s; Grade = %s\", std2.student, std2.mrk.mrk); $display(\"------------------ Advantage of Deep Copy -----------------\"); $display(\"STD1 =\u003e Student Name = %s; Grade = %s =\u003e %s's Grade is NOT changed\", std1.student, std1.mrk.mrk, std1.student); end endmodule Execute the code in EDA Playground\nPoint to Remember Shallow Copy: Copies the object’s attributes but not the nested objects. Shared references to nested objects, leading to potential side effects. Faster to create but less independent. Deep Copy: Copies the object and all nested objects, creating entirely independent instances. No shared references, avoiding unintended side effects. More computationally intensive but safer for independent object manipulation. ",
-  "wordCount" : "697",
-  "inLanguage": "en",
-  "datePublished": "2024-07-26T09:41:00-04:00",
-  "dateModified": "2024-07-26T09:41:00-04:00",
-  "author":[{
-    "@type": "Person",
-    "name": "Kiran"
-  }],
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Home",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://24x7fpga.com/favicon.ico"
-    }
-  }
-}
-</script><link rel="stylesheet" href="/css/syntax.css" !important>
+<link rel="stylesheet" href="/css/syntax.css" !important>
 
 </head>
 
@@ -129,7 +56,7 @@ Shallow copy is a method where the objects are duplicated to a new memory locati
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
             
             
             <div class="vertical-line" style="height: 20px;"></div>
@@ -161,7 +88,7 @@ Shallow copy is a method where the objects are duplicated to a new memory locati
         </div>
         <ul id="menu">
             <li>
-                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                <a href="http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
                     <span> 
 
 
@@ -172,7 +99,7 @@ Shallow copy is a method where the objects are duplicated to a new memory locati
                 </a>
             </li>
             <li>
-                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                <a href="http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
                     <span> 
 
 
@@ -183,7 +110,7 @@ Shallow copy is a method where the objects are duplicated to a new memory locati
                 </a>
             </li>
             <li>
-                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                <a href="http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
                     <span> 
 
 
@@ -194,7 +121,7 @@ Shallow copy is a method where the objects are duplicated to a new memory locati
                 </a>
             </li>
             <li>
-                <a href="https://24x7fpga.com/tags/" title="">
+                <a href="http://localhost:1313/tags/" title="">
                     <span> 
 
 
@@ -253,7 +180,7 @@ Shallow copy is a method where the objects are duplicated to a new memory locati
 
 
 
-<script src="https://24x7fpga.com/js/mathjax-config.js"></script>
+<script src="http://localhost:1313/js/mathjax-config.js"></script>
 
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -435,7 +362,7 @@ Shallow copy is a method where the objects are duplicated to a new memory locati
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://24x7fpga.com/tags/sv/">Sv</a></li>
+      <li><a href="http://localhost:1313/tags/sv/">Sv</a></li>
     </ul>
 
 
@@ -452,7 +379,7 @@ Shallow copy is a method where the objects are duplicated to a new memory locati
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://24x7fpga.com/"></a></span>
+        <span>&copy; 2026 <a href="http://localhost:1313/"></a></span>
         
         
 

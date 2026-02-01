@@ -1,6 +1,6 @@
 +++
 title = "UVM Base Class Library"
-author = ["Kiran"]
+author = ["kiran"]
 date = 2024-09-22T09:38:00-04:00
 tags = ["uvm"]
 draft = false
@@ -24,7 +24,7 @@ The complete list of class libraries can be found in [UVM 1.2 Class Reference](h
 
 -   **uvm_object**: All UVM classes (components or transactions) inherit from uvm_object. It provides basic functionality like copying, printing, comparing, and packing/unpacking objects. Some of the important generic methods are: create(), copy(), compare(), print(), record(), pack(), unpack().
 
--   **uvm_component**: The uvm_component is the root class for all the component classes. It is a quasi-static object menaing that exist throughout the simulation. Components are addresible via a hierarchical path name. Components can have phases (such as build, connect, run) and are typically instantiated as static objects.
+-   **uvm_component**: The uvm_component is the root class for all the component classes. It is a quasi-static object meaning that exist throughout the simulation. Components are addressable via a hierarchical path name. Components can have phases (such as build, connect, run) and are typically instantiated as static objects.
 
 -   **uvm_transaction**: The uvm-transaction is extended from uvm_object, is the root class for all the UVM transaction and transient in nature meaning. It includes timing and event recording, which is essential for transaction-level modeling.
 

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ams_directories on Home</title>
-    <link>https://24x7fpga.com/ams_directory/</link>
+    <link>http://localhost:1313/ams_directory/</link>
     <description>Recent content in Ams_directories on Home</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 05 Dec 2025 14:39:00 -0500</lastBuildDate>
-    <atom:link href="https://24x7fpga.com/ams_directory/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ams_directory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kirchhoff&#39;s Laws</title>
-      <link>https://24x7fpga.com/ams_directory/2025_12_05_14_39_43_kirchhoff_s_laws/</link>
+      <link>http://localhost:1313/ams_directory/2025_12_05_14_39_43_kirchhoff_s_laws/</link>
       <pubDate>Fri, 05 Dec 2025 14:39:00 -0500</pubDate>
-      <guid>https://24x7fpga.com/ams_directory/2025_12_05_14_39_43_kirchhoff_s_laws/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/ams_directory/2025_03_13_ams_directory/&#34;&gt;AMS Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/ams_directory/2025_12_05_14_39_43_kirchhoff_s_laws/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ams_directory/2025_03_13_ams_directory/&#34;&gt;AMS Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;kirchhoff-s-law&#34;&gt;Kirchhoff&amp;rsquo;s Law&lt;/h2&gt;
 &lt;p&gt;Kirchoff&amp;rsquo;s Laws are two fundamental rules in electrical circuit analysis. They help find unknown currents and volrages and resistance values in complex circuits.&lt;/p&gt;
 &lt;h3 id=&#34;kirchhoff-s-current-law--kcl--node-rule&#34;&gt;Kirchhoff&amp;rsquo;s Current Law (KCL) - Node Rule&lt;/h3&gt;
@@ -28,10 +28,10 @@
     </item>
     <item>
       <title>Voltage Source, Current Source and Dependent Source</title>
-      <link>https://24x7fpga.com/ams_directory/2025_03_30_voltage_source_current_source_and_dependent_source/</link>
+      <link>http://localhost:1313/ams_directory/2025_03_30_voltage_source_current_source_and_dependent_source/</link>
       <pubDate>Sun, 30 Mar 2025 13:46:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/ams_directory/2025_03_30_voltage_source_current_source_and_dependent_source/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/ams_directory/2025_03_13_ams_directory/&#34;&gt;AMS Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/ams_directory/2025_03_30_voltage_source_current_source_and_dependent_source/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ams_directory/2025_03_13_ams_directory/&#34;&gt;AMS Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;voltage-source&#34;&gt;Voltage Source&lt;/h3&gt;
 &lt;p&gt;A voltage source is an electrical component that provide constant or varying voltage between two terminals. It is a key component in circuit that is responsible for pushing electric charge through a closed circuit.&lt;/p&gt;
@@ -40,10 +40,10 @@
     </item>
     <item>
       <title>Current, Voltage and Resistor</title>
-      <link>https://24x7fpga.com/ams_directory/2025_03_13_current_voltage_and_resistor/</link>
+      <link>http://localhost:1313/ams_directory/2025_03_13_current_voltage_and_resistor/</link>
       <pubDate>Thu, 13 Mar 2025 12:40:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/ams_directory/2025_03_13_current_voltage_and_resistor/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/ams_directory/2025_03_13_ams_directory/&#34;&gt;AMS Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/ams_directory/2025_03_13_current_voltage_and_resistor/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ams_directory/2025_03_13_ams_directory/&#34;&gt;AMS Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;current&#34;&gt;Current&lt;/h3&gt;
 &lt;p&gt;Current occurs when electic charge (Q) flows through a wire. The current passing through the wire can be given as the amount of charge &lt;strong&gt;Q&lt;/strong&gt; passing through a wire in a given time &lt;strong&gt;t&lt;/strong&gt;.&lt;/p&gt;
@@ -62,13 +62,13 @@ I = \frac{dQ}{dt}
     </item>
     <item>
       <title>AMS Directory</title>
-      <link>https://24x7fpga.com/ams_directory/2025_03_13_ams_directory/</link>
+      <link>http://localhost:1313/ams_directory/2025_03_13_ams_directory/</link>
       <pubDate>Thu, 13 Mar 2025 12:37:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/ams_directory/2025_03_13_ams_directory/</guid>
+      <guid>http://localhost:1313/ams_directory/2025_03_13_ams_directory/</guid>
       <description>&lt;h2 id=&#34;basic-circuit&#34;&gt;Basic Circuit&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/ams_directory/2025_03_13_current_voltage_and_resistor/&#34;&gt;Current, Voltage and Resistor&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/ams_directory/2025_03_30_voltage_source_current_source_and_dependent_source/&#34;&gt;Voltage Source, Current Source and Dependent Source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/ams_directory/2025_03_13_current_voltage_and_resistor/&#34;&gt;Current, Voltage and Resistor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/ams_directory/2025_03_30_voltage_source_current_source_and_dependent_source/&#34;&gt;Voltage Source, Current Source and Dependent Source&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
   </channel>

@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Sta on Home</title>
-    <link>https://24x7fpga.com/tags/sta/</link>
+    <link>http://localhost:1313/tags/sta/</link>
     <description>Recent content in Sta on Home</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Dec 2024 17:41:00 -0500</lastBuildDate>
-    <atom:link href="https://24x7fpga.com/tags/sta/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/sta/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>D Flip-Flop: Operation</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_12_21_d_flip_flop_operation/</link>
+      <link>http://localhost:1313/rtl_directory/2024_12_21_d_flip_flop_operation/</link>
       <pubDate>Sat, 21 Dec 2024 17:41:00 -0500</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_12_21_d_flip_flop_operation/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/d_ff_en&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/rtl_directory/2024_12_21_d_flip_flop_operation/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/d_ff_en&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
 &lt;p&gt;A &lt;strong&gt;flip-flop&lt;/strong&gt;, also known as a register, is a fundamental building block in digital circuits used to store a single bit of data. The stored data remains stable until a new input is latched, triggered by an external clock signal. Depending on the design, the data is captured on either the rising edge or falling edge of the clock, making flip-flops essential for synchronizing data in sequential logic circuits.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Latch and Flip-Flop</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_12_21_latch_and_flip_flop/</link>
+      <link>http://localhost:1313/rtl_directory/2024_12_21_latch_and_flip_flop/</link>
       <pubDate>Sat, 21 Dec 2024 13:07:00 -0500</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_12_21_latch_and_flip_flop/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/latch_ff&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/rtl_directory/2024_12_21_latch_and_flip_flop/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/latch_ff&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/&#34;&gt;RTL Design Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Latchs and Flip-Flops are fundamental digital components used to store information. Both play a critical role in sequential circuits, but they differ in their operation and applications.&lt;/p&gt;
 &lt;h2 id=&#34;latch&#34;&gt;Latch&lt;/h2&gt;
 &lt;p&gt;A &lt;strong&gt;latch&lt;/strong&gt; is level-sensitive memory element that stores a single bit of data. It operates based on the state of an enable signal:&lt;/p&gt;

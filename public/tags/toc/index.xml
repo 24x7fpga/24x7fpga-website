@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Toc on Home</title>
-    <link>https://24x7fpga.com/tags/toc/</link>
+    <link>http://localhost:1313/tags/toc/</link>
     <description>Recent content in Toc on Home</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 13 Mar 2025 12:37:00 -0400</lastBuildDate>
-    <atom:link href="https://24x7fpga.com/tags/toc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/toc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AMS Directory</title>
-      <link>https://24x7fpga.com/ams_directory/2025_03_13_ams_directory/</link>
+      <link>http://localhost:1313/ams_directory/2025_03_13_ams_directory/</link>
       <pubDate>Thu, 13 Mar 2025 12:37:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/ams_directory/2025_03_13_ams_directory/</guid>
+      <guid>http://localhost:1313/ams_directory/2025_03_13_ams_directory/</guid>
       <description>&lt;h2 id=&#34;basic-circuit&#34;&gt;Basic Circuit&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/ams_directory/2025_03_13_current_voltage_and_resistor/&#34;&gt;Current, Voltage and Resistor&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/ams_directory/2025_03_30_voltage_source_current_source_and_dependent_source/&#34;&gt;Voltage Source, Current Source and Dependent Source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/ams_directory/2025_03_13_current_voltage_and_resistor/&#34;&gt;Current, Voltage and Resistor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/ams_directory/2025_03_30_voltage_source_current_source_and_dependent_source/&#34;&gt;Voltage Source, Current Source and Dependent Source&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
       <title>RISC-V Directory</title>
-      <link>https://24x7fpga.com/riscv_directory/2025_02_14_risc_v_directory/</link>
+      <link>http://localhost:1313/riscv_directory/2025_02_14_risc_v_directory/</link>
       <pubDate>Fri, 14 Feb 2025 14:45:00 -0500</pubDate>
-      <guid>https://24x7fpga.com/riscv_directory/2025_02_14_risc_v_directory/</guid>
+      <guid>http://localhost:1313/riscv_directory/2025_02_14_risc_v_directory/</guid>
       <description>&lt;p&gt;This directory explores the fundamentals of microarchitecture design, with the ultimate goal of developing a RISC-V core for FPGA implementation. Here, you&amp;rsquo;ll find insights into processor design, pipeline architecture, and the steps involved in bringing a custom RISC-V core to life on an FPGA.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/risc_v.svg&#34;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/risc_v.svg&#34;
          alt=&#34;Figure 1: RISC-V Instruction Set&#34;/&gt; &lt;figcaption&gt;
             &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;RISC-V Instruction Set&lt;/p&gt;
         &lt;/figcaption&gt;
@@ -39,16 +39,16 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;theory&#34;&gt;Theory&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/riscv_directory/2025_02_14_assembly_language/&#34;&gt;Assembly Language&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/riscv_directory/2025_02_14_risc_v_register_set/&#34;&gt;RISC-V Register Set&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/riscv_directory/2025_02_14_assembly_language/&#34;&gt;Assembly Language&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/riscv_directory/2025_02_14_risc_v_register_set/&#34;&gt;RISC-V Register Set&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;instruction-set&#34;&gt;Instruction Set&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/riscv_directory/2025_02_18_r_type/&#34;&gt;R-Type&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/riscv_directory/2025_02_19_i_type/&#34;&gt;I-Type&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/riscv_directory/2025_02_20_s_type/&#34;&gt;S-Type&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/riscv_directory/2025_02_20_b_type/&#34;&gt;B-Type&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/riscv_directory/2025_02_20_u_type/&#34;&gt;U-Type&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/riscv_directory/2025_02_18_r_type/&#34;&gt;R-Type&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/riscv_directory/2025_02_19_i_type/&#34;&gt;I-Type&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/riscv_directory/2025_02_20_s_type/&#34;&gt;S-Type&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/riscv_directory/2025_02_20_b_type/&#34;&gt;B-Type&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/riscv_directory/2025_02_20_u_type/&#34;&gt;U-Type&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;J-Type&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;single-cycle&#34;&gt;Single Cycle&lt;/h2&gt;
@@ -62,121 +62,121 @@
     </item>
     <item>
       <title>Constraint Challenges</title>
-      <link>https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/</link>
+      <link>http://localhost:1313/sv_directory/2024_11_12_18_40_22_constraint_challenges/</link>
       <pubDate>Tue, 12 Nov 2024 18:40:00 -0500</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges&#34;&gt;GitHub&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_11_12_18_40_22_constraint_challenges/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges&#34;&gt;GitHub&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Constraints in SystemVerilog play a vital role in verification by enabling robust and efficient generation of test scenarios that thoroughly exercise the design under test (DUT). When designing a verification environment, especially for complex digital designs, simply testing with fixed values isn’t sufficient.&lt;/p&gt;
 &lt;p&gt;Learning constraints in SystemVerilog is crucial for verification because they enable controlled randomization, helping engineers generate targeted, meaningful test cases while covering a wide range of scenarios. Constraints define rules for random values, guiding the testbench to create valid inputs, edge cases, and corner cases, which leads to higher functional coverage without manually scripting every test.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UVM Framework Directory</title>
-      <link>https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/</link>
+      <link>http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/</link>
       <pubDate>Wed, 28 Aug 2024 12:39:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/</guid>
+      <guid>http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/</guid>
       <description>&lt;p&gt;UVM stands for Universal Verification Method developed by &lt;a href=&#34;https://www.accellera.org/activities/working-groups/uvm&#34;&gt;UVM Working Group&lt;/a&gt; that provides a standardized methodology for verifying digital integrated circuits. UVM is built on top of SystemVerilog and provides a useful &lt;a href=&#34;https://en.wikipedia.org/wiki/Framework&#34;&gt;framework&lt;/a&gt; for creating reusable and scalable testbenchs. The framework provides a set of building blocks or pre-built design kits that help to create a complex system in a more organized and efficient way instead of building everything from scratch. The verification method uses a &lt;a href=&#34;https://en.wikipedia.org/wiki/Factory_(object-oriented_programming)&#34;&gt;factory&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Factory_method_pattern&#34;&gt;method&lt;/a&gt; to create an object instead of using a direct constructor call to create an object. This method allows the code to instantiate a specific class at runtime. This directory contains examples specifically focused on UVM verification design.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SV Verification Directory</title>
-      <link>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</link>
+      <link>http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</link>
       <pubDate>Thu, 27 Jun 2024 16:53:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
+      <guid>http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/</guid>
       <description>&lt;p&gt;In the rapidly evolving world of digital design, verification is paramount to ensuring that designs function correctly and efficiently. SystemVerilog, an extension of the Verilog hardware description language, has become a critical tool for verification engineers. This blog post aims to introduce SystemVerilog verification, highlighting its significance, features, and basic concepts to help you get started on your verification journey.&lt;/p&gt;
 &lt;h2 id=&#34;automated-workflow-in-vivado&#34;&gt;Automated Workflow in Vivado&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/&#34;&gt;SV Verification Workflow in Vivado&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/&#34;&gt;SV Verification Workflow in Vivado&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;layered-testbench&#34;&gt;Layered Testbench&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/&#34;&gt;SV Testbench Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/&#34;&gt;SV Testbench Overview&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;sv-scheduling-semantics&#34;&gt;SV Scheduling Semantics&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/&#34;&gt;Scheduling Semantics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2025_01_14_scheduling_semantics/&#34;&gt;Scheduling Semantics&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;data-types&#34;&gt;Data Types&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_28_14_48_33_logic_type/&#34;&gt;Logic Type&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/&#34;&gt;Fixed-Size Arrays&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/&#34;&gt;Packed and Unpacked Array&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/&#34;&gt;Dynamic Arrays&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_01_23_35_47_queues/&#34;&gt;Queues&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_02_00_18_56_associative_arrays/&#34;&gt;Associative Arrays&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_02_09_48_08_array_methods/&#34;&gt;Array Methods&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_02_15_05_30_enumeration/&#34;&gt;Enumeration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_02_16_54_49_structures/&#34;&gt;Structures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_28_14_48_33_logic_type/&#34;&gt;Logic Type&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/&#34;&gt;Fixed-Size Arrays&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/&#34;&gt;Packed and Unpacked Array&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_01_15_56_35_dynamic_arrays/&#34;&gt;Dynamic Arrays&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_01_23_35_47_queues/&#34;&gt;Queues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_02_00_18_56_associative_arrays/&#34;&gt;Associative Arrays&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_02_09_48_08_array_methods/&#34;&gt;Array Methods&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_02_15_05_30_enumeration/&#34;&gt;Enumeration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_02_16_54_49_structures/&#34;&gt;Structures&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Streaming Operator&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;type-converstion&#34;&gt;Type Converstion&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/&#34;&gt;Static Cast&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/&#34;&gt;Dynamic Cast&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_02_18_32_19_static_cast/&#34;&gt;Static Cast&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_02_18_41_56_dynamic_cast/&#34;&gt;Dynamic Cast&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;flow-control&#34;&gt;Flow Control&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/&#34;&gt;For and Foreach Loops&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/&#34;&gt;While and Do While Loops&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_19_14_46_31_repeat_and_forever/&#34;&gt;Repeat and Forever&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_19_15_18_41_break_and_continue/&#34;&gt;Break and Continue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/&#34;&gt;For and Foreach Loops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/&#34;&gt;While and Do While Loops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_19_14_46_31_repeat_and_forever/&#34;&gt;Repeat and Forever&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_19_15_18_41_break_and_continue/&#34;&gt;Break and Continue&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;tasks-and-functions&#34;&gt;Tasks and Functions&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/&#34;&gt;Tasks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_20_15_36_43_functions/&#34;&gt;Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_19_15_48_23_tasks/&#34;&gt;Tasks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_20_15_36_43_functions/&#34;&gt;Functions&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;process&#34;&gt;Process&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_20_21_47_05_fork_join/&#34;&gt;Fork Join&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_20_21_58_50_fork_join_any/&#34;&gt;Fork Join Any&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/&#34;&gt;Fork Join None&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_23_17_27_07_wait_fork/&#34;&gt;Wait Fork&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_23_17_27_50_disable_fork/&#34;&gt;Disable Fork&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_20_21_47_05_fork_join/&#34;&gt;Fork Join&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_20_21_58_50_fork_join_any/&#34;&gt;Fork Join Any&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_20_22_11_00_fork_join_none/&#34;&gt;Fork Join None&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_23_17_27_07_wait_fork/&#34;&gt;Wait Fork&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_23_17_27_50_disable_fork/&#34;&gt;Disable Fork&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;oop-in-sv&#34;&gt;OOP in SV&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_24_15_11_27_object_oriented_programming/&#34;&gt;Object-Oriented Programming&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_24_16_47_44_class/&#34;&gt;Class&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_24_22_09_00_handle/&#34;&gt;Handle&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_24_17_42_06_object/&#34;&gt;Object&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_25_12_36_42_method/&#34;&gt;Method&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_25_14_49_57_this_keyword/&#34;&gt;This Keyword&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/&#34;&gt;Static Class Properties and Methods&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/&#34;&gt;Shallow Copy and Deep Copy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/&#34;&gt;Four Pillars of OOP&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_29_11_09_50_inheritance/&#34;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_29_12_16_52_super_keyword/&#34;&gt;Super Keyword&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_31_10_21_04_virtual_keyword/&#34;&gt;Virtual Keyword&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/&#34;&gt;Polymorphism&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_31_16_19_14_encapsulation/&#34;&gt;Encapsulation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_24_15_11_27_object_oriented_programming/&#34;&gt;Object-Oriented Programming&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_24_16_47_44_class/&#34;&gt;Class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_24_22_09_00_handle/&#34;&gt;Handle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_24_17_42_06_object/&#34;&gt;Object&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_25_12_36_42_method/&#34;&gt;Method&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_25_14_49_57_this_keyword/&#34;&gt;This Keyword&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/&#34;&gt;Static Class Properties and Methods&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/&#34;&gt;Shallow Copy and Deep Copy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/&#34;&gt;Four Pillars of OOP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_29_11_09_50_inheritance/&#34;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_29_12_16_52_super_keyword/&#34;&gt;Super Keyword&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_31_10_21_04_virtual_keyword/&#34;&gt;Virtual Keyword&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_31_10_26_49_polymorphism/&#34;&gt;Polymorphism&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_31_16_19_14_encapsulation/&#34;&gt;Encapsulation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;interprocess-communication&#34;&gt;Interprocess Communication&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/&#34;&gt;Events&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/&#34;&gt;Mailbox&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_08_06_12_53_53_semaphore/&#34;&gt;Semaphore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_31_17_20_12_events/&#34;&gt;Events&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_08_06_10_48_02_mailbox/&#34;&gt;Mailbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_08_06_12_53_53_semaphore/&#34;&gt;Semaphore&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;interface&#34;&gt;Interface&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_08_08_10_27_00_interface/&#34;&gt;Interface&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_08_08_10_17_52_modport/&#34;&gt;Modport&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_08_08_13_51_50_clocking_block/&#34;&gt;Clocking Block&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_08_08_10_27_00_interface/&#34;&gt;Interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_08_08_10_17_52_modport/&#34;&gt;Modport&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_08_08_13_51_50_clocking_block/&#34;&gt;Clocking Block&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;randomization&#34;&gt;Randomization&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_10_15_12_10_22_urandom_and_urandom_range/&#34;&gt;$urandom and $urandom_range&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_10_15_12_34_46_rand_and_randc/&#34;&gt;rand and randc&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_10_15_12_53_31_constraint_randomization/&#34;&gt;Constraint Randomization&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_10_15_15_54_33_constraint_inside_operator/&#34;&gt;Constraint: Inside Operator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_10_15_17_48_30_constraint_array_randomization/&#34;&gt;Constraint: Array Randomization&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_10_16_11_12_51_constraint_bidirectional_and_conditional/&#34;&gt;Constraint: Bidirectional and Conditional&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_10_16_13_50_42_constraint_implication_and_equivalence/&#34;&gt;Constraint: Implication and Equivalence&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_10_22_13_18_19_constraint_solve_before/&#34;&gt;Constraint: Solve-Before&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_10_22_14_42_44_constraint_weighted_distribution/&#34;&gt;Constraint: Weighted Distribution&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_10_22_16_57_37_constraint_in_line_and_external/&#34;&gt;Constraint: In-line and External&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_10_15_12_10_22_urandom_and_urandom_range/&#34;&gt;$urandom and $urandom_range&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_10_15_12_34_46_rand_and_randc/&#34;&gt;rand and randc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_10_15_12_53_31_constraint_randomization/&#34;&gt;Constraint Randomization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_10_15_15_54_33_constraint_inside_operator/&#34;&gt;Constraint: Inside Operator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_10_15_17_48_30_constraint_array_randomization/&#34;&gt;Constraint: Array Randomization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_10_16_11_12_51_constraint_bidirectional_and_conditional/&#34;&gt;Constraint: Bidirectional and Conditional&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_10_16_13_50_42_constraint_implication_and_equivalence/&#34;&gt;Constraint: Implication and Equivalence&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_10_22_13_18_19_constraint_solve_before/&#34;&gt;Constraint: Solve-Before&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_10_22_14_42_44_constraint_weighted_distribution/&#34;&gt;Constraint: Weighted Distribution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_10_22_16_57_37_constraint_in_line_and_external/&#34;&gt;Constraint: In-line and External&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;sv-mastery-challenges&#34;&gt;SV Mastery Challenges&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/&#34;&gt;Constraint Challenges&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_11_12_18_40_22_constraint_challenges/&#34;&gt;Constraint Challenges&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;verification-examples&#34;&gt;Verification Examples&lt;/h2&gt;
 &lt;ul&gt;
@@ -187,9 +187,9 @@
     </item>
     <item>
       <title>RTL Design Directory</title>
-      <link>https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/</link>
+      <link>http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/</link>
       <pubDate>Wed, 05 Jun 2024 00:21:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/</guid>
+      <guid>http://localhost:1313/rtl_directory/2024_06_05_00_21_53_rtl_design_directory/</guid>
       <description>&lt;p&gt;Welcome to my comprehensive collection of &lt;a href=&#34;https://en.wikipedia.org/wiki/Register-transfer_level&#34;&gt;RTL(Register Transfer Level)&lt;/a&gt; designs. It is an evolving collection highlighting my projects, skills, and achievements in digital circuit design and verification. I specialize in developing efficient, high-performance hardware architectures using industry-standard languages like &lt;a href=&#34;https://ieeexplore.ieee.org/document/10458102&#34;&gt;SystemVerilog&lt;/a&gt; and &lt;a href=&#34;https://accellera.org/images/downloads/standards/v-ams/VAMS-LRM-2023.pdf&#34;&gt;Verilog&lt;/a&gt;. Explore my blog for insightful articles on the latest trends and best practices in RTL design, and visit the tutorials section for step-by-step guides to mastering this critical aspect of hardware engineering. Connect with me to collaborate on innovative solutions and advance your knowledge in RTL design.&lt;/p&gt;</description>
     </item>
   </channel>

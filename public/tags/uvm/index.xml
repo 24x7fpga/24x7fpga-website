@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Uvm on Home</title>
-    <link>https://24x7fpga.com/tags/uvm/</link>
+    <link>http://localhost:1313/tags/uvm/</link>
     <description>Recent content in Uvm on Home</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Oct 2024 11:18:00 -0400</lastBuildDate>
-    <atom:link href="https://24x7fpga.com/tags/uvm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/uvm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UVM Resource and Configuration Database</title>
-      <link>https://24x7fpga.com/uvm_directory/2024_10_06_11_18_25_uvm_resource_and_configuration_database/</link>
+      <link>http://localhost:1313/uvm_directory/2024_10_06_11_18_25_uvm_resource_and_configuration_database/</link>
       <pubDate>Sun, 06 Oct 2024 11:18:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/uvm_directory/2024_10_06_11_18_25_uvm_resource_and_configuration_database/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/UVM/blob/main/uvm_verification/config_db/tb_config_db.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/&#34;&gt;UVM Framework Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/uvm_directory/2024_10_06_11_18_25_uvm_resource_and_configuration_database/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/UVM/blob/main/uvm_verification/config_db/tb_config_db.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/&#34;&gt;UVM Framework Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Data can be shared across the an UVM testbench using two key mechanisms: the configuration database and the resources database. While both serve the purpose of sharing data between components, they are used in distinct contexts. The configuration database is typically used for setting up component-specific configurations, while the resources database is a more general-purpose tool for sharing any kind of data across the testbench.&lt;/p&gt;
 &lt;h2 id=&#34;resource-database&#34;&gt;Resource Database&lt;/h2&gt;
 &lt;p&gt;The resources database in UVM is a parameterized container used to store arbitrary data in a global or hierarchical manner. It can hold any type of data, constrained only by the data types available in SystemVerilog. Each resource item can be retrieved either by its name or by its type. Additionally, multiple resources with the same name or type can exist in the database. The resources are stored in two associative arrays, one with the name as the key and the other with the type as the key, both organized in the form of a queue. Resources are added to the resource pool by the &lt;code&gt;set&lt;/code&gt; method and retrieved by calling &lt;code&gt;get_by_name&lt;/code&gt; or &lt;code&gt;get_by_type&lt;/code&gt;. When multiple resources share the same name or type, the one that was added first in the queue takes precedence, following a First In, First Out (FIFO) approach. The &lt;code&gt;uvm_resource_db&lt;/code&gt; class provides a convenience interface for the resource facility.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UVM Phases</title>
-      <link>https://24x7fpga.com/uvm_directory/2024_09_26_13_20_13_uvm_phases/</link>
+      <link>http://localhost:1313/uvm_directory/2024_09_26_13_20_13_uvm_phases/</link>
       <pubDate>Thu, 26 Sep 2024 13:20:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/uvm_directory/2024_09_26_13_20_13_uvm_phases/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/&#34;&gt;UVM Framework Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/uvm_directory/2024_09_26_13_20_13_uvm_phases/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/&#34;&gt;UVM Framework Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;In UVM, a structured mechanism called UVM phases is used to automate the execution of various components within a testbench. This ensures that the simulation follows a defined sequence, streamlining the process. UVM defines twelve key phases, each with a specific role in the testbench lifecycle. The order of execution for these phases is depicted in Figure 1 below.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/uvm_phases.svg&#34;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/uvm_phases.svg&#34;
          alt=&#34;Figure 1: UVM Phases&#34;/&gt; &lt;figcaption&gt;
             &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;UVM Phases&lt;/p&gt;
         &lt;/figcaption&gt;
@@ -36,10 +36,10 @@
     </item>
     <item>
       <title>UVM Common Operations</title>
-      <link>https://24x7fpga.com/uvm_directory/2024_09_25_14_36_39_uvm_common_operations/</link>
+      <link>http://localhost:1313/uvm_directory/2024_09_25_14_36_39_uvm_common_operations/</link>
       <pubDate>Wed, 25 Sep 2024 14:36:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/uvm_directory/2024_09_25_14_36_39_uvm_common_operations/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/UVM/blob/main/uvm_verification/cmn_op/tb_cmn_op.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/&#34;&gt;UVM Framework Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/uvm_directory/2024_09_25_14_36_39_uvm_common_operations/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/UVM/blob/main/uvm_verification/cmn_op/tb_cmn_op.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/&#34;&gt;UVM Framework Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;uvm_object&lt;/code&gt; provides a set of predefined methods for common operations.&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -87,13 +87,13 @@
     </item>
     <item>
       <title>UVM Report Object</title>
-      <link>https://24x7fpga.com/uvm_directory/2024_09_23_11_00_17_uvm_report_object/</link>
+      <link>http://localhost:1313/uvm_directory/2024_09_23_11_00_17_uvm_report_object/</link>
       <pubDate>Mon, 23 Sep 2024 11:00:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/uvm_directory/2024_09_23_11_00_17_uvm_report_object/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/UVM/blob/main/uvm_verification/report_object/tb_report_object.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/&#34;&gt;UVM Framework Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/uvm_directory/2024_09_23_11_00_17_uvm_report_object/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/UVM/blob/main/uvm_verification/report_object/tb_report_object.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/&#34;&gt;UVM Framework Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;uvm_report_object&lt;/code&gt; provides an interface to the UVM reporting facility. UVM reporting plays a crucial role in tracking the progress of the testbench, identifying issues, and debugging. It provies a rich set fo message display commands and methods to track and report erros, warnings and information.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/reporting_classes.svg&#34;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/reporting_classes.svg&#34;
          alt=&#34;Figure 1: UVM Reporting Classes&#34;/&gt; &lt;figcaption&gt;
             &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;UVM Reporting Classes&lt;/p&gt;
         &lt;/figcaption&gt;
@@ -103,13 +103,13 @@
     </item>
     <item>
       <title>UVM Base Class Library</title>
-      <link>https://24x7fpga.com/uvm_directory/2024_09_22_09_38_07_uvm_base_class_library/</link>
+      <link>http://localhost:1313/uvm_directory/2024_09_22_09_38_07_uvm_base_class_library/</link>
       <pubDate>Sun, 22 Sep 2024 09:38:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/uvm_directory/2024_09_22_09_38_07_uvm_base_class_library/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/&#34;&gt;UVM Framework Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/uvm_directory/2024_09_22_09_38_07_uvm_base_class_library/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/&#34;&gt;UVM Framework Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The base class library in UVM serve as the building blocks for any testbench and verification environment. These classes provide reusable, modular components that help create a structured and scalable framework, ensuring efficiency and consistency across various test environments.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/uvm_base_class.svg&#34;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/uvm_base_class.svg&#34;
          alt=&#34;Figure 1: UVM Base Class&#34;/&gt; &lt;figcaption&gt;
             &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;UVM Base Class&lt;/p&gt;
         &lt;/figcaption&gt;
@@ -119,13 +119,13 @@
     </item>
     <item>
       <title>UVM Testbench Overview</title>
-      <link>https://24x7fpga.com/uvm_directory/2024_09_22_08_54_25_uvm_testbench_overview/</link>
+      <link>http://localhost:1313/uvm_directory/2024_09_22_08_54_25_uvm_testbench_overview/</link>
       <pubDate>Sun, 22 Sep 2024 08:54:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/uvm_directory/2024_09_22_08_54_25_uvm_testbench_overview/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/&#34;&gt;UVM Framework Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/uvm_directory/2024_09_22_08_54_25_uvm_testbench_overview/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory/&#34;&gt;UVM Framework Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The UVM testbench follows a layered architecture, where each component is dedicated to a specific task and interacts with the rest of the testbench through well-defined interfaces. This design promotes modularity and reusability, making it easier to manage and extend the testbench. Figure 1 illustrates a typical UVM testbench architecture.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/uvm_tb_overview.svg&#34;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/uvm_tb_overview.svg&#34;
          alt=&#34;Figure 1: UVM Testbench Architecture&#34;/&gt; &lt;figcaption&gt;
             &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;UVM Testbench Architecture&lt;/p&gt;
         &lt;/figcaption&gt;
@@ -136,9 +136,9 @@
     </item>
     <item>
       <title>UVM Workflow in Vivado</title>
-      <link>https://24x7fpga.com/uvm_directory/2024_09_04_14_44_52_uvm_workflow_in_vivado/</link>
+      <link>http://localhost:1313/uvm_directory/2024_09_04_14_44_52_uvm_workflow_in_vivado/</link>
       <pubDate>Wed, 04 Sep 2024 14:44:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/uvm_directory/2024_09_04_14_44_52_uvm_workflow_in_vivado/</guid>
+      <guid>http://localhost:1313/uvm_directory/2024_09_04_14_44_52_uvm_workflow_in_vivado/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/UVM&#34;&gt;UVM&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://github.com/24x7fpga/UVM/blob/main/uvm_tcl_script/uvm_run.tcl&#34;&gt;UVM Vivado Script&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://github.com/24x7fpga/PythonScripts/blob/master/uvm_scripts/uvm_run.py&#34;&gt;UVM Python Script&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The UVM (Universal Verification Methodology) workflow is centered around creating a testbench that integrates key UVM components such as drivers, monitors, and scoreboards, alongside the essential UVM library setup. Numerous commercial tools are available for simulating and verifying digital designs, including ModelSim, Cadence Xcelium, Synopsys VCS, Aldec Riviera-PRO, and Vivado Simulator. Another excellent option for experimenting with small-to-medium-sized verification projects is &lt;a href=&#34;https://www.edaplayground.com/&#34;&gt;EDA Playground&lt;/a&gt;. EDA Playground offers the advantage of requiring no installation and provides access to multiple simulators for the design. Personally, I opted to use Vivado Simulator for the UVM verification process, as it seamlessly integrates into my existing workflow.&lt;/p&gt;</description>
     </item>

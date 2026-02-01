@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Sv on Home</title>
-    <link>https://24x7fpga.com/tags/sv/</link>
+    <link>http://localhost:1313/tags/sv/</link>
     <description>Recent content in Sv on Home</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Jan 2025 17:25:00 -0500</lastBuildDate>
-    <atom:link href="https://24x7fpga.com/tags/sv/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/sv/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scheduling Semantics</title>
-      <link>https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/</link>
+      <link>http://localhost:1313/sv_directory/2025_01_14_scheduling_semantics/</link>
       <pubDate>Tue, 14 Jan 2025 17:25:00 -0500</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2025_01_14_scheduling_semantics/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/race_condition&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2025_01_14_scheduling_semantics/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/RTL/tree/master/rtl_designs/race_condition&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
 &lt;p&gt;In digital design, it&amp;rsquo;s crucial to ensure that simulations accurately reflect real-time hardware behavior. Interestingly, there are instances where a design performs flawlessly on hardware but fails during simulation. One common culprit behind such discrepancies is a race condition—an issue that arises due to timing mismatches between design modules and the verification environment. Effectively identifying and resolving race conditions is critical, but it is even more important to strive for and master designs that are inherently free of race conditions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Random Powers of Two</title>
-      <link>https://24x7fpga.com/sv_directory/2025_01_10_random_powers_of_two/</link>
+      <link>http://localhost:1313/sv_directory/2025_01_10_random_powers_of_two/</link>
       <pubDate>Fri, 10 Jan 2025 19:30:00 -0500</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2025_01_10_random_powers_of_two/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SV/tree/main/sv_verification/cstrs_challenges/pwr_two&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/&#34;&gt;Constraint Challenges&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2025_01_10_random_powers_of_two/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SV/tree/main/sv_verification/cstrs_challenges/pwr_two&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_11_12_18_40_22_constraint_challenges/&#34;&gt;Constraint Challenges&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Write a SystemVerilog constraint to generate random numbers that are powers of two. The generated numbers should only include values such as 2, 4, 8, 16, 32, and so on, up to a specified maximum limit. Ensure the constraint restricts randomization to these valid values only and &lt;strong&gt;do not&lt;/strong&gt; use the multiplication operator.&lt;/p&gt;
@@ -31,10 +31,10 @@
     </item>
     <item>
       <title>Cyclic Random Number Without Using Randc</title>
-      <link>https://24x7fpga.com/sv_directory/2025_01_10_cyclic_random_number_without_using_randc/</link>
+      <link>http://localhost:1313/sv_directory/2025_01_10_cyclic_random_number_without_using_randc/</link>
       <pubDate>Fri, 10 Jan 2025 15:45:00 -0500</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2025_01_10_cyclic_random_number_without_using_randc/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SV/tree/main/sv_verification/cstrs_challenges/rand_wo_randc&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/&#34;&gt;Constraint Challenges&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2025_01_10_cyclic_random_number_without_using_randc/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SV/tree/main/sv_verification/cstrs_challenges/rand_wo_randc&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_11_12_18_40_22_constraint_challenges/&#34;&gt;Constraint Challenges&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Generate a sequence of non-repeating random numbers stored in an array. The solution should ensure that each number appears only once and should cover all possible values in the specified range. &lt;strong&gt;Do not&lt;/strong&gt; use the &lt;code&gt;randc&lt;/code&gt; function in SystemVerilog.&lt;/p&gt;
@@ -43,10 +43,10 @@
     </item>
     <item>
       <title>Divide by X</title>
-      <link>https://24x7fpga.com/sv_directory/2024_12_14_divide_by_x/</link>
+      <link>http://localhost:1313/sv_directory/2024_12_14_divide_by_x/</link>
       <pubDate>Sat, 14 Dec 2024 21:47:00 -0500</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_12_14_divide_by_x/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SV/tree/main/sv_verification/cstrs_challenges/div_by_X&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/&#34;&gt;Constraint Challenges&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_12_14_divide_by_x/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SV/tree/main/sv_verification/cstrs_challenges/div_by_X&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_11_12_18_40_22_constraint_challenges/&#34;&gt;Constraint Challenges&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Create a constraint to generate an &lt;code&gt;N-bit&lt;/code&gt; random number that is divisible by a given natural number &lt;code&gt;X&lt;/code&gt;. The value of &lt;code&gt;X&lt;/code&gt; is parameterized, allowing it to be easily changed for different test scenarios.&lt;/p&gt;
@@ -59,10 +59,10 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Generate Diagonal Zeros/Ones</title>
-      <link>https://24x7fpga.com/sv_directory/2024_11_29_21_53_39_generate_diagonal_zeros_ones/</link>
+      <link>http://localhost:1313/sv_directory/2024_11_29_21_53_39_generate_diagonal_zeros_ones/</link>
       <pubDate>Fri, 29 Nov 2024 21:53:00 -0500</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_11_29_21_53_39_generate_diagonal_zeros_ones/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges/diag_zero&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/&#34;&gt;Constraint Challenges&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_11_29_21_53_39_generate_diagonal_zeros_ones/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges/diag_zero&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_11_12_18_40_22_constraint_challenges/&#34;&gt;Constraint Challenges&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Write a constraint to generate an N×N matrix where diagonal elements are set to zeros (or ones), while the rest of the matrix can be filled with either random values or a predefined value.&lt;/p&gt;
@@ -74,9 +74,9 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Design Process for Constraint Challenges</title>
-      <link>https://24x7fpga.com/sv_directory/2024_11_12_19_05_16_design_process_for_constraint_challenges/</link>
+      <link>http://localhost:1313/sv_directory/2024_11_12_19_05_16_design_process_for_constraint_challenges/</link>
       <pubDate>Tue, 12 Nov 2024 19:05:00 -0500</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_11_12_19_05_16_design_process_for_constraint_challenges/</guid>
+      <guid>http://localhost:1313/sv_directory/2024_11_12_19_05_16_design_process_for_constraint_challenges/</guid>
       <description>&lt;p&gt;In digital design, automation is key to streamlining workflows. I developed a Python script that generates the required &lt;code&gt;.sv&lt;/code&gt; files for simulation. This script automates the process of creating all the necessary files for the design, saving time and reducing manual effort. By automatically generating these simulation files, the script helps standardize and expedite the verification process, ensuring consistency and minimizing the chances of human error.&lt;/p&gt;
 &lt;h2 id=&#34;folder-structure&#34;&gt;Folder Structure&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Projects
@@ -103,19 +103,19 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Constraint Challenges</title>
-      <link>https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/</link>
+      <link>http://localhost:1313/sv_directory/2024_11_12_18_40_22_constraint_challenges/</link>
       <pubDate>Tue, 12 Nov 2024 18:40:00 -0500</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_11_12_18_40_22_constraint_challenges/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges&#34;&gt;GitHub&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_11_12_18_40_22_constraint_challenges/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/cstrs_challenges&#34;&gt;GitHub&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Constraints in SystemVerilog play a vital role in verification by enabling robust and efficient generation of test scenarios that thoroughly exercise the design under test (DUT). When designing a verification environment, especially for complex digital designs, simply testing with fixed values isn’t sufficient.&lt;/p&gt;
 &lt;p&gt;Learning constraints in SystemVerilog is crucial for verification because they enable controlled randomization, helping engineers generate targeted, meaningful test cases while covering a wide range of scenarios. Constraints define rules for random values, guiding the testbench to create valid inputs, edge cases, and corner cases, which leads to higher functional coverage without manually scripting every test.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Constraint: In-line and External</title>
-      <link>https://24x7fpga.com/sv_directory/2024_10_22_16_57_37_constraint_in_line_and_external/</link>
+      <link>http://localhost:1313/sv_directory/2024_10_22_16_57_37_constraint_in_line_and_external/</link>
       <pubDate>Tue, 22 Oct 2024 16:57:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_10_22_16_57_37_constraint_in_line_and_external/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/const_in_ln_extn/tb_const_in_ln_extn.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_10_22_16_57_37_constraint_in_line_and_external/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/const_in_ln_extn/tb_const_in_ln_extn.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;in-line-constraint&#34;&gt;In-Line Constraint&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;in-line&lt;/code&gt; constraint allows for applying constraints directly within the &lt;code&gt;randomize()&lt;/code&gt; function call. This makes it easier to define temporary or context-specific constraints without modifying the original constraint block. Additional, &lt;code&gt;with&lt;/code&gt; keyword must be used along with the add-on constraints while calling &lt;code&gt;randomize()&lt;/code&gt; function.&lt;/p&gt;
 &lt;h3 id=&#34;syntax&#34;&gt;Syntax&lt;/h3&gt;
@@ -150,10 +150,10 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Constraint: Weighted Distribution</title>
-      <link>https://24x7fpga.com/sv_directory/2024_10_22_14_42_44_constraint_weighted_distribution/</link>
+      <link>http://localhost:1313/sv_directory/2024_10_22_14_42_44_constraint_weighted_distribution/</link>
       <pubDate>Tue, 22 Oct 2024 14:42:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_10_22_14_42_44_constraint_weighted_distribution/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/const_dist/tb_const_dist.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_10_22_14_42_44_constraint_weighted_distribution/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/const_dist/tb_const_dist.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The weighted distribution constraint is used with the &lt;code&gt;dist&lt;/code&gt; operator to control the probability of specific values being generated during randomization. This is useful when certain values have to appear more or less frequently in a set of random outcomes.&lt;/p&gt;
 &lt;h4 id=&#34;syntax&#34;&gt;Syntax&lt;/h4&gt;
 &lt;p&gt;The &lt;code&gt;dist&lt;/code&gt; keyword is utilized to generated weighted distribution during randomization.&lt;/p&gt;
@@ -167,19 +167,19 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Constraint: Solve-Before</title>
-      <link>https://24x7fpga.com/sv_directory/2024_10_22_13_18_19_constraint_solve_before/</link>
+      <link>http://localhost:1313/sv_directory/2024_10_22_13_18_19_constraint_solve_before/</link>
       <pubDate>Tue, 22 Oct 2024 13:18:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_10_22_13_18_19_constraint_solve_before/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/const_solve_before/tb_const_solve_before.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_10_22_13_18_19_constraint_solve_before/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/const_solve_before/tb_const_solve_before.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;As the name implies, the &lt;code&gt;solve-before&lt;/code&gt; constraint ensures that the specified constraint is resolved prior to any other constraints during randomization. This feature becomes particularly useful when you need to control the order of constraint solving to achieve specific results or meet dependencies within the randomization process for varible ordering&lt;/p&gt;
 &lt;p&gt;In a typical scenario, the constraint solver assigns equal priority to all constraints, meaning that the order in which constraints are resolved is non-deterministic. However, when you require certain variables to be solved in a specific order, the &lt;code&gt;solve-before&lt;/code&gt; constraint gives you finer control by changing the probability of occurrences.This allows you to enforce ordering among variables and manage dependencies effectively, especially in complex verification environments where variable relationships influence the final randomized results.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Constraint: Implication and Equivalence</title>
-      <link>https://24x7fpga.com/sv_directory/2024_10_16_13_50_42_constraint_implication_and_equivalence/</link>
+      <link>http://localhost:1313/sv_directory/2024_10_16_13_50_42_constraint_implication_and_equivalence/</link>
       <pubDate>Wed, 16 Oct 2024 13:50:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_10_16_13_50_42_constraint_implication_and_equivalence/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/const_imply/tb_const_imply.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_10_16_13_50_42_constraint_implication_and_equivalence/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/const_imply/tb_const_imply.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;implication-operator&#34;&gt;Implication Operator&lt;/h3&gt;
 &lt;p&gt;The implication operator &lt;code&gt;-&amp;gt;&lt;/code&gt; is another form of conditional &lt;code&gt;(if)&lt;/code&gt; constraint. Where the antecedent (condition A) is on left hand side of the &lt;code&gt;-&amp;gt;&lt;/code&gt; and consequent (condition B) is on the right hand side of the &lt;code&gt;-&amp;gt;&lt;/code&gt; operator.&lt;/p&gt;
 &lt;h2 id=&#34;d41d8c&#34;&gt;&lt;/h2&gt;
@@ -192,18 +192,18 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Constraint: Bidirectional and Conditional</title>
-      <link>https://24x7fpga.com/sv_directory/2024_10_16_11_12_51_constraint_bidirectional_and_conditional/</link>
+      <link>http://localhost:1313/sv_directory/2024_10_16_11_12_51_constraint_bidirectional_and_conditional/</link>
       <pubDate>Wed, 16 Oct 2024 11:12:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_10_16_11_12_51_constraint_bidirectional_and_conditional/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/const_bidir_cond/tb_const_bidir_cond.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_10_16_11_12_51_constraint_bidirectional_and_conditional/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/const_bidir_cond/tb_const_bidir_cond.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The code inside a &lt;code&gt;constraint&lt;/code&gt; block does not execute sequentially. This allows multiple conditions to be declared within the same block without any specific order and all the conditions will be checked. One key feature of SystemVerilog constraints is their bidirectional nature—the solver evaluates both sides of an expression to satisfy the constraints. Moreover, conditional statements such as &lt;code&gt;if-else&lt;/code&gt; are supported within constraint blocks. These statements enable expressions to become active or inactive based on specific conditions, providing flexibility in complex scenarios.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Constraint: Array Randomization</title>
-      <link>https://24x7fpga.com/sv_directory/2024_10_15_17_48_30_constraint_array_randomization/</link>
+      <link>http://localhost:1313/sv_directory/2024_10_15_17_48_30_constraint_array_randomization/</link>
       <pubDate>Tue, 15 Oct 2024 17:48:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_10_15_17_48_30_constraint_array_randomization/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/const_arr_rand/tb_const_arr_rand.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_10_15_17_48_30_constraint_array_randomization/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/const_arr_rand/tb_const_arr_rand.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;unique&lt;/code&gt; keyword ensures that variables or elements within an array have unique values. This can be applied to fixed arrays, associative arrays, dynamic arrays, or queues, making it useful for scenarios where duplication of values is not allowed.&lt;/p&gt;
 &lt;h4 id=&#34;syntax&#34;&gt;Syntax&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-verilog&#34; data-lang=&#34;verilog&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rand &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; arr[&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;];
@@ -213,10 +213,10 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Constraint: Inside Operator</title>
-      <link>https://24x7fpga.com/sv_directory/2024_10_15_15_54_33_constraint_inside_operator/</link>
+      <link>http://localhost:1313/sv_directory/2024_10_15_15_54_33_constraint_inside_operator/</link>
       <pubDate>Tue, 15 Oct 2024 15:54:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_10_15_15_54_33_constraint_inside_operator/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/const_inside_op/tb_const_inside_op.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_10_15_15_54_33_constraint_inside_operator/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/const_inside_op/tb_const_inside_op.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;inside&lt;/code&gt; operator lets you create sets of values from which a variable can randomly be selected. By default, all values are chosen with equal probability, unless other constraints are applied. You can also include variables in these sets to make the randomization more dynamic.&lt;/p&gt;
 &lt;h4 id=&#34;syntax&#34;&gt;Syntax&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-verilog&#34; data-lang=&#34;verilog&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rand &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; rn;
@@ -259,10 +259,10 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Constraint Randomization</title>
-      <link>https://24x7fpga.com/sv_directory/2024_10_15_12_53_31_constraint_randomization/</link>
+      <link>http://localhost:1313/sv_directory/2024_10_15_12_53_31_constraint_randomization/</link>
       <pubDate>Tue, 15 Oct 2024 12:53:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_10_15_12_53_31_constraint_randomization/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_10_15_12_53_31_constraint_randomization/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;In SystemVerilog, &lt;code&gt;constraints&lt;/code&gt; are expressions that must be satisfied by the constraint solver during randomization. These constraints guide the solver to generate valid random values that meet the desired conditions.&lt;/p&gt;
 &lt;h4 id=&#34;syntax&#34;&gt;Syntax&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-verilog&#34; data-lang=&#34;verilog&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;constraint &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;constraint_name&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; {condition &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; condition &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;; .... condition N}
@@ -271,10 +271,10 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>rand and randc</title>
-      <link>https://24x7fpga.com/sv_directory/2024_10_15_12_34_46_rand_and_randc/</link>
+      <link>http://localhost:1313/sv_directory/2024_10_15_12_34_46_rand_and_randc/</link>
       <pubDate>Tue, 15 Oct 2024 12:34:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_10_15_12_34_46_rand_and_randc/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/rand_randc/tb_rand_randc.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_10_15_12_34_46_rand_and_randc/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/rand_randc/tb_rand_randc.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;rand&lt;/code&gt; and &lt;code&gt;randc&lt;/code&gt; keywords are used to randomize class objects.&lt;/p&gt;
 &lt;h2 id=&#34;rand&#34;&gt;rand&lt;/h2&gt;
 &lt;ul&gt;
@@ -292,10 +292,10 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>$urandom and $urandom_range</title>
-      <link>https://24x7fpga.com/sv_directory/2024_10_15_12_10_22_urandom_and_urandom_range/</link>
+      <link>http://localhost:1313/sv_directory/2024_10_15_12_10_22_urandom_and_urandom_range/</link>
       <pubDate>Tue, 15 Oct 2024 12:10:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_10_15_12_10_22_urandom_and_urandom_range/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_10_15_12_10_22_urandom_and_urandom_range/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;In SystemVerilog, &lt;code&gt;$urandom&lt;/code&gt; and &lt;code&gt;$urandom_range&lt;/code&gt; are system functions used to generate pseudo-random integers. It’s especially useful in testbenches and verification environments where randomization is essential to stimulate various input scenarios for DUT (Design Under Test).&lt;/p&gt;
 &lt;h2 id=&#34;urandom&#34;&gt;$urandom&lt;/h2&gt;
 &lt;ul&gt;
@@ -323,13 +323,13 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>SV Testbench Overview</title>
-      <link>https://24x7fpga.com/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/</link>
+      <link>http://localhost:1313/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/</link>
       <pubDate>Sat, 05 Oct 2024 21:56:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/half_adder&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_10_05_21_56_25_sv_testbench_overview/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification/half_adder&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;A layered testbench is a modular verification environment where the components are divided into specific layers, with each layer responsible for a distinct task. This structured approach ensures better organization, reusability, and scalability, making it easier to manage complex verification environments. The typical components of a SystemVerilog testbench are illustrated in Figure 1.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/sv_testbench_overview.svg&#34;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/sv_testbench_overview.svg&#34;
          alt=&#34;Figure 1: Testbench Environment&#34;/&gt; &lt;figcaption&gt;
             &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;Testbench Environment&lt;/p&gt;
         &lt;/figcaption&gt;
@@ -339,19 +339,19 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>SV Verification Workflow in Vivado</title>
-      <link>https://24x7fpga.com/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/</link>
+      <link>http://localhost:1313/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/</link>
       <pubDate>Sat, 05 Oct 2024 18:24:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/</guid>
+      <guid>http://localhost:1313/sv_directory/2024_10_05_18_24_35_sv_verification_workflow_in_vivado/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification&#34;&gt;SystemVerilog&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_tcl_script/sv_run.tcl&#34;&gt;SV Vivado Script&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://github.com/24x7fpga/PythonScripts/tree/master/sv_scripts&#34;&gt;SV Python Script&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;SystemVerilog was introduced to simplify the verification process by incorporating software features like Object-Oriented Programming (OOP). It significantly enhances testbench development, making the verification of complex designs more manageable. For those looking to experiment with different tools, &lt;a href=&#34;https://www.edaplayground.com/&#34;&gt;EDA Playground&lt;/a&gt; offers a convenient platform to perform verification using a variety of commercial simulators, such as Cadence Xcelium, Synopsys VCS, and Aldec Riviera-PRO.&lt;/p&gt;
 &lt;p&gt;In my own workflow, I prefer using Vivado Simulator, as it integrates seamlessly with my design flow. Vivado installation guide can be found &lt;a href=&#34;https://24x7fpga.com/rtl_directory/2024_07_28_10_50_56_vivado_installation/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clocking Block</title>
-      <link>https://24x7fpga.com/sv_directory/2024_08_08_13_51_50_clocking_block/</link>
+      <link>http://localhost:1313/sv_directory/2024_08_08_13_51_50_clocking_block/</link>
       <pubDate>Thu, 08 Aug 2024 13:51:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_08_08_13_51_50_clocking_block/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_08_08_13_51_50_clocking_block/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;clocking-block&#34;&gt;Clocking Block&lt;/h2&gt;
 &lt;p&gt;Clocking block in a testbench is implemented to manage timing relationship and synchronization for a group signals. t provides a clear and organized way to define the clocking events, control the sampling and driving of signals, and synchronize operation.&lt;/p&gt;
 &lt;ul&gt;
@@ -363,10 +363,10 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Interface</title>
-      <link>https://24x7fpga.com/sv_directory/2024_08_08_10_27_00_interface/</link>
+      <link>http://localhost:1313/sv_directory/2024_08_08_10_27_00_interface/</link>
       <pubDate>Thu, 08 Aug 2024 10:27:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_08_08_10_27_00_interface/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_08_08_10_27_00_interface/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;interface&#34;&gt;Interface&lt;/h2&gt;
 &lt;p&gt;Interface in SystemVerilog is a construct that bundles all the signals together or group related to signals so that they can be shared among multiple modules in the verification environment. This simplifies the connection between modules, improves code readability, and reduces the likelihood of errors in complex designs.&lt;/p&gt;
 &lt;h4 id=&#34;syntax&#34;&gt;Syntax&lt;/h4&gt;
@@ -386,10 +386,10 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Modport</title>
-      <link>https://24x7fpga.com/sv_directory/2024_08_08_10_17_52_modport/</link>
+      <link>http://localhost:1313/sv_directory/2024_08_08_10_17_52_modport/</link>
       <pubDate>Thu, 08 Aug 2024 10:17:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_08_08_10_17_52_modport/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_08_08_10_17_52_modport/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;modport&#34;&gt;Modport&lt;/h2&gt;
 &lt;p&gt;The modport construct within an interface module is used to group signals and specify their directionality. By assigning port directions, modport enforces access control, restricting signals to specific roles and clearly defining their intended function within the interface.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;modport&lt;/strong&gt; keyword is employed to establish these signal definitions within an interface.&lt;/p&gt;
@@ -405,45 +405,45 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Semaphore</title>
-      <link>https://24x7fpga.com/sv_directory/2024_08_06_12_53_53_semaphore/</link>
+      <link>http://localhost:1313/sv_directory/2024_08_06_12_53_53_semaphore/</link>
       <pubDate>Tue, 06 Aug 2024 12:53:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_08_06_12_53_53_semaphore/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_08_06_12_53_53_semaphore/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/&#34;&gt;Events&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/&#34;&gt;Mailbox&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_08_06_12_53_53_semaphore/&#34;&gt;Semaphore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_31_17_20_12_events/&#34;&gt;Events&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_08_06_10_48_02_mailbox/&#34;&gt;Mailbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_08_06_12_53_53_semaphore/&#34;&gt;Semaphore&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;semaphore&#34;&gt;Semaphore&lt;/h2&gt;
 &lt;p&gt;A semaphore in SystemVerilog is a &lt;strong&gt;built-in&lt;/strong&gt; class used for synchronization. It acts as a container holding a fixed number of keys, which regulate access to shared memory resources. Semaphores are specifically designed to manage and control concurrent access, ensuring that multiple processes can safely interact with shared resources without conflicts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mailbox</title>
-      <link>https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/</link>
+      <link>http://localhost:1313/sv_directory/2024_08_06_10_48_02_mailbox/</link>
       <pubDate>Tue, 06 Aug 2024 10:48:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_08_06_10_48_02_mailbox/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/&#34;&gt;Events&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/&#34;&gt;Mailbox&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_08_06_12_53_53_semaphore/&#34;&gt;Semaphore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_31_17_20_12_events/&#34;&gt;Events&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_08_06_10_48_02_mailbox/&#34;&gt;Mailbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_08_06_12_53_53_semaphore/&#34;&gt;Semaphore&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;mailbox&#34;&gt;Mailbox&lt;/h2&gt;
 &lt;p&gt;A mailbox serves as a synchronization primitive utilized for exchanging data between processes within a testbench. This data, referred to as a message, is managed through the mailbox primitive. A process intending to send data places (&lt;strong&gt;puts&lt;/strong&gt;) the message into the mailbox, where it is temporarily stored in system-defined memory. The receiving process then retrieves (&lt;strong&gt;gets&lt;/strong&gt;) the message from the mailbox. This mechanism facilitates efficient and orderly communication between concurrent processes in a verification environment.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Events</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_31_17_20_12_events/</link>
       <pubDate>Wed, 31 Jul 2024 17:20:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_31_17_20_12_events/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Interprocess communication is a way to communicate between different processes and testbench components. There are three mechanisms:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_31_17_20_12_events/&#34;&gt;Events&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_08_06_10_48_02_mailbox/&#34;&gt;Mailbox&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_08_06_12_53_53_semaphore/&#34;&gt;Semaphore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_31_17_20_12_events/&#34;&gt;Events&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_08_06_10_48_02_mailbox/&#34;&gt;Mailbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_08_06_12_53_53_semaphore/&#34;&gt;Semaphore&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;events&#34;&gt;Events&lt;/h2&gt;
 &lt;p&gt;Events are static objects in SystemVerilog, used to synchronize different testbench components. The events are triggered using &lt;strong&gt;-&amp;gt;&lt;/strong&gt; or &lt;strong&gt;-&amp;gt;&amp;gt;&lt;/strong&gt; and the process can wait for the event to be triggered using  &lt;strong&gt;&lt;strong&gt;@&lt;/strong&gt;&lt;/strong&gt; operator or &lt;strong&gt;wait()&lt;/strong&gt; construct.&lt;/p&gt;
@@ -477,10 +477,10 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Encapsulation</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_31_16_19_14_encapsulation/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_31_16_19_14_encapsulation/</link>
       <pubDate>Wed, 31 Jul 2024 16:19:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_31_16_19_14_encapsulation/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_31_16_19_14_encapsulation/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;encapsulation&#34;&gt;Encapsulation&lt;/h2&gt;
 &lt;p&gt;Encapsulation is a technique used to restrict access to the data and methods within a class, ensuring that internal class details are not accessible from outside the class.&lt;/p&gt;
 &lt;h3 id=&#34;access-specifiers&#34;&gt;Access Specifiers&lt;/h3&gt;
@@ -506,15 +506,15 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Polymorphism</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_31_10_26_49_polymorphism/</link>
       <pubDate>Wed, 31 Jul 2024 10:26:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_31_10_26_49_polymorphism/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/polymorphism/tb_polymorphism.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_31_10_26_49_polymorphism/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/polymorphism/tb_polymorphism.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;polymorphism&#34;&gt;Polymorphism&lt;/h2&gt;
 &lt;p&gt;As the term &amp;lsquo;polymorphism&amp;rsquo; implies, &amp;lsquo;poly&amp;rsquo; means &amp;lsquo;many&amp;rsquo; and &amp;lsquo;morph&amp;rsquo; means &amp;lsquo;form&amp;rsquo; or &amp;lsquo;shape&amp;rsquo;. A base class handle can invoke methods of its child class which has the same name. Hence, an object can take many forms.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;An extended class object can be assigned to the base class but not the other way round.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_31_10_21_04_virtual_keyword/&#34;&gt;Virtual Keyword&lt;/a&gt; should be used in parent class to override the method by the child class.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_31_10_21_04_virtual_keyword/&#34;&gt;Virtual Keyword&lt;/a&gt; should be used in parent class to override the method by the child class.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;example-code&#34;&gt;Example Code&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-verilog&#34; data-lang=&#34;verilog&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Parent class
@@ -579,10 +579,10 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Virtual Keyword</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_31_10_21_04_virtual_keyword/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_31_10_21_04_virtual_keyword/</link>
       <pubDate>Wed, 31 Jul 2024 10:21:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_31_10_21_04_virtual_keyword/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/virtual_keyword/tb_virtual_keyword.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_31_10_21_04_virtual_keyword/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/virtual_keyword/tb_virtual_keyword.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;virtual-keyword&#34;&gt;Virtual Keyword&lt;/h2&gt;
 &lt;p&gt;Virtual keyword enables a child class to override a method defined in its parent class. When a &lt;strong&gt;virtual&lt;/strong&gt; keyword is prefixed before a method in the parent class and if the base class handle is pointed to the extended class, then the extended class method handle will get assigned to the base class handle.&lt;/p&gt;
 &lt;ul&gt;
@@ -604,10 +604,10 @@ NUM \quad \% \quad X == 0
     </item>
     <item>
       <title>Super Keyword</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_29_12_16_52_super_keyword/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_29_12_16_52_super_keyword/</link>
       <pubDate>Mon, 29 Jul 2024 12:16:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_29_12_16_52_super_keyword/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/super_keyword/tb_super_keyword.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_29_12_16_52_super_keyword/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/super_keyword/tb_super_keyword.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;super-keyword&#34;&gt;Super Keyword&lt;/h2&gt;
 &lt;p&gt;The &lt;strong&gt;super&lt;/strong&gt; keyword is useful for accessing the properties and methods of a parent class without needing to declare a parent class handle. It consistently refers to the immediate parent class.&lt;/p&gt;
 &lt;ul&gt;
@@ -623,10 +623,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Inheritance</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_29_11_09_50_inheritance/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_29_11_09_50_inheritance/</link>
       <pubDate>Mon, 29 Jul 2024 11:09:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_29_11_09_50_inheritance/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/inheritance/tb_inheritance.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_29_11_09_50_inheritance/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/inheritance/tb_inheritance.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;inheritance&#34;&gt;Inheritance&lt;/h2&gt;
 &lt;p&gt;Inheritance allows a new class to inherit properties and methods from an existing class.&lt;/p&gt;
 &lt;ul&gt;
@@ -641,14 +641,14 @@ explicitly.&lt;/p&gt;
 &lt;li&gt;Provides over riding of parent class from the child class.&lt;/li&gt;
 &lt;li&gt;Improves modularity of the code.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Note: to overide the parent class properties and methods, the child class should have the same name for class properties and methods. To access the parent class method or properties use &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_29_12_16_52_super_keyword/&#34;&gt;Super Keyword&lt;/a&gt; or create a handle for parent class.&lt;/p&gt;</description>
+&lt;p&gt;Note: to overide the parent class properties and methods, the child class should have the same name for class properties and methods. To access the parent class method or properties use &lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_29_12_16_52_super_keyword/&#34;&gt;Super Keyword&lt;/a&gt; or create a handle for parent class.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Four Pillars of OOP</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/</link>
       <pubDate>Mon, 29 Jul 2024 10:30:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_29_10_30_53_four_pillars_of_oop/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;four-pillars-of-oop&#34;&gt;Four Pillars of OOP&lt;/h2&gt;
 &lt;p&gt;The are four pillars of Object-Oriented Programming (OOP) are:&lt;/p&gt;
 &lt;ol&gt;
@@ -664,10 +664,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Shallow Copy and Deep Copy</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</link>
       <pubDate>Fri, 26 Jul 2024 09:41:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_26_09_41_22_shallow_copy_and_deep_copy/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;shallow-copy-and-deep-copy&#34;&gt;Shallow Copy and Deep Copy&lt;/h2&gt;
 &lt;p&gt;SystemVerilog provides two means of copying or duplicating objects to keep a method from modifying the original. The two methods are shallow copy and deep copy, and understanding these methods is crucial for effective memory management.&lt;/p&gt;
 &lt;h3 id=&#34;shallow-copy&#34;&gt;Shallow Copy&lt;/h3&gt;
@@ -675,28 +675,28 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Static Class Properties and Methods</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/</link>
       <pubDate>Thu, 25 Jul 2024 14:51:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_25_14_51_44_static_class_properties_and_methods/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;static-class-properties-and-methods&#34;&gt;Static Class Properties and Methods&lt;/h2&gt;
-&lt;p&gt;Every object has its own local variables that are not shared with any other object. When two objects of Ex_class &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_24_16_47_44_class/&#34;&gt;Class&lt;/a&gt; is created, each object with have its own class properties(variables). In certain instances, a specific variable is required to be shared by all objects of a certain type. Declaring a global variable will make the variable visible to the entire testbench. With the OOP, a static variable can be created inside a class. This variable is shared amongst all the instances of the class.&lt;/p&gt;</description>
+&lt;p&gt;Every object has its own local variables that are not shared with any other object. When two objects of Ex_class &lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_24_16_47_44_class/&#34;&gt;Class&lt;/a&gt; is created, each object with have its own class properties(variables). In certain instances, a specific variable is required to be shared by all objects of a certain type. Declaring a global variable will make the variable visible to the entire testbench. With the OOP, a static variable can be created inside a class. This variable is shared amongst all the instances of the class.&lt;/p&gt;</description>
     </item>
     <item>
       <title>This Keyword</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_25_14_49_57_this_keyword/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_25_14_49_57_this_keyword/</link>
       <pubDate>Thu, 25 Jul 2024 14:49:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_25_14_49_57_this_keyword/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/this_keyword/tb_this_keyword.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_25_14_49_57_this_keyword/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/this_keyword/tb_this_keyword.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;this-keyword&#34;&gt;This Keyword&lt;/h2&gt;
 &lt;p&gt;In SystemVerilog, &lt;strong&gt;this&lt;/strong&gt; keyword is used within a class to refer to the current instance of that class. It is a way to access the members (attributes and methods) of the current object from within the object&amp;rsquo;s methods. This is particularly useful to distinguish between class attributes and parameters or local variables with the same name. When a variable is declared, SystemVerilog looks in the current scope for it and then in the parent scope until the variable is found. The &lt;strong&gt;this&lt;/strong&gt; keyword is a way of keeping the search within the class type, skipping variables declared within the method as well as anything outside the class type hierarchy. It should only be used in non-static class methods.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Method</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_25_12_36_42_method/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_25_12_36_42_method/</link>
       <pubDate>Thu, 25 Jul 2024 12:36:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_25_12_36_42_method/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_25_12_36_42_method/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;class-methods&#34;&gt;Class Methods&lt;/h2&gt;
 &lt;p&gt;A class method is a task or a function defined inside the scope of the class. A method in a class uses &lt;strong&gt;automatic&lt;/strong&gt; storage by default.&lt;/p&gt;
 &lt;h4 id=&#34;example-method-in-a-class&#34;&gt;Example: &lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/ex_class/tb_ex_class.sv&#34;&gt;Method in a Class&lt;/a&gt;&lt;/h4&gt;
@@ -716,12 +716,12 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Handle</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_24_22_09_00_handle/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_24_22_09_00_handle/</link>
       <pubDate>Wed, 24 Jul 2024 22:09:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_24_22_09_00_handle/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_24_22_09_00_handle/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;handle&#34;&gt;Handle&lt;/h2&gt;
-&lt;p&gt;A handle is a pointer to an object created from a &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_24_16_47_44_class/&#34;&gt;Class&lt;/a&gt;. Handles are crucial in dynamically creating and managing &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_24_17_42_06_object/&#34;&gt;Object&lt;/a&gt;s during simulation.&lt;/p&gt;
+&lt;p&gt;A handle is a pointer to an object created from a &lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_24_16_47_44_class/&#34;&gt;Class&lt;/a&gt;. Handles are crucial in dynamically creating and managing &lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_24_17_42_06_object/&#34;&gt;Object&lt;/a&gt;s during simulation.&lt;/p&gt;
 &lt;h3 id=&#34;syntax-handle&#34;&gt;Syntax: Handle&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-verilog&#34; data-lang=&#34;verilog&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Ex_class cl_obj;    &lt;span style=&#34;color:#75715e&#34;&gt;// declare a handle
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;cl_obj &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; new();     &lt;span style=&#34;color:#75715e&#34;&gt;// allocate a Ex_class object
@@ -730,10 +730,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Object</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_24_17_42_06_object/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_24_17_42_06_object/</link>
       <pubDate>Wed, 24 Jul 2024 17:42:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_24_17_42_06_object/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/ex_class/tb_ex_class.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_24_17_42_06_object/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/ex_class/tb_ex_class.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;object&#34;&gt;Object&lt;/h2&gt;
 &lt;p&gt;An object is an instance of a class. It is similar to the instantiation of a module in Verilog, but there are some differences which as listed in the table below:&lt;/p&gt;
 &lt;table&gt;
@@ -758,10 +758,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Class</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_24_16_47_44_class/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_24_16_47_44_class/</link>
       <pubDate>Wed, 24 Jul 2024 16:47:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_24_16_47_44_class/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/ex_class/tb_ex_class.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_24_16_47_44_class/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/ex_class/tb_ex_class.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;class&#34;&gt;Class&lt;/h2&gt;
 &lt;p&gt;A class is a user-defined data type that serves as a blue-print for creating objects. A class includes properties(variables) and methods(functions and tasks) that manipulate data.&lt;/p&gt;
 &lt;h4 id=&#34;example-class&#34;&gt;Example: Class&lt;/h4&gt;
@@ -781,10 +781,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Object-Oriented Programming</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_24_15_11_27_object_oriented_programming/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_24_15_11_27_object_oriented_programming/</link>
       <pubDate>Wed, 24 Jul 2024 15:11:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_24_15_11_27_object_oriented_programming/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_24_15_11_27_object_oriented_programming/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;object-oriented-programming&#34;&gt;Object-Oriented Programming&lt;/h2&gt;
 &lt;p&gt;Object-oriented Programming(OOP) language model for software design that revolves around objects or data instead of logic and functions. It focuses on what the developers want to manipulate rather than how they manipulate them. This approach is well suited for large, complex, and actively updated and maintained.&lt;/p&gt;
 &lt;h3 id=&#34;oop-for-verification&#34;&gt;OOP for Verification&lt;/h3&gt;
@@ -792,10 +792,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Disable Fork</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_23_17_27_50_disable_fork/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_23_17_27_50_disable_fork/</link>
       <pubDate>Tue, 23 Jul 2024 17:27:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_23_17_27_50_disable_fork/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/fork_join_disable/tb_fork_join_disable.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_23_17_27_50_disable_fork/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/fork_join_disable/tb_fork_join_disable.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;disable-fork&#34;&gt;Disable Fork&lt;/h2&gt;
 &lt;p&gt;The disable fork contruct will terminate all outstanding or active processes when it is executed.&lt;/p&gt;
 &lt;h4 id=&#34;syntax-disable-fork&#34;&gt;Syntax: Disable Fork&lt;/h4&gt;
@@ -833,10 +833,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Wait Fork</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_23_17_27_07_wait_fork/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_23_17_27_07_wait_fork/</link>
       <pubDate>Tue, 23 Jul 2024 17:27:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_23_17_27_07_wait_fork/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/fork_join_wait/tb_fork_join_wait.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_23_17_27_07_wait_fork/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/fork_join_wait/tb_fork_join_wait.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;wait-fork&#34;&gt;Wait Fork&lt;/h2&gt;
 &lt;p&gt;The wait fork statement is used to wait until all the forked processes is completed.&lt;/p&gt;
 &lt;h4 id=&#34;syntax-wait-fork&#34;&gt;Syntax: Wait Fork&lt;/h4&gt;
@@ -874,14 +874,14 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Fork Join None</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_20_22_11_00_fork_join_none/</link>
       <pubDate>Sat, 20 Jul 2024 22:11:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_20_22_11_00_fork_join_none/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_20_22_11_00_fork_join_none/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;fork-join-none&#34;&gt;Fork Join None&lt;/h2&gt;
 &lt;p&gt;As the name suggests, the process in the fork will start and does not wait till it completes any of the threads. The figure below depicts the fork join none constructs.&lt;/p&gt;
 &lt;figure class=&#34;center !important&#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/fork_join_none.svg&#34; width=&#34;400px&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/fork_join_none.svg&#34; width=&#34;400px&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;h4 id=&#34;syntax-fork-join-none&#34;&gt;Syntax: Fork Join None&lt;/h4&gt;
@@ -917,15 +917,15 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Fork Join Any</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_20_21_58_50_fork_join_any/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_20_21_58_50_fork_join_any/</link>
       <pubDate>Sat, 20 Jul 2024 21:58:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_20_21_58_50_fork_join_any/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/fork_join_any/tb_fork_join_any.sv&#34;&gt;Source&lt;/a&gt;&amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_20_21_58_50_fork_join_any/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/fork_join_any/tb_fork_join_any.sv&#34;&gt;Source&lt;/a&gt;&amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;fork-join-any&#34;&gt;Fork Join Any&lt;/h2&gt;
-&lt;p&gt;Fork join any construct is similar to &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_20_21_47_05_fork_join/&#34;&gt;Fork Join&lt;/a&gt; but the simulation process does not wait till all the threads are completed. It proceeds to the next execution statement as soon as any one of the threads completes the process.&lt;/p&gt;
+&lt;p&gt;Fork join any construct is similar to &lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_20_21_47_05_fork_join/&#34;&gt;Fork Join&lt;/a&gt; but the simulation process does not wait till all the threads are completed. It proceeds to the next execution statement as soon as any one of the threads completes the process.&lt;/p&gt;
 &lt;p&gt;Fork join any is depicted in the figure below.&lt;/p&gt;
 &lt;figure class=&#34;center !important&#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/fork_join_any.svg&#34; width=&#34;400px&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/fork_join_any.svg&#34; width=&#34;400px&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;h4 id=&#34;syntax-fork-join-any&#34;&gt;Syntax: Fork Join Any&lt;/h4&gt;
@@ -961,19 +961,19 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Fork Join</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_20_21_47_05_fork_join/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_20_21_47_05_fork_join/</link>
       <pubDate>Sat, 20 Jul 2024 21:47:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_20_21_47_05_fork_join/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/fork_join/tb_fork_join.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_20_21_47_05_fork_join/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/fork_join/tb_fork_join.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;fork-join&#34;&gt;Fork Join&lt;/h2&gt;
 &lt;p&gt;A thread or a process is a block of code that execute sequentially. They are created using constructs like initial blocks, always blocks, and tasks. In verification there are multiple components, such as generator, driver, monitor, etc, these components have multiple threads that need to run concurrently, allowing for parallel execution of different parts of the simulation. The fork-join construct is created to run multiple procedural threads to run in parallel. Once the fork starts to execute the threads, it will wait until all the threads are completed to proceed with the execution.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Functions</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_20_15_36_43_functions/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_20_15_36_43_functions/</link>
       <pubDate>Sat, 20 Jul 2024 15:36:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_20_15_36_43_functions/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/function_ex/tb_function_ex.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_20_15_36_43_functions/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/function_ex/tb_function_ex.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;functions&#34;&gt;Functions&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;A function must return a value.&lt;/li&gt;
@@ -1011,10 +1011,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Tasks</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_19_15_48_23_tasks/</link>
       <pubDate>Fri, 19 Jul 2024 15:48:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_19_15_48_23_tasks/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_19_15_48_23_tasks/&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;tasks&#34;&gt;Tasks&lt;/h2&gt;
 &lt;p&gt;Task in SystemVerilog is a procedural block that contains a block of code that can be reused. Unlike [Functions], tasks can contain simulation time. The default port direction is &amp;ldquo;input&amp;rdquo; unless declared as other types. The default data type of the ports is of &amp;ldquo;logic&amp;rdquo; type unless specified. A task does not need to have a &amp;ldquo;begin &amp;hellip; end&amp;rdquo; statement.&lt;/p&gt;
 &lt;h4 id=&#34;syntax&#34;&gt;Syntax&lt;/h4&gt;
@@ -1048,10 +1048,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Break and Continue</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_19_15_18_41_break_and_continue/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_19_15_18_41_break_and_continue/</link>
       <pubDate>Fri, 19 Jul 2024 15:18:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_19_15_18_41_break_and_continue/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_19_15_18_41_break_and_continue/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;break-and-continue&#34;&gt;Break and Continue&lt;/h2&gt;
 &lt;p&gt;Break and continue in SytemVerilog is used to control the loops. When a &amp;ldquo;break&amp;rdquo; statement is encounted, the loop is terminated and control moves to outside of the loop. Whereas, when a &amp;ldquo;continue&amp;rdquo; statement is encounted, the consecutive blocks of code is skipped and the control is moved to the next loop iteration value.&lt;/p&gt;
 &lt;h4 id=&#34;example-code-break-and-continue&#34;&gt;Example Code: Break and Continue&lt;/h4&gt;
@@ -1079,10 +1079,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Repeat and Forever</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_19_14_46_31_repeat_and_forever/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_19_14_46_31_repeat_and_forever/</link>
       <pubDate>Fri, 19 Jul 2024 14:46:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_19_14_46_31_repeat_and_forever/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_19_14_46_31_repeat_and_forever/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;repeat-and-forever-loops&#34;&gt;Repeat and Forever Loops&lt;/h2&gt;
 &lt;p&gt;The &amp;ldquo;repeat&amp;rdquo; and &amp;ldquo;forever&amp;rdquo; loops are another looping constructs available constructs in SystemVerilog, to execute a loop of code for a specific number of times or indefinitely. These loops are especially useful in testbenches and design verification when you need controlled or infinite iterations.&lt;/p&gt;
 &lt;h3 id=&#34;repeat&#34;&gt;Repeat&lt;/h3&gt;
@@ -1090,10 +1090,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>While and Do While Loops</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</link>
       <pubDate>Fri, 19 Jul 2024 14:21:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_19_14_21_47_while_and_do_while_loops/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;while-and-do-while&#34;&gt;While and Do While&lt;/h2&gt;
 &lt;p&gt;While and do while loops are used for iterative control structures that execute a block of code multiple times based on a condition. These loops are particularly useful when the number of iterations is not known beforehand and depends on the evaluation of the loop condition.&lt;/p&gt;
 &lt;h3 id=&#34;while-loop&#34;&gt;While Loop&lt;/h3&gt;
@@ -1101,10 +1101,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>For and Foreach Loops</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</link>
       <pubDate>Fri, 19 Jul 2024 12:40:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_19_12_40_49_for_and_foreach_loops/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/tree/main/sv_verification&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;for-and-foreach-loops&#34;&gt;For and Foreach Loops&lt;/h2&gt;
 &lt;p&gt;Loops are essential constructs to repeat a block of code for a specified amount of time. SystemVerilog provides two constructs to itreate over a range of elements and they are &amp;ldquo;for&amp;rdquo; loop and &amp;ldquo;foreach&amp;rdquo; loop.&lt;/p&gt;
 &lt;h3 id=&#34;for-loop&#34;&gt;For Loop&lt;/h3&gt;
@@ -1112,30 +1112,30 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Dynamic Cast</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_02_18_41_56_dynamic_cast/</link>
       <pubDate>Tue, 02 Jul 2024 18:41:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/dynamic_cast/tb_dynamic_cast.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_02_18_41_56_dynamic_cast/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/dynamic_cast/tb_dynamic_cast.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;dynamic-cast&#34;&gt;Dynamic Cast&lt;/h2&gt;
 &lt;p&gt;Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/&#34;&gt;Static Cast&lt;/a&gt;ing&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/&#34;&gt;Dynamic Cast&lt;/a&gt;ing&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_02_18_32_19_static_cast/&#34;&gt;Static Cast&lt;/a&gt;ing&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_02_18_41_56_dynamic_cast/&#34;&gt;Dynamic Cast&lt;/a&gt;ing&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;dynamic-casting&#34;&gt;Dynamic Casting&lt;/h3&gt;
 &lt;p&gt;Dynamic casting in SystemVerilog allows you to safely convert a handle of one class type to another class type at runtime, ensuring the cast is valid and the object is of the target type. The dynamic cast, $cast, allows you to check for out-of-bounds values. Use dynamic cast when converting from a type with a large number of values than the destination, such as int to an enumerated variables.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Static Cast</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_02_18_32_19_static_cast/</link>
       <pubDate>Tue, 02 Jul 2024 18:32:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/type_enum/tb_type_enum.sv&#34;&gt;Source&lt;/a&gt;  &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_02_18_32_19_static_cast/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/type_enum/tb_type_enum.sv&#34;&gt;Source&lt;/a&gt;  &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;static-cast&#34;&gt;Static Cast&lt;/h2&gt;
 &lt;p&gt;Casting refers to conversion of a variable to one data type to another data type. SystemVerilog provides two types of casting,&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_02_18_32_19_static_cast/&#34;&gt;Static Cast&lt;/a&gt;ing&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_07_02_18_41_56_dynamic_cast/&#34;&gt;Dynamic Cast&lt;/a&gt;ing&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_02_18_32_19_static_cast/&#34;&gt;Static Cast&lt;/a&gt;ing&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_07_02_18_41_56_dynamic_cast/&#34;&gt;Dynamic Cast&lt;/a&gt;ing&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;static-casting&#34;&gt;Static Casting&lt;/h3&gt;
 &lt;p&gt;Static casting converts one data type to another compartible datatypes, as the name suggest, the conversion data type is fixed. The cast (&amp;rsquo;) operator should be placed before the data along with the intended data type.&lt;/p&gt;
@@ -1161,10 +1161,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Structures</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_02_16_54_49_structures/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_02_16_54_49_structures/</link>
       <pubDate>Tue, 02 Jul 2024 16:54:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_02_16_54_49_structures/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_02_16_54_49_structures/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;structure&#34;&gt;Structure&lt;/h2&gt;
 &lt;p&gt;One of the biggest limitations of Verilog is the lack of data structures. In SystemVerilog, you can create a structure using the struct statement. A structure is a collection of data that can be synthesized.&lt;/p&gt;
 &lt;p&gt;Example of struct:&lt;/p&gt;
@@ -1176,10 +1176,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Enumeration</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_02_15_05_30_enumeration/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_02_15_05_30_enumeration/</link>
       <pubDate>Tue, 02 Jul 2024 15:05:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_02_15_05_30_enumeration/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/type_enum/tb_type_enum.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_02_15_05_30_enumeration/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/type_enum/tb_type_enum.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h2&gt;
 &lt;p&gt;In Verilog, it is possible to declare user-defined types using a define macro, shown below:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-verilog&#34; data-lang=&#34;verilog&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;`define TYPE1 8
@@ -1191,10 +1191,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Array Methods</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_02_09_48_08_array_methods/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_02_09_48_08_array_methods/</link>
       <pubDate>Tue, 02 Jul 2024 09:48:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_02_09_48_08_array_methods/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_02_09_48_08_array_methods/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;array-methods&#34;&gt;Array Methods&lt;/h2&gt;
 &lt;p&gt;Array methods are generic manipulation methods that apply to the entire array rather than iterating to every element in the array.&lt;/p&gt;
 &lt;h3 id=&#34;basic-array-operations&#34;&gt;Basic Array Operations&lt;/h3&gt;
@@ -1206,20 +1206,20 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Associative Arrays</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_02_00_18_56_associative_arrays/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_02_00_18_56_associative_arrays/</link>
       <pubDate>Tue, 02 Jul 2024 00:18:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_02_00_18_56_associative_arrays/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/associative_arrays/tb_associative_arrays.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_02_00_18_56_associative_arrays/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/associative_arrays/tb_associative_arrays.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;associative-arrays&#34;&gt;Associative Arrays&lt;/h2&gt;
 &lt;p&gt;Associative arrays in SystemVerilog allow you to index arrays with arbitrary data types. An associative array can be stored by the simulator as a tree or a hash table. An associative array is declared with a data type in square brackets. Only the elements that are explicitly assigned are stored, making it memory-efficient for sparse arrays.&lt;/p&gt;
 &lt;p&gt;Example of associative arrays in SV is shown below:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Queues</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_01_23_35_47_queues/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_01_23_35_47_queues/</link>
       <pubDate>Mon, 01 Jul 2024 23:35:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_01_23_35_47_queues/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/queues/tb_queues.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_01_23_35_47_queues/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/queues/tb_queues.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;queues&#34;&gt;Queues&lt;/h2&gt;
 &lt;p&gt;Queue is a new data type introduced in SystemVerilog that combines the best of a linked list and an array.&lt;/p&gt;
 &lt;ul&gt;
@@ -1230,19 +1230,19 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Dynamic Arrays</title>
-      <link>https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</link>
+      <link>http://localhost:1313/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</link>
       <pubDate>Mon, 01 Jul 2024 15:56:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/dynamic_arrays/tb_dynamic_arrays.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/dynamic_arrays/tb_dynamic_arrays.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;dymanic-arrays&#34;&gt;Dymanic Arrays&lt;/h2&gt;
 &lt;p&gt;Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declare with empty word subscripts &amp;ldquo;[ ]&amp;rdquo;. The array is initially empty and must be called with the &amp;ldquo;new[ ]&amp;rdquo; constuctor to  allocate space, passing in the number of entries in the square brackets.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Packed and Unpacked Array</title>
-      <link>https://24x7fpga.com/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</link>
+      <link>http://localhost:1313/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</link>
       <pubDate>Sat, 29 Jun 2024 23:39:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/packed_and_unpacked/tb_packed_and_unpacked.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_06_29_23_39_49_packed_and_unpacked_array/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/packed_and_unpacked/tb_packed_and_unpacked.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;packed-and-unpacked-array&#34;&gt;Packed and Unpacked Array&lt;/h2&gt;
 &lt;p&gt;Packed and unpacked arrays are differentiated based on the way the arrays are stored in the memory. Generally, simulators store each element on a 32-bit word boundary. In a packed array, the elements are stored in contiguous memory locations whereas in an unpacked array, the elements are not stored in contiguous memory locations.&lt;/p&gt;
 &lt;h3 id=&#34;packed-array&#34;&gt;Packed Array&lt;/h3&gt;
@@ -1250,10 +1250,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Fixed-Size Arrays</title>
-      <link>https://24x7fpga.com/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/</link>
+      <link>http://localhost:1313/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/</link>
       <pubDate>Sat, 29 Jun 2024 23:25:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_06_29_23_25_03_fixed_size_arrays/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;fixed-size-arrays&#34;&gt;Fixed-Size Arrays&lt;/h2&gt;
 &lt;p&gt;An array is a collection of elements stored sequentially. An array in Verilog should be declared with upper and lower bounds. The lower bound in most of the arrays is zero. Fixed-size arrays have constant size and do not change during run time. The array size is set at compile time.&lt;/p&gt;
 &lt;h3 id=&#34;single-dimension-array&#34;&gt;Single Dimension Array&lt;/h3&gt;
@@ -1261,10 +1261,10 @@ explicitly.&lt;/p&gt;
     </item>
     <item>
       <title>Logic Type</title>
-      <link>https://24x7fpga.com/sv_directory/2024_06_28_14_48_33_logic_type/</link>
+      <link>http://localhost:1313/sv_directory/2024_06_28_14_48_33_logic_type/</link>
       <pubDate>Fri, 28 Jun 2024 14:48:00 -0400</pubDate>
-      <guid>https://24x7fpga.com/sv_directory/2024_06_28_14_48_33_logic_type/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/sv_directory/2024_06_28_14_48_33_logic_type/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;logic-type&#34;&gt;Logic Type&lt;/h2&gt;
 &lt;h3 id=&#34;data-types&#34;&gt;Data Types&lt;/h3&gt;
 &lt;p&gt;SystemVerilog includes all the data types that are available with Verilog and add many new data types to help both hardware design engineers and verification engineers. Below is a table showing an extensive list of data types availabe in SystemVerilog.&lt;/p&gt;

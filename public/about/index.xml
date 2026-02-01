@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Abouts on Home</title>
-    <link>https://24x7fpga.com/about/</link>
+    <link>http://localhost:1313/about/</link>
     <description>Recent content in Abouts on Home</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://24x7fpga.com/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://24x7fpga.com/about/about/</link>
+      <link>http://localhost:1313/about/about/</link>
       <pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://24x7fpga.com/about/about/</guid>
+      <guid>http://localhost:1313/about/about/</guid>
       <description>&lt;h1 id=&#34;hi-there-&#34;&gt;Hi there 👋.&lt;/h1&gt;
 &lt;!--![FPGA](fpga.png)--&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://user-images.githubusercontent.com/34355273/89976131-a2260700-dc35-11ea-8b5d-8a62fd78734a.png&#34; alt=&#34;fpga&#34;  /&gt;
