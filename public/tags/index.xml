@@ -6,12 +6,26 @@
     <description>Recent content in Tags on Home</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Mar 2025 13:46:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 16 Dec 2025 18:56:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ca</title>
+      <link>https://24x7fpga.com/tags/ca/</link>
+      <pubDate>Tue, 16 Dec 2025 18:56:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/tags/ca/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Riscv</title>
+      <link>https://24x7fpga.com/tags/riscv/</link>
+      <pubDate>Tue, 16 Dec 2025 18:56:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/tags/riscv/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Ams</title>
       <link>https://24x7fpga.com/tags/ams/</link>
-      <pubDate>Sun, 30 Mar 2025 13:46:00 -0400</pubDate>
+      <pubDate>Fri, 05 Dec 2025 14:39:00 -0500</pubDate>
       <guid>https://24x7fpga.com/tags/ams/</guid>
       <description></description>
     </item>
@@ -20,13 +34,6 @@
       <link>https://24x7fpga.com/tags/toc/</link>
       <pubDate>Thu, 13 Mar 2025 12:37:00 -0400</pubDate>
       <guid>https://24x7fpga.com/tags/toc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Riscv</title>
-      <link>https://24x7fpga.com/tags/riscv/</link>
-      <pubDate>Sat, 22 Feb 2025 15:23:00 -0500</pubDate>
-      <guid>https://24x7fpga.com/tags/riscv/</guid>
       <description></description>
     </item>
     <item>

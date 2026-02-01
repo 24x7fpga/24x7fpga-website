@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Architecture vs. Microarchitecture | Home</title>
+<meta name="keywords" content="riscv, ca">
+<meta name="description" content="Modern computer systems are built using levels of abstraction that manage complexity by clearly separating responsibilities. Among these layers are architecture and microarchitecture form one of the most important boundaries—especially for understanding the concepts in computer architecture. Figure 1, shows a simplified abstraction stack where each layer builds upon the one below it, hiding complexity while exposing only what is necessary.
+
+     
+            Figure 1: Levels of Abstraction">
+<meta name="author" content="kiran">
+<link rel="canonical" href="https://24x7fpga.com/rtl_directory/2025_12_16_18_56_45_architecture_vs_microarchitecture/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" href="https://24x7fpga.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://24x7fpga.com/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://24x7fpga.com/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://24x7fpga.com/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="https://24x7fpga.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://24x7fpga.com/rtl_directory/2025_12_16_18_56_45_architecture_vs_microarchitecture/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+
+<link rel="stylesheet" href="../../zcustom.css">
+
+
+<meta property="og:title" content="Architecture vs. Microarchitecture" />
+<meta property="og:description" content="Modern computer systems are built using levels of abstraction that manage complexity by clearly separating responsibilities. Among these layers are architecture and microarchitecture form one of the most important boundaries—especially for understanding the concepts in computer architecture. Figure 1, shows a simplified abstraction stack where each layer builds upon the one below it, hiding complexity while exposing only what is necessary.
+
+     
+            Figure 1: Levels of Abstraction" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://24x7fpga.com/rtl_directory/2025_12_16_18_56_45_architecture_vs_microarchitecture/" /><meta property="article:section" content="rtl_directory" />
+<meta property="article:published_time" content="2025-12-16T18:56:00-05:00" />
+<meta property="article:modified_time" content="2025-12-16T18:56:00-05:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Architecture vs. Microarchitecture"/>
+<meta name="twitter:description" content="Modern computer systems are built using levels of abstraction that manage complexity by clearly separating responsibilities. Among these layers are architecture and microarchitecture form one of the most important boundaries—especially for understanding the concepts in computer architecture. Figure 1, shows a simplified abstraction stack where each layer builds upon the one below it, hiding complexity while exposing only what is necessary.
+
+     
+            Figure 1: Levels of Abstraction"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Rtl_directories",
+      "item": "https://24x7fpga.com/rtl_directory/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Architecture vs. Microarchitecture",
+      "item": "https://24x7fpga.com/rtl_directory/2025_12_16_18_56_45_architecture_vs_microarchitecture/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Architecture vs. Microarchitecture",
+  "name": "Architecture vs. Microarchitecture",
+  "description": "Modern computer systems are built using levels of abstraction that manage complexity by clearly separating responsibilities. Among these layers are architecture and microarchitecture form one of the most important boundaries—especially for understanding the concepts in computer architecture. Figure 1, shows a simplified abstraction stack where each layer builds upon the one below it, hiding complexity while exposing only what is necessary.\nFigure 1: Levels of Abstraction\n",
+  "keywords": [
+    "riscv", "ca"
+  ],
+  "articleBody": "Modern computer systems are built using levels of abstraction that manage complexity by clearly separating responsibilities. Among these layers are architecture and microarchitecture form one of the most important boundaries—especially for understanding the concepts in computer architecture. Figure 1, shows a simplified abstraction stack where each layer builds upon the one below it, hiding complexity while exposing only what is necessary.\nFigure 1: Levels of Abstraction\nArchitecture: The Programmer’s View Architecture, more precisely the Instruction Set Architecture (ISA), defines the contract between software and hardware. It specifies what the machine does from the perspective of a programmer or compiler, without revealing how those behaviors are implemented internally.\nAt the architectural level:\nThe instruction set (arithmetic, control, memory operations) Programmer-visible registers Addressing modes and data types Memory consistency model Exceptions and interrupts This level is critical because it guarantees correctness and compatibility. Any processor that correctly implements an ISA must execute the same program and produce the same results, regardless of its internal design. Many different architectures exist, such as x86, MIPS, RISC-V.\nExample:\nRISC-V specifies a load–store architecture with a fixed set of integer registers. Whether the processor is simple or highly optimized, it must obey these rules for software to work correctly. Microarchitecture: The Hardware Implementation Microarchitecture describes how the ISA is implemented in hardware. It focuses on internal design choices that are invisible to software but crucial for performance, power efficiency, and silicon area.\nMicroarchitectural decisions include:\nPipeline depth and structure In-order vs. out-of-order execution Issue width and execution units Cache hierarchy and policies Branch prediction techniques Clock frequency and power optimizations Different microarchitectures can implement the same ISA while exhibiting vastly different performance characteristics.\nExample: Two processors may both implement RISC-V:\nOne uses a simple 5-stage in-order pipeline. Another uses a deep, out-of-order pipeline with aggressive speculation Both execute the same programs correctly, but one may be significantly faster or more power-efficient. What is Computer Architecture? It is the science and art of designing, selecting and interconnecting hardware components and designing the hardware/software interface to create a computing system that meets functional, performance, energy consumption, cost and other specific goals. (Source: Onur Mutlu)\nCPU Performance Equation \\begin{equation} \\label{eq.1} Execution \\quad Time = \\frac{Instructions}{Programs} \\times \\frac{Cycles}{Instructions} \\times \\frac{Time}{Cycle} \\end{equation}\n",
+  "wordCount" : "371",
+  "inLanguage": "en",
+  "datePublished": "2025-12-16T18:56:00-05:00",
+  "dateModified": "2025-12-16T18:56:00-05:00",
+  "author":[{
+    "@type": "Person",
+    "name": "kiran"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://24x7fpga.com/rtl_directory/2025_12_16_18_56_45_architecture_vs_microarchitecture/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://24x7fpga.com/favicon.ico"
+    }
+  }
+}
+</script><link rel="stylesheet" href="/css/syntax.css" !important>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://24x7fpga.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            
+            
+            <div class="vertical-line" style="height: 20px;"></div>
+            
+            
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://24x7fpga.com/rtl_directory/2024_06_05_00_21_53_rtl_design_directory" title="rtl">
+                    <span> 
+
+
+                           
+                        
+                         
+                        rtl</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory" title="sv">
+                    <span> 
+
+
+                           
+                        
+                         
+                        sv</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/uvm_directory/2024_08_28_12_39_50_uvm_framework_directory" title="uvm">
+                    <span> 
+
+
+                           
+                        
+                         
+                        uvm</span>  
+                </a>
+            </li>
+            <li>
+                <a href="https://24x7fpga.com/tags/" title="">
+                    <span> 
+
+
+                           
+                        
+                            
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+
+
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                         
+                        
+                        <div style="text-decoration: none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 15"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="text-decoration: none">
+                            <path d="M21 18V6H8L2 12L8 18H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                        </svg> 
+                        </div>
+                        </span>  
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
+
+
+<script src="https://24x7fpga.com/js/mathjax-config.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Architecture vs. Microarchitecture
+    </h1>
+    <div class="post-meta"><span title='2025-12-16 18:56:00 -0500 EST'>December 16, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;371 words&nbsp;·&nbsp;kiran
+
+</div>
+  </header> 
+  <div class="post-content"><p>Modern computer systems are built using levels of abstraction that manage complexity by clearly separating responsibilities. Among these layers are architecture and microarchitecture form one of the most important boundaries—especially for understanding the concepts in computer architecture. Figure 1, shows a simplified abstraction stack where each layer builds upon the one below it, hiding complexity while exposing only what is necessary.</p>
+<figure class="center !important">
+    <img loading="lazy" src="/ox-hugo/abstraction.svg"
+         alt="Figure 1: Levels of Abstraction" width="200px"/> <figcaption>
+            <p><span class="figure-number">Figure 1: </span>Levels of Abstraction</p>
+        </figcaption>
+</figure>
+
+<h2 id="architecture-the-programmer-s-view">Architecture: The Programmer’s View<a hidden class="anchor" aria-hidden="true" href="#architecture-the-programmer-s-view">#</a></h2>
+<p>Architecture, more precisely the Instruction Set Architecture (ISA), defines the contract between software and hardware. It specifies what the machine does from the perspective of a programmer or compiler, without revealing how those behaviors are implemented internally.</p>
+<p>At the architectural level:</p>
+<ul>
+<li>The instruction set (arithmetic, control, memory operations)</li>
+<li>Programmer-visible registers</li>
+<li>Addressing modes and data types</li>
+<li>Memory consistency model</li>
+<li>Exceptions and interrupts</li>
+</ul>
+<p>This level is critical because it guarantees correctness and compatibility. Any processor that correctly implements an ISA must execute the same program and produce the same results, regardless of its internal design. Many different architectures exist, such as x86, MIPS, RISC-V.</p>
+<p>Example:</p>
+<ul>
+<li>RISC-V specifies a load–store architecture with a fixed set of integer registers. Whether the processor is simple or highly optimized, it must obey these rules for software to work correctly.</li>
+</ul>
+<h2 id="microarchitecture-the-hardware-implementation">Microarchitecture: The Hardware Implementation<a hidden class="anchor" aria-hidden="true" href="#microarchitecture-the-hardware-implementation">#</a></h2>
+<p>Microarchitecture describes how the ISA is implemented in hardware. It focuses on internal design choices that are invisible to software but crucial for performance, power efficiency, and silicon area.</p>
+<p>Microarchitectural decisions include:</p>
+<ul>
+<li>Pipeline depth and structure</li>
+<li>In-order vs. out-of-order execution</li>
+<li>Issue width and execution units</li>
+<li>Cache hierarchy and policies</li>
+<li>Branch prediction techniques</li>
+<li>Clock frequency and power optimizations</li>
+</ul>
+<p>Different microarchitectures can implement the same ISA while exhibiting vastly different performance characteristics.</p>
+<p>Example: Two processors may both implement RISC-V:</p>
+<ul>
+<li>One uses a simple 5-stage in-order pipeline.</li>
+<li>Another uses a deep, out-of-order pipeline with aggressive speculation</li>
+<li>Both execute the same programs correctly, but one may be significantly faster or more power-efficient.</li>
+</ul>
+<h2 id="what-is-computer-architecture">What is Computer Architecture?<a hidden class="anchor" aria-hidden="true" href="#what-is-computer-architecture">#</a></h2>
+<p>It is the science and art of designing, selecting and interconnecting hardware components and designing the hardware/software interface to create a computing system that meets functional, performance, energy consumption, cost and other specific goals. (Source: Onur Mutlu)</p>
+<h2 id="cpu-performance-equation">CPU Performance Equation<a hidden class="anchor" aria-hidden="true" href="#cpu-performance-equation">#</a></h2>
+<p>\begin{equation}
+\label{eq.1}
+Execution \quad Time = \frac{Instructions}{Programs} \times \frac{Cycles}{Instructions} \times \frac{Time}{Cycle}
+\end{equation}</p>
+
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://24x7fpga.com/tags/riscv/">Riscv</a></li>
+      <li><a href="https://24x7fpga.com/tags/ca/">Ca</a></li>
+    </ul>
+
+
+
+    <div class="bottom-line" ></div>
+    
+    
+    
+      <img src="/img/org_mode.png" class="center" alt="footer" style="max-width:50px" />
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://24x7fpga.com/"></a></span>
+        
+        
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+
+</footer>
+
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

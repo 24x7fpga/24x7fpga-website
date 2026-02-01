@@ -6,8 +6,37 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Mar 2025 13:46:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 16 Dec 2025 18:56:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Architecture vs. Microarchitecture</title>
+      <link>https://24x7fpga.com/rtl_directory/2025_12_16_18_56_45_architecture_vs_microarchitecture/</link>
+      <pubDate>Tue, 16 Dec 2025 18:56:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2025_12_16_18_56_45_architecture_vs_microarchitecture/</guid>
+      <description>&lt;p&gt;Modern computer systems are built using levels of abstraction that manage complexity by clearly separating responsibilities. Among these layers are architecture and microarchitecture form one of the most important boundaries—especially for understanding the concepts in computer architecture. Figure 1, shows a simplified abstraction stack where each layer builds upon the one below it, hiding complexity while exposing only what is necessary.&lt;/p&gt;
+&lt;figure class=&#34;center !important&#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/abstraction.svg&#34;
+         alt=&#34;Figure 1: Levels of Abstraction&#34; width=&#34;200px&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;Levels of Abstraction&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kirchhoff&#39;s Laws</title>
+      <link>https://24x7fpga.com/ams_directory/2025_12_05_14_39_43_kirchhoff_s_laws/</link>
+      <pubDate>Fri, 05 Dec 2025 14:39:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/ams_directory/2025_12_05_14_39_43_kirchhoff_s_laws/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://24x7fpga.com/ams_directory/2025_03_13_ams_directory/&#34;&gt;AMS Directory&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;kirchhoff-s-law&#34;&gt;Kirchhoff&amp;rsquo;s Law&lt;/h2&gt;
+&lt;p&gt;Kirchoff&amp;rsquo;s Laws are two fundamental rules in electrical circuit analysis. They help find unknown currents and volrages and resistance values in complex circuits.&lt;/p&gt;
+&lt;h3 id=&#34;kirchhoff-s-current-law--kcl--node-rule&#34;&gt;Kirchhoff&amp;rsquo;s Current Law (KCL) - Node Rule&lt;/h3&gt;
+&lt;p&gt;Definition: The algebraic sum of currents entering a junction equals to the sum of currents leaving the junction.&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\begin{aligned}
+\underbrace{\sum_{j}I_j}_\text{current entering} = \underbrace{\sum_{j}I_j}_\text{current leaving}
+\end{aligned}
+\end{equation}&lt;/p&gt;
+&lt;h3 id=&#34;kirchhoff-s-voltage-law--kvl--branch-rule&#34;&gt;Kirchhoff&amp;rsquo;s Voltage Law (KVL) - Branch Rule&lt;/h3&gt;
+&lt;p&gt;Definition: The algebraic sum of all voltage rises and drops around any closed loop is zero.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Voltage Source, Current Source and Dependent Source</title>
       <link>https://24x7fpga.com/ams_directory/2025_03_30_voltage_source_current_source_and_dependent_source/</link>

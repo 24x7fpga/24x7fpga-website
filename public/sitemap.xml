@@ -3,16 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://24x7fpga.com/</loc>
-    <lastmod>2025-03-30T13:46:00-04:00</lastmod>
+    <lastmod>2025-12-16T18:56:00-05:00</lastmod>
   </url><url>
-    <loc>https://24x7fpga.com/tags/ams/</loc>
-    <lastmod>2025-03-30T13:46:00-04:00</lastmod>
+    <loc>https://24x7fpga.com/rtl_directory/2025_12_16_18_56_45_architecture_vs_microarchitecture/</loc>
+    <lastmod>2025-12-16T18:56:00-05:00</lastmod>
   </url><url>
-    <loc>https://24x7fpga.com/ams_directory/</loc>
-    <lastmod>2025-03-30T13:46:00-04:00</lastmod>
+    <loc>https://24x7fpga.com/tags/ca/</loc>
+    <lastmod>2025-12-16T18:56:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/riscv/</loc>
+    <lastmod>2025-12-16T18:56:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/rtl_directory/</loc>
+    <lastmod>2025-12-16T18:56:00-05:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/tags/</loc>
-    <lastmod>2025-03-30T13:46:00-04:00</lastmod>
+    <lastmod>2025-12-16T18:56:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/tags/ams/</loc>
+    <lastmod>2025-12-05T14:39:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/ams_directory/</loc>
+    <lastmod>2025-12-05T14:39:00-05:00</lastmod>
+  </url><url>
+    <loc>https://24x7fpga.com/ams_directory/2025_12_05_14_39_43_kirchhoff_s_laws/</loc>
+    <lastmod>2025-12-05T14:39:00-05:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/ams_directory/2025_03_30_voltage_source_current_source_and_dependent_source/</loc>
     <lastmod>2025-03-30T13:46:00-04:00</lastmod>
@@ -27,9 +42,6 @@
     <lastmod>2025-03-13T12:37:00-04:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/riscv_directory/2025_02_22_data_path/</loc>
-    <lastmod>2025-02-22T15:23:00-05:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/tags/riscv/</loc>
     <lastmod>2025-02-22T15:23:00-05:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/riscv_directory/</loc>
@@ -87,9 +99,6 @@
     <lastmod>2024-12-21T17:41:00-05:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/tags/rtl/</loc>
-    <lastmod>2024-12-21T17:41:00-05:00</lastmod>
-  </url><url>
-    <loc>https://24x7fpga.com/rtl_directory/</loc>
     <lastmod>2024-12-21T17:41:00-05:00</lastmod>
   </url><url>
     <loc>https://24x7fpga.com/tags/sta/</loc>

@@ -6,8 +6,19 @@
     <description>Recent content in Rtl_directories on Home</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Dec 2024 17:41:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 16 Dec 2025 18:56:00 -0500</lastBuildDate>
     <atom:link href="https://24x7fpga.com/rtl_directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Architecture vs. Microarchitecture</title>
+      <link>https://24x7fpga.com/rtl_directory/2025_12_16_18_56_45_architecture_vs_microarchitecture/</link>
+      <pubDate>Tue, 16 Dec 2025 18:56:00 -0500</pubDate>
+      <guid>https://24x7fpga.com/rtl_directory/2025_12_16_18_56_45_architecture_vs_microarchitecture/</guid>
+      <description>&lt;p&gt;Modern computer systems are built using levels of abstraction that manage complexity by clearly separating responsibilities. Among these layers are architecture and microarchitecture form one of the most important boundaries—especially for understanding the concepts in computer architecture. Figure 1, shows a simplified abstraction stack where each layer builds upon the one below it, hiding complexity while exposing only what is necessary.&lt;/p&gt;
+&lt;figure class=&#34;center !important&#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/abstraction.svg&#34;
+         alt=&#34;Figure 1: Levels of Abstraction&#34; width=&#34;200px&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;Levels of Abstraction&lt;/p&gt;</description>
+    </item>
     <item>
       <title>D Flip-Flop: Operation</title>
       <link>https://24x7fpga.com/rtl_directory/2024_12_21_d_flip_flop_operation/</link>

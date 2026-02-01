@@ -1,6 +1,6 @@
 +++
 title = "UVM Testbench Overview"
-author = ["Kiran"]
+author = ["kiran"]
 date = 2024-09-22T08:54:00-04:00
 tags = ["uvm"]
 draft = false
@@ -50,7 +50,7 @@ The UVM Sequencer manages the execution of sequences and is responsible for arbi
 
 ### UVM Scoreboard {#uvm-scoreboard}
 
-The UVM Scoreboard collects the resposes from the DUT and checks for correctness by comparing to a reference model know as the `predictor`.
+The UVM Scoreboard collects the responses from the DUT and checks for correctness by comparing to a reference model know as the `predictor`.
 
 
 ### UVM Agent {#uvm-agent}
