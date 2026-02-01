@@ -36,7 +36,7 @@ The complete list of class libraries can be found in [UVM 1.2 Class Reference](h
 
 -   **uvm_sequence_item**: An extension of uvm_transaction designed to represent individual transactions in a sequence. Sequence items are created and sent to drivers via sequencers, facilitating the flow of data during simulations. Key methods include randomize(), do_copy(), do_compare(), do_pack(), and do_unpack(), which help in generating randomized data, copying items, and serializing objects.
 
--   **uvm_sequence**: This class models a collection of uvm_sequence_item objects and is responsible for controlling the generation of stimuli and transaction flow to drivers. Sequences can be hierarchical, where a parent sequence triggers multiple child sequences, enabling complex stimulus scenarios. Important methods include start(), which begins the sequence, body(), which defines the sequence logic, and wait_for_grant(), which handles sequence arbitration.
+-   **uvm_sequence**: This class models a collection of uvm_sequence_item objects and is responsible for controlling, generation of stimuli and transaction flow to drivers. Sequences can be hierarchical, where a parent sequence triggers multiple child sequences, enabling complex stimulus scenarios. Important methods include start(), which begins the sequence, body(), which defines the sequence logic, and wait_for_grant(), which handles sequence arbitration.
 
 
 ### Extended from "uvm_component" {#extended-from-uvm-component}
