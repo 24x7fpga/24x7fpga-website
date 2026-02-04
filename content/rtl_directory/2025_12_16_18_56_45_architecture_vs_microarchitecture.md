@@ -7,7 +7,7 @@ draft = false
 css = "../../zcustom.css"
 +++
 
-Modern computer systems are built using levels of abstraction that manage complexity by clearly separating responsibilities. Among these layers are architecture and microarchitecture form one of the most important boundaries—especially for understanding the concepts in computer architecture. Figure 1, shows a simplified abstraction stack where each layer builds upon the one below it, hiding complexity while exposing only what is necessary.
+Modern computer systems are built using levels of abstraction that manage complexity by clearly separating responsibilities. Among these layers, architecture and microarchitecture form one of the most important boundaries—especially for understanding the concepts in computer architecture. Figure 1, shows a simplified abstraction stack where each layer builds upon the one below it, hiding complexity while exposing only what is necessary.
 
 {{< figure src="/ox-hugo/abstraction.svg" caption="<span class=\"figure-number\">Figure 1: </span>Levels of Abstraction" class="center !important" width="200px" >}}
 
@@ -60,7 +60,27 @@ It is the science and art of designing, selecting and interconnecting hardware c
 
 ## CPU Performance Equation {#cpu-performance-equation}
 
+CPU performance is determined by three fundamental parameters: the number of instructions a program executes, the average number of clock cycles required per instruction (CPI), and the duration of each clock cycle. Together, these parameters define the CPU performance equation:
+
 \begin{equation}
 \label{eq.1}
-Execution \quad Time = \frac{Instructions}{Programs} \times \frac{Cycles}{Instructions} \times \frac{Time}{Cycle}
+Execution \\; Time = \underbrace{\frac{Instructions}{Program}}\_\text{Instruction Count} \times \underbrace{\frac{Cycles}{Instruction}}\_\text{CPI} \times \underbrace{\frac{Time}{Cycle}}\_\text{Clock Period}
+\end{equation}
+
+-   Instruction Count: The total number of instructions executed by a program. Determined by the program’s algorithm, the quality of compiler optimizations, and the underlying instruction set architecture (ISA).
+-   Cycles Per Instruction (CPI): The average number of clock cycles required to execute an instruction. CPI depends heavily on the CPU’s microarchitecture, including pipeline depth, instruction-level parallelism, cache behavior (hits and misses), and instruction complexity.
+-   Clock Period: The duration of one clock cycle. Clock period is the inverse of the processor’s clock frequency, which is measured in hertz (Hz).
+
+The above equation can be deduced to:
+
+\begin{equation}
+\label{eq.2}
+Execution \\; Time = \frac{Instructions Count \times CPI}{f}
+\end{equation}
+
+Therefore, CPU performance equation is:
+
+\begin{equation}
+\label{eq.3}
+Performace = \frac{1}{Execution \\; Time}
 \end{equation}

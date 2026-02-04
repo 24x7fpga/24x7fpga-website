@@ -13,7 +13,7 @@
       <link>https://24x7fpga.com/rtl_directory/2025_12_16_18_56_45_architecture_vs_microarchitecture/</link>
       <pubDate>Tue, 16 Dec 2025 18:56:00 -0500</pubDate>
       <guid>https://24x7fpga.com/rtl_directory/2025_12_16_18_56_45_architecture_vs_microarchitecture/</guid>
-      <description>&lt;p&gt;Modern computer systems are built using levels of abstraction that manage complexity by clearly separating responsibilities. Among these layers are architecture and microarchitecture form one of the most important boundaries—especially for understanding the concepts in computer architecture. Figure 1, shows a simplified abstraction stack where each layer builds upon the one below it, hiding complexity while exposing only what is necessary.&lt;/p&gt;
+      <description>&lt;p&gt;Modern computer systems are built using levels of abstraction that manage complexity by clearly separating responsibilities. Among these layers, architecture and microarchitecture form one of the most important boundaries—especially for understanding the concepts in computer architecture. Figure 1, shows a simplified abstraction stack where each layer builds upon the one below it, hiding complexity while exposing only what is necessary.&lt;/p&gt;
 &lt;figure class=&#34;center !important&#34;&gt;
     &lt;img loading=&#34;lazy&#34; src=&#34;https://24x7fpga.com/ox-hugo/abstraction.svg&#34;
          alt=&#34;Figure 1: Levels of Abstraction&#34; width=&#34;200px&#34;/&gt; &lt;figcaption&gt;
