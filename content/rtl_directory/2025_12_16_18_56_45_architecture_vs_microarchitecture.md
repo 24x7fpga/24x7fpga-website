@@ -75,7 +75,7 @@ The above equation can be deduced to:
 
 \begin{equation}
 \label{eq.2}
-Execution \\; Time = \frac{Instructions Count \times CPI}{f}
+Execution \\; Time = \frac{Instruction \\; Count \times CPI}{f}
 \end{equation}
 
 Therefore, CPU performance equation is:
