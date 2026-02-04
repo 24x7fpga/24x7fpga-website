@@ -82,5 +82,5 @@ Therefore, CPU performance equation is:
 
 \begin{equation}
 \label{eq.3}
-Performace = \frac{1}{Execution \\; Time}
+Performance = \frac{1}{Execution \\; Time}
 \end{equation}
