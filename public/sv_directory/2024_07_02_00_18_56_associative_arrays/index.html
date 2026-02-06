@@ -11,7 +11,7 @@
 Associative Arrays
 Associative arrays in SystemVerilog allow you to index arrays with arbitrary data types. An associative array can be stored by the simulator as a tree or a hash table. An associative array is declared with a data type in square brackets. Only the elements that are explicitly assigned are stored, making it memory-efficient for sparse arrays.
 Example of associative arrays in SV is shown below:">
-<meta name="author" content="Kiran">
+<meta name="author" content="kiran">
 <link rel="canonical" href="https://24x7fpga.com/sv_directory/2024_07_02_00_18_56_associative_arrays/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.28ee19e1ed9d982499c62390d2acb416195f5655651bae2a84b5090fab8908e0.css" integrity="sha256-KO4Z4e2dmCSZxiOQ0qy0FhlfVlVlG64qhLUJD6uJCOA=" rel="preload stylesheet" as="style">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -88,14 +88,14 @@ Example of associative arrays in SV is shown below:"/>
   "keywords": [
     "sv"
   ],
-  "articleBody": "Source – SV Verification Directory\nAssociative Arrays Associative arrays in SystemVerilog allow you to index arrays with arbitrary data types. An associative array can be stored by the simulator as a tree or a hash table. An associative array is declared with a data type in square brackets. Only the elements that are explicitly assigned are stored, making it memory-efficient for sparse arrays.\nExample of associative arrays in SV is shown below:\nmodule associative_arrays (); byte assoc[byte]; byte indx = 1; int pow_2[int] = '{0:1, 1:2, 2:4, 3:8, 4:16}; initial begin do begin assoc[indx] = indx; indx = indx \u003c\u003c 1; end while (indx != 0); $display(\"-------------- Associative Array --------------\"); foreach(assoc[i]) $display(\"\\t assoc[%0d] = %0d\", i, assoc[i]); $display(\"-------------- Associative Array --------------\"); for(int i=5; i\u003c10; i++) pow_2[i] = 1 \u003c\u003c i; $display(\"%p\", pow_2); end endmodule Execute the example in EDA Playground\n",
-  "wordCount" : "140",
+  "articleBody": "Source – SV Verification Directory\nAssociative Arrays Associative arrays in SystemVerilog allow you to index arrays with arbitrary data types. An associative array can be stored by the simulator as a tree or a hash table. An associative array is declared with a data type in square brackets. Only the elements that are explicitly assigned are stored, making it memory-efficient for sparse arrays.\nExample of associative arrays in SV is shown below:\nmodule associative_arrays (); byte assoc[byte]; byte indx = 1; int pow_2[int] = '{0:1, 1:2, 2:4, 3:8, 4:16}; initial begin $display(\"-------------- Associative Array --------------\"); $display(\"%p\", pow_2); do begin assoc[indx] = indx; indx = indx \u003c\u003c 1; end while (indx \u003e= 0); $display(\"-------------- Associative Array --------------\"); foreach(assoc[i]) $display(\"\\t assoc[%0d] = %0d\", i, assoc[i]); $display(\"-------------- Associative Array --------------\"); for(int i=5; i\u003c10; i++) pow_2[i] = 1 \u003c\u003c i; $display(\"%p\", pow_2); end endmodule Execute the example in EDA Playground\n",
+  "wordCount" : "146",
   "inLanguage": "en",
   "datePublished": "2024-07-02T00:18:00-04:00",
   "dateModified": "2024-07-02T00:18:00-04:00",
   "author":[{
     "@type": "Person",
-    "name": "Kiran"
+    "name": "kiran"
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -262,7 +262,7 @@ Example of associative arrays in SV is shown below:"/>
     <h1 class="post-title entry-hint-parent">
       Associative Arrays
     </h1>
-    <div class="post-meta"><span title='2024-07-02 00:18:00 -0400 EDT'>July 2, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;140 words&nbsp;·&nbsp;Kiran
+    <div class="post-meta"><span title='2024-07-02 00:18:00 -0400 EDT'>July 2, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;146 words&nbsp;·&nbsp;kiran
 
 </div>
   </header> 
@@ -280,10 +280,13 @@ Example of associative arrays in SV is shown below:"/>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">initial</span> <span style="color:#66d9ef">begin</span>
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;--------------  Associative Array   --------------&#34;</span>);
+</span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;%p&#34;</span>, pow_2);
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">do</span> <span style="color:#66d9ef">begin</span>
 </span></span><span style="display:flex;"><span>      assoc[indx] <span style="color:#f92672">=</span> indx;
 </span></span><span style="display:flex;"><span>      indx <span style="color:#f92672">=</span> indx <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">1</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">while</span> (indx <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">while</span> (indx <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    $display(<span style="color:#e6db74">&#34;--------------  Associative Array   --------------&#34;</span>);
 </span></span><span style="display:flex;"><span>    foreach(assoc[i]) $display(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74"> assoc[%0d] = %0d&#34;</span>, i, assoc[i]);

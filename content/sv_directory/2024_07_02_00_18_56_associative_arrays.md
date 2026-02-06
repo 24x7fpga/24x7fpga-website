@@ -1,6 +1,6 @@
 +++
 title = "Associative Arrays"
-author = ["Kiran"]
+author = ["kiran"]
 date = 2024-07-02T00:18:00-04:00
 tags = ["sv"]
 draft = false
@@ -27,10 +27,13 @@ module associative_arrays ();
 
   initial begin
 
+    $display("--------------  Associative Array   --------------");
+    $display("%p", pow_2);
+
     do begin
       assoc[indx] = indx;
       indx = indx << 1;
-    end while (indx != 0);
+    end while (indx >= 0);
 
     $display("--------------  Associative Array   --------------");
     foreach(assoc[i]) $display("\t assoc[%0d] = %0d", i, assoc[i]);
