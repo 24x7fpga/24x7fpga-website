@@ -1235,7 +1235,7 @@ explicitly.&lt;/p&gt;
       <guid>https://24x7fpga.com/sv_directory/2024_07_01_15_56_35_dynamic_arrays/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/24x7fpga/SystemVerilog_Verification/blob/main/sv_verification/dynamic_arrays/tb_dynamic_arrays.sv&#34;&gt;Source&lt;/a&gt; &amp;ndash; &lt;a href=&#34;https://24x7fpga.com/sv_directory/2024_06_27_16_53_00_sv_verification_directory/&#34;&gt;SV Verification Directory&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;dymanic-arrays&#34;&gt;Dymanic Arrays&lt;/h2&gt;
-&lt;p&gt;Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declare with empty word subscripts &amp;ldquo;[ ]&amp;rdquo;. The array is initially empty and must be called with the &amp;ldquo;new[ ]&amp;rdquo; constuctor to  allocate space, passing in the number of entries in the square brackets.&lt;/p&gt;</description>
+&lt;p&gt;Dynamic arrays are arrays that do not have their size set during the compile time. They can be allocated and resized during simulation based on the design requirement so that the simulation cosumes minimal amount of memory. A dynamic array can be declared with an empty word subscripts &amp;ldquo;[ ]&amp;rdquo;. The array is initially empty and must be called with the &amp;ldquo;new[ ]&amp;rdquo; constuctor to  allocate space, passing in the number of entries in the square brackets.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Packed and Unpacked Array</title>
